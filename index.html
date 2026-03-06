@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI研发进阶之路</title>
+    <style>
+        :root {
+            /* 色彩系统 */
+            --color-primary: #7C3AED;
+            --color-primary-light: #8B5CF6;
+            --color-success: #1A7F37;
+            --color-info: #0969DA;
+            --color-warning: #BF8700;
+            --color-danger: #CF222E;
+
+            /* 文本颜色 */
+            --color-text-primary: #1F2328;
+            --color-text-secondary: #656D76;
+            --color-text-tertiary: #8C959F;
+
+            /* 背景颜色 */
+            --color-bg: #F6F8FA;
+            --color-bg-white: #FFFFFF;
+            --color-border: #D0D7DE;
+            --color-border-light: #E8ECEF;
+
+            /* 阴影 */
+            --shadow-sm: 0 1px 2px rgba(31, 35, 40, 0.04);
+            --shadow-card: 0 2px 8px rgba(31, 35, 40, 0.08);
+            --shadow-md: 0 4px 12px rgba(31, 35, 40, 0.12);
+            --shadow-hover: 0 8px 24px rgba(124, 58, 237, 0.15);
+
+            /* 圆角 */
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 14px;
+            --radius-xl: 18px;
+            --radius-pill: 999px;
+
+            /* 布局 */
+            --content-max-width: 1100px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, "system-ui", "Segoe UI", "Noto Sans SC", Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            color: var(--color-text-primary);
+            background: var(--color-bg);
+        }
+
+        .container {
+            max-width: var(--content-max-width);
+            margin: 0 auto;
+            padding: 24px 20px;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 48px 24px;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.08) 0%, rgba(139, 92, 246, 0.04) 100%);
+            border-radius: var(--radius-xl);
+            border-top: 4px solid var(--color-primary);
+            margin-bottom: 24px;
+        }
+
+        .header-badge {
+            display: inline-block;
+            padding: 6px 16px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: white;
+            font-size: 13px;
+            font-weight: 600;
+            border-radius: var(--radius-pill);
+            margin-bottom: 16px;
+        }
+
+        .header-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: 12px;
+        }
+
+        .header-subtitle {
+            font-size: 16px;
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: var(--color-bg-white);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        .stat-card:hover {
+            box-shadow: var(--shadow-card);
+            transform: translateY(-2px);
+        }
+
+        .stat-icon {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--color-text-primary);
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--color-text-secondary);
+            margin-top: 4px;
+        }
+
+        /* Tab Navigation */
+        .tab-nav {
+            display: flex;
+            gap: 8px;
+            background: var(--color-bg-white);
+            padding: 8px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--color-border-light);
+            margin-bottom: 24px;
+            position: sticky;
+            top: 12px;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            background: transparent;
+            color: var(--color-text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .tab-btn:hover {
+            background: var(--color-bg);
+            color: var(--color-text-primary);
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            color: white;
+        }
+
+        /* Tab Panels */
+        .tab-panel {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section */
+        .section {
+            background: var(--color-bg-white);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--color-border-light);
+        }
+
+        .section-icon {
+            font-size: 24px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+
+        .section-badge {
+            margin-left: auto;
+            padding: 4px 12px;
+            background: var(--color-bg);
+            color: var(--color-text-secondary);
+            font-size: 12px;
+            border-radius: var(--radius-pill);
+        }
+
+        /* Content Cards */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .content-card {
+            background: var(--color-bg);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .content-card:hover {
+            border-color: var(--color-primary);
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-2px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            border-radius: var(--radius-sm);
+            font-size: 20px;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+
+        .card-tags {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 3px 10px;
+            font-size: 11px;
+            border-radius: var(--radius-pill);
+            font-weight: 500;
+        }
+
+        .tag-purple { background: rgba(124, 58, 237, 0.1); color: var(--color-primary); }
+        .tag-blue { background: rgba(9, 105, 218, 0.1); color: var(--color-info); }
+        .tag-green { background: rgba(26, 127, 55, 0.1); color: var(--color-success); }
+        .tag-orange { background: rgba(191, 135, 0, 0.1); color: var(--color-warning); }
+
+        .card-desc {
+            font-size: 14px;
+            color: var(--color-text-secondary);
+            line-height: 1.5;
+        }
+
+        .card-meta {
+            display: flex;
+            gap: 16px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--color-border-light);
+            font-size: 12px;
+            color: var(--color-text-tertiary);
+        }
+
+        /* List Items */
+        .list-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px;
+            background: var(--color-bg);
+            border-radius: var(--radius-md);
+            margin-bottom: 10px;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .list-item:hover {
+            background: rgba(124, 58, 237, 0.06);
+        }
+
+        .list-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .list-icon {
+            font-size: 20px;
+        }
+
+        .list-content {
+            flex: 1;
+        }
+
+        .list-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--color-text-primary);
+        }
+
+        .list-desc {
+            font-size: 13px;
+            color: var(--color-text-secondary);
+            margin-top: 2px;
+        }
+
+        .list-arrow {
+            color: var(--color-text-tertiary);
+            opacity: 0;
+            transition: all 0.2s ease;
+        }
+
+        .list-item:hover .list-arrow {
+            opacity: 1;
+            transform: translateX(4px);
+        }
+
+        /* Links */
+        a.list-item, a.content-card {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+        }
+
+        a.content-card {
+            display: block;
+        }
+
+        .dimension-list a {
+            color: var(--color-info);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .dimension-list a:hover {
+            color: var(--color-primary);
+            text-decoration: underline;
+        }
+
+        .resource-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            background: var(--color-bg-white);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-sm);
+            margin-bottom: 8px;
+            text-decoration: none;
+            color: var(--color-text-primary);
+            font-size: 14px;
+            transition: all 0.2s ease;
+        }
+
+        .resource-link:hover {
+            border-color: var(--color-primary);
+            background: rgba(124, 58, 237, 0.04);
+        }
+
+        .resource-link .link-icon {
+            font-size: 18px;
+        }
+
+        .resource-link .link-text {
+            flex: 1;
+        }
+
+        .resource-link .link-domain {
+            font-size: 12px;
+            color: var(--color-text-tertiary);
+        }
+
+        .resource-link .external-icon {
+            color: var(--color-text-tertiary);
+            font-size: 12px;
+        }
+
+        /* Collapsible */
+        .collapsible {
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-md);
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+
+        .collapsible:last-child {
+            margin-bottom: 0;
+        }
+
+        .collapsible-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 20px;
+            background: var(--color-bg);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .collapsible-header:hover {
+            background: rgba(124, 58, 237, 0.06);
+        }
+
+        .collapsible-icon {
+            font-size: 20px;
+        }
+
+        .collapsible-title {
+            flex: 1;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--color-text-primary);
+        }
+
+        .collapsible-count {
+            padding: 2px 10px;
+            background: var(--color-bg-white);
+            border-radius: var(--radius-pill);
+            font-size: 12px;
+            color: var(--color-text-secondary);
+        }
+
+        .collapsible-arrow {
+            color: var(--color-text-tertiary);
+            transition: transform 0.2s ease;
+        }
+
+        .collapsible.open .collapsible-arrow {
+            transform: rotate(180deg);
+        }
+
+        .collapsible-content {
+            display: none;
+            padding: 16px 20px;
+            background: var(--color-bg-white);
+            border-top: 1px solid var(--color-border-light);
+        }
+
+        .collapsible.open .collapsible-content {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                max-height: 0;
+            }
+            to {
+                opacity: 1;
+                max-height: 500px;
+            }
+        }
+
+        /* Roadmap */
+        .roadmap {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .roadmap::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+        }
+
+        .roadmap-item {
+            position: relative;
+            padding: 20px;
+            background: var(--color-bg);
+            border-radius: var(--radius-md);
+            margin-bottom: 16px;
+        }
+
+        .roadmap-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 24px;
+            width: 12px;
+            height: 12px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            border: 3px solid var(--color-bg-white);
+        }
+
+        .roadmap-item.completed::before {
+            background: var(--color-success);
+        }
+
+        .roadmap-item.current::before {
+            background: var(--color-primary);
+            box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.2);
+        }
+
+        .roadmap-stage {
+            font-size: 12px;
+            color: var(--color-primary);
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .roadmap-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin-bottom: 8px;
+        }
+
+        .roadmap-desc {
+            font-size: 14px;
+            color: var(--color-text-secondary);
+        }
+
+        /* Knowledge Dimensions */
+        .dimension-grid {
+            display: grid;
+          grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .dimension-card {
+            background: var(--color-bg);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        .dimension-card:hover {
+            border-color: var(--color-primary);
+        }
+
+        .dimension-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 20px;
+            cursor: pointer;
+        }
+
+        .dimension-icon {
+            font-size: 24px;
+        }
+
+        .dimension-info {
+            flex: 1;
+        }
+
+        .dimension-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+
+        .dimension-subtitle {
+            font-size: 12px;
+            color: var(--color-text-secondary);
+        }
+
+        .dimension-arrow {
+            color: var(--color-text-tertiary);
+            transition: transform 0.2s ease;
+        }
+
+        .dimension-card.open .dimension-arrow {
+            transform: rotate(180deg);
+        }
+
+        .dimension-content {
+            display: none;
+            padding: 0 20px 20px;
+        }
+
+        .dimension-card.open .dimension-content {
+            display: block;
+        }
+
+        .dimension-list {
+            list-style: none;
+        }
+
+        .dimension-list li {
+            padding: 8px 0;
+            font-size: 14px;
+            color: var(--color-text-secondary);
+            border-bottom: 1px solid var(--color-border-light);
+        }
+
+        .dimension-list li:last-child {
+            border-bottom: none;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 24px;
+            color: var(--color-text-tertiary);
+            font-size: 13px;
+            margin-top: 20px;
+        }
+
+        /* Global Controls */
+        .global-controls {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 16px;
+        }
+
+        .control-btn {
+            padding: 8px 16px;
+            background: var(--color-bg-white);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-md);
+            font-size: 13px;
+            color: var(--color-text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .control-btn:hover {
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .stats-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .content-grid, .dimension-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .tab-btn span {
+                display: none;
+            }
+            .header-title {
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .container {
+                padding: 16px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <span class="header-badge">🚀 AI研发进阶之路</span>
+            <h1 class="header-title">从入门到精通的AI工程师成长指南</h1>
+            <p class="header-subtitle">系统化学习路径 · 实战项目驱动 · 前沿技术追踪 · 持续进阶成长</p>
+        </header>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">📚</div>
+                <div class="stat-value">42</div>
+                <div class="stat-label">学习专题</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">💻</div>
+                <div class="stat-value">18</div>
+                <div class="stat-label">实战项目</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🔬</div>
+                <div class="stat-value">156</div>
+                <div class="stat-label">技术文章</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🎯</div>
+                <div class="stat-value">5</div>
+                <div class="stat-label">进阶阶段</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⭐</div>
+                <div class="stat-value">2.4K</div>
+                <div class="stat-label">学习者</div>
+            </div>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="tab-nav">
+            <button class="tab-btn active" data-tab="roadmap">🗺️ <span>学习路径</span></button>
+            <button class="tab-btn" data-tab="skills">🛠️ <span>技能体系</span></button>
+            <button class="tab-btn" data-tab="projects">💡 <span>实战项目</span></button>
+            <button class="tab-btn" data-tab="resources">📖 <span>学习资源</span></button>
+        </div>
+
+        <!-- Tab Panel: 学习路径 -->
+        <div id="roadmap" class="tab-panel active">
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">🗺️</span>
+                    <h2 class="section-title">AI研发进阶路线图</h2>
+                    <span class="section-badge">5个阶段</span>
+                </div>
+                <div class="roadmap">
+                    <div class="roadmap-item completed">
+                        <div class="roadmap-stage">阶段一</div>
+                        <div class="roadmap-title">编程基础与数学准备</div>
+                        <div class="roadmap-desc">Python编程、线性代数、概率统计、微积分基础，建立扎实的技术底座</div>
+                    </div>
+                    <div class="roadmap-item completed">
+                        <div class="roadmap-stage">阶段二</div>
+                        <div class="roadmap-title">机器学习核心原理</div>
+                        <div class="roadmap-desc">经典ML算法、特征工程、模型评估、sklearn实战，掌握机器学习基本范式</div>
+                    </div>
+                    <div class="roadmap-item current">
+                        <div class="roadmap-stage">阶段三</div>
+                        <div class="roadmap-title">深度学习与神经网络</div>
+                        <div class="roadmap-desc">PyTorch/TensorFlow、CNN/RNN/Transformer、模型训练与优化技巧</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-stage">阶段四</div>
+                        <div class="roadmap-title">大模型与应用开发</div>
+                        <div class="roadmap-desc">LLM原理、Prompt Engineering、RAG系统、Agent开发、模型微调</div>
+                    </div>
+                    <div class="roadmap-item">
+                        <div class="roadmap-stage">阶段五</div>
+                        <div class="roadmap-title">AI系统架构与工程化</div>
+                        <div class="roadmap-desc">MLOps、模型部署、分布式训练、AI系统设计、性能优化</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">⭐</span>
+                    <h2 class="section-title">推荐学习路径</h2>
+                    <span class="section-badge">快速入门</span>
+                </div>
+                <div class="content-grid">
+                    <a href="https://www.coursera.org/learn/machine-learning" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">1️⃣</div>
+                            <div class="card-title">吴恩达机器学习</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-green">入门首选</span>
+                        </div>
+                        <div class="card-desc">从这里开始！系统学习ML基础概念和算法原理</div>
+                        <div class="card-meta">
+                            <span>coursera.org</span>
+                            <span>↗ 开始学习</span>
+                        </div>
+                    </a>
+                    <a href="https://d2l.ai/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">2️⃣</div>
+                            <div class="card-title">动手学深度学习</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">深度学习</span>
+                            <span class="tag tag-orange">中文</span>
+                        </div>
+                        <div class="card-desc">李沐著作，理论+代码，PyTorch实现，配套视频</div>
+                        <div class="card-meta">
+                            <span>d2l.ai</span>
+                            <span>↗ 开始学习</span>
+                        </div>
+                    </a>
+                    <a href="https://karpathy.ai/zero-to-hero.html" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">3️⃣</div>
+                            <div class="card-title">Neural Networks: Zero to Hero</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">LLM</span>
+                            <span class="tag tag-green">强烈推荐</span>
+                        </div>
+                        <div class="card-desc">Karpathy手把手教你从零实现GPT，理解Transformer</div>
+                        <div class="card-meta">
+                            <span>karpathy.ai</span>
+                            <span>↗ 开始学习</span>
+                        </div>
+                    </a>
+                    <a href="https://huggingface.co/learn/nlp-course" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">4️⃣</div>
+                            <div class="card-title">HuggingFace NLP Course</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">NLP</span>
+                            <span class="tag tag-purple">Transformers</span>
+                        </div>
+                        <div class="card-desc">官方NLP课程，学习使用Transformers库进行实战</div>
+                        <div class="card-meta">
+                            <span>huggingface.co</span>
+                            <span>↗ 开始学习</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">📈</span>
+                    <h2 class="section-title">热门学习资源</h2>
+                </div>
+                <a href="https://jalammar.github.io/illustrated-transformer/" target="_blank" class="list-item">
+                    <span class="list-icon">📝</span>
+                    <div class="list-content">
+                        <div class="list-title">图解Transformer</div>
+                        <div class="list-desc">Jay Alammar · 可视化讲解Transformer架构</div>
+                    </div>
+                    <span class="list-arrow">→</span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=kCc8FmEb1nY" target="_blank" class="list-item">
+                    <span class="list-icon">🎬</span>
+                    <div class="list-content">
+                        <div class="list-title">Let's build GPT from scratch</div>
+                        <div class="list-desc">Andrej Karpathy · 2小时从零实现GPT</div>
+                    </div>
+                    <span class="list-arrow">→</span>
+                </a>
+                <a href="https://lilianweng.github.io/posts/2023-06-23-agent/" target="_blank" class="list-item">
+                    <span class="list-icon">🤖</span>
+                    <div class="list-content">
+                        <div class="list-title">LLM Powered Autonomous Agents</div>
+                        <div class="list-desc">Lilian Weng · AI Agent系统深度解析</div>
+                    </div>
+                    <span class="list-arrow">→</span>
+                </a>
+                <a href="https://www.promptingguide.ai/zh" target="_blank" class="list-item">
+                    <span class="list-icon">💬</span>
+                    <div class="list-content">
+                        <div class="list-title">Prompt Engineering Guide</div>
+                        <div class="list-desc">中文版 · 提示词工程完全指南</div>
+                    </div>
+                    <span class="list-arrow">→</span>
+                </a>
+                <a href="https://github.com/mlabonne/llm-course" target="_blank" class="list-item">
+                    <span class="list-icon">🎓</span>
+                    <div class="list-content">
+                        <div class="list-title">LLM Course</div>
+                        <div class="list-desc">GitHub · 大模型完整学习路径</div>
+                    </div>
+                    <span class="list-arrow">→</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Tab Panel: 技能体系 -->
+        <div id="skills" class="tab-panel">
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">🐍</span>
+                    <h2 class="section-title">编程语言与基础</h2>
+                    <span class="section-badge">必备技能</span>
+                </div>
+                <div class="content-grid">
+                    <a href="https://docs.python.org/3/tutorial/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🐍</div>
+                            <div class="card-title">Python 官方教程</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-green">入门必学</span>
+                        </div>
+                        <div class="card-desc">Python官方文档教程，系统学习Python基础语法</div>
+                        <div class="card-meta">
+                            <span>python.org</span>
+                            <span>↗ 官方文档</span>
+                        </div>
+                    </a>
+                    <a href="https://realpython.com/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📚</div>
+                            <div class="card-title">Real Python</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">进阶教程</span>
+                        </div>
+                        <div class="card-desc">高质量Python教程网站，异步编程、设计模式、最佳实践</div>
+                        <div class="card-meta">
+                            <span>realpython.com</span>
+                            <span>↗ 教程</span>
+                        </div>
+                    </a>
+                    <a href="https://numpy.org/doc/stable/user/quickstart.html" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🔢</div>
+                            <div class="card-title">NumPy</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">数值计算</span>
+                        </div>
+                        <div class="card-desc">科学计算基础，矩阵运算、广播机制、向量化编程</div>
+                        <div class="card-meta">
+                            <span>numpy.org</span>
+                            <span>↗ 文档</span>
+                        </div>
+                    </a>
+                    <a href="https://pandas.pydata.org/docs/getting_started/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🐼</div>
+                            <div class="card-title">Pandas</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">数据处理</span>
+                        </div>
+                        <div class="card-desc">数据分析利器，DataFrame操作、数据清洗、特征工程</div>
+                        <div class="card-meta">
+                            <span>pandas.pydata.org</span>
+                            <span>↗ 文档</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">🧮</span>
+                    <h2 class="section-title">数学基础</h2>
+                    <span class="section-badge">理论支撑</span>
+                </div>
+                <div class="content-grid">
+                    <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📐</div>
+                            <div class="card-title">3Blue1Brown 线性代数</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">可视化</span>
+                            <span class="tag tag-green">入门</span>
+                        </div>
+                        <div class="card-desc">最直观的线性代数讲解，理解向量、矩阵、特征值的几何意义</div>
+                        <div class="card-meta">
+                            <span>youtube.com</span>
+                            <span>↗ 免费观看</span>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📈</div>
+                            <div class="card-title">3Blue1Brown 微积分</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">可视化</span>
+                        </div>
+                        <div class="card-desc">直观理解导数、积分、梯度，深度学习数学基础</div>
+                        <div class="card-meta">
+                            <span>youtube.com</span>
+                            <span>↗ 免费观看</span>
+                        </div>
+                    </a>
+                    <a href="https://www.khanacademy.org/math/statistics-probability" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📊</div>
+                            <div class="card-title">Khan Academy 概率统计</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">基础</span>
+                        </div>
+                        <div class="card-desc">概率论、统计推断、贝叶斯思维，ML理论基础</div>
+                        <div class="card-meta">
+                            <span>khanacademy.org</span>
+                            <span>↗ 免费课程</span>
+                        </div>
+                    </a>
+                    <a href="https://mml-book.github.io/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📖</div>
+                            <div class="card-title">Mathematics for ML</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">进阶</span>
+                        </div>
+                        <div class="card-desc">机器学习数学基础教材，线代、微积分、概率、优化</div>
+                        <div class="card-meta">
+                            <span>mml-book.github.io</span>
+                            <span>↗ 免费PDF</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">🧠</span>
+                    <h2 class="section-title">机器学习框架</h2>
+                    <span class="section-badge">核心工具</span>
+                </div>
+                <div class="content-grid">
+                    <a href="https://pytorch.org/tutorials/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🔥</div>
+                            <div class="card-title">PyTorch 教程</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">深度学习</span>
+                            <span class="tag tag-green">必学</span>
+                        </div>
+                        <div class="card-desc">官方教程，从Tensor基础到模型部署，循序渐进</div>
+                        <div class="card-meta">
+                            <span>pytorch.org</span>
+                            <span>↗ 官方教程</span>
+                        </div>
+                    </a>
+                    <a href="https://scikit-learn.org/stable/tutorial/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🔧</div>
+                            <div class="card-title">scikit-learn</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">传统ML</span>
+                        </div>
+                        <div class="card-desc">经典机器学习库，分类、回归、聚类、特征工程</div>
+                        <div class="card-meta">
+                            <span>scikit-learn.org</span>
+                            <span>↗ 教程</span>
+                        </div>
+                    </a>
+                    <a href="https://huggingface.co/docs/transformers/training" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🤗</div>
+                            <div class="card-title">HuggingFace Transformers</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">NLP/CV</span>
+                            <span class="tag tag-green">必学</span>
+                        </div>
+                        <div class="card-desc">预训练模型使用、微调、推理，现代AI开发必备</div>
+                        <div class="card-meta">
+                            <span>huggingface.co</span>
+                            <span>↗ 文档</span>
+                        </div>
+                    </a>
+                    <a href="https://jax.readthedocs.io/en/latest/quickstart.html" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">⚡</div>
+                            <div class="card-title">JAX</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">高性能</span>
+                            <span class="tag tag-blue">Google</span>
+                        </div>
+                        <div class="card-desc">Google高性能计算框架，自动微分、JIT编译、TPU支持</div>
+                        <div class="card-meta">
+                            <span>jax.readthedocs.io</span>
+                            <span>↗ 文档</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">🚀</span>
+                    <h2 class="section-title">大模型技术栈</h2>
+                    <span class="section-badge">前沿技术</span>
+                </div>
+                <div class="content-grid">
+                    <a href="https://www.promptingguide.ai/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">💬</div>
+                            <div class="card-title">Prompt Engineering Guide</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">Prompt</span>
+                            <span class="tag tag-green">必读</span>
+                        </div>
+                        <div class="card-desc">提示词工程完全指南，技巧、模式、最佳实践</div>
+                        <div class="card-meta">
+                            <span>promptingguide.ai</span>
+                            <span>↗ 阅读</span>
+                        </div>
+                    </a>
+                    <a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📝</div>
+                            <div class="card-title">Anthropic Prompt 指南</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">Claude</span>
+                            <span class="tag tag-blue">官方</span>
+                        </div>
+                        <div class="card-desc">Anthropic官方提示词最佳实践，系统提示、XML标签技巧</div>
+                        <div class="card-meta">
+                            <span>anthropic.com</span>
+                            <span>↗ 文档</span>
+                        </div>
+                    </a>
+                    <a href="https://docs.llamaindex.ai/en/stable/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🔍</div>
+                            <div class="card-title">RAG 开发 (LlamaIndex)</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">RAG</span>
+                            <span class="tag tag-green">知识库</span>
+                        </div>
+                        <div class="card-desc">检索增强生成系统开发，向量索引、查询引擎</div>
+                        <div class="card-meta">
+                            <span>llamaindex.ai</span>
+                            <span>↗ 文档</span>
+                        </div>
+                    </a>
+                    <a href="https://python.langchain.com/docs/tutorials/agents/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🤖</div>
+                            <div class="card-title">Agent 开发教程</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">Agent</span>
+                            <span class="tag tag-orange">工具调用</span>
+                        </div>
+                        <div class="card-desc">LangChain Agent教程，工具使用、规划、记忆</div>
+                        <div class="card-meta">
+                            <span>langchain.com</span>
+                            <span>↗ 教程</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">⚙️</span>
+                    <h2 class="section-title">工程化能力</h2>
+                    <span class="section-badge">生产部署</span>
+                </div>
+                <div class="content-grid">
+                    <a href="https://docs.docker.com/get-started/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🐳</div>
+                            <div class="card-title">Docker</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">容器化</span>
+                            <span class="tag tag-green">必学</span>
+                        </div>
+                        <div class="card-desc">容器化部署基础，构建可复现的ML环境</div>
+                        <div class="card-meta">
+                            <span>docker.com</span>
+                            <span>↗ 入门指南</span>
+                        </div>
+                    </a>
+                    <a href="https://git-scm.com/book/zh/v2" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📦</div>
+                            <div class="card-title">Git Pro Book</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">版本控制</span>
+                        </div>
+                        <div class="card-desc">Git完全指南，中文版，分支管理、协作开发</div>
+                        <div class="card-meta">
+                            <span>git-scm.com</span>
+                            <span>↗ 免费阅读</span>
+                        </div>
+                    </a>
+                    <a href="https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">⚡</div>
+                            <div class="card-title">TensorRT</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">推理优化</span>
+                        </div>
+                        <div class="card-desc">NVIDIA推理优化引擎，模型量化、图优化、高性能部署</div>
+                        <div class="card-meta">
+                            <span>nvidia.com</span>
+                            <span>↗ 文档</span>
+                        </div>
+                    </a>
+                    <a href="https://kubernetes.io/docs/tutorials/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">☸️</div>
+                            <div class="card-title">Kubernetes</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">编排</span>
+                            <span class="tag tag-orange">进阶</span>
+                        </div>
+                        <div class="card-desc">容器编排平台，大规模ML服务部署与管理</div>
+                        <div class="card-meta">
+                            <span>kubernetes.io</span>
+                            <span>↗ 教程</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Panel: 实战项目 -->
+        <div id="projects" class="tab-panel">
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">🚀</span>
+                    <h2 class="section-title">开源实战项目</h2>
+                    <span class="section-badge">GitHub精选</span>
+                </div>
+                <div class="content-grid">
+                    <a href="https://github.com/langchain-ai/langchain" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🦜</div>
+                            <div class="card-title">LangChain</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">LLM应用</span>
+                            <span class="tag tag-blue">Agent</span>
+                            <span class="tag tag-green">RAG</span>
+                        </div>
+                        <div class="card-desc">LLM应用开发框架，学习如何构建Chain、Agent、RAG系统</div>
+                        <div class="card-meta">
+                            <span>⭐ 95k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/run-llama/llama_index" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🦙</div>
+                            <div class="card-title">LlamaIndex</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">RAG</span>
+                            <span class="tag tag-purple">知识库</span>
+                        </div>
+                        <div class="card-desc">数据框架，连接LLM与私有数据，构建企业级RAG应用</div>
+                        <div class="card-meta">
+                            <span>⭐ 35k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/openai/openai-cookbook" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📚</div>
+                            <div class="card-title">OpenAI Cookbook</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-green">官方示例</span>
+                            <span class="tag tag-purple">最佳实践</span>
+                        </div>
+                        <div class="card-desc">OpenAI官方示例集，涵盖API使用、Embedding、Function Calling</div>
+                        <div class="card-meta">
+                            <span>⭐ 60k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/anthropics/anthropic-cookbook" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🧪</div>
+                            <div class="card-title">Anthropic Cookbook</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">Claude</span>
+                            <span class="tag tag-blue">最佳实践</span>
+                        </div>
+                        <div class="card-desc">Claude API使用示例，Tool Use、Prompt优化、多模态应用</div>
+                        <div class="card-meta">
+                            <span>⭐ 5k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/microsoft/autogen" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🤖</div>
+                            <div class="card-title">AutoGen</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">多Agent</span>
+                            <span class="tag tag-purple">微软</span>
+                        </div>
+                        <div class="card-desc">微软多Agent对话框架，学习多智能体协作系统设计</div>
+                        <div class="card-meta">
+                            <span>⭐ 30k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/crewAIInc/crewAI" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">👥</div>
+                            <div class="card-title">CrewAI</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">Agent协作</span>
+                            <span class="tag tag-green">角色扮演</span>
+                        </div>
+                        <div class="card-desc">AI Agent协作框架，定义角色、任务、流程，构建AI团队</div>
+                        <div class="card-meta">
+                            <span>⭐ 20k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/huggingface/peft" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🔧</div>
+                            <div class="card-title">PEFT</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">模型微调</span>
+                            <span class="tag tag-green">LoRA</span>
+                        </div>
+                        <div class="card-desc">参数高效微调库，LoRA/QLoRA/Prefix Tuning实现</div>
+                        <div class="card-meta">
+                            <span>⭐ 16k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/hiyouga/LLaMA-Factory" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🏭</div>
+                            <div class="card-title">LLaMA-Factory</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">中文</span>
+                            <span class="tag tag-purple">微调工具</span>
+                        </div>
+                        <div class="card-desc">一站式LLM微调工具，支持100+模型，WebUI可视化训练</div>
+                        <div class="card-meta">
+                            <span>⭐ 30k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">💡</span>
+                    <h2 class="section-title">学习型项目推荐</h2>
+                    <span class="section-badge">动手实践</span>
+                </div>
+                <div class="content-grid">
+                    <a href="https://github.com/karpathy/nanoGPT" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🔬</div>
+                            <div class="card-title">nanoGPT</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">GPT</span>
+                            <span class="tag tag-green">教学</span>
+                        </div>
+                        <div class="card-desc">Karpathy的GPT教学实现，600行代码理解Transformer</div>
+                        <div class="card-meta">
+                            <span>⭐ 35k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/karpathy/minGPT" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📝</div>
+                            <div class="card-title">minGPT</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">极简实现</span>
+                        </div>
+                        <div class="card-desc">最小化GPT实现，300行PyTorch代码，入门首选</div>
+                        <div class="card-meta">
+                            <span>⭐ 20k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/karpathy/llm.c" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">⚡</div>
+                            <div class="card-title">llm.c</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">C语言</span>
+                            <span class="tag tag-purple">CUDA</span>
+                        </div>
+                        <div class="card-desc">纯C/CUDA实现LLM训练，理解底层计算原理</div>
+                        <div class="card-meta">
+                            <span>⭐ 25k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/naklecha/llama3-from-scratch" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🦙</div>
+                            <div class="card-title">LLaMA3 from Scratch</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">LLaMA</span>
+                            <span class="tag tag-green">从零实现</span>
+                        </div>
+                        <div class="card-desc">从零实现LLaMA3推理，逐行代码理解架构细节</div>
+                        <div class="card-meta">
+                            <span>⭐ 15k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/chenzomi12/AISystem" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🏗️</div>
+                            <div class="card-title">AI System</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">中文</span>
+                            <span class="tag tag-blue">系统设计</span>
+                        </div>
+                        <div class="card-desc">AI系统全栈教程，涵盖硬件、编译器、分布式训练</div>
+                        <div class="card-meta">
+                            <span>⭐ 10k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/datawhalechina/llm-cookbook" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📖</div>
+                            <div class="card-title">LLM Cookbook</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">中文</span>
+                            <span class="tag tag-purple">教程</span>
+                        </div>
+               <div class="card-desc">Datawhale大模型教程，Prompt/RAG/微调/部署全流程</div>
+                        <div class="card-meta">
+                  <span>⭐ 10k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/labmlai/annotated_deep_learning_paper_implementations" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📑</div>
+                            <div class="card-title">Papers Implementations</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">论文复现</span>
+                        </div>
+                        <div class="card-desc">60+深度学习论文的PyTorch实现，带详细注释</div>
+                        <div class="card-meta">
+                            <span>⭐ 55k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/microsoft/generative-ai-for-beginners" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🎓</div>
+                            <div class="card-title">Generative AI for Beginners</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">入门</span>
+                            <span class="tag tag-green">微软</span>
+                        </div>
+                        <div class="card-desc">微软生成式AI入门课程，18课时系统学习</div>
+                        <div class="card-meta">
+                            <span>⭐ 65k+</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tab Panel: 学习资源 -->
+        <div id="resources" class="tab-panel">
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">🎓</span>
+                    <h2 class="section-title">经典课程</h2>
+                    <span class="section-badge">系统化学习</span>
+                </div>
+                <div class="content-grid">
+                    <a href="https://www.coursera.org/learn/machine-learning" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🎯</div>
+                            <div class="card-title">吴恩达《机器学习》</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-green">入门必修</span>
+                            <span class="tag tag-blue">Coursera</span>
+                        </div>
+                        <div class="card-desc">机器学习入门经典，涵盖监督学习、无监督学习、最佳实践</div>
+                        <div class="card-meta">
+                            <span>coursera.org</span>
+                            <span>↗ 免费旁听</span>
+                        </div>
+                    </a>
+                    <a href="https://www.coursera.org/specializations/deep-learning" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🧠</div>
+                            <div class="card-title">吴恩达《深度学习专项》</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">深度学习</span>
+                            <span class="tag tag-blue">5门课程</span>
+                        </div>
+                        <div class="card-desc">CNN、RNN、优化算法、结构化ML项目、序列模型完整体系</div>
+                        <div class="card-meta">
+                            <span>coursera.org</span>
+                            <span>↗ 免费旁听</span>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/playlist?list=PLJV_el3uVTsPy9oCRY30oBPNLCo89yu49" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📺</div>
+                            <div class="card-title">李宏毅《机器学习》</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">中文</span>
+                            <span class="tag tag-purple">深入浅出</span>
+                        </div>
+                        <div class="card-desc">台大教授，讲解生动有趣，涵盖最新Transformer、生成模型</div>
+                        <div class="card-meta">
+                            <span>youtube.com</span>
+                            <span>↗ 免费观看</span>
+                        </div>
+                    </a>
+                    <a href="https://karpathy.ai/zero-to-hero.html" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">⭐</div>
+                            <div class="card-title">Karpathy《Zero to Hero》</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">LLM</span>
+                            <span class="tag tag-green">实战</span>
+                        </div>
+                        <div class="card-desc">前OpenAI总监亲授，从零手写神经网络到GPT，代码驱动</div>
+                        <div class="card-meta">
+                            <span>karpathy.ai</span>
+                            <span>↗ 免费观看</span>
+                        </div>
+                    </a>
+                    <a href="https://cs231n.stanford.edu/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🖼️</div>
+                            <div class="card-title">Stanford CS231n</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">计算机视觉</span>
+                            <span class="tag tag-purple">CNN</span>
+                        </div>
+                        <div class="card-desc">斯坦福计算机视觉课程，深入理解卷积神经网络</div>
+                        <div class="card-meta">
+                            <span>stanford.edu</span>
+                            <span>↗ 课程主页</span>
+                        </div>
+                    </a>
+                    <a href="https://web.stanford.edu/class/cs224n/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">💬</div>
+                            <div class="card-title">Stanford CS224n</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">NLP</span>
+                            <span class="tag tag-purple">Transformer</span>
+                        </div>
+                        <div class="card-desc">NLP深度学习课程，词向量、注意力机制、预训练模型</div>
+                        <div class="card-meta">
+                            <span>stanford.edu</span>
+                            <span>↗ 课程主页</span>
+                        </div>
+                    </a>
+                    <a href="https://course.fast.ai/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🚀</div>
+                            <div class="card-title">Fast.ai 实战课程</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-green">实战优先</span>
+                            <span class="tag tag-blue">Top-down</span>
+                        </div>
+                        <div class="card-desc">自上而下学习法，快速上手深度学习实战项目</div>
+                        <div class="card-meta">
+                            <span>fast.ai</span>
+                            <span>↗ 免费课程</span>
+                        </div>
+                    </a>
+                    <a href="https://fullstackdeeplearning.com/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🏗️</div>
+                            <div class="card-title">Full Stack Deep Learning</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">MLOps</span>
+                            <span class="tag tag-green">工程化</span>
+                        </div>
+                        <div class="card-desc">从实验到生产，完整的深度学习工程化实践课程</div>
+                        <div class="card-meta">
+                            <span>fullstackdeeplearning.com</span>
+                            <span>↗ 免费课程</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">📚</span>
+                    <h2 class="section-title">必读书籍</h2>
+                    <span class="section-badge">深入理解</span>
+                </div>
+                <div class="content-grid">
+                    <a href="https://www.deeplearningbook.org/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📖</div>
+                            <div class="card-title">《Deep Learning》花书</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">理论经典</span>
+                        </div>
+                        <div class="card-desc">Goodfellow等著，深度学习理论圣经，数学基础扎实</div>
+                        <div class="card-meta">
+                            <span>deeplearningbook.org</span>
+                            <span>↗ 在线阅读</span>
+                        </div>
+                    </a>
+                    <a href="https://d2l.ai/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📘</div>
+                            <div class="card-title">《动手学深度学习》</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-green">代码实战</span>
+                            <span class="tag tag-orange">中文</span>
+                        </div>
+                        <div class="card-desc">李沐著，理论+代码结合，PyTorch/TensorFlow双版本</div>
+                        <div class="card-meta">
+                            <span>d2l.ai</span>
+                            <span>↗ 在线阅读</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/datawhalechina/pumpkin-book" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🎃</div>
+                            <div class="card-title">西瓜书 + 南瓜书</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">中文</span>
+                            <span class="tag tag-blue">公式详解</span>
+                        </div>
+                        <div class="card-desc">周志华《机器学习》+ 南瓜书公式推导，中文ML入门首选</div>
+                        <div class="card-meta">
+                            <span>github.com</span>
+                            <span>↗ 开源</span>
+                        </div>
+                    </a>
+                    <a href="https://www.statlearning.com/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📊</div>
+                            <div class="card-title">《统计学习导论》ISLR</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">统计基础</span>
+                        </div>
+                        <div class="card-desc">统计学习入门经典，配套R/Python代码实现</div>
+                        <div class="card-meta">
+                            <span>statlearning.com</span>
+                            <span>↗ 免费PDF</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">🔗</span>
+                    <h2 class="section-title">优质社区与博客</h2>
+                    <span class="section-badge">前沿追踪</span>
+                </div>
+                <div class="content-grid">
+                    <a href="https://huggingface.co/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🤗</div>
+                            <div class="card-title">HuggingFace</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">模型中心</span>
+                            <span class="tag tag-green">必备</span>
+                        </div>
+                        <div class="card-desc">AI界的GitHub，海量预训练模型、数据集、Spaces演示</div>
+                        <div class="card-meta">
+                            <span>huggingface.co</span>
+                            <span>↗ 访问</span>
+                        </div>
+                    </a>
+                    <a href="https://paperswithcode.com/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📄</div>
+                            <div class="card-title">Papers With Code</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">论文+代码</span>
+                        </div>
+                        <div class="card-desc">论文配套代码、SOTA排行榜、方法对比一站式平台</div>
+                        <div class="card-meta">
+                            <span>paperswithcode.com</span>
+                            <span>↗ 访问</span>
+                        </div>
+                    </a>
+                    <a href="https://arxiv.org/list/cs.LG/recent" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📝</div>
+                            <div class="card-title">arXiv CS.LG</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">最新论文</span>
+                        </div>
+                        <div class="card-desc">机器学习最新论文预印本，追踪前沿研究必备</div>
+                        <div class="card-meta">
+                            <span>arxiv.org</span>
+                            <span>↗ 访问</span>
+                        </div>
+                    </a>
+                    <a href="https://www.reddit.com/r/MachineLearning/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">💬</div>
+                            <div class="card-title">r/MachineLearning</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">讨论社区</span>
+                        </div>
+                        <div class="card-desc">最活跃的ML社区，论文讨论、行业动态、求职交流</div>
+                        <div class="card-meta">
+                            <span>reddit.com</span>
+                            <span>↗ 访问</span>
+                        </div>
+                    </a>
+                    <a href="https://lilianweng.github.io/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">✨</div>
+                            <div class="card-title">Lil'Log</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">深度解析</span>
+                            <span class="tag tag-green">OpenAI</span>
+                        </div>
+                        <div class="card-desc">OpenAI研究员Lilian Weng的技术博客，深度综述必读</div>
+                        <div class="card-meta">
+                            <span>github.io</span>
+                            <span>↗ 访问</span>
+                        </div>
+                    </a>
+                    <a href="https://jalammar.github.io/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📊</div>
+                            <div class="card-title">Jay Alammar's Blog</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">可视化</span>
+                        </div>
+                        <div class="card-desc">图解Transformer、GPT、BERT，复杂概念可视化讲解</div>
+                        <div class="card-meta">
+                            <span>github.io</span>
+                            <span>↗ 访问</span>
+                        </div>
+                    </a>
+                    <a href="https://colah.github.io/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🎨</div>
+                            <div class="card-title">Colah's Blog</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">经典博客</span>
+                        </div>
+                        <div class="card-desc">LSTM、Word2Vec可视化经典文章，理解深度学习必读</div>
+                        <div class="card-meta">
+                            <span>github.io</span>
+                            <span>↗ 访问</span>
+                        </div>
+                    </a>
+                    <a href="https://www.anthropic.com/research" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🧪</div>
+                            <div class="card-title">Anthropic Research</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">AI安全</span>
+                        </div>
+                        <div class="card-desc">Claude背后的研究，AI安全、可解释性、对齐研究</div>
+                        <div class="card-meta">
+                            <span>anthropic.com</span>
+                            <span>↗ 访问</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">🔧</span>
+                    <h2 class="section-title">开发工具与框架</h2>
+                    <span class="section-badge">实战必备</span>
+                </div>
+                <div class="content-grid">
+                    <a href="https://pytorch.org/tutorials/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🔥</div>
+                            <div class="card-title">PyTorch</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">深度学习</span>
+                            <span class="tag tag-green">研究首选</span>
+                        </div>
+                        <div class="card-desc">最流行的深度学习框架，动态计算图，Pythonic设计</div>
+                        <div class="card-meta">
+                            <span>pytorch.org</span>
+                            <span>↗ 官方教程</span>
+                        </div>
+                    </a>
+                    <a href="https://huggingface.co/docs/transformers" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🤗</div>
+                            <div class="card-title">Transformers库</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">预训练模型</span>
+                        </div>
+                        <div class="card-desc">一行代码加载BERT、GPT、LLaMA等主流预训练模型</div>
+                        <div class="card-meta">
+                            <span>huggingface.co</span>
+                            <span>↗ 文档</span>
+                        </div>
+                    </a>
+                    <a href="https://python.langchain.com/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🦜</div>
+                            <div class="card-title">LangChain</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">LLM应用</span>
+                            <span class="tag tag-blue">Agent</span>
+                        </div>
+                        <div class="card-desc">LLM应用开发框架，快速构建RAG、Agent、Chain</div>
+                        <div class="card-meta">
+                            <span>langchain.com</span>
+                            <span>↗ 文档</span>
+                        </div>
+                    </a>
+                    <a href="https://docs.llamaindex.ai/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🦙</div>
+                            <div class="card-title">LlamaIndex</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">RAG</span>
+                            <span class="tag tag-green">数据框架</span>
+                        </div>
+                        <div class="card-desc">连接LLM与私有数据，构建知识增强应用的首选框架</div>
+                        <div class="card-meta">
+                            <span>llamaindex.ai</span>
+                            <span>↗ 文档</span>
+                        </div>
+                    </a>
+                    <a href="https://docs.vllm.ai/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">⚡</div>
+                            <div class="card-title">vLLM</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">推理加速</span>
+                        </div>
+                        <div class="card-desc">高性能LLM推理引擎，PagedAttention技术，吞吐量提升24x</div>
+                        <div class="card-meta">
+                            <span>vllm.ai</span>
+                            <span>↗ 文档</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/ggerganov/llama.cpp" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🔧</div>
+                            <div class="card-title">llama.cpp</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-blue">本地部署</span>
+                            <span class="tag tag-green">量化</span>
+                        </div>
+                        <div class="card-desc">纯C++实现LLM推理，支持CPU运行，量化模型首选</div>
+                        <div class="card-meta">
+                            <span>github.com</span>
+                            <span>↗ GitHub</span>
+                        </div>
+                    </a>
+                    <a href="https://wandb.ai/site" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📊</div>
+                            <div class="card-title">Weights & Biases</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">实验追踪</span>
+                        </div>
+                        <div class="card-desc">ML实验追踪、可视化、团队协作，免费个人版</div>
+                        <div class="card-meta">
+                            <span>wandb.ai</span>
+                            <span>↗ 注册</span>
+                        </div>
+                    </a>
+                    <a href="https://mlflow.org/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📦</div>
+                            <div class="card-title">MLflow</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-green">MLOps</span>
+                            <span class="tag tag-blue">开源</span>
+                        </div>
+                        <div class="card-desc">开源MLOps平台，实验管理、模型注册、部署一体化</div>
+                        <div class="card-meta">
+                            <span>mlflow.org</span>
+                            <span>↗ 文档</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-icon">☁️</span>
+                    <h2 class="section-title">云平台与GPU资源</h2>
+                    <span class="section-badge">算力获取</span>
+                </div>
+                <div class="content-grid">
+                    <a href="https://colab.research.google.com/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">📓</div>
+                            <div class="card-title">Google Colab</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-green">免费GPU</span>
+                            <span class="tag tag-blue">Jupyter</span>
+                        </div>
+                        <div class="card-desc">免费T4 GPU，快速实验首选，与Google Drive集成</div>
+                        <div class="card-meta">
+                            <span>google.com</span>
+                            <span>🆓 免费可用</span>
+                        </div>
+                    </a>
+                    <a href="https://www.kaggle.com/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🏆</div>
+                            <div class="card-title">Kaggle</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-orange">竞赛平台</span>
+                            <span class="tag tag-green">免费GPU</span>
+                        </div>
+                        <div class="card-desc">数据科学竞赛、免费GPU/TPU、海量公开数据集</div>
+                        <div class="card-meta">
+                            <span>kaggle.com</span>
+                            <span>🆓 免费可用</span>
+                        </div>
+                    </a>
+                    <a href="https://lambdalabs.com/service/gpu-cloud" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">🖥️</div>
+                            <div class="card-title">Lambda Labs</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-purple">A100/H100</span>
+                        </div>
+                        <div class="card-desc">高性价比GPU云，按需租用A100/H100，无最低消费</div>
+                        <div class="card-meta">
+                            <span>lambdalabs.com</span>
+                            <span>💰 按需付费</span>
+                        </div>
+                    </a>
+                    <a href="https://vast.ai/" target="_blank" class="content-card">
+                        <div class="card-header">
+                            <div class="card-icon">💎</div>
+                            <div class="card-title">Vast.ai</div>
+                        </div>
+                        <div class="card-tags">
+                            <span class="tag tag-green">低价GPU</span>
+                        </div>
+                        <div class="card-desc">GPU租用市场，价格透明，适合长时间训练任务</div>
+                        <div class="card-meta">
+                            <span>vast.ai</span>
+                            <span>💰 按需付费</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 AI研发进阶之路 · 持续学习，不断进步</p>
+        </footer>
+    </div>
+
+    <script>
+        // Tab切换
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // 移除所有active
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+
+                // 添加active
+                btn.classList.add('active');
+                const tabId = btn.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // 折叠面板切换
+        function toggleCollapsible(header) {
+            const collapsible = header.parentElement;
+            collapsible.classList.toggle('open');
+        }
+
+        // 全部展开/折叠
+        function toggleAllCollapsible() {
+            const collapsibles = document.querySelectorAll('.collapsible');
+            const allOpen = [...collapsibles].every(c => c.classList.contains('open'));
+
+            collapsibles.forEach(c => {
+                if (allOpen) {
+                    c.classList.remove('open');
+                } else {
+                    c.classList.add('open');
+                }
+            });
+        }
+
+        // 知识维度展开
+        function toggleDimension(header) {
+            const card = header.parentElement;
+            card.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
