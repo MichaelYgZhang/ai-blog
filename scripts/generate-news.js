@@ -2,8 +2,10 @@ const OpenAI = require('openai');
 const fs = require('fs');
 const path = require('path');
 
+// 支持 DeepSeek API (兼容OpenAI接口)
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
+  apiKey: process.env.DEEPSEEK_API_KEY,
+  baseURL: 'https://api.deepseek.com'
 });
 
 // 获取日期信息
@@ -62,7 +64,7 @@ async function generateDailyNews(dateInfo) {
 5. 只返回JSON，不要其他内容`;
 
   const completion = await openai.chat.completions.create({
-    model: "gpt-4o-mini",
+    model: "deepseek-chat",  // DeepSeek V3
     messages: [
       { role: "system", content: "你是一个AI行业资讯专家，只返回JSON格式数据。" },
       { role: "user", content: prompt }
@@ -99,7 +101,7 @@ ${JSON.stringify(recentNews, null, 2)}
 - 重要内容加粗`;
 
   const completion = await openai.chat.completions.create({
-    model: "gpt-4o-mini",
+    model: "deepseek-chat",  // DeepSeek V3
     messages: [
       { role: "system", content: "你是一个AI行业分析师，生成高质量的行业报告。" },
       { role: "user", content: prompt }
