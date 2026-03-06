@@ -694,6 +694,9 @@
             .header-title {
                 font-size: 24px;
             }
+            .daily-news-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 600px) {
@@ -702,6 +705,185 @@
             }
             .container {
                 padding: 16px 12px;
+            }
+        }
+
+        /* Daily News Section */
+        .daily-news {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.08) 0%, rgba(9, 105, 218, 0.08) 100%);
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            border-radius: var(--radius-xl);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .daily-news-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .daily-news-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .daily-news-title h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+
+        .live-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            background: linear-gradient(135deg, #f5576c, #f093fb);
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: var(--radius-pill);
+        }
+
+        .live-badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: white;
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .daily-news-date {
+            font-size: 14px;
+            color: var(--color-text-secondary);
+        }
+
+        .daily-news-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+        }
+
+        .news-category {
+            background: var(--color-bg-white);
+            border-radius: var(--radius-md);
+            padding: 16px;
+            border: 1px solid var(--color-border-light);
+            transition: all 0.2s ease;
+        }
+
+        .news-category:hover {
+            box-shadow: var(--shadow-card);
+            transform: translateY(-2px);
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--color-border-light);
+        }
+
+        .category-icon {
+            font-size: 18px;
+        }
+
+        .category-name {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+
+        .category-count {
+            margin-left: auto;
+            padding: 2px 8px;
+            background: var(--color-bg);
+            border-radius: var(--radius-pill);
+            font-size: 11px;
+            color: var(--color-text-secondary);
+        }
+
+        .news-list {
+            list-style: none;
+        }
+
+        .news-item {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--color-border-light);
+            font-size: 13px;
+            color: var(--color-text-secondary);
+            line-height: 1.4;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .news-item a {
+            color: var(--color-text-primary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .news-item a:hover {
+            color: var(--color-primary);
+        }
+
+        .news-item .hot {
+            color: #f5576c;
+            font-size: 11px;
+            margin-left: 4px;
+        }
+
+        .update-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(124, 58, 237, 0.2);
+            font-size: 12px;
+            color: var(--color-text-tertiary);
+        }
+
+        .update-info a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .update-info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 1100px) {
+            .daily-news-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .daily-news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .daily-news-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -715,6 +897,78 @@
             <p class="header-subtitle">系统化学习路径 · 实战项目驱动 · 前沿技术追踪 · 持续进阶成长</p>
             <a href="roadmap.html" style="display: inline-block; margin-top: 20px; padding: 12px 28px; background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%); color: white; text-decoration: none; border-radius: 30px; font-weight: 600; font-size: 15px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);">🗺️ 查看完整进阶路线图</a>
         </header>
+
+        <!-- Daily AI News -->
+        <div class="daily-news" id="daily-news">
+            <div class="daily-news-header">
+                <div class="daily-news-title">
+                    <h2>📰 每日AI快讯</h2>
+                    <span class="live-badge">每日18:00更新</span>
+                </div>
+                <span class="daily-news-date" id="news-date">加载中...</span>
+            </div>
+            <div class="daily-news-grid" id="news-grid">
+                <!-- 大模型 -->
+                <div class="news-category">
+                    <div class="category-header">
+                        <span class="category-icon">🧠</span>
+                        <span class="category-name">大模型</span>
+                        <span class="category-count" id="count-llm">-</span>
+                    </div>
+                    <ul class="news-list" id="news-llm">
+                        <li class="news-item">加载中...</li>
+                    </ul>
+                </div>
+                <!-- AI Coding -->
+                <div class="news-category">
+                    <div class="category-header">
+                        <span class="category-icon">💻</span>
+                        <span class="category-name">AI Coding</span>
+                        <span class="category-count" id="count-coding">-</span>
+                    </div>
+                    <ul class="news-list" id="news-coding">
+                        <li class="news-item">加载中...</li>
+                    </ul>
+                </div>
+                <!-- AI应用 -->
+                <div class="news-category">
+                    <div class="category-header">
+                        <span class="category-icon">📱</span>
+                        <span class="category-name">AI应用</span>
+                        <span class="category-count" id="count-apps">-</span>
+                    </div>
+                    <ul class="news-list" id="news-apps">
+                        <li class="news-item">加载中...</li>
+                    </ul>
+                </div>
+                <!-- AI行业 -->
+                <div class="news-category">
+                    <div class="category-header">
+                        <span class="category-icon">📊</span>
+                        <span class="category-name">AI行业</span>
+                        <span class="category-count" id="count-industry">-</span>
+                    </div>
+                    <ul class="news-list" id="news-industry">
+                        <li class="news-item">加载中...</li>
+                    </ul>
+                </div>
+                <!-- 研究论文 -->
+                <div class="news-category">
+                    <div class="category-header">
+                        <span class="category-icon">📄</span>
+                        <span class="category-name">研究论文</span>
+                        <span class="category-count" id="count-research">-</span>
+                    </div>
+                    <ul class="news-list" id="news-research">
+                        <li class="news-item">加载中...</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="update-info">
+                <span>⏰ 上次更新: <span id="last-update">-</span></span>
+                <a href="https://github.com/MichaelYgZhang/ai-blog" target="_blank">查看历史快讯 →</a>
+            </div>
+        </div>
 
         <!-- Stats Grid -->
         <div class="stats-grid">
@@ -2078,6 +2332,97 @@
             const card = header.parentElement;
             card.classList.toggle('open');
         }
+
+        // 加载每日AI快讯
+        async function loadDailyNews() {
+            try {
+                const response = await fetch('data/daily-news.json?t=' + Date.now());
+                if (!response.ok) throw new Error('No data');
+                const data = await response.json();
+                renderNews(data);
+            } catch (e) {
+                // 如果没有数据文件，显示默认内容
+                renderDefaultNews();
+            }
+        }
+
+        function renderNews(data) {
+            document.getElementById('news-date').textContent = data.date || '今日';
+            document.getElementById('last-update').textContent = data.updateTime || '-';
+
+            const categories = {
+                'llm': { list: 'news-llm', count: 'count-llm', data: data.llm || [] },
+                'coding': { list: 'news-coding', count: 'count-coding', data: data.coding || [] },
+                'apps': { list: 'news-apps', count: 'count-apps', data: data.apps || [] },
+                'industry': { list: 'news-industry', count: 'count-industry', data: data.industry || [] },
+                'research': { list: 'news-research', count: 'count-research', data: data.research || [] }
+            };
+
+            Object.keys(categories).forEach(key => {
+                const cat = categories[key];
+                const listEl = document.getElementById(cat.list);
+                const countEl = document.getElementById(cat.count);
+
+                countEl.textContent = cat.data.length;
+
+                if (cat.data.length === 0) {
+                    listEl.innerHTML = '<li class="news-item" style="color: var(--color-text-tertiary);">暂无更新</li>';
+                } else {
+                    listEl.innerHTML = cat.data.map(item => {
+                        const hot = item.hot ? '<span class="hot">🔥</span>' : '';
+                        if (item.url) {
+                            return `<li class="news-item"><a href="${item.url}" target="_blank">${item.title}</a>${hot}</li>`;
+                        }
+                        return `<li class="news-item">${item.title}${hot}</li>`;
+                    }).join('');
+                }
+            });
+        }
+
+        function renderDefaultNews() {
+            const today = new Date();
+            const dateStr = today.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+            document.getElementById('news-date').textContent = dateStr;
+            document.getElementById('last-update').textContent = '等待首次更新';
+
+            // 默认示例数据
+            const defaultData = {
+           llm: [
+                    { title: 'Claude 3.5 Sonnet 持续领跑编程能力', hot: true },
+                    { title: 'GPT-4 Turbo 上下文扩展至128K' },
+                    { title: 'Gemini 1.5 Pro 多模态能力增强' }
+                ],
+                coding: [
+                    { title: 'Cursor 成为最受欢迎AI编辑器', hot: true },
+                    { title: 'GitHub Copilot 支持多文件编辑' },
+                    { title: 'Windsurf 发布新版本' }
+                ],
+                apps: [
+                    { title: 'ChatGPT 推出高级语音模式' },
+                    { title: 'Perplexity 搜索体验升级' },
+                    { title: 'Midjourney V6 画质提升' }
+                ],
+                industry: [
+                    { title: 'AI创业公司融资持续火热', hot: true },
+                    { title: '各大厂商加速大模型落地' },
+                    { title: 'AI监管政策逐步明朗' }
+                ],
+                research: [
+                    { title: 'Mamba架构挑战Transformer', hot: true },
+                    { title: 'MoE混合专家模型研究进展' },
+                    { title: '多模态统一模型成为趋势' }
+                ]
+            };
+
+            renderNews({
+                date: dateStr,
+                updateTime: '示例数据',
+                ...defaultData
+            });
+        }
+
+        // 页面加载时获取新闻
+        document.addEventListener('DOMContentLoaded', loadDailyNews);
     </script>
 </body>
 </html>

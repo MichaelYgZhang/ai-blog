@@ -1,0 +1,34 @@
+{
+  "date": "2024年3月6日",
+  "updateTime": "2024-03-06 18:00",
+  "llm": [
+    { "title": "Claude 3.5 Sonnet 编程能力持续领先", "url": "https://www.anthropic.com", "hot": true },
+    { "title": "GPT-4 Turbo 上下文窗口扩展至128K", "url": "https://openai.com" },
+    { "title": "Gemini 1.5 Pro 支持100万token上下文", "url": "https://deepmind.google" },
+    { "title": "Llama 3 开源模型性能对标GPT-4", "url": "https://llama.meta.com" }
+  ],
+  "coding": [
+    { "title": "Cursor 成为最受欢迎的AI代码编辑器", "url": "https://cursor.com", "hot": true },
+    { "title": "GitHub Copilot 支持多文件编辑", "url": "https://github.com/features/copilot" },
+    { "title": "Windsurf 编辑器发布重大更新", "url": "https://codeium.com/windsurf" },
+    { "title": "Devin AI 软件工程师引发行业关注", "url": "https://devin.ai" }
+  ],
+  "apps": [
+    { "title": "ChatGPT 高级语音模式全面开放", "url": "https://chat.openai.com", "hot": true },
+    { "title": "Perplexity AI 搜索体验全面升级", "url": "https://perplexity.ai" },
+    { "title": "Midjourney V6 画质大幅提升", "url": "https://midjourney.com" },
+    { "title": "Sora 视频生成引领AI视频革命", "url": "https://openai.com/sora" }
+  ],
+  "industry": [
+    { "title": "AI创业公司2024年融资创新高", "hot": true },
+    { "title": "英伟达市值突破2万亿美元", "url": "https://nvidia.com" },
+    { "title": "各大云厂商加速大模型服务落地" },
+    { "title": "AI芯片竞争进入白热化阶段" }
+  ],
+  "research": [
+    { "title": "Mamba状态空间模型挑战Transformer", "url": "https://arxiv.org/abs/2312.00752", "hot": true },
+    { "title": "MoE混合专家架构成为主流方向", "url": "https://arxiv.org/abs/2401.04088" },
+    { "title": "多模态大模型统一架构研究进展", "url": "https://arxiv.org" },
+    { "title": "RLHF与DPO对齐技术持续演进" }
+  ]
+}
