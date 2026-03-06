@@ -24,6 +24,10 @@ jobs:
       - name: Install dependencies
         run: npm install openai
 
+      - name: Create archive directories
+        run: |
+          mkdir -p archives/daily archives/weekly archives/monthly archives/quarterly
+
       - name: Generate daily news
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -33,6 +37,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/daily-news.json
-          git diff --staged --quiet || git commit -m "🤖 更新每日AI快讯 $(date +'%Y-%m-%d')"
+          git add data/ archives/
+          git diff --staged --quiet || git commit -m "🤖 更新AI快讯 $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')"
           git push

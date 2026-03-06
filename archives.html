@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI快讯归档 - AI研发进阶之路</title>
+    <style>
+        :root {
+            --color-primary: #7C3AED;
+            --color-primary-light: #8B5CF6;
+            --color-text-primary: #1F2328;
+            --color-text-secondary: #656D76;
+            --color-text-tertiary: #8C959F;
+            --color-bg: #F6F8FA;
+            --color-bg-white: #FFFFFF;
+            --color-border-light: #E8ECEF;
+            --radius-md: 10px;
+            --radius-lg: 14px;
+            --radius-pill: 999px;
+            --shadow-card: 0 2px 8px rgba(31, 35, 40, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, "system-ui", "Segoe UI", "Noto Sans SC", Helvetica, Arial, sans-serif;
+            background: var(--color-bg);
+            color: var(--color-text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 24px 20px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 24px;
+        }
+
+        .back-link:hover { text-decoration: underline; }
+
+        .page-header {
+            text-align: center;
+            padding: 40px 24px;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.08) 0%, rgba(139, 92, 246, 0.04) 100%);
+            border-radius: var(--radius-lg);
+            margin-bottom: 32px;
+        }
+
+        .page-header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .page-header p {
+            color: var(--color-text-secondary);
+            font-size: 16px;
+        }
+
+        /* Tabs */
+        .archive-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            background: var(--color-bg-white);
+            padding: 8px;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--color-border-light);
+        }
+
+        .archive-tab {
+            flex: 1;
+            padding: 12px 20px;
+            border: none;
+            background: transparent;
+            color: var(--color-text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .archive-tab:hover {
+            background: var(--color-bg);
+            color: var(--color-text-primary);
+        }
+
+        .archive-tab.active {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+            color: white;
+        }
+
+        /* Archive Panel */
+        .archive-panel {
+            display: none;
+        }
+
+        .archive-panel.active {
+            display: block;
+        }
+
+        /* Year/Month Groups */
+        .archive-group {
+            background: var(--color-bg-white);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--color-border-light);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .archive-group-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            background: var(--color-bg);
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .archive-group-header:hover {
+            background: rgba(124, 58, 237, 0.06);
+        }
+
+        .archive-group-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .archive-group-count {
+            padding: 4px 12px;
+            background: var(--color-primary);
+            color: white;
+            border-radius: var(--radius-pill);
+            font-size: 12px;
+        }
+
+        .archive-group-arrow {
+            color: var(--color-text-tertiary);
+            transition: transform 0.2s ease;
+        }
+
+        .archive-group.open .archive-group-arrow {
+            transform: rotate(180deg);
+        }
+
+        .archive-group-content {
+            display: none;
+            padding: 16px 20px;
+        }
+
+        .archive-group.open .archive-group-content {
+            display: block;
+        }
+
+        /* Archive Items */
+        .archive-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 12px;
+        }
+
+        .archive-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 16px;
+            background: var(--color-bg);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            color: var(--color-text-primary);
+            transition: all 0.2s ease;
+        }
+
+        .archive-item:hover {
+            background: rgba(124, 58, 237, 0.08);
+            transform: translateX(4px);
+        }
+
+        .archive-item-icon {
+            font-size: 20px;
+        }
+
+        .archive-item-info {
+            flex: 1;
+        }
+
+        .archive-item-title {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .archive-item-meta {
+            font-size: 12px;
+            color: var(--color-text-tertiary);
+            margin-top: 2px;
+        }
+
+        .archive-item-arrow {
+            color: var(--color-text-tertiary);
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .archive-item:hover .archive-item-arrow {
+            opacity: 1;
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--color-text-tertiary);
+        }
+
+        .empty-state-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        /* Stats */
+        .archive-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .stat-card {
+            background: var(--color-bg-white);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: var(--color-text-secondary);
+            margin-top: 4px;
+        }
+
+        @media (max-width: 768px) {
+            .archive-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .archive-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← 返回首页</a>
+
+        <div class="page-header">
+            <h1>📚 AI快讯归档</h1>
+            <p>按日、周、月、季度查看历史AI资讯汇总</p>
+        </div>
+
+        <div class="archive-stats" id="stats">
+            <div class="stat-card">
+                <div class="stat-value" id="stat-daily">0</div>
+                <div class="stat-label">每日快讯</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-weekly">0</div>
+                <div class="stat-label">每周汇总</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-monthly">0</div>
+                <div class="stat-label">每月精选</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-quarterly">0</div>
+                <div class="stat-label">季度报告</div>
+            </div>
+        </div>
+
+        <div class="archive-tabs">
+            <button class="archive-tab active" data-tab="daily">📰 每日快讯</button>
+            <button class="archive-tab" data-tab="weekly">📅 每周汇总</button>
+            <button class="archive-tab" data-tab="monthly">📊 每月精选</button>
+            <button class="archive-tab" data-tab="quarterly">📈 季度报告</button>
+        </div>
+
+        <!-- 每日快讯 -->
+        <div class="archive-panel active" id="panel-daily">
+            <div id="daily-content">
+                <div class="empty-state">
+                    <div class="empty-state-icon">📭</div>
+                    <p>暂无归档内容，快讯将在每日18:00自动生成</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 每周汇总 -->
+        <div class="archive-panel" id="panel-weekly">
+            <div id="weekly-content">
+                <div class="empty-state">
+                    <div class="empty-state-icon">📭</div>
+                    <p>暂无每周汇总，将在每周日自动生成</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 每月精选 -->
+        <div class="archive-panel" id="panel-monthly">
+            <div id="monthly-content">
+                <div class="empty-state">
+                    <div class="empty-state-icon">📭</div>
+                    <p>暂无每月精选，将在每月1日自动生成</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 季度报告 -->
+        <div class="archive-panel" id="panel-quarterly">
+            <div id="quarterly-content">
+                <div class="empty-state">
+                    <div class="empty-state-icon">📭</div>
+                    <p>暂无季度报告，将在每季度初自动生成</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab切换
+        document.querySelectorAll('.archive-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.archive-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.archive-panel').forEach(p => p.classList.remove('active'));
+                tab.classList.add('active');
+                document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
+            });
+        });
+
+        // 折叠组
+        function toggleGroup(header) {
+            header.parentElement.classList.toggle('open');
+        }
+
+        // 加载归档数据
+        async function loadArchives() {
+            try {
+                const response = await fetch('data/archives-index.json?t=' + Date.now());
+                if (!response.ok) throw new Error('No data');
+                const data = await response.json();
+                renderArchives(data);
+            } catch (e) {
+                console.log('No archive data yet');
+            }
+        }
+
+        function renderArchives(data) {
+            // 更新统计
+            document.getElementById('stat-daily').textContent = data.daily?.length || 0;
+            document.getElementById('stat-weekly').textContent = data.weekly?.length || 0;
+            document.getElementById('stat-monthly').textContent = data.monthly?.length || 0;
+            document.getElementById('stat-quarterly').textContent = data.quarterly?.length || 0;
+
+            // 渲染每日快讯
+            if (data.daily && data.daily.length > 0) {
+                const grouped = groupByMonth(data.daily);
+                document.getElementById('daily-content').innerHTML = renderGroupedArchives(grouped, '📰');
+            }
+
+            // 渲染每周汇总
+            if (data.weekly && data.weekly.length > 0) {
+                document.getElementById('weekly-content').innerHTML = renderArchiveList(data.weekly, '📅');
+            }
+
+            // 渲染每月精选
+            if (data.monthly && data.monthly.length > 0) {
+                document.getElementById('monthly-content').innerHTML = renderArchiveList(data.monthly, '📊');
+            }
+
+            // 渲染季度报告
+            if (data.quarterly && data.quarterly.length > 0) {
+                document.getElementById('quarterly-content').innerHTML = renderArchiveList(data.quarterly, '📈');
+            }
+        }
+
+        function groupByMonth(items) {
+            const groups = {};
+            items.forEach(item => {
+                const month = item.date.substring(0, 7); // YYYY-MM
+                if (!groups[month]) groups[month] = [];
+                groups[month].push(item);
+            });
+            return groups;
+        }
+
+        function renderGroupedArchives(grouped, icon) {
+            const months = Object.keys(grouped).sort().reverse();
+            return months.map(month => {
+                const items = grouped[month];
+                const [year, m] = month.split('-');
+                const monthName = `${year}年${parseInt(m)}月`;
+                return `
+                    <div class="archive-group open">
+                        <div class="archive-group-header" onclick="toggleGroup(this)">
+                            <div class="archive-group-title">
+                                <span>📅 ${monthName}</span>
+                                <span class="archive-group-count">${items.length}篇</span>
+                            </div>
+                            <span class="archive-group-arrow">▼</span>
+                        </div>
+                        <div class="archive-group-content">
+                            <div class="archive-list">
+                                ${items.map(item => renderArchiveItem(item, icon)).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderArchiveList(items, icon) {
+            return `
+                <div class="archive-list">
+                    ${items.map(item => renderArchiveItem(item, icon)).join('')}
+                </div>
+            `;
+        }
+
+        function renderArchiveItem(item, icon) {
+            return `
+                <a href="${item.url}" class="archive-item">
+                    <span class="archive-item-icon">${icon}</span>
+                    <div class="archive-item-info">
+                        <div class="archive-item-title">${item.title}</div>
+                        <div class="archive-item-meta">${item.date}</div>
+                    </div>
+                    <span class="archive-item-arrow">→</span>
+                </a>
+            `;
+        }
+
+        document.addEventListener('DOMContentLoaded', loadArchives);
+    </script>
+</body>
+</html>
