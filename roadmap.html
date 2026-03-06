@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI研发进阶路线图 - 从0到专家</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, "system-ui", "Segoe UI", "Noto Sans SC", Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+        }
+
+        .header p {
+            font-size: 18px;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .roadmap {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        /* 中心线 */
+        .roadmap::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(180deg,
+                #667eea 0%,
+                #764ba2 20%,
+                #f093fb 40%,
+                #f5576c 60%,
+                #4facfe 80%,
+                #00f2fe 100%
+            );
+            transform: translateX(-50%);
+            border-radius: 4px;
+        }
+
+        .stage {
+            display: flex;
+            align-items: center;
+            margin-bottom: 80px;
+            position: relative;
+        }
+
+        .stage:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .stage:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .stage-content {
+            width: 45%;
+            padding: 30px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .stage-content:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.1);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .stage:nth-child(odd) .stage-content {
+            margin-right: auto;
+        }
+
+        .stage:nth-child(even) .stage-content {
+            margin-left: auto;
+        }
+
+        .stage-number {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            z-index: 10;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .stage:nth-child(1) .stage-number { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .stage:nth-child(2) .stage-number { background: linear-gradient(135deg, #764ba2, #f093fb); }
+        .stage:nth-child(3) .stage-number { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .stage:nth-child(4) .stage-number { background: linear-gradient(135deg, #f5576c, #4facfe); }
+        .stage:nth-child(5) .stage-number { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+        .stage:nth-child(6) .stage-number { background: linear-gradient(135deg, #00f2fe, #38ef7d); }
+
+        .stage-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+
+        .stage-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+
+        .stage-duration {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 20px;
+            font-size: 13px;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 16px;
+        }
+
+        .stage-desc {
+            font-size: 15px;
+            color: rgba(255,255,255,0.7);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill {
+            padding: 6px 14px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            font-size: 13px;
+            color: rgba(255,255,255,0.9);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.2s ease;
+        }
+
+        .skill:hover {
+            background: rgba(255,255,255,0.2);
+            transform: scale(1.05);
+        }
+
+        /* 里程碑 */
+        .milestone {
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, #f5576c, #f093fb);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .stage:nth-child(even) .milestone {
+            right: auto;
+            left: -20px;
+        }
+
+        /* 最终目标 */
+        .final-goal {
+            text-align: center;
+            margin-top: 40px;
+            padding: 60px 40px;
+            background: linear-gradient(135deg, rgba(56,239,125,0.1), rgba(0,242,254,0.1));
+            border-radius: 30px;
+            border: 2px solid rgba(56,239,125,0.3);
+        }
+
+        .final-goal .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        .final-goal h2 {
+            font-size: 36px;
+            background: linear-gradient(135deg, #38ef7d, #00f2fe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 16px;
+        }
+
+        .final-goal p {
+            font-size: 18px;
+            color: rgba(255,255,255,0.7);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 返回按钮 */
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 12px 24px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 30px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* 时间轴标注 */
+        .timeline-label {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.5);
+            padding: 4px 12px;
+            border-radius: 10px;
+            font-size: 11px;
+            color: rgba(255,255,255,0.6);
+            top: -30px;
+        }
+
+        /* 响应式 */
+        @media (max-width: 900px) {
+            .roadmap::before {
+                left: 30px;
+            }
+
+            .stage {
+                flex-direction: column !important;
+                padding-left: 80px;
+            }
+
+            .stage-content {
+                width: 100% !important;
+                margin: 0 !important;
+            }
+
+            .stage-number {
+                left: 30px;
+                transform: translateX(-50%);
+            }
+
+            .milestone {
+                position: static;
+                transform: none;
+                margin-top: 16px;
+                display: inline-block;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .stage-content {
+                padding: 20px;
+            }
+
+            .stage-title {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-btn">← 返回首页</a>
+
+    <div class="container">
+        <header class="header">
+            <h1>从 0 到 AI 专家</h1>
+            <p>系统化的学习路径，助你成为顶尖AI工程师</p>
+        </header>
+
+        <div class="roadmap">
+            <!-- 阶段1 -->
+            <div class="stage">
+                <div class="stage-content">
+                    <div class="stage-icon">🌱</div>
+                    <h3 class="stage-title">编程与数学基础</h3>
+                    <span class="stage-duration">2-3 个月</span>
+                    <p class="stage-desc">
+                        建立坚实的编程基础，掌握AI必需的数学知识。这是整个旅程的起点，决定了你能走多远。
+                    </p>
+                    <div class="skills">
+                        <span class="skill">Python</span>
+                        <span class="skill">NumPy</span>
+                        <span class="skill">线性代数</span>
+                        <span class="skill">概率统计</span>
+                        <span class="skill">微积分</span>
+                    </div>
+                    <div class="milestone">解锁：能读懂ML论文公式</div>
+                </div>
+                <div class="stage-number">1</div>
+            </div>
+
+            <!-- 阶段2 -->
+            <div class="stage">
+                <div class="stage-content">
+                    <div class="stage-icon">🔬</div>
+                    <h3 class="stage-title">机器学习核心</h3>
+                    <span class="stage-duration">2-3 个月</span>
+                    <p class="stage-desc">
+                        理解经典ML算法原理，掌握特征工程和模型评估。从监督学习到无监督学习，建立ML思维。
+                    </p>
+                    <div class="skills">
+                        <span class="skill">回归/分类</span>
+                        <span class="skill">决策树</span>
+                        <span class="skill">SVM</span>
+                        <span class="skill">特征工程</span>
+                        <span class="skill">sklearn</span>
+                    </div>
+                    <div class="milestone">解锁：独立完成Kaggle项目</div>
+                </div>
+                <div class="stage-number">2</div>
+            </div>
+
+            <!-- 阶段3 -->
+            <div class="stage">
+                <div class="stage-content">
+                    <div class="stage-icon">🧠</div>
+                    <h3 class="stage-title">深度学习精通</h3>
+                    <span class="stage-duration">3-4 个月</span>
+                    <p class="stage-desc">
+                        掌握神经网络原理，精通PyTorch框架。从CNN到Transformer，理解现代深度学习架构。
+                    </p>
+                    <div class="skills">
+                        <span class="skill">PyTorch</span>
+                        <span class="skill">CNN</span>
+                        <span class="skill">RNN/LSTM</span>
+                        <span class="skill">Transformer</span>
+                        <span class="skill">注意力机制</span>
+                    </div>
+                    <div class="milestone">解锁：从零实现Transformer</div>
+                </div>
+                <div class="stage-number">3</div>
+            </div>
+
+            <!-- 阶段4 -->
+            <div class="stage">
+                <div class="stage-content">
+                    <div class="stage-icon">🚀</div>
+                    <h3 class="stage-title">大模型应用开发</h3>
+                    <span class="stage-duration">3-4 个月</span>
+                    <p class="stage-desc">
+                        掌握LLM原理和应用开发。Prompt Engineering、RAG系统、Agent构建，成为AI应用专家。
+                    </p>
+                    <div class="skills">
+                        <span class="skill">LLM原理</span>
+                        <span class="skill">Prompt工程</span>
+                        <span class="skill">RAG系统</span>
+                        <span class="skill">Agent开发</span>
+                        <span class="skill">模型微调</span>
+                    </div>
+                    <div class="milestone">解锁：构建生产级AI应用</div>
+                </div>
+                <div class="stage-number">4</div>
+            </div>
+
+            <!-- 阶段5 -->
+            <div class="stage">
+                <div class="stage-content">
+                    <div class="stage-icon">⚙️</div>
+                    <h3 class="stage-title">AI工程化与系统</h3>
+                    <span class="stage-duration">2-3 个月</span>
+                    <p class="stage-desc">
+                        掌握MLOps全流程，模型部署与优化。分布式训练、推理加速、系统监控，让AI真正落地。
+                    </p>
+                    <div class="skills">
+                        <span class="skill">MLOps</span>
+                        <span class="skill">Docker/K8s</span>
+                        <span class="skill">模型量化</span>
+                        <span class="skill">分布式训练</span>
+                        <span class="skill">vLLM</span>
+                    </div>
+                    <div class="milestone">解锁：优化推理性能10倍</div>
+                </div>
+                <div class="stage-number">5</div>
+            </div>
+
+            <!-- 阶段6 -->
+            <div class="stage">
+                <div class="stage-content">
+                    <div class="stage-icon">🎯</div>
+                    <h3 class="stage-title">前沿探索与创新</h3>
+                    <span class="stage-duration">持续学习</span>
+                    <p class="stage-desc">
+                        深入研究前沿论文，参与开源项目。多模态、具身智能、AI安全，探索AI的未来边界。
+                    </p>
+                    <div class="skills">
+                        <span class="skill">论文研读</span>
+                        <span class="skill">多模态</span>
+                        <span class="skill">AI安全</span>
+                        <span class="skill">开源贡献</span>
+                        <span class="skill">技术分享</span>
+                    </div>
+                    <div class="milestone">解锁：顶会论文发表</div>
+                </div>
+                <div class="stage-number">6</div>
+            </div>
+        </div>
+
+        <!-- 最终目标 -->
+        <div class="final-goal">
+            <div class="icon">👑</div>
+            <h2>AI 领域专家</h2>
+            <p>
+                经过12-18个月的系统学习与实践，你将具备独立设计和实现复杂AI系统的能力，
+                成为能够推动技术创新的AI领域专家。
+            </p>
+        </div>
+    </div>
+</body>
+</html>
