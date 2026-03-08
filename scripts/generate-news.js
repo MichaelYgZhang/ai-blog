@@ -8,9 +8,9 @@ const openai = new OpenAI({
   baseURL: 'https://api.deepseek.com'
 });
 
-// 获取日期信息
+// 获取日期信息（使用北京时间）
 function getDateInfo() {
-  const now = new Date();
+  const now = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }));
   const year = now.getFullYear();
   const month = String(now.getMonth() + 1).padStart(2, '0');
   const day = String(now.getDate()).padStart(2, '0');
@@ -31,6 +31,21 @@ function getDateInfo() {
     localeDateStr: now.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' }),
     updateTime: now.toISOString().slice(0, 16).replace('T', ' ')
   };
+}
+
+// 带重试的API调用
+async function callWithRetry(fn, retries = 3) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      return await fn();
+    } catch (error) {
+      console.error(`⚠️ 第${i + 1}次调用失败: ${error.message}`);
+      if (i === retries - 1) throw error;
+      const delay = (i + 1) * 5000;
+      console.log(`⏳ ${delay / 1000}秒后重试...`);
+      await new Promise(r => setTimeout(r, delay));
+    }
+  }
 }
 
 // 生成每日快讯
@@ -63,7 +78,7 @@ async function generateDailyNews(dateInfo) {
 4. 标题简洁有力，不超过30字
 5. 只返回JSON，不要其他内容`;
 
-  const completion = await openai.chat.completions.create({
+  const completion = await callWithRetry(() => openai.chat.completions.create({
     model: "deepseek-chat",  // DeepSeek V3
     messages: [
       { role: "system", content: "你是一个AI行业资讯专家，只返回JSON格式数据。" },
@@ -71,12 +86,19 @@ async function generateDailyNews(dateInfo) {
     ],
     temperature: 0.7,
     max_tokens: 2000
-  });
+  }));
 
   let content = completion.choices[0].message.content;
   content = content.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
 
-  return JSON.parse(content);
+  try {
+    return JSON.parse(content);
+  } catch (e) {
+    // 尝试提取JSON部分
+    const match = content.match(/\{[\s\S]*\}/);
+    if (match) return JSON.parse(match[0]);
+    throw new Error('无法解析API返回的JSON: ' + content.substring(0, 200));
+  }
 }
 
 // 生成周报/月报/季报
@@ -100,7 +122,7 @@ ${JSON.stringify(recentNews, null, 2)}
 - 列表使用-
 - 重要内容加粗`;
 
-  const completion = await openai.chat.completions.create({
+  const completion = await callWithRetry(() => openai.chat.completions.create({
     model: "deepseek-chat",  // DeepSeek V3
     messages: [
       { role: "system", content: "你是一个AI行业分析师，生成高质量的行业报告。" },
@@ -108,7 +130,7 @@ ${JSON.stringify(recentNews, null, 2)}
     ],
     temperature: 0.7,
     max_tokens: 3000
-  });
+  }));
 
   return completion.choices[0].message.content;
 }
