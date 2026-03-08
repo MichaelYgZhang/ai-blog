@@ -39,4 +39,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add data/ archives/
           git diff --staged --quiet || git commit -m "🤖 更新AI快讯 $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')"
+          git pull --rebase
           git push
