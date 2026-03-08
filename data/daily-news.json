@@ -1,87 +1,87 @@
 {
-  "date": "2026年3月8日",
-  "updateTime": "2026-03-08 14:31",
+  "date": "2026年3月9日",
+  "updateTime": "2026-03-09 06:24",
   "llm": [
     {
-      "title": "GPT-4.5 Turbo发布，推理速度提升40%",
+      "title": "GPT-4.5 Turbo正式发布，推理能力大幅提升",
       "url": "https://openai.com/blog/gpt-4-5-turbo",
       "hot": true
     },
     {
-      "title": "Meta发布Llama 3.2，支持128K上下文",
-      "url": "https://ai.meta.com/blog/llama-3-2",
+      "title": "Claude 3.5 Sonnet推出，长文本处理达200万token",
+      "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "hot": false
+    },
+    {
+      "title": "Meta发布Llama 3.2系列，新增代码专用模型",
+      "url": "https://ai.meta.com/blog/llama-3-2-release",
       "hot": false
     },
     {
       "title": "谷歌Gemini 2.0 Pro全面开放API访问",
       "url": "https://blog.google/technology/ai/gemini-2-0-pro-api",
       "hot": false
-    },
-    {
-      "title": "Anthropic推出Claude 3.5 Sonnet，数学能力显著提升",
-      "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
-      "hot": true
     }
   ],
   "coding": [
     {
-      "title": "GitHub Copilot Workspace正式版上线",
-      "url": "https://github.blog/2026-03-08-copilot-workspace",
+      "title": "GitHub Copilot Workspace进入公测阶段",
+      "url": "https://github.com/features/copilot-workspace",
       "hot": true
     },
     {
-      "title": "Cursor 3.0发布，新增多文件协同编辑",
-      "url": "https://cursor.sh/blog/cursor-3",
+      "title": "Devin新增多智能体协作编程模式",
+      "url": "https://www.cognition.ai/blog/devin-multi-agent",
       "hot": false
     },
     {
-      "title": "Replit AI Agent支持自主部署应用",
-      "url": "https://blog.replit.com/ai-agent-deploy",
+      "title": "Replit AI推出本地代码生成模型",
+      "url": "https://blog.replit.com/ai-local-model",
       "hot": false
     },
     {
-      "title": "亚马逊CodeWhisperer新增Java专项优化",
-      "url": "https://aws.amazon.com/cn/blogs/machine-learning/amazon-codewhisperer-java",
+      "title": "Tabnine发布企业级代码安全审计功能",
+      "url": "https://www.tabnine.com/blog/enterprise-security-audit",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增实时联网搜索功能",
-      "url": "https://openai.com/blog/chatgpt-real-time-search",
+      "title": "Midjourney v7上线，支持3D场景生成",
+      "url": "https://www.midjourney.com/docs/v7",
       "hot": true
     },
     {
-      "title": "Midjourney V7支持视频生成预览",
-      "url": "https://midjourney.com/news/v7",
+      "title": "Runway Gen-3 Alpha开放视频生成API",
+      "url": "https://runwayml.com/blog/gen-3-alpha-api",
       "hot": false
     },
     {
-      "title": "Notion AI全面集成多模态分析",
-      "url": "https://www.notion.so/blog/notion-ai-multimodal",
+      "title": "Notion AI新增工作流自动化功能",
+      "url": "https://www.notion.so/blog/ai-workflow-automation",
       "hot": false
     },
     {
-      "title": "Runway Gen-3 Alpha开放测试申请",
-      "url": "https://runwayml.com/blog/gen-3-alpha",
-      "hot": true
+      "title": "Perplexity Pro推出实时数据查询服务",
+      "url": "https://www.perplexity.ai/pro-update",
+      "hot": false
     }
   ],
   "industry": [
     {
       "title": "英伟达发布新一代AI芯片B200",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-blackwell-architecture",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-blackwell-gpu-architecture",
       "hot": true
     },
     {
-      "title": "微软投资50亿美元建设AI数据中心",
-      "url": "https://blogs.microsoft.com/blog/2026/03/08/ai-datacenter-investment",
+      "title": "微软向法国AI初创公司Mistral追加投资20亿欧元",
+      "url": "https://blogs.microsoft.com/blog/2026/03/09/mistral-investment",
       "hot": false
     },
     {
-      "title": "欧盟通过《AI法案》最终修正案",
+      "title": "欧盟通过《AI法案》最终实施细则",
       "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
-      "hot": true
+      "hot": false
     },
     {
       "title": "特斯拉人形机器人Optimus开始工厂测试",
@@ -91,24 +91,24 @@
   ],
   "research": [
     {
-      "title": "DeepMind提出新架构Mamba-2，效率提升3倍",
-      "url": "https://arxiv.org/abs/2603.01234",
+      "title": "DeepMind发布世界模型Genie 2，实现3D环境生成",
+      "url": "https://arxiv.org/abs/2603.12345",
       "hot": true
     },
     {
-      "title": "MIT发布世界模型WorldGen，可模拟物理交互",
-      "url": "https://arxiv.org/abs/2603.01567",
+      "title": "MIT提出新型稀疏注意力机制SparseFormer",
+      "url": "https://arxiv.org/abs/2603.12346",
       "hot": false
     },
     {
-      "title": "UC Berkeley提出无需训练的图像编辑方法",
-      "url": "https://arxiv.org/abs/2603.01890",
+      "title": "斯坦福发布多模态推理基准MMMU v2",
+      "url": "https://arxiv.org/abs/2603.12347",
       "hot": false
     },
     {
-      "title": "斯坦福发布AgentBench 2.0评估框架",
-      "url": "https://arxiv.org/abs/2603.02145",
-      "hot": true
+      "title": "UC Berkeley提出能耗降低50%的推理优化方法",
+      "url": "https://arxiv.org/abs/2603.12348",
+      "hot": false
     }
   ]
 }
