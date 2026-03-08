@@ -220,7 +220,7 @@ function extractResourceSummary(html) {
   sections.push('### 所有资源卡片\n' + projectCards.join('\n'));
 
   // 提取统计数字
-  const statsRegex = /<div class="stat-value">([^<]+)<\/div>\s*<\/div>\s*<div class="stat-label">([^<]+)<\/div>/g;
+  const statsRegex = /<div class="stat-value">([^<]+)<\/div>\s*<div class="stat-label">([^<]+)<\/div>/g;
   const stats = [];
   while ((m = statsRegex.exec(html)) !== null) {
     stats.push(`- ${m[2]}: ${m[1]}`);
@@ -279,14 +279,20 @@ function updateDefaultNews(html, newsData) {
     const items = (newsData[cat] || []).slice(0, 3);
     const itemLines = items.map(item => {
       const hot = item.hot ? ', hot: true' : '';
-      return `                    { title: '${item.title.replace(/'/g, "\\'")}'${hot} }`;
+      // 转义 JS 字符串中的危险字符
+      const safeTitle = item.title
+        .replace(/\\/g, '\\\\')
+        .replace(/'/g, "\\'")
+        .replace(/\n/g, ' ')
+        .replace(/<\//g, '<\\/');
+      return `                    { title: '${safeTitle}'${hot} }`;
     });
     lines.push(`                ${cat}: [\n${itemLines.join(',\n')}\n                ]`);
   }
   const newDefault = lines.join(',\n');
 
   // 替换 defaultData 对象的内容（从 { 到对应的 }）
-  const pattern = /(const defaultData = \{)\s*\n([\s\S]*?)(\s*\};)/;
+  const pattern = /(const defaultData = \{)\s*\n([\s\S]*?)\n\s*(\};)/;
   if (pattern.test(html)) {
     html = html.replace(pattern, `$1\n${newDefault}\n            $3`);
     console.log('  ✅ 默认新闻数据已更新');
