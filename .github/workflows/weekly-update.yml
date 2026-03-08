@@ -1,0 +1,42 @@
+name: Weekly Content Update
+
+on:
+  schedule:
+    # 北京时间每周一07:00 = UTC 周日23:00
+    - cron: '0 23 * * 0'
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  weekly-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install openai
+
+      - name: Run weekly update
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/weekly-update.js
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add index.html roadmap.html
+          git diff --staged --quiet || git commit -m "🔄 每周内容更新 $(TZ='Asia/Shanghai' date +'%Y-%m-%d')"
+          git stash --include-untracked
+          git pull --rebase
+          git stash pop || true
+          git push
