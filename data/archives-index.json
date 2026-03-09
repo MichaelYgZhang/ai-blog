@@ -34,5 +34,15 @@
     }
   ],
   "monthly": [],
-  "quarterly": []
+  "quarterly": [],
+  "articles": [
+    {
+      "date": "2026-03-09",
+      "title": "用DALL-E 3和GPT-4V构建多模态应用",
+      "articleId": "S6-001",
+      "stage": 6,
+      "stageName": "前沿探索与创新",
+      "url": "archives/articles/2026-03-09-article.md"
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 [
-  {"id":"S6-001","stage":6,"title":"用DALL-E 3和GPT-4V构建多模态应用","techPoints":["多模态API","图文理解","Prompt设计"],"dependencies":[{"stageId":4,"topic":"Prompt工程"}],"status":"pending"},
+  {"id":"S6-001","stage":6,"title":"用DALL-E 3和GPT-4V构建多模态应用","techPoints":["多模态API","图文理解","Prompt设计"],"dependencies":[{"stageId":4,"topic":"Prompt工程"}],"status":"published","publishDate":"2026-03-09"},
   {"id":"S6-002","stage":6,"title":"AI安全红队测试实战指南","techPoints":["对抗攻击","Jailbreak检测","安全评估"],"dependencies":[{"stageId":4,"topic":"大模型应用开发"}],"status":"pending"},
   {"id":"S6-003","stage":6,"title":"复现Attention Is All You Need论文","techPoints":["论文精读","代码复现","消融实验"],"dependencies":[{"stageId":3,"topic":"Transformer架构"}],"status":"pending"},
   {"id":"S6-004","stage":6,"title":"多模态大模型LLaVA原理与实践","techPoints":["视觉编码器","跨模态对齐","指令微调"],"dependencies":[{"stageId":4,"topic":"模型微调"}],"status":"pending"},
