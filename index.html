@@ -694,9 +694,6 @@
             .header-title {
                 font-size: 24px;
             }
-            .daily-news-grid {
-                grid-template-columns: 1fr;
-            }
         }
 
         @media (max-width: 600px) {
@@ -2663,16 +2660,30 @@
             let html = '';
             let inOl = false;
             let inUl = false;
+            let inSubUl = false;
 
             for (let i = 0; i < lines.length; i++) {
                 let line = lines[i];
 
                 // 跳过第一行的一级标题
                 if (i === 0 && line.startsWith('# ')) continue;
-                // 跳过紧跟标题后的描述性段落（第二行非空非标题非列表非分割线）
+                // 跳过紧跟标题后的AI客套话
                 if (i === 1 && line.trim() && !line.startsWith('#') && !line.startsWith('-') && !line.startsWith('*') && line.trim() !== '---') continue;
+                // 跳过第三行如果也是AI客套话（空行后的第一段描述）
+                if (i === 2 && line.trim() === '') continue;
 
-                // 关闭列表
+                // 检测缩进子列表项
+                let subUlMatch = line.match(/^\s{2,}[-*]\s+(.+)/);
+                if (subUlMatch) {
+                    if (!inSubUl) { html += '<ul>'; inSubUl = true; }
+                    html += '<li>' + inlineFormat(subUlMatch[1]) + '</li>';
+                    continue;
+                }
+
+                // 关闭子列表
+                if (inSubUl) { html += '</ul>'; inSubUl = false; }
+
+                // 关闭列表（仅当当前行不是同级列表项时）
                 if (inOl && !line.match(/^\d+\.\s+/)) { html += '</ol>'; inOl = false; }
                 if (inUl && !line.match(/^[-*]\s+/)) { html += '</ul>'; inUl = false; }
 
@@ -2707,6 +2718,7 @@
                 html += '<p>' + inlineFormat(line) + '</p>';
             }
 
+            if (inSubUl) html += '</ul>';
             if (inOl) html += '</ol>';
             if (inUl) html += '</ul>';
 
@@ -2714,6 +2726,12 @@
         }
 
         function inlineFormat(text) {
+            // 先提取链接，避免URL被HTML转义影响
+            const links = [];
+            text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, function(m, linkText, url) {
+                links.push({ text: linkText, url: url });
+                return '%%LINK' + (links.length - 1) + '%%';
+            });
             // 转义HTML
             text = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
             // 加粗
@@ -2722,8 +2740,13 @@
             text = text.replace(/\*(.+?)\*/g, '<em>$1</em>');
             // 行内代码
             text = text.replace(/`(.+?)`/g, '<code>$1</code>');
-            // 链接
-            text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+            // 还原链接（分别对文本和URL做适当转义）
+            text = text.replace(/%%LINK(\d+)%%/g, function(m, idx) {
+                var link = links[parseInt(idx)];
+                var safeText = link.text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                var safeUrl = link.url.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+                return '<a href="' + safeUrl + '" target="_blank">' + safeText + '</a>';
+            });
             return text;
         }
 

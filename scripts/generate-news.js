@@ -29,7 +29,7 @@ function getDateInfo() {
     isEndOfMonth: new Date(year, now.getMonth() + 1, 0).getDate() === parseInt(day),
     isEndOfQuarter: [3, 6, 9, 12].includes(now.getMonth() + 1) && new Date(year, now.getMonth() + 1, 0).getDate() === parseInt(day),
     localeDateStr: now.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' }),
-    updateTime: now.toISOString().slice(0, 16).replace('T', ' ')
+    updateTime: `${year}-${month}-${day} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`
   };
 }
 
@@ -126,7 +126,8 @@ ${JSON.stringify(recentNews, null, 2)}
 - 重要内容加粗
 - 每条动态必须标注信息来源和日期，格式为：**标题** ([来源名称](来源链接), YYYY-MM-DD)
 - 如果快讯数据中包含url、source、date字段，直接使用；如果没有，根据内容推断并标注
-- 在报告末尾添加"## 信息来源"章节，汇总本报告引用的所有来源链接`;
+- 在报告末尾添加"## 信息来源"章节，汇总本报告引用的所有来源链接
+- 直接输出Markdown内容，不要包含任何客套话、开场白或解释性文字`;
 
   const completion = await callWithRetry(() => openai.chat.completions.create({
     model: "deepseek-chat",  // DeepSeek V3
@@ -203,6 +204,68 @@ function updateArchiveIndex(type, newEntry) {
   fs.writeFileSync(indexPath, JSON.stringify(index, null, 2), 'utf-8');
 }
 
+// 收集本周所有每日快讯数据
+function collectWeeklyNews(dateInfo, todayNews) {
+  const dailyDir = path.join(__dirname, '../archives/daily');
+  const allNews = [];
+
+  // 获取本周的日期范围（周一到周日）
+  const now = new Date(dateInfo.year, parseInt(dateInfo.month) - 1, parseInt(dateInfo.day));
+  const dayOfWeek = now.getDay() || 7; // 周日为7
+  for (let offset = dayOfWeek - 1; offset >= 0; offset--) {
+    const d = new Date(now);
+    d.setDate(d.getDate() - offset);
+    const ds = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+    const mdPath = path.join(dailyDir, `${ds}-ai-daily.md`);
+
+    // 尝试读取对应日期的JSON（仅当天的在data/目录下）
+    if (ds === dateInfo.dateStr) {
+      allNews.push({ date: ds, ...todayNews });
+      continue;
+    }
+
+    // 尝试从归档Markdown中提取简要内容
+    if (fs.existsSync(mdPath)) {
+      try {
+        const mdContent = fs.readFileSync(mdPath, 'utf-8');
+        allNews.push({ date: ds, markdown: mdContent });
+      } catch (e) {
+        // 忽略读取失败
+      }
+    }
+  }
+
+  return allNews;
+}
+
+// 收集本月所有每日快讯数据
+function collectMonthlyNews(dateInfo, todayNews) {
+  const dailyDir = path.join(__dirname, '../archives/daily');
+  const allNews = [];
+  const daysInMonth = parseInt(dateInfo.day);
+
+  for (let d = 1; d <= daysInMonth; d++) {
+    const ds = `${dateInfo.year}-${dateInfo.month}-${String(d).padStart(2, '0')}`;
+    const mdPath = path.join(dailyDir, `${ds}-ai-daily.md`);
+
+    if (ds === dateInfo.dateStr) {
+      allNews.push({ date: ds, ...todayNews });
+      continue;
+    }
+
+    if (fs.existsSync(mdPath)) {
+      try {
+        const mdContent = fs.readFileSync(mdPath, 'utf-8');
+        allNews.push({ date: ds, markdown: mdContent });
+      } catch (e) {
+        // 忽略读取失败
+      }
+    }
+  }
+
+  return allNews;
+}
+
 // 主函数
 async function main() {
   const dateInfo = getDateInfo();
@@ -231,9 +294,11 @@ async function main() {
     // 2. 如果是周末，生成周报
     if (dateInfo.isEndOfWeek) {
       console.log('📅 生成每周汇总...');
-      // 读取本周的快讯
-      const weeklyMd = await generateSummary('weekly', dateInfo, newsData);
-      const weekNum = getWeekNumber(new Date());
+      // 收集本周所有每日快讯
+      const weeklyNews = collectWeeklyNews(dateInfo, newsData);
+      console.log(`  📦 收集到 ${weeklyNews.length} 天的快讯数据`);
+      const weeklyMd = await generateSummary('weekly', dateInfo, weeklyNews);
+      const weekNum = getWeekNumber(new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Shanghai' })));
       const weeklyPath = path.join(__dirname, `../archives/weekly/${dateInfo.year}-W${String(weekNum).padStart(2, '0')}-weekly.md`);
       fs.writeFileSync(weeklyPath, `# AI周报 ${dateInfo.year}年第${weekNum}周\n\n${weeklyMd}`, 'utf-8');
       updateArchiveIndex('weekly', {
@@ -247,7 +312,10 @@ async function main() {
     // 3. 如果是月末，生成月报
     if (dateInfo.isEndOfMonth) {
       console.log('📊 生成每月精选...');
-      const monthlyMd = await generateSummary('monthly', dateInfo, newsData);
+      // 收集本月所有每日快讯
+      const monthlyNews = collectMonthlyNews(dateInfo, newsData);
+      console.log(`  📦 收集到 ${monthlyNews.length} 天的快讯数据`);
+      const monthlyMd = await generateSummary('monthly', dateInfo, monthlyNews);
       const monthlyPath = path.join(__dirname, `../archives/monthly/${dateInfo.monthStr}-monthly.md`);
       fs.writeFileSync(monthlyPath, `# AI月报 ${dateInfo.year}年${parseInt(dateInfo.month)}月\n\n${monthlyMd}`, 'utf-8');
       updateArchiveIndex('monthly', {
