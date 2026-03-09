@@ -1,69 +1,68 @@
 # AI周报 2026年第10周
 
-## AI行业周报 (2026年3月3日 - 3月9日)
+## AI行业周报 (2026年2月24日 - 3月9日)
 
-本周，AI领域在基础模型、编程工具和芯片硬件层面均有关键进展。**OpenAI与Anthropic先后发布新一代旗舰模型**，**英伟达推出Blackwell Ultra B300芯片**，而**欧盟《AI法案》执行细则正式生效**，标志着行业在技术突破与规范治理两条线上同步推进。
+本周AI行业焦点集中在三条主线：**OpenAI发布GPT-5.4并完成1100亿美元史上最大融资**，**Cursor密集发布Agent新功能**，以及**Anthropic与五角大楼的对抗持续升级**。英伟达Q4营收创纪录，同时宣布战略调整。
 
 ### 一、 本周核心动态 (按影响力排序)
 
-1.  **GPT-4.5 Turbo正式发布** ([OpenAI Blog](https://openai.com/blog/gpt-4-5-turbo), 2026-03-07)：推理速度提升40%，成本降低，为开发者生态注入强心剂。
-2.  **英伟达发布Blackwell Ultra B300芯片** ([NVIDIA Newsroom](https://nvidianews.nvidia.com/news/blackwell-ultra), 2026-03-06)：新一代AI训练与推理芯片，算力再攀高峰。
-3.  **Claude Opus 4.5发布** ([Anthropic News](https://www.anthropic.com/news/claude-opus-4-5), 2026-03-05)：多模态推理能力大幅增强，代码生成与数学能力创新高。
-4.  **Meta发布Llama 4 Scout** ([Meta AI Blog](https://ai.meta.com/blog/llama-4-scout), 2026-03-06)：支持1000万token超长上下文，开源模型能力再突破。
-5.  **GitHub Copilot Agent模式正式上线** ([GitHub Blog](https://github.blog/copilot-agent), 2026-03-06)：AI驱动的自主编程Agent进入主流开发者工作流。
-6.  **欧盟《AI法案》执行细则3月生效** ([European Commission](https://ec.europa.eu/ai-act-enforcement), 2026-03-01)：全球首部全面AI监管法规进入实施阶段。
-7.  **DeepMind提出扩散Transformer新架构DiT-3** ([arXiv](https://arxiv.org/abs/2603.04521), 2026-03-05)：在图像和视频生成任务上效率大幅提升。
-8.  **Midjourney V7支持视频和3D场景生成** ([Midjourney](https://www.midjourney.com/docs/v7), 2026-03-08)：内容生成从静态图像扩展到视频与3D领域。
+1.  **OpenAI完成1100亿美元融资** ([TechCrunch](https://techcrunch.com/tag/openai/), 2026-02-27)：史上最大规模私募融资轮，确立OpenAI在AI赛道的资本优势。
+2.  **OpenAI发布GPT-5.4** ([GitHub Blog](https://github.blog/changelog/2026-03-05-gpt-5-4-is-generally-available-in-github-copilot), 2026-03-05)：最新智能编程模型，在多步骤Agent任务中表现优异，已全面上线GitHub Copilot。
+3.  **英伟达Q4营收680亿美元创历史新高** ([NVIDIA Newsroom](https://nvidianews.nvidia.com/), 2026-02-25)：AI芯片需求持续爆发，全年营收同样创纪录。
+4.  **Anthropic与五角大楼对抗持续** ([Anthropic News](https://www.anthropic.com/news), 2026-02-23~03-08)：国防部长传唤Anthropic CEO，Anthropic计划法律挑战；Google、OpenAI等公司员工公开声援。
+5.  **Claude两周发现Firefox 22个安全漏洞** ([Anthropic News](https://www.anthropic.com/news), 2026-03-06)：Anthropic与Mozilla合作，展示AI在网络安全领域的实战能力。
+6.  **ChatGPT周活跃用户突破9亿** ([TechCrunch](https://techcrunch.com/category/artificial-intelligence/), 2026-02-27)：用户规模持续高速增长。
+7.  **黄仁勋宣布英伟达将减少与OpenAI和Anthropic合作** ([TechCrunch](https://techcrunch.com/tag/nvidia/), 2026-03-04)：战略调整引发行业关注。
+8.  **Perplexity发布Computer产品** ([TechCrunch](https://techcrunch.com/2026/02/27/perplexitys-new-computer-is-another-bet-that-users-need-many-ai-models/), 2026-02-27)：统一多模型AI能力于单一系统。
 
 ### 二、 分类动态汇总
 
 #### **大模型 (LLM)**
-- **旗舰模型密集发布**：OpenAI发布**GPT-4.5 Turbo** ([OpenAI Blog](https://openai.com/blog/gpt-4-5-turbo), 2026-03-07)，推理速度提升40%；Anthropic推出**Claude Opus 4.5** ([Anthropic News](https://www.anthropic.com/news/claude-opus-4-5), 2026-03-05)，多模态能力显著增强。
-- **开源与长上下文**：Meta发布**Llama 4 Scout** ([Meta AI Blog](https://ai.meta.com/blog/llama-4-scout), 2026-03-06)，支持1000万token上下文；谷歌**Gemini 2.5 Pro开放API** ([Google AI Blog](https://blog.google/technology/ai/gemini-2-5-pro), 2026-03-04)，支持100万token。
+- **GPT-5.4发布**：OpenAI最新智能编程模型全面上线 ([GitHub Blog](https://github.blog/changelog/2026-03-05-gpt-5-4-is-generally-available-in-github-copilot), 2026-03-05)，在Agent编程任务中达到新高度。
+- **ChatGPT用户里程碑**：周活跃用户突破9亿 ([TechCrunch](https://techcrunch.com/category/artificial-intelligence/), 2026-02-27)。
+- **Gemini功能扩展**：Google搜索向全美用户开放Gemini Canvas AI模式 ([TechCrunch](https://techcrunch.com/tag/gemini/), 2026-03-04)；Gemini新增Android多步骤任务自动化 ([TechCrunch](https://techcrunch.com/tag/gemini/), 2026-02-25)。
 
 #### **AI编程工具 (Coding)**
-- **Agent模式兴起**：**GitHub Copilot Agent模式正式上线** ([GitHub Blog](https://github.blog/copilot-agent), 2026-03-06)，AI可自主完成多步骤编程任务。
-- **工具迭代**：Cursor 4.0支持多文件协同重构 ([Cursor Blog](https://cursor.com/blog/cursor-4), 2026-03-05)；Claude Code新增自主Agent模式 ([Anthropic Docs](https://docs.anthropic.com/claude-code), 2026-03-03)；Windsurf推出团队协作功能 ([Windsurf Blog](https://windsurf.ai/blog/team-collab), 2026-03-04)。
+- **GPT-5.4全面接入Copilot**：支持VS Code、JetBrains、Xcode等全平台 ([GitHub Blog](https://github.blog/changelog/2026-03-05-gpt-5-4-is-generally-available-in-github-copilot), 2026-03-05)。Copilot代码审查累计突破6000万次 ([GitHub Blog](https://github.blog/), 2026-03-05)。
+- **Cursor密集更新**：正式支持JetBrains全系IDE ([Cursor Blog](https://www.cursor.com/blog), 2026-03-04)；推出Build Agent自动化功能 ([Cursor Blog](https://www.cursor.com/blog), 2026-03-05)；Agent可自主控制计算机验证代码 ([Cursor Blog](https://www.cursor.com/blog), 2026-02-24)。
+- **AI安全实战**：Claude两周发现Firefox 22个安全漏洞 ([Anthropic News](https://www.anthropic.com/news), 2026-03-06)。
+- **工具集成**：Figma MCP Server支持从VS Code生成设计层 ([GitHub Blog](https://github.blog/), 2026-03-06)；Jira支持AI Agent与人类协作 ([TechCrunch](https://techcrunch.com/category/artificial-intelligence/), 2026-02-25)。
 
 #### **AI应用与工具 (Apps)**
-- **内容生成跨越式进展**：**Midjourney V7支持视频和3D场景生成** ([Midjourney](https://www.midjourney.com/docs/v7), 2026-03-08)；Runway Gen-3 Alpha开放视频API ([Runway Blog](https://runwayml.com/blog/gen-3-alpha-api), 2026-03-07)。
-- **搜索与生产力**：Perplexity推出Deep Research深度研究功能 ([Perplexity AI](https://www.perplexity.ai/deep-research), 2026-03-06)；Notion AI新增工作流自动化 ([Notion Blog](https://www.notion.so/blog/ai-workflow-automation), 2026-03-05)。
+- **Perplexity Computer发布**：统一多模型AI能力于单一系统 ([TechCrunch](https://techcrunch.com/2026/02/27/perplexitys-new-computer-is-another-bet-that-users-need-many-ai-models/), 2026-02-27)。
+- **音乐与创意**：Suno达200万付费用户，ARR达$3亿 ([TechCrunch](https://techcrunch.com/category/artificial-intelligence/), 2026-02-27)；Apple Music将添加AI音乐透明标签 ([TechCrunch](https://techcrunch.com/category/artificial-intelligence/), 2026-03-04)。
+- **视频编辑**：Adobe Firefly视频编辑器支持素材自动初剪 ([TechCrunch](https://techcrunch.com/category/artificial-intelligence/), 2026-02-25)。
+- **助手更新**：Spotify AI推荐播放列表扩展至英国 ([TechCrunch](https://techcrunch.com/category/artificial-intelligence/), 2026-02-23)。
 
-#### **行业与硬件 (Industry)**
-- **硬件升级**：**英伟达发布Blackwell Ultra B300** ([NVIDIA Newsroom](https://nvidianews.nvidia.com/news/blackwell-ultra), 2026-03-06)，新一代AI芯片算力再提升。
-- **基础设施**：微软Azure AI基础设施投资扩大至100亿美元 ([Microsoft Blog](https://blogs.microsoft.com/azure-ai-infra), 2026-03-05)。
-- **监管落地**：**欧盟《AI法案》执行细则正式生效** ([European Commission](https://ec.europa.eu/ai-act-enforcement), 2026-03-01)。
-- **国内动态**：字节跳动豆包大模型日调用量突破10亿次 (36氪, 2026-03-07)。
+#### **行业与政策 (Industry)**
+- **资本与财报**：OpenAI完成1100亿美元融资 ([TechCrunch](https://techcrunch.com/tag/openai/), 2026-02-27)；英伟达Q4营收680亿美元创纪录 ([NVIDIA Newsroom](https://nvidianews.nvidia.com/), 2026-02-25)；AI客服公司Decagon估值达45亿美元 ([TechCrunch](https://techcrunch.com/category/artificial-intelligence/), 2026-03-04)。
+- **战略调整**：黄仁勋宣布英伟达将减少与OpenAI和Anthropic合作 ([TechCrunch](https://techcrunch.com/tag/nvidia/), 2026-03-04)。
+- **政策与监管**：Anthropic与五角大楼对抗升级，计划法律挑战 ([TechCrunch](https://techcrunch.com/tag/anthropic/), 2026-02-23~03-08)；美国考虑全面新芯片出口管制 ([TechCrunch](https://techcrunch.com/tag/nvidia/), 2026-03-05)；Meta因AI智能眼镜隐私问题被起诉 ([TechCrunch](https://techcrunch.com/tag/meta-ai/), 2026-03-05)。
+- **GTC 2026预告**：英伟达GTC 2026大会即将举办 ([NVIDIA Newsroom](https://nvidianews.nvidia.com/), 2026-03-03)。
 
 #### **研究进展 (Research)**
-- **架构创新**：**DeepMind提出DiT-3** ([arXiv](https://arxiv.org/abs/2603.04521), 2026-03-05)，扩散Transformer效率大幅提升。
-- **训练方法**：MIT提出**Forward-Forward v2** ([arXiv](https://arxiv.org/abs/2603.03876), 2026-03-04)，无需反向传播的高效训练。
-- **评估与优化**：斯坦福发布**AgentBench 2.0** ([arXiv](https://arxiv.org/abs/2603.05123), 2026-03-06)；UC Berkeley提出推理能耗降低50%的方案 ([arXiv](https://arxiv.org/abs/2603.04987), 2026-03-07)。
+- **BandPO**：LLM强化学习信任区域与比率裁剪新方法 ([Hugging Face Papers](https://huggingface.co/papers), 2026-03-09)，当日最热门论文。
+- **OpenAI论文**：推理模型难以控制自身思维链 ([Hugging Face Papers](https://huggingface.co/papers), 2026-03-09)，安全对齐方向重要发现。
+- **Anthropic安全研究**：发布模型蒸馏攻击检测与防护方案 ([Anthropic News](https://www.anthropic.com/news), 2026-02-23)；发布负责任扩展政策RSP v3.0 ([Anthropic News](https://www.anthropic.com/news), 2026-02-24)。
 
 ### 三、 趋势洞察
 
-1.  **"Agent"成为核心关键词**：从GitHub Copilot Agent到Claude Code Agent模式，AI编程工具正从"补全助手"向"自主开发者"演进。**AI Agent能力的成熟度将决定下一阶段开发者工具的竞争格局**。
-2.  **超长上下文竞赛白热化**：Llama 4 Scout的1000万token、Gemini 2.5 Pro的100万token，表明**处理超长文档和复杂任务的能力已成为大模型核心竞争维度**。
-3.  **监管框架与技术迭代并行**：欧盟《AI法案》执行细则生效是里程碑事件，要求企业在**合规框架内推进创新**，预计将影响全球AI企业的产品策略和出海布局。
+1.  **AI Agent全面落地**：从GPT-5.4的"agentic coding"定位，到Cursor的Build Agent和计算机控制能力，再到Jira的人机协作——**Agent不再是概念，而是本周各大产品的核心发布主题**。
+2.  **AI地缘政治化加速**：Anthropic与五角大楼对抗、美国新芯片出口管制讨论、英伟达战略调整——**AI已深度卷入国防安全与国际政治博弈**，企业需在商业利益与伦理立场间艰难抉择。
+3.  **资本向头部集中**：OpenAI 1100亿融资、英伟达680亿季度营收、Suno $3亿ARR——**AI赛道的马太效应持续加剧**，头部公司的资源优势进一步拉大。
 
 ### 四、 值得关注的项目/工具
 
-- **GitHub Copilot Agent** ([GitHub](https://github.blog/copilot-agent))：自主编程Agent模式代表了AI辅助开发的下一阶段。
-- **Midjourney V7** ([Midjourney](https://www.midjourney.com/docs/v7))：视频+3D生成能力对内容创作者极具价值。
-- **DiT-3研究** ([arXiv](https://arxiv.org/abs/2603.04521))：扩散Transformer的重要架构创新，值得研究者关注。
-- **AgentBench 2.0** ([arXiv](https://arxiv.org/abs/2603.05123))：评估AI Agent能力的标准化框架，对企业选型有参考价值。
+- **GPT-5.4 on Copilot** ([GitHub](https://github.blog/changelog/2026-03-05-gpt-5-4-is-generally-available-in-github-copilot))：开发者应关注Agent编程模式的实际效果提升。
+- **Cursor JetBrains + Automations** ([Cursor](https://www.cursor.com/blog))：JetBrains用户现在可以使用Cursor Agent，Build Agent自动化值得尝试。
+- **Perplexity Computer** ([TechCrunch](https://techcrunch.com/2026/02/27/perplexitys-new-computer-is-another-bet-that-users-need-many-ai-models/))：多模型统一交互的新尝试。
+- **BandPO论文** ([Hugging Face](https://huggingface.co/papers))：LLM强化学习方向的前沿工作。
 
 ## 信息来源
 
-- [OpenAI Blog](https://openai.com/blog) - GPT-4.5 Turbo
-- [Anthropic News](https://www.anthropic.com/news) - Claude Opus 4.5
-- [NVIDIA Newsroom](https://nvidianews.nvidia.com) - Blackwell Ultra B300
-- [GitHub Blog](https://github.blog) - Copilot Agent模式
-- [Meta AI Blog](https://ai.meta.com/blog) - Llama 4 Scout
-- [Google AI Blog](https://blog.google/technology/ai) - Gemini 2.5 Pro
-- [European Commission](https://ec.europa.eu) - 欧盟AI法案
-- [Midjourney](https://www.midjourney.com) - Midjourney V7
-- [Runway Blog](https://runwayml.com/blog) - Gen-3 Alpha
-- [Cursor Blog](https://cursor.com/blog) - Cursor 4.0
-- [arXiv](https://arxiv.org) - DiT-3、Forward-Forward v2、AgentBench 2.0、推理优化
-- 36氪 - 豆包大模型
+- [GitHub Blog](https://github.blog/) - GPT-5.4发布、Copilot代码审查里程碑、Figma MCP
+- [Cursor Blog](https://www.cursor.com/blog) - JetBrains支持、Build Agent、计算机控制
+- [Anthropic News](https://www.anthropic.com/news) - Firefox安全合作、五角大楼对抗、RSP v3.0、蒸馏攻击防护
+- [NVIDIA Newsroom](https://nvidianews.nvidia.com/) - Q4财报、GTC 2026、光学合作
+- [TechCrunch](https://techcrunch.com/category/artificial-intelligence/) - OpenAI融资、ChatGPT用户数、Gemini更新、Perplexity Computer、Suno、行业动态
+- [Hugging Face Papers](https://huggingface.co/papers) - BandPO、OpenAI推理模型论文

@@ -3,151 +3,151 @@
   "updateTime": "2026-03-09 06:24",
   "llm": [
     {
-      "title": "GPT-4.5 Turbo正式发布，推理速度提升40%",
-      "url": "https://openai.com/blog/gpt-4-5-turbo",
-      "source": "OpenAI Blog",
-      "date": "2026-03-07",
+      "title": "OpenAI发布GPT-5.4，最新智能编程模型",
+      "url": "https://github.blog/changelog/2026-03-05-gpt-5-4-is-generally-available-in-github-copilot",
+      "source": "GitHub Blog",
+      "date": "2026-03-05",
       "hot": true
     },
     {
-      "title": "Claude Opus 4.5发布，多模态推理能力大幅增强",
-      "url": "https://www.anthropic.com/news/claude-opus-4-5",
-      "source": "Anthropic News",
-      "date": "2026-03-05",
-      "hot": false
+      "title": "ChatGPT周活跃用户突破9亿",
+      "url": "",
+      "source": "TechCrunch",
+      "date": "2026-02-27",
+      "hot": true
     },
     {
-      "title": "谷歌Gemini 2.5 Pro开放API，支持100万token上下文",
-      "url": "https://blog.google/technology/ai/gemini-2-5-pro",
-      "source": "Google AI Blog",
+      "title": "Google搜索向全美用户开放Gemini Canvas AI模式",
+      "url": "",
+      "source": "TechCrunch",
       "date": "2026-03-04",
       "hot": false
     },
     {
-      "title": "Meta发布Llama 4 Scout，支持1000万token上下文",
-      "url": "https://ai.meta.com/blog/llama-4-scout",
-      "source": "Meta AI Blog",
-      "date": "2026-03-06",
+      "title": "Gemini新增Android多步骤任务自动化能力",
+      "url": "",
+      "source": "TechCrunch",
+      "date": "2026-02-25",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "GitHub Copilot Agent模式正式上线",
-      "url": "https://github.blog/copilot-agent",
+      "title": "GPT-5.4全面上线GitHub Copilot各平台",
+      "url": "https://github.blog/changelog/2026-03-05-gpt-5-4-is-generally-available-in-github-copilot",
       "source": "GitHub Blog",
-      "date": "2026-03-06",
+      "date": "2026-03-05",
       "hot": true
     },
     {
-      "title": "Cursor 4.0发布，支持多文件协同重构",
-      "url": "https://cursor.com/blog/cursor-4",
+      "title": "Cursor正式支持JetBrains全系IDE",
+      "url": "https://www.cursor.com/blog",
+      "source": "Cursor Blog",
+      "date": "2026-03-04",
+      "hot": true
+    },
+    {
+      "title": "Cursor推出Build Agent自动化功能",
+      "url": "https://www.cursor.com/blog",
       "source": "Cursor Blog",
       "date": "2026-03-05",
       "hot": false
     },
     {
-      "title": "Claude Code CLI工具更新，新增自主Agent模式",
-      "url": "https://docs.anthropic.com/claude-code",
-      "source": "Anthropic Docs",
-      "date": "2026-03-03",
-      "hot": false
-    },
-    {
-      "title": "Windsurf推出团队协作AI编程功能",
-      "url": "https://windsurf.ai/blog/team-collab",
-      "source": "Windsurf Blog",
-      "date": "2026-03-04",
-      "hot": false
+      "title": "Claude两周内发现Firefox 22个安全漏洞",
+      "url": "https://www.anthropic.com/news",
+      "source": "Anthropic News",
+      "date": "2026-03-06",
+      "hot": true
     }
   ],
   "apps": [
     {
-      "title": "Midjourney V7支持视频和3D场景生成",
-      "url": "https://www.midjourney.com/docs/v7",
-      "source": "Midjourney",
-      "date": "2026-03-08",
+      "title": "Perplexity发布Computer，统一多模型AI能力",
+      "url": "https://techcrunch.com/2026/02/27/perplexitys-new-computer-is-another-bet-that-users-need-many-ai-models/",
+      "source": "TechCrunch",
+      "date": "2026-02-27",
       "hot": true
     },
     {
-      "title": "Runway Gen-3 Alpha开放视频生成API",
-      "url": "https://runwayml.com/blog/gen-3-alpha-api",
-      "source": "Runway Blog",
-      "date": "2026-03-07",
+      "title": "AI音乐平台Suno达200万付费用户，ARR $3亿",
+      "url": "",
+      "source": "TechCrunch",
+      "date": "2026-02-27",
       "hot": false
     },
     {
-      "title": "Perplexity推出Deep Research深度研究功能",
-      "url": "https://www.perplexity.ai/deep-research",
-      "source": "Perplexity AI",
-      "date": "2026-03-06",
+      "title": "Adobe Firefly视频编辑器支持素材自动初剪",
+      "url": "",
+      "source": "TechCrunch",
+      "date": "2026-02-25",
       "hot": false
     },
     {
-      "title": "Notion AI新增工作流自动化与多模态分析",
-      "url": "https://www.notion.so/blog/ai-workflow-automation",
-      "source": "Notion Blog",
-      "date": "2026-03-05",
+      "title": "Apple Music将添加AI音乐透明标签",
+      "url": "",
+      "source": "TechCrunch",
+      "date": "2026-03-04",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "英伟达发布Blackwell Ultra B300芯片",
-      "url": "https://nvidianews.nvidia.com/news/blackwell-ultra",
-      "source": "NVIDIA Newsroom",
-      "date": "2026-03-06",
+      "title": "OpenAI完成1100亿美元融资，史上最大私募轮",
+      "url": "",
+      "source": "TechCrunch",
+      "date": "2026-02-27",
       "hot": true
     },
     {
-      "title": "微软Azure AI基础设施投资扩大至100亿美元",
-      "url": "https://blogs.microsoft.com/azure-ai-infra",
-      "source": "Microsoft Blog",
-      "date": "2026-03-05",
-      "hot": false
+      "title": "英伟达Q4营收680亿美元创历史新高",
+      "url": "https://nvidianews.nvidia.com/",
+      "source": "NVIDIA Newsroom",
+      "date": "2026-02-25",
+      "hot": true
     },
     {
-      "title": "欧盟《AI法案》执行细则3月生效实施",
-      "url": "https://ec.europa.eu/ai-act-enforcement",
-      "source": "European Commission",
-      "date": "2026-03-01",
-      "hot": false
-    },
-    {
-      "title": "字节跳动豆包大模型日调用量突破10亿次",
+      "title": "黄仁勋宣布英伟达将减少与OpenAI和Anthropic合作",
       "url": "",
-      "source": "36氪",
-      "date": "2026-03-07",
+      "source": "TechCrunch",
+      "date": "2026-03-04",
+      "hot": true
+    },
+    {
+      "title": "美国考虑实施全面新芯片出口管制",
+      "url": "",
+      "source": "TechCrunch",
+      "date": "2026-03-05",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "DeepMind提出扩散Transformer新架构DiT-3",
-      "url": "https://arxiv.org/abs/2603.04521",
-      "source": "arXiv",
-      "date": "2026-03-05",
+      "title": "BandPO: LLM强化学习信任区域与比率裁剪新方法",
+      "url": "https://huggingface.co/papers",
+      "source": "Hugging Face Papers",
+      "date": "2026-03-09",
       "hot": true
     },
     {
-      "title": "MIT提出无需反向传播的高效训练方法Forward-Forward v2",
-      "url": "https://arxiv.org/abs/2603.03876",
-      "source": "arXiv",
-      "date": "2026-03-04",
+      "title": "OpenAI论文：推理模型难以控制自身思维链",
+      "url": "https://huggingface.co/papers",
+      "source": "Hugging Face Papers",
+      "date": "2026-03-09",
+      "hot": true
+    },
+    {
+      "title": "Anthropic发布模型蒸馏攻击检测与防护方案",
+      "url": "https://www.anthropic.com/news",
+      "source": "Anthropic News",
+      "date": "2026-02-23",
       "hot": false
     },
     {
-      "title": "斯坦福发布Agent评估基准AgentBench 2.0",
-      "url": "https://arxiv.org/abs/2603.05123",
-      "source": "arXiv",
-      "date": "2026-03-06",
-      "hot": false
-    },
-    {
-      "title": "UC Berkeley提出推理时计算优化方案，能耗降低50%",
-      "url": "https://arxiv.org/abs/2603.04987",
-      "source": "arXiv",
-      "date": "2026-03-07",
+      "title": "Anthropic发布负责任扩展政策RSP v3.0",
+      "url": "https://www.anthropic.com/news",
+      "source": "Anthropic News",
+      "date": "2026-02-24",
       "hot": false
     }
   ]
