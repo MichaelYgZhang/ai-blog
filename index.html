@@ -849,6 +849,26 @@
             margin-left: 4px;
         }
 
+        .news-meta {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 3px;
+        }
+
+        .news-source {
+            font-size: 11px;
+            color: var(--color-text-tertiary);
+            background: var(--color-bg);
+            padding: 1px 6px;
+            border-radius: var(--radius-pill);
+        }
+
+        .news-date-tag {
+            font-size: 11px;
+            color: var(--color-text-tertiary);
+        }
+
         .update-info {
             display: flex;
             align-items: center;
@@ -2552,11 +2572,15 @@
                     listEl.innerHTML = '<li class="news-item" style="color: var(--color-text-tertiary);">暂无更新</li>';
                 } else {
                     listEl.innerHTML = cat.data.map(item => {
+                        const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
                         const hot = item.hot ? '<span class="hot">🔥</span>' : '';
+                        const sourceInfo = item.source ? `<span class="news-source">${esc(item.source)}</span>` : '';
+                        const dateInfo = item.date ? `<span class="news-date-tag">${esc(item.date)}</span>` : '';
+                        const meta = (sourceInfo || dateInfo) ? `<div class="news-meta">${sourceInfo}${dateInfo}</div>` : '';
                         if (item.url) {
-                            return `<li class="news-item"><a href="${item.url}" target="_blank">${item.title}</a>${hot}</li>`;
+                            return `<li class="news-item"><a href="${esc(item.url)}" target="_blank">${esc(item.title)}</a>${hot}${meta}</li>`;
                         }
-                        return `<li class="news-item">${item.title}${hot}</li>`;
+                        return `<li class="news-item">${esc(item.title)}${hot}${meta}</li>`;
                     }).join('');
                 }
             });

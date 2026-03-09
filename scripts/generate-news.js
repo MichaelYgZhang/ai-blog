@@ -56,7 +56,7 @@ async function generateDailyNews(dateInfo) {
 
 {
   "llm": [
-    { "title": "新闻标题", "url": "相关链接(可选)", "hot": true/false }
+    { "title": "新闻标题", "url": "来源链接", "date": "YYYY-MM-DD", "source": "来源名称", "hot": true/false }
   ],
   "coding": [...],
   "apps": [...],
@@ -74,9 +74,12 @@ async function generateDailyNews(dateInfo) {
 要求：
 1. 内容要真实可信，基于近期AI领域的真实动态
 2. 每个分类标记1-2条热门新闻(hot: true)
-3. URL只填写官方链接，不确定的可以不填
-4. 标题简洁有力，不超过30字
-5. 只返回JSON，不要其他内容`;
+3. 每条新闻必须提供来源链接(url)、来源名称(source)和发布日期(date)
+4. url填写官方链接或权威媒体报道链接，不确定的填空字符串""
+5. source填写信息来源名称（如"OpenAI官方博客"、"arXiv"、"TechCrunch"等）
+6. date填写新闻发布日期，格式为YYYY-MM-DD
+7. 标题简洁有力，不超过30字
+8. 只返回JSON，不要其他内容`;
 
   const completion = await callWithRetry(() => openai.chat.completions.create({
     model: "deepseek-chat",  // DeepSeek V3
@@ -120,7 +123,10 @@ ${JSON.stringify(recentNews, null, 2)}
 - 使用中文
 - 标题使用##
 - 列表使用-
-- 重要内容加粗`;
+- 重要内容加粗
+- 每条动态必须标注信息来源和日期，格式为：**标题** ([来源名称](来源链接), YYYY-MM-DD)
+- 如果快讯数据中包含url、source、date字段，直接使用；如果没有，根据内容推断并标注
+- 在报告末尾添加"## 信息来源"章节，汇总本报告引用的所有来源链接`;
 
   const completion = await callWithRetry(() => openai.chat.completions.create({
     model: "deepseek-chat",  // DeepSeek V3
@@ -153,10 +159,12 @@ function saveDailyMarkdown(dateInfo, newsData) {
       md += `## ${categoryNames[key]}\n\n`;
       newsData[key].forEach(item => {
         const hot = item.hot ? ' 🔥' : '';
+        const source = item.source ? ` - 来源: ${item.source}` : '';
+        const date = item.date ? ` (${item.date})` : '';
         if (item.url) {
-          md += `- [${item.title}](${item.url})${hot}\n`;
+          md += `- [${item.title}](${item.url})${hot}${date}${source}\n`;
         } else {
-          md += `- ${item.title}${hot}\n`;
+          md += `- ${item.title}${hot}${date}${source}\n`;
         }
       });
       md += '\n';

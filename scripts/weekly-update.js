@@ -168,7 +168,7 @@ ${roadmapSummary}
 {
   "defaultNews": {
     "llm": [
-      { "title": "新闻标题（不超过25字）", "hot": true/false }
+      { "title": "新闻标题（不超过25字）", "hot": true/false, "url": "来源链接", "source": "来源名称", "date": "YYYY-MM-DD" }
     ],
     "coding": [...],
     "apps": [...],
@@ -188,9 +188,12 @@ ${roadmapSummary}
 
 要求：
 1. defaultNews: 为每个分类生成3条当前最新的AI新闻作为页面默认展示，标记1条热门(hot:true)
-2. roadmapUpdates: 只在确实有过时或缺失的重要技能时才建议修改，每个阶段最多增删1个技能，保持总数不变。如果不需要改动，返回空数组
-3. 保持保守——不确定的不要改
-4. 只返回JSON，不要其他内容`;
+2. 每条新闻必须提供来源链接(url)、来源名称(source)和发布日期(date)
+3. url填写官方链接或权威媒体报道链接，不确定的填空字符串""
+4. source填写信息来源名称（如"OpenAI官方博客"、"arXiv"、"TechCrunch"等）
+5. roadmapUpdates: 只在确实有过时或缺失的重要技能时才建议修改，每个阶段最多增删1个技能，保持总数不变。如果不需要改动，返回空数组
+6. 保持保守——不确定的不要改
+7. 只返回JSON，不要其他内容`;
 
   const completion = await callWithRetry(() => openai.chat.completions.create({
     model: 'deepseek-chat',
@@ -285,7 +288,10 @@ function updateDefaultNews(html, newsData) {
         .replace(/'/g, "\\'")
         .replace(/\n/g, ' ')
         .replace(/<\//g, '<\\/');
-      return `                    { title: '${safeTitle}'${hot} }`;
+      const urlPart = item.url ? `, url: '${item.url.replace(/'/g, "\\'")}'` : '';
+      const sourcePart = item.source ? `, source: '${item.source.replace(/'/g, "\\'")}'` : '';
+      const datePart = item.date ? `, date: '${item.date}'` : '';
+      return `                    { title: '${safeTitle}'${hot}${urlPart}${sourcePart}${datePart} }`;
     });
     lines.push(`                ${cat}: [\n${itemLines.join(',\n')}\n                ]`);
   }
