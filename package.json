@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "AI研发进阶之路 - AI工程师学习指南",
   "scripts": {
-    "update-news": "node scripts/generate-news.js"
+    "update-news": "node scripts/generate-news.js",
+    "generate-article": "node scripts/generate-article.js"
   },
   "dependencies": {
     "openai": "^4.20.0"

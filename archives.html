@@ -234,7 +234,7 @@
         /* Stats */
         .archive-stats {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 16px;
             margin-bottom: 24px;
         }
@@ -267,6 +267,23 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .article-stage-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: var(--radius-pill);
+            font-size: 11px;
+            font-weight: 600;
+            color: white;
+            margin-right: 6px;
+        }
+
+        .article-stage-tag.stage-6 { background: #ec4899; }
+        .article-stage-tag.stage-5 { background: #8b5cf6; }
+        .article-stage-tag.stage-4 { background: #3b82f6; }
+        .article-stage-tag.stage-3 { background: #10b981; }
+        .article-stage-tag.stage-2 { background: #f59e0b; }
+        .article-stage-tag.stage-1 { background: #6366f1; }
     </style>
 </head>
 <body>
@@ -295,6 +312,10 @@
                 <div class="stat-value" id="stat-quarterly">0</div>
                 <div class="stat-label">季度报告</div>
             </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-articles">0</div>
+                <div class="stat-label">学习文章</div>
+            </div>
         </div>
 
         <div class="archive-tabs">
@@ -302,6 +323,7 @@
             <button class="archive-tab" data-tab="weekly">📅 每周汇总</button>
             <button class="archive-tab" data-tab="monthly">📊 每月精选</button>
             <button class="archive-tab" data-tab="quarterly">📈 季度报告</button>
+            <button class="archive-tab" data-tab="articles">📖 学习文章</button>
         </div>
 
         <!-- 每日快讯 -->
@@ -343,6 +365,16 @@
                 </div>
             </div>
         </div>
+
+        <!-- 学习文章 -->
+        <div class="archive-panel" id="panel-articles">
+            <div id="articles-content">
+                <div class="empty-state">
+                    <div class="empty-state-icon">📖</div>
+                    <p>暂无学习文章，将在每日08:00自动生成</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -379,6 +411,7 @@
             document.getElementById('stat-weekly').textContent = data.weekly?.length || 0;
             document.getElementById('stat-monthly').textContent = data.monthly?.length || 0;
             document.getElementById('stat-quarterly').textContent = data.quarterly?.length || 0;
+            document.getElementById('stat-articles').textContent = data.articles?.length || 0;
 
             // 渲染每日快讯
             if (data.daily && data.daily.length > 0) {
@@ -399,6 +432,11 @@
             // 渲染季度报告
             if (data.quarterly && data.quarterly.length > 0) {
                 document.getElementById('quarterly-content').innerHTML = renderArchiveList(data.quarterly, '📈');
+            }
+
+            // 渲染学习文章（按阶段分组）
+            if (data.articles && data.articles.length > 0) {
+                document.getElementById('articles-content').innerHTML = renderArticlesByStage(data.articles);
             }
         }
 
@@ -452,6 +490,57 @@
                     <div class="archive-item-info">
                         <div class="archive-item-title">${item.title}</div>
                         <div class="archive-item-meta">${item.date}</div>
+                    </div>
+                    <span class="archive-item-arrow">→</span>
+                </a>
+            `;
+        }
+
+        function renderArticlesByStage(articles) {
+            const stageNames = {
+                6: '前沿探索与创新',
+                5: 'AI工程化与系统',
+                4: '大模型应用开发',
+                3: '深度学习精通',
+                2: '机器学习核心',
+                1: '编程与数学基础'
+            };
+            const grouped = {};
+            articles.forEach(item => {
+                const stage = item.stage || 0;
+                if (!grouped[stage]) grouped[stage] = [];
+                grouped[stage].push(item);
+            });
+            const stages = Object.keys(grouped).sort((a, b) => b - a);
+            return stages.map(stage => {
+                const items = grouped[stage];
+                const name = stageNames[stage] || `阶段${stage}`;
+                return `
+                    <div class="archive-group open">
+                        <div class="archive-group-header" onclick="toggleGroup(this)">
+                            <div class="archive-group-title">
+                                <span><span class="article-stage-tag stage-${stage}">阶段${stage}</span>${name}</span>
+                                <span class="archive-group-count">${items.length}篇</span>
+                            </div>
+                            <span class="archive-group-arrow">▼</span>
+                        </div>
+                        <div class="archive-group-content">
+                            <div class="archive-list">
+                                ${items.map(item => renderArticleItem(item)).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderArticleItem(item) {
+            return `
+                <a href="${item.url}" class="archive-item">
+                    <span class="archive-item-icon">📖</span>
+                    <div class="archive-item-info">
+                        <div class="archive-item-title">${item.title}</div>
+                        <div class="archive-item-meta">${item.date} · ${item.articleId || ''}</div>
                     </div>
                     <span class="archive-item-arrow">→</span>
                 </a>

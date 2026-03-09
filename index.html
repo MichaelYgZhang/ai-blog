@@ -1068,6 +1068,375 @@
         .weekly-toggle-btn:hover {
             background: rgba(9, 105, 218, 0.08);
         }
+
+        /* ── Architecture Diagram ── */
+        .arch-container {
+            background: var(--color-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            margin-bottom: 32px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .arch-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .arch-header h2 {
+            font-size: 20px;
+            margin: 0;
+            color: var(--color-text);
+        }
+        .arch-toggle {
+            background: none;
+            border: 1px solid var(--color-border);
+            color: var(--color-text-secondary);
+            padding: 4px 14px;
+            border-radius: var(--radius-pill);
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .arch-toggle:hover {
+            background: rgba(124, 58, 237, 0.06);
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+        }
+        .arch-body {
+            display: flex;
+            gap: 24px;
+            transition: all 0.3s ease;
+        }
+        .arch-collapsed .arch-body {
+            display: none;
+        }
+        .arch-house {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+        /* Roof */
+        .arch-roof {
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            color: #fff;
+            text-align: center;
+            padding: 18px 24px;
+            font-weight: 700;
+            font-size: 16px;
+            clip-path: polygon(10% 100%, 50% 0%, 90% 100%);
+            margin-bottom: -1px;
+            line-height: 1.6;
+            padding-top: 32px;
+        }
+        /* Floors */
+        .arch-floor {
+            border-left: 4px solid;
+            padding: 12px 16px;
+            background: var(--color-bg);
+            border-bottom: 1px solid var(--color-border);
+        }
+        .arch-floor:last-child {
+            border-bottom: none;
+            border-radius: 0 0 8px 8px;
+        }
+        .arch-floor-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+            margin-bottom: 8px;
+        }
+        .arch-modules {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        .arch-module {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: var(--radius-pill);
+            font-size: 12px;
+            font-weight: 500;
+            background: rgba(124, 58, 237, 0.08);
+            color: var(--color-primary);
+            border: 1px solid rgba(124, 58, 237, 0.15);
+        }
+        /* Floor-specific colors: 6 stages bottom-to-top */
+        .arch-floor.floor-frontier { border-left-color: #ec4899; }
+        .arch-floor.floor-frontier .arch-module { background: rgba(236,72,153,0.08); color: #db2777; border-color: rgba(236,72,153,0.18); }
+        .arch-floor.floor-engineering { border-left-color: #8b5cf6; }
+        .arch-floor.floor-engineering .arch-module { background: rgba(139,92,246,0.08); color: #7c3aed; border-color: rgba(139,92,246,0.18); }
+        .arch-floor.floor-llm { border-left-color: #3b82f6; }
+        .arch-floor.floor-llm .arch-module { background: rgba(59,130,246,0.08); color: #2563eb; border-color: rgba(59,130,246,0.18); }
+        .arch-floor.floor-dl { border-left-color: #10b981; }
+        .arch-floor.floor-dl .arch-module { background: rgba(16,185,129,0.08); color: #059669; border-color: rgba(16,185,129,0.18); }
+        .arch-floor.floor-ml { border-left-color: #f59e0b; }
+        .arch-floor.floor-ml .arch-module { background: rgba(245,158,11,0.08); color: #d97706; border-color: rgba(245,158,11,0.18); }
+        .arch-floor.floor-foundation { border-left-color: #6366f1; }
+        .arch-floor.floor-foundation .arch-module { background: rgba(99,102,241,0.08); color: #4f46e5; border-color: rgba(99,102,241,0.18); }
+
+        /* Arrows between floors */
+        .arch-arrow {
+            text-align: center;
+            color: var(--color-text-muted);
+            font-size: 13px;
+            padding: 4px 0;
+            user-select: none;
+        }
+        /* Sidebar */
+        .arch-sidebar {
+            width: 200px;
+            flex-shrink: 0;
+            border: 1px dashed var(--color-border);
+            border-radius: var(--radius-md);
+            padding: 14px;
+            align-self: center;
+        }
+        .arch-sidebar-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .arch-sidebar-item {
+            font-size: 12px;
+            color: var(--color-text-secondary);
+            padding: 5px 0;
+            border-bottom: 1px dashed var(--color-border);
+        }
+        .arch-sidebar-item:last-child { border-bottom: none; }
+        .arch-sidebar-icon {
+            margin-right: 4px;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .arch-body { flex-direction: column; }
+            .arch-sidebar { width: 100%; }
+            .arch-roof { clip-path: polygon(5% 100%, 50% 0%, 95% 100%); font-size: 14px; }
+        }
+
+        /* ── Daily Article Section ── */
+        .article-section {
+            background: linear-gradient(135deg, rgba(236, 72, 153, 0.08) 0%, rgba(139, 92, 246, 0.08) 100%);
+            border: 1px solid rgba(236, 72, 153, 0.2);
+            border-radius: var(--radius-xl);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .article-section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .article-section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .article-section-title h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+
+        .article-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: var(--radius-pill);
+        }
+
+        .article-section-date {
+            font-size: 14px;
+            color: var(--color-text-secondary);
+        }
+
+        .article-card {
+            background: var(--color-bg-white);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            border: 1px solid var(--color-border-light);
+        }
+
+        .article-stage-badge {
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: var(--radius-pill);
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 12px;
+        }
+
+        .article-stage-badge.stage-6 { background: #ec4899; }
+        .article-stage-badge.stage-5 { background: #8b5cf6; }
+        .article-stage-badge.stage-4 { background: #3b82f6; }
+        .article-stage-badge.stage-3 { background: #10b981; }
+        .article-stage-badge.stage-2 { background: #f59e0b; }
+        .article-stage-badge.stage-1 { background: #6366f1; }
+
+        .article-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: 8px;
+        }
+
+        .article-summary {
+            font-size: 14px;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .article-tech-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .article-tech-pill {
+            padding: 4px 12px;
+            background: rgba(124, 58, 237, 0.08);
+            color: var(--color-primary);
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: var(--radius-pill);
+            border: 1px solid rgba(124, 58, 237, 0.15);
+        }
+
+        .article-dependencies {
+            background: var(--color-bg);
+            border-radius: var(--radius-md);
+            padding: 14px 18px;
+            margin-bottom: 16px;
+        }
+
+        .article-dep-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+            margin-bottom: 8px;
+        }
+
+        .article-dep-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--color-text-secondary);
+            padding: 4px 0;
+        }
+
+        .article-dep-stage {
+            padding: 2px 8px;
+            border-radius: var(--radius-pill);
+            font-size: 11px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .article-progress-bar {
+            height: 8px;
+            background: var(--color-bg);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+
+        .article-progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        .article-progress-text {
+            font-size: 12px;
+            color: var(--color-text-tertiary);
+            margin-bottom: 16px;
+        }
+
+        .article-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 16px;
+            border-top: 1px solid var(--color-border-light);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .article-next-preview {
+            font-size: 13px;
+            color: var(--color-text-secondary);
+        }
+
+        .article-next-preview strong {
+            color: var(--color-text-primary);
+        }
+
+        .article-read-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 20px;
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--radius-pill);
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .article-read-link:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
+        }
+
+        .article-update-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(236, 72, 153, 0.2);
+            font-size: 12px;
+            color: var(--color-text-tertiary);
+        }
+
+        .article-update-info a {
+            color: #ec4899;
+            text-decoration: none;
+        }
+
+        .article-update-info a:hover {
+            text-decoration: underline;
+        }
+
+        .article-empty {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--color-text-tertiary);
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -1079,6 +1448,118 @@
             <p class="header-subtitle">系统化学习路径 · 实战项目驱动 · 前沿技术追踪 · 持续进阶成长</p>
             <a href="roadmap.html" style="display: inline-block; margin-top: 20px; padding: 12px 28px; background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%); color: white; text-decoration: none; border-radius: 30px; font-weight: 600; font-size: 15px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);">🗺️ 查看完整进阶路线图</a>
         </header>
+
+        <!-- Architecture Diagram -->
+        <div class="arch-container" id="arch-container">
+            <div class="arch-header">
+                <h2>🏠 AI工程师成长架构</h2>
+                <button class="arch-toggle" onclick="toggleArch()">收起</button>
+            </div>
+            <div class="arch-body">
+                <div class="arch-house">
+                    <!-- Roof: Vision -->
+                    <div class="arch-roof">AI 领域专家</div>
+                    <!-- Stage 6: Frontier -->
+                    <div class="arch-floor floor-frontier">
+                        <div class="arch-floor-label">⑥ 前沿探索与创新 · 持续学习</div>
+                        <div class="arch-modules">
+                            <span class="arch-module">论文研读</span>
+                            <span class="arch-module">多模态</span>
+                            <span class="arch-module">AI安全</span>
+                            <span class="arch-module">开源贡献</span>
+                            <span class="arch-module">技术分享</span>
+                        </div>
+                    </div>
+                    <div class="arch-arrow">↑ 顶会论文发表</div>
+                    <!-- Stage 5: Engineering -->
+                    <div class="arch-floor floor-engineering">
+                        <div class="arch-floor-label">⑤ AI工程化与系统 · 2-3个月</div>
+                        <div class="arch-modules">
+                            <span class="arch-module">MLOps</span>
+                            <span class="arch-module">Docker/K8s</span>
+                            <span class="arch-module">模型量化</span>
+                            <span class="arch-module">分布式训练</span>
+                            <span class="arch-module">vLLM / TensorRT</span>
+                        </div>
+                    </div>
+                    <div class="arch-arrow">↑ 优化推理性能10倍</div>
+                    <!-- Stage 4: LLM -->
+                    <div class="arch-floor floor-llm">
+                        <div class="arch-floor-label">④ 大模型应用开发 · 3-4个月</div>
+                        <div class="arch-modules">
+                            <span class="arch-module">Prompt工程</span>
+                            <span class="arch-module">RAG系统</span>
+                            <span class="arch-module">Agent开发</span>
+                            <span class="arch-module">模型微调</span>
+                            <span class="arch-module">MoE模型</span>
+                        </div>
+                    </div>
+                    <div class="arch-arrow">↑ 构建生产级AI应用</div>
+                    <!-- Stage 3: Deep Learning -->
+                    <div class="arch-floor floor-dl">
+                        <div class="arch-floor-label">③ 深度学习精通 · 3-4个月</div>
+                        <div class="arch-modules">
+                            <span class="arch-module">PyTorch</span>
+                            <span class="arch-module">CNN</span>
+                            <span class="arch-module">RNN/LSTM</span>
+                            <span class="arch-module">Transformer</span>
+                            <span class="arch-module">注意力机制</span>
+                        </div>
+                    </div>
+                    <div class="arch-arrow">↑ 从零实现Transformer</div>
+                    <!-- Stage 2: ML -->
+                    <div class="arch-floor floor-ml">
+                        <div class="arch-floor-label">② 机器学习核心 · 2-3个月</div>
+                        <div class="arch-modules">
+                            <span class="arch-module">回归/分类</span>
+                            <span class="arch-module">决策树</span>
+                            <span class="arch-module">SVM</span>
+                            <span class="arch-module">特征工程</span>
+                            <span class="arch-module">sklearn</span>
+                        </div>
+                    </div>
+                    <div class="arch-arrow">↑ 独立完成Kaggle项目</div>
+                    <!-- Stage 1: Foundation -->
+                    <div class="arch-floor floor-foundation">
+                        <div class="arch-floor-label">① 编程与数学基础 · 2-3个月</div>
+                        <div class="arch-modules">
+                            <span class="arch-module">Python</span>
+                            <span class="arch-module">NumPy</span>
+                            <span class="arch-module">线性代数</span>
+                            <span class="arch-module">概率统计</span>
+                            <span class="arch-module">微积分</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sidebar: Timeline -->
+                <div class="arch-sidebar">
+                    <div class="arch-sidebar-title">学习周期</div>
+                    <div class="arch-sidebar-item"><span class="arch-sidebar-icon">📅</span>总计 12-18 个月</div>
+                    <div class="arch-sidebar-item"><span class="arch-sidebar-icon">🎯</span>目标: AI领域专家</div>
+                    <div class="arch-sidebar-item"><span class="arch-sidebar-icon">📖</span>系统化学习路径</div>
+                    <div class="arch-sidebar-item"><span class="arch-sidebar-icon">🔧</span>实战项目驱动</div>
+                    <div class="arch-sidebar-item"><span class="arch-sidebar-icon">🚀</span>前沿技术追踪</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daily AI Article -->
+        <div class="article-section" id="daily-article">
+            <div class="article-section-header">
+                <div class="article-section-title">
+                    <h2>📖 每日AI学习</h2>
+                    <span class="article-badge">每日08:00更新</span>
+                </div>
+                <span class="article-section-date" id="article-date">加载中...</span>
+            </div>
+            <div class="article-card" id="article-card">
+                <div class="article-empty">加载中...</div>
+            </div>
+            <div class="article-update-info">
+                <span>⏰ 更新时间: <span id="article-update-time">-</span></span>
+                <a href="archives.html">📖 查看全部文章 →</a>
+            </div>
+        </div>
 
         <!-- Daily AI News -->
         <div class="daily-news" id="daily-news">
@@ -2507,6 +2988,14 @@
             });
         });
 
+        // 架构图折叠切换
+        function toggleArch() {
+            const container = document.getElementById('arch-container');
+            const btn = container.querySelector('.arch-toggle');
+            container.classList.toggle('arch-collapsed');
+            btn.textContent = container.classList.contains('arch-collapsed') ? '展开' : '收起';
+        }
+
         // 折叠面板切换
         function toggleCollapsible(header) {
             const collapsible = header.parentElement;
@@ -2627,6 +3116,103 @@
 
         // 页面加载时获取新闻
         document.addEventListener('DOMContentLoaded', loadDailyNews);
+
+        // 加载每日AI学习文章
+        async function loadDailyArticle() {
+            try {
+                const response = await fetch('data/latest-article.json?t=' + Date.now());
+                if (!response.ok) throw new Error('No data');
+                const data = await response.json();
+                renderArticle(data);
+            } catch (e) {
+                renderDefaultArticle();
+            }
+        }
+
+        function renderArticle(data) {
+            document.getElementById('article-date').textContent = data.date || '今日';
+            document.getElementById('article-update-time').textContent = data.updateTime || '-';
+
+            const esc = s => s ? s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;') : '';
+            const stageId = data.stage?.id || 6;
+            const stageName = data.stage?.name || '';
+            const stageColor = data.stage?.color || '#ec4899';
+
+            let html = '';
+            // Stage badge
+            html += `<span class="article-stage-badge stage-${stageId}">阶段${stageId} · ${esc(stageName)}</span>`;
+            // Title & summary
+            html += `<div class="article-title">${esc(data.title)}</div>`;
+            html += `<div class="article-summary">${esc(data.summary)}</div>`;
+            // Tech pills
+            if (data.techPoints && data.techPoints.length > 0) {
+                html += '<div class="article-tech-pills">';
+                data.techPoints.forEach(tp => {
+                    html += `<span class="article-tech-pill">${esc(tp)}</span>`;
+                });
+                html += '</div>';
+            }
+            // Dependencies
+            if (data.dependencies && data.dependencies.length > 0) {
+                html += '<div class="article-dependencies">';
+                html += '<div class="article-dep-title">📚 知识依赖</div>';
+                data.dependencies.forEach(dep => {
+                    const depColor = getStageColor(dep.stageId);
+                    html += `<div class="article-dep-item">`;
+                    html += `<span class="article-dep-stage" style="background:${depColor}">阶段${dep.stageId}</span>`;
+                    html += `<span>${esc(dep.stageName)} · ${esc(dep.topic)}</span>`;
+                    html += `</div>`;
+                });
+                html += '</div>';
+            }
+            // Progress bar
+            if (data.progress) {
+                const pct = Math.round((data.progress.completed / data.progress.total) * 100);
+                html += `<div class="article-progress-bar"><div class="article-progress-fill" style="width:${pct}%"></div></div>`;
+                html += `<div class="article-progress-text">学习进度: ${data.progress.completed}/${data.progress.total} 篇 (${pct}%)</div>`;
+            }
+            // Footer
+            html += '<div class="article-footer">';
+            if (data.nextPreview) {
+                html += `<div class="article-next-preview">下篇预告: <strong>${esc(data.nextPreview.title)}</strong></div>`;
+            } else {
+                html += '<div class="article-next-preview"></div>';
+            }
+            if (data.fullArticleUrl) {
+                html += `<a href="${esc(data.fullArticleUrl)}" class="article-read-link">阅读全文 →</a>`;
+            }
+            html += '</div>';
+
+            document.getElementById('article-card').innerHTML = html;
+        }
+
+        function getStageColor(stageId) {
+            const colors = { 6: '#ec4899', 5: '#8b5cf6', 4: '#3b82f6', 3: '#10b981', 2: '#f59e0b', 1: '#6366f1' };
+            return colors[stageId] || '#8b5cf6';
+        }
+
+        function renderDefaultArticle() {
+            const today = new Date();
+            const dateStr = today.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+            document.getElementById('article-date').textContent = dateStr;
+            document.getElementById('article-update-time').textContent = '等待首次更新';
+
+            renderArticle({
+                date: dateStr,
+                updateTime: '示例数据',
+                articleId: 'S6-001',
+                title: '用DALL-E 3和GPT-4V构建多模态应用',
+                summary: '本文从实战出发，讲解如何利用最新多模态大模型API构建图文理解应用，涵盖Prompt设计、图像分析和应用架构的核心技术要点。',
+                stage: { id: 6, name: '前沿探索与创新', color: '#ec4899' },
+                techPoints: ['多模态API', '图文理解', 'Prompt设计'],
+                dependencies: [{ stageName: '大模型应用开发', stageId: 4, topic: 'Prompt工程', reason: '' }],
+                nextPreview: { title: 'AI安全红队测试实战指南', teaser: '下一篇将探讨对抗攻击和Jailbreak检测等技术要点' },
+                progress: { completed: 1, total: 120 },
+                fullArticleUrl: null
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', loadDailyArticle);
 
         // 加载每周AI总结
         async function loadWeeklySummary() {
