@@ -1392,23 +1392,123 @@
             color: var(--color-text-primary);
         }
 
-        .article-read-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 8px 20px;
-            background: linear-gradient(135deg, #ec4899, #8b5cf6);
-            color: white;
-            text-decoration: none;
-            border-radius: var(--radius-pill);
-            font-size: 13px;
-            font-weight: 600;
-            transition: all 0.2s ease;
+        .article-content {
+            background: var(--color-bg-white);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            border: 1px solid var(--color-border-light);
+            line-height: 1.8;
+            color: var(--color-text-secondary);
+            font-size: 14px;
+            max-height: 500px;
+            overflow-y: auto;
+            margin-top: 16px;
         }
 
-        .article-read-link:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
+        .article-content h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin: 20px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--color-border-light);
+        }
+
+        .article-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .article-content h3 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin: 16px 0 8px;
+        }
+
+        .article-content h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin: 12px 0 6px;
+        }
+
+        .article-content p {
+            margin: 8px 0;
+        }
+
+        .article-content ol,
+        .article-content ul {
+            padding-left: 20px;
+            margin: 8px 0;
+        }
+
+        .article-content li {
+            margin: 6px 0;
+        }
+
+        .article-content strong {
+            color: var(--color-text-primary);
+        }
+
+        .article-content hr {
+            border: none;
+            border-top: 1px solid var(--color-border-light);
+            margin: 16px 0;
+        }
+
+        .article-content code {
+            background: rgba(124, 58, 237, 0.08);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: var(--color-primary);
+        }
+
+        .article-content pre {
+            background: #1e1e2e;
+            color: #cdd6f4;
+            padding: 16px;
+            border-radius: var(--radius-md);
+            overflow-x: auto;
+            margin: 12px 0;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .article-content pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+            font-size: inherit;
+        }
+
+        .article-content a {
+            color: var(--color-primary);
+            text-decoration: none;
+        }
+
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+
+        .article-content blockquote {
+            border-left: 3px solid var(--color-primary);
+            padding-left: 16px;
+            margin: 12px 0;
+            color: var(--color-text-tertiary);
+        }
+
+        .article-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .article-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .article-content::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.15);
+            border-radius: 3px;
         }
 
         .article-update-info {
@@ -1420,6 +1520,21 @@
             border-top: 1px solid rgba(236, 72, 153, 0.2);
             font-size: 12px;
             color: var(--color-text-tertiary);
+        }
+
+        .article-toggle-btn {
+            background: none;
+            border: 1px solid rgba(236, 72, 153, 0.3);
+            color: #ec4899;
+            padding: 4px 12px;
+            border-radius: var(--radius-pill);
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .article-toggle-btn:hover {
+            background: rgba(236, 72, 153, 0.08);
         }
 
         .article-update-info a {
@@ -1555,9 +1670,12 @@
             <div class="article-card" id="article-card">
                 <div class="article-empty">加载中...</div>
             </div>
+            <div class="article-content" id="article-body">
+                <div class="article-empty">加载文章内容...</div>
+            </div>
             <div class="article-update-info">
-                <span>⏰ 更新时间: <span id="article-update-time">-</span></span>
-                <a href="archives.html">📖 查看全部文章 →</a>
+                <button class="article-toggle-btn" id="article-toggle-btn" onclick="toggleArticleExpand()">展开全文</button>
+                <span>⏰ <span id="article-update-time">-</span> · <a href="archives.html">📖 查看全部文章 →</a></span>
             </div>
         </div>
 
@@ -3124,8 +3242,25 @@
                 if (!response.ok) throw new Error('No data');
                 const data = await response.json();
                 renderArticle(data);
+                // 加载文章正文
+                if (data.fullArticleUrl) {
+                    loadArticleContent(data.fullArticleUrl);
+                }
             } catch (e) {
                 renderDefaultArticle();
+            }
+        }
+
+        async function loadArticleContent(url) {
+            try {
+                const resp = await fetch(url + '?t=' + Date.now());
+                if (!resp.ok) throw new Error('No markdown');
+                const markdown = await resp.text();
+                const html = parseMarkdown(markdown);
+                document.getElementById('article-body').innerHTML = html;
+            } catch (e) {
+                document.getElementById('article-body').innerHTML = '<div class="article-empty">文章内容加载失败</div>';
+                document.getElementById('article-toggle-btn').style.display = 'none';
             }
         }
 
@@ -3171,17 +3306,12 @@
                 html += `<div class="article-progress-bar"><div class="article-progress-fill" style="width:${pct}%"></div></div>`;
                 html += `<div class="article-progress-text">学习进度: ${data.progress.completed}/${data.progress.total} 篇 (${pct}%)</div>`;
             }
-            // Footer
-            html += '<div class="article-footer">';
+            // Footer: next preview
             if (data.nextPreview) {
+                html += '<div class="article-footer">';
                 html += `<div class="article-next-preview">下篇预告: <strong>${esc(data.nextPreview.title)}</strong></div>`;
-            } else {
-                html += '<div class="article-next-preview"></div>';
+                html += '</div>';
             }
-            if (data.fullArticleUrl) {
-                html += `<a href="${esc(data.fullArticleUrl)}" class="article-read-link">阅读全文 →</a>`;
-            }
-            html += '</div>';
 
             document.getElementById('article-card').innerHTML = html;
         }
@@ -3210,6 +3340,21 @@
                 progress: { completed: 1, total: 120 },
                 fullArticleUrl: null
             });
+            document.getElementById('article-body').innerHTML = '<div class="article-empty">暂无文章内容，每日08:00自动更新</div>';
+            document.getElementById('article-toggle-btn').style.display = 'none';
+        }
+
+        // 展开/收起文章内容
+        function toggleArticleExpand() {
+            const content = document.getElementById('article-body');
+            const btn = document.getElementById('article-toggle-btn');
+            if (content.style.maxHeight === 'none') {
+                content.style.maxHeight = '500px';
+                btn.textContent = '展开全文';
+            } else {
+                content.style.maxHeight = 'none';
+                btn.textContent = '收起';
+            }
         }
 
         document.addEventListener('DOMContentLoaded', loadDailyArticle);
@@ -3247,6 +3392,8 @@
             let inOl = false;
             let inUl = false;
             let inSubUl = false;
+            let inCodeBlock = false;
+            let codeContent = '';
 
             for (let i = 0; i < lines.length; i++) {
                 let line = lines[i];
@@ -3254,9 +3401,37 @@
                 // 跳过第一行的一级标题
                 if (i === 0 && line.startsWith('# ')) continue;
                 // 跳过紧跟标题后的AI客套话
-                if (i === 1 && line.trim() && !line.startsWith('#') && !line.startsWith('-') && !line.startsWith('*') && line.trim() !== '---') continue;
+                if (i === 1 && line.trim() && !line.startsWith('#') && !line.startsWith('-') && !line.startsWith('*') && line.trim() !== '---' && !line.startsWith('>') && !line.startsWith('```')) continue;
                 // 跳过第三行如果也是AI客套话（空行后的第一段描述）
                 if (i === 2 && line.trim() === '') continue;
+
+                // 代码块处理
+                if (line.trim().startsWith('```')) {
+                    if (!inCodeBlock) {
+                        // 关闭之前的列表
+                        if (inSubUl) { html += '</ul>'; inSubUl = false; }
+                        if (inOl) { html += '</ol>'; inOl = false; }
+                        if (inUl) { html += '</ul>'; inUl = false; }
+                        inCodeBlock = true;
+                        codeContent = '';
+                    } else {
+                        // 转义HTML实体
+                        let escaped = codeContent.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                        html += '<pre><code>' + escaped + '</code></pre>';
+                        inCodeBlock = false;
+                    }
+                    continue;
+                }
+                if (inCodeBlock) {
+                    codeContent += (codeContent ? '\n' : '') + line;
+                    continue;
+                }
+
+                // 引用块
+                if (line.startsWith('> ')) {
+                    html += '<blockquote>' + inlineFormat(line.slice(2)) + '</blockquote>';
+                    continue;
+                }
 
                 // 检测缩进子列表项
                 let subUlMatch = line.match(/^\s{2,}[-*]\s+(.+)/);
