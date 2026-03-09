@@ -886,6 +886,171 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* Weekly Summary Section */
+        .weekly-summary {
+            background: linear-gradient(135deg, rgba(9, 105, 218, 0.08) 0%, rgba(45, 186, 78, 0.08) 100%);
+            border: 1px solid rgba(9, 105, 218, 0.2);
+            border-radius: var(--radius-xl);
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .weekly-summary-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .weekly-summary-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .weekly-summary-title h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+
+        .weekly-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            background: linear-gradient(135deg, #0969da, #2dba4e);
+            color: white;
+            font-size: 12px;
+            font-weight: 600;
+            border-radius: var(--radius-pill);
+        }
+
+        .weekly-summary-date {
+            font-size: 14px;
+            color: var(--color-text-secondary);
+        }
+
+        .weekly-summary-content {
+            background: var(--color-bg-white);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            border: 1px solid var(--color-border-light);
+            line-height: 1.8;
+            color: var(--color-text-secondary);
+            font-size: 14px;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .weekly-summary-content h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin: 20px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--color-border-light);
+        }
+
+        .weekly-summary-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .weekly-summary-content h3 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin: 16px 0 8px;
+        }
+
+        .weekly-summary-content h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--color-text-primary);
+            margin: 12px 0 6px;
+        }
+
+        .weekly-summary-content p {
+            margin: 8px 0;
+        }
+
+        .weekly-summary-content ol,
+        .weekly-summary-content ul {
+            padding-left: 20px;
+            margin: 8px 0;
+        }
+
+        .weekly-summary-content li {
+            margin: 6px 0;
+        }
+
+        .weekly-summary-content strong {
+            color: var(--color-text-primary);
+        }
+
+        .weekly-summary-content hr {
+            border: none;
+            border-top: 1px solid var(--color-border-light);
+            margin: 16px 0;
+        }
+
+        .weekly-summary-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .weekly-summary-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .weekly-summary-content::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.15);
+            border-radius: 3px;
+        }
+
+        .weekly-summary-empty {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--color-text-tertiary);
+            font-size: 14px;
+        }
+
+        .weekly-summary-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(9, 105, 218, 0.2);
+            font-size: 12px;
+            color: var(--color-text-tertiary);
+        }
+
+        .weekly-summary-footer a {
+            color: #0969da;
+            text-decoration: none;
+        }
+
+        .weekly-summary-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .weekly-toggle-btn {
+            background: none;
+            border: 1px solid rgba(9, 105, 218, 0.3);
+            color: #0969da;
+            padding: 4px 12px;
+            border-radius: var(--radius-pill);
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .weekly-toggle-btn:hover {
+            background: rgba(9, 105, 218, 0.08);
+        }
     </style>
 </head>
 <body>
@@ -967,6 +1132,24 @@
             <div class="update-info">
                 <span>⏰ 上次更新: <span id="last-update">-</span></span>
                 <a href="archives.html">📚 查看历史归档 →</a>
+            </div>
+        </div>
+
+        <!-- Weekly Summary -->
+        <div class="weekly-summary" id="weekly-summary">
+            <div class="weekly-summary-header">
+                <div class="weekly-summary-title">
+                    <h2>📋 每周AI总结</h2>
+                    <span class="weekly-badge">每周一更新</span>
+                </div>
+                <span class="weekly-summary-date" id="weekly-date">加载中...</span>
+            </div>
+            <div class="weekly-summary-content" id="weekly-content">
+                <div class="weekly-summary-empty">加载中...</div>
+            </div>
+            <div class="weekly-summary-footer">
+                <button class="weekly-toggle-btn" id="weekly-toggle-btn" onclick="toggleWeeklyExpand()">展开全文</button>
+                <a href="archives.html">📚 查看更多周报 →</a>
             </div>
         </div>
 
@@ -2423,6 +2606,117 @@
 
         // 页面加载时获取新闻
         document.addEventListener('DOMContentLoaded', loadDailyNews);
+
+        // 加载每周AI总结
+        async function loadWeeklySummary() {
+            try {
+                const indexResp = await fetch('data/archives-index.json?t=' + Date.now());
+                if (!indexResp.ok) throw new Error('No index');
+                const index = await indexResp.json();
+                const weeklyList = index.weekly || [];
+                if (weeklyList.length === 0) throw new Error('No weekly data');
+
+                const latest = weeklyList[0];
+                document.getElementById('weekly-date').textContent = latest.title || latest.date;
+
+                const mdResp = await fetch(latest.url + '?t=' + Date.now());
+                if (!mdResp.ok) throw new Error('No markdown');
+                const markdown = await mdResp.text();
+
+                const html = parseMarkdown(markdown);
+                document.getElementById('weekly-content').innerHTML = html;
+            } catch (e) {
+                document.getElementById('weekly-date').textContent = '';
+                document.getElementById('weekly-content').innerHTML = '<div class="weekly-summary-empty">暂无周报数据，每周一自动更新</div>';
+                document.getElementById('weekly-toggle-btn').style.display = 'none';
+            }
+        }
+
+        // 简易 Markdown 转 HTML
+        function parseMarkdown(md) {
+            // 移除一级标题（文件标题）
+            let lines = md.split('\n');
+            let html = '';
+            let inOl = false;
+            let inUl = false;
+
+            for (let i = 0; i < lines.length; i++) {
+                let line = lines[i];
+
+                // 跳过第一行的一级标题
+                if (i === 0 && line.startsWith('# ')) continue;
+                // 跳过紧跟标题后的描述性段落（第二行非空非标题非列表非分割线）
+                if (i === 1 && line.trim() && !line.startsWith('#') && !line.startsWith('-') && !line.startsWith('*') && line.trim() !== '---') continue;
+
+                // 关闭列表
+                if (inOl && !line.match(/^\d+\.\s+/)) { html += '</ol>'; inOl = false; }
+                if (inUl && !line.match(/^[-*]\s+/)) { html += '</ul>'; inUl = false; }
+
+                // 分割线
+                if (line.trim() === '---') { html += '<hr>'; continue; }
+
+                // 标题
+                if (line.startsWith('#### ')) { html += '<h4>' + inlineFormat(line.slice(5)) + '</h4>'; continue; }
+                if (line.startsWith('### ')) { html += '<h3>' + inlineFormat(line.slice(4)) + '</h3>'; continue; }
+                if (line.startsWith('## ')) { html += '<h2>' + inlineFormat(line.slice(3)) + '</h2>'; continue; }
+
+                // 有序列表
+                let olMatch = line.match(/^(\d+)\.\s+(.+)/);
+                if (olMatch) {
+                    if (!inOl) { html += '<ol>'; inOl = true; }
+                    html += '<li>' + inlineFormat(olMatch[2]) + '</li>';
+                    continue;
+                }
+
+                // 无序列表
+                let ulMatch = line.match(/^[-*]\s+(.+)/);
+                if (ulMatch) {
+                    if (!inUl) { html += '<ul>'; inUl = true; }
+                    html += '<li>' + inlineFormat(ulMatch[1]) + '</li>';
+                    continue;
+                }
+
+                // 空行
+                if (line.trim() === '') continue;
+
+                // 普通段落
+                html += '<p>' + inlineFormat(line) + '</p>';
+            }
+
+            if (inOl) html += '</ol>';
+            if (inUl) html += '</ul>';
+
+            return html;
+        }
+
+        function inlineFormat(text) {
+            // 转义HTML
+            text = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            // 加粗
+            text = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+            // 斜体
+            text = text.replace(/\*(.+?)\*/g, '<em>$1</em>');
+            // 行内代码
+            text = text.replace(/`(.+?)`/g, '<code>$1</code>');
+            // 链接
+            text = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>');
+            return text;
+        }
+
+        // 展开/收起周报
+        function toggleWeeklyExpand() {
+            const content = document.getElementById('weekly-content');
+            const btn = document.getElementById('weekly-toggle-btn');
+            if (content.style.maxHeight === 'none') {
+                content.style.maxHeight = '500px';
+                btn.textContent = '展开全文';
+            } else {
+                content.style.maxHeight = 'none';
+                btn.textContent = '收起';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', loadWeeklySummary);
     </script>
 </body>
 </html>
