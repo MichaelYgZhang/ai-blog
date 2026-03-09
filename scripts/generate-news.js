@@ -72,19 +72,19 @@ async function generateDailyNews(dateInfo) {
 - research: AI研究论文（arxiv上的重要论文、新架构等）
 
 要求：
-1. 内容要真实可信，基于近期AI领域的真实动态
+1. 所有新闻必须是最近7-14天内的真实动态，严禁使用超过14天的旧闻或已广泛报道过的历史事件
 2. 每个分类标记1-2条热门新闻(hot: true)
 3. 每条新闻必须提供来源链接(url)、来源名称(source)和发布日期(date)
 4. url填写官方链接或权威媒体报道链接，不确定的填空字符串""
 5. source填写信息来源名称（如"OpenAI官方博客"、"arXiv"、"TechCrunch"等）
-6. date填写新闻发布日期，格式为YYYY-MM-DD
+6. date填写新闻发布日期，格式为YYYY-MM-DD，日期必须在最近14天内
 7. 标题简洁有力，不超过30字
 8. 只返回JSON，不要其他内容`;
 
   const completion = await callWithRetry(() => openai.chat.completions.create({
     model: "deepseek-chat",  // DeepSeek V3
     messages: [
-      { role: "system", content: "你是一个AI行业资讯专家，只返回JSON格式数据。" },
+      { role: "system", content: "你是一个AI行业资讯专家，只返回JSON格式数据。所有新闻必须是最近7-14天内发生的真实事件，绝不允许使用超过14天的旧闻。" },
       { role: "user", content: prompt }
     ],
     temperature: 0.7,
@@ -109,7 +109,7 @@ async function generateSummary(type, dateInfo, recentNews) {
   const typeNames = { weekly: '周', monthly: '月', quarterly: '季度' };
   const typeName = typeNames[type];
 
-  const prompt = `基于以下近期AI快讯内容，生成一份${typeName}度高价值内容汇总：
+  const prompt = `基于以下近期AI快讯内容，生成一份${typeName}度高价值内容汇总。当前日期: ${dateInfo.localeDateStr}。
 
 ${JSON.stringify(recentNews, null, 2)}
 
@@ -118,6 +118,8 @@ ${JSON.stringify(recentNews, null, 2)}
 2. 分类汇总（大模型/AI工具/行业动态/研究进展）
 3. 趋势洞察（2-3个关键趋势）
 4. 值得关注的项目或工具
+
+重要：所有内容必须是最近7-14天内的真实动态，严禁包含超过14天的旧闻或历史事件。
 
 格式要求：
 - 使用中文

@@ -187,13 +187,15 @@ ${roadmapSummary}
 }
 
 要求：
-1. defaultNews: 为每个分类生成3条当前最新的AI新闻作为页面默认展示，标记1条热门(hot:true)
-2. 每条新闻必须提供来源链接(url)、来源名称(source)和发布日期(date)
-3. url填写官方链接或权威媒体报道链接，不确定的填空字符串""
-4. source填写信息来源名称（如"OpenAI官方博客"、"arXiv"、"TechCrunch"等）
-5. roadmapUpdates: 只在确实有过时或缺失的重要技能时才建议修改，每个阶段最多增删1个技能，保持总数不变。如果不需要改动，返回空数组
-6. 保持保守——不确定的不要改
-7. 只返回JSON，不要其他内容`;
+1. defaultNews: 为每个分类生成3条最近7-14天内最新的AI新闻作为页面默认展示，标记1条热门(hot:true)
+2. 所有新闻必须是最近7-14天内的真实动态，严禁使用超过14天的旧闻或历史事件
+3. 每条新闻必须提供来源链接(url)、来源名称(source)和发布日期(date)
+4. url填写官方链接或权威媒体报道链接，不确定的填空字符串""
+5. source填写信息来源名称（如"OpenAI官方博客"、"arXiv"、"TechCrunch"等）
+6. date填写新闻发布日期，格式为YYYY-MM-DD，日期必须在最近14天内
+7. roadmapUpdates: 只在确实有过时或缺失的重要技能时才建议修改，每个阶段最多增删1个技能，保持总数不变。如果不需要改动，返回空数组
+8. 保持保守——不确定的不要改
+9. 只返回JSON，不要其他内容`;
 
   const completion = await callWithRetry(() => openai.chat.completions.create({
     model: 'deepseek-chat',
