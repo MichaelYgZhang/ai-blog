@@ -1,127 +1,2004 @@
 [
-  {"id":"S6-001","stage":6,"title":"用DALL-E 3和GPT-4V构建多模态应用","techPoints":["多模态API","图文理解","Prompt设计"],"dependencies":[{"stageId":4,"topic":"Prompt工程"}],"status":"published","publishDate":"2026-03-09"},
-  {"id":"S6-002","stage":6,"title":"AI安全红队测试实战指南","techPoints":["对抗攻击","Jailbreak检测","安全评估"],"dependencies":[{"stageId":4,"topic":"大模型应用开发"}],"status":"pending"},
-  {"id":"S6-003","stage":6,"title":"复现Attention Is All You Need论文","techPoints":["论文精读","代码复现","消融实验"],"dependencies":[{"stageId":3,"topic":"Transformer架构"}],"status":"pending"},
-  {"id":"S6-004","stage":6,"title":"多模态大模型LLaVA原理与实践","techPoints":["视觉编码器","跨模态对齐","指令微调"],"dependencies":[{"stageId":4,"topic":"模型微调"}],"status":"pending"},
-  {"id":"S6-005","stage":6,"title":"AI幻觉检测与缓解策略","techPoints":["事实性评估","检索增强","自一致性"],"dependencies":[{"stageId":4,"topic":"RAG系统"}],"status":"pending"},
-  {"id":"S6-006","stage":6,"title":"联邦学习在隐私保护中的应用","techPoints":["差分隐私","安全聚合","通信效率"],"dependencies":[{"stageId":2,"topic":"模型训练"}],"status":"pending"},
-  {"id":"S6-007","stage":6,"title":"从Diffusion Model到视频生成","techPoints":["DDPM","Stable Diffusion","时序建模"],"dependencies":[{"stageId":3,"topic":"生成模型"}],"status":"pending"},
-  {"id":"S6-008","stage":6,"title":"用RLHF对齐大模型偏好","techPoints":["奖励模型","PPO算法","DPO简化"],"dependencies":[{"stageId":3,"topic":"强化学习基础"}],"status":"pending"},
-  {"id":"S6-009","stage":6,"title":"AI Agent自主决策与规划","techPoints":["ReAct框架","树搜索","工具使用"],"dependencies":[{"stageId":4,"topic":"Agent开发"}],"status":"pending"},
-  {"id":"S6-010","stage":6,"title":"大模型可解释性研究前沿","techPoints":["机械可解释性","探针实验","特征归因"],"dependencies":[{"stageId":3,"topic":"神经网络原理"}],"status":"pending"},
-  {"id":"S6-011","stage":6,"title":"Mixture of Experts架构深度解析","techPoints":["专家路由","负载均衡","稀疏激活"],"dependencies":[{"stageId":3,"topic":"Transformer架构"}],"status":"pending"},
-  {"id":"S6-012","stage":6,"title":"用对比学习做多模态表征","techPoints":["CLIP原理","InfoNCE损失","零样本迁移"],"dependencies":[{"stageId":3,"topic":"对比学习"}],"status":"pending"},
-  {"id":"S6-013","stage":6,"title":"AI代码生成评估与基准测试","techPoints":["HumanEval","Pass@k","代码质量"],"dependencies":[{"stageId":4,"topic":"大模型应用"}],"status":"pending"},
-  {"id":"S6-014","stage":6,"title":"端侧大模型部署与优化","techPoints":["模型蒸馏","手机推理","功耗优化"],"dependencies":[{"stageId":5,"topic":"模型量化"}],"status":"pending"},
-  {"id":"S6-015","stage":6,"title":"多智能体协作系统设计","techPoints":["角色分配","通信协议","共识机制"],"dependencies":[{"stageId":4,"topic":"Agent开发"}],"status":"pending"},
-  {"id":"S6-016","stage":6,"title":"AI在科学发现中的应用","techPoints":["AlphaFold","材料设计","药物发现"],"dependencies":[{"stageId":3,"topic":"深度学习应用"}],"status":"pending"},
-  {"id":"S6-017","stage":6,"title":"长上下文窗口技术深度剖析","techPoints":["RoPE扩展","注意力稀疏化","YaRN"],"dependencies":[{"stageId":3,"topic":"注意力机制"}],"status":"pending"},
-  {"id":"S6-018","stage":6,"title":"AI伦理框架与负责任开发","techPoints":["偏见审计","公平性指标","透明度"],"dependencies":[{"stageId":4,"topic":"大模型应用"}],"status":"pending"},
-  {"id":"S6-019","stage":6,"title":"世界模型与视频理解前沿","techPoints":["Sora原理","时空建模","物理仿真"],"dependencies":[{"stageId":3,"topic":"生成模型"}],"status":"pending"},
-  {"id":"S6-020","stage":6,"title":"开源大模型生态全景分析","techPoints":["Llama生态","许可证选择","社区贡献"],"dependencies":[{"stageId":4,"topic":"大模型选型"}],"status":"pending"},
-
-  {"id":"S5-001","stage":5,"title":"MLOps全流程实战指南","techPoints":["实验追踪","模型注册","CI/CD"],"dependencies":[{"stageId":2,"topic":"模型训练"}],"status":"pending"},
-  {"id":"S5-002","stage":5,"title":"用Docker容器化AI应用","techPoints":["Dockerfile","镜像优化","GPU支持"],"dependencies":[{"stageId":1,"topic":"Python环境"}],"status":"pending"},
-  {"id":"S5-003","stage":5,"title":"Kubernetes部署AI推理服务","techPoints":["Pod调度","GPU资源","自动伸缩"],"dependencies":[{"stageId":5,"topic":"Docker容器化"}],"status":"pending"},
-  {"id":"S5-004","stage":5,"title":"模型量化：从INT8到GPTQ","techPoints":["量化原理","GPTQ","AWQ"],"dependencies":[{"stageId":3,"topic":"模型参数"}],"status":"pending"},
-  {"id":"S5-005","stage":5,"title":"vLLM高性能推理引擎实战","techPoints":["PagedAttention","连续批处理","吞吐量优化"],"dependencies":[{"stageId":3,"topic":"Transformer推理"}],"status":"pending"},
-  {"id":"S5-006","stage":5,"title":"分布式训练：DeepSpeed与FSDP","techPoints":["ZeRO优化","梯度累积","混合并行"],"dependencies":[{"stageId":3,"topic":"PyTorch训练"}],"status":"pending"},
-  {"id":"S5-007","stage":5,"title":"用MLflow管理模型生命周期","techPoints":["实验跟踪","模型版本","部署注册"],"dependencies":[{"stageId":2,"topic":"模型评估"}],"status":"pending"},
-  {"id":"S5-008","stage":5,"title":"TensorRT加速模型推理","techPoints":["计算图优化","层融合","精度校准"],"dependencies":[{"stageId":3,"topic":"深度学习推理"}],"status":"pending"},
-  {"id":"S5-009","stage":5,"title":"向量数据库选型与部署","techPoints":["Milvus","Pinecone","FAISS"],"dependencies":[{"stageId":1,"topic":"数据库基础"}],"status":"pending"},
-  {"id":"S5-010","stage":5,"title":"AI应用监控与可观测性","techPoints":["Prometheus","延迟追踪","异常检测"],"dependencies":[{"stageId":5,"topic":"部署运维"}],"status":"pending"},
-  {"id":"S5-011","stage":5,"title":"模型服务API设计最佳实践","techPoints":["FastAPI","流式响应","速率限制"],"dependencies":[{"stageId":1,"topic":"Python Web"}],"status":"pending"},
-  {"id":"S5-012","stage":5,"title":"GPU集群管理与成本优化","techPoints":["NVIDIA SMI","显存管理","Spot实例"],"dependencies":[{"stageId":5,"topic":"Kubernetes"}],"status":"pending"},
-  {"id":"S5-013","stage":5,"title":"数据管道构建与特征存储","techPoints":["Airflow","Feature Store","数据版本"],"dependencies":[{"stageId":2,"topic":"特征工程"}],"status":"pending"},
-  {"id":"S5-014","stage":5,"title":"模型A/B测试与灰度发布","techPoints":["实验设计","流量分割","指标分析"],"dependencies":[{"stageId":2,"topic":"模型评估"}],"status":"pending"},
-  {"id":"S5-015","stage":5,"title":"ONNX跨框架模型转换实战","techPoints":["ONNX格式","算子映射","兼容性"],"dependencies":[{"stageId":3,"topic":"深度学习框架"}],"status":"pending"},
-  {"id":"S5-016","stage":5,"title":"Triton Inference Server部署指南","techPoints":["模型仓库","动态批处理","多模型服务"],"dependencies":[{"stageId":5,"topic":"模型服务"}],"status":"pending"},
-  {"id":"S5-017","stage":5,"title":"AI安全防护：输入过滤与输出审核","techPoints":["内容过滤","注入防护","速率限制"],"dependencies":[{"stageId":4,"topic":"大模型应用"}],"status":"pending"},
-  {"id":"S5-018","stage":5,"title":"混合精度训练原理与实践","techPoints":["FP16/BF16","Loss Scaling","AMP"],"dependencies":[{"stageId":3,"topic":"模型训练"}],"status":"pending"},
-  {"id":"S5-019","stage":5,"title":"Weights & Biases实验管理","techPoints":["超参搜索","可视化","团队协作"],"dependencies":[{"stageId":2,"topic":"模型训练"}],"status":"pending"},
-  {"id":"S5-020","stage":5,"title":"边缘设备AI推理优化","techPoints":["模型剪枝","知识蒸馏","硬件适配"],"dependencies":[{"stageId":5,"topic":"模型量化"}],"status":"pending"},
-
-  {"id":"S4-001","stage":4,"title":"RAG系统架构设计与实现","techPoints":["向量检索","文档分块","Embedding选型"],"dependencies":[{"stageId":5,"topic":"向量数据库部署"}],"status":"pending"},
-  {"id":"S4-002","stage":4,"title":"Prompt工程：从入门到精通","techPoints":["Few-shot","Chain-of-Thought","系统提示"],"dependencies":[{"stageId":3,"topic":"语言模型原理"}],"status":"pending"},
-  {"id":"S4-003","stage":4,"title":"LangChain构建AI应用链","techPoints":["Chain组合","Memory管理","工具集成"],"dependencies":[{"stageId":4,"topic":"Prompt工程"}],"status":"pending"},
-  {"id":"S4-004","stage":4,"title":"用LoRA高效微调大模型","techPoints":["低秩适配","参数效率","QLoRA"],"dependencies":[{"stageId":3,"topic":"模型参数"}],"status":"pending"},
-  {"id":"S4-005","stage":4,"title":"构建智能AI Agent系统","techPoints":["工具调用","记忆机制","任务规划"],"dependencies":[{"stageId":4,"topic":"LangChain"}],"status":"pending"},
-  {"id":"S4-006","stage":4,"title":"Embedding模型选型与优化","techPoints":["文本嵌入","语义相似度","多语言"],"dependencies":[{"stageId":3,"topic":"词向量"}],"status":"pending"},
-  {"id":"S4-007","stage":4,"title":"大模型Function Calling实战","techPoints":["工具定义","JSON Schema","错误处理"],"dependencies":[{"stageId":4,"topic":"Prompt工程"}],"status":"pending"},
-  {"id":"S4-008","stage":4,"title":"文档解析与知识提取管道","techPoints":["PDF解析","表格提取","OCR"],"dependencies":[{"stageId":1,"topic":"Python数据处理"}],"status":"pending"},
-  {"id":"S4-009","stage":4,"title":"对话系统设计与上下文管理","techPoints":["对话状态","滑动窗口","摘要压缩"],"dependencies":[{"stageId":4,"topic":"Prompt工程"}],"status":"pending"},
-  {"id":"S4-010","stage":4,"title":"大模型评估体系构建","techPoints":["自动评估","人工评估","基准测试"],"dependencies":[{"stageId":2,"topic":"模型评估"}],"status":"pending"},
-  {"id":"S4-011","stage":4,"title":"Structured Output：让LLM输出结构化数据","techPoints":["JSON模式","Pydantic","约束解码"],"dependencies":[{"stageId":4,"topic":"Prompt工程"}],"status":"pending"},
-  {"id":"S4-012","stage":4,"title":"多轮对话与记忆增强","techPoints":["长期记忆","向量检索记忆","摘要记忆"],"dependencies":[{"stageId":4,"topic":"对话系统"}],"status":"pending"},
-  {"id":"S4-013","stage":4,"title":"用Semantic Kernel构建AI编排","techPoints":["插件系统","规划器","连接器"],"dependencies":[{"stageId":4,"topic":"AI应用框架"}],"status":"pending"},
-  {"id":"S4-014","stage":4,"title":"大模型应用中的缓存策略","techPoints":["语义缓存","KV缓存","成本控制"],"dependencies":[{"stageId":5,"topic":"系统优化"}],"status":"pending"},
-  {"id":"S4-015","stage":4,"title":"检索增强生成的进阶技巧","techPoints":["混合检索","重排序","查询改写"],"dependencies":[{"stageId":4,"topic":"RAG基础"}],"status":"pending"},
-  {"id":"S4-016","stage":4,"title":"全参数微调vs参数高效微调","techPoints":["SFT","LoRA","Adapter"],"dependencies":[{"stageId":3,"topic":"模型训练"}],"status":"pending"},
-  {"id":"S4-017","stage":4,"title":"AI应用的流式响应实现","techPoints":["SSE","Token流","前端渲染"],"dependencies":[{"stageId":1,"topic":"Web开发"}],"status":"pending"},
-  {"id":"S4-018","stage":4,"title":"用LlamaIndex构建知识库","techPoints":["索引构建","查询引擎","数据连接器"],"dependencies":[{"stageId":4,"topic":"RAG系统"}],"status":"pending"},
-  {"id":"S4-019","stage":4,"title":"大模型应用成本优化策略","techPoints":["Token优化","模型选择","批处理"],"dependencies":[{"stageId":4,"topic":"大模型API"}],"status":"pending"},
-  {"id":"S4-020","stage":4,"title":"GraphRAG：图谱增强的检索生成","techPoints":["知识图谱","图检索","社区摘要"],"dependencies":[{"stageId":4,"topic":"RAG进阶"}],"status":"pending"},
-  {"id":"S4-021","stage":4,"title":"Multimodal RAG：多模态检索增强","techPoints":["图像检索","表格理解","多模态嵌入"],"dependencies":[{"stageId":4,"topic":"RAG系统"}],"status":"pending"},
-  {"id":"S4-022","stage":4,"title":"AI应用安全：Prompt注入防护","techPoints":["注入检测","沙箱隔离","输出过滤"],"dependencies":[{"stageId":4,"topic":"Prompt工程"}],"status":"pending"},
-  {"id":"S4-023","stage":4,"title":"大模型应用中的错误处理","techPoints":["重试策略","降级方案","异常分类"],"dependencies":[{"stageId":1,"topic":"Python编程"}],"status":"pending"},
-  {"id":"S4-024","stage":4,"title":"Text-to-SQL：自然语言查询数据库","techPoints":["Schema理解","SQL生成","结果验证"],"dependencies":[{"stageId":4,"topic":"大模型应用"}],"status":"pending"},
-  {"id":"S4-025","stage":4,"title":"AI Copilot设计模式与最佳实践","techPoints":["交互设计","上下文感知","增量辅助"],"dependencies":[{"stageId":4,"topic":"Agent系统"}],"status":"pending"},
-
-  {"id":"S3-001","stage":3,"title":"PyTorch入门：Tensor与自动求导","techPoints":["Tensor操作","autograd","计算图"],"dependencies":[{"stageId":1,"topic":"NumPy"}],"status":"pending"},
-  {"id":"S3-002","stage":3,"title":"从零实现一个神经网络","techPoints":["前向传播","反向传播","梯度下降"],"dependencies":[{"stageId":1,"topic":"微积分"}],"status":"pending"},
-  {"id":"S3-003","stage":3,"title":"CNN图像分类实战","techPoints":["卷积层","池化层","数据增强"],"dependencies":[{"stageId":3,"topic":"神经网络基础"}],"status":"pending"},
-  {"id":"S3-004","stage":3,"title":"Transformer架构完全解析","techPoints":["自注意力","多头注意力","位置编码"],"dependencies":[{"stageId":3,"topic":"注意力机制"}],"status":"pending"},
-  {"id":"S3-005","stage":3,"title":"注意力机制的演进与变体","techPoints":["Scaled Dot-Product","Flash Attention","GQA"],"dependencies":[{"stageId":1,"topic":"线性代数"}],"status":"pending"},
-  {"id":"S3-006","stage":3,"title":"RNN与LSTM序列建模","techPoints":["循环网络","门控机制","梯度消失"],"dependencies":[{"stageId":3,"topic":"神经网络基础"}],"status":"pending"},
-  {"id":"S3-007","stage":3,"title":"用PyTorch实现文本分类","techPoints":["词嵌入","TextCNN","训练循环"],"dependencies":[{"stageId":3,"topic":"PyTorch入门"}],"status":"pending"},
-  {"id":"S3-008","stage":3,"title":"Batch Normalization与Layer Normalization","techPoints":["归一化原理","训练稳定性","选择策略"],"dependencies":[{"stageId":3,"topic":"深度学习训练"}],"status":"pending"},
-  {"id":"S3-009","stage":3,"title":"学习率调度策略全解","techPoints":["Warmup","Cosine退火","OneCycle"],"dependencies":[{"stageId":3,"topic":"模型训练"}],"status":"pending"},
-  {"id":"S3-010","stage":3,"title":"过拟合与正则化技术","techPoints":["Dropout","权重衰减","早停法"],"dependencies":[{"stageId":2,"topic":"模型评估"}],"status":"pending"},
-  {"id":"S3-011","stage":3,"title":"迁移学习与预训练模型使用","techPoints":["特征提取","微调策略","领域适配"],"dependencies":[{"stageId":3,"topic":"CNN基础"}],"status":"pending"},
-  {"id":"S3-012","stage":3,"title":"GAN生成对抗网络入门","techPoints":["生成器","判别器","对抗训练"],"dependencies":[{"stageId":3,"topic":"深度学习基础"}],"status":"pending"},
-  {"id":"S3-013","stage":3,"title":"目标检测：YOLO系列解析","techPoints":["锚框","NMS","特征金字塔"],"dependencies":[{"stageId":3,"topic":"CNN图像分类"}],"status":"pending"},
-  {"id":"S3-014","stage":3,"title":"语义分割与实例分割","techPoints":["U-Net","Mask R-CNN","像素级分类"],"dependencies":[{"stageId":3,"topic":"CNN基础"}],"status":"pending"},
-  {"id":"S3-015","stage":3,"title":"词向量：从Word2Vec到Contextual Embedding","techPoints":["Skip-gram","CBOW","ELMo"],"dependencies":[{"stageId":2,"topic":"无监督学习"}],"status":"pending"},
-  {"id":"S3-016","stage":3,"title":"BERT预训练语言模型详解","techPoints":["MLM","NSP","Fine-tuning"],"dependencies":[{"stageId":3,"topic":"Transformer"}],"status":"pending"},
-  {"id":"S3-017","stage":3,"title":"GPT系列模型演进史","techPoints":["自回归生成","Scaling Laws","涌现能力"],"dependencies":[{"stageId":3,"topic":"Transformer"}],"status":"pending"},
-  {"id":"S3-018","stage":3,"title":"损失函数全家福","techPoints":["交叉熵","Focal Loss","对比损失"],"dependencies":[{"stageId":1,"topic":"概率统计"}],"status":"pending"},
-  {"id":"S3-019","stage":3,"title":"优化器深度对比：SGD到AdamW","techPoints":["动量法","自适应学习率","权重解耦"],"dependencies":[{"stageId":1,"topic":"微积分"}],"status":"pending"},
-  {"id":"S3-020","stage":3,"title":"模型调试与可视化技巧","techPoints":["TensorBoard","梯度检查","特征可视化"],"dependencies":[{"stageId":3,"topic":"PyTorch训练"}],"status":"pending"},
-  {"id":"S3-021","stage":3,"title":"数据增强策略大全","techPoints":["图像增强","文本增强","Mixup"],"dependencies":[{"stageId":3,"topic":"模型训练"}],"status":"pending"},
-  {"id":"S3-022","stage":3,"title":"自监督学习：无标注数据的金矿","techPoints":["对比学习","掩码预测","SimCLR"],"dependencies":[{"stageId":3,"topic":"深度学习基础"}],"status":"pending"},
-  {"id":"S3-023","stage":3,"title":"图神经网络GNN入门","techPoints":["消息传递","GCN","图分类"],"dependencies":[{"stageId":3,"topic":"神经网络基础"}],"status":"pending"},
-  {"id":"S3-024","stage":3,"title":"强化学习基础：从Q-Learning到Policy Gradient","techPoints":["MDP","价值函数","策略梯度"],"dependencies":[{"stageId":1,"topic":"概率统计"}],"status":"pending"},
-  {"id":"S3-025","stage":3,"title":"模型蒸馏：用小模型学大模型","techPoints":["软标签","温度缩放","特征蒸馏"],"dependencies":[{"stageId":3,"topic":"深度学习训练"}],"status":"pending"},
-
-  {"id":"S2-001","stage":2,"title":"线性回归与逻辑回归从零实现","techPoints":["最小二乘","梯度下降","Sigmoid"],"dependencies":[{"stageId":1,"topic":"线性代数"}],"status":"pending"},
-  {"id":"S2-002","stage":2,"title":"决策树与随机森林详解","techPoints":["信息增益","Bagging","特征重要性"],"dependencies":[{"stageId":1,"topic":"概率统计"}],"status":"pending"},
-  {"id":"S2-003","stage":2,"title":"SVM支持向量机原理与实战","techPoints":["最大间隔","核函数","对偶问题"],"dependencies":[{"stageId":1,"topic":"线性代数"}],"status":"pending"},
-  {"id":"S2-004","stage":2,"title":"特征工程实战手册","techPoints":["特征选择","特征变换","缺失值处理"],"dependencies":[{"stageId":1,"topic":"Pandas"}],"status":"pending"},
-  {"id":"S2-005","stage":2,"title":"模型评估与交叉验证","techPoints":["精确率/召回率","ROC-AUC","K-Fold"],"dependencies":[{"stageId":2,"topic":"分类模型"}],"status":"pending"},
-  {"id":"S2-006","stage":2,"title":"sklearn机器学习Pipeline实战","techPoints":["预处理管道","超参搜索","模型选择"],"dependencies":[{"stageId":2,"topic":"特征工程"}],"status":"pending"},
-  {"id":"S2-007","stage":2,"title":"集成学习：Boosting与Stacking","techPoints":["XGBoost","LightGBM","模型融合"],"dependencies":[{"stageId":2,"topic":"决策树"}],"status":"pending"},
-  {"id":"S2-008","stage":2,"title":"聚类分析：K-Means到DBSCAN","techPoints":["距离度量","密度聚类","轮廓系数"],"dependencies":[{"stageId":1,"topic":"线性代数"}],"status":"pending"},
-  {"id":"S2-009","stage":2,"title":"降维技术：PCA与t-SNE","techPoints":["特征值分解","方差保留","可视化"],"dependencies":[{"stageId":1,"topic":"线性代数"}],"status":"pending"},
-  {"id":"S2-010","stage":2,"title":"贝叶斯方法与概率图模型","techPoints":["朴素贝叶斯","贝叶斯网络","MCMC"],"dependencies":[{"stageId":1,"topic":"概率统计"}],"status":"pending"},
-  {"id":"S2-011","stage":2,"title":"时间序列分析与预测","techPoints":["ARIMA","Prophet","特征构造"],"dependencies":[{"stageId":1,"topic":"概率统计"}],"status":"pending"},
-  {"id":"S2-012","stage":2,"title":"推荐系统基础：协同过滤","techPoints":["用户相似度","矩阵分解","冷启动"],"dependencies":[{"stageId":1,"topic":"线性代数"}],"status":"pending"},
-  {"id":"S2-013","stage":2,"title":"异常检测方法与应用","techPoints":["Isolation Forest","Autoencoder","统计方法"],"dependencies":[{"stageId":2,"topic":"无监督学习"}],"status":"pending"},
-  {"id":"S2-014","stage":2,"title":"Kaggle竞赛实战攻略","techPoints":["EDA","特征构造","提交策略"],"dependencies":[{"stageId":2,"topic":"模型评估"}],"status":"pending"},
-  {"id":"S2-015","stage":2,"title":"数据不平衡问题处理","techPoints":["过采样","SMOTE","代价敏感"],"dependencies":[{"stageId":2,"topic":"模型评估"}],"status":"pending"},
-
-  {"id":"S1-001","stage":1,"title":"Python基础：数据结构与函数","techPoints":["列表/字典","函数式编程","面向对象"],"dependencies":[],"status":"pending"},
-  {"id":"S1-002","stage":1,"title":"NumPy数组运算与广播机制","techPoints":["ndarray","广播规则","向量化"],"dependencies":[{"stageId":1,"topic":"Python基础"}],"status":"pending"},
-  {"id":"S1-003","stage":1,"title":"Pandas数据分析入门","techPoints":["DataFrame","数据清洗","分组聚合"],"dependencies":[{"stageId":1,"topic":"Python基础"}],"status":"pending"},
-  {"id":"S1-004","stage":1,"title":"线性代数核心：向量与矩阵运算","techPoints":["矩阵乘法","特征值","SVD"],"dependencies":[],"status":"pending"},
-  {"id":"S1-005","stage":1,"title":"概率论基础：分布与贝叶斯定理","techPoints":["条件概率","正态分布","最大似然"],"dependencies":[],"status":"pending"},
-  {"id":"S1-006","stage":1,"title":"微积分在机器学习中的应用","techPoints":["偏导数","链式法则","梯度"],"dependencies":[],"status":"pending"},
-  {"id":"S1-007","stage":1,"title":"Matplotlib与Seaborn数据可视化","techPoints":["图表类型","样式定制","统计图"],"dependencies":[{"stageId":1,"topic":"Python基础"}],"status":"pending"},
-  {"id":"S1-008","stage":1,"title":"Jupyter Notebook高效使用指南","techPoints":["快捷键","Magic命令","扩展插件"],"dependencies":[{"stageId":1,"topic":"Python环境"}],"status":"pending"},
-  {"id":"S1-009","stage":1,"title":"Git版本控制与协作开发","techPoints":["分支管理","合并策略","GitHub"],"dependencies":[],"status":"pending"},
-  {"id":"S1-010","stage":1,"title":"Python虚拟环境与包管理","techPoints":["venv","pip","conda"],"dependencies":[{"stageId":1,"topic":"Python基础"}],"status":"pending"},
-  {"id":"S1-011","stage":1,"title":"正则表达式与文本处理","techPoints":["模式匹配","分组捕获","re模块"],"dependencies":[{"stageId":1,"topic":"Python基础"}],"status":"pending"},
-  {"id":"S1-012","stage":1,"title":"Python异步编程与并发","techPoints":["async/await","多线程","多进程"],"dependencies":[{"stageId":1,"topic":"Python基础"}],"status":"pending"},
-  {"id":"S1-013","stage":1,"title":"算法基础：排序、搜索与复杂度","techPoints":["时间复杂度","二分查找","动态规划"],"dependencies":[],"status":"pending"},
-  {"id":"S1-014","stage":1,"title":"SQL数据库基础与实战","techPoints":["查询语法","JOIN","聚合函数"],"dependencies":[],"status":"pending"},
-  {"id":"S1-015","stage":1,"title":"Linux命令行与Shell脚本","techPoints":["文件操作","管道","脚本编写"],"dependencies":[],"status":"pending"}
+  {
+    "id": "S6-001",
+    "stage": 6,
+    "title": "用DALL-E 3和GPT-4V构建多模态应用",
+    "techPoints": [
+      "多模态API",
+      "图文理解",
+      "Prompt设计"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "Prompt工程"
+      }
+    ],
+    "status": "published",
+    "publishDate": "2026-03-09"
+  },
+  {
+    "id": "S6-002",
+    "stage": 6,
+    "title": "AI安全红队测试实战指南",
+    "techPoints": [
+      "对抗攻击",
+      "Jailbreak检测",
+      "安全评估"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "大模型应用开发"
+      }
+    ],
+    "status": "published",
+    "publishDate": "2026-03-10"
+  },
+  {
+    "id": "S6-003",
+    "stage": 6,
+    "title": "复现Attention Is All You Need论文",
+    "techPoints": [
+      "论文精读",
+      "代码复现",
+      "消融实验"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "Transformer架构"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-004",
+    "stage": 6,
+    "title": "多模态大模型LLaVA原理与实践",
+    "techPoints": [
+      "视觉编码器",
+      "跨模态对齐",
+      "指令微调"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "模型微调"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-005",
+    "stage": 6,
+    "title": "AI幻觉检测与缓解策略",
+    "techPoints": [
+      "事实性评估",
+      "检索增强",
+      "自一致性"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "RAG系统"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-006",
+    "stage": 6,
+    "title": "联邦学习在隐私保护中的应用",
+    "techPoints": [
+      "差分隐私",
+      "安全聚合",
+      "通信效率"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "模型训练"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-007",
+    "stage": 6,
+    "title": "从Diffusion Model到视频生成",
+    "techPoints": [
+      "DDPM",
+      "Stable Diffusion",
+      "时序建模"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "生成模型"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-008",
+    "stage": 6,
+    "title": "用RLHF对齐大模型偏好",
+    "techPoints": [
+      "奖励模型",
+      "PPO算法",
+      "DPO简化"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "强化学习基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-009",
+    "stage": 6,
+    "title": "AI Agent自主决策与规划",
+    "techPoints": [
+      "ReAct框架",
+      "树搜索",
+      "工具使用"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "Agent开发"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-010",
+    "stage": 6,
+    "title": "大模型可解释性研究前沿",
+    "techPoints": [
+      "机械可解释性",
+      "探针实验",
+      "特征归因"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "神经网络原理"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-011",
+    "stage": 6,
+    "title": "Mixture of Experts架构深度解析",
+    "techPoints": [
+      "专家路由",
+      "负载均衡",
+      "稀疏激活"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "Transformer架构"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-012",
+    "stage": 6,
+    "title": "用对比学习做多模态表征",
+    "techPoints": [
+      "CLIP原理",
+      "InfoNCE损失",
+      "零样本迁移"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "对比学习"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-013",
+    "stage": 6,
+    "title": "AI代码生成评估与基准测试",
+    "techPoints": [
+      "HumanEval",
+      "Pass@k",
+      "代码质量"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "大模型应用"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-014",
+    "stage": 6,
+    "title": "端侧大模型部署与优化",
+    "techPoints": [
+      "模型蒸馏",
+      "手机推理",
+      "功耗优化"
+    ],
+    "dependencies": [
+      {
+        "stageId": 5,
+        "topic": "模型量化"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-015",
+    "stage": 6,
+    "title": "多智能体协作系统设计",
+    "techPoints": [
+      "角色分配",
+      "通信协议",
+      "共识机制"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "Agent开发"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-016",
+    "stage": 6,
+    "title": "AI在科学发现中的应用",
+    "techPoints": [
+      "AlphaFold",
+      "材料设计",
+      "药物发现"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "深度学习应用"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-017",
+    "stage": 6,
+    "title": "长上下文窗口技术深度剖析",
+    "techPoints": [
+      "RoPE扩展",
+      "注意力稀疏化",
+      "YaRN"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "注意力机制"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-018",
+    "stage": 6,
+    "title": "AI伦理框架与负责任开发",
+    "techPoints": [
+      "偏见审计",
+      "公平性指标",
+      "透明度"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "大模型应用"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-019",
+    "stage": 6,
+    "title": "世界模型与视频理解前沿",
+    "techPoints": [
+      "Sora原理",
+      "时空建模",
+      "物理仿真"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "生成模型"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S6-020",
+    "stage": 6,
+    "title": "开源大模型生态全景分析",
+    "techPoints": [
+      "Llama生态",
+      "许可证选择",
+      "社区贡献"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "大模型选型"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-001",
+    "stage": 5,
+    "title": "MLOps全流程实战指南",
+    "techPoints": [
+      "实验追踪",
+      "模型注册",
+      "CI/CD"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "模型训练"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-002",
+    "stage": 5,
+    "title": "用Docker容器化AI应用",
+    "techPoints": [
+      "Dockerfile",
+      "镜像优化",
+      "GPU支持"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "Python环境"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-003",
+    "stage": 5,
+    "title": "Kubernetes部署AI推理服务",
+    "techPoints": [
+      "Pod调度",
+      "GPU资源",
+      "自动伸缩"
+    ],
+    "dependencies": [
+      {
+        "stageId": 5,
+        "topic": "Docker容器化"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-004",
+    "stage": 5,
+    "title": "模型量化：从INT8到GPTQ",
+    "techPoints": [
+      "量化原理",
+      "GPTQ",
+      "AWQ"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "模型参数"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-005",
+    "stage": 5,
+    "title": "vLLM高性能推理引擎实战",
+    "techPoints": [
+      "PagedAttention",
+      "连续批处理",
+      "吞吐量优化"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "Transformer推理"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-006",
+    "stage": 5,
+    "title": "分布式训练：DeepSpeed与FSDP",
+    "techPoints": [
+      "ZeRO优化",
+      "梯度累积",
+      "混合并行"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "PyTorch训练"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-007",
+    "stage": 5,
+    "title": "用MLflow管理模型生命周期",
+    "techPoints": [
+      "实验跟踪",
+      "模型版本",
+      "部署注册"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "模型评估"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-008",
+    "stage": 5,
+    "title": "TensorRT加速模型推理",
+    "techPoints": [
+      "计算图优化",
+      "层融合",
+      "精度校准"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "深度学习推理"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-009",
+    "stage": 5,
+    "title": "向量数据库选型与部署",
+    "techPoints": [
+      "Milvus",
+      "Pinecone",
+      "FAISS"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "数据库基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-010",
+    "stage": 5,
+    "title": "AI应用监控与可观测性",
+    "techPoints": [
+      "Prometheus",
+      "延迟追踪",
+      "异常检测"
+    ],
+    "dependencies": [
+      {
+        "stageId": 5,
+        "topic": "部署运维"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-011",
+    "stage": 5,
+    "title": "模型服务API设计最佳实践",
+    "techPoints": [
+      "FastAPI",
+      "流式响应",
+      "速率限制"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "Python Web"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-012",
+    "stage": 5,
+    "title": "GPU集群管理与成本优化",
+    "techPoints": [
+      "NVIDIA SMI",
+      "显存管理",
+      "Spot实例"
+    ],
+    "dependencies": [
+      {
+        "stageId": 5,
+        "topic": "Kubernetes"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-013",
+    "stage": 5,
+    "title": "数据管道构建与特征存储",
+    "techPoints": [
+      "Airflow",
+      "Feature Store",
+      "数据版本"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "特征工程"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-014",
+    "stage": 5,
+    "title": "模型A/B测试与灰度发布",
+    "techPoints": [
+      "实验设计",
+      "流量分割",
+      "指标分析"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "模型评估"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-015",
+    "stage": 5,
+    "title": "ONNX跨框架模型转换实战",
+    "techPoints": [
+      "ONNX格式",
+      "算子映射",
+      "兼容性"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "深度学习框架"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-016",
+    "stage": 5,
+    "title": "Triton Inference Server部署指南",
+    "techPoints": [
+      "模型仓库",
+      "动态批处理",
+      "多模型服务"
+    ],
+    "dependencies": [
+      {
+        "stageId": 5,
+        "topic": "模型服务"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-017",
+    "stage": 5,
+    "title": "AI安全防护：输入过滤与输出审核",
+    "techPoints": [
+      "内容过滤",
+      "注入防护",
+      "速率限制"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "大模型应用"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-018",
+    "stage": 5,
+    "title": "混合精度训练原理与实践",
+    "techPoints": [
+      "FP16/BF16",
+      "Loss Scaling",
+      "AMP"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "模型训练"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-019",
+    "stage": 5,
+    "title": "Weights & Biases实验管理",
+    "techPoints": [
+      "超参搜索",
+      "可视化",
+      "团队协作"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "模型训练"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S5-020",
+    "stage": 5,
+    "title": "边缘设备AI推理优化",
+    "techPoints": [
+      "模型剪枝",
+      "知识蒸馏",
+      "硬件适配"
+    ],
+    "dependencies": [
+      {
+        "stageId": 5,
+        "topic": "模型量化"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-001",
+    "stage": 4,
+    "title": "RAG系统架构设计与实现",
+    "techPoints": [
+      "向量检索",
+      "文档分块",
+      "Embedding选型"
+    ],
+    "dependencies": [
+      {
+        "stageId": 5,
+        "topic": "向量数据库部署"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-002",
+    "stage": 4,
+    "title": "Prompt工程：从入门到精通",
+    "techPoints": [
+      "Few-shot",
+      "Chain-of-Thought",
+      "系统提示"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "语言模型原理"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-003",
+    "stage": 4,
+    "title": "LangChain构建AI应用链",
+    "techPoints": [
+      "Chain组合",
+      "Memory管理",
+      "工具集成"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "Prompt工程"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-004",
+    "stage": 4,
+    "title": "用LoRA高效微调大模型",
+    "techPoints": [
+      "低秩适配",
+      "参数效率",
+      "QLoRA"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "模型参数"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-005",
+    "stage": 4,
+    "title": "构建智能AI Agent系统",
+    "techPoints": [
+      "工具调用",
+      "记忆机制",
+      "任务规划"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "LangChain"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-006",
+    "stage": 4,
+    "title": "Embedding模型选型与优化",
+    "techPoints": [
+      "文本嵌入",
+      "语义相似度",
+      "多语言"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "词向量"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-007",
+    "stage": 4,
+    "title": "大模型Function Calling实战",
+    "techPoints": [
+      "工具定义",
+      "JSON Schema",
+      "错误处理"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "Prompt工程"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-008",
+    "stage": 4,
+    "title": "文档解析与知识提取管道",
+    "techPoints": [
+      "PDF解析",
+      "表格提取",
+      "OCR"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "Python数据处理"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-009",
+    "stage": 4,
+    "title": "对话系统设计与上下文管理",
+    "techPoints": [
+      "对话状态",
+      "滑动窗口",
+      "摘要压缩"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "Prompt工程"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-010",
+    "stage": 4,
+    "title": "大模型评估体系构建",
+    "techPoints": [
+      "自动评估",
+      "人工评估",
+      "基准测试"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "模型评估"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-011",
+    "stage": 4,
+    "title": "Structured Output：让LLM输出结构化数据",
+    "techPoints": [
+      "JSON模式",
+      "Pydantic",
+      "约束解码"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "Prompt工程"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-012",
+    "stage": 4,
+    "title": "多轮对话与记忆增强",
+    "techPoints": [
+      "长期记忆",
+      "向量检索记忆",
+      "摘要记忆"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "对话系统"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-013",
+    "stage": 4,
+    "title": "用Semantic Kernel构建AI编排",
+    "techPoints": [
+      "插件系统",
+      "规划器",
+      "连接器"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "AI应用框架"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-014",
+    "stage": 4,
+    "title": "大模型应用中的缓存策略",
+    "techPoints": [
+      "语义缓存",
+      "KV缓存",
+      "成本控制"
+    ],
+    "dependencies": [
+      {
+        "stageId": 5,
+        "topic": "系统优化"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-015",
+    "stage": 4,
+    "title": "检索增强生成的进阶技巧",
+    "techPoints": [
+      "混合检索",
+      "重排序",
+      "查询改写"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "RAG基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-016",
+    "stage": 4,
+    "title": "全参数微调vs参数高效微调",
+    "techPoints": [
+      "SFT",
+      "LoRA",
+      "Adapter"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "模型训练"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-017",
+    "stage": 4,
+    "title": "AI应用的流式响应实现",
+    "techPoints": [
+      "SSE",
+      "Token流",
+      "前端渲染"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "Web开发"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-018",
+    "stage": 4,
+    "title": "用LlamaIndex构建知识库",
+    "techPoints": [
+      "索引构建",
+      "查询引擎",
+      "数据连接器"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "RAG系统"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-019",
+    "stage": 4,
+    "title": "大模型应用成本优化策略",
+    "techPoints": [
+      "Token优化",
+      "模型选择",
+      "批处理"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "大模型API"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-020",
+    "stage": 4,
+    "title": "GraphRAG：图谱增强的检索生成",
+    "techPoints": [
+      "知识图谱",
+      "图检索",
+      "社区摘要"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "RAG进阶"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-021",
+    "stage": 4,
+    "title": "Multimodal RAG：多模态检索增强",
+    "techPoints": [
+      "图像检索",
+      "表格理解",
+      "多模态嵌入"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "RAG系统"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-022",
+    "stage": 4,
+    "title": "AI应用安全：Prompt注入防护",
+    "techPoints": [
+      "注入检测",
+      "沙箱隔离",
+      "输出过滤"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "Prompt工程"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-023",
+    "stage": 4,
+    "title": "大模型应用中的错误处理",
+    "techPoints": [
+      "重试策略",
+      "降级方案",
+      "异常分类"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "Python编程"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-024",
+    "stage": 4,
+    "title": "Text-to-SQL：自然语言查询数据库",
+    "techPoints": [
+      "Schema理解",
+      "SQL生成",
+      "结果验证"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "大模型应用"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S4-025",
+    "stage": 4,
+    "title": "AI Copilot设计模式与最佳实践",
+    "techPoints": [
+      "交互设计",
+      "上下文感知",
+      "增量辅助"
+    ],
+    "dependencies": [
+      {
+        "stageId": 4,
+        "topic": "Agent系统"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-001",
+    "stage": 3,
+    "title": "PyTorch入门：Tensor与自动求导",
+    "techPoints": [
+      "Tensor操作",
+      "autograd",
+      "计算图"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "NumPy"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-002",
+    "stage": 3,
+    "title": "从零实现一个神经网络",
+    "techPoints": [
+      "前向传播",
+      "反向传播",
+      "梯度下降"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "微积分"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-003",
+    "stage": 3,
+    "title": "CNN图像分类实战",
+    "techPoints": [
+      "卷积层",
+      "池化层",
+      "数据增强"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "神经网络基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-004",
+    "stage": 3,
+    "title": "Transformer架构完全解析",
+    "techPoints": [
+      "自注意力",
+      "多头注意力",
+      "位置编码"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "注意力机制"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-005",
+    "stage": 3,
+    "title": "注意力机制的演进与变体",
+    "techPoints": [
+      "Scaled Dot-Product",
+      "Flash Attention",
+      "GQA"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "线性代数"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-006",
+    "stage": 3,
+    "title": "RNN与LSTM序列建模",
+    "techPoints": [
+      "循环网络",
+      "门控机制",
+      "梯度消失"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "神经网络基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-007",
+    "stage": 3,
+    "title": "用PyTorch实现文本分类",
+    "techPoints": [
+      "词嵌入",
+      "TextCNN",
+      "训练循环"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "PyTorch入门"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-008",
+    "stage": 3,
+    "title": "Batch Normalization与Layer Normalization",
+    "techPoints": [
+      "归一化原理",
+      "训练稳定性",
+      "选择策略"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "深度学习训练"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-009",
+    "stage": 3,
+    "title": "学习率调度策略全解",
+    "techPoints": [
+      "Warmup",
+      "Cosine退火",
+      "OneCycle"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "模型训练"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-010",
+    "stage": 3,
+    "title": "过拟合与正则化技术",
+    "techPoints": [
+      "Dropout",
+      "权重衰减",
+      "早停法"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "模型评估"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-011",
+    "stage": 3,
+    "title": "迁移学习与预训练模型使用",
+    "techPoints": [
+      "特征提取",
+      "微调策略",
+      "领域适配"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "CNN基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-012",
+    "stage": 3,
+    "title": "GAN生成对抗网络入门",
+    "techPoints": [
+      "生成器",
+      "判别器",
+      "对抗训练"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "深度学习基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-013",
+    "stage": 3,
+    "title": "目标检测：YOLO系列解析",
+    "techPoints": [
+      "锚框",
+      "NMS",
+      "特征金字塔"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "CNN图像分类"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-014",
+    "stage": 3,
+    "title": "语义分割与实例分割",
+    "techPoints": [
+      "U-Net",
+      "Mask R-CNN",
+      "像素级分类"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "CNN基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-015",
+    "stage": 3,
+    "title": "词向量：从Word2Vec到Contextual Embedding",
+    "techPoints": [
+      "Skip-gram",
+      "CBOW",
+      "ELMo"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "无监督学习"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-016",
+    "stage": 3,
+    "title": "BERT预训练语言模型详解",
+    "techPoints": [
+      "MLM",
+      "NSP",
+      "Fine-tuning"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "Transformer"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-017",
+    "stage": 3,
+    "title": "GPT系列模型演进史",
+    "techPoints": [
+      "自回归生成",
+      "Scaling Laws",
+      "涌现能力"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "Transformer"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-018",
+    "stage": 3,
+    "title": "损失函数全家福",
+    "techPoints": [
+      "交叉熵",
+      "Focal Loss",
+      "对比损失"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "概率统计"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-019",
+    "stage": 3,
+    "title": "优化器深度对比：SGD到AdamW",
+    "techPoints": [
+      "动量法",
+      "自适应学习率",
+      "权重解耦"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "微积分"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-020",
+    "stage": 3,
+    "title": "模型调试与可视化技巧",
+    "techPoints": [
+      "TensorBoard",
+      "梯度检查",
+      "特征可视化"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "PyTorch训练"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-021",
+    "stage": 3,
+    "title": "数据增强策略大全",
+    "techPoints": [
+      "图像增强",
+      "文本增强",
+      "Mixup"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "模型训练"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-022",
+    "stage": 3,
+    "title": "自监督学习：无标注数据的金矿",
+    "techPoints": [
+      "对比学习",
+      "掩码预测",
+      "SimCLR"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "深度学习基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-023",
+    "stage": 3,
+    "title": "图神经网络GNN入门",
+    "techPoints": [
+      "消息传递",
+      "GCN",
+      "图分类"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "神经网络基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-024",
+    "stage": 3,
+    "title": "强化学习基础：从Q-Learning到Policy Gradient",
+    "techPoints": [
+      "MDP",
+      "价值函数",
+      "策略梯度"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "概率统计"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S3-025",
+    "stage": 3,
+    "title": "模型蒸馏：用小模型学大模型",
+    "techPoints": [
+      "软标签",
+      "温度缩放",
+      "特征蒸馏"
+    ],
+    "dependencies": [
+      {
+        "stageId": 3,
+        "topic": "深度学习训练"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-001",
+    "stage": 2,
+    "title": "线性回归与逻辑回归从零实现",
+    "techPoints": [
+      "最小二乘",
+      "梯度下降",
+      "Sigmoid"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "线性代数"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-002",
+    "stage": 2,
+    "title": "决策树与随机森林详解",
+    "techPoints": [
+      "信息增益",
+      "Bagging",
+      "特征重要性"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "概率统计"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-003",
+    "stage": 2,
+    "title": "SVM支持向量机原理与实战",
+    "techPoints": [
+      "最大间隔",
+      "核函数",
+      "对偶问题"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "线性代数"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-004",
+    "stage": 2,
+    "title": "特征工程实战手册",
+    "techPoints": [
+      "特征选择",
+      "特征变换",
+      "缺失值处理"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "Pandas"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-005",
+    "stage": 2,
+    "title": "模型评估与交叉验证",
+    "techPoints": [
+      "精确率/召回率",
+      "ROC-AUC",
+      "K-Fold"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "分类模型"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-006",
+    "stage": 2,
+    "title": "sklearn机器学习Pipeline实战",
+    "techPoints": [
+      "预处理管道",
+      "超参搜索",
+      "模型选择"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "特征工程"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-007",
+    "stage": 2,
+    "title": "集成学习：Boosting与Stacking",
+    "techPoints": [
+      "XGBoost",
+      "LightGBM",
+      "模型融合"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "决策树"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-008",
+    "stage": 2,
+    "title": "聚类分析：K-Means到DBSCAN",
+    "techPoints": [
+      "距离度量",
+      "密度聚类",
+      "轮廓系数"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "线性代数"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-009",
+    "stage": 2,
+    "title": "降维技术：PCA与t-SNE",
+    "techPoints": [
+      "特征值分解",
+      "方差保留",
+      "可视化"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "线性代数"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-010",
+    "stage": 2,
+    "title": "贝叶斯方法与概率图模型",
+    "techPoints": [
+      "朴素贝叶斯",
+      "贝叶斯网络",
+      "MCMC"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "概率统计"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-011",
+    "stage": 2,
+    "title": "时间序列分析与预测",
+    "techPoints": [
+      "ARIMA",
+      "Prophet",
+      "特征构造"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "概率统计"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-012",
+    "stage": 2,
+    "title": "推荐系统基础：协同过滤",
+    "techPoints": [
+      "用户相似度",
+      "矩阵分解",
+      "冷启动"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "线性代数"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-013",
+    "stage": 2,
+    "title": "异常检测方法与应用",
+    "techPoints": [
+      "Isolation Forest",
+      "Autoencoder",
+      "统计方法"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "无监督学习"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-014",
+    "stage": 2,
+    "title": "Kaggle竞赛实战攻略",
+    "techPoints": [
+      "EDA",
+      "特征构造",
+      "提交策略"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "模型评估"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S2-015",
+    "stage": 2,
+    "title": "数据不平衡问题处理",
+    "techPoints": [
+      "过采样",
+      "SMOTE",
+      "代价敏感"
+    ],
+    "dependencies": [
+      {
+        "stageId": 2,
+        "topic": "模型评估"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S1-001",
+    "stage": 1,
+    "title": "Python基础：数据结构与函数",
+    "techPoints": [
+      "列表/字典",
+      "函数式编程",
+      "面向对象"
+    ],
+    "dependencies": [],
+    "status": "pending"
+  },
+  {
+    "id": "S1-002",
+    "stage": 1,
+    "title": "NumPy数组运算与广播机制",
+    "techPoints": [
+      "ndarray",
+      "广播规则",
+      "向量化"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "Python基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S1-003",
+    "stage": 1,
+    "title": "Pandas数据分析入门",
+    "techPoints": [
+      "DataFrame",
+      "数据清洗",
+      "分组聚合"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "Python基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S1-004",
+    "stage": 1,
+    "title": "线性代数核心：向量与矩阵运算",
+    "techPoints": [
+      "矩阵乘法",
+      "特征值",
+      "SVD"
+    ],
+    "dependencies": [],
+    "status": "pending"
+  },
+  {
+    "id": "S1-005",
+    "stage": 1,
+    "title": "概率论基础：分布与贝叶斯定理",
+    "techPoints": [
+      "条件概率",
+      "正态分布",
+      "最大似然"
+    ],
+    "dependencies": [],
+    "status": "pending"
+  },
+  {
+    "id": "S1-006",
+    "stage": 1,
+    "title": "微积分在机器学习中的应用",
+    "techPoints": [
+      "偏导数",
+      "链式法则",
+      "梯度"
+    ],
+    "dependencies": [],
+    "status": "pending"
+  },
+  {
+    "id": "S1-007",
+    "stage": 1,
+    "title": "Matplotlib与Seaborn数据可视化",
+    "techPoints": [
+      "图表类型",
+      "样式定制",
+      "统计图"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "Python基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S1-008",
+    "stage": 1,
+    "title": "Jupyter Notebook高效使用指南",
+    "techPoints": [
+      "快捷键",
+      "Magic命令",
+      "扩展插件"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "Python环境"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S1-009",
+    "stage": 1,
+    "title": "Git版本控制与协作开发",
+    "techPoints": [
+      "分支管理",
+      "合并策略",
+      "GitHub"
+    ],
+    "dependencies": [],
+    "status": "pending"
+  },
+  {
+    "id": "S1-010",
+    "stage": 1,
+    "title": "Python虚拟环境与包管理",
+    "techPoints": [
+      "venv",
+      "pip",
+      "conda"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "Python基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S1-011",
+    "stage": 1,
+    "title": "正则表达式与文本处理",
+    "techPoints": [
+      "模式匹配",
+      "分组捕获",
+      "re模块"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "Python基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S1-012",
+    "stage": 1,
+    "title": "Python异步编程与并发",
+    "techPoints": [
+      "async/await",
+      "多线程",
+      "多进程"
+    ],
+    "dependencies": [
+      {
+        "stageId": 1,
+        "topic": "Python基础"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S1-013",
+    "stage": 1,
+    "title": "算法基础：排序、搜索与复杂度",
+    "techPoints": [
+      "时间复杂度",
+      "二分查找",
+      "动态规划"
+    ],
+    "dependencies": [],
+    "status": "pending"
+  },
+  {
+    "id": "S1-014",
+    "stage": 1,
+    "title": "SQL数据库基础与实战",
+    "techPoints": [
+      "查询语法",
+      "JOIN",
+      "聚合函数"
+    ],
+    "dependencies": [],
+    "status": "pending"
+  },
+  {
+    "id": "S1-015",
+    "stage": 1,
+    "title": "Linux命令行与Shell脚本",
+    "techPoints": [
+      "文件操作",
+      "管道",
+      "脚本编写"
+    ],
+    "dependencies": [],
+    "status": "pending"
+  }
 ]
