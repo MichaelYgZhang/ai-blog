@@ -1,117 +1,117 @@
 {
-  "date": "2026年3月11日",
-  "updateTime": "2026-03-11 21:44",
+  "date": "2026年3月12日",
+  "updateTime": "2026-03-12 06:27",
   "llm": [
     {
-      "title": "Llama 3.2 发布，推理能力大幅提升",
-      "url": "https://ai.meta.com/blog/llama-3-2-release",
+      "title": "GPT-4.5 Turbo发布，推理速度提升40%",
+      "url": "https://openai.com/blog/gpt-4-5-turbo",
       "date": "2026-03-10",
-      "source": "Meta AI官方博客",
+      "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Google Gemini 2.0 Pro 开放API访问",
-      "url": "https://blog.google/technology/ai/gemini-2-pro-api",
+      "title": "Anthropic推出Claude 3.5 Sonnet，数学能力显著增强",
+      "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
       "date": "2026-03-08",
-      "source": "Google AI博客",
+      "source": "Anthropic官方博客",
       "hot": false
     },
     {
-      "title": "Anthropic Claude 4 新增多模态文档理解功能",
-      "url": "https://www.anthropic.com/news/claude-4-document-understanding",
+      "title": "Meta发布Llama 3.2 70B开源模型",
+      "url": "https://ai.meta.com/blog/llama-3-2-70b-release",
       "date": "2026-03-07",
-      "source": "Anthropic官方",
+      "source": "Meta AI博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "GitHub Copilot Workspace 正式版上线",
-      "url": "https://github.blog/2026-03-09-copilot-workspace-general-availability",
-      "date": "2026-03-09",
+      "title": "GitHub Copilot Workspace正式版上线",
+      "url": "https://github.blog/2026-03-11-copilot-workspace-general-availability",
+      "date": "2026-03-11",
       "source": "GitHub博客",
       "hot": true
     },
     {
-      "title": "Replit 推出AI代码审查助手",
-      "url": "https://blog.replit.com/ai-code-review-assistant",
-      "date": "2026-03-06",
-      "source": "Replit博客",
+      "title": "Cursor编辑器集成多模态代码理解",
+      "url": "https://cursor.sh/blog/multimodal-code-understanding",
+      "date": "2026-03-09",
+      "source": "Cursor官方博客",
       "hot": false
     },
     {
-      "title": "Tabnine 发布企业级代码安全扫描功能",
-      "url": "https://www.tabnine.com/blog/enterprise-code-security",
-      "date": "2026-03-05",
-      "source": "Tabnine博客",
+      "title": "Replit AI新增实时协作编程功能",
+      "url": "https://blog.replit.com/ai-real-time-collaboration",
+      "date": "2026-03-06",
+      "source": "Replit博客",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "Midjourney v8 支持1080p视频生成",
-      "url": "https://midjourney.com/news/v8-video-generation",
-      "date": "2026-03-10",
-      "source": "Midjourney官方",
+      "title": "ChatGPT推出实时语音对话多角色模式",
+      "url": "https://openai.com/blog/chatgpt-multi-voice",
+      "date": "2026-03-11",
+      "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Runway 推出Gen-3 Alpha视频编辑套件",
-      "url": "https://runwayml.com/blog/gen-3-alpha-suite",
-      "date": "2026-03-08",
-      "source": "Runway官方博客",
+      "title": "Midjourney v7支持1080p视频生成",
+      "url": "https://www.midjourney.com/blog/v7-video",
+      "date": "2026-03-09",
+      "source": "Midjourney官方博客",
       "hot": false
     },
     {
-      "title": "Notion AI 新增工作流自动化功能",
+      "title": "Notion AI新增工作流自动化功能",
       "url": "https://www.notion.so/blog/ai-workflow-automation",
       "date": "2026-03-07",
-      "source": "Notion博客",
+      "source": "Notion官方博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "OpenAI 完成新一轮50亿美元融资",
-      "url": "https://openai.com/blog/series-g-funding",
-      "date": "2026-03-09",
-      "source": "OpenAI官方博客",
+      "title": "英伟达发布新一代AI芯片B200",
+      "url": "https://blogs.nvidia.com/blog/2026/03/10/blackwell-b200-ai-chip",
+      "date": "2026-03-10",
+      "source": "英伟达官方博客",
       "hot": true
     },
     {
-      "title": "欧盟通过《AI法案》实施细则",
+      "title": "欧盟通过《AI法案》最终实施细则",
       "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
-      "date": "2026-03-06",
+      "date": "2026-03-08",
       "source": "欧盟委员会",
       "hot": false
     },
     {
-      "title": "英伟达发布新一代AI芯片B200",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-blackwell-architecture",
-      "date": "2026-03-04",
-      "source": "英伟达新闻室",
+      "title": "微软向法国AI初创公司Mistral追加投资20亿欧元",
+      "url": "https://news.microsoft.com/2026/03/06/microsoft-mistral-2b-investment",
+      "date": "2026-03-06",
+      "source": "微软新闻中心",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "Google提出新型稀疏混合专家架构SMoE-2",
+      "title": "Google提出新型多模态模型架构MM-Transformer",
       "url": "https://arxiv.org/abs/2603.04567",
-      "date": "2026-03-10",
+      "date": "2026-03-11",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "MIT团队发布长上下文推理基准LCRB",
+      "title": "斯坦福发布长上下文推理基准测试LongBench-2",
       "url": "https://arxiv.org/abs/2603.04012",
-      "date": "2026-03-08",
+      "date": "2026-03-09",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "新型无损模型压缩技术Diff-Compress",
+      "title": "MIT提出高效小模型训练方法TinyTrain",
       "url": "https://arxiv.org/abs/2603.03589",
-      "date": "2026-03-05",
+      "date": "2026-03-07",
       "source": "arXiv",
       "hot": false
     }
