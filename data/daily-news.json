@@ -1,152 +1,117 @@
 {
   "date": "2026年3月11日",
-  "updateTime": "2026-03-11 06:29",
+  "updateTime": "2026-03-11 21:44",
   "llm": [
     {
-      "title": "Anthropic发布Claude 3.5 Sonnet，推理能力大幅提升",
-      "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
-      "date": "2026-03-05",
-      "source": "Anthropic官方博客",
+      "title": "Llama 3.2 发布，推理能力大幅提升",
+      "url": "https://ai.meta.com/blog/llama-3-2-release",
+      "date": "2026-03-10",
+      "source": "Meta AI官方博客",
       "hot": true
     },
     {
-      "title": "Meta发布Llama 3.2系列，新增代码专用模型",
-      "url": "https://ai.meta.com/blog/llama-3-2-release/",
-      "date": "2026-03-07",
-      "source": "Meta AI博客",
+      "title": "Google Gemini 2.0 Pro 开放API访问",
+      "url": "https://blog.google/technology/ai/gemini-2-pro-api",
+      "date": "2026-03-08",
+      "source": "Google AI博客",
       "hot": false
     },
     {
-      "title": "谷歌DeepMind推出Gemini 2.0 Ultra，多模态基准测试领先",
-      "url": "https://deepmind.google/technologies/gemini/gemini-2-0/",
-      "date": "2026-03-04",
-      "source": "Google DeepMind",
-      "hot": true
-    },
-    {
-      "title": "微软与Mistral AI深化合作，在Azure推出Mistral Large 2",
-      "url": "https://azure.microsoft.com/en-us/blog/microsoft-and-mistral-ai-expand-partnership/",
-      "date": "2026-03-09",
-      "source": "Microsoft Azure博客",
+      "title": "Anthropic Claude 4 新增多模态文档理解功能",
+      "url": "https://www.anthropic.com/news/claude-4-document-understanding",
+      "date": "2026-03-07",
+      "source": "Anthropic官方",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "GitHub Copilot Workspace正式开放公测",
-      "url": "https://github.blog/2026-03-06-github-copilot-workspace-now-in-public-beta/",
-      "date": "2026-03-06",
+      "title": "GitHub Copilot Workspace 正式版上线",
+      "url": "https://github.blog/2026-03-09-copilot-workspace-general-availability",
+      "date": "2026-03-09",
       "source": "GitHub博客",
       "hot": true
     },
     {
-      "title": "Replit推出AI代码生成器Ghostwriter v3，支持多文件编辑",
-      "url": "https://blog.replit.com/ghostwriter-v3",
-      "date": "2026-03-10",
+      "title": "Replit 推出AI代码审查助手",
+      "url": "https://blog.replit.com/ai-code-review-assistant",
+      "date": "2026-03-06",
       "source": "Replit博客",
       "hot": false
     },
     {
-      "title": "亚马逊CodeWhisperer新增企业级安全审计功能",
-      "url": "https://aws.amazon.com/cn/blogs/aws/amazon-codewhisperer-enterprise-security-audit/",
-      "date": "2026-03-03",
-      "source": "AWS博客",
-      "hot": false
-    },
-    {
-      "title": "Tabnine发布上下文感知代码补全引擎，支持私有代码库",
-      "url": "https://www.tabnine.com/blog/context-aware-code-completion",
-      "date": "2026-03-08",
+      "title": "Tabnine 发布企业级代码安全扫描功能",
+      "url": "https://www.tabnine.com/blog/enterprise-code-security",
+      "date": "2026-03-05",
       "source": "Tabnine博客",
-      "hot": true
+      "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增“深度分析”模式，可处理超长复杂文档",
-      "url": "https://openai.com/index/chatgpt-deep-analysis-mode/",
-      "date": "2026-03-05",
-      "source": "OpenAI官方博客",
+      "title": "Midjourney v8 支持1080p视频生成",
+      "url": "https://midjourney.com/news/v8-video-generation",
+      "date": "2026-03-10",
+      "source": "Midjourney官方",
       "hot": true
     },
     {
-      "title": "Midjourney v7 Alpha测试启动，图像真实感显著增强",
-      "url": "https://midjourney.com/news/v7-alpha",
-      "date": "2026-03-07",
-      "source": "Midjourney官方",
+      "title": "Runway 推出Gen-3 Alpha视频编辑套件",
+      "url": "https://runwayml.com/blog/gen-3-alpha-suite",
+      "date": "2026-03-08",
+      "source": "Runway官方博客",
       "hot": false
     },
     {
-      "title": "Notion AI全面集成Claude 3.5，提升写作与摘要能力",
-      "url": "https://www.notion.so/blog/notion-ai-claude-3-5",
-      "date": "2026-03-04",
+      "title": "Notion AI 新增工作流自动化功能",
+      "url": "https://www.notion.so/blog/ai-workflow-automation",
+      "date": "2026-03-07",
       "source": "Notion博客",
       "hot": false
-    },
-    {
-      "title": "Runway发布Gen-3 Alpha，视频生成质量突破性提升",
-      "url": "https://runwayml.com/news/gen-3-alpha",
-      "date": "2026-03-09",
-      "source": "Runway官方",
-      "hot": true
     }
   ],
   "industry": [
     {
-      "title": "AI芯片初创公司Groq完成5亿美元D轮融资",
-      "url": "https://www.groq.com/blog/series-d-funding",
-      "date": "2026-03-06",
-      "source": "Groq官方博客",
+      "title": "OpenAI 完成新一轮50亿美元融资",
+      "url": "https://openai.com/blog/series-g-funding",
+      "date": "2026-03-09",
+      "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "欧盟通过《AI法案》补充条例，加强通用AI模型监管",
+      "title": "欧盟通过《AI法案》实施细则",
       "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
-      "date": "2026-03-10",
+      "date": "2026-03-06",
       "source": "欧盟委员会",
       "hot": false
     },
     {
-      "title": "英伟达发布新一代AI服务器架构Blackwell Ultra",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-unveils-blackwell-ultra-ai-server-architecture",
-      "date": "2026-03-03",
-      "source": "英伟达新闻中心",
-      "hot": true
-    },
-    {
-      "title": "特斯拉Optimus Gen 3开始小规模工厂测试",
-      "url": "https://www.tesla.com/blog/optimus-gen-3-factory-testing",
-      "date": "2026-03-08",
-      "source": "特斯拉官方博客",
+      "title": "英伟达发布新一代AI芯片B200",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-blackwell-architecture",
+      "date": "2026-03-04",
+      "source": "英伟达新闻室",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "Google提出“思维链蒸馏”新方法，提升小模型推理能力",
+      "title": "Google提出新型稀疏混合专家架构SMoE-2",
       "url": "https://arxiv.org/abs/2603.04567",
-      "date": "2026-03-04",
+      "date": "2026-03-10",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "MIT团队发布新论文，利用AI预测蛋白质复合物结构",
-      "url": "https://arxiv.org/abs/2603.05123",
-      "date": "2026-03-07",
+      "title": "MIT团队发布长上下文推理基准LCRB",
+      "url": "https://arxiv.org/abs/2603.04012",
+      "date": "2026-03-08",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "斯坦福提出“自我修正推理”框架，减少LLM幻觉",
-      "url": "https://arxiv.org/abs/2603.04891",
+      "title": "新型无损模型压缩技术Diff-Compress",
+      "url": "https://arxiv.org/abs/2603.03589",
       "date": "2026-03-05",
-      "source": "arXiv",
-      "hot": true
-    },
-    {
-      "title": "DeepMind新研究：多模态模型在具身推理任务中的评估",
-      "url": "https://arxiv.org/abs/2603.05678",
-      "date": "2026-03-09",
       "source": "arXiv",
       "hot": false
     }
