@@ -1,6 +1,8 @@
 const OpenAI = require('openai');
 const fs = require('fs');
 const path = require('path');
+const { deduplicateNews } = require('./deduplication-manager');
+const { generateWeeklyTrendingReport } = require('./github-trending');
 
 // 支持 DeepSeek API (兼容OpenAI接口)
 const openai = new OpenAI({
@@ -50,6 +52,12 @@ async function callWithRetry(fn, retries = 3) {
 
 // 生成每日快讯
 async function generateDailyNews(dateInfo) {
+  // 计算7天前的日期
+  const currentDate = new Date(dateInfo.year, parseInt(dateInfo.month) - 1, parseInt(dateInfo.day));
+  const sevenDaysAgo = new Date(currentDate);
+  sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+  const minDateStr = `${sevenDaysAgo.getFullYear()}-${String(sevenDaysAgo.getMonth() + 1).padStart(2, '0')}-${String(sevenDaysAgo.getDate()).padStart(2, '0')}`;
+
   const prompt = `你是一个AI行业资讯专家。请生成今天(${dateInfo.localeDateStr})的AI领域最新资讯汇总。
 
 请严格按照以下JSON格式返回，每个分类3-5条新闻：
@@ -72,19 +80,19 @@ async function generateDailyNews(dateInfo) {
 - research: AI研究论文（arxiv上的重要论文、新架构等）
 
 要求：
-1. 所有新闻必须是最近7-14天内的真实动态，严禁使用超过14天的旧闻或已广泛报道过的历史事件
+1. 所有新闻必须是最近7天内的真实动态，严禁使用超过7天的旧闻或已广泛报道过的历史事件
 2. 每个分类标记1-2条热门新闻(hot: true)
 3. 每条新闻必须提供来源链接(url)、来源名称(source)和发布日期(date)
 4. url填写官方链接或权威媒体报道链接，不确定的填空字符串""
 5. source填写信息来源名称（如"OpenAI官方博客"、"arXiv"、"TechCrunch"等）
-6. date填写新闻发布日期，格式为YYYY-MM-DD，日期必须在最近14天内
+6. date填写新闻发布日期，格式为YYYY-MM-DD，日期必须在${minDateStr}之后
 7. 标题简洁有力，不超过30字
 8. 只返回JSON，不要其他内容`;
 
   const completion = await callWithRetry(() => openai.chat.completions.create({
     model: "deepseek-chat",  // DeepSeek V3
     messages: [
-      { role: "system", content: "你是一个AI行业资讯专家，只返回JSON格式数据。所有新闻必须是最近7-14天内发生的真实事件，绝不允许使用超过14天的旧闻。" },
+      { role: "system", content: "你是一个AI行业资讯专家，只返回JSON格式数据。所有新闻必须是最近7天内发生的真实事件，绝不允许使用超过7天的旧闻。" },
       { role: "user", content: prompt }
     ],
     temperature: 0.7,
@@ -94,14 +102,42 @@ async function generateDailyNews(dateInfo) {
   let content = completion.choices[0].message.content;
   content = content.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
 
+  let newsData;
   try {
-    return JSON.parse(content);
+    newsData = JSON.parse(content);
   } catch (e) {
     // 尝试提取JSON部分
     const match = content.match(/\{[\s\S]*\}/);
-    if (match) return JSON.parse(match[0]);
-    throw new Error('无法解析API返回的JSON: ' + content.substring(0, 200));
+    if (match) {
+      newsData = JSON.parse(match[0]);
+    } else {
+      throw new Error('无法解析API返回的JSON: ' + content.substring(0, 200));
+    }
   }
+
+  // 验证并过滤超过7天的新闻
+  Object.keys(newsData).forEach(category => {
+    if (Array.isArray(newsData[category])) {
+      const beforeCount = newsData[category].length;
+      newsData[category] = newsData[category].filter(item => {
+        if (!item.date) {
+          console.log(`⚠️ 新闻缺少日期: ${item.title}`);
+          return false;
+        }
+        if (item.date < minDateStr) {
+          console.log(`⚠️ 新闻超过7天限制 (${item.date} < ${minDateStr}): ${item.title}`);
+          return false;
+        }
+        return true;
+      });
+      const afterCount = newsData[category].length;
+      if (beforeCount !== afterCount) {
+        console.log(`📁 ${category}: 过滤了 ${beforeCount - afterCount} 条超过7天的新闻`);
+      }
+    }
+  });
+
+  return newsData;
 }
 
 // 生成周报/月报/季报
@@ -109,39 +145,83 @@ async function generateSummary(type, dateInfo, recentNews) {
   const typeNames = { weekly: '周', monthly: '月', quarterly: '季度' };
   const typeName = typeNames[type];
 
+  // 如果是周报，先获取GitHub Trending数据
+  let githubTrendingMd = '';
+  if (type === 'weekly') {
+    console.log('📊 获取GitHub Trending数据...');
+    githubTrendingMd = await generateWeeklyTrendingReport();
+  }
+
   const prompt = `基于以下近期AI快讯内容，生成一份${typeName}度高价值内容汇总。当前日期: ${dateInfo.localeDateStr}。
 
 ${JSON.stringify(recentNews, null, 2)}
 
-请生成Markdown格式的${typeName}报，包含：
-1. 本${typeName}最重要的5-10条AI动态（按影响力排序）
-2. 分类汇总（大模型/AI工具/行业动态/研究进展）
-3. 趋势洞察（2-3个关键趋势）
-4. 值得关注的项目或工具
+请严格按照金字塔原理生成Markdown格式的${typeName}报，结构如下：
 
-重要：所有内容必须是最近7-14天内的真实动态，严禁包含超过14天的旧闻或历史事件。
+## 一、核心结论（总览）
 
-格式要求：
-- 使用中文
-- 标题使用##
-- 列表使用-
-- 重要内容加粗
-- 每条动态必须标注信息来源和日期，格式为：**标题** ([来源名称](来源链接), YYYY-MM-DD)
-- 如果快讯数据中包含url、source、date字段，直接使用；如果没有，根据内容推断并标注
-- 在报告末尾添加"## 信息来源"章节，汇总本报告引用的所有来源链接
-- 直接输出Markdown内容，不要包含任何客套话、开场白或解释性文字`;
+[用3-5句话总结本${typeName}最重要的核心洞察和趋势，让读者快速把握关键信息]
+
+## 二、关键动态（展开）
+
+### 1. 本${typeName}最重要的5-10条AI动态（按影响力排序）
+
+[每条动态格式：**标题** ([来源名称](来源链接), YYYY-MM-DD) - 简短说明]
+[按影响力从高到低排序，而非时间顺序]
+
+### 2. 分类汇总
+
+#### 大模型动态
+[GPT、Claude、Gemini、Llama等模型相关更新]
+
+#### AI工具与应用
+[AI编程工具、AI应用产品等]
+
+#### 行业动态
+[融资、市场、政策、商业化等]
+
+#### 研究进展
+[重要论文、新架构、技术突破等]
+
+## 三、趋势洞察
+
+[2-3个关键趋势，每个趋势需要具体的数据或案例支撑]
+
+## 四、值得关注的项目或工具
+
+[本${typeName}值得开发者关注的新项目、新工具、新框架]
+
+重要要求：
+1. 所有内容必须是最近7天内的真实动态，严禁包含超过7天的旧闻
+2. 严格按金字塔原理组织：先总览后展开，先重要后次要
+3. 每条动态必须标注信息来源和日期，格式为：**标题** ([来源名称](来源链接), YYYY-MM-DD)
+4. 如果快讯数据中包含url、source、date字段，直接使用；如果没有，根据内容推断并标注
+5. 在报告末尾添加"## 信息来源"章节，汇总本报告引用的所有来源链接
+6. 直接输出Markdown内容，不要包含任何客套话、开场白或解释性文字`;
 
   const completion = await callWithRetry(() => openai.chat.completions.create({
     model: "deepseek-chat",  // DeepSeek V3
     messages: [
-      { role: "system", content: "你是一个AI行业分析师，生成高质量的行业报告。" },
+      { role: "system", content: "你是一个AI行业分析师，生成高质量的行业报告。严格按照金字塔原理组织内容：先总览后展开，先重要后次要。" },
       { role: "user", content: prompt }
     ],
     temperature: 0.7,
     max_tokens: 3000
   }));
 
-  return completion.choices[0].message.content;
+  let summaryMd = completion.choices[0].message.content;
+
+  // 如果是周报，在信息来源之前插入GitHub Trending章节
+  if (type === 'weekly' && githubTrendingMd) {
+    const infoSourceIndex = summaryMd.lastIndexOf('## 信息来源');
+    if (infoSourceIndex !== -1) {
+      summaryMd = summaryMd.substring(0, infoSourceIndex) + githubTrendingMd + '\n' + summaryMd.substring(infoSourceIndex);
+    } else {
+      summaryMd += githubTrendingMd;
+    }
+  }
+
+  return summaryMd;
 }
 
 // 保存每日Markdown文件
@@ -276,7 +356,13 @@ async function main() {
   try {
     // 1. 生成每日快讯
     console.log('📰 生成每日AI快讯...');
-    const newsData = await generateDailyNews(dateInfo);
+    let newsData = await generateDailyNews(dateInfo);
+
+    // 执行去重
+    console.log('🔍 执行去重检查...');
+    const beforeCount = Object.values(newsData).flat().length;
+    newsData = deduplicateNews(newsData, dateInfo);
+    const afterCount = Object.values(newsData).flat().length;
 
     // 保存到daily-news.json（首页显示）
     const dailyNewsPath = path.join(__dirname, '../data/daily-news.json');
