@@ -1,34 +1,34 @@
 {
-  "date": "2026年3月11日",
-  "updateTime": "2026-03-11 08:00",
-  "articleId": "S6-003",
-  "title": "复现Attention Is All You Need论文",
-  "summary": "复现《Attention Is All You Need》论文，通过精读、代码实现与消融实验的系统闭环，掌握从理论理解到工程实践与科学验证的现代AI研究方法论，提升前沿创新能力。",
+  "date": "2026年3月12日",
+  "updateTime": "2026-03-12 08:00",
+  "articleId": "S6-004",
+  "title": "多模态大模型LLaVA原理与实践",
+  "summary": "LLaVA通过视觉编码器、跨模态对齐和指令微调三阶段训练，高效结合视觉与语言模型，实现低成本多模态对话与推理，为AI应用开发提供实践框架。",
   "stage": {
     "id": 6,
     "name": "前沿探索与创新",
     "color": "#ec4899"
   },
   "techPoints": [
-    "论文精读",
-    "代码复现",
-    "消融实验"
+    "视觉编码器",
+    "跨模态对齐",
+    "指令微调"
   ],
   "dependencies": [
     {
-      "stageName": "深度学习精通",
-      "stageId": 3,
-      "topic": "Transformer架构",
-      "reason": "理解「复现Attention Is All You Need论文」需要掌握「Transformer架构」的相关知识"
+      "stageName": "大模型应用开发",
+      "stageId": 4,
+      "topic": "模型微调",
+      "reason": "理解「多模态大模型LLaVA原理与实践」需要掌握「模型微调」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "多模态大模型LLaVA原理与实践",
-    "teaser": "下一篇将探讨视觉编码器和跨模态对齐等技术要点"
+    "title": "AI幻觉检测与缓解策略",
+    "teaser": "下一篇将探讨事实性评估和检索增强等技术要点"
   },
   "progress": {
-    "completed": 3,
+    "completed": 4,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-03-11-article.md"
+  "fullArticleUrl": "archives/articles/2026-03-12-article.md"
 }
