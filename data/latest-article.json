@@ -1,34 +1,34 @@
 {
-  "date": "2026年3月12日",
-  "updateTime": "2026-03-12 08:00",
-  "articleId": "S6-004",
-  "title": "多模态大模型LLaVA原理与实践",
-  "summary": "LLaVA通过视觉编码器、跨模态对齐和指令微调三阶段训练，高效结合视觉与语言模型，实现低成本多模态对话与推理，为AI应用开发提供实践框架。",
+  "date": "2026年3月13日",
+  "updateTime": "2026-03-13 08:00",
+  "articleId": "S6-005",
+  "title": "AI幻觉检测与缓解策略",
+  "summary": "本文提出应对大模型幻觉的闭环系统，核心是通过事实性评估、检索增强和自一致性验证协同作用，以提升AI输出的准确性与可靠性，对高风险领域应用至关重要。",
   "stage": {
     "id": 6,
     "name": "前沿探索与创新",
     "color": "#ec4899"
   },
   "techPoints": [
-    "视觉编码器",
-    "跨模态对齐",
-    "指令微调"
+    "事实性评估",
+    "检索增强",
+    "自一致性"
   ],
   "dependencies": [
     {
       "stageName": "大模型应用开发",
       "stageId": 4,
-      "topic": "模型微调",
-      "reason": "理解「多模态大模型LLaVA原理与实践」需要掌握「模型微调」的相关知识"
+      "topic": "RAG系统",
+      "reason": "理解「AI幻觉检测与缓解策略」需要掌握「RAG系统」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "AI幻觉检测与缓解策略",
-    "teaser": "下一篇将探讨事实性评估和检索增强等技术要点"
+    "title": "联邦学习在隐私保护中的应用",
+    "teaser": "下一篇将探讨差分隐私和安全聚合等技术要点"
   },
   "progress": {
-    "completed": 4,
+    "completed": 5,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-03-12-article.md"
+  "fullArticleUrl": "archives/articles/2026-03-13-article.md"
 }

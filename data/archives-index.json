@@ -57,6 +57,14 @@
   "quarterly": [],
   "articles": [
     {
+      "date": "2026-03-13",
+      "title": "AI幻觉检测与缓解策略",
+      "articleId": "S6-005",
+      "stage": 6,
+      "stageName": "前沿探索与创新",
+      "url": "archives/articles/2026-03-13-article.md"
+    },
+    {
       "date": "2026-03-12",
       "title": "多模态大模型LLaVA原理与实践",
       "articleId": "S6-004",
