@@ -62,6 +62,14 @@
   "quarterly": [],
   "articles": [
     {
+      "date": "2026-03-14",
+      "title": "联邦学习在隐私保护中的应用",
+      "articleId": "S6-006",
+      "stage": 6,
+      "stageName": "前沿探索与创新",
+      "url": "archives/articles/2026-03-14-article.md"
+    },
+    {
       "date": "2026-03-13",
       "title": "AI幻觉检测与缓解策略",
       "articleId": "S6-005",
