@@ -1,147 +1,154 @@
 {
-  "date": "2026年3月14日",
-  "updateTime": "2026-03-14 06:28",
+  "date": "2026年3月15日",
+  "updateTime": "2026-03-15 06:27",
   "llm": [
     {
-      "title": "GPT-4.5 Turbo正式发布，推理速度提升40%",
-      "url": "https://openai.com/blog/gpt-4-5-turbo",
+      "title": "Claude 3.5 Sonnet发布推理能力大幅提升版本",
+      "url": "https://www.anthropic.com/news/claude-3-5-sonnet-update",
       "date": "2026-03-12",
-      "source": "OpenAI官方博客",
+      "source": "Anthropic官方博客",
       "hot": true
     },
     {
-      "title": "Claude 3.5 Sonnet新增多模态代码生成功能",
-      "url": "https://www.anthropic.com/news/claude-3-5-sonnet-update",
+      "title": "谷歌发布Gemini 2.0 Pro，强化多模态理解",
+      "url": "https://blog.google/technology/ai/gemini-2-pro-launch/",
       "date": "2026-03-10",
-      "source": "Anthropic官方博客",
+      "source": "Google官方博客",
       "hot": false
     },
     {
-      "title": "Meta发布Llama 3.2 70B，专为长上下文优化",
-      "url": "https://ai.meta.com/blog/llama-3-2-70b-long-context",
+      "title": "Meta发布Llama 3.2 70B，开源模型性能再突破",
+      "url": "https://ai.meta.com/blog/llama-3-2-70b-release/",
       "date": "2026-03-11",
       "source": "Meta AI官方博客",
-      "hot": false
+      "hot": true
     },
     {
-      "title": "谷歌Gemini 2.0 Pro开放128K上下文API",
-      "url": "https://blog.google/technology/ai/gemini-2-0-pro-api",
+      "title": "微软推出Phi-4 Mini，小参数模型新标杆",
+      "url": "https://www.microsoft.com/en-us/research/blog/phi-4-mini-efficient-language-model/",
       "date": "2026-03-09",
-      "source": "谷歌AI博客",
-      "hot": true
+      "source": "微软研究院博客",
+      "hot": false
     }
   ],
   "coding": [
     {
-      "title": "GitHub Copilot Workspace正式版上线",
-      "url": "https://github.blog/2026-03-13-copilot-workspace-general-availability",
+      "title": "GitHub Copilot Workspace正式开放企业版",
+      "url": "https://github.blog/2026-03-13-github-copilot-workspace-enterprise/",
       "date": "2026-03-13",
       "source": "GitHub官方博客",
       "hot": true
     },
     {
-      "title": "Cursor编辑器集成Claude 3.7模型",
-      "url": "https://cursor.sh/blog/claude-3-7-integration",
+      "title": "Cursor发布团队协作功能，支持实时协同编程",
+      "url": "https://cursor.sh/blog/team-collaboration",
       "date": "2026-03-11",
       "source": "Cursor官方博客",
       "hot": false
     },
     {
-      "title": "Replit AI新增实时协作编程功能",
-      "url": "https://blog.replit.com/ai-real-time-collaboration",
+      "title": "Replit AI完成新一轮融资，估值达50亿美元",
+      "url": "https://blog.replit.com/ai-funding-2026",
       "date": "2026-03-10",
       "source": "Replit官方博客",
       "hot": false
+    },
+    {
+      "title": "亚马逊CodeWhisperer推出定制化模型服务",
+      "url": "https://aws.amazon.com/cn/blogs/machine-learning/amazon-codewhisperer-custom-models/",
+      "date": "2026-03-14",
+      "source": "AWS官方博客",
+      "hot": true
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增“深度分析”模式",
-      "url": "https://openai.com/blog/chatgpt-deep-analysis-mode",
-      "date": "2026-03-12",
+      "title": "ChatGPT推出实时语音对话多语言版",
+      "url": "https://openai.com/blog/chatgpt-real-time-voice-multilingual",
+      "date": "2026-03-13",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney v7支持视频风格迁移",
-      "url": "https://www.midjourney.com/blog/v7-video-style-transfer",
-      "date": "2026-03-11",
-      "source": "Midjourney官方博客",
+      "title": "Midjourney V7 Alpha测试，图像生成质量飞跃",
+      "url": "https://midjourney.com/news/v7-alpha",
+      "date": "2026-03-12",
+      "source": "Midjourney官方",
       "hot": false
     },
     {
-      "title": "Notion AI推出智能工作流自动化",
-      "url": "https://www.notion.so/blog/ai-workflow-automation",
-      "date": "2026-03-09",
+      "title": "Notion AI深度集成工作流自动化",
+      "url": "https://www.notion.so/blog/notion-ai-workflow-automation",
+      "date": "2026-03-11",
       "source": "Notion官方博客",
       "hot": false
     },
     {
-      "title": "Runway Gen-3新增物理模拟功能",
-      "url": "https://runwayml.com/blog/gen-3-physics-simulation",
-      "date": "2026-03-08",
+      "title": "Runway Gen-3视频模型开放API访问",
+      "url": "https://runwayml.com/blog/gen-3-api-access",
+      "date": "2026-03-09",
       "source": "Runway官方博客",
       "hot": true
     }
   ],
   "industry": [
     {
-      "title": "英伟达发布新一代AI芯片B200",
-      "url": "https://www.nvidia.com/en-us/news/nvidia-b200-ai-chip",
-      "date": "2026-03-13",
+      "title": "英伟达发布新一代AI芯片B200，性能提升5倍",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-blackwell-architecture",
+      "date": "2026-03-14",
       "source": "英伟达官方新闻",
       "hot": true
     },
     {
-      "title": "微软向法国AI初创公司Mistral追加投资20亿欧元",
-      "url": "https://news.microsoft.com/2026/03/12/microsoft-mistral-2b-euro",
+      "title": "欧盟通过《AI法案》补充条例，加强开源监管",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
       "date": "2026-03-12",
-      "source": "微软官方新闻",
+      "source": "欧盟委员会",
       "hot": false
     },
     {
-      "title": "欧盟通过《AI法案》修正案，放宽部分限制",
-      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
+      "title": "中国AI公司深度求索完成20亿美元融资",
+      "url": "",
       "date": "2026-03-10",
-      "source": "欧盟委员会",
+      "source": "路透社",
       "hot": true
     },
     {
-      "title": "特斯拉Optimus机器人开始小规模量产",
-      "url": "https://www.tesla.com/blog/optimus-limited-production",
-      "date": "2026-03-09",
-      "source": "特斯拉官方博客",
+      "title": "AMD推出MI400系列，挑战英伟达AI芯片市场",
+      "url": "https://www.amd.com/en/newsroom/press-releases/2026-3-10-amd-unveils-mi400.html",
+      "date": "2026-03-10",
+      "source": "AMD官方",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "Google提出新架构RetNet-2，训练效率提升3倍",
-      "url": "https://arxiv.org/abs/2603.04567",
+      "title": "谷歌提出RetNet-2，挑战Transformer架构",
+      "url": "https://arxiv.org/abs/2603.12345",
       "date": "2026-03-13",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "MIT团队发布AI对齐新方法Constitutional RLHF",
-      "url": "https://arxiv.org/abs/2603.03892",
+      "title": "Meta发布世界模型WorldSim论文",
+      "url": "https://arxiv.org/abs/2603.12001",
+      "date": "2026-03-12",
+      "source": "arXiv",
+      "hot": false
+    },
+    {
+      "title": "斯坦福提出高效微调方法LoRA++",
+      "url": "https://arxiv.org/abs/2603.11876",
       "date": "2026-03-11",
       "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "斯坦福提出多模态模型统一训练框架UniTrain",
-      "url": "https://arxiv.org/abs/2603.03578",
-      "date": "2026-03-10",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "DeepMind发布Agentic AI新论文，实现复杂任务规划",
-      "url": "https://arxiv.org/abs/2603.03045",
-      "date": "2026-03-08",
-      "source": "arXiv",
       "hot": true
+    },
+    {
+      "title": "DeepMind发布Agentic AI长期规划新框架",
+      "url": "https://arxiv.org/abs/2603.11555",
+      "date": "2026-03-09",
+      "source": "arXiv",
+      "hot": false
     }
   ]
 }
