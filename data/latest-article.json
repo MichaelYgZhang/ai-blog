@@ -1,34 +1,34 @@
 {
-  "date": "2026年3月14日",
-  "updateTime": "2026-03-14 08:00",
-  "articleId": "S6-006",
-  "title": "联邦学习在隐私保护中的应用",
-  "summary": "联邦学习结合差分隐私和安全聚合等技术，在本地训练模型，有效保护数据隐私，解决数据孤岛问题，适用于医疗、金融等敏感领域。",
+  "date": "2026年3月15日",
+  "updateTime": "2026-03-15 08:00",
+  "articleId": "S6-007",
+  "title": "从Diffusion Model到视频生成",
+  "summary": "文章阐述了视频生成作为AI前沿领域，其核心是将Diffusion Model与时序建模结合，通过潜空间架构演进和数据驱动，实现高保真、长序列的实用化。掌握该技术对理解当前AI视频进展和迈向多模态智能至关重要。",
   "stage": {
     "id": 6,
     "name": "前沿探索与创新",
     "color": "#ec4899"
   },
   "techPoints": [
-    "差分隐私",
-    "安全聚合",
-    "通信效率"
+    "DDPM",
+    "Stable Diffusion",
+    "时序建模"
   ],
   "dependencies": [
     {
-      "stageName": "机器学习核心",
-      "stageId": 2,
-      "topic": "模型训练",
-      "reason": "理解「联邦学习在隐私保护中的应用」需要掌握「模型训练」的相关知识"
+      "stageName": "深度学习精通",
+      "stageId": 3,
+      "topic": "生成模型",
+      "reason": "理解「从Diffusion Model到视频生成」需要掌握「生成模型」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "从Diffusion Model到视频生成",
-    "teaser": "下一篇将探讨DDPM和Stable Diffusion等技术要点"
+    "title": "用RLHF对齐大模型偏好",
+    "teaser": "下一篇将探讨奖励模型和PPO算法等技术要点"
   },
   "progress": {
-    "completed": 6,
+    "completed": 7,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-03-14-article.md"
+  "fullArticleUrl": "archives/articles/2026-03-15-article.md"
 }

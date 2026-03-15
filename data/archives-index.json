@@ -72,6 +72,14 @@
   "quarterly": [],
   "articles": [
     {
+      "date": "2026-03-15",
+      "title": "从Diffusion Model到视频生成",
+      "articleId": "S6-007",
+      "stage": 6,
+      "stageName": "前沿探索与创新",
+      "url": "archives/articles/2026-03-15-article.md"
+    },
+    {
       "date": "2026-03-14",
       "title": "联邦学习在隐私保护中的应用",
       "articleId": "S6-006",

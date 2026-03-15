@@ -122,7 +122,8 @@
         "topic": "生成模型"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-03-15"
   },
   {
     "id": "S6-008",
