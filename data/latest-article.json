@@ -1,34 +1,34 @@
 {
-  "date": "2026年3月15日",
-  "updateTime": "2026-03-15 08:00",
-  "articleId": "S6-007",
-  "title": "从Diffusion Model到视频生成",
-  "summary": "文章阐述了视频生成作为AI前沿领域，其核心是将Diffusion Model与时序建模结合，通过潜空间架构演进和数据驱动，实现高保真、长序列的实用化。掌握该技术对理解当前AI视频进展和迈向多模态智能至关重要。",
+  "date": "2026年3月16日",
+  "updateTime": "2026-03-16 08:00",
+  "articleId": "S6-008",
+  "title": "用RLHF对齐大模型偏好",
+  "summary": "RLHF通过奖励模型学习人类偏好，并用PPO算法微调大模型，使其输出更安全有用。DPO提供了更简洁的替代方案，是实现模型对齐的关键技术。",
   "stage": {
     "id": 6,
     "name": "前沿探索与创新",
     "color": "#ec4899"
   },
   "techPoints": [
-    "DDPM",
-    "Stable Diffusion",
-    "时序建模"
+    "奖励模型",
+    "PPO算法",
+    "DPO简化"
   ],
   "dependencies": [
     {
       "stageName": "深度学习精通",
       "stageId": 3,
-      "topic": "生成模型",
-      "reason": "理解「从Diffusion Model到视频生成」需要掌握「生成模型」的相关知识"
+      "topic": "强化学习基础",
+      "reason": "理解「用RLHF对齐大模型偏好」需要掌握「强化学习基础」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "用RLHF对齐大模型偏好",
-    "teaser": "下一篇将探讨奖励模型和PPO算法等技术要点"
+    "title": "AI Agent自主决策与规划",
+    "teaser": "下一篇将探讨ReAct框架和树搜索等技术要点"
   },
   "progress": {
-    "completed": 7,
+    "completed": 8,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-03-15-article.md"
+  "fullArticleUrl": "archives/articles/2026-03-16-article.md"
 }
