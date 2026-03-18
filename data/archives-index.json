@@ -87,6 +87,14 @@
   "quarterly": [],
   "articles": [
     {
+      "date": "2026-03-18",
+      "title": "大模型可解释性研究前沿",
+      "articleId": "S6-010",
+      "stage": 6,
+      "stageName": "前沿探索与创新",
+      "url": "archives/articles/2026-03-18-article.md"
+    },
+    {
       "date": "2026-03-17",
       "title": "AI Agent自主决策与规划",
       "articleId": "S6-009",
