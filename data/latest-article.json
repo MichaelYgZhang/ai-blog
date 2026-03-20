@@ -1,34 +1,34 @@
 {
-  "date": "2026年3月19日",
-  "updateTime": "2026-03-19 08:00",
-  "articleId": "S6-011",
-  "title": "Mixture of Experts架构深度解析",
-  "summary": "MoE架构通过专家路由和稀疏激活，在扩大模型容量的同时控制计算成本，为构建超大规模模型提供可行路径。",
+  "date": "2026年3月20日",
+  "updateTime": "2026-03-20 08:00",
+  "articleId": "S6-012",
+  "title": "用对比学习做多模态表征",
+  "summary": "CLIP通过对比学习在海量图文对上预训练，将图像与文本映射到统一语义空间，实现了强大的零样本图像分类与跨模态检索能力，推动了AI从任务特定模型向通用可迁移表征的范式转变。",
   "stage": {
     "id": 6,
     "name": "前沿探索与创新",
     "color": "#ec4899"
   },
   "techPoints": [
-    "专家路由",
-    "负载均衡",
-    "稀疏激活"
+    "CLIP原理",
+    "InfoNCE损失",
+    "零样本迁移"
   ],
   "dependencies": [
     {
       "stageName": "深度学习精通",
       "stageId": 3,
-      "topic": "Transformer架构",
-      "reason": "理解「Mixture of Experts架构深度解析」需要掌握「Transformer架构」的相关知识"
+      "topic": "对比学习",
+      "reason": "理解「用对比学习做多模态表征」需要掌握「对比学习」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "用对比学习做多模态表征",
-    "teaser": "下一篇将探讨CLIP原理和InfoNCE损失等技术要点"
+    "title": "AI代码生成评估与基准测试",
+    "teaser": "下一篇将探讨HumanEval和Pass@k等技术要点"
   },
   "progress": {
-    "completed": 11,
+    "completed": 12,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-03-19-article.md"
+  "fullArticleUrl": "archives/articles/2026-03-20-article.md"
 }

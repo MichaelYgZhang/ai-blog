@@ -97,6 +97,14 @@
   "quarterly": [],
   "articles": [
     {
+      "date": "2026-03-20",
+      "title": "用对比学习做多模态表征",
+      "articleId": "S6-012",
+      "stage": 6,
+      "stageName": "前沿探索与创新",
+      "url": "archives/articles/2026-03-20-article.md"
+    },
+    {
       "date": "2026-03-19",
       "title": "Mixture of Experts架构深度解析",
       "articleId": "S6-011",
