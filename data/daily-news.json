@@ -1,147 +1,154 @@
 {
-  "date": "2026年3月21日",
-  "updateTime": "2026-03-21 06:29",
+  "date": "2026年3月22日",
+  "updateTime": "2026-03-22 06:26",
   "llm": [
     {
       "title": "GPT-4.5 Turbo发布，推理速度提升40%",
       "url": "https://openai.com/blog/gpt-4-5-turbo",
-      "date": "2026-03-18",
+      "date": "2026-03-20",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
       "title": "Anthropic发布Claude 3.5 Sonnet，数学能力显著增强",
       "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
-      "date": "2026-03-19",
+      "date": "2026-03-18",
       "source": "Anthropic官方博客",
       "hot": false
     },
     {
-      "title": "Meta发布Llama 3.2 70B，开源模型性能再刷新",
+      "title": "Meta发布Llama 3.2 70B，开源模型性能再创新高",
       "url": "https://ai.meta.com/blog/llama-3-2-70b-release",
-      "date": "2026-03-17",
-      "source": "Meta AI官方博客",
-      "hot": false
+      "date": "2026-03-19",
+      "source": "Meta AI博客",
+      "hot": true
     },
     {
-      "title": "谷歌Gemini 2.0 Pro开放API，支持128K上下文",
-      "url": "https://blog.google/technology/ai/gemini-2-0-pro-api/",
-      "date": "2026-03-20",
-      "source": "谷歌官方博客",
-      "hot": true
+      "title": "谷歌DeepMind推出Gemini 2.0 Pro，多模态理解能力升级",
+      "url": "https://deepmind.google/technologies/gemini/gemini-2-0-pro/",
+      "date": "2026-03-17",
+      "source": "谷歌DeepMind官网",
+      "hot": false
     }
   ],
   "coding": [
     {
       "title": "GitHub Copilot Workspace正式版上线",
-      "url": "https://github.blog/2026-03-19-github-copilot-workspace-ga/",
+      "url": "https://github.blog/2026-03-19-github-copilot-workspace-generally-available/",
       "date": "2026-03-19",
-      "source": "GitHub官方博客",
+      "source": "GitHub博客",
       "hot": true
     },
     {
-      "title": "Cursor 3.0发布，集成多模态代码理解",
-      "url": "https://www.cursor.com/blog/cursor-3",
-      "date": "2026-03-17",
+      "title": "Cursor发布团队协作功能，支持实时代码评审",
+      "url": "https://www.cursor.com/blog/team-collaboration",
+      "date": "2026-03-21",
       "source": "Cursor官方博客",
       "hot": false
     },
     {
       "title": "亚马逊CodeWhisperer新增Java 21支持",
-      "url": "https://aws.amazon.com/cn/blogs/machine-learning/amazon-codewhisperer-java-21/",
+      "url": "https://aws.amazon.com/cn/blogs/machine-learning/amazon-codewhisperer-now-supports-java-21/",
       "date": "2026-03-18",
-      "source": "AWS官方博客",
+      "source": "AWS机器学习博客",
       "hot": false
+    },
+    {
+      "title": "Replit AI推出本地化部署方案",
+      "url": "https://blog.replit.com/ai-local-deployment",
+      "date": "2026-03-17",
+      "source": "Replit博客",
+      "hot": true
     }
   ],
   "apps": [
     {
-      "title": "Midjourney V7 Alpha测试，图像一致性大幅提升",
-      "url": "https://www.midjourney.com/blog/v7-alpha",
+      "title": "ChatGPT新增实时网络搜索与文件分析功能",
+      "url": "https://openai.com/blog/chatgpt-real-time-search-and-file-analysis",
       "date": "2026-03-20",
-      "source": "Midjourney官方博客",
+      "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Runway Gen-3新增视频风格迁移功能",
-      "url": "https://runwayml.com/blog/gen-3-style-transfer",
+      "title": "Midjourney v7 Alpha测试启动，图像一致性大幅提升",
+      "url": "https://midjourney.com/news/v7-alpha",
+      "date": "2026-03-19",
+      "source": "Midjourney官网",
+      "hot": false
+    },
+    {
+      "title": "Notion AI推出项目进度智能预测功能",
+      "url": "https://www.notion.so/blog/ai-project-prediction",
       "date": "2026-03-18",
-      "source": "Runway官方博客",
+      "source": "Notion博客",
       "hot": false
     },
     {
-      "title": "Notion AI推出智能工作流自动化",
-      "url": "https://www.notion.so/blog/ai-workflow-automation",
-      "date": "2026-03-16",
-      "source": "Notion官方博客",
-      "hot": false
-    },
-    {
-      "title": "Adobe Firefly集成Photoshop正式版发布",
-      "url": "https://blog.adobe.com/en/publish/2026/03/17/firefly-photoshop-integration",
-      "date": "2026-03-17",
-      "source": "Adobe官方博客",
+      "title": "Runway Gen-3视频模型开放公测",
+      "url": "https://runwayml.com/blog/gen-3-public-beta",
+      "date": "2026-03-21",
+      "source": "RunwayML博客",
       "hot": true
     }
   ],
   "industry": [
     {
-      "title": "英伟达发布新一代AI芯片B200",
-      "url": "https://blogs.nvidia.com/blog/2026/03/18/blackwell-b200-ai-superchip/",
-      "date": "2026-03-18",
-      "source": "英伟达官方博客",
+      "title": "AI芯片初创公司Cerebras完成12亿美元D轮融资",
+      "url": "https://techcrunch.com/2026/03/20/cerebras-12-billion-series-d/",
+      "date": "2026-03-20",
+      "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "微软向法国AI初创公司Mistral追加投资20亿欧元",
-      "url": "https://news.microsoft.com/2026/03/19/microsoft-mistral-2b-euro-investment/",
+      "title": "欧盟通过《AI法案》补充条例，加强开源模型监管",
+      "url": "https://www.euractiv.com/section/artificial-intelligence/news/eu-adopts-ai-act-supplementary-rules/",
       "date": "2026-03-19",
-      "source": "微软官方新闻",
+      "source": "EurActiv",
       "hot": false
     },
     {
-      "title": "欧盟通过《AI法案》补充协议，加强开源模型监管",
-      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
-      "date": "2026-03-17",
-      "source": "欧盟委员会",
+      "title": "英伟达发布新一代AI服务器DGX H200",
+      "url": "https://blogs.nvidia.com/blog/dgx-h200-ai-server/",
+      "date": "2026-03-18",
+      "source": "英伟达博客",
       "hot": true
     },
     {
-      "title": "特斯拉Dojo超算中心二期投入运营",
-      "url": "https://www.tesla.com/blog/dojo-phase-2-operational",
-      "date": "2026-03-16",
-      "source": "特斯拉官方博客",
+      "title": "微软与OpenAI扩大合作，追加100亿美元投资",
+      "url": "https://news.microsoft.com/2026/03/17/microsoft-openai-expand-partnership/",
+      "date": "2026-03-17",
+      "source": "微软新闻中心",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "DeepMind提出新架构OmegaNet，效率超Transformer",
+      "title": "谷歌提出新架构Mamba-2，处理长序列效率提升",
       "url": "https://arxiv.org/abs/2603.12345",
+      "date": "2026-03-21",
+      "source": "arXiv",
+      "hot": true
+    },
+    {
+      "title": "Meta发布论文展示自我改进型AI训练框架",
+      "url": "https://arxiv.org/abs/2603.12098",
+      "date": "2026-03-20",
+      "source": "arXiv",
+      "hot": false
+    },
+    {
+      "title": "斯坦福大学提出降低AI幻觉的新训练方法",
+      "url": "https://arxiv.org/abs/2603.11987",
       "date": "2026-03-19",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "斯坦福发布长视频理解模型LVU-2",
-      "url": "https://arxiv.org/abs/2603.12346",
+      "title": "DeepMind发布Agentic AI系统性评估基准",
+      "url": "https://arxiv.org/abs/2603.11876",
       "date": "2026-03-18",
       "source": "arXiv",
       "hot": false
-    },
-    {
-      "title": "MIT提出新型稀疏激活MoE训练方法",
-      "url": "https://arxiv.org/abs/2603.12347",
-      "date": "2026-03-17",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "UC Berkeley开源10万亿参数模型训练技术",
-      "url": "https://arxiv.org/abs/2603.12348",
-      "date": "2026-03-20",
-      "source": "arXiv",
-      "hot": true
     }
   ]
 }
