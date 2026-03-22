@@ -112,6 +112,14 @@
   "quarterly": [],
   "articles": [
     {
+      "date": "2026-03-22",
+      "title": "端侧大模型部署与优化",
+      "articleId": "S6-014",
+      "stage": 6,
+      "stageName": "前沿探索与创新",
+      "url": "archives/articles/2026-03-22-article.md"
+    },
+    {
       "date": "2026-03-21",
       "title": "AI代码生成评估与基准测试",
       "articleId": "S6-013",
