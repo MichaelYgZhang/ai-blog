@@ -1,34 +1,34 @@
 {
-  "date": "2026年3月22日",
-  "updateTime": "2026-03-22 08:00",
-  "articleId": "S6-014",
-  "title": "端侧大模型部署与优化",
-  "summary": "本文探讨了将大型语言模型部署到手机等端侧设备的关键技术，重点通过模型蒸馏、量化与硬件优化实现模型“瘦身”，在有限算力、内存和功耗下保持高效推理，推动AI能力向终端渗透。",
+  "date": "2026年3月23日",
+  "updateTime": "2026-03-23 08:00",
+  "articleId": "S6-015",
+  "title": "多智能体协作系统设计",
+  "summary": "多智能体协作系统通过动态角色分配、高效通信协议和鲁棒共识机制，将多个智能体组织成有机整体，以解决复杂任务，提升系统鲁棒性、可扩展性和可解释性。",
   "stage": {
     "id": 6,
     "name": "前沿探索与创新",
     "color": "#ec4899"
   },
   "techPoints": [
-    "模型蒸馏",
-    "手机推理",
-    "功耗优化"
+    "角色分配",
+    "通信协议",
+    "共识机制"
   ],
   "dependencies": [
     {
-      "stageName": "AI工程化与系统",
-      "stageId": 5,
-      "topic": "模型量化",
-      "reason": "理解「端侧大模型部署与优化」需要掌握「模型量化」的相关知识"
+      "stageName": "大模型应用开发",
+      "stageId": 4,
+      "topic": "Agent开发",
+      "reason": "理解「多智能体协作系统设计」需要掌握「Agent开发」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "多智能体协作系统设计",
-    "teaser": "下一篇将探讨角色分配和通信协议等技术要点"
+    "title": "AI在科学发现中的应用",
+    "teaser": "下一篇将探讨AlphaFold和材料设计等技术要点"
   },
   "progress": {
-    "completed": 14,
+    "completed": 15,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-03-22-article.md"
+  "fullArticleUrl": "archives/articles/2026-03-23-article.md"
 }
