@@ -122,6 +122,14 @@
   "quarterly": [],
   "articles": [
     {
+      "date": "2026-03-24",
+      "title": "AI在科学发现中的应用",
+      "articleId": "S6-016",
+      "stage": 6,
+      "stageName": "前沿探索与创新",
+      "url": "archives/articles/2026-03-24-article.md"
+    },
+    {
       "date": "2026-03-23",
       "title": "多智能体协作系统设计",
       "articleId": "S6-015",
