@@ -127,6 +127,14 @@
   "quarterly": [],
   "articles": [
     {
+      "date": "2026-03-25",
+      "title": "长上下文窗口技术深度剖析",
+      "articleId": "S6-017",
+      "stage": 6,
+      "stageName": "前沿探索与创新",
+      "url": "archives/articles/2026-03-25-article.md"
+    },
+    {
       "date": "2026-03-24",
       "title": "AI在科学发现中的应用",
       "articleId": "S6-016",

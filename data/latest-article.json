@@ -1,34 +1,34 @@
 {
-  "date": "2026年3月24日",
-  "updateTime": "2026-03-24 08:00",
-  "articleId": "S6-016",
-  "title": "AI在科学发现中的应用",
-  "summary": "AI正成为科学发现的核心引擎，以AlphaFold为代表，在蛋白质结构预测、材料与药物设计等领域实现突破。它推动AI从商业应用迈向基础科学探索，要求工程师融合领域知识，将物理约束融入模型，解决传统方法难以应对的复杂科学问题。",
+  "date": "2026年3月25日",
+  "updateTime": "2026-03-25 08:00",
+  "articleId": "S6-017",
+  "title": "长上下文窗口技术深度剖析",
+  "summary": "本文剖析了长上下文窗口技术，聚焦RoPE扩展、注意力稀疏化和YaRN三大技术点，旨在通过优化位置编码和注意力计算，使模型在保持短文本性能的同时高效处理超长序列，解决大模型应用的“记忆墙”问题，并提升AI工程师的架构认知与实战技能。",
   "stage": {
     "id": 6,
     "name": "前沿探索与创新",
     "color": "#ec4899"
   },
   "techPoints": [
-    "AlphaFold",
-    "材料设计",
-    "药物发现"
+    "RoPE扩展",
+    "注意力稀疏化",
+    "YaRN"
   ],
   "dependencies": [
     {
       "stageName": "深度学习精通",
       "stageId": 3,
-      "topic": "深度学习应用",
-      "reason": "理解「AI在科学发现中的应用」需要掌握「深度学习应用」的相关知识"
+      "topic": "注意力机制",
+      "reason": "理解「长上下文窗口技术深度剖析」需要掌握「注意力机制」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "长上下文窗口技术深度剖析",
-    "teaser": "下一篇将探讨RoPE扩展和注意力稀疏化等技术要点"
+    "title": "AI伦理框架与负责任开发",
+    "teaser": "下一篇将探讨偏见审计和公平性指标等技术要点"
   },
   "progress": {
-    "completed": 16,
+    "completed": 17,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-03-24-article.md"
+  "fullArticleUrl": "archives/articles/2026-03-25-article.md"
 }
