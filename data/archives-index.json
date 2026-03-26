@@ -132,6 +132,14 @@
   "quarterly": [],
   "articles": [
     {
+      "date": "2026-03-26",
+      "title": "AI伦理框架与负责任开发",
+      "articleId": "S6-018",
+      "stage": 6,
+      "stageName": "前沿探索与创新",
+      "url": "archives/articles/2026-03-26-article.md"
+    },
+    {
       "date": "2026-03-25",
       "title": "长上下文窗口技术深度剖析",
       "articleId": "S6-017",
