@@ -137,6 +137,14 @@
   "quarterly": [],
   "articles": [
     {
+      "date": "2026-03-27",
+      "title": "世界模型与视频理解前沿",
+      "articleId": "S6-019",
+      "stage": 6,
+      "stageName": "前沿探索与创新",
+      "url": "archives/articles/2026-03-27-article.md"
+    },
+    {
       "date": "2026-03-26",
       "title": "AI伦理框架与负责任开发",
       "articleId": "S6-018",
