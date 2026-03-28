@@ -1,34 +1,34 @@
 {
-  "date": "2026年3月27日",
-  "updateTime": "2026-03-27 08:00",
-  "articleId": "S6-019",
-  "title": "世界模型与视频理解前沿",
-  "summary": "Sora等视频生成模型通过学习物理世界模型，实现从感知到理解与仿真的范式跃迁，是迈向通用人工智能的关键。",
+  "date": "2026年3月28日",
+  "updateTime": "2026-03-28 08:00",
+  "articleId": "S6-020",
+  "title": "开源大模型生态全景分析",
+  "summary": "开源大模型生态以Llama为事实标准，聚焦许可证博弈与社区贡献，重塑AI应用构建模式。理解生态全景是工程师构建合规、可持续应用的关键，需掌握Llama生态演进、许可证影响及社区协作机制，以降低风险、把握创新机遇。",
   "stage": {
     "id": 6,
     "name": "前沿探索与创新",
     "color": "#ec4899"
   },
   "techPoints": [
-    "Sora原理",
-    "时空建模",
-    "物理仿真"
+    "Llama生态",
+    "许可证选择",
+    "社区贡献"
   ],
   "dependencies": [
     {
-      "stageName": "深度学习精通",
-      "stageId": 3,
-      "topic": "生成模型",
-      "reason": "理解「世界模型与视频理解前沿」需要掌握「生成模型」的相关知识"
+      "stageName": "大模型应用开发",
+      "stageId": 4,
+      "topic": "大模型选型",
+      "reason": "理解「开源大模型生态全景分析」需要掌握「大模型选型」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "开源大模型生态全景分析",
-    "teaser": "下一篇将探讨Llama生态和许可证选择等技术要点"
+    "title": "MLOps全流程实战指南",
+    "teaser": "下一篇将探讨实验追踪和模型注册等技术要点"
   },
   "progress": {
-    "completed": 19,
+    "completed": 20,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-03-27-article.md"
+  "fullArticleUrl": "archives/articles/2026-03-28-article.md"
 }

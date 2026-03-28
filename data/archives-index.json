@@ -142,6 +142,14 @@
   "quarterly": [],
   "articles": [
     {
+      "date": "2026-03-28",
+      "title": "开源大模型生态全景分析",
+      "articleId": "S6-020",
+      "stage": 6,
+      "stageName": "前沿探索与创新",
+      "url": "archives/articles/2026-03-28-article.md"
+    },
+    {
       "date": "2026-03-27",
       "title": "世界模型与视频理解前沿",
       "articleId": "S6-019",
