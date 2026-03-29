@@ -152,6 +152,14 @@
   "quarterly": [],
   "articles": [
     {
+      "date": "2026-03-29",
+      "title": "MLOps全流程实战指南",
+      "articleId": "S5-001",
+      "stage": 5,
+      "stageName": "AI工程化与系统",
+      "url": "archives/articles/2026-03-29-article.md"
+    },
+    {
       "date": "2026-03-28",
       "title": "开源大模型生态全景分析",
       "articleId": "S6-020",
