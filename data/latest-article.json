@@ -1,34 +1,34 @@
 {
-  "date": "2026年3月29日",
-  "updateTime": "2026-03-29 08:00",
-  "articleId": "S5-001",
-  "title": "MLOps全流程实战指南",
-  "summary": "MLOps将AI模型从实验转化为工业产品，通过实验追踪、模型注册和CI/CD实现标准化、自动化流程，解决模型部署与维护难题，提升工程化能力。",
+  "date": "2026年3月30日",
+  "updateTime": "2026-03-30 08:00",
+  "articleId": "S5-002",
+  "title": "用Docker容器化AI应用",
+  "summary": "本文阐述了使用Docker容器化AI应用的核心价值，包括确保环境一致性、依赖隔离和部署可移植性。文章重点介绍了通过编写Dockerfile构建镜像、进行镜像优化以及配置GPU支持等关键技术实践，为构建可复现、可扩展的AI生产系统提供指导。",
   "stage": {
     "id": 5,
     "name": "AI工程化与系统",
     "color": "#8b5cf6"
   },
   "techPoints": [
-    "实验追踪",
-    "模型注册",
-    "CI/CD"
+    "Dockerfile",
+    "镜像优化",
+    "GPU支持"
   ],
   "dependencies": [
     {
-      "stageName": "机器学习核心",
-      "stageId": 2,
-      "topic": "模型训练",
-      "reason": "理解「MLOps全流程实战指南」需要掌握「模型训练」的相关知识"
+      "stageName": "编程与数学基础",
+      "stageId": 1,
+      "topic": "Python环境",
+      "reason": "理解「用Docker容器化AI应用」需要掌握「Python环境」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "用Docker容器化AI应用",
-    "teaser": "下一篇将探讨Dockerfile和镜像优化等技术要点"
+    "title": "Kubernetes部署AI推理服务",
+    "teaser": "下一篇将探讨Pod调度和GPU资源等技术要点"
   },
   "progress": {
-    "completed": 21,
+    "completed": 22,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-03-29-article.md"
+  "fullArticleUrl": "archives/articles/2026-03-30-article.md"
 }
