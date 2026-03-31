@@ -410,7 +410,8 @@
         "topic": "Docker容器化"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-03-31"
   },
   {
     "id": "S5-004",
