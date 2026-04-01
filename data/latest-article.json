@@ -1,34 +1,34 @@
 {
-  "date": "2026年3月31日",
-  "updateTime": "2026-03-31 08:00",
-  "articleId": "S5-003",
-  "title": "Kubernetes部署AI推理服务",
-  "summary": "Kubernetes通过Pod调度、GPU资源管理和自动伸缩，将AI模型转化为高可用、可扩展的生产级服务，是AI工程化的关键。",
+  "date": "2026年4月1日",
+  "updateTime": "2026-04-01 08:00",
+  "articleId": "S5-004",
+  "title": "模型量化：从INT8到GPTQ",
+  "summary": "模型量化通过降低数据精度压缩模型，提升推理效率。文章详解了量化原理，并介绍了GPTQ、AWQ等先进算法，是AI模型部署落地的关键技术。",
   "stage": {
     "id": 5,
     "name": "AI工程化与系统",
     "color": "#8b5cf6"
   },
   "techPoints": [
-    "Pod调度",
-    "GPU资源",
-    "自动伸缩"
+    "量化原理",
+    "GPTQ",
+    "AWQ"
   ],
   "dependencies": [
     {
-      "stageName": "AI工程化与系统",
-      "stageId": 5,
-      "topic": "Docker容器化",
-      "reason": "理解「Kubernetes部署AI推理服务」需要掌握「Docker容器化」的相关知识"
+      "stageName": "深度学习精通",
+      "stageId": 3,
+      "topic": "模型参数",
+      "reason": "理解「模型量化：从INT8到GPTQ」需要掌握「模型参数」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "模型量化：从INT8到GPTQ",
-    "teaser": "下一篇将探讨量化原理和GPTQ等技术要点"
+    "title": "vLLM高性能推理引擎实战",
+    "teaser": "下一篇将探讨PagedAttention和连续批处理等技术要点"
   },
   "progress": {
-    "completed": 23,
+    "completed": 24,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-03-31-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-01-article.md"
 }
