@@ -184,6 +184,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-02",
+      "title": "vLLM高性能推理引擎实战",
+      "articleId": "S5-005",
+      "stage": 5,
+      "stageName": "AI工程化与系统",
+      "url": "archives/articles/2026-04-02-article.md"
+    },
+    {
       "date": "2026-04-01",
       "title": "模型量化：从INT8到GPTQ",
       "articleId": "S5-004",
