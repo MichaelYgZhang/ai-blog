@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月3日",
-  "updateTime": "2026-04-03 08:00",
-  "articleId": "S5-006",
-  "title": "分布式训练：DeepSpeed与FSDP",
-  "summary": "DeepSpeed的ZeRO优化与PyTorch的FSDP是两种主流的分布式训练范式，用于解决大模型训练中的显存瓶颈。ZeRO通过分区模型状态节省内存，FSDP则提供更灵活的集成方式。工程师需根据模型规模、硬件和开发需求选择合适方案。",
+  "date": "2026年4月4日",
+  "updateTime": "2026-04-04 08:00",
+  "articleId": "S5-007",
+  "title": "用MLflow管理模型生命周期",
+  "summary": "MLflow是开源平台，通过实验跟踪、模型版本和部署注册三大核心功能，将机器学习从混乱的手工作坊转变为标准化、可追溯的工业化流程，提升团队效率与模型交付质量，是AI工程化落地的关键基础设施。",
   "stage": {
     "id": 5,
     "name": "AI工程化与系统",
     "color": "#8b5cf6"
   },
   "techPoints": [
-    "ZeRO优化",
-    "梯度累积",
-    "混合并行"
+    "实验跟踪",
+    "模型版本",
+    "部署注册"
   ],
   "dependencies": [
     {
-      "stageName": "深度学习精通",
-      "stageId": 3,
-      "topic": "PyTorch训练",
-      "reason": "理解「分布式训练：DeepSpeed与FSDP」需要掌握「PyTorch训练」的相关知识"
+      "stageName": "机器学习核心",
+      "stageId": 2,
+      "topic": "模型评估",
+      "reason": "理解「用MLflow管理模型生命周期」需要掌握「模型评估」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "用MLflow管理模型生命周期",
-    "teaser": "下一篇将探讨实验跟踪和模型版本等技术要点"
+    "title": "TensorRT加速模型推理",
+    "teaser": "下一篇将探讨计算图优化和层融合等技术要点"
   },
   "progress": {
-    "completed": 26,
+    "completed": 27,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-03-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-04-article.md"
 }
