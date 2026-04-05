@@ -204,6 +204,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-05",
+      "title": "TensorRT加速模型推理",
+      "articleId": "S5-008",
+      "stage": 5,
+      "stageName": "AI工程化与系统",
+      "url": "archives/articles/2026-04-05-article.md"
+    },
+    {
       "date": "2026-04-04",
       "title": "用MLflow管理模型生命周期",
       "articleId": "S5-007",
