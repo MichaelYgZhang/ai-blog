@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月5日",
-  "updateTime": "2026-04-05 08:00",
-  "articleId": "S5-008",
-  "title": "TensorRT加速模型推理",
-  "summary": "TensorRT通过计算图优化、层融合和精度校准三大技术，显著提升深度学习模型推理速度，是AI工程化实现高性能部署的关键工具。",
+  "date": "2026年4月6日",
+  "updateTime": "2026-04-06 08:00",
+  "articleId": "S5-009",
+  "title": "向量数据库选型与部署",
+  "summary": "本文对比了Milvus、Pinecone和FAISS三类向量数据库方案，为AI工程师提供选型框架，强调需根据数据规模、性能、运维及技术栈选择合适方案，以构建高效可扩展的向量检索系统。",
   "stage": {
     "id": 5,
     "name": "AI工程化与系统",
     "color": "#8b5cf6"
   },
   "techPoints": [
-    "计算图优化",
-    "层融合",
-    "精度校准"
+    "Milvus",
+    "Pinecone",
+    "FAISS"
   ],
   "dependencies": [
     {
-      "stageName": "深度学习精通",
-      "stageId": 3,
-      "topic": "深度学习推理",
-      "reason": "理解「TensorRT加速模型推理」需要掌握「深度学习推理」的相关知识"
+      "stageName": "编程与数学基础",
+      "stageId": 1,
+      "topic": "数据库基础",
+      "reason": "理解「向量数据库选型与部署」需要掌握「数据库基础」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "向量数据库选型与部署",
-    "teaser": "下一篇将探讨Milvus和Pinecone等技术要点"
+    "title": "AI应用监控与可观测性",
+    "teaser": "下一篇将探讨Prometheus和延迟追踪等技术要点"
   },
   "progress": {
-    "completed": 28,
+    "completed": 29,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-05-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-06-article.md"
 }
