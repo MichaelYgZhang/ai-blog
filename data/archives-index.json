@@ -214,6 +214,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-07",
+      "title": "AI应用监控与可观测性",
+      "articleId": "S5-010",
+      "stage": 5,
+      "stageName": "AI工程化与系统",
+      "url": "archives/articles/2026-04-07-article.md"
+    },
+    {
       "date": "2026-04-06",
       "title": "向量数据库选型与部署",
       "articleId": "S5-009",

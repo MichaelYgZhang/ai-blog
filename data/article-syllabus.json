@@ -536,7 +536,8 @@
         "topic": "部署运维"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-04-07"
   },
   {
     "id": "S5-011",
