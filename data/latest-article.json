@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月7日",
-  "updateTime": "2026-04-07 08:00",
-  "articleId": "S5-010",
-  "title": "AI应用监控与可观测性",
-  "summary": "本文阐述了AI应用监控与可观测性的重要性，指出其核心在于将模型推理过程透明化，并整合Prometheus指标监控、延迟追踪与智能异常检测等技术，以实现对AI服务性能与质量的端到端洞察，是AI工程化落地的关键。",
+  "date": "2026年4月8日",
+  "updateTime": "2026-04-08 08:00",
+  "articleId": "S5-011",
+  "title": "模型服务API设计最佳实践",
+  "summary": "本文介绍了模型服务API设计的三大核心实践：采用FastAPI异步框架提升性能，利用流式响应优化大输出场景体验，并通过速率限制保障系统稳定与公平性。这些实践帮助AI工程师构建高效、可靠的生产级服务，实现从模型到应用的关键工程化跃迁。",
   "stage": {
     "id": 5,
     "name": "AI工程化与系统",
     "color": "#8b5cf6"
   },
   "techPoints": [
-    "Prometheus",
-    "延迟追踪",
-    "异常检测"
+    "FastAPI",
+    "流式响应",
+    "速率限制"
   ],
   "dependencies": [
     {
-      "stageName": "AI工程化与系统",
-      "stageId": 5,
-      "topic": "部署运维",
-      "reason": "理解「AI应用监控与可观测性」需要掌握「部署运维」的相关知识"
+      "stageName": "编程与数学基础",
+      "stageId": 1,
+      "topic": "Python Web",
+      "reason": "理解「模型服务API设计最佳实践」需要掌握「Python Web」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "模型服务API设计最佳实践",
-    "teaser": "下一篇将探讨FastAPI和流式响应等技术要点"
+    "title": "GPU集群管理与成本优化",
+    "teaser": "下一篇将探讨NVIDIA SMI和显存管理等技术要点"
   },
   "progress": {
-    "completed": 30,
+    "completed": 31,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-07-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-08-article.md"
 }

@@ -554,7 +554,8 @@
         "topic": "Python Web"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-04-08"
   },
   {
     "id": "S5-012",
