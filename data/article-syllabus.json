@@ -572,7 +572,8 @@
         "topic": "Kubernetes"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-04-09"
   },
   {
     "id": "S5-013",
