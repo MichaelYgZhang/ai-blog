@@ -1,117 +1,124 @@
 {
-  "date": "2026年4月9日",
-  "updateTime": "2026-04-09 06:39",
+  "date": "2026年4月10日",
+  "updateTime": "2026-04-10 06:41",
   "llm": [
     {
-      "title": "GPT-4.5 Turbo发布，推理速度提升40%",
+      "title": "GPT-4.5 Turbo发布，推理成本降低40%",
       "url": "https://openai.com/blog/gpt-4-5-turbo",
-      "date": "2026-04-07",
+      "date": "2026-04-08",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Claude 3.5 Sonnet新增多模态代码生成功能",
-      "url": "https://www.anthropic.com/news/claude-3-5-sonnet-update",
-      "date": "2026-04-05",
-      "source": "Anthropic官方",
+      "title": "Anthropic发布Claude 3.5 Sonnet，数学能力显著提升",
+      "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "date": "2026-04-06",
+      "source": "Anthropic官方博客",
       "hot": false
     },
     {
-      "title": "Meta发布Llama 3.2 70B开源模型",
+      "title": "Meta发布Llama 3.2 70B，专为长上下文优化",
       "url": "https://ai.meta.com/blog/llama-3-2-70b-release",
-      "date": "2026-04-03",
+      "date": "2026-04-05",
       "source": "Meta AI博客",
       "hot": false
+    },
+    {
+      "title": "谷歌Gemini 2.0 Pro开放API，支持128K上下文",
+      "url": "https://developers.googleblog.com/2026/04/gemini-2-pro-api.html",
+      "date": "2026-04-04",
+      "source": "Google开发者博客",
+      "hot": true
     }
   ],
   "coding": [
     {
       "title": "GitHub Copilot Workspace正式版上线",
-      "url": "https://github.blog/2026-04-08-copilot-workspace-general-availability",
-      "date": "2026-04-08",
+      "url": "https://github.blog/2026-04-09-copilot-workspace-ga",
+      "date": "2026-04-09",
       "source": "GitHub博客",
       "hot": true
     },
     {
-      "title": "Cursor 2.0支持实时多文件协同编辑",
-      "url": "https://cursor.sh/blog/cursor-2-0",
-      "date": "2026-04-06",
+      "title": "Cursor 2.0发布，集成多模态代码理解",
+      "url": "https://cursor.sh/blog/cursor-2",
+      "date": "2026-04-07",
       "source": "Cursor官方博客",
       "hot": false
     },
     {
-      "title": "Replit AI新增自主调试功能",
-      "url": "https://blog.replit.com/ai-debugging",
-      "date": "2026-04-04",
+      "title": "Replit推出AI代码审查助手Ghostwriter Pro",
+      "url": "https://blog.replit.com/ghostwriter-pro",
+      "date": "2026-04-05",
       "source": "Replit博客",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增实时网页搜索与摘要",
-      "url": "https://openai.com/blog/chatgpt-real-time-web",
+      "title": "ChatGPT新增实时联网与文件分析功能",
+      "url": "https://openai.com/blog/chatgpt-new-features-april-2026",
       "date": "2026-04-08",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney v7支持1080p视频生成",
-      "url": "https://midjourney.com/news/v7-video",
-      "date": "2026-04-05",
+      "title": "Midjourney v7 Alpha测试，图像一致性大幅提升",
+      "url": "https://midjourney.com/news/v7-alpha",
+      "date": "2026-04-06",
       "source": "Midjourney官方",
       "hot": false
     },
     {
-      "title": "Notion AI深度集成工作流自动化",
-      "url": "https://www.notion.so/blog/ai-workflow-automation",
-      "date": "2026-04-03",
+      "title": "Notion AI推出项目全流程管理助手",
+      "url": "https://www.notion.so/blog/notion-ai-project-assistant",
+      "date": "2026-04-04",
       "source": "Notion博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "英伟达发布新一代AI芯片B200",
-      "url": "https://www.nvidia.com/en-us/news/nvidia-b200",
-      "date": "2026-04-07",
-      "source": "英伟达新闻中心",
+      "title": "AI芯片初创公司Cerebras获25亿美元融资",
+      "url": "https://techcrunch.com/2026/04/09/cerebras-2-5b-funding",
+      "date": "2026-04-09",
+      "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过《AI法案》最终实施细则",
+      "title": "欧盟通过《AI法案》补充条例，聚焦生成式AI",
       "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
-      "date": "2026-04-04",
+      "date": "2026-04-07",
       "source": "欧盟委员会",
       "hot": false
     },
     {
-      "title": "AI初创公司Cognition AI获5亿美元融资",
-      "url": "https://techcrunch.com/2026/04/05/cognition-ai-500m-funding",
+      "title": "英伟达发布新一代AI服务器DGX H200",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-dgx-h200",
       "date": "2026-04-05",
-      "source": "TechCrunch",
-      "hot": false
+      "source": "英伟达新闻中心",
+      "hot": true
     }
   ],
   "research": [
     {
-      "title": "Google提出新架构Gemini 2.0",
-      "url": "https://arxiv.org/abs/2604.12345",
-      "date": "2026-04-06",
+      "title": "DeepMind提出新架构JEST，训练效率提升13倍",
+      "url": "https://arxiv.org/abs/2604.01234",
+      "date": "2026-04-08",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "MIT发布高效小模型训练方法",
-      "url": "https://arxiv.org/abs/2604.12346",
-      "date": "2026-04-04",
+      "title": "MIT团队发布视频生成模型StreamNet",
+      "url": "https://arxiv.org/abs/2604.01098",
+      "date": "2026-04-06",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "新论文提出AI对齐新框架",
-      "url": "https://arxiv.org/abs/2604.12347",
-      "date": "2026-04-03",
+      "title": "新论文提出MoE-Transformer混合架构",
+      "url": "https://arxiv.org/abs/2604.00987",
+      "date": "2026-04-04",
       "source": "arXiv",
       "hot": false
     }
