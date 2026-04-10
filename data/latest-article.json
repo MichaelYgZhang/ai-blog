@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月9日",
-  "updateTime": "2026-04-09 08:00",
-  "articleId": "S5-012",
-  "title": "GPU集群管理与成本优化",
-  "summary": "本文介绍GPU集群管理与成本优化的核心策略，包括使用NVIDIA SMI监控、精细显存管理和Spot实例，可降低训练成本30%-70%，提升资源利用率和团队协作效率。",
+  "date": "2026年4月10日",
+  "updateTime": "2026-04-10 08:00",
+  "articleId": "S5-013",
+  "title": "数据管道构建与特征存储",
+  "summary": "本文阐述了构建自动化数据管道与集中式特征存储在AI工程化中的核心作用，通过Airflow实现工作流编排和Feature Store管理特征，解决了数据一致性、计算效率及协作复现等关键问题，是AI项目规模化应用的基石。",
   "stage": {
     "id": 5,
     "name": "AI工程化与系统",
     "color": "#8b5cf6"
   },
   "techPoints": [
-    "NVIDIA SMI",
-    "显存管理",
-    "Spot实例"
+    "Airflow",
+    "Feature Store",
+    "数据版本"
   ],
   "dependencies": [
     {
-      "stageName": "AI工程化与系统",
-      "stageId": 5,
-      "topic": "Kubernetes",
-      "reason": "理解「GPU集群管理与成本优化」需要掌握「Kubernetes」的相关知识"
+      "stageName": "机器学习核心",
+      "stageId": 2,
+      "topic": "特征工程",
+      "reason": "理解「数据管道构建与特征存储」需要掌握「特征工程」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "数据管道构建与特征存储",
-    "teaser": "下一篇将探讨Airflow和Feature Store等技术要点"
+    "title": "模型A/B测试与灰度发布",
+    "teaser": "下一篇将探讨实验设计和流量分割等技术要点"
   },
   "progress": {
-    "completed": 32,
+    "completed": 33,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-09-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-10-article.md"
 }

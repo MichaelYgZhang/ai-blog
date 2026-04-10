@@ -229,6 +229,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-10",
+      "title": "数据管道构建与特征存储",
+      "articleId": "S5-013",
+      "stage": 5,
+      "stageName": "AI工程化与系统",
+      "url": "archives/articles/2026-04-10-article.md"
+    },
+    {
       "date": "2026-04-09",
       "title": "GPU集群管理与成本优化",
       "articleId": "S5-012",
