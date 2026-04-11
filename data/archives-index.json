@@ -234,6 +234,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-11",
+      "title": "模型A/B测试与灰度发布",
+      "articleId": "S5-014",
+      "stage": 5,
+      "stageName": "AI工程化与系统",
+      "url": "archives/articles/2026-04-11-article.md"
+    },
+    {
       "date": "2026-04-10",
       "title": "数据管道构建与特征存储",
       "articleId": "S5-013",
