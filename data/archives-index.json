@@ -244,6 +244,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-12",
+      "title": "ONNX跨框架模型转换实战",
+      "articleId": "S5-015",
+      "stage": 5,
+      "stageName": "AI工程化与系统",
+      "url": "archives/articles/2026-04-12-article.md"
+    },
+    {
       "date": "2026-04-11",
       "title": "模型A/B测试与灰度发布",
       "articleId": "S5-014",

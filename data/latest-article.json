@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月11日",
-  "updateTime": "2026-04-11 08:00",
-  "articleId": "S5-014",
-  "title": "模型A/B测试与灰度发布",
-  "summary": "模型A/B测试与灰度发布通过科学可控的线上实验，量化新模型增量价值，驱动理性决策。涵盖实验设计、流量分割与指标分析，解决离线评估与线上效果差异，实现数据驱动的模型迭代与价值交付。",
+  "date": "2026年4月12日",
+  "updateTime": "2026-04-12 08:00",
+  "articleId": "S5-015",
+  "title": "ONNX跨框架模型转换实战",
+  "summary": "ONNX作为统一中间格式，解决了AI模型在不同框架与部署平台间的转换难题。本文通过解析ONNX格式、模型导出及算子映射等核心内容，指导开发者实现跨框架模型的高效转换与部署，提升AI工程化能力。",
   "stage": {
     "id": 5,
     "name": "AI工程化与系统",
     "color": "#8b5cf6"
   },
   "techPoints": [
-    "实验设计",
-    "流量分割",
-    "指标分析"
+    "ONNX格式",
+    "算子映射",
+    "兼容性"
   ],
   "dependencies": [
     {
-      "stageName": "机器学习核心",
-      "stageId": 2,
-      "topic": "模型评估",
-      "reason": "理解「模型A/B测试与灰度发布」需要掌握「模型评估」的相关知识"
+      "stageName": "深度学习精通",
+      "stageId": 3,
+      "topic": "深度学习框架",
+      "reason": "理解「ONNX跨框架模型转换实战」需要掌握「深度学习框架」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "ONNX跨框架模型转换实战",
-    "teaser": "下一篇将探讨ONNX格式和算子映射等技术要点"
+    "title": "Triton Inference Server部署指南",
+    "teaser": "下一篇将探讨模型仓库和动态批处理等技术要点"
   },
   "progress": {
-    "completed": 34,
+    "completed": 35,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-11-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-12-article.md"
 }
