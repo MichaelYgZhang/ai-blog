@@ -249,6 +249,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-13",
+      "title": "Triton Inference Server部署指南",
+      "articleId": "S5-016",
+      "stage": 5,
+      "stageName": "AI工程化与系统",
+      "url": "archives/articles/2026-04-13-article.md"
+    },
+    {
       "date": "2026-04-12",
       "title": "ONNX跨框架模型转换实战",
       "articleId": "S5-015",

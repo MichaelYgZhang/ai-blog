@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月12日",
-  "updateTime": "2026-04-12 08:00",
-  "articleId": "S5-015",
-  "title": "ONNX跨框架模型转换实战",
-  "summary": "ONNX作为统一中间格式，解决了AI模型在不同框架与部署平台间的转换难题。本文通过解析ONNX格式、模型导出及算子映射等核心内容，指导开发者实现跨框架模型的高效转换与部署，提升AI工程化能力。",
+  "date": "2026年4月13日",
+  "updateTime": "2026-04-13 08:00",
+  "articleId": "S5-016",
+  "title": "Triton Inference Server部署指南",
+  "summary": "Triton Inference Server通过模型仓库、动态批处理和多模型服务三大核心功能，为AI模型提供统一、高性能的生产部署方案，解决异构框架支持、性能优化和运维简化等关键问题。",
   "stage": {
     "id": 5,
     "name": "AI工程化与系统",
     "color": "#8b5cf6"
   },
   "techPoints": [
-    "ONNX格式",
-    "算子映射",
-    "兼容性"
+    "模型仓库",
+    "动态批处理",
+    "多模型服务"
   ],
   "dependencies": [
     {
-      "stageName": "深度学习精通",
-      "stageId": 3,
-      "topic": "深度学习框架",
-      "reason": "理解「ONNX跨框架模型转换实战」需要掌握「深度学习框架」的相关知识"
+      "stageName": "AI工程化与系统",
+      "stageId": 5,
+      "topic": "模型服务",
+      "reason": "理解「Triton Inference Server部署指南」需要掌握「模型服务」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "Triton Inference Server部署指南",
-    "teaser": "下一篇将探讨模型仓库和动态批处理等技术要点"
+    "title": "AI安全防护：输入过滤与输出审核",
+    "teaser": "下一篇将探讨内容过滤和注入防护等技术要点"
   },
   "progress": {
-    "completed": 35,
+    "completed": 36,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-12-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-13-article.md"
 }
