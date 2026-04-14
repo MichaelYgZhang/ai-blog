@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月13日",
-  "updateTime": "2026-04-13 08:00",
-  "articleId": "S5-016",
-  "title": "Triton Inference Server部署指南",
-  "summary": "Triton Inference Server通过模型仓库、动态批处理和多模型服务三大核心功能，为AI模型提供统一、高性能的生产部署方案，解决异构框架支持、性能优化和运维简化等关键问题。",
+  "date": "2026年4月14日",
+  "updateTime": "2026-04-14 08:00",
+  "articleId": "S5-017",
+  "title": "AI安全防护：输入过滤与输出审核",
+  "summary": "AI安全防护需构建输入到输出的全链路机制，核心是内容过滤、注入防护和速率限制三大工程化组件，以应对内容、系统和运营安全风险，确保AI应用安全可靠。",
   "stage": {
     "id": 5,
     "name": "AI工程化与系统",
     "color": "#8b5cf6"
   },
   "techPoints": [
-    "模型仓库",
-    "动态批处理",
-    "多模型服务"
+    "内容过滤",
+    "注入防护",
+    "速率限制"
   ],
   "dependencies": [
     {
-      "stageName": "AI工程化与系统",
-      "stageId": 5,
-      "topic": "模型服务",
-      "reason": "理解「Triton Inference Server部署指南」需要掌握「模型服务」的相关知识"
+      "stageName": "大模型应用开发",
+      "stageId": 4,
+      "topic": "大模型应用",
+      "reason": "理解「AI安全防护：输入过滤与输出审核」需要掌握「大模型应用」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "AI安全防护：输入过滤与输出审核",
-    "teaser": "下一篇将探讨内容过滤和注入防护等技术要点"
+    "title": "混合精度训练原理与实践",
+    "teaser": "下一篇将探讨FP16/BF16和Loss Scaling等技术要点"
   },
   "progress": {
-    "completed": 36,
+    "completed": 37,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-13-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-14-article.md"
 }
