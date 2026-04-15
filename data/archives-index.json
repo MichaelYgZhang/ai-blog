@@ -259,6 +259,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-15",
+      "title": "混合精度训练原理与实践",
+      "articleId": "S5-018",
+      "stage": 5,
+      "stageName": "AI工程化与系统",
+      "url": "archives/articles/2026-04-15-article.md"
+    },
+    {
       "date": "2026-04-14",
       "title": "AI安全防护：输入过滤与输出审核",
       "articleId": "S5-017",
