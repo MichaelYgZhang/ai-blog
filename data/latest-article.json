@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月15日",
-  "updateTime": "2026-04-15 08:00",
-  "articleId": "S5-018",
-  "title": "混合精度训练原理与实践",
-  "summary": "混合精度训练结合FP16/BF16与FP32，通过Loss Scaling等机制，在保证模型精度的同时显著提升训练速度并降低显存占用，是大模型训练的关键优化技术。",
+  "date": "2026年4月16日",
+  "updateTime": "2026-04-16 08:00",
+  "articleId": "S5-019",
+  "title": "Weights & Biases实验管理",
+  "summary": "W&B是AI工程化关键平台，集成实验跟踪、超参搜索、可视化与团队协作，解决可复现性、协作效率与系统化洞察难题，助力深度学习研发从手工作坊迈向工业化生产。",
   "stage": {
     "id": 5,
     "name": "AI工程化与系统",
     "color": "#8b5cf6"
   },
   "techPoints": [
-    "FP16/BF16",
-    "Loss Scaling",
-    "AMP"
+    "超参搜索",
+    "可视化",
+    "团队协作"
   ],
   "dependencies": [
     {
-      "stageName": "深度学习精通",
-      "stageId": 3,
+      "stageName": "机器学习核心",
+      "stageId": 2,
       "topic": "模型训练",
-      "reason": "理解「混合精度训练原理与实践」需要掌握「模型训练」的相关知识"
+      "reason": "理解「Weights & Biases实验管理」需要掌握「模型训练」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "Weights & Biases实验管理",
-    "teaser": "下一篇将探讨超参搜索和可视化等技术要点"
+    "title": "边缘设备AI推理优化",
+    "teaser": "下一篇将探讨模型剪枝和知识蒸馏等技术要点"
   },
   "progress": {
-    "completed": 38,
+    "completed": 39,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-15-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-16-article.md"
 }
