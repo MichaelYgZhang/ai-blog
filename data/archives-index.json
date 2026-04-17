@@ -269,6 +269,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-17",
+      "title": "边缘设备AI推理优化",
+      "articleId": "S5-020",
+      "stage": 5,
+      "stageName": "AI工程化与系统",
+      "url": "archives/articles/2026-04-17-article.md"
+    },
+    {
       "date": "2026-04-16",
       "title": "Weights & Biases实验管理",
       "articleId": "S5-019",

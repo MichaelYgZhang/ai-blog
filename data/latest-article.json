@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月16日",
-  "updateTime": "2026-04-16 08:00",
-  "articleId": "S5-019",
-  "title": "Weights & Biases实验管理",
-  "summary": "W&B是AI工程化关键平台，集成实验跟踪、超参搜索、可视化与团队协作，解决可复现性、协作效率与系统化洞察难题，助力深度学习研发从手工作坊迈向工业化生产。",
+  "date": "2026年4月17日",
+  "updateTime": "2026-04-17 08:00",
+  "articleId": "S5-020",
+  "title": "边缘设备AI推理优化",
+  "summary": "本文探讨了边缘设备AI推理优化的关键技术，包括模型剪枝、知识蒸馏和硬件适配。这些方法协同作用，在保证精度的前提下，显著降低模型复杂度与资源消耗，以满足边缘计算对实时性、低功耗和隐私保护的核心需求，是实现AI在资源受限设备上高效部署的关键。",
   "stage": {
     "id": 5,
     "name": "AI工程化与系统",
     "color": "#8b5cf6"
   },
   "techPoints": [
-    "超参搜索",
-    "可视化",
-    "团队协作"
+    "模型剪枝",
+    "知识蒸馏",
+    "硬件适配"
   ],
   "dependencies": [
     {
-      "stageName": "机器学习核心",
-      "stageId": 2,
-      "topic": "模型训练",
-      "reason": "理解「Weights & Biases实验管理」需要掌握「模型训练」的相关知识"
+      "stageName": "AI工程化与系统",
+      "stageId": 5,
+      "topic": "模型量化",
+      "reason": "理解「边缘设备AI推理优化」需要掌握「模型量化」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "边缘设备AI推理优化",
-    "teaser": "下一篇将探讨模型剪枝和知识蒸馏等技术要点"
+    "title": "RAG系统架构设计与实现",
+    "teaser": "下一篇将探讨向量检索和文档分块等技术要点"
   },
   "progress": {
-    "completed": 39,
+    "completed": 40,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-16-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-17-article.md"
 }
