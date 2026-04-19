@@ -284,6 +284,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-19",
+      "title": "Prompt工程：从入门到精通",
+      "articleId": "S4-002",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-04-19-article.md"
+    },
+    {
       "date": "2026-04-18",
       "title": "RAG系统架构设计与实现",
       "articleId": "S4-001",

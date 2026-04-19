@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月18日",
-  "updateTime": "2026-04-18 08:00",
-  "articleId": "S4-001",
-  "title": "RAG系统架构设计与实现",
-  "summary": "RAG系统通过向量检索、文档分块和Embedding选型，构建检索-生成双引擎架构，解决大模型幻觉与知识滞后问题，实现知识外化与来源可溯，是生产级AI应用的核心能力。",
+  "date": "2026年4月19日",
+  "updateTime": "2026-04-19 08:00",
+  "articleId": "S4-002",
+  "title": "Prompt工程：从入门到精通",
+  "summary": "本文介绍了Prompt工程的核心价值与关键技术，强调其作为连接大模型潜力与实际应用的关键桥梁。重点解析了Few-shot、Chain-of-Thought等核心方法，旨在通过精心设计的指令引导模型高效执行复杂任务，提升应用的可控性与成本效率。",
   "stage": {
     "id": 4,
     "name": "大模型应用开发",
     "color": "#3b82f6"
   },
   "techPoints": [
-    "向量检索",
-    "文档分块",
-    "Embedding选型"
+    "Few-shot",
+    "Chain-of-Thought",
+    "系统提示"
   ],
   "dependencies": [
     {
-      "stageName": "AI工程化与系统",
-      "stageId": 5,
-      "topic": "向量数据库部署",
-      "reason": "理解「RAG系统架构设计与实现」需要掌握「向量数据库部署」的相关知识"
+      "stageName": "深度学习精通",
+      "stageId": 3,
+      "topic": "语言模型原理",
+      "reason": "理解「Prompt工程：从入门到精通」需要掌握「语言模型原理」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "Prompt工程：从入门到精通",
-    "teaser": "下一篇将探讨Few-shot和Chain-of-Thought等技术要点"
+    "title": "LangChain构建AI应用链",
+    "teaser": "下一篇将探讨Chain组合和Memory管理等技术要点"
   },
   "progress": {
-    "completed": 41,
+    "completed": 42,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-18-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-19-article.md"
 }
