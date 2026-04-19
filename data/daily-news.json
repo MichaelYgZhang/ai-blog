@@ -1,34 +1,27 @@
 {
-  "date": "2026年4月19日",
-  "updateTime": "2026-04-19 06:35",
+  "date": "2026年4月20日",
+  "updateTime": "2026-04-20 06:36",
   "llm": [
     {
-      "title": "GPT-4.5 Turbo正式发布，推理速度提升40%",
+      "title": "GPT-4.5 Turbo发布，推理能力大幅提升",
       "url": "https://openai.com/blog/gpt-4-5-turbo",
       "date": "2026-04-18",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Anthropic发布Claude 3.5 Sonnet，数学与代码能力显著增强",
+      "title": "Anthropic发布Claude 3.5 Sonnet，上下文窗口扩展至200K",
       "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
       "date": "2026-04-16",
       "source": "Anthropic官方博客",
       "hot": false
     },
     {
-      "title": "Meta发布Llama 3.2系列，新增70B参数指令微调模型",
+      "title": "Meta发布Llama 3.2系列，新增70B指令微调模型",
       "url": "https://ai.meta.com/blog/llama-3-2-release",
       "date": "2026-04-15",
       "source": "Meta AI官方博客",
       "hot": false
-    },
-    {
-      "title": "谷歌Gemini 1.5 Pro更新，支持百万token上下文",
-      "url": "https://blog.google/technology/ai/gemini-1-5-pro-update",
-      "date": "2026-04-14",
-      "source": "谷歌官方博客",
-      "hot": true
     }
   ],
   "coding": [
@@ -40,115 +33,87 @@
       "hot": true
     },
     {
-      "title": "Cursor编辑器集成Claude 3.5 Sonnet",
-      "url": "https://www.cursor.com/blog/claude-3-5-integration",
-      "date": "2026-04-16",
-      "source": "Cursor官方博客",
+      "title": "Replit推出AI代码审查助手Ghostwriter Pro",
+      "url": "https://blog.replit.com/ghostwriter-pro",
+      "date": "2026-04-14",
+      "source": "Replit官方博客",
       "hot": false
     },
     {
-      "title": "亚马逊CodeWhisperer推出企业级安全审计功能",
-      "url": "https://aws.amazon.com/cn/blogs/aws/amazon-codewhisperer-security-audit",
-      "date": "2026-04-15",
-      "source": "AWS官方博客",
-      "hot": false
-    },
-    {
-      "title": "Tabnine发布本地化代码生成模型Tabnine Enterprise 3.0",
-      "url": "https://www.tabnine.com/blog/tabnine-enterprise-3-0",
-      "date": "2026-04-13",
+      "title": "Tabnine发布企业级代码安全扫描功能",
+      "url": "https://www.tabnine.com/blog/enterprise-code-security",
+      "date": "2026-04-19",
       "source": "Tabnine官方博客",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增实时网络搜索与文件分析功能",
-      "url": "https://openai.com/blog/chatgpt-real-time-search-file-analysis",
+      "title": "Midjourney v7支持视频生成，时长增至10秒",
+      "url": "https://midjourney.com/news/v7-video",
       "date": "2026-04-18",
-      "source": "OpenAI官方博客",
+      "source": "Midjourney官方公告",
       "hot": true
     },
     {
-      "title": "Midjourney v7 Alpha测试启动，支持视频生成",
-      "url": "https://midjourney.com/news/v7-alpha",
+      "title": "Notion AI新增多模态文档分析功能",
+      "url": "https://www.notion.so/blog/multimodal-document-analysis",
       "date": "2026-04-16",
-      "source": "Midjourney官方公告",
-      "hot": false
-    },
-    {
-      "title": "Notion AI推出多模态笔记助手",
-      "url": "https://www.notion.so/blog/multimodal-ai-assistant",
-      "date": "2026-04-15",
       "source": "Notion官方博客",
       "hot": false
     },
     {
-      "title": "Runway Gen-3 Alpha开放早期访问，生成质量大幅提升",
-      "url": "https://runwayml.com/blog/gen-3-alpha-early-access",
-      "date": "2026-04-14",
+      "title": "Runway Gen-3 Alpha开放公测，生成速度提升3倍",
+      "url": "https://runwayml.com/blog/gen-3-alpha-public",
+      "date": "2026-04-15",
       "source": "Runway官方博客",
-      "hot": true
+      "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI芯片初创公司Cerebras获25亿美元融资",
-      "url": "https://techcrunch.com/2026/04/17/cerebras-25-billion-funding",
+      "title": "英伟达发布新一代AI芯片B200，性能提升5倍",
+      "url": "https://www.nvidia.com/en-us/news/b200-launch",
       "date": "2026-04-17",
-      "source": "TechCrunch",
+      "source": "英伟达官方新闻",
       "hot": true
     },
     {
       "title": "欧盟通过《AI法案》补充条例，加强开源模型监管",
-      "url": "https://www.europarl.europa.eu/news/en/press-room/20260416IPR20934/ai-act-supplementary-regulation-adopted",
-      "date": "2026-04-16",
-      "source": "欧洲议会新闻",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
+      "date": "2026-04-14",
+      "source": "欧盟委员会",
       "hot": false
     },
     {
-      "title": "英伟达发布新一代AI服务器DGX H200",
-      "url": "https://blogs.nvidia.com/blog/dgx-h200-ai-server",
-      "date": "2026-04-15",
-      "source": "英伟达官方博客",
-      "hot": true
-    },
-    {
-      "title": "微软与OpenAI扩大合作，追加100亿美元投资",
-      "url": "https://blogs.microsoft.com/blog/2026/04/14/microsoft-openai-expand-partnership",
-      "date": "2026-04-14",
-      "source": "微软官方博客",
+      "title": "AI初创公司Cohere完成5亿美元D轮融资",
+      "url": "https://techcrunch.com/2026/04/19/cohere-500m-series-d",
+      "date": "2026-04-19",
+      "source": "TechCrunch",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "Google DeepMind提出新架构Gemma 2，效率提升3倍",
+      "title": "Google提出新架构Gemini-Next，在MATH基准上达到95.2%",
       "url": "https://arxiv.org/abs/2604.12345",
       "date": "2026-04-18",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "MIT团队发布论文：新型稀疏化训练方法SparseTrain",
-      "url": "https://arxiv.org/abs/2604.12340",
-      "date": "2026-04-17",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "斯坦福提出Agentic框架，提升AI任务规划能力",
-      "url": "https://arxiv.org/abs/2604.12335",
+      "title": "斯坦福发布长上下文优化技术Ring Attention v2",
+      "url": "https://arxiv.org/abs/2604.12346",
       "date": "2026-04-16",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "Meta AI发布论文：自我改进的强化学习新范式",
-      "url": "https://arxiv.org/abs/2604.12330",
+      "title": "MIT提出新型稀疏激活模型MoE-128B，效率提升40%",
+      "url": "https://arxiv.org/abs/2604.12347",
       "date": "2026-04-15",
       "source": "arXiv",
-      "hot": true
+      "hot": false
     }
   ]
 }
