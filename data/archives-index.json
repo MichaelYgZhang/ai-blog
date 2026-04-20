@@ -289,6 +289,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-20",
+      "title": "LangChain构建AI应用链",
+      "articleId": "S4-003",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-04-20-article.md"
+    },
+    {
       "date": "2026-04-19",
       "title": "Prompt工程：从入门到精通",
       "articleId": "S4-002",
