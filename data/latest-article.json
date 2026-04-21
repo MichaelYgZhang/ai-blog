@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月20日",
-  "updateTime": "2026-04-20 08:00",
-  "articleId": "S4-003",
-  "title": "LangChain构建AI应用链",
-  "summary": "LangChain将大语言模型转变为可编程应用开发框架，通过链式组合、记忆管理和工具集成，解决复杂AI应用的工作流编排、历史记忆和外部调用等核心挑战，提升开发效率。",
+  "date": "2026年4月21日",
+  "updateTime": "2026-04-21 08:00",
+  "articleId": "S4-004",
+  "title": "用LoRA高效微调大模型",
+  "summary": "LoRA通过冻结预训练模型权重并注入可训练的低秩矩阵，以极低参数量高效微调大模型，显著降低计算与存储成本，是推动大模型应用落地的关键技术。",
   "stage": {
     "id": 4,
     "name": "大模型应用开发",
     "color": "#3b82f6"
   },
   "techPoints": [
-    "Chain组合",
-    "Memory管理",
-    "工具集成"
+    "低秩适配",
+    "参数效率",
+    "QLoRA"
   ],
   "dependencies": [
     {
-      "stageName": "大模型应用开发",
-      "stageId": 4,
-      "topic": "Prompt工程",
-      "reason": "理解「LangChain构建AI应用链」需要掌握「Prompt工程」的相关知识"
+      "stageName": "深度学习精通",
+      "stageId": 3,
+      "topic": "模型参数",
+      "reason": "理解「用LoRA高效微调大模型」需要掌握「模型参数」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "用LoRA高效微调大模型",
-    "teaser": "下一篇将探讨低秩适配和参数效率等技术要点"
+    "title": "构建智能AI Agent系统",
+    "teaser": "下一篇将探讨工具调用和记忆机制等技术要点"
   },
   "progress": {
-    "completed": 43,
+    "completed": 44,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-20-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-21-article.md"
 }

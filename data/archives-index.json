@@ -294,6 +294,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-21",
+      "title": "用LoRA高效微调大模型",
+      "articleId": "S4-004",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-04-21-article.md"
+    },
+    {
       "date": "2026-04-20",
       "title": "LangChain构建AI应用链",
       "articleId": "S4-003",
