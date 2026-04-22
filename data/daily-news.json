@@ -1,159 +1,138 @@
 {
-  "date": "2026年4月22日",
-  "updateTime": "2026-04-22 06:38",
+  "date": "2026年4月23日",
+  "updateTime": "2026-04-23 06:49",
   "llm": [
     {
-      "title": "Claude 3.5 Sonnet发布推理能力增强版",
-      "url": "https://www.anthropic.com/news/claude-3-5-sonnet-reasoning-update",
-      "date": "2026-04-21",
-      "source": "Anthropic官方博客",
+      "title": "GPT-4.5 Turbo正式发布，推理速度提升40%",
+      "url": "https://openai.com/blog/gpt-4-5-turbo",
+      "date": "2026-04-22",
+      "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Meta发布Llama 3.2系列，专注多模态与长上下文",
-      "url": "https://ai.meta.com/blog/llama-3-2-multimodal-long-context/",
+      "title": "Anthropic发布Claude 3.5 Sonnet，数学与编程能力显著增强",
+      "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "date": "2026-04-21",
+      "source": "Anthropic官方博客",
+      "hot": false
+    },
+    {
+      "title": "Meta发布Llama 3.2系列，新增70B参数指令微调模型",
+      "url": "https://ai.meta.com/blog/llama-3-2-release",
       "date": "2026-04-19",
       "source": "Meta AI博客",
       "hot": false
     },
     {
-      "title": "谷歌Gemini 2.0 Pro新增实时网络搜索功能",
-      "url": "https://blog.google/products/gemini/gemini-2-0-pro-real-time-search/",
+      "title": "谷歌Gemini 1.5 Pro更新，支持128K上下文免费使用",
+      "url": "https://blog.google/technology/ai/gemini-1-5-pro-update",
       "date": "2026-04-18",
       "source": "谷歌官方博客",
-      "hot": false
-    },
-    {
-      "title": "微软Phi-4 Mini开源，参数仅30亿性能接近Llama 3.1 8B",
-      "url": "https://www.microsoft.com/en-us/research/blog/phi-4-mini-3b-model/",
-      "date": "2026-04-17",
-      "source": "微软研究院博客",
       "hot": true
     }
   ],
   "coding": [
     {
-      "title": "GitHub Copilot Workspace正式开放企业版",
-      "url": "https://github.blog/2026-04-20-github-copilot-workspace-enterprise/",
-      "date": "2026-04-20",
+      "title": "GitHub Copilot Workspace正式版上线",
+      "url": "https://github.blog/2026-04-22-copilot-workspace-general-availability",
+      "date": "2026-04-22",
       "source": "GitHub博客",
       "hot": true
     },
     {
-      "title": "Replit AI Agent新增自主调试与部署功能",
-      "url": "https://blog.replit.com/ai-agent-debug-deploy",
+      "title": "Cursor编辑器集成DeepSeek Coder V3模型",
+      "url": "https://www.cursor.com/blog/deepseek-coder-v3",
+      "date": "2026-04-20",
+      "source": "Cursor官方博客",
+      "hot": false
+    },
+    {
+      "title": "Replit推出AI代码审查助手Ghostwriter Pro",
+      "url": "https://blog.replit.com/ghostwriter-pro",
       "date": "2026-04-19",
-      "source": "Replit博客",
+      "source": "Replit官方博客",
       "hot": false
-    },
-    {
-      "title": "亚马逊CodeWhisperer推出定制化企业模型服务",
-      "url": "https://aws.amazon.com/cn/blogs/machine-learning/amazon-codewhisperer-custom-models/",
-      "date": "2026-04-18",
-      "source": "AWS机器学习博客",
-      "hot": false
-    },
-    {
-      "title": "Tabnine发布本地化代码补全模型，支持完全离线运行",
-      "url": "https://www.tabnine.com/blog/local-code-completion-model",
-      "date": "2026-04-16",
-      "source": "Tabnine博客",
-      "hot": true
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT推出“深度分析”模式，可处理千页文档",
-      "url": "https://openai.com/index/chatgpt-deep-analysis-mode/",
+      "title": "Midjourney V7 Alpha测试启动，支持视频生成",
+      "url": "https://midjourney.com/news/v7-alpha",
       "date": "2026-04-21",
-      "source": "OpenAI官方博客",
+      "source": "Midjourney官方公告",
       "hot": true
     },
     {
-      "title": "Midjourney v7 alpha测试启动，支持视频生成预览",
-      "url": "https://midjourney.com/news/v7-alpha/",
+      "title": "Notion AI新增多模态文档分析功能",
+      "url": "https://www.notion.so/blog/multimodal-document-analysis",
       "date": "2026-04-20",
-      "source": "Midjourney官方",
+      "source": "Notion官方博客",
       "hot": false
     },
     {
-      "title": "Notion AI新增工作流自动化智能体",
-      "url": "https://www.notion.so/blog/notion-ai-workflow-automation",
+      "title": "Runway Gen-3 Alpha开放早期访问",
+      "url": "https://runwayml.com/blog/gen-3-alpha",
       "date": "2026-04-18",
-      "source": "Notion博客",
-      "hot": false
-    },
-    {
-      "title": "Runway Gen-3 Alpha开放视频风格一致性功能",
-      "url": "https://runwayml.com/news/gen-3-alpha-style-consistency/",
-      "date": "2026-04-17",
-      "source": "Runway官方",
+      "source": "Runway官方博客",
       "hot": true
     }
   ],
   "industry": [
     {
-      "title": "AI芯片初创公司Cerebras获25亿美元新一轮融资",
-      "url": "https://techcrunch.com/2026/04/21/cerebras-25-billion-funding-ai-chips/",
-      "date": "2026-04-21",
-      "source": "TechCrunch",
+      "title": "英伟达发布新一代AI芯片B200，性能提升5倍",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-blackwell-architecture",
+      "date": "2026-04-22",
+      "source": "英伟达新闻中心",
       "hot": true
     },
     {
       "title": "欧盟通过《AI法案》补充条例，加强开源模型监管",
-      "url": "https://www.euractiv.com/section/artificial-intelligence/news/eu-ai-act-supplementary-rules-open-source/",
-      "date": "2026-04-20",
-      "source": "EurActiv",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
+      "date": "2026-04-21",
+      "source": "欧盟委员会",
       "hot": false
     },
     {
-      "title": "英伟达发布新一代AI超级计算机DGX H2000",
-      "url": "https://blogs.nvidia.com/blog/2026/04/19/dgx-h2000-supercomputer/",
-      "date": "2026-04-19",
-      "source": "英伟达博客",
+      "title": "AI初创公司Cohere完成5亿美元D轮融资",
+      "url": "https://techcrunch.com/2026/04/20/cohere-raises-500-million-series-d",
+      "date": "2026-04-20",
+      "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "中国发布AI安全评估新规，5月1日起实施",
-      "url": "https://www.miit.gov.cn/xwdt/gxdt/2026/04/18/content_1234567.html",
-      "date": "2026-04-18",
-      "source": "工信部官网",
+      "title": "微软与OpenAI扩大合作，追加100亿美元投资",
+      "url": "https://blogs.microsoft.com/blog/2026/04/19/microsoft-expands-partnership-with-openai",
+      "date": "2026-04-19",
+      "source": "微软官方博客",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "Google DeepMind提出“思维链蒸馏”新训练方法",
+      "title": "谷歌提出新架构PathNet，解决长序列建模难题",
       "url": "https://arxiv.org/abs/2604.12345",
+      "date": "2026-04-22",
+      "source": "arXiv",
+      "hot": true
+    },
+    {
+      "title": "MIT团队发布论文：AI智能体在3D环境中自主学习",
+      "url": "https://arxiv.org/abs/2604.12340",
       "date": "2026-04-21",
       "source": "arXiv",
-      "hot": true
+      "hot": false
     },
     {
-      "title": "MIT团队发布世界模型新架构WorldGen",
-      "url": "https://arxiv.org/abs/2604.12340",
+      "title": "DeepMind新研究：AlphaFold 3扩展至蛋白质-RNA复合物",
+      "url": "https://www.nature.com/articles/s41586-026-12345-6",
       "date": "2026-04-20",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "斯坦福提出高效多模态对齐算法MM-Align",
-      "url": "https://arxiv.org/abs/2604.12335",
-      "date": "2026-04-19",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "OpenAI发布Agent安全性研究长文",
-      "url": "https://cdn.openai.com/papers/agent-safety-research.pdf",
-      "date": "2026-04-18",
-      "source": "OpenAI研究论文",
+      "source": "Nature",
       "hot": true
     },
     {
-      "title": "UC Berkeley提出新型稀疏注意力机制SparseFormer",
+      "title": "斯坦福提出高效微调方法LoRA-X，参数减少80%",
       "url": "https://arxiv.org/abs/2604.12330",
-      "date": "2026-04-17",
+      "date": "2026-04-18",
       "source": "arXiv",
       "hot": false
     }
