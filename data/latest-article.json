@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月21日",
-  "updateTime": "2026-04-21 08:00",
-  "articleId": "S4-004",
-  "title": "用LoRA高效微调大模型",
-  "summary": "LoRA通过冻结预训练模型权重并注入可训练的低秩矩阵，以极低参数量高效微调大模型，显著降低计算与存储成本，是推动大模型应用落地的关键技术。",
+  "date": "2026年4月22日",
+  "updateTime": "2026-04-22 08:00",
+  "articleId": "S4-005",
+  "title": "构建智能AI Agent系统",
+  "summary": "智能AI Agent系统通过工具调用、记忆机制和任务规划，将大语言模型从被动文本生成器升级为能处理复杂任务的主动智能体，是实现AI应用产品化的核心技术。",
   "stage": {
     "id": 4,
     "name": "大模型应用开发",
     "color": "#3b82f6"
   },
   "techPoints": [
-    "低秩适配",
-    "参数效率",
-    "QLoRA"
+    "工具调用",
+    "记忆机制",
+    "任务规划"
   ],
   "dependencies": [
     {
-      "stageName": "深度学习精通",
-      "stageId": 3,
-      "topic": "模型参数",
-      "reason": "理解「用LoRA高效微调大模型」需要掌握「模型参数」的相关知识"
+      "stageName": "大模型应用开发",
+      "stageId": 4,
+      "topic": "LangChain",
+      "reason": "理解「构建智能AI Agent系统」需要掌握「LangChain」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "构建智能AI Agent系统",
-    "teaser": "下一篇将探讨工具调用和记忆机制等技术要点"
+    "title": "Embedding模型选型与优化",
+    "teaser": "下一篇将探讨文本嵌入和语义相似度等技术要点"
   },
   "progress": {
-    "completed": 44,
+    "completed": 45,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-21-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-22-article.md"
 }

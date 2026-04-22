@@ -299,6 +299,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-22",
+      "title": "构建智能AI Agent系统",
+      "articleId": "S4-005",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-04-22-article.md"
+    },
+    {
       "date": "2026-04-21",
       "title": "用LoRA高效微调大模型",
       "articleId": "S4-004",
