@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月22日",
-  "updateTime": "2026-04-22 08:00",
-  "articleId": "S4-005",
-  "title": "构建智能AI Agent系统",
-  "summary": "智能AI Agent系统通过工具调用、记忆机制和任务规划，将大语言模型从被动文本生成器升级为能处理复杂任务的主动智能体，是实现AI应用产品化的核心技术。",
+  "date": "2026年4月23日",
+  "updateTime": "2026-04-23 08:00",
+  "articleId": "S4-006",
+  "title": "Embedding模型选型与优化",
+  "summary": "Embedding模型选型与优化是构建高效大模型应用的核心。本文阐述了文本嵌入原理，强调通过模型选型与优化提升语义表示质量，直接影响RAG、语义搜索等上层应用效果。",
   "stage": {
     "id": 4,
     "name": "大模型应用开发",
     "color": "#3b82f6"
   },
   "techPoints": [
-    "工具调用",
-    "记忆机制",
-    "任务规划"
+    "文本嵌入",
+    "语义相似度",
+    "多语言"
   ],
   "dependencies": [
     {
-      "stageName": "大模型应用开发",
-      "stageId": 4,
-      "topic": "LangChain",
-      "reason": "理解「构建智能AI Agent系统」需要掌握「LangChain」的相关知识"
+      "stageName": "深度学习精通",
+      "stageId": 3,
+      "topic": "词向量",
+      "reason": "理解「Embedding模型选型与优化」需要掌握「词向量」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "Embedding模型选型与优化",
-    "teaser": "下一篇将探讨文本嵌入和语义相似度等技术要点"
+    "title": "大模型Function Calling实战",
+    "teaser": "下一篇将探讨工具定义和JSON Schema等技术要点"
   },
   "progress": {
-    "completed": 45,
+    "completed": 46,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-22-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-23-article.md"
 }
