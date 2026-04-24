@@ -309,6 +309,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-24",
+      "title": "大模型Function Calling实战",
+      "articleId": "S4-007",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-04-24-article.md"
+    },
+    {
       "date": "2026-04-23",
       "title": "Embedding模型选型与优化",
       "articleId": "S4-006",
