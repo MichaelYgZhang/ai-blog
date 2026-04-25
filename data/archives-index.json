@@ -314,6 +314,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-25",
+      "title": "文档解析与知识提取管道",
+      "articleId": "S4-008",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-04-25-article.md"
+    },
+    {
       "date": "2026-04-24",
       "title": "大模型Function Calling实战",
       "articleId": "S4-007",

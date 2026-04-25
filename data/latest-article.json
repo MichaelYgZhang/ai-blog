@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月24日",
-  "updateTime": "2026-04-24 08:00",
-  "articleId": "S4-007",
-  "title": "大模型Function Calling实战",
-  "summary": "大模型Function Calling通过JSON Schema定义工具接口，桥接LLM语义理解与外部系统交互，使模型从“对话机器”跃迁为“任务执行器”。本文详解工具定义、参数描述及错误处理，是构建Agent系统和自动化工作流的核心技术。",
+  "date": "2026年4月25日",
+  "updateTime": "2026-04-25 08:00",
+  "articleId": "S4-008",
+  "title": "文档解析与知识提取管道",
+  "summary": "一个健壮的文档解析与知识提取管道是连接非结构化数据与大模型应用的核心桥梁，其质量决定RAG或Agent系统的知识召回上限。管道包含PDF解析、表格提取和OCR三个核心环节，通过相互配合将复杂文档转化为结构化知识，有效提升AI系统鲁棒性并降低幻觉风险。",
   "stage": {
     "id": 4,
     "name": "大模型应用开发",
     "color": "#3b82f6"
   },
   "techPoints": [
-    "工具定义",
-    "JSON Schema",
-    "错误处理"
+    "PDF解析",
+    "表格提取",
+    "OCR"
   ],
   "dependencies": [
     {
-      "stageName": "大模型应用开发",
-      "stageId": 4,
-      "topic": "Prompt工程",
-      "reason": "理解「大模型Function Calling实战」需要掌握「Prompt工程」的相关知识"
+      "stageName": "编程与数学基础",
+      "stageId": 1,
+      "topic": "Python数据处理",
+      "reason": "理解「文档解析与知识提取管道」需要掌握「Python数据处理」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "文档解析与知识提取管道",
-    "teaser": "下一篇将探讨PDF解析和表格提取等技术要点"
+    "title": "对话系统设计与上下文管理",
+    "teaser": "下一篇将探讨对话状态和滑动窗口等技术要点"
   },
   "progress": {
-    "completed": 47,
+    "completed": 48,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-24-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-25-article.md"
 }
