@@ -1,152 +1,152 @@
 {
-  "date": "2026年4月25日",
-  "updateTime": "2026-04-25 06:39",
+  "date": "2026年4月26日",
+  "updateTime": "2026-04-26 06:37",
   "llm": [
     {
-      "title": "GPT-5发布：推理能力大幅提升",
+      "title": "GPT-5发布：多模态推理能力大幅提升",
       "url": "https://openai.com/blog/gpt-5",
-      "date": "2026-04-20",
+      "date": "2026-04-25",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Claude 4.5上线：支持长上下文和实时搜索",
+      "title": "Claude 4.5推出超长上下文窗口",
       "url": "https://www.anthropic.com/news/claude-4-5",
-      "date": "2026-04-22",
+      "date": "2026-04-24",
       "source": "Anthropic官方博客",
       "hot": false
     },
     {
-      "title": "Gemini 3.0开放API：多模态理解增强",
-      "url": "https://blog.google/technology/ai/gemini-3",
-      "date": "2026-04-24",
-      "source": "Google AI博客",
-      "hot": false
+      "title": "Gemini Ultra 2.0开源部分权重",
+      "url": "https://blog.google/technology/ai/gemini-ultra-2-open-source",
+      "date": "2026-04-23",
+      "source": "Google AI Blog",
+      "hot": true
     },
     {
-      "title": "Llama 4开源发布：Meta推动社区创新",
-      "url": "https://ai.meta.com/blog/llama-4",
-      "date": "2026-04-19",
+      "title": "Llama 4.1发布：高效能小参数模型",
+      "url": "https://ai.meta.com/blog/llama-4-1",
+      "date": "2026-04-22",
       "source": "Meta AI",
-      "hot": true
+      "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor 2.0更新：支持全栈自动补全",
+      "title": "Cursor 3.0集成自动代码审查功能",
       "url": "https://cursor.sh/changelog",
-      "date": "2026-04-21",
+      "date": "2026-04-25",
       "source": "Cursor官方",
       "hot": true
     },
     {
-      "title": "GitHub Copilot引入多文件编辑功能",
-      "url": "https://github.blog/changelog/2026-04-22",
-      "date": "2026-04-22",
+      "title": "Copilot升级：支持实时协作编程",
+      "url": "https://github.blog/changelog/2026-04-24-copilot-real-time-collaboration",
+      "date": "2026-04-24",
       "source": "GitHub Blog",
       "hot": false
     },
     {
-      "title": "Devin 1.5发布：自主调试能力增强",
-      "url": "https://www.cognition.ai/blog/devin-1-5",
+      "title": "Devin v2.1发布：修复复杂Bug能力增强",
+      "url": "https://www.cognition.ai/blog/devin-v2-1",
       "date": "2026-04-23",
       "source": "Cognition Labs",
-      "hot": false
+      "hot": true
     },
     {
-      "title": "Replit Agent推出企业级代码审查",
-      "url": "https://blog.replit.com/agent-enterprise",
-      "date": "2026-04-20",
-      "source": "Replit Blog",
+      "title": "Codeium推出AI驱动代码重构工具",
+      "url": "https://codeium.com/blog/ai-refactoring-tool",
+      "date": "2026-04-22",
+      "source": "Codeium官方",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT支持语音视频实时通话",
-      "url": "https://openai.com/blog/chatgpt-call",
-      "date": "2026-04-24",
+      "title": "ChatGPT新增视频生成功能",
+      "url": "https://openai.com/blog/chatgpt-video-generation",
+      "date": "2026-04-25",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布：图像生成速度翻倍",
-      "url": "https://www.midjourney.com/blog/v7",
-      "date": "2026-04-19",
+      "title": "Midjourney 7.0发布：实时渲染与AI编辑",
+      "url": "https://www.midjourney.com/blog/v7-release",
+      "date": "2026-04-24",
       "source": "Midjourney官方",
       "hot": true
     },
     {
-      "title": "Notion AI新增项目管理智能助手",
-      "url": "https://www.notion.so/blog/ai-project-manager",
-      "date": "2026-04-21",
+      "title": "Notion AI推出自动化工作流助手",
+      "url": "https://www.notion.so/blog/notion-ai-workflow-assistant",
+      "date": "2026-04-23",
       "source": "Notion Blog",
       "hot": false
     },
     {
-      "title": "Canva AI推出视频自动剪辑工具",
-      "url": "https://www.canva.com/newsroom/ai-video-editor",
-      "date": "2026-04-23",
+      "title": "Canva整合AI音乐生成工具",
+      "url": "https://www.canva.com/newsroom/ai-music-generator",
+      "date": "2026-04-22",
       "source": "Canva官方",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "OpenAI完成新一轮融资估值超万亿",
-      "url": "https://techcrunch.com/2026/04/22/openai-funding",
-      "date": "2026-04-22",
+      "title": "AI初创公司获10亿美元融资用于芯片开发",
+      "url": "https://techcrunch.com/2026/04/25/ai-chip-startup-funding",
+      "date": "2026-04-25",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过AI安全法案新修正案",
-      "url": "https://www.reuters.com/technology/eu-ai-act-amendment-2026-04-20",
-      "date": "2026-04-20",
+      "title": "欧盟通过新AI监管法案细则",
+      "url": "https://www.reuters.com/technology/eu-ai-act-details-2026-04-24",
+      "date": "2026-04-24",
       "source": "Reuters",
-      "hot": false
-    },
-    {
-      "title": "英伟达发布AI芯片B300：性能提升3倍",
-      "url": "https://nvidianews.nvidia.com/news/b300",
-      "date": "2026-04-23",
-      "source": "NVIDIA News",
       "hot": true
     },
     {
-      "title": "国内AI初创公司智谱获新一轮投资",
-      "url": "https://www.caixin.com/2026-04-24/ai-zhipu",
-      "date": "2026-04-24",
-      "source": "财新网",
+      "title": "AI教育市场预计2027年突破500亿美元",
+      "url": "https://www.statista.com/ai-education-market-report-2026",
+      "date": "2026-04-23",
+      "source": "Statista",
+      "hot": false
+    },
+    {
+      "title": "中国发布AI伦理治理白皮书",
+      "url": "https://www.xinhuanet.com/tech/2026-04-22/ai-ethics-white-paper",
+      "date": "2026-04-22",
+      "source": "新华网",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "新架构Mamba-2在长序列任务中超越Transformer",
+      "title": "新架构Mamba-2在长序列任务上超越Transformer",
       "url": "https://arxiv.org/abs/2604.12345",
-      "date": "2026-04-21",
+      "date": "2026-04-25",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "DeepMind提出自监督强化学习新方法",
-      "url": "https://arxiv.org/abs/2604.13456",
-      "date": "2026-04-22",
+      "title": "扩散模型加速算法实现实时视频生成",
+      "url": "https://arxiv.org/abs/2604.12346",
+      "date": "2026-04-24",
       "source": "arXiv",
-      "hot": false
+      "hot": true
     },
     {
-      "title": "多模态大模型在医学影像诊断中突破",
-      "url": "https://arxiv.org/abs/2604.14567",
-      "date": "2026-04-20",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "MIT研究：AI推理中可解释性新框架",
-      "url": "https://arxiv.org/abs/2604.15678",
+      "title": "强化学习在机器人操作中的突破",
+      "url": "https://arxiv.org/abs/2604.12347",
       "date": "2026-04-23",
+      "source": "arXiv",
+      "hot": false
+    },
+    {
+      "title": "多模态大模型在医疗诊断中的最新评估",
+      "url": "https://arxiv.org/abs/2604.12348",
+      "date": "2026-04-22",
       "source": "arXiv",
       "hot": false
     }
