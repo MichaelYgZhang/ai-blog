@@ -324,6 +324,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-26",
+      "title": "对话系统设计与上下文管理",
+      "articleId": "S4-009",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-04-26-article.md"
+    },
+    {
       "date": "2026-04-25",
       "title": "文档解析与知识提取管道",
       "articleId": "S4-008",
