@@ -329,6 +329,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-27",
+      "title": "大模型评估体系构建",
+      "articleId": "S4-010",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-04-27-article.md"
+    },
+    {
       "date": "2026-04-26",
       "title": "对话系统设计与上下文管理",
       "articleId": "S4-009",

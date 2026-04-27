@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月26日",
-  "updateTime": "2026-04-26 08:00",
-  "articleId": "S4-009",
-  "title": "对话系统设计与上下文管理",
-  "summary": "对话系统设计核心在于通过滑动窗口与摘要压缩实现高效上下文管理，解决多轮对话中的记忆丢失与Token超限问题。对话状态管理作为记忆框架，需平衡信息完整性与数据规模，是构建真正具备对话感的智能助手的核心技术。",
+  "date": "2026年4月27日",
+  "updateTime": "2026-04-27 08:00",
+  "articleId": "S4-010",
+  "title": "大模型评估体系构建",
+  "summary": "大模型评估体系需从单一指标转向多维度框架，涵盖自动评估、人工评估与基准测试三大支柱。自动评估追求高效可重复，人工评估侧重主观质量，基准测试提供标准化对比。三者互补形成完整闭环，帮助工程师科学评估模型能力与局限性。",
   "stage": {
     "id": 4,
     "name": "大模型应用开发",
     "color": "#3b82f6"
   },
   "techPoints": [
-    "对话状态",
-    "滑动窗口",
-    "摘要压缩"
+    "自动评估",
+    "人工评估",
+    "基准测试"
   ],
   "dependencies": [
     {
-      "stageName": "大模型应用开发",
-      "stageId": 4,
-      "topic": "Prompt工程",
-      "reason": "理解「对话系统设计与上下文管理」需要掌握「Prompt工程」的相关知识"
+      "stageName": "机器学习核心",
+      "stageId": 2,
+      "topic": "模型评估",
+      "reason": "理解「大模型评估体系构建」需要掌握「模型评估」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "大模型评估体系构建",
-    "teaser": "下一篇将探讨自动评估和人工评估等技术要点"
+    "title": "Structured Output：让LLM输出结构化数据",
+    "teaser": "下一篇将探讨JSON模式和Pydantic等技术要点"
   },
   "progress": {
-    "completed": 49,
+    "completed": 50,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-26-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-27-article.md"
 }
