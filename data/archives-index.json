@@ -334,6 +334,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-28",
+      "title": "Structured Output：让LLM输出结构化数据",
+      "articleId": "S4-011",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-04-28-article.md"
+    },
+    {
       "date": "2026-04-27",
       "title": "大模型评估体系构建",
       "articleId": "S4-010",
