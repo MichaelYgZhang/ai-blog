@@ -1,173 +1,152 @@
 {
-  "date": "2026年4月28日",
-  "updateTime": "2026-04-28 06:53",
+  "date": "2026年4月29日",
+  "updateTime": "2026-04-29 06:56",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5.1，推理能力大幅提升",
-      "url": "https://openai.com/blog/gpt-5-1",
-      "date": "2026-04-26",
+      "title": "GPT-5发布：多模态推理能力大幅提升",
+      "url": "https://openai.com/blog/gpt5-release",
+      "date": "2026-04-28",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Google Gemini 3.0正式上线，支持多模态实时交互",
-      "url": "https://blog.google/products/gemini/gemini-3",
-      "date": "2026-04-25",
-      "source": "Google官方博客",
-      "hot": true
-    },
-    {
-      "title": "Meta发布Llama 4.5，开源模型性能接近GPT-5",
-      "url": "https://ai.meta.com/blog/llama-4-5",
-      "date": "2026-04-24",
-      "source": "Meta AI博客",
-      "hot": false
-    },
-    {
-      "title": "Anthropic推出Claude 4.5，上下文窗口扩展至2M tokens",
-      "url": "https://www.anthropic.com/news/claude-4-5",
-      "date": "2026-04-23",
+      "title": "Claude 4.5更新：长上下文窗口扩展至200K",
+      "url": "https://www.anthropic.com/news/claude-4-5-update",
+      "date": "2026-04-27",
       "source": "Anthropic官方博客",
       "hot": false
     },
     {
-      "title": "Mistral AI发布Mistral Large 3，多语言能力领先",
-      "url": "https://mistral.ai/news/mistral-large-3",
-      "date": "2026-04-22",
-      "source": "Mistral AI官方博客",
+      "title": "Gemini 3.0正式上线：支持实时视频理解",
+      "url": "https://blog.google/technology/ai/gemini-3-launch",
+      "date": "2026-04-26",
+      "source": "Google AI Blog",
       "hot": false
+    },
+    {
+      "title": "Llama 4.1开源：社区版本性能媲美闭源模型",
+      "url": "https://ai.meta.com/blog/llama-4-1-open-source",
+      "date": "2026-04-25",
+      "source": "Meta AI",
+      "hot": true
     }
   ],
   "coding": [
     {
-      "title": "GitHub Copilot更新，支持AI驱动的代码审查",
-      "url": "https://github.blog/changelog/copilot-code-review",
+      "title": "Cursor推出自动代码审查Agent功能",
+      "url": "https://cursor.sh/changelog/2026-04-28",
+      "date": "2026-04-28",
+      "source": "Cursor官方",
+      "hot": true
+    },
+    {
+      "title": "GitHub Copilot集成多文件重构能力",
+      "url": "https://github.blog/changelog/2026-04-27-copilot-refactor",
       "date": "2026-04-27",
-      "source": "GitHub官方博客",
-      "hot": true
-    },
-    {
-      "title": "Cursor推出v6.0，集成最新Claude 4.5模型",
-      "url": "https://cursor.sh/blog/v6-0",
-      "date": "2026-04-26",
-      "source": "Cursor官方博客",
-      "hot": true
-    },
-    {
-      "title": "Devin实现全栈项目自主开发，成功率提升40%",
-      "url": "https://cognition.ai/blog/devin-full-stack",
-      "date": "2026-04-25",
-      "source": "Cognition AI博客",
+      "source": "GitHub Blog",
       "hot": false
     },
     {
-      "title": "Replit Agent发布，支持自然语言生成完整应用",
-      "url": "https://blog.replit.com/agent",
-      "date": "2026-04-24",
-      "source": "Replit官方博客",
+      "title": "Devin 2.0发布：支持跨平台部署与调试",
+      "url": "https://www.cognition.ai/blog/devin-2-launch",
+      "date": "2026-04-26",
+      "source": "Cognition Labs",
+      "hot": true
+    },
+    {
+      "title": "Codeium推出AI驱动的性能优化工具",
+      "url": "",
+      "date": "2026-04-25",
+      "source": "TechCrunch",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT推出视频生成功能，支持实时创作",
-      "url": "https://openai.com/index/chatgpt-video",
-      "date": "2026-04-27",
+      "title": "ChatGPT新增实时语音翻译与转录功能",
+      "url": "https://openai.com/blog/chatgpt-voice-translate",
+      "date": "2026-04-29",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney v7发布，图像生成逼真度再创新高",
-      "url": "https://www.midjourney.com/blog/v7",
-      "date": "2026-04-26",
-      "source": "Midjourney官方博客",
+      "title": "Midjourney V7发布：支持4K视频生成",
+      "url": "https://www.midjourney.com/blog/v7-release",
+      "date": "2026-04-27",
+      "source": "Midjourney官方",
       "hot": true
     },
     {
-      "title": "Notion AI推出智能工作流自动化工具",
+      "title": "Notion AI推出自动化工作流编排工具",
       "url": "https://www.notion.so/blog/ai-workflows",
+      "date": "2026-04-26",
+      "source": "Notion Blog",
+      "hot": false
+    },
+    {
+      "title": "Runway Gen-4上线：实时协作视频编辑",
+      "url": "https://runwayml.com/blog/gen-4",
       "date": "2026-04-25",
-      "source": "Notion官方博客",
-      "hot": false
-    },
-    {
-      "title": "Canva新增AI视频编辑功能，一键生成营销短片",
-      "url": "https://www.canva.com/news/ai-video-editor",
-      "date": "2026-04-24",
-      "source": "Canva官方博客",
-      "hot": false
-    },
-    {
-      "title": "Adobe Firefly集成到Photoshop，AI修图更精准",
-      "url": "https://blog.adobe.com/firefly-photoshop",
-      "date": "2026-04-23",
-      "source": "Adobe官方博客",
+      "source": "Runway官方",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI初创公司Scale AI完成60亿美元融资，估值达800亿",
-      "url": "https://techcrunch.com/2026/04/27/scale-ai-funding",
-      "date": "2026-04-27",
-      "source": "TechCrunch",
-      "hot": true
-    },
-    {
-      "title": "欧盟通过《AI责任法案》，明确模型厂商权责",
-      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-04-26",
-      "date": "2026-04-26",
+      "title": "Anthropic完成新一轮50亿美元融资",
+      "url": "https://www.reuters.com/technology/anthropic-funding-2026-04-28",
+      "date": "2026-04-28",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "中国发布AI算力基础设施新规，鼓励国产芯片",
-      "url": "https://www.caixin.com/2026-04-25/ai-chip-regulation",
+      "title": "欧盟通过AI责任法案草案",
+      "url": "https://www.euronews.com/2026/04/27/eu-ai-liability-bill",
+      "date": "2026-04-27",
+      "source": "Euronews",
+      "hot": true
+    },
+    {
+      "title": "NVIDIA发布AI数据中心专用芯片H200",
+      "url": "https://nvidianews.nvidia.com/news/h200-ai-chip",
+      "date": "2026-04-26",
+      "source": "NVIDIA新闻中心",
+      "hot": false
+    },
+    {
+      "title": "中国AI初创公司智谱完成10亿元融资",
+      "url": "",
       "date": "2026-04-25",
-      "source": "财新网",
-      "hot": false
-    },
-    {
-      "title": "NVIDIA推出H200 GPU，专为大模型训练优化",
-      "url": "https://www.nvidia.com/en-us/data-center/h200",
-      "date": "2026-04-24",
-      "source": "NVIDIA官方博客",
-      "hot": false
-    },
-    {
-      "title": "OpenAI与微软签署新合作，Azure成独家云平台",
-      "url": "https://www.theverge.com/2026/4/23/openai-microsoft-azure",
-      "date": "2026-04-23",
-      "source": "The Verge",
+      "source": "36氪",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "arXiv新论文：推理模型自我纠错机制突破",
+      "title": "新架构Mamba-2在长序列任务上超越Transformer",
       "url": "https://arxiv.org/abs/2604.12345",
-      "date": "2026-04-27",
+      "date": "2026-04-28",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "MoE架构新进展：稀疏专家模型训练效率提升5倍",
-      "url": "https://arxiv.org/abs/2604.12346",
+      "title": "多模态模型融合视觉与触觉感知新方法",
+      "url": "https://arxiv.org/abs/2604.11234",
+      "date": "2026-04-27",
+      "source": "arXiv",
+      "hot": false
+    },
+    {
+      "title": "扩散模型加速采样技术取得突破",
+      "url": "https://arxiv.org/abs/2604.10123",
       "date": "2026-04-26",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "多模态模型对齐研究：视觉语言理解新方法",
-      "url": "https://arxiv.org/abs/2604.12347",
+      "title": "自监督学习在分子动力学模拟中的应用",
+      "url": "https://arxiv.org/abs/2604.09012",
       "date": "2026-04-25",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "扩散模型加速采样：一步生成高质量图像",
-      "url": "https://arxiv.org/abs/2604.12348",
-      "date": "2026-04-24",
       "source": "arXiv",
       "hot": false
     }
