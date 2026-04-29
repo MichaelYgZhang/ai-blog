@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月28日",
-  "updateTime": "2026-04-28 08:00",
-  "articleId": "S4-011",
-  "title": "Structured Output：让LLM输出结构化数据",
-  "summary": "通过JSON模式、Pydantic验证和约束解码技术，强制LLM输出结构化数据，解决可靠性、可组合性和可验证性问题，将模型从文本生成器升级为可靠API后端，是企业级应用基石。",
+  "date": "2026年4月29日",
+  "updateTime": "2026-04-29 08:00",
+  "articleId": "S4-012",
+  "title": "多轮对话与记忆增强",
+  "summary": "多轮对话系统受限于短期上下文窗口，记忆增强技术通过持久化存储和智能检索关键信息，突破这一瓶颈。长期记忆系统采用编码-存储-检索-注入循环，实现跨会话信息保持，是构建个性化助手和持续任务系统的关键。",
   "stage": {
     "id": 4,
     "name": "大模型应用开发",
     "color": "#3b82f6"
   },
   "techPoints": [
-    "JSON模式",
-    "Pydantic",
-    "约束解码"
+    "长期记忆",
+    "向量检索记忆",
+    "摘要记忆"
   ],
   "dependencies": [
     {
       "stageName": "大模型应用开发",
       "stageId": 4,
-      "topic": "Prompt工程",
-      "reason": "理解「Structured Output：让LLM输出结构化数据」需要掌握「Prompt工程」的相关知识"
+      "topic": "对话系统",
+      "reason": "理解「多轮对话与记忆增强」需要掌握「对话系统」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "多轮对话与记忆增强",
-    "teaser": "下一篇将探讨长期记忆和向量检索记忆等技术要点"
+    "title": "用Semantic Kernel构建AI编排",
+    "teaser": "下一篇将探讨插件系统和规划器等技术要点"
   },
   "progress": {
-    "completed": 51,
+    "completed": 52,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-28-article.md"
+  "fullArticleUrl": "archives/articles/2026-04-29-article.md"
 }

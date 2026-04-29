@@ -339,6 +339,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-29",
+      "title": "多轮对话与记忆增强",
+      "articleId": "S4-012",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-04-29-article.md"
+    },
+    {
       "date": "2026-04-28",
       "title": "Structured Output：让LLM输出结构化数据",
       "articleId": "S4-011",
