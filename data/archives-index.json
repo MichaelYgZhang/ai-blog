@@ -1,6 +1,11 @@
 {
   "daily": [
     {
+      "date": "2026-04-30",
+      "title": "AI快讯 2026年4月30日",
+      "url": "archives/daily/2026-04-30-ai-daily.md"
+    },
+    {
       "date": "2026-04-29",
       "title": "AI快讯 2026年4月29日",
       "url": "archives/daily/2026-04-29-ai-daily.md"
@@ -324,6 +329,11 @@
     }
   ],
   "monthly": [
+    {
+      "date": "2026-04",
+      "title": "AI月报 2026年4月",
+      "url": "archives/monthly/2026-04-monthly.md"
+    },
     {
       "date": "2026-03",
       "title": "AI月报 2026年3月",
