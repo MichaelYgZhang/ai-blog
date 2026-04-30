@@ -349,6 +349,14 @@
   ],
   "articles": [
     {
+      "date": "2026-04-30",
+      "title": "用Semantic Kernel构建AI编排",
+      "articleId": "S4-013",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-04-30-article.md"
+    },
+    {
       "date": "2026-04-29",
       "title": "多轮对话与记忆增强",
       "articleId": "S4-012",
