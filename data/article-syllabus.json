@@ -968,7 +968,8 @@
         "topic": "系统优化"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-05-01"
   },
   {
     "id": "S4-015",

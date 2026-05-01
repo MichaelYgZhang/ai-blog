@@ -1,34 +1,34 @@
 {
-  "date": "2026年4月30日",
-  "updateTime": "2026-04-30 08:00",
-  "articleId": "S4-013",
-  "title": "用Semantic Kernel构建AI编排",
-  "summary": "Semantic Kernel通过插件系统、规划器和连接器三大组件，将大语言模型升级为可编排的AI操作系统，实现从对话式AI到自动化AI代理的跨越。该框架以声明式方式构建多步骤AI工作流，解决能力复用、任务分解和系统集成三大痛点，为开发者提供可复用的AI应用架构范式。",
+  "date": "2026年5月1日",
+  "updateTime": "2026-05-01 08:00",
+  "articleId": "S4-014",
+  "title": "大模型应用中的缓存策略",
+  "summary": "大模型应用中，缓存是控制成本、降低延迟、提升吞吐量的核心基础设施。语义缓存通过向量化与相似度检索复用计算结果，KV缓存优化推理性能，成本控制建立全局决策框架。掌握这些技术能设计经济高效的大模型应用系统。",
   "stage": {
     "id": 4,
     "name": "大模型应用开发",
     "color": "#3b82f6"
   },
   "techPoints": [
-    "插件系统",
-    "规划器",
-    "连接器"
+    "语义缓存",
+    "KV缓存",
+    "成本控制"
   ],
   "dependencies": [
     {
-      "stageName": "大模型应用开发",
-      "stageId": 4,
-      "topic": "AI应用框架",
-      "reason": "理解「用Semantic Kernel构建AI编排」需要掌握「AI应用框架」的相关知识"
+      "stageName": "AI工程化与系统",
+      "stageId": 5,
+      "topic": "系统优化",
+      "reason": "理解「大模型应用中的缓存策略」需要掌握「系统优化」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "大模型应用中的缓存策略",
-    "teaser": "下一篇将探讨语义缓存和KV缓存等技术要点"
+    "title": "检索增强生成的进阶技巧",
+    "teaser": "下一篇将探讨混合检索和重排序等技术要点"
   },
   "progress": {
-    "completed": 53,
+    "completed": 54,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-04-30-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-01-article.md"
 }
