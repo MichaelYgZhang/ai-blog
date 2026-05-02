@@ -359,6 +359,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-02",
+      "title": "检索增强生成的进阶技巧",
+      "articleId": "S4-015",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-05-02-article.md"
+    },
+    {
       "date": "2026-05-01",
       "title": "大模型应用中的缓存策略",
       "articleId": "S4-014",
