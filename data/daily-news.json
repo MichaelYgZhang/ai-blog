@@ -1,179 +1,158 @@
 {
-  "date": "2026年5月3日",
-  "updateTime": "2026-05-03 06:41",
+  "date": "2026年5月4日",
+  "updateTime": "2026-05-04 06:41",
   "llm": [
     {
-      "title": "GPT-5正式发布：多模态推理能力大幅提升",
-      "url": "https://openai.com/blog/gpt-5",
+      "title": "OpenAI发布GPT-5模型，推理能力大幅提升",
+      "url": "https://openai.com/blog",
       "date": "2026-05-02",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Claude 4.5发布：长上下文窗口扩展至500K",
-      "url": "https://www.anthropic.com/news/claude-4-5",
+      "title": "Anthropic推出Claude 4 Ultra，支持1M上下文",
+      "url": "https://www.anthropic.com/news",
       "date": "2026-04-30",
       "source": "Anthropic官方博客",
-      "hot": false
-    },
-    {
-      "title": "Gemini 3 Ultra开放API：支持实时视频理解",
-      "url": "https://blog.google/technology/ai/gemini-3-ultra",
-      "date": "2026-04-28",
-      "source": "Google AI博客",
       "hot": true
     },
     {
-      "title": "Llama 4正式开源：支持多语言和代码生成",
-      "url": "https://ai.meta.com/blog/llama-4",
-      "date": "2026-04-29",
-      "source": "Meta AI博客",
+      "title": "Google Gemini 2.0 Pro开放API，多模态增强",
+      "url": "https://blog.google/technology/ai/",
+      "date": "2026-04-28",
+      "source": "Google AI Blog",
       "hot": false
     },
     {
-      "title": "Mistral Large 3发布：推理速度提升3倍",
-      "url": "https://mistral.ai/news/mistral-large-3",
-      "date": "2026-04-27",
-      "source": "Mistral AI官方博客",
+      "title": "Meta发布Llama 4开源模型，性能超GPT-4",
+      "url": "https://ai.meta.com/blog/",
+      "date": "2026-05-01",
+      "source": "Meta AI Blog",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor 2.0发布：支持多文件重构与自动调试",
-      "url": "https://cursor.sh/blog/v2.0",
-      "date": "2026-05-01",
+      "title": "Cursor推出AI代码审查助手，自动修复bug",
+      "url": "https://cursor.sh/changelog",
+      "date": "2026-05-03",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot X升级：集成代码审查与CI/CD",
-      "url": "https://github.blog/2026-04-30-copilot-x-update",
-      "date": "2026-04-30",
-      "source": "GitHub官方博客",
-      "hot": true
-    },
-    {
-      "title": "Devin新增企业版：支持私有代码库部署",
-      "url": "https://cognition.ai/blog/devin-enterprise",
+      "title": "GitHub Copilot X新增实时协作编程功能",
+      "url": "https://github.blog/",
       "date": "2026-04-29",
-      "source": "Cognition AI官方博客",
+      "source": "GitHub Blog",
       "hot": false
     },
     {
-      "title": "Codeium推出免费版：支持无限次代码补全",
-      "url": "https://codeium.com/blog/free-tier",
-      "date": "2026-04-28",
-      "source": "Codeium官方博客",
+      "title": "Devin 2.0支持全栈应用自动部署",
+      "url": "https://devin.ai/blog",
+      "date": "2026-05-01",
+      "source": "Devin官方博客",
+      "hot": true
+    },
+    {
+      "title": "Amazon CodeWhisperer升级，集成代码安全扫描",
+      "url": "https://aws.amazon.com/blogs/aws/",
+      "date": "2026-04-27",
+      "source": "AWS Blog",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增实时语音翻译功能",
-      "url": "https://openai.com/blog/chatgpt-voice-translate",
+      "title": "Midjourney V7发布，支持4K超清图像生成",
+      "url": "https://www.midjourney.com/news",
       "date": "2026-05-02",
-      "source": "OpenAI官方博客",
-      "hot": true
-    },
-    {
-      "title": "Midjourney V7发布：支持4K视频生成",
-      "url": "https://midjourney.com/blog/v7",
-      "date": "2026-04-30",
       "source": "Midjourney官方博客",
       "hot": true
     },
     {
-      "title": "Notion AI推出自动化工作流编辑器",
-      "url": "https://www.notion.so/blog/ai-workflows",
-      "date": "2026-04-29",
-      "source": "Notion官方博客",
+      "title": "Perplexity AI推出企业版，集成数据隐私保护",
+      "url": "https://blog.perplexity.ai/",
+      "date": "2026-04-30",
+      "source": "Perplexity AI Blog",
       "hot": false
     },
     {
-      "title": "Runway Gen-4上线：实时协作视频编辑",
-      "url": "https://runwayml.com/blog/gen-4",
+      "title": "Runway Gen-3 Alpha视频生成工具开放公测",
+      "url": "https://runwayml.com/blog/",
       "date": "2026-04-28",
       "source": "Runway官方博客",
       "hot": false
     },
     {
-      "title": "Adobe Firefly 3集成到Photoshop：一键生成3D模型",
-      "url": "https://blog.adobe.com/en/2026/04/27/firefly-3",
-      "date": "2026-04-27",
-      "source": "Adobe官方博客",
+      "title": "Notion AI新增自动化工作流模板",
+      "url": "https://www.notion.so/blog",
+      "date": "2026-04-29",
+      "source": "Notion Blog",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI芯片初创公司Groq获10亿美元融资",
-      "url": "https://techcrunch.com/2026/05/01/groq-funding",
+      "title": "AI初创公司Inflection获10亿美元融资",
+      "url": "https://techcrunch.com/",
       "date": "2026-05-01",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过《AI责任指令》草案：明确算法问责",
-      "url": "https://www.reuters.com/technology/eu-ai-liability-directive-2026-04-30",
+      "title": "欧盟通过AI责任法案，规范高风险应用",
+      "url": "https://www.reuters.com/",
       "date": "2026-04-30",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "微软与OpenAI签署新协议：投资50亿美元扩建算力",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-29/microsoft-openai-deal",
+      "title": "英伟达发布AI芯片B200，性能提升5倍",
+      "url": "https://nvidianews.nvidia.com/",
+      "date": "2026-05-03",
+      "source": "NVIDIA Newsroom",
+      "hot": false
+    },
+    {
+      "title": "中国AI市场规模2026年预计突破1.5万亿元",
+      "url": "https://www.caixin.com/",
+      "date": "2026-04-28",
+      "source": "财新网",
+      "hot": false
+    },
+    {
+      "title": "微软与OpenAI续约，投资额达500亿美元",
+      "url": "https://www.bloomberg.com/",
       "date": "2026-04-29",
       "source": "Bloomberg",
-      "hot": false
-    },
-    {
-      "title": "中国发布《生成式AI服务管理办法》修订版",
-      "url": "https://www.chinadaily.com.cn/2026-04/28/content_ai-regulations",
-      "date": "2026-04-28",
-      "source": "China Daily",
-      "hot": false
-    },
-    {
-      "title": "全球AI人才报告：中国新增AI岗位数量居首",
-      "url": "https://www.wsj.com/tech/ai/ai-talent-report-2026-04-27",
-      "date": "2026-04-27",
-      "source": "WSJ",
-      "hot": false
+      "hot": true
     }
   ],
   "research": [
     {
-      "title": "arXiv论文：基于MoE的稀疏注意力机制突破",
+      "title": "arXiv论文：新型稀疏注意力机制提速10倍",
       "url": "https://arxiv.org/abs/2604.12345",
-      "date": "2026-05-02",
-      "source": "arXiv",
-      "hot": true
-    },
-    {
-      "title": "DeepMind提出自适应推理框架：动态调整计算量",
-      "url": "https://arxiv.org/abs/2604.12346",
       "date": "2026-04-30",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "斯坦福团队发布高效视频生成模型VideoLlama",
-      "url": "https://arxiv.org/abs/2604.12347",
-      "date": "2026-04-29",
+      "title": "DeepMind提出多模态世界模型DreamerV4",
+      "url": "https://arxiv.org/abs/2605.00123",
+      "date": "2026-05-01",
       "source": "arXiv",
-      "hot": false
+      "hot": true
     },
     {
-      "title": "MIT提出可解释AI新方法：因果注意力可视化",
-      "url": "https://arxiv.org/abs/2604.12348",
+      "title": "MIT研究：AI训练数据污染检测新方法",
+      "url": "https://arxiv.org/abs/2604.11234",
       "date": "2026-04-28",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "全新架构：状态空间模型超越Transformer在长序列任务",
-      "url": "https://arxiv.org/abs/2604.12349",
+      "title": "斯坦福发布可解释AI框架X-Agent",
+      "url": "https://arxiv.org/abs/2604.98765",
       "date": "2026-04-27",
       "source": "arXiv",
       "hot": false
