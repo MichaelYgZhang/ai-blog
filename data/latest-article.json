@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月2日",
-  "updateTime": "2026-05-02 08:00",
-  "articleId": "S4-015",
-  "title": "检索增强生成的进阶技巧",
-  "summary": "通过混合检索、重排序和查询改写三个进阶技巧，可将RAG系统检索准确率从60%提升至90%以上。混合检索融合向量与关键词检索优势，重排序精排候选文档，查询改写优化用户输入，三者协同实现从“能用”到“好用”的关键跨越。",
+  "date": "2026年5月3日",
+  "updateTime": "2026-05-03 08:00",
+  "articleId": "S4-016",
+  "title": "全参数微调vs参数高效微调",
+  "summary": "全参数微调成本高昂，需多卡A100；参数高效微调（PEFT）如LoRA、Adapter仅训练少量参数，在单卡即可完成，保持90%以上性能，成本降低一个数量级。对于多数应用，PEFT是更具性价比的选择。",
   "stage": {
     "id": 4,
     "name": "大模型应用开发",
     "color": "#3b82f6"
   },
   "techPoints": [
-    "混合检索",
-    "重排序",
-    "查询改写"
+    "SFT",
+    "LoRA",
+    "Adapter"
   ],
   "dependencies": [
     {
-      "stageName": "大模型应用开发",
-      "stageId": 4,
-      "topic": "RAG基础",
-      "reason": "理解「检索增强生成的进阶技巧」需要掌握「RAG基础」的相关知识"
+      "stageName": "深度学习精通",
+      "stageId": 3,
+      "topic": "模型训练",
+      "reason": "理解「全参数微调vs参数高效微调」需要掌握「模型训练」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "全参数微调vs参数高效微调",
-    "teaser": "下一篇将探讨SFT和LoRA等技术要点"
+    "title": "AI应用的流式响应实现",
+    "teaser": "下一篇将探讨SSE和Token流等技术要点"
   },
   "progress": {
-    "completed": 55,
+    "completed": 56,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-02-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-03-article.md"
 }
