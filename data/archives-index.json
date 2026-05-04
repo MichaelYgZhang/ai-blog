@@ -374,6 +374,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-04",
+      "title": "AI应用的流式响应实现",
+      "articleId": "S4-017",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-05-04-article.md"
+    },
+    {
       "date": "2026-05-03",
       "title": "全参数微调vs参数高效微调",
       "articleId": "S4-016",
