@@ -379,6 +379,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-05",
+      "title": "用LlamaIndex构建知识库",
+      "articleId": "S4-018",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-05-05-article.md"
+    },
+    {
       "date": "2026-05-04",
       "title": "AI应用的流式响应实现",
       "articleId": "S4-017",
