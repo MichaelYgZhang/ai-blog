@@ -384,6 +384,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-06",
+      "title": "大模型应用成本优化策略",
+      "articleId": "S4-019",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-05-06-article.md"
+    },
+    {
       "date": "2026-05-05",
       "title": "用LlamaIndex构建知识库",
       "articleId": "S4-018",

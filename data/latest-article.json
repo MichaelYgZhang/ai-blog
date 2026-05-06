@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月5日",
-  "updateTime": "2026-05-05 08:00",
-  "articleId": "S4-018",
-  "title": "用LlamaIndex构建知识库",
-  "summary": "LlamaIndex通过数据连接器、索引构建和查询引擎三大组件，将私有数据转化为大模型可实时检索的结构化知识，解决了大模型无法直接访问私有数据的核心痛点，是实现RAG系统从概念验证到生产落地的关键工程框架。",
+  "date": "2026年5月6日",
+  "updateTime": "2026-05-06 08:00",
+  "articleId": "S4-019",
+  "title": "大模型应用成本优化策略",
+  "summary": "通过系统化的Token优化、合理的模型选择与高效的批处理策略，企业可将大模型API调用成本降低50%-80%，同时保持甚至提升应用性能。本文从三大核心维度系统性拆解成本优化的技术原理与工程实践。",
   "stage": {
     "id": 4,
     "name": "大模型应用开发",
     "color": "#3b82f6"
   },
   "techPoints": [
-    "索引构建",
-    "查询引擎",
-    "数据连接器"
+    "Token优化",
+    "模型选择",
+    "批处理"
   ],
   "dependencies": [
     {
       "stageName": "大模型应用开发",
       "stageId": 4,
-      "topic": "RAG系统",
-      "reason": "理解「用LlamaIndex构建知识库」需要掌握「RAG系统」的相关知识"
+      "topic": "大模型API",
+      "reason": "理解「大模型应用成本优化策略」需要掌握「大模型API」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "大模型应用成本优化策略",
-    "teaser": "下一篇将探讨Token优化和模型选择等技术要点"
+    "title": "GraphRAG：图谱增强的检索生成",
+    "teaser": "下一篇将探讨知识图谱和图检索等技术要点"
   },
   "progress": {
-    "completed": 58,
+    "completed": 59,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-05-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-06-article.md"
 }

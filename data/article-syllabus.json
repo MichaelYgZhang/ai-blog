@@ -1058,7 +1058,8 @@
         "topic": "大模型API"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-05-06"
   },
   {
     "id": "S4-020",
