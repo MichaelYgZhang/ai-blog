@@ -389,6 +389,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-07",
+      "title": "GraphRAG：图谱增强的检索生成",
+      "articleId": "S4-020",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-05-07-article.md"
+    },
+    {
       "date": "2026-05-06",
       "title": "大模型应用成本优化策略",
       "articleId": "S4-019",
