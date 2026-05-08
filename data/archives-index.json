@@ -394,6 +394,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-08",
+      "title": "Multimodal RAG：多模态检索增强",
+      "articleId": "S4-021",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-05-08-article.md"
+    },
+    {
       "date": "2026-05-07",
       "title": "GraphRAG：图谱增强的检索生成",
       "articleId": "S4-020",

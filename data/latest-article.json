@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月7日",
-  "updateTime": "2026-05-07 08:00",
-  "articleId": "S4-020",
-  "title": "GraphRAG：图谱增强的检索生成",
-  "summary": "GraphRAG通过将知识图谱的结构化关系引入检索增强生成，在复杂问答任务中相比传统RAG实现显著准确率提升，是RAG从语义匹配迈向结构化知识推理的关键进化。",
+  "date": "2026年5月8日",
+  "updateTime": "2026-05-08 08:00",
+  "articleId": "S4-021",
+  "title": "Multimodal RAG：多模态检索增强",
+  "summary": "Multimodal RAG通过整合图像、表格等非文本数据，突破纯文本RAG在视觉信息与结构化数据理解上的瓶颈。它利用图像检索、多模态嵌入等技术，使大模型能基于多模态信息推理，是提升文档理解能力的高效技术路径。",
   "stage": {
     "id": 4,
     "name": "大模型应用开发",
     "color": "#3b82f6"
   },
   "techPoints": [
-    "知识图谱",
-    "图检索",
-    "社区摘要"
+    "图像检索",
+    "表格理解",
+    "多模态嵌入"
   ],
   "dependencies": [
     {
       "stageName": "大模型应用开发",
       "stageId": 4,
-      "topic": "RAG进阶",
-      "reason": "理解「GraphRAG：图谱增强的检索生成」需要掌握「RAG进阶」的相关知识"
+      "topic": "RAG系统",
+      "reason": "理解「Multimodal RAG：多模态检索增强」需要掌握「RAG系统」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "Multimodal RAG：多模态检索增强",
-    "teaser": "下一篇将探讨图像检索和表格理解等技术要点"
+    "title": "AI应用安全：Prompt注入防护",
+    "teaser": "下一篇将探讨注入检测和沙箱隔离等技术要点"
   },
   "progress": {
-    "completed": 60,
+    "completed": 61,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-07-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-08-article.md"
 }
