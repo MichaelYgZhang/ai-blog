@@ -399,6 +399,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-09",
+      "title": "AI应用安全：Prompt注入防护",
+      "articleId": "S4-022",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-05-09-article.md"
+    },
+    {
       "date": "2026-05-08",
       "title": "Multimodal RAG：多模态检索增强",
       "articleId": "S4-021",
