@@ -1130,7 +1130,8 @@
         "topic": "Python编程"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-05-10"
   },
   {
     "id": "S4-024",

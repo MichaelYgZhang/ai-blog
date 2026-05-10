@@ -409,6 +409,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-10",
+      "title": "大模型应用中的错误处理",
+      "articleId": "S4-023",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-05-10-article.md"
+    },
+    {
       "date": "2026-05-09",
       "title": "AI应用安全：Prompt注入防护",
       "articleId": "S4-022",
