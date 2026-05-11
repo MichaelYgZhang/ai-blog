@@ -414,6 +414,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-11",
+      "title": "Text-to-SQL：自然语言查询数据库",
+      "articleId": "S4-024",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-05-11-article.md"
+    },
+    {
       "date": "2026-05-10",
       "title": "大模型应用中的错误处理",
       "articleId": "S4-023",

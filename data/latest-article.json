@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月10日",
-  "updateTime": "2026-05-10 08:00",
-  "articleId": "S4-023",
-  "title": "大模型应用中的错误处理",
-  "summary": "在大模型应用中，系统化设计重试策略、降级方案和异常分类机制是确保AI服务稳定运行的关键。通过将错误分为可重试、不可重试和业务逻辑三类，并采用指数退避等策略，可有效提升服务可用性和用户体验。",
+  "date": "2026年5月11日",
+  "updateTime": "2026-05-11 08:00",
+  "articleId": "S4-024",
+  "title": "Text-to-SQL：自然语言查询数据库",
+  "summary": "Text-to-SQL技术使非技术用户通过自然语言查询数据库，核心挑战是将模糊语言精准映射为SQL查询。大模型将准确率从60%提升至85%以上，关键在于Schema理解、SQL生成与结果验证，实现数据民主化。",
   "stage": {
     "id": 4,
     "name": "大模型应用开发",
     "color": "#3b82f6"
   },
   "techPoints": [
-    "重试策略",
-    "降级方案",
-    "异常分类"
+    "Schema理解",
+    "SQL生成",
+    "结果验证"
   ],
   "dependencies": [
     {
-      "stageName": "编程与数学基础",
-      "stageId": 1,
-      "topic": "Python编程",
-      "reason": "理解「大模型应用中的错误处理」需要掌握「Python编程」的相关知识"
+      "stageName": "大模型应用开发",
+      "stageId": 4,
+      "topic": "大模型应用",
+      "reason": "理解「Text-to-SQL：自然语言查询数据库」需要掌握「大模型应用」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "Text-to-SQL：自然语言查询数据库",
-    "teaser": "下一篇将探讨Schema理解和SQL生成等技术要点"
+    "title": "AI Copilot设计模式与最佳实践",
+    "teaser": "下一篇将探讨交互设计和上下文感知等技术要点"
   },
   "progress": {
-    "completed": 63,
+    "completed": 64,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-10-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-11-article.md"
 }
