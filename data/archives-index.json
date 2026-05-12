@@ -419,6 +419,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-12",
+      "title": "AI Copilot设计模式与最佳实践",
+      "articleId": "S4-025",
+      "stage": 4,
+      "stageName": "大模型应用开发",
+      "url": "archives/articles/2026-05-12-article.md"
+    },
+    {
       "date": "2026-05-11",
       "title": "Text-to-SQL：自然语言查询数据库",
       "articleId": "S4-024",

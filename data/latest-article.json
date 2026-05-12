@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月11日",
-  "updateTime": "2026-05-11 08:00",
-  "articleId": "S4-024",
-  "title": "Text-to-SQL：自然语言查询数据库",
-  "summary": "Text-to-SQL技术使非技术用户通过自然语言查询数据库，核心挑战是将模糊语言精准映射为SQL查询。大模型将准确率从60%提升至85%以上，关键在于Schema理解、SQL生成与结果验证，实现数据民主化。",
+  "date": "2026年5月12日",
+  "updateTime": "2026-05-12 08:00",
+  "articleId": "S4-025",
+  "title": "AI Copilot设计模式与最佳实践",
+  "summary": "AI Copilot设计模式的核心在于将大模型降维为上下文感知、增量辅助的智能伙伴，通过交互边界、状态管理和渐进式介入实现人机协作。文章从交互设计、上下文感知和增量辅助三个技术点出发，结合代码示例，揭示了构建高效AI Copilot的系统方法论。",
   "stage": {
     "id": 4,
     "name": "大模型应用开发",
     "color": "#3b82f6"
   },
   "techPoints": [
-    "Schema理解",
-    "SQL生成",
-    "结果验证"
+    "交互设计",
+    "上下文感知",
+    "增量辅助"
   ],
   "dependencies": [
     {
       "stageName": "大模型应用开发",
       "stageId": 4,
-      "topic": "大模型应用",
-      "reason": "理解「Text-to-SQL：自然语言查询数据库」需要掌握「大模型应用」的相关知识"
+      "topic": "Agent系统",
+      "reason": "理解「AI Copilot设计模式与最佳实践」需要掌握「Agent系统」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "AI Copilot设计模式与最佳实践",
-    "teaser": "下一篇将探讨交互设计和上下文感知等技术要点"
+    "title": "PyTorch入门：Tensor与自动求导",
+    "teaser": "下一篇将探讨Tensor操作和autograd等技术要点"
   },
   "progress": {
-    "completed": 64,
+    "completed": 65,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-11-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-12-article.md"
 }

@@ -1166,7 +1166,8 @@
         "topic": "Agent系统"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-05-12"
   },
   {
     "id": "S3-001",
