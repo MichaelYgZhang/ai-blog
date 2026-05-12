@@ -1,145 +1,152 @@
 {
-  "date": "2026年5月12日",
-  "updateTime": "2026-05-12 06:54",
+  "date": "2026年5月13日",
+  "updateTime": "2026-05-13 07:02",
   "llm": [
     {
       "title": "GPT-5发布：多模态推理能力大幅提升",
-      "url": "https://openai.com/blog/gpt-5-release",
-      "date": "2026-05-10",
+      "url": "https://openai.com/blog/gpt-5",
+      "date": "2026-05-12",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Claude 4.5更新：长上下文处理优化",
+      "title": "Claude 4.5更新：强化长上下文处理能力",
       "url": "https://www.anthropic.com/news/claude-4-5",
-      "date": "2026-05-08",
+      "date": "2026-05-10",
       "source": "Anthropic官方博客",
       "hot": false
     },
     {
       "title": "Gemini Ultra 2.0开放API测试",
       "url": "https://blog.google/technology/ai/gemini-ultra-2",
-      "date": "2026-05-07",
+      "date": "2026-05-11",
       "source": "Google AI博客",
-      "hot": true
+      "hot": false
     },
     {
-      "title": "Llama 4开源模型社区版发布",
-      "url": "https://ai.meta.com/blog/llama-4-community",
+      "title": "Llama 4开源模型发布：支持多语言实时推理",
+      "url": "https://ai.meta.com/blog/llama-4",
       "date": "2026-05-09",
-      "source": "Meta AI",
-      "hot": false
+      "source": "Meta AI博客",
+      "hot": true
     }
   ],
   "coding": [
     {
-      "title": "Cursor推出AI代码审查助手",
-      "url": "https://www.cursor.com/blog/code-review-assistant",
-      "date": "2026-05-11",
+      "title": "Cursor推出AI Agent模式：自动修复代码",
+      "url": "https://cursor.sh/blog/agent-mode",
+      "date": "2026-05-13",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot支持多文件重构",
-      "url": "https://github.blog/changelog/copilot-multi-file-refactoring",
-      "date": "2026-05-09",
-      "source": "GitHub官方博客",
+      "title": "GitHub Copilot集成多模型选择功能",
+      "url": "https://github.blog/changelog/2026-05-12-copilot-multi-model",
+      "date": "2026-05-12",
+      "source": "GitHub Blog",
       "hot": false
     },
     {
-      "title": "Devin集成GitLab CI/CD流水线",
-      "url": "https://www.cognition.ai/blog/devin-gitlab-integration",
-      "date": "2026-05-07",
-      "source": "Cognition AI",
+      "title": "Devin v2.0发布：端到端项目开发能力",
+      "url": "https://cognition.ai/blog/devin-v2",
+      "date": "2026-05-11",
+      "source": "Cognition Labs官方博客",
       "hot": true
+    },
+    {
+      "title": "Replit Agent支持实时协作编程",
+      "url": "https://blog.replit.com/agent-collaboration",
+      "date": "2026-05-10",
+      "source": "Replit官方博客",
+      "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT上线实时协作白板功能",
-      "url": "https://openai.com/blog/chatgpt-whiteboard",
-      "date": "2026-05-11",
+      "title": "ChatGPT推出语音视频实时交互功能",
+      "url": "https://openai.com/blog/chatgpt-voice-video",
+      "date": "2026-05-13",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7支持3D场景生成",
-      "url": "https://www.midjourney.com/blog/v7-3d-scenes",
-      "date": "2026-05-10",
+      "title": "Midjourney v7发布：3D场景生成能力",
+      "url": "https://www.midjourney.com/blog/v7",
+      "date": "2026-05-12",
       "source": "Midjourney官方博客",
       "hot": true
     },
     {
-      "title": "Notion AI推出文档智能摘要",
-      "url": "https://www.notion.so/blog/ai-summary-feature",
-      "date": "2026-05-08",
+      "title": "Notion AI新增自动化工作流引擎",
+      "url": "https://www.notion.so/blog/ai-workflows",
+      "date": "2026-05-11",
       "source": "Notion官方博客",
       "hot": false
     },
     {
-      "title": "Canva AI新增视频脚本自动生成",
-      "url": "https://www.canva.com/newsroom/ai-video-script",
-      "date": "2026-05-06",
-      "source": "Canva官方博客",
+      "title": "Grammarly推出AI写作助手专业版",
+      "url": "https://www.grammarly.com/blog/ai-pro",
+      "date": "2026-05-10",
+      "source": "Grammarly官方博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI初创公司Anthropic获50亿美元融资",
-      "url": "https://techcrunch.com/2026/05/11/anthropic-funding",
-      "date": "2026-05-11",
+      "title": "AI芯片初创公司获10亿美元融资",
+      "url": "https://techcrunch.com/2026/05/13/ai-chip-startup-funding",
+      "date": "2026-05-13",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过《AI责任法案》修正案",
-      "url": "https://www.reuters.com/technology/eu-ai-liability-act",
-      "date": "2026-05-09",
+      "title": "欧盟通过AI责任法案：明确开发者义务",
+      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-05-12",
+      "date": "2026-05-12",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "NVIDIA发布B300 AI芯片性能数据",
-      "url": "https://nvidianews.nvidia.com/news/b300-performance",
-      "date": "2026-05-08",
-      "source": "NVIDIA官方新闻",
+      "title": "微软与OpenAI续签百亿美元合作协议",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-11/microsoft-openai-deal",
+      "date": "2026-05-11",
+      "source": "Bloomberg",
       "hot": false
     },
     {
-      "title": "中国AI芯片市场规模突破千亿美元",
-      "url": "https://www.bloomberg.com/news/ai-chip-market-china",
-      "date": "2026-05-07",
-      "source": "Bloomberg",
+      "title": "AI教育市场规模预计2027年突破千亿",
+      "url": "https://www.statista.com/report/ai-education-2026",
+      "date": "2026-05-10",
+      "source": "Statista",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "新架构Mamba-3在长序列任务上超越Transformer",
+      "title": "新架构Mamba-2亮相：线性复杂度超Transformer",
       "url": "https://arxiv.org/abs/2605.01234",
-      "date": "2026-05-10",
+      "date": "2026-05-13",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "稀疏专家模型训练效率提升10倍",
-      "url": "https://arxiv.org/abs/2605.01123",
-      "date": "2026-05-09",
+      "title": "多模态模型训练新方法：数据效率提升10倍",
+      "url": "https://arxiv.org/abs/2605.01111",
+      "date": "2026-05-12",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "多模态对齐新方法：跨模态对比学习",
+      "title": "自监督学习突破：无需标注的视觉理解系统",
       "url": "https://arxiv.org/abs/2605.00987",
-      "date": "2026-05-08",
+      "date": "2026-05-11",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "AI安全研究：红队攻击检测框架发布",
+      "title": "AI推理能力研究：基于逻辑链的增强框架",
       "url": "https://arxiv.org/abs/2605.00876",
-      "date": "2026-05-07",
+      "date": "2026-05-10",
       "source": "arXiv",
       "hot": false
     }
