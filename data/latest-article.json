@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月12日",
-  "updateTime": "2026-05-12 08:00",
-  "articleId": "S4-025",
-  "title": "AI Copilot设计模式与最佳实践",
-  "summary": "AI Copilot设计模式的核心在于将大模型降维为上下文感知、增量辅助的智能伙伴，通过交互边界、状态管理和渐进式介入实现人机协作。文章从交互设计、上下文感知和增量辅助三个技术点出发，结合代码示例，揭示了构建高效AI Copilot的系统方法论。",
+  "date": "2026年5月13日",
+  "updateTime": "2026-05-13 08:00",
+  "articleId": "S3-001",
+  "title": "PyTorch入门：Tensor与自动求导",
+  "summary": "PyTorch的核心竞争力在于动态计算图与自动求导机制，通过Tensor和autograd组件自动记录操作历史并计算梯度，使研究者从手动推导梯度和编写反向传播代码中解放，专注于模型架构创新。",
   "stage": {
-    "id": 4,
-    "name": "大模型应用开发",
-    "color": "#3b82f6"
+    "id": 3,
+    "name": "深度学习精通",
+    "color": "#10b981"
   },
   "techPoints": [
-    "交互设计",
-    "上下文感知",
-    "增量辅助"
+    "Tensor操作",
+    "autograd",
+    "计算图"
   ],
   "dependencies": [
     {
-      "stageName": "大模型应用开发",
-      "stageId": 4,
-      "topic": "Agent系统",
-      "reason": "理解「AI Copilot设计模式与最佳实践」需要掌握「Agent系统」的相关知识"
+      "stageName": "编程与数学基础",
+      "stageId": 1,
+      "topic": "NumPy",
+      "reason": "理解「PyTorch入门：Tensor与自动求导」需要掌握「NumPy」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "PyTorch入门：Tensor与自动求导",
-    "teaser": "下一篇将探讨Tensor操作和autograd等技术要点"
+    "title": "从零实现一个神经网络",
+    "teaser": "下一篇将探讨前向传播和反向传播等技术要点"
   },
   "progress": {
-    "completed": 65,
+    "completed": 66,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-12-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-13-article.md"
 }

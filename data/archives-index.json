@@ -424,6 +424,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-13",
+      "title": "PyTorch入门：Tensor与自动求导",
+      "articleId": "S3-001",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-05-13-article.md"
+    },
+    {
       "date": "2026-05-12",
       "title": "AI Copilot设计模式与最佳实践",
       "articleId": "S4-025",

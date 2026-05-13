@@ -1184,7 +1184,8 @@
         "topic": "NumPy"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-05-13"
   },
   {
     "id": "S3-002",
