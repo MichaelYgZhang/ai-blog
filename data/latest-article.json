@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月13日",
-  "updateTime": "2026-05-13 08:00",
-  "articleId": "S3-001",
-  "title": "PyTorch入门：Tensor与自动求导",
-  "summary": "PyTorch的核心竞争力在于动态计算图与自动求导机制，通过Tensor和autograd组件自动记录操作历史并计算梯度，使研究者从手动推导梯度和编写反向传播代码中解放，专注于模型架构创新。",
+  "date": "2026年5月14日",
+  "updateTime": "2026-05-14 08:00",
+  "articleId": "S3-002",
+  "title": "从零实现一个神经网络",
+  "summary": "从零实现神经网络需手动完成前向传播、反向传播和梯度下降三个环节。反向传播通过链式法则传递误差，是连接预测与参数优化的关键；梯度下降驱动模型学习。掌握此过程能打破深度学习黑箱认知，建立直觉，实现从使用者到创造者的转变。",
   "stage": {
     "id": 3,
     "name": "深度学习精通",
     "color": "#10b981"
   },
   "techPoints": [
-    "Tensor操作",
-    "autograd",
-    "计算图"
+    "前向传播",
+    "反向传播",
+    "梯度下降"
   ],
   "dependencies": [
     {
       "stageName": "编程与数学基础",
       "stageId": 1,
-      "topic": "NumPy",
-      "reason": "理解「PyTorch入门：Tensor与自动求导」需要掌握「NumPy」的相关知识"
+      "topic": "微积分",
+      "reason": "理解「从零实现一个神经网络」需要掌握「微积分」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "从零实现一个神经网络",
-    "teaser": "下一篇将探讨前向传播和反向传播等技术要点"
+    "title": "CNN图像分类实战",
+    "teaser": "下一篇将探讨卷积层和池化层等技术要点"
   },
   "progress": {
-    "completed": 66,
+    "completed": 67,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-13-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-14-article.md"
 }

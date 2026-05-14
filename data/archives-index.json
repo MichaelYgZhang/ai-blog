@@ -429,6 +429,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-14",
+      "title": "从零实现一个神经网络",
+      "articleId": "S3-002",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-05-14-article.md"
+    },
+    {
       "date": "2026-05-13",
       "title": "PyTorch入门：Tensor与自动求导",
       "articleId": "S3-001",
