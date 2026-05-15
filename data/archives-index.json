@@ -434,6 +434,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-15",
+      "title": "CNN图像分类实战",
+      "articleId": "S3-003",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-05-15-article.md"
+    },
+    {
       "date": "2026-05-14",
       "title": "从零实现一个神经网络",
       "articleId": "S3-002",
