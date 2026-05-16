@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月15日",
-  "updateTime": "2026-05-15 08:00",
-  "articleId": "S3-003",
-  "title": "CNN图像分类实战",
-  "summary": "本文通过堆叠卷积层、池化层并应用数据增强，实现简单CNN架构在图像分类任务上接近90%的准确率。详细解析了卷积层特征提取原理、参数计算及代码实现，为小样本低算力条件下的实际部署提供解决方案。",
+  "date": "2026年5月16日",
+  "updateTime": "2026-05-16 08:00",
+  "articleId": "S3-004",
+  "title": "Transformer架构完全解析",
+  "summary": "Transformer架构通过自注意力与多头注意力机制，完全摒弃循环与卷积，实现序列建模并行化与长距离依赖捕获，成为NLP及多模态领域的基石，极大推动了BERT、GPT等模型发展。",
   "stage": {
     "id": 3,
     "name": "深度学习精通",
     "color": "#10b981"
   },
   "techPoints": [
-    "卷积层",
-    "池化层",
-    "数据增强"
+    "自注意力",
+    "多头注意力",
+    "位置编码"
   ],
   "dependencies": [
     {
       "stageName": "深度学习精通",
       "stageId": 3,
-      "topic": "神经网络基础",
-      "reason": "理解「CNN图像分类实战」需要掌握「神经网络基础」的相关知识"
+      "topic": "注意力机制",
+      "reason": "理解「Transformer架构完全解析」需要掌握「注意力机制」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "Transformer架构完全解析",
-    "teaser": "下一篇将探讨自注意力和多头注意力等技术要点"
+    "title": "注意力机制的演进与变体",
+    "teaser": "下一篇将探讨Scaled Dot-Product和Flash Attention等技术要点"
   },
   "progress": {
-    "completed": 68,
+    "completed": 69,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-15-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-16-article.md"
 }

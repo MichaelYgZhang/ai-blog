@@ -439,6 +439,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-16",
+      "title": "Transformer架构完全解析",
+      "articleId": "S3-004",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-05-16-article.md"
+    },
+    {
       "date": "2026-05-15",
       "title": "CNN图像分类实战",
       "articleId": "S3-003",
