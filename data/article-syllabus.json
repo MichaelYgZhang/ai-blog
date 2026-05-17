@@ -1256,7 +1256,8 @@
         "topic": "线性代数"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-05-17"
   },
   {
     "id": "S3-006",

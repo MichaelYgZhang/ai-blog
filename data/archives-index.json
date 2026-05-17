@@ -449,6 +449,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-17",
+      "title": "注意力机制的演进与变体",
+      "articleId": "S3-005",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-05-17-article.md"
+    },
+    {
       "date": "2026-05-16",
       "title": "Transformer架构完全解析",
       "articleId": "S3-004",
