@@ -1,154 +1,133 @@
 {
-  "date": "2026年5月17日",
-  "updateTime": "2026-05-17 06:45",
+  "date": "2026年5月18日",
+  "updateTime": "2026-05-18 06:54",
   "llm": [
     {
       "title": "GPT-5发布：多模态推理能力大幅提升",
-      "url": "https://openai.com/blog/gpt-5-release",
-      "date": "2026-05-15",
+      "url": "https://openai.com/blog/gpt-5",
+      "date": "2026-05-17",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Claude 4上线：增强长上下文与安全对齐",
-      "url": "https://www.anthropic.com/news/claude-4",
-      "date": "2026-05-13",
+      "title": "Claude 4.5推出实时代码协作功能",
+      "url": "https://www.anthropic.com/claude-4.5",
+      "date": "2026-05-15",
       "source": "Anthropic官方博客",
       "hot": false
     },
     {
-      "title": "Llama 4开源：Meta发布405B参数模型",
-      "url": "https://ai.meta.com/blog/llama-4",
-      "date": "2026-05-12",
-      "source": "Meta AI",
+      "title": "Gemini Ultra 2.0在数学推理基准上超越GPT-5",
+      "url": "https://blog.google/gemini-ultra-2",
+      "date": "2026-05-16",
+      "source": "Google AI博客",
       "hot": true
     },
     {
-      "title": "Gemini Ultra 2.0发布：谷歌集成搜索与推理",
-      "url": "https://blog.google/technology/ai/gemini-ultra-2",
-      "date": "2026-05-11",
-      "source": "Google AI",
+      "title": "Llama 4开源模型发布：支持128K上下文",
+      "url": "https://ai.meta.com/llama-4",
+      "date": "2026-05-14",
+      "source": "Meta AI博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor推出AI代理：自动修复代码Bug",
-      "url": "https://cursor.sh/blog/ai-agent",
-      "date": "2026-05-16",
-      "source": "Cursor官方博客",
+      "title": "Cursor 3.0支持多文件智能重构",
+      "url": "https://cursor.sh/changelog",
+      "date": "2026-05-17",
+      "source": "Cursor官方",
       "hot": true
     },
     {
-      "title": "GitHub Copilot X升级：支持多文件重构",
-      "url": "https://github.blog/copilot-x-update",
-      "date": "2026-05-14",
-      "source": "GitHub Blog",
+      "title": "GitHub Copilot引入自主测试生成",
+      "url": "https://github.blog/copilot-test-gen",
+      "date": "2026-05-15",
+      "source": "GitHub官方博客",
       "hot": false
     },
     {
-      "title": "Devin v2发布：独立完成中型项目开发",
-      "url": "https://cognition.ai/blog/devin-v2",
-      "date": "2026-05-12",
+      "title": "Devin 2.0实现全栈应用自动部署",
+      "url": "https://devin.ai/updates",
+      "date": "2026-05-13",
       "source": "Cognition Labs",
       "hot": true
-    },
-    {
-      "title": "Codeium推出企业级代码审查AI",
-      "url": "https://codeium.com/blog/enterprise-code-review",
-      "date": "2026-05-11",
-      "source": "Codeium",
-      "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT推出实时视频理解功能",
-      "url": "https://openai.com/blog/chatgpt-video",
+      "title": "ChatGPT上线实时语音翻译功能",
+      "url": "https://openai.com/chatgpt-voice-translate",
       "date": "2026-05-16",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney v7发布：支持4K视频生成",
-      "url": "https://www.midjourney.com/blog/v7",
+      "title": "Midjourney V7发布：4K视频生成",
+      "url": "https://midjourney.com/v7",
       "date": "2026-05-15",
-      "source": "Midjourney",
+      "source": "Midjourney官方",
       "hot": true
     },
     {
-      "title": "Notion AI新增自动化工作流引擎",
-      "url": "https://www.notion.so/blog/ai-workflows",
-      "date": "2026-05-13",
-      "source": "Notion",
+      "title": "Notion AI集成视频摘要与搜索",
+      "url": "https://www.notion.so/ai-update",
+      "date": "2026-05-14",
+      "source": "Notion官方",
       "hot": false
     },
     {
-      "title": "Adobe Firefly集成Premiere Pro剪辑",
-      "url": "https://blog.adobe.com/firefly-premiere",
+      "title": "Adobe Firefly 3.0支持3D模型生成",
+      "url": "https://www.adobe.com/firefly-3",
       "date": "2026-05-12",
-      "source": "Adobe",
+      "source": "Adobe官方博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI初创公司获10亿美元融资，估值破百亿",
-      "url": "https://techcrunch.com/ai-funding-may-2026",
-      "date": "2026-05-16",
+      "title": "AI初创公司Anthropic完成50亿美元融资",
+      "url": "https://techcrunch.com/anthropic-funding",
+      "date": "2026-05-17",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过AI责任法案，规范算法决策",
-      "url": "https://www.reuters.com/technology/eu-ai-liability-act",
-      "date": "2026-05-14",
+      "title": "欧盟通过《AI责任法案》约束大模型",
+      "url": "https://reuters.com/eu-ai-act",
+      "date": "2026-05-16",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "英伟达发布AI芯片Blackwell Ultra",
-      "url": "https://nvidianews.nvidia.com/blackwell-ultra",
-      "date": "2026-05-12",
-      "source": "NVIDIA Newsroom",
-      "hot": false
-    },
-    {
-      "title": "中国出台AI训练数据合规新规",
-      "url": "https://www.bloomberg.com/news/ai-data-regulations-china",
-      "date": "2026-05-11",
-      "source": "Bloomberg",
+      "title": "英伟达发布B300 GPU专为AI推理优化",
+      "url": "https://nvidia.com/b300",
+      "date": "2026-05-14",
+      "source": "NVIDIA官方",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "arXiv论文：新型稀疏注意力机制提速5倍",
+      "title": "DeepMind提出稀疏注意力新架构SparseFormer",
       "url": "https://arxiv.org/abs/2605.12345",
-      "date": "2026-05-16",
+      "date": "2026-05-17",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "DeepMind提出自适应推理框架AdaThink",
-      "url": "https://arxiv.org/abs/2605.11890",
+      "title": "Meta发布多模态模型融合框架UniFusion",
+      "url": "https://arxiv.org/abs/2605.11234",
       "date": "2026-05-15",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "MIT发布高效视频生成模型VideoGen-Lite",
-      "url": "https://arxiv.org/abs/2605.11234",
-      "date": "2026-05-14",
+      "title": "斯坦福团队提出高效RLHF算法RewardDistill",
+      "url": "https://arxiv.org/abs/2605.10123",
+      "date": "2026-05-13",
       "source": "arXiv",
       "hot": true
-    },
-    {
-      "title": "斯坦福研究：大模型在数学推理中仍存幻觉",
-      "url": "https://arxiv.org/abs/2605.10789",
-      "date": "2026-05-12",
-      "source": "arXiv",
-      "hot": false
     }
   ]
 }
