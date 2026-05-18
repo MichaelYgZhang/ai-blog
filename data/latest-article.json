@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月17日",
-  "updateTime": "2026-05-17 08:00",
-  "articleId": "S3-005",
-  "title": "注意力机制的演进与变体",
-  "summary": "注意力机制从基础点积注意力演进至Flash Attention和GQA，核心是在计算效率、内存占用与表达能力间寻求平衡。Flash Attention通过分块计算降低HBM访问，GQA通过分组查询减少KV Cache内存，使单卡推理百亿参数模型成为可能，是现代LLM架构设计的工程基石。",
+  "date": "2026年5月18日",
+  "updateTime": "2026-05-18 08:00",
+  "articleId": "S3-006",
+  "title": "RNN与LSTM序列建模",
+  "summary": "循环神经网络(RNN)通过隐藏状态实现序列建模，但梯度消失问题限制其捕捉长期依赖。LSTM引入遗忘门、输入门和输出门门控机制，有效解决梯度消失，使网络能学习数百时间步的依赖关系，成为序列数据处理的标准架构。",
   "stage": {
     "id": 3,
     "name": "深度学习精通",
     "color": "#10b981"
   },
   "techPoints": [
-    "Scaled Dot-Product",
-    "Flash Attention",
-    "GQA"
+    "循环网络",
+    "门控机制",
+    "梯度消失"
   ],
   "dependencies": [
     {
-      "stageName": "编程与数学基础",
-      "stageId": 1,
-      "topic": "线性代数",
-      "reason": "理解「注意力机制的演进与变体」需要掌握「线性代数」的相关知识"
+      "stageName": "深度学习精通",
+      "stageId": 3,
+      "topic": "神经网络基础",
+      "reason": "理解「RNN与LSTM序列建模」需要掌握「神经网络基础」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "RNN与LSTM序列建模",
-    "teaser": "下一篇将探讨循环网络和门控机制等技术要点"
+    "title": "用PyTorch实现文本分类",
+    "teaser": "下一篇将探讨词嵌入和TextCNN等技术要点"
   },
   "progress": {
-    "completed": 70,
+    "completed": 71,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-17-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-18-article.md"
 }
