@@ -454,6 +454,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-19",
+      "title": "用PyTorch实现文本分类",
+      "articleId": "S3-007",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-05-19-article.md"
+    },
+    {
       "date": "2026-05-18",
       "title": "RNN与LSTM序列建模",
       "articleId": "S3-006",

@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月18日",
-  "updateTime": "2026-05-18 08:00",
-  "articleId": "S3-006",
-  "title": "RNN与LSTM序列建模",
-  "summary": "循环神经网络(RNN)通过隐藏状态实现序列建模，但梯度消失问题限制其捕捉长期依赖。LSTM引入遗忘门、输入门和输出门门控机制，有效解决梯度消失，使网络能学习数百时间步的依赖关系，成为序列数据处理的标准架构。",
+  "date": "2026年5月19日",
+  "updateTime": "2026-05-19 08:00",
+  "articleId": "S3-007",
+  "title": "用PyTorch实现文本分类",
+  "summary": "通过PyTorch实现文本分类需掌握词嵌入将文本转为向量、TextCNN捕捉局部语义特征及训练循环构建。三者结合可在短文本分类任务中达90%以上准确率，是NLP基础且应用广泛的核心技能。",
   "stage": {
     "id": 3,
     "name": "深度学习精通",
     "color": "#10b981"
   },
   "techPoints": [
-    "循环网络",
-    "门控机制",
-    "梯度消失"
+    "词嵌入",
+    "TextCNN",
+    "训练循环"
   ],
   "dependencies": [
     {
       "stageName": "深度学习精通",
       "stageId": 3,
-      "topic": "神经网络基础",
-      "reason": "理解「RNN与LSTM序列建模」需要掌握「神经网络基础」的相关知识"
+      "topic": "PyTorch入门",
+      "reason": "理解「用PyTorch实现文本分类」需要掌握「PyTorch入门」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "用PyTorch实现文本分类",
-    "teaser": "下一篇将探讨词嵌入和TextCNN等技术要点"
+    "title": "Batch Normalization与Layer Normalization",
+    "teaser": "下一篇将探讨归一化原理和训练稳定性等技术要点"
   },
   "progress": {
-    "completed": 71,
+    "completed": 72,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-18-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-19-article.md"
 }

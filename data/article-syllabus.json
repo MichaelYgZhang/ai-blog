@@ -1292,7 +1292,8 @@
         "topic": "PyTorch入门"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-05-19"
   },
   {
     "id": "S3-008",
