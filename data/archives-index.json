@@ -459,6 +459,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-20",
+      "title": "Batch Normalization与Layer Normalization",
+      "articleId": "S3-008",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-05-20-article.md"
+    },
+    {
       "date": "2026-05-19",
       "title": "用PyTorch实现文本分类",
       "articleId": "S3-007",
