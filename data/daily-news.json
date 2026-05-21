@@ -1,159 +1,159 @@
 {
-  "date": "2026年5月21日",
-  "updateTime": "2026-05-21 07:13",
+  "date": "2026年5月22日",
+  "updateTime": "2026-05-22 07:03",
   "llm": [
     {
-      "title": "GPT-5发布：多模态推理能力大幅提升",
+      "title": "GPT-5发布支持多模态实时推理",
       "url": "https://openai.com/blog/gpt-5",
       "date": "2026-05-20",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Claude 4.5推出实时协作编辑功能",
-      "url": "https://www.anthropic.com/news/claude-4-5",
+      "title": "Claude 4.5上线长上下文窗口功能",
+      "url": "https://www.anthropic.com/claude-4.5",
       "date": "2026-05-18",
-      "source": "Anthropic官方博客",
+      "source": "Anthropic",
       "hot": false
     },
     {
-      "title": "Gemini Ultra 2.0开源模型权重",
-      "url": "https://blog.google/technology/ai/gemini-ultra-2",
+      "title": "Gemini Ultra 2.0开放API测试",
+      "url": "https://blog.google/gemini-ultra-2",
       "date": "2026-05-19",
-      "source": "Google AI官方博客",
+      "source": "Google AI",
       "hot": true
     },
     {
-      "title": "Llama 4发布：支持超长上下文窗口",
-      "url": "https://ai.meta.com/blog/llama-4",
-      "date": "2026-05-16",
-      "source": "Meta AI官方博客",
+      "title": "Llama 4.1开源模型性能提升30%",
+      "url": "https://ai.meta.com/blog/llama-4-1",
+      "date": "2026-05-17",
+      "source": "Meta AI",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor新增AI驱动的代码重构助手",
-      "url": "https://cursor.sh/changelog",
-      "date": "2026-05-20",
+      "title": "Cursor推出AI代码审查自动化功能",
+      "url": "https://cursor.sh/blog/code-review",
+      "date": "2026-05-21",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot集成实时漏洞扫描",
-      "url": "https://github.blog/changelog/copilot-security",
+      "title": "Copilot集成GitHub Actions工作流生成",
+      "url": "https://github.blog/copilot-actions",
       "date": "2026-05-19",
-      "source": "GitHub官方博客",
+      "source": "GitHub Blog",
       "hot": false
     },
     {
-      "title": "Devin发布自动PR审查与修复工具",
-      "url": "https://devin.ai/blog/pr-review",
-      "date": "2026-05-17",
-      "source": "Devin官方博客",
-      "hot": false
-    },
-    {
-      "title": "CodeWhisperer升级支持多语言调试",
-      "url": "https://aws.amazon.com/blogs/aws/codewhisperer-update",
-      "date": "2026-05-15",
-      "source": "AWS官方博客",
+      "title": "Devin支持多语言项目一键部署",
+      "url": "https://cognition.ai/devin-update",
+      "date": "2026-05-18",
+      "source": "Cognition Labs",
       "hot": true
+    },
+    {
+      "title": "Replit Agent新增实时协作编程模式",
+      "url": "https://blog.replit.com/agent-collab",
+      "date": "2026-05-20",
+      "source": "Replit Blog",
+      "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT推出个性化语音克隆功能",
-      "url": "https://openai.com/blog/chatgpt-voice-clone",
-      "date": "2026-05-20",
+      "title": "ChatGPT新增视频生成与编辑功能",
+      "url": "https://openai.com/chatgpt-video",
+      "date": "2026-05-22",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7开放API接口",
-      "url": "https://midjourney.com/blog/api-v7",
-      "date": "2026-05-18",
-      "source": "Midjourney官方博客",
-      "hot": false
-    },
-    {
-      "title": "Notion AI集成自动化工作流引擎",
-      "url": "https://www.notion.so/blog/ai-workflows",
-      "date": "2026-05-19",
-      "source": "Notion官方博客",
+      "title": "Midjourney发布实时图像协作工具",
+      "url": "https://www.midjourney.com/realtime",
+      "date": "2026-05-20",
+      "source": "Midjourney",
       "hot": true
     },
     {
-      "title": "Canva推出AI视频生成与编辑工具",
-      "url": "https://www.canva.com/newsroom/ai-video",
-      "date": "2026-05-16",
-      "source": "Canva官方博客",
+      "title": "Notion AI集成自动化工作流引擎",
+      "url": "https://www.notion.so/ai-workflow",
+      "date": "2026-05-18",
+      "source": "Notion Blog",
+      "hot": false
+    },
+    {
+      "title": "Canva AI推出3D模型生成功能",
+      "url": "https://www.canva.com/ai-3d",
+      "date": "2026-05-19",
+      "source": "Canva",
+      "hot": false
+    },
+    {
+      "title": "Grammarly AI新增学术论文润色模式",
+      "url": "https://www.grammarly.com/academic",
+      "date": "2026-05-17",
+      "source": "Grammarly Blog",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "Anthropic完成50亿美元融资估值超千亿",
-      "url": "https://techcrunch.com/2026/05/20/anthropic-funding",
-      "date": "2026-05-20",
+      "title": "Stability AI完成2亿美元D轮融资",
+      "url": "https://techcrunch.com/stability-ai-funding",
+      "date": "2026-05-21",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过《AI责任法案》强化监管",
-      "url": "https://www.reuters.com/technology/eu-ai-liability-act",
-      "date": "2026-05-19",
+      "title": "欧盟通过AI责任法案修订案",
+      "url": "https://www.reuters.com/eu-ai-liability",
+      "date": "2026-05-20",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "英伟达发布新一代AI芯片Blackwell Ultra",
-      "url": "https://nvidianews.nvidia.com/news/blackwell-ultra",
+      "title": "NVIDIA发布AI数据中心专用芯片",
+      "url": "https://nvidianews.nvidia.com/data-center-chip",
+      "date": "2026-05-19",
+      "source": "NVIDIA Newsroom",
+      "hot": false
+    },
+    {
+      "title": "Anthropic与AWS达成深度合作",
+      "url": "https://www.anthropic.com/aws-partnership",
       "date": "2026-05-18",
-      "source": "NVIDIA官方新闻",
-      "hot": false
-    },
-    {
-      "title": "百度文心一言用户数突破3亿",
-      "url": "https://www.bloomberg.com/news/baidu-ernie-users",
-      "date": "2026-05-17",
-      "source": "Bloomberg",
-      "hot": false
-    },
-    {
-      "title": "OpenAI与微软续签云计算合作协议",
-      "url": "https://www.wsj.com/tech/openai-microsoft-cloud-deal",
-      "date": "2026-05-16",
-      "source": "WSJ",
+      "source": "Anthropic Blog",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "arXiv论文：新型稀疏注意力机制提升效率",
+      "title": "新架构Mamba-2实现线性注意力机制",
       "url": "https://arxiv.org/abs/2605.12345",
+      "date": "2026-05-21",
+      "source": "arXiv",
+      "hot": true
+    },
+    {
+      "title": "DeepMind提出混合专家模型优化方法",
+      "url": "https://arxiv.org/abs/2605.12346",
       "date": "2026-05-20",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "研究揭示大模型推理能力随规模增长规律",
-      "url": "https://arxiv.org/abs/2605.12346",
+      "title": "论文揭示大模型幻觉检测新基准",
+      "url": "https://arxiv.org/abs/2605.12347",
       "date": "2026-05-19",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "新架构Mamba-2在语言任务上超越Transformer",
-      "url": "https://arxiv.org/abs/2605.12347",
-      "date": "2026-05-18",
-      "source": "arXiv",
-      "hot": true
-    },
-    {
-      "title": "多模态模型VLM-3实现零样本视频理解",
+      "title": "多模态预训练框架UniCLIP 2.0发布",
       "url": "https://arxiv.org/abs/2605.12348",
-      "date": "2026-05-17",
+      "date": "2026-05-18",
       "source": "arXiv",
       "hot": false
     }
