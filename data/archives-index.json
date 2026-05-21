@@ -464,6 +464,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-21",
+      "title": "学习率调度策略全解",
+      "articleId": "S3-009",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-05-21-article.md"
+    },
+    {
       "date": "2026-05-20",
       "title": "Batch Normalization与Layer Normalization",
       "articleId": "S3-008",
