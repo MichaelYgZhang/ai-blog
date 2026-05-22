@@ -1346,7 +1346,8 @@
         "topic": "模型评估"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-05-22"
   },
   {
     "id": "S3-011",

@@ -469,6 +469,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-22",
+      "title": "过拟合与正则化技术",
+      "articleId": "S3-010",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-05-22-article.md"
+    },
+    {
       "date": "2026-05-21",
       "title": "学习率调度策略全解",
       "articleId": "S3-009",

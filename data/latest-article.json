@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月21日",
-  "updateTime": "2026-05-21 08:00",
-  "articleId": "S3-009",
-  "title": "学习率调度策略全解",
-  "summary": "学习率调度是深度学习训练中性价比最高的超参数优化手段，通过Warmup、Cosine退火和OneCycle三种策略动态调整学习率，分别解决训练初期梯度不稳定、后期精细寻优及单次循环最优收敛问题，显著提升模型性能。",
+  "date": "2026年5月22日",
+  "updateTime": "2026-05-22 08:00",
+  "articleId": "S3-010",
+  "title": "过拟合与正则化技术",
+  "summary": "正则化技术是解决深度学习过拟合问题的核心手段，通过Dropout随机丢弃神经元、权重衰减约束参数范数、早停法监控验证集性能三种方法，在不降低模型表达能力的前提下提升泛化能力，是模型优化的关键分水岭。",
   "stage": {
     "id": 3,
     "name": "深度学习精通",
     "color": "#10b981"
   },
   "techPoints": [
-    "Warmup",
-    "Cosine退火",
-    "OneCycle"
+    "Dropout",
+    "权重衰减",
+    "早停法"
   ],
   "dependencies": [
     {
-      "stageName": "深度学习精通",
-      "stageId": 3,
-      "topic": "模型训练",
-      "reason": "理解「学习率调度策略全解」需要掌握「模型训练」的相关知识"
+      "stageName": "机器学习核心",
+      "stageId": 2,
+      "topic": "模型评估",
+      "reason": "理解「过拟合与正则化技术」需要掌握「模型评估」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "过拟合与正则化技术",
-    "teaser": "下一篇将探讨Dropout和权重衰减等技术要点"
+    "title": "迁移学习与预训练模型使用",
+    "teaser": "下一篇将探讨特征提取和微调策略等技术要点"
   },
   "progress": {
-    "completed": 74,
+    "completed": 75,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-21-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-22-article.md"
 }
