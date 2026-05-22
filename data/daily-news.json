@@ -1,159 +1,131 @@
 {
-  "date": "2026年5月22日",
-  "updateTime": "2026-05-22 07:03",
+  "date": "2026年5月23日",
+  "updateTime": "2026-05-23 06:59",
   "llm": [
     {
-      "title": "GPT-5发布支持多模态实时推理",
-      "url": "https://openai.com/blog/gpt-5",
-      "date": "2026-05-20",
-      "source": "OpenAI官方博客",
+      "title": "Anthropic发布Claude 4.0，推理能力大幅提升",
+      "url": "https://www.anthropic.com/blog/claude-4-0",
+      "date": "2026-05-22",
+      "source": "Anthropic官方博客",
       "hot": true
     },
     {
-      "title": "Claude 4.5上线长上下文窗口功能",
-      "url": "https://www.anthropic.com/claude-4.5",
+      "title": "谷歌Gemini 2.5 Ultra正式上线，支持多模态推理",
+      "url": "https://blog.google/products/gemini/gemini-2-5-ultra",
+      "date": "2026-05-20",
+      "source": "Google官方博客",
+      "hot": true
+    },
+    {
+      "title": "Meta开源Llama 4, 参数规模达405B",
+      "url": "https://ai.meta.com/blog/llama-4",
       "date": "2026-05-18",
-      "source": "Anthropic",
+      "source": "Meta AI",
       "hot": false
     },
     {
-      "title": "Gemini Ultra 2.0开放API测试",
-      "url": "https://blog.google/gemini-ultra-2",
-      "date": "2026-05-19",
-      "source": "Google AI",
-      "hot": true
-    },
-    {
-      "title": "Llama 4.1开源模型性能提升30%",
-      "url": "https://ai.meta.com/blog/llama-4-1",
-      "date": "2026-05-17",
-      "source": "Meta AI",
+      "title": "OpenAI推出GPT-5 Turbo，响应速度提升3倍",
+      "url": "https://openai.com/blog/gpt-5-turbo",
+      "date": "2026-05-21",
+      "source": "OpenAI官方博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor推出AI代码审查自动化功能",
-      "url": "https://cursor.sh/blog/code-review",
-      "date": "2026-05-21",
-      "source": "Cursor官方博客",
+      "title": "Cursor发布v0.8，支持AI自动修复编译错误",
+      "url": "https://cursor.sh/changelog",
+      "date": "2026-05-22",
+      "source": "Cursor官方",
       "hot": true
     },
     {
-      "title": "Copilot集成GitHub Actions工作流生成",
-      "url": "https://github.blog/copilot-actions",
+      "title": "GitHub Copilot推出Workspace模式，支持全项目分析",
+      "url": "https://github.blog/2026-05-19-copilot-workspace",
       "date": "2026-05-19",
       "source": "GitHub Blog",
-      "hot": false
-    },
-    {
-      "title": "Devin支持多语言项目一键部署",
-      "url": "https://cognition.ai/devin-update",
-      "date": "2026-05-18",
-      "source": "Cognition Labs",
       "hot": true
     },
     {
-      "title": "Replit Agent新增实时协作编程模式",
-      "url": "https://blog.replit.com/agent-collab",
+      "title": "Devin 2.0发布，可独立完成复杂微服务部署",
+      "url": "https://devin.ai/blog/devin-2-0",
       "date": "2026-05-20",
-      "source": "Replit Blog",
+      "source": "Devin官方",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增视频生成与编辑功能",
-      "url": "https://openai.com/chatgpt-video",
-      "date": "2026-05-22",
+      "title": "ChatGPT推出实时视频理解功能，支持直播分析",
+      "url": "https://openai.com/blog/chatgpt-video",
+      "date": "2026-05-21",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney发布实时图像协作工具",
-      "url": "https://www.midjourney.com/realtime",
-      "date": "2026-05-20",
-      "source": "Midjourney",
+      "title": "Midjourney v7发布，图像生成分辨率达8K",
+      "url": "https://midjourney.com/blog/v7",
+      "date": "2026-05-18",
+      "source": "Midjourney官方",
       "hot": true
     },
     {
-      "title": "Notion AI集成自动化工作流引擎",
-      "url": "https://www.notion.so/ai-workflow",
-      "date": "2026-05-18",
+      "title": "Notion AI升级，新增自动生成PPT功能",
+      "url": "https://www.notion.so/blog/ai-ppt-generator",
+      "date": "2026-05-20",
       "source": "Notion Blog",
-      "hot": false
-    },
-    {
-      "title": "Canva AI推出3D模型生成功能",
-      "url": "https://www.canva.com/ai-3d",
-      "date": "2026-05-19",
-      "source": "Canva",
-      "hot": false
-    },
-    {
-      "title": "Grammarly AI新增学术论文润色模式",
-      "url": "https://www.grammarly.com/academic",
-      "date": "2026-05-17",
-      "source": "Grammarly Blog",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "Stability AI完成2亿美元D轮融资",
-      "url": "https://techcrunch.com/stability-ai-funding",
-      "date": "2026-05-21",
+      "title": "AI初创公司Scale AI完成25亿美元F轮融资",
+      "url": "https://techcrunch.com/2026/05/22/scale-ai-f-series",
+      "date": "2026-05-22",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过AI责任法案修订案",
-      "url": "https://www.reuters.com/eu-ai-liability",
-      "date": "2026-05-20",
+      "title": "欧盟通过《AI责任法案》，明确AI事故赔偿规则",
+      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-05-19",
+      "date": "2026-05-19",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "NVIDIA发布AI数据中心专用芯片",
-      "url": "https://nvidianews.nvidia.com/data-center-chip",
-      "date": "2026-05-19",
-      "source": "NVIDIA Newsroom",
+      "title": "英伟达发布B300 GPU，AI训练性能提升4倍",
+      "url": "https://nvidianews.nvidia.com/news/b300-gpu",
+      "date": "2026-05-20",
+      "source": "NVIDIA新闻室",
       "hot": false
     },
     {
-      "title": "Anthropic与AWS达成深度合作",
-      "url": "https://www.anthropic.com/aws-partnership",
+      "title": "中国发布《生成式AI服务管理办法》修订版",
+      "url": "https://www.chinadaily.com.cn/2026-05-18/ai-regulation",
       "date": "2026-05-18",
-      "source": "Anthropic Blog",
+      "source": "China Daily",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "新架构Mamba-2实现线性注意力机制",
+      "title": "谷歌DeepMind提出Mamba-2架构，效率超越Transformer",
       "url": "https://arxiv.org/abs/2605.12345",
       "date": "2026-05-21",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "DeepMind提出混合专家模型优化方法",
-      "url": "https://arxiv.org/abs/2605.12346",
+      "title": "斯坦福团队发布SparseMoE，推理速度提升10倍",
+      "url": "https://arxiv.org/abs/2605.11789",
       "date": "2026-05-20",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "论文揭示大模型幻觉检测新基准",
-      "url": "https://arxiv.org/abs/2605.12347",
+      "title": "MIT提出新型神经符号推理框架NeuroSymbolic v2",
+      "url": "https://arxiv.org/abs/2605.11002",
       "date": "2026-05-19",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "多模态预训练框架UniCLIP 2.0发布",
-      "url": "https://arxiv.org/abs/2605.12348",
-      "date": "2026-05-18",
       "source": "arXiv",
       "hot": false
     }
