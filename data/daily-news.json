@@ -1,130 +1,151 @@
 {
-  "date": "2026年5月23日",
-  "updateTime": "2026-05-23 06:59",
+  "date": "2026年5月24日",
+  "updateTime": "2026-05-24 06:54",
   "llm": [
     {
-      "title": "Anthropic发布Claude 4.0，推理能力大幅提升",
-      "url": "https://www.anthropic.com/blog/claude-4-0",
+      "title": "GPT-5发布：推理能力大幅提升",
+      "url": "https://openai.com/blog/gpt-5",
       "date": "2026-05-22",
-      "source": "Anthropic官方博客",
+      "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "谷歌Gemini 2.5 Ultra正式上线，支持多模态推理",
-      "url": "https://blog.google/products/gemini/gemini-2-5-ultra",
+      "title": "Claude 4推出多模态扩展功能",
+      "url": "https://www.anthropic.com/news/claude-4",
       "date": "2026-05-20",
-      "source": "Google官方博客",
-      "hot": true
-    },
-    {
-      "title": "Meta开源Llama 4, 参数规模达405B",
-      "url": "https://ai.meta.com/blog/llama-4",
-      "date": "2026-05-18",
-      "source": "Meta AI",
+      "source": "Anthropic官方博客",
       "hot": false
     },
     {
-      "title": "OpenAI推出GPT-5 Turbo，响应速度提升3倍",
-      "url": "https://openai.com/blog/gpt-5-turbo",
+      "title": "Gemini Ultra 2.0开放API测试",
+      "url": "https://blog.google/technology/ai/gemini-ultra-2",
+      "date": "2026-05-19",
+      "source": "Google AI博客",
+      "hot": false
+    },
+    {
+      "title": "Llama 4系列新增轻量版模型",
+      "url": "https://ai.meta.com/blog/llama-4",
       "date": "2026-05-21",
-      "source": "OpenAI官方博客",
+      "source": "Meta AI博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor发布v0.8，支持AI自动修复编译错误",
+      "title": "Cursor更新：支持实时团队协作",
       "url": "https://cursor.sh/changelog",
-      "date": "2026-05-22",
-      "source": "Cursor官方",
+      "date": "2026-05-23",
+      "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot推出Workspace模式，支持全项目分析",
-      "url": "https://github.blog/2026-05-19-copilot-workspace",
-      "date": "2026-05-19",
-      "source": "GitHub Blog",
-      "hot": true
-    },
-    {
-      "title": "Devin 2.0发布，可独立完成复杂微服务部署",
-      "url": "https://devin.ai/blog/devin-2-0",
+      "title": "GitHub Copilot集成新语言模型",
+      "url": "https://github.blog/changelog/copilot",
       "date": "2026-05-20",
-      "source": "Devin官方",
+      "source": "GitHub官方博客",
+      "hot": false
+    },
+    {
+      "title": "Devin发布自动代码审查功能",
+      "url": "https://devin.ai/blog",
+      "date": "2026-05-21",
+      "source": "Devin官方博客",
+      "hot": false
+    },
+    {
+      "title": "Codeium推出离线版编程助手",
+      "url": "https://codeium.com/blog",
+      "date": "2026-05-19",
+      "source": "Codeium官方博客",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT推出实时视频理解功能，支持直播分析",
+      "title": "ChatGPT推出实时视频理解功能",
       "url": "https://openai.com/blog/chatgpt-video",
-      "date": "2026-05-21",
+      "date": "2026-05-22",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney v7发布，图像生成分辨率达8K",
-      "url": "https://midjourney.com/blog/v7",
-      "date": "2026-05-18",
-      "source": "Midjourney官方",
-      "hot": true
+      "title": "Midjourney V7发布：3D场景生成",
+      "url": "https://www.midjourney.com/blog/v7",
+      "date": "2026-05-20",
+      "source": "Midjourney官方博客",
+      "hot": false
     },
     {
-      "title": "Notion AI升级，新增自动生成PPT功能",
-      "url": "https://www.notion.so/blog/ai-ppt-generator",
-      "date": "2026-05-20",
-      "source": "Notion Blog",
+      "title": "Notion AI新增自动化工作流",
+      "url": "https://www.notion.so/blog/ai-workflows",
+      "date": "2026-05-18",
+      "source": "Notion官方博客",
+      "hot": false
+    },
+    {
+      "title": "Perplexity推出深度研究模式",
+      "url": "https://blog.perplexity.ai/deep-research",
+      "date": "2026-05-21",
+      "source": "Perplexity官方博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI初创公司Scale AI完成25亿美元F轮融资",
-      "url": "https://techcrunch.com/2026/05/22/scale-ai-f-series",
-      "date": "2026-05-22",
+      "title": "AI初创公司获10亿美元融资",
+      "url": "https://techcrunch.com/2026/05/23/ai-startup-funding",
+      "date": "2026-05-23",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过《AI责任法案》，明确AI事故赔偿规则",
-      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-05-19",
-      "date": "2026-05-19",
+      "title": "欧盟通过AI安全新法规",
+      "url": "https://www.reuters.com/technology/eu-ai-law-2026-05-21",
+      "date": "2026-05-21",
       "source": "Reuters",
-      "hot": true
-    },
-    {
-      "title": "英伟达发布B300 GPU，AI训练性能提升4倍",
-      "url": "https://nvidianews.nvidia.com/news/b300-gpu",
-      "date": "2026-05-20",
-      "source": "NVIDIA新闻室",
       "hot": false
     },
     {
-      "title": "中国发布《生成式AI服务管理办法》修订版",
-      "url": "https://www.chinadaily.com.cn/2026-05-18/ai-regulation",
-      "date": "2026-05-18",
-      "source": "China Daily",
+      "title": "英伟达发布新一代AI芯片",
+      "url": "https://nvidianews.nvidia.com/news/next-gen-ai-chip",
+      "date": "2026-05-19",
+      "source": "NVIDIA官方新闻",
+      "hot": false
+    },
+    {
+      "title": "AI人才市场需求同比增长40%",
+      "url": "https://www.bloomberg.com/ai-jobs-report",
+      "date": "2026-05-20",
+      "source": "Bloomberg",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "谷歌DeepMind提出Mamba-2架构，效率超越Transformer",
+      "title": "新架构Mamba-2实现高效推理",
       "url": "https://arxiv.org/abs/2605.12345",
+      "date": "2026-05-22",
+      "source": "arXiv",
+      "hot": true
+    },
+    {
+      "title": "多模态模型突破图像理解瓶颈",
+      "url": "https://arxiv.org/abs/2605.12346",
       "date": "2026-05-21",
       "source": "arXiv",
-      "hot": true
+      "hot": false
     },
     {
-      "title": "斯坦福团队发布SparseMoE，推理速度提升10倍",
-      "url": "https://arxiv.org/abs/2605.11789",
+      "title": "强化学习在机器人操控中取得进展",
+      "url": "https://arxiv.org/abs/2605.12347",
       "date": "2026-05-20",
       "source": "arXiv",
-      "hot": true
+      "hot": false
     },
     {
-      "title": "MIT提出新型神经符号推理框架NeuroSymbolic v2",
-      "url": "https://arxiv.org/abs/2605.11002",
+      "title": "稀疏注意力机制降低计算成本",
+      "url": "https://arxiv.org/abs/2605.12348",
       "date": "2026-05-19",
       "source": "arXiv",
       "hot": false
