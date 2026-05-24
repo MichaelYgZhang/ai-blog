@@ -484,6 +484,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-24",
+      "title": "GAN生成对抗网络入门",
+      "articleId": "S3-012",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-05-24-article.md"
+    },
+    {
       "date": "2026-05-23",
       "title": "迁移学习与预训练模型使用",
       "articleId": "S3-011",
