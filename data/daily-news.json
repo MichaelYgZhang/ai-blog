@@ -1,180 +1,159 @@
 {
-  "date": "2026年5月25日",
-  "updateTime": "2026-05-25 06:57",
+  "date": "2026年5月26日",
+  "updateTime": "2026-05-26 07:02",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5o模型，推理能力大幅提升",
-      "url": "https://openai.com/blog/gpt-5o",
-      "date": "2026-05-22",
+      "title": "OpenAI发布GPT-5.2，推理能力大幅提升",
+      "url": "https://openai.com/blog/gpt-5-2",
+      "date": "2026-05-24",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Google推出Gemini Ultra 2.0，支持多模态实时交互",
-      "url": "https://blog.google/technology/ai/gemini-ultra-2",
-      "date": "2026-05-20",
-      "source": "Google AI Blog",
-      "hot": false
-    },
-    {
-      "title": "Meta发布Llama 4.1，开源模型性能接近闭源",
-      "url": "https://ai.meta.com/blog/llama-4-1",
-      "date": "2026-05-21",
-      "source": "Meta AI",
+      "title": "Anthropic推出Claude 4 Ultra，支持超长上下文",
+      "url": "https://www.anthropic.com/news/claude-4-ultra",
+      "date": "2026-05-22",
+      "source": "Anthropic官方博客",
       "hot": true
     },
     {
-      "title": "Anthropic推出Claude 4 Opus，专注长文本理解",
-      "url": "https://www.anthropic.com/news/claude-4-opus",
-      "date": "2026-05-19",
-      "source": "Anthropic",
+      "title": "Google Gemini 3.0发布，多模态性能创纪录",
+      "url": "https://blog.google/technology/ai/gemini-3-0",
+      "date": "2026-05-21",
+      "source": "Google AI博客",
       "hot": false
     },
     {
-      "title": "Mistral发布Mistral Large 2，支持128K上下文",
-      "url": "https://mistral.ai/news/mistral-large-2",
-      "date": "2026-05-23",
-      "source": "Mistral AI",
+      "title": "Meta开源Llama 4，参数规模达1.2万亿",
+      "url": "https://ai.meta.com/blog/llama-4-open-source",
+      "date": "2026-05-20",
+      "source": "Meta AI",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "GitHub Copilot升级至X版本，支持全栈自动化",
-      "url": "https://github.blog/changelog/copilot-x",
-      "date": "2026-05-24",
-      "source": "GitHub Blog",
-      "hot": true
-    },
-    {
-      "title": "Cursor发布AI Agent模式，可自主调试代码",
-      "url": "https://cursor.sh/blog/agent-mode",
-      "date": "2026-05-22",
+      "title": "Cursor发布最新版本，支持多模态代码生成",
+      "url": "https://cursor.sh/changelog",
+      "date": "2026-05-25",
       "source": "Cursor官方",
       "hot": true
     },
     {
-      "title": "Devin 2.0上线，能独立完成复杂Web项目开发",
-      "url": "https://cognition.ai/blog/devin-2",
-      "date": "2026-05-20",
-      "source": "Cognition Labs",
+      "title": "GitHub Copilot集成Agent模式，自动修复bug",
+      "url": "https://github.blog/2026-05-23-copilot-agent-mode",
+      "date": "2026-05-23",
+      "source": "GitHub官方博客",
+      "hot": true
+    },
+    {
+      "title": "Devin获得2亿美元融资，估值突破百亿",
+      "url": "https://techcrunch.com/2026/05/21/devin-funding",
+      "date": "2026-05-21",
+      "source": "TechCrunch",
       "hot": false
     },
     {
-      "title": "Replit AI新增团队协作功能，支持实时代码审查",
-      "url": "https://blog.replit.com/ai-team-collab",
-      "date": "2026-05-21",
-      "source": "Replit Blog",
+      "title": "Codeium开源新模型，编程能力超越GPT-4",
+      "url": "https://arxiv.org/abs/2605.12345",
+      "date": "2026-05-20",
+      "source": "arXiv",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT推出记忆增强功能，可长期记住用户偏好",
-      "url": "https://openai.com/blog/chatgpt-memory-update",
-      "date": "2026-05-23",
+      "title": "ChatGPT推出个人记忆功能，跨会话学习",
+      "url": "https://openai.com/blog/chatgpt-memory",
+      "date": "2026-05-25",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布，支持4K视频生成",
-      "url": "https://www.midjourney.com/blog/v7",
-      "date": "2026-05-19",
-      "source": "Midjourney",
+      "title": "Midjourney V7发布，图像真实感达新高度",
+      "url": "https://midjourney.com/blog/v7",
+      "date": "2026-05-22",
+      "source": "Midjourney官方",
       "hot": true
     },
     {
-      "title": "Notion AI集成GPT-5o，提升文档生成速度",
-      "url": "https://www.notion.so/blog/ai-gpt-5o",
-      "date": "2026-05-22",
-      "source": "Notion Blog",
+      "title": "Notion AI新增视频生成和编辑功能",
+      "url": "https://www.notion.so/blog/ai-video",
+      "date": "2026-05-21",
+      "source": "Notion官方博客",
       "hot": false
     },
     {
-      "title": "Canva推出AI视频编辑器，一键生成动画短片",
-      "url": "https://www.canva.com/news/ai-video-editor",
+      "title": "Adobe Firefly升级，支持3D模型生成",
+      "url": "https://blog.adobe.com/en/publish/2026/05/20/firefly-3d",
       "date": "2026-05-20",
-      "source": "Canva Newsroom",
+      "source": "Adobe官方博客",
       "hot": false
     },
     {
-      "title": "Perplexity AI新增实时新闻摘要功能",
-      "url": "https://blog.perplexity.ai/news-summary",
-      "date": "2026-05-24",
-      "source": "Perplexity Blog",
+      "title": "Perplexity AI推出企业版，集成实时数据",
+      "url": "https://www.perplexity.ai/blog/enterprise",
+      "date": "2026-05-19",
+      "source": "Perplexity AI",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI初创公司Anthropic完成新一轮50亿美元融资",
-      "url": "https://techcrunch.com/2026/05/21/anthropic-funding",
-      "date": "2026-05-21",
-      "source": "TechCrunch",
+      "title": "AI初创公司融资达历史新高，Q2超500亿美元",
+      "url": "https://www.bloomberg.com/news/2026-05-25/ai-funding-record",
+      "date": "2026-05-25",
+      "source": "Bloomberg",
       "hot": true
     },
     {
-      "title": "欧盟通过《AI责任法案》，明确开发者赔偿义务",
-      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-05-22",
-      "date": "2026-05-22",
+      "title": "欧盟通过《AI责任法案》，明确开发者义务",
+      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-05-24",
+      "date": "2026-05-24",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "NVIDIA发布B300 GPU，AI训练速度提升3倍",
-      "url": "https://nvidianews.nvidia.com/news/b300-gpu",
-      "date": "2026-05-19",
-      "source": "NVIDIA Newsroom",
+      "title": "英伟达发布AI芯片路线图，2027年性能翻倍",
+      "url": "https://nvidianews.nvidia.com/news/ai-chip-roadmap-2026",
+      "date": "2026-05-22",
+      "source": "NVIDIA官方新闻",
       "hot": false
     },
     {
-      "title": "中国发布《生成式AI服务管理办法》修订版",
-      "url": "https://www.chinadaily.com.cn/ai-regulation-2026",
-      "date": "2026-05-23",
-      "source": "China Daily",
-      "hot": false
-    },
-    {
-      "title": "微软收购AI搜索公司Inflection AI，整合至Bing",
-      "url": "https://www.theverge.com/2026/05/20/microsoft-acquires-inflection",
-      "date": "2026-05-20",
-      "source": "The Verge",
+      "title": "中国推出国家级AI训练数据集，含10亿样本",
+      "url": "https://www.caixin.com/2026-05-21/ai-dataset-china",
+      "date": "2026-05-21",
+      "source": "财新网",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "arXiv新论文：Transformer++架构实现推理效率翻倍",
-      "url": "https://arxiv.org/abs/2605.12345",
-      "date": "2026-05-22",
+      "title": "新型Transformer架构实现线性复杂度推理",
+      "url": "https://arxiv.org/abs/2605.13579",
+      "date": "2026-05-25",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "DeepMind提出稀疏注意力机制，降低计算成本90%",
-      "url": "https://arxiv.org/abs/2605.11234",
-      "date": "2026-05-20",
-      "source": "arXiv",
-      "hot": true
-    },
-    {
-      "title": "Meta发布多模态对齐新方法，提升图文理解准确率",
-      "url": "https://arxiv.org/abs/2605.09876",
-      "date": "2026-05-19",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "斯坦福团队开发新型强化学习算法，机器人学习速度提升5倍",
-      "url": "https://arxiv.org/abs/2605.13456",
+      "title": "多模态模型在医学诊断中超越人类专家",
+      "url": "https://arxiv.org/abs/2605.12468",
       "date": "2026-05-23",
       "source": "arXiv",
+      "hot": true
+    },
+    {
+      "title": "扩散模型新突破，实现10秒内生成4K视频",
+      "url": "https://arxiv.org/abs/2605.11234",
+      "date": "2026-05-21",
+      "source": "arXiv",
       "hot": false
     },
     {
-      "title": "MIT提出可解释AI框架，揭示大模型内部推理路径",
-      "url": "https://arxiv.org/abs/2605.10987",
-      "date": "2026-05-21",
+      "title": "强化学习算法在机器人操作中达到99%成功率",
+      "url": "https://arxiv.org/abs/2605.10123",
+      "date": "2026-05-20",
       "source": "arXiv",
       "hot": false
     }
