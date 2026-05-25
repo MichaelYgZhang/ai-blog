@@ -489,6 +489,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-25",
+      "title": "目标检测：YOLO系列解析",
+      "articleId": "S3-013",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-05-25-article.md"
+    },
+    {
       "date": "2026-05-24",
       "title": "GAN生成对抗网络入门",
       "articleId": "S3-012",
