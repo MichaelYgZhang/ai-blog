@@ -494,6 +494,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-26",
+      "title": "语义分割与实例分割",
+      "articleId": "S3-014",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-05-26-article.md"
+    },
+    {
       "date": "2026-05-25",
       "title": "目标检测：YOLO系列解析",
       "articleId": "S3-013",

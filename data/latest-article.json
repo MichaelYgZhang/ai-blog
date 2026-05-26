@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月25日",
-  "updateTime": "2026-05-25 08:00",
-  "articleId": "S3-013",
-  "title": "目标检测：YOLO系列解析",
-  "summary": "YOLO系列将目标检测重构为单次回归问题，通过锚框、非极大值抑制和特征金字塔网络的协同设计，实现实时性与精度的平衡。本文解析这三大核心技术，揭示YOLO如何成为工业级目标检测系统的基石，为理解先进检测器奠定基础。",
+  "date": "2026年5月26日",
+  "updateTime": "2026-05-26 08:00",
+  "articleId": "S3-014",
+  "title": "语义分割与实例分割",
+  "summary": "语义分割与实例分割是计算机视觉从识别物体到理解场景的关键技术，核心差异在于是否区分同类个体。U-Net和Mask R-CNN是像素级预测的基础架构，分别通过编码器-解码器结构和特征金字塔实现精准分割，支撑自动驾驶、医学影像等应用。",
   "stage": {
     "id": 3,
     "name": "深度学习精通",
     "color": "#10b981"
   },
   "techPoints": [
-    "锚框",
-    "NMS",
-    "特征金字塔"
+    "U-Net",
+    "Mask R-CNN",
+    "像素级分类"
   ],
   "dependencies": [
     {
       "stageName": "深度学习精通",
       "stageId": 3,
-      "topic": "CNN图像分类",
-      "reason": "理解「目标检测：YOLO系列解析」需要掌握「CNN图像分类」的相关知识"
+      "topic": "CNN基础",
+      "reason": "理解「语义分割与实例分割」需要掌握「CNN基础」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "语义分割与实例分割",
-    "teaser": "下一篇将探讨U-Net和Mask R-CNN等技术要点"
+    "title": "词向量：从Word2Vec到Contextual Embedding",
+    "teaser": "下一篇将探讨Skip-gram和CBOW等技术要点"
   },
   "progress": {
-    "completed": 78,
+    "completed": 79,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-25-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-26-article.md"
 }
