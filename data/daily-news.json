@@ -1,151 +1,151 @@
 {
-  "date": "2026年5月27日",
-  "updateTime": "2026-05-27 07:10",
+  "date": "2026年5月28日",
+  "updateTime": "2026-05-28 07:17",
   "llm": [
     {
-      "title": "GPT-5发布：多模态推理能力大幅提升",
-      "url": "https://openai.com/blog/gpt-5",
+      "title": "OpenAI发布GPT-5.2，推理能力大幅提升",
+      "url": "https://openai.com/blog/gpt-5-2",
       "date": "2026-05-26",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Claude 4.5推出实时协作编辑功能",
-      "url": "https://www.anthropic.com/news/claude-4-5",
-      "date": "2026-05-24",
-      "source": "Anthropic官方博客",
-      "hot": false
-    },
-    {
-      "title": "Gemini Ultra 2.0开放API公测",
-      "url": "https://blog.google/technology/ai/gemini-ultra-2",
+      "title": "Google Gemini 3.0正式上线，支持多模态实时交互",
+      "url": "https://blog.google/technology/ai/gemini-3",
       "date": "2026-05-25",
       "source": "Google AI Blog",
       "hot": true
     },
     {
-      "title": "Llama 4.1开源并支持128K上下文",
+      "title": "Meta开源Llama 4.1，参数量达1500亿",
       "url": "https://ai.meta.com/blog/llama-4-1",
-      "date": "2026-05-23",
+      "date": "2026-05-27",
       "source": "Meta AI",
+      "hot": false
+    },
+    {
+      "title": "Anthropic发布Claude 4 Opus，长上下文性能突破",
+      "url": "https://www.anthropic.com/news/claude-4-opus",
+      "date": "2026-05-24",
+      "source": "Anthropic",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor发布AI代码审查助手Cursor Review",
-      "url": "https://cursor.sh/blog/review",
+      "title": "GitHub Copilot X更新，支持自然语言调试",
+      "url": "https://github.blog/news/copilot-x-debug",
       "date": "2026-05-26",
-      "source": "Cursor官方博客",
+      "source": "GitHub Blog",
       "hot": true
     },
     {
-      "title": "GitHub Copilot集成多文件重构功能",
-      "url": "https://github.blog/2026-05-25-copilot-multi-file-refactor",
+      "title": "Cursor推出v2.5版本，集成代码审查AI",
+      "url": "https://cursor.sh/changelog/v2-5",
       "date": "2026-05-25",
-      "source": "GitHub Blog",
+      "source": "Cursor",
       "hot": false
     },
     {
-      "title": "Devin 2.0支持自动部署到Kubernetes",
-      "url": "https://cognition.ai/blog/devin-2",
-      "date": "2026-05-24",
-      "source": "Cognition Labs",
+      "title": "Devin完成2亿美元融资，估值达30亿",
+      "url": "https://techcrunch.com/2026/05/23/devin-funding",
+      "date": "2026-05-23",
+      "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "Codeium推出AI驱动的性能优化工具",
-      "url": "https://codeium.com/blog/perf-optimizer",
-      "date": "2026-05-22",
-      "source": "Codeium官方博客",
+      "title": "Codeium开源Warp框架，加速AI代码生成",
+      "url": "https://codeium.com/blog/warp-open-source",
+      "date": "2026-05-27",
+      "source": "Codeium",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增视频理解与生成能力",
-      "url": "https://openai.com/blog/chatgpt-video",
+      "title": "ChatGPT新增语音克隆功能引发热议",
+      "url": "https://openai.com/blog/chatgpt-voice-clone",
       "date": "2026-05-27",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney 8.0发布：实时3D场景生成",
-      "url": "https://midjourney.com/blog/v8",
-      "date": "2026-05-26",
-      "source": "Midjourney官方博客",
+      "title": "Midjourney v7公测，支持4K视频生成",
+      "url": "https://midjourney.com/blog/v7-beta",
+      "date": "2026-05-25",
+      "source": "Midjourney",
       "hot": true
     },
     {
-      "title": "Notion AI推出自动化工作流构建器",
-      "url": "https://www.notion.so/blog/ai-workflows",
-      "date": "2026-05-25",
-      "source": "Notion Blog",
+      "title": "Notion AI推出自动化工作流功能",
+      "url": "https://www.notion.so/blog/ai-automation",
+      "date": "2026-05-24",
+      "source": "Notion",
       "hot": false
     },
     {
-      "title": "Runway Gen-4上线AI电影配音功能",
-      "url": "https://runwayml.com/blog/gen-4-dubbing",
-      "date": "2026-05-23",
-      "source": "Runway官方博客",
+      "title": "Runway Gen-4发布，实时视频编辑工具上线",
+      "url": "https://runwayml.com/blog/gen-4",
+      "date": "2026-05-26",
+      "source": "Runway",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI初创公司Cohere获5亿美元D轮融资",
-      "url": "https://techcrunch.com/2026/05/26/cohere-series-d",
-      "date": "2026-05-26",
-      "source": "TechCrunch",
-      "hot": true
-    },
-    {
-      "title": "欧盟通过AI责任指令修正案",
-      "url": "https://www.reuters.com/technology/eu-ai-liability-2026-05-25",
-      "date": "2026-05-25",
+      "title": "欧盟通过《AI责任法案》，明确企业赔偿条款",
+      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-05-27",
+      "date": "2026-05-27",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "英伟达发布H200 GPU推动AI训练成本下降",
-      "url": "https://nvidianews.nvidia.com/news/h200-gpu",
-      "date": "2026-05-24",
-      "source": "NVIDIA Newsroom",
+      "title": "英伟达市值突破5万亿美元，AI芯片需求强劲",
+      "url": "https://www.bloomberg.com/news/nvidia-market-cap-5-trillion",
+      "date": "2026-05-26",
+      "source": "Bloomberg",
+      "hot": true
+    },
+    {
+      "title": "中国发布《生成式AI管理办法》修订版",
+      "url": "https://www.chinadaily.com.cn/ai-regulation-2026",
+      "date": "2026-05-25",
+      "source": "China Daily",
       "hot": false
     },
     {
-      "title": "中国发布生成式AI内容标识新规",
-      "url": "https://www.chinadaily.com.cn/2026-05-22/ai-labeling",
-      "date": "2026-05-22",
-      "source": "China Daily",
+      "title": "AI初创公司Scale AI获10亿美元融资",
+      "url": "https://www.wsj.com/tech/scale-ai-funding-10b",
+      "date": "2026-05-24",
+      "source": "Wall Street Journal",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "arXiv论文：稀疏MoE训练效率提升10倍",
+      "title": "谷歌提出Mixture of Experts新架构MoE-2",
       "url": "https://arxiv.org/abs/2605.12345",
       "date": "2026-05-27",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "DeepMind提出新型自监督学习框架",
-      "url": "https://arxiv.org/abs/2605.12346",
+      "title": "DeepMind发布AlphaFold 3，预测蛋白质动态",
+      "url": "https://www.nature.com/articles/s41586-026-07890-0",
       "date": "2026-05-26",
+      "source": "Nature",
+      "hot": true
+    },
+    {
+      "title": "斯坦福团队开源高效注意力机制FlashAttention-3",
+      "url": "https://arxiv.org/abs/2605.11234",
+      "date": "2026-05-25",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "Meta发布多模态AI基准测试MMBench-2",
-      "url": "https://arxiv.org/abs/2605.12347",
-      "date": "2026-05-25",
-      "source": "arXiv",
-      "hot": true
-    },
-    {
-      "title": "斯坦福团队实现AI模型低功耗推理新突破",
-      "url": "https://arxiv.org/abs/2605.12348",
+      "title": "MIT研究揭示AI模型在数学推理中的偏见",
+      "url": "https://arxiv.org/abs/2605.10987",
       "date": "2026-05-24",
       "source": "arXiv",
       "hot": false
