@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月26日",
-  "updateTime": "2026-05-26 08:00",
-  "articleId": "S3-014",
-  "title": "语义分割与实例分割",
-  "summary": "语义分割与实例分割是计算机视觉从识别物体到理解场景的关键技术，核心差异在于是否区分同类个体。U-Net和Mask R-CNN是像素级预测的基础架构，分别通过编码器-解码器结构和特征金字塔实现精准分割，支撑自动驾驶、医学影像等应用。",
+  "date": "2026年5月27日",
+  "updateTime": "2026-05-27 08:00",
+  "articleId": "S3-015",
+  "title": "词向量：从Word2Vec到Contextual Embedding",
+  "summary": "词向量从Word2Vec的静态表示演进到ELMo的动态上下文嵌入，实现了从离散到连续、从无上下文到上下文感知的转变。Skip-gram和CBOW通过分布式假设学习语义，为NLP从特征工程迈向表示学习奠定基础。",
   "stage": {
     "id": 3,
     "name": "深度学习精通",
     "color": "#10b981"
   },
   "techPoints": [
-    "U-Net",
-    "Mask R-CNN",
-    "像素级分类"
+    "Skip-gram",
+    "CBOW",
+    "ELMo"
   ],
   "dependencies": [
     {
-      "stageName": "深度学习精通",
-      "stageId": 3,
-      "topic": "CNN基础",
-      "reason": "理解「语义分割与实例分割」需要掌握「CNN基础」的相关知识"
+      "stageName": "机器学习核心",
+      "stageId": 2,
+      "topic": "无监督学习",
+      "reason": "理解「词向量：从Word2Vec到Contextual Embedding」需要掌握「无监督学习」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "词向量：从Word2Vec到Contextual Embedding",
-    "teaser": "下一篇将探讨Skip-gram和CBOW等技术要点"
+    "title": "BERT预训练语言模型详解",
+    "teaser": "下一篇将探讨MLM和NSP等技术要点"
   },
   "progress": {
-    "completed": 79,
+    "completed": 80,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-26-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-27-article.md"
 }
