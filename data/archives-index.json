@@ -509,6 +509,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-29",
+      "title": "GPT系列模型演进史",
+      "articleId": "S3-017",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-05-29-article.md"
+    },
+    {
       "date": "2026-05-28",
       "title": "BERT预训练语言模型详解",
       "articleId": "S3-016",

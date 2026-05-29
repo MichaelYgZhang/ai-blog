@@ -1472,7 +1472,8 @@
         "topic": "Transformer"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-05-29"
   },
   {
     "id": "S3-018",
