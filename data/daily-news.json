@@ -1,151 +1,123 @@
 {
-  "date": "2026年5月29日",
-  "updateTime": "2026-05-29 07:17",
+  "date": "2026年5月30日",
+  "updateTime": "2026-05-30 07:12",
   "llm": [
     {
-      "title": "GPT-5发布：多模态推理能力大幅提升",
-      "url": "https://openai.com/blog/gpt-5-release",
+      "title": "GPT-5发布：多模态推理能力飞跃",
+      "url": "https://openai.com/blog/gpt-5",
       "date": "2026-05-28",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Claude 4.5更新：增强代码生成与安全对齐",
-      "url": "https://www.anthropic.com/news/claude-4-5",
-      "date": "2026-05-27",
+      "title": "Claude 4上线：上下文窗口扩展至2M tokens",
+      "url": "https://www.anthropic.com/news/claude-4",
+      "date": "2026-05-25",
       "source": "Anthropic官方博客",
-      "hot": false
-    },
-    {
-      "title": "Gemini Ultra 3.0上线：支持实时视频分析",
-      "url": "https://blog.google/products/gemini/ultra-3",
-      "date": "2026-05-26",
-      "source": "Google AI博客",
       "hot": true
     },
     {
-      "title": "Llama 4开源模型发布：参数规模达1万亿",
+      "title": "Gemini Ultra 2.0开放API",
+      "url": "https://blog.google/technology/ai/gemini-ultra-2",
+      "date": "2026-05-27",
+      "source": "Google AI Blog",
+      "hot": false
+    },
+    {
+      "title": "Llama 4开源：社区版本性能持平GPT-4",
       "url": "https://ai.meta.com/blog/llama-4",
-      "date": "2026-05-25",
-      "source": "Meta AI官方",
+      "date": "2026-05-26",
+      "source": "Meta AI Blog",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Copilot推出自主代码审查Agent功能",
-      "url": "https://github.blog/2026-05-28-copilot-code-review-agent",
-      "date": "2026-05-28",
-      "source": "GitHub Blog",
+      "title": "Cursor推出自主编程Agent模式",
+      "url": "https://cursor.sh/blog/agent-mode",
+      "date": "2026-05-29",
+      "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "Cursor 2.0发布：支持全栈项目一键部署",
-      "url": "https://cursor.sh/blog/v2-release",
+      "title": "GitHub Copilot X集成Claude 4",
+      "url": "https://github.blog/changelog/2026-05-24-copilot-x-claude-4",
+      "date": "2026-05-24",
+      "source": "GitHub官方博客",
+      "hot": false
+    },
+    {
+      "title": "Devin v2.0：支持全栈项目自动部署",
+      "url": "https://devin.ai/blog/v2-0",
       "date": "2026-05-27",
-      "source": "Cursor官方",
-      "hot": false
-    },
-    {
-      "title": "Devin集成Claude 4.5，修复效率提升50%",
-      "url": "https://www.cognition.ai/blog/devin-claude-integration",
-      "date": "2026-05-26",
-      "source": "Cognition AI",
+      "source": "Devin官方博客",
       "hot": true
-    },
-    {
-      "title": "Replit Agent新增团队协作模式",
-      "url": "https://blog.replit.com/agent-team-mode",
-      "date": "2026-05-25",
-      "source": "Replit Blog",
-      "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT推出企业级数据隔离方案",
-      "url": "https://openai.com/blog/chatgpt-enterprise-data-isolation",
+      "title": "ChatGPT推出实时视频理解功能",
+      "url": "https://openai.com/blog/chatgpt-video",
       "date": "2026-05-29",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布：实时3D场景生成",
+      "title": "Midjourney V7发布：照片级真实渲染",
       "url": "https://www.midjourney.com/blog/v7",
-      "date": "2026-05-27",
-      "source": "Midjourney官方",
+      "date": "2026-05-26",
+      "source": "Midjourney官方博客",
       "hot": true
     },
     {
-      "title": "Perplexity AI推出实时金融数据搜索",
-      "url": "https://blog.perplexity.ai/financial-search",
-      "date": "2026-05-26",
-      "source": "Perplexity AI Blog",
-      "hot": false
-    },
-    {
-      "title": "Notion AI新增自动化工作流功能",
-      "url": "https://www.notion.so/blog/ai-workflows",
+      "title": "Notion AI新增自动化工作流引擎",
+      "url": "https://www.notion.so/blog/notion-ai-workflows",
       "date": "2026-05-25",
-      "source": "Notion Blog",
+      "source": "Notion官方博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI初创公司Anthropic获100亿美元融资",
-      "url": "https://techcrunch.com/2026/05/28/anthropic-funding",
+      "title": "AI初创Anthropic完成100亿美元融资",
+      "url": "https://techcrunch.com/2026/05/28/anthropic-10b-funding",
       "date": "2026-05-28",
       "source": "TechCrunch",
       "hot": true
     },
     {
       "title": "欧盟通过《AI责任法案》修正案",
-      "url": "https://www.euractiv.com/section/ai/2026/05/27/eu-ai-liability-act",
+      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-05-27",
       "date": "2026-05-27",
-      "source": "Euractiv",
-      "hot": true
-    },
-    {
-      "title": "英伟达发布新一代AI训练芯片B300",
-      "url": "https://nvidianews.nvidia.com/news/b300-ai-chip",
-      "date": "2026-05-26",
-      "source": "NVIDIA官方新闻",
-      "hot": false
-    },
-    {
-      "title": "中国发布AI生成内容标识新规",
-      "url": "https://www.reuters.com/technology/china-ai-content-labeling-2026-05-25",
-      "date": "2026-05-25",
       "source": "Reuters",
       "hot": false
+    },
+    {
+      "title": "NVIDIA发布H200 GPU：AI训练成本降低40%",
+      "url": "https://nvidianews.nvidia.com/news/h200-gpu",
+      "date": "2026-05-26",
+      "source": "NVIDIA官方新闻",
+      "hot": true
     }
   ],
   "research": [
     {
-      "title": "新架构Mamba-3实现线性复杂度推理突破",
+      "title": "arXiv：稀疏MoE架构实现高效推理",
       "url": "https://arxiv.org/abs/2605.12345",
       "date": "2026-05-28",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "DeepMind提出自进化神经网络算法",
-      "url": "https://arxiv.org/abs/2605.12346",
+      "title": "DeepMind发布AlphaFold 3开源版",
+      "url": "https://www.deepmind.com/blog/alphafold-3-open-source",
       "date": "2026-05-27",
-      "source": "arXiv",
+      "source": "DeepMind官方博客",
       "hot": true
     },
     {
-      "title": "多模态理解新模型：统一视觉语言推理框架",
-      "url": "https://arxiv.org/abs/2605.12347",
-      "date": "2026-05-26",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "扩散模型加速采样方法Diffusion-ODE实现10倍提速",
-      "url": "https://arxiv.org/abs/2605.12348",
+      "title": "新论文：长上下文LLM的注意力压缩机制",
+      "url": "https://arxiv.org/abs/2605.11890",
       "date": "2026-05-25",
       "source": "arXiv",
       "hot": false
