@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月29日",
-  "updateTime": "2026-05-29 08:00",
-  "articleId": "S3-017",
-  "title": "GPT系列模型演进史",
-  "summary": "GPT系列模型通过自回归生成与规模化扩展，从GPT-1到GPT-4实现了从统计模仿到智能涌现的质变。Scaling Laws揭示了模型性能与规模间的幂律关系，而涌现能力则表明超过阈值后模型会突现推理、编程等高级能力，为AI系统设计提供了新范式。",
+  "date": "2026年5月30日",
+  "updateTime": "2026-05-30 08:00",
+  "articleId": "S3-018",
+  "title": "损失函数全家福",
+  "summary": "损失函数是深度学习模型的优化核心。交叉熵是分类任务的标准配置，Focal Loss解决类别不平衡问题，对比损失是自监督学习和度量学习的基石。三者构成从监督学习到自监督学习、从标准分类到困难样本挖掘的完整技术谱系。",
   "stage": {
     "id": 3,
     "name": "深度学习精通",
     "color": "#10b981"
   },
   "techPoints": [
-    "自回归生成",
-    "Scaling Laws",
-    "涌现能力"
+    "交叉熵",
+    "Focal Loss",
+    "对比损失"
   ],
   "dependencies": [
     {
-      "stageName": "深度学习精通",
-      "stageId": 3,
-      "topic": "Transformer",
-      "reason": "理解「GPT系列模型演进史」需要掌握「Transformer」的相关知识"
+      "stageName": "编程与数学基础",
+      "stageId": 1,
+      "topic": "概率统计",
+      "reason": "理解「损失函数全家福」需要掌握「概率统计」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "损失函数全家福",
-    "teaser": "下一篇将探讨交叉熵和Focal Loss等技术要点"
+    "title": "优化器深度对比：SGD到AdamW",
+    "teaser": "下一篇将探讨动量法和自适应学习率等技术要点"
   },
   "progress": {
-    "completed": 82,
+    "completed": 83,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-29-article.md"
+  "fullArticleUrl": "archives/articles/2026-05-30-article.md"
 }
