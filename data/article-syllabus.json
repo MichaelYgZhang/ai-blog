@@ -1508,7 +1508,8 @@
         "topic": "微积分"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-05-31"
   },
   {
     "id": "S3-020",

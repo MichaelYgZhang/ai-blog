@@ -529,6 +529,14 @@
   ],
   "articles": [
     {
+      "date": "2026-05-31",
+      "title": "优化器深度对比：SGD到AdamW",
+      "articleId": "S3-019",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-05-31-article.md"
+    },
+    {
       "date": "2026-05-30",
       "title": "损失函数全家福",
       "articleId": "S3-018",
