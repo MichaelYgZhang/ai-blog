@@ -1,34 +1,34 @@
 {
-  "date": "2026年5月31日",
-  "updateTime": "2026-05-31 08:00",
-  "articleId": "S3-019",
-  "title": "优化器深度对比：SGD到AdamW",
-  "summary": "优化器选择需在动量法、自适应学习率和权重解耦间权衡。从SGD震荡与学习率敏感问题出发，动量法加速收敛，自适应学习率处理稀疏梯度，AdamW通过权重解耦实现正确正则化，为不同任务提供系统性选择框架。",
+  "date": "2026年6月1日",
+  "updateTime": "2026-06-01 08:00",
+  "articleId": "S3-020",
+  "title": "模型调试与可视化技巧",
+  "summary": "深度学习模型调试与可视化是AI工程师进阶的关键技能。本文系统介绍了TensorBoard、梯度检查和特征可视化三项核心技术，帮助开发者建立模型可观测性、快速定位训练异常并深入理解模型内部机制，实现从“能跑模型”到“能调模型”的跃迁。",
   "stage": {
     "id": 3,
     "name": "深度学习精通",
     "color": "#10b981"
   },
   "techPoints": [
-    "动量法",
-    "自适应学习率",
-    "权重解耦"
+    "TensorBoard",
+    "梯度检查",
+    "特征可视化"
   ],
   "dependencies": [
     {
-      "stageName": "编程与数学基础",
-      "stageId": 1,
-      "topic": "微积分",
-      "reason": "理解「优化器深度对比：SGD到AdamW」需要掌握「微积分」的相关知识"
+      "stageName": "深度学习精通",
+      "stageId": 3,
+      "topic": "PyTorch训练",
+      "reason": "理解「模型调试与可视化技巧」需要掌握「PyTorch训练」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "模型调试与可视化技巧",
-    "teaser": "下一篇将探讨TensorBoard和梯度检查等技术要点"
+    "title": "数据增强策略大全",
+    "teaser": "下一篇将探讨图像增强和文本增强等技术要点"
   },
   "progress": {
-    "completed": 84,
+    "completed": 85,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-05-31-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-01-article.md"
 }

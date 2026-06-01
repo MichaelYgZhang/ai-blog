@@ -534,6 +534,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-01",
+      "title": "模型调试与可视化技巧",
+      "articleId": "S3-020",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-06-01-article.md"
+    },
+    {
       "date": "2026-05-31",
       "title": "优化器深度对比：SGD到AdamW",
       "articleId": "S3-019",
