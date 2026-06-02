@@ -1,34 +1,34 @@
 {
-  "date": "2026年6月1日",
-  "updateTime": "2026-06-01 08:00",
-  "articleId": "S3-020",
-  "title": "模型调试与可视化技巧",
-  "summary": "深度学习模型调试与可视化是AI工程师进阶的关键技能。本文系统介绍了TensorBoard、梯度检查和特征可视化三项核心技术，帮助开发者建立模型可观测性、快速定位训练异常并深入理解模型内部机制，实现从“能跑模型”到“能调模型”的跃迁。",
+  "date": "2026年6月2日",
+  "updateTime": "2026-06-02 08:00",
+  "articleId": "S3-021",
+  "title": "数据增强策略大全",
+  "summary": "数据增强是提升模型泛化能力最经济有效的手段，通过图像增强、文本增强和Mixup等策略，可在不增加真实数据采集成本下将泛化能力提升30%以上。文章系统介绍了各类增强方法的原理、应用原则及代码实现。",
   "stage": {
     "id": 3,
     "name": "深度学习精通",
     "color": "#10b981"
   },
   "techPoints": [
-    "TensorBoard",
-    "梯度检查",
-    "特征可视化"
+    "图像增强",
+    "文本增强",
+    "Mixup"
   ],
   "dependencies": [
     {
       "stageName": "深度学习精通",
       "stageId": 3,
-      "topic": "PyTorch训练",
-      "reason": "理解「模型调试与可视化技巧」需要掌握「PyTorch训练」的相关知识"
+      "topic": "模型训练",
+      "reason": "理解「数据增强策略大全」需要掌握「模型训练」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "数据增强策略大全",
-    "teaser": "下一篇将探讨图像增强和文本增强等技术要点"
+    "title": "自监督学习：无标注数据的金矿",
+    "teaser": "下一篇将探讨对比学习和掩码预测等技术要点"
   },
   "progress": {
-    "completed": 85,
+    "completed": 86,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-01-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-02-article.md"
 }

@@ -1544,7 +1544,8 @@
         "topic": "模型训练"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-06-02"
   },
   {
     "id": "S3-022",

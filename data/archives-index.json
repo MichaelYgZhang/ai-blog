@@ -539,6 +539,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-02",
+      "title": "数据增强策略大全",
+      "articleId": "S3-021",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-06-02-article.md"
+    },
+    {
       "date": "2026-06-01",
       "title": "模型调试与可视化技巧",
       "articleId": "S3-020",
