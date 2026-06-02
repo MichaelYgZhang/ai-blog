@@ -1,188 +1,188 @@
 {
-  "date": "2026年6月2日",
-  "updateTime": "2026-06-02 07:27",
+  "date": "2026年6月3日",
+  "updateTime": "2026-06-03 07:45",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5预览版，推理能力大幅提升",
-      "url": "https://openai.com/blog/gpt-5-preview",
+      "title": "OpenAI发布GPT-5模型推理性能提升50%",
+      "url": "https://openai.com/blog/gpt-5",
       "date": "2026-06-01",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Anthropic推出Claude 4，支持超长上下文",
-      "url": "https://anthropic.com/news/claude-4",
+      "title": "Google推出Gemini 3.0支持多模态实时交互",
+      "url": "https://blog.google/gemini-3",
       "date": "2026-05-30",
-      "source": "Anthropic官方博客",
+      "source": "Google AI博客",
       "hot": true
     },
     {
-      "title": "Google Gemini 2.0正式上线，多模态能力增强",
-      "url": "https://blog.google/products/gemini/gemini-2",
+      "title": "Meta开源Llama 4.1参数规模突破2万亿",
+      "url": "https://ai.meta.com/blog/llama-4-1",
       "date": "2026-05-28",
-      "source": "Google官方博客",
-      "hot": false
-    },
-    {
-      "title": "Meta开源Llama 4模型，参数规模达1万亿",
-      "url": "https://ai.meta.com/blog/llama-4",
-      "date": "2026-05-29",
       "source": "Meta AI",
       "hot": false
     },
     {
-      "title": "Mistral发布Mistral Large 3，性能对标GPT-4",
+      "title": "Anthropic发布Claude 4提升长文本推理能力",
+      "url": "https://www.anthropic.com/news/claude-4",
+      "date": "2026-06-02",
+      "source": "Anthropic官方博客",
+      "hot": false
+    },
+    {
+      "title": "Mistral AI推出Mistral Large 3专注代码生成",
       "url": "https://mistral.ai/news/mistral-large-3",
-      "date": "2026-05-27",
+      "date": "2026-05-29",
       "source": "Mistral AI",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "GitHub Copilot X升级，支持实时代码审查",
-      "url": "https://github.blog/2026-05-31-copilot-x-update",
-      "date": "2026-05-31",
+      "title": "GitHub Copilot升级支持多文件重构",
+      "url": "https://github.blog/2026-06-01-copilot-update",
+      "date": "2026-06-01",
       "source": "GitHub Blog",
       "hot": true
     },
     {
-      "title": "Cursor发布v0.5，引入AI驱动的调试功能",
-      "url": "https://cursor.sh/blog/v0.5-release",
+      "title": "Cursor推出Agent模式自动修复代码错误",
+      "url": "https://cursor.sh/blog/agent-mode",
       "date": "2026-05-30",
-      "source": "Cursor官方",
+      "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "Devin AI获得新一轮融资，估值达50亿美元",
-      "url": "https://techcrunch.com/2026/05/29/devin-funding",
-      "date": "2026-05-29",
-      "source": "TechCrunch",
-      "hot": false
-    },
-    {
-      "title": "Codeium推出免费版AI编程助手，支持VS Code",
-      "url": "https://codeium.com/blog/free-tier",
+      "title": "Devin新增团队协作功能实时代码审查",
+      "url": "https://devin.ai/blog/team-collaboration",
       "date": "2026-05-28",
-      "source": "Codeium官方",
+      "source": "Devin官方",
       "hot": false
     },
     {
-      "title": "Amazon CodeWhisperer更名为Q Developer",
-      "url": "https://aws.amazon.com/blogs/aws/q-developer",
-      "date": "2026-05-27",
-      "source": "AWS官方博客",
+      "title": "JetBrains AI助手集成本地代码库分析",
+      "url": "https://blog.jetbrains.com/ai/2026/05/local-analysis",
+      "date": "2026-05-29",
+      "source": "JetBrains Blog",
+      "hot": false
+    },
+    {
+      "title": "Codeium发布Windsurf 2.0支持自然语言调试",
+      "url": "https://codeium.com/blog/windsurf-2",
+      "date": "2026-06-02",
+      "source": "Codeium官方",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT推出语音克隆功能，引发隐私争议",
-      "url": "https://www.theverge.com/2026/6/1/chatgpt-voice-clone",
+      "title": "ChatGPT推出记忆增强功能个性化推荐",
+      "url": "https://openai.com/blog/chatgpt-memory",
       "date": "2026-06-01",
-      "source": "The Verge",
+      "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布，图像生成质量再创新高",
-      "url": "https://midjourney.com/blog/v7-release",
-      "date": "2026-05-31",
+      "title": "Midjourney发布V7版本支持4K视频生成",
+      "url": "https://midjourney.com/blog/v7",
+      "date": "2026-05-30",
       "source": "Midjourney官方",
       "hot": true
     },
     {
-      "title": "Notion AI集成GPT-5，提升文档自动化能力",
-      "url": "https://www.notion.so/blog/ai-update-gpt5",
-      "date": "2026-05-30",
-      "source": "Notion官方",
+      "title": "Notion AI集成GPT-5实现文档自动摘要",
+      "url": "https://www.notion.so/blog/ai-summary",
+      "date": "2026-05-28",
+      "source": "Notion Blog",
       "hot": false
     },
     {
-      "title": "Adobe Firefly 3上线，支持AI视频生成",
-      "url": "https://blog.adobe.com/firefly-3",
+      "title": "Adobe Firefly推出3D模型生成功能",
+      "url": "https://blog.adobe.com/firefly-3d",
       "date": "2026-05-29",
       "source": "Adobe官方博客",
       "hot": false
     },
     {
-      "title": "Runway推出Gen-3 Alpha，实时视频编辑工具",
-      "url": "https://runwayml.com/blog/gen-3-alpha",
-      "date": "2026-05-28",
-      "source": "Runway",
+      "title": "Runway发布Gen-4 Alpha支持实时视频编辑",
+      "url": "https://runwayml.com/blog/gen-4-alpha",
+      "date": "2026-06-02",
+      "source": "Runway官方",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "欧盟通过《AI责任法案》，规范AI应用",
-      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-06-01",
-      "date": "2026-06-01",
+      "title": "AI芯片初创公司Groq完成15亿美元融资",
+      "url": "https://techcrunch.com/2026/06/02/groq-funding",
+      "date": "2026-06-02",
+      "source": "TechCrunch",
+      "hot": true
+    },
+    {
+      "title": "欧盟通过《人工智能责任指令》强化监管",
+      "url": "https://www.reuters.com/technology/eu-ai-liability-2026-05-30",
+      "date": "2026-05-30",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "英伟达市值突破5万亿美元，AI芯片需求旺盛",
-      "url": "https://www.bloomberg.com/news/articles/2026-05-31/nvidia-market-cap",
-      "date": "2026-05-31",
-      "source": "Bloomberg",
-      "hot": true
-    },
-    {
-      "title": "中国发布AI发展白皮书，加速国产模型应用",
-      "url": "https://www.chinadaily.com.cn/a/202605/30/ai-white-paper",
-      "date": "2026-05-30",
-      "source": "China Daily",
-      "hot": false
-    },
-    {
-      "title": "AI初创公司Scale AI完成20亿美元融资",
-      "url": "https://www.wsj.com/tech/scale-ai-funding-2026-05-29",
+      "title": "中国发布AI大模型备案新规要求安全评估",
+      "url": "https://www.caixin.com/2026-05-29/ai-regulation",
       "date": "2026-05-29",
-      "source": "Wall Street Journal",
+      "source": "财新网",
       "hot": false
     },
     {
-      "title": "微软与OpenAI续约，投资额达500亿美元",
-      "url": "https://www.cnbc.com/2026/05/28/microsoft-openai-renewal",
+      "title": "微软与OpenAI续签合作协议投资超百亿",
+      "url": "https://www.bloomberg.com/news/2026-06-01/microsoft-openai-deal",
+      "date": "2026-06-01",
+      "source": "Bloomberg",
+      "hot": false
+    },
+    {
+      "title": "Anthropic估值突破800亿美元完成新一轮融资",
+      "url": "https://www.wsj.com/tech/ai/anthropic-valuation-2026-05-28",
       "date": "2026-05-28",
-      "source": "CNBC",
+      "source": "WSJ",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "新论文提出Mamba-3架构，超越Transformer",
+      "title": "arXiv论文提出稀疏注意力机制降低推理成本",
       "url": "https://arxiv.org/abs/2605.12345",
-      "date": "2026-05-31",
+      "date": "2026-05-30",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "DeepMind发布AlphaFold 3，预测蛋白质动态",
-      "url": "https://www.nature.com/articles/s41586-026-04567",
-      "date": "2026-05-30",
-      "source": "Nature",
-      "hot": true
-    },
-    {
-      "title": "斯坦福研究：RLHF新方法提升模型对齐性",
-      "url": "https://arxiv.org/abs/2605.09876",
+      "title": "DeepMind发布新架构Mamba-2效率提升10倍",
+      "url": "https://arxiv.org/abs/2605.23456",
       "date": "2026-05-29",
       "source": "arXiv",
-      "hot": false
+      "hot": true
     },
     {
-      "title": "MIT团队开发稀疏注意力机制，降低计算成本",
-      "url": "https://arxiv.org/abs/2605.08765",
+      "title": "斯坦福团队提出自监督学习新方法突破数据瓶颈",
+      "url": "https://arxiv.org/abs/2605.34567",
       "date": "2026-05-28",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "OpenAI发布o3模型技术报告，详解推理过程",
-      "url": "https://openai.com/research/o3-technical-report",
-      "date": "2026-05-27",
-      "source": "OpenAI研究博客",
+      "title": "MIT研究用神经符号推理提升AI可解释性",
+      "url": "https://arxiv.org/abs/2605.45678",
+      "date": "2026-05-31",
+      "source": "arXiv",
+      "hot": false
+    },
+    {
+      "title": "OpenAI发布超长上下文窗口训练技术",
+      "url": "https://arxiv.org/abs/2606.00001",
+      "date": "2026-06-01",
+      "source": "arXiv",
       "hot": false
     }
   ]
