@@ -1,34 +1,34 @@
 {
-  "date": "2026年6月2日",
-  "updateTime": "2026-06-02 08:00",
-  "articleId": "S3-021",
-  "title": "数据增强策略大全",
-  "summary": "数据增强是提升模型泛化能力最经济有效的手段，通过图像增强、文本增强和Mixup等策略，可在不增加真实数据采集成本下将泛化能力提升30%以上。文章系统介绍了各类增强方法的原理、应用原则及代码实现。",
+  "date": "2026年6月3日",
+  "updateTime": "2026-06-03 08:00",
+  "articleId": "S3-022",
+  "title": "自监督学习：无标注数据的金矿",
+  "summary": "自监督学习通过对比学习、掩码预测等预文本任务，从无标注数据中自动生成监督信号，使模型学习通用表征。在标注稀缺场景下，其下游任务性能可媲美全监督学习，为AI工程师提供了解锁海量无标注数据的核心技术路径。",
   "stage": {
     "id": 3,
     "name": "深度学习精通",
     "color": "#10b981"
   },
   "techPoints": [
-    "图像增强",
-    "文本增强",
-    "Mixup"
+    "对比学习",
+    "掩码预测",
+    "SimCLR"
   ],
   "dependencies": [
     {
       "stageName": "深度学习精通",
       "stageId": 3,
-      "topic": "模型训练",
-      "reason": "理解「数据增强策略大全」需要掌握「模型训练」的相关知识"
+      "topic": "深度学习基础",
+      "reason": "理解「自监督学习：无标注数据的金矿」需要掌握「深度学习基础」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "自监督学习：无标注数据的金矿",
-    "teaser": "下一篇将探讨对比学习和掩码预测等技术要点"
+    "title": "图神经网络GNN入门",
+    "teaser": "下一篇将探讨消息传递和GCN等技术要点"
   },
   "progress": {
-    "completed": 86,
+    "completed": 87,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-02-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-03-article.md"
 }
