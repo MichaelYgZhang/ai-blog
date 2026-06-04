@@ -544,6 +544,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-04",
+      "title": "图神经网络GNN入门",
+      "articleId": "S3-023",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-06-04-article.md"
+    },
+    {
       "date": "2026-06-03",
       "title": "自监督学习：无标注数据的金矿",
       "articleId": "S3-022",
