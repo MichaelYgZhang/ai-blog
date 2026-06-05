@@ -544,6 +544,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-05",
+      "title": "强化学习基础：从Q-Learning到Policy Gradient",
+      "articleId": "S3-024",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-06-05-article.md"
+    },
+    {
       "date": "2026-06-04",
       "title": "图神经网络GNN入门",
       "articleId": "S3-023",
