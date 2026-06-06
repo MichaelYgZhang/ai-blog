@@ -1,34 +1,34 @@
 {
-  "date": "2026年6月5日",
-  "updateTime": "2026-06-05 08:00",
-  "articleId": "S3-024",
-  "title": "强化学习基础：从Q-Learning到Policy Gradient",
-  "summary": "强化学习通过与环境交互学习最优策略，Q-Learning基于价值函数间接优化策略，Policy Gradient直接优化策略参数，后者在高维连续动作空间更具优势。两者结合构成Actor-Critic等高级算法基础。",
+  "date": "2026年6月6日",
+  "updateTime": "2026-06-06 08:00",
+  "articleId": "S3-025",
+  "title": "模型蒸馏：用小模型学大模型",
+  "summary": "模型蒸馏通过让学生模型模仿教师模型的软概率输出和中间特征，以极低推理成本获得接近大模型90%以上性能。该技术利用温度缩放软化概率分布，结合蒸馏损失与学生损失训练，是工业级模型部署中最实用的压缩方法。",
   "stage": {
     "id": 3,
     "name": "深度学习精通",
     "color": "#10b981"
   },
   "techPoints": [
-    "MDP",
-    "价值函数",
-    "策略梯度"
+    "软标签",
+    "温度缩放",
+    "特征蒸馏"
   ],
   "dependencies": [
     {
-      "stageName": "编程与数学基础",
-      "stageId": 1,
-      "topic": "概率统计",
-      "reason": "理解「强化学习基础：从Q-Learning到Policy Gradient」需要掌握「概率统计」的相关知识"
+      "stageName": "深度学习精通",
+      "stageId": 3,
+      "topic": "深度学习训练",
+      "reason": "理解「模型蒸馏：用小模型学大模型」需要掌握「深度学习训练」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "模型蒸馏：用小模型学大模型",
-    "teaser": "下一篇将探讨软标签和温度缩放等技术要点"
+    "title": "线性回归与逻辑回归从零实现",
+    "teaser": "下一篇将探讨最小二乘和梯度下降等技术要点"
   },
   "progress": {
-    "completed": 89,
+    "completed": 90,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-05-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-06-article.md"
 }

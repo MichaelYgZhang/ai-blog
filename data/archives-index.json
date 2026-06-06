@@ -544,6 +544,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-06",
+      "title": "模型蒸馏：用小模型学大模型",
+      "articleId": "S3-025",
+      "stage": 3,
+      "stageName": "深度学习精通",
+      "url": "archives/articles/2026-06-06-article.md"
+    },
+    {
       "date": "2026-06-05",
       "title": "强化学习基础：从Q-Learning到Policy Gradient",
       "articleId": "S3-024",
