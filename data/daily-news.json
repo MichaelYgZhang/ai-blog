@@ -1,154 +1,133 @@
 {
-  "date": "2026年6月6日",
-  "updateTime": "2026-06-06 07:09",
+  "date": "2026年6月7日",
+  "updateTime": "2026-06-07 07:04",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5.2，推理效率提升40%",
-      "url": "https://openai.com/blog/gpt5-2",
-      "date": "2026-06-04",
+      "title": "GPT-5发布：推理能力提升300%",
+      "url": "https://openai.com/blog/gpt-5",
+      "date": "2026-06-05",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Claude 4.5新增多模态视频理解功能",
+      "title": "Claude 4.5上线：多模态与长上下文突破",
       "url": "https://www.anthropic.com/news/claude-4-5",
-      "date": "2026-06-02",
+      "date": "2026-06-03",
       "source": "Anthropic官方博客",
-      "hot": false
-    },
-    {
-      "title": "Google Gemini 2.0 Ultra开源权重发布",
-      "url": "https://blog.google/technology/ai/gemini-ultra-open",
-      "date": "2026-06-05",
-      "source": "Google AI博客",
       "hot": true
     },
     {
-      "title": "Meta Llama 4.1 70B模型在代码任务上超越GPT-4",
-      "url": "https://ai.meta.com/blog/llama-4-1",
+      "title": "Gemini Ultra 2.0开放API测试",
+      "url": "https://blog.google/technology/ai/gemini-ultra-2",
       "date": "2026-06-01",
-      "source": "Meta AI",
+      "source": "Google AI博客",
+      "hot": false
+    },
+    {
+      "title": "Llama 4开源：性能超越GPT-4o",
+      "url": "https://ai.meta.com/blog/llama-4",
+      "date": "2026-06-02",
+      "source": "Meta AI博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor 3.0支持实时协作编程和AI调试",
-      "url": "https://cursor.sh/changelog/3-0",
+      "title": "Cursor 2.0发布：支持全栈自动编程",
+      "url": "https://cursor.sh/blog/v2.0",
+      "date": "2026-06-04",
+      "source": "Cursor官方博客",
+      "hot": true
+    },
+    {
+      "title": "Copilot X新增团队协作模式",
+      "url": "https://github.blog/changelog/2026-06-06-copilot-x-team",
+      "date": "2026-06-06",
+      "source": "GitHub官方博客",
+      "hot": false
+    },
+    {
+      "title": "Devin实现企业级部署自动化",
+      "url": "https://devin.ai/blog/enterprise-automation",
       "date": "2026-06-03",
-      "source": "Cursor官方",
+      "source": "Devin官方博客",
       "hot": true
-    },
-    {
-      "title": "GitHub Copilot X集成Claude 4，支持多语言重构",
-      "url": "https://github.blog/changelog/copilot-x-claude",
-      "date": "2026-06-05",
-      "source": "GitHub Blog",
-      "hot": true
-    },
-    {
-      "title": "Devin 2.0发布，自主修复生产环境Bug能力提升",
-      "url": "https://cognition.ai/blog/devin-2",
-      "date": "2026-06-02",
-      "source": "Cognition Labs",
-      "hot": false
-    },
-    {
-      "title": "Replit AI Agent支持一键部署至AWS Lambda",
-      "url": "https://blog.replit.com/ai-agent-aws",
-      "date": "2026-06-01",
-      "source": "Replit Blog",
-      "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT推出实时视频通话和屏幕共享功能",
-      "url": "https://openai.com/blog/chatgpt-video-call",
+      "title": "ChatGPT推出视频生成功能",
+      "url": "https://openai.com/blog/chatgpt-video-generation",
       "date": "2026-06-06",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7支持4K视频生成和风格迁移",
-      "url": "https://www.midjourney.com/blog/v7",
+      "title": "Midjourney V7支持实时3D渲染",
+      "url": "https://midjourney.com/updates/v7",
+      "date": "2026-06-02",
+      "source": "Midjourney官方博客",
+      "hot": false
+    },
+    {
+      "title": "Notion AI集成自动工作流引擎",
+      "url": "https://www.notion.so/blog/ai-workflow-engine",
       "date": "2026-06-04",
-      "source": "Midjourney官方",
+      "source": "Notion官方博客",
       "hot": true
-    },
-    {
-      "title": "Notion AI新增自动化工作流和知识图谱",
-      "url": "https://www.notion.so/blog/ai-workflows",
-      "date": "2026-06-05",
-      "source": "Notion Blog",
-      "hot": false
-    },
-    {
-      "title": "Runway Gen-4 Alpha开放API，支持实时视频编辑",
-      "url": "https://runwayml.com/blog/gen-4-alpha-api",
-      "date": "2026-06-03",
-      "source": "Runway博客",
-      "hot": false
     }
   ],
   "industry": [
     {
-      "title": "Anthropic完成150亿美元融资，估值突破3000亿",
-      "url": "https://techcrunch.com/2026/06/05/anthropic-funding",
+      "title": "AI初创公司获50亿美元融资",
+      "url": "https://techcrunch.com/2026/06/05/ai-startup-funding",
       "date": "2026-06-05",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过《AI责任法案》，要求开源模型披露训练数据",
-      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-06-04",
-      "date": "2026-06-04",
+      "title": "欧盟通过《AI责任法案》修正案",
+      "url": "https://www.euronews.com/2026/06/03/eu-ai-liability-act",
+      "date": "2026-06-03",
+      "source": "Euronews",
+      "hot": false
+    },
+    {
+      "title": "中国发布AI大模型备案新规",
+      "url": "https://www.reuters.com/technology/china-ai-regulation-2026-06-02",
+      "date": "2026-06-02",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "中国发布《生成式AI服务管理办法》修订版",
-      "url": "https://www.caixin.com/2026-06-03/ai-regulation-china",
-      "date": "2026-06-03",
-      "source": "财新网",
-      "hot": false
-    },
-    {
-      "title": "微软收购Stability AI，整合至Azure AI平台",
-      "url": "https://www.bloomberg.com/news/2026-06-02/microsoft-stability-ai",
-      "date": "2026-06-02",
+      "title": "全球AI芯片市场突破2000亿美元",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-01/ai-chip-market",
+      "date": "2026-06-01",
       "source": "Bloomberg",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "DeepMind提出Mixture-of-Memory架构，提升长上下文性能",
+      "title": "新型稀疏注意力机制提速10倍",
       "url": "https://arxiv.org/abs/2606.00123",
       "date": "2026-06-01",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "斯坦福发布Sparse Attention 2.0，推理速度提升3倍",
+      "title": "多模态对齐新方法突破基准",
       "url": "https://arxiv.org/abs/2606.00456",
       "date": "2026-06-03",
       "source": "arXiv",
-      "hot": true
+      "hot": false
     },
     {
-      "title": "Meta开源多模态模型ImageBind 2，支持6种模态对齐",
+      "title": "扩散模型实现可控视频生成",
       "url": "https://arxiv.org/abs/2606.00789",
       "date": "2026-06-05",
       "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "清华提出MoE-Adapter，大模型微调参数减少90%",
-      "url": "https://arxiv.org/abs/2606.00345",
-      "date": "2026-06-02",
-      "source": "arXiv",
-      "hot": false
+      "hot": true
     }
   ]
 }
