@@ -1,34 +1,34 @@
 {
-  "date": "2026年6月6日",
-  "updateTime": "2026-06-06 08:00",
-  "articleId": "S3-025",
-  "title": "模型蒸馏：用小模型学大模型",
-  "summary": "模型蒸馏通过让学生模型模仿教师模型的软概率输出和中间特征，以极低推理成本获得接近大模型90%以上性能。该技术利用温度缩放软化概率分布，结合蒸馏损失与学生损失训练，是工业级模型部署中最实用的压缩方法。",
+  "date": "2026年6月7日",
+  "updateTime": "2026-06-07 08:00",
+  "articleId": "S2-001",
+  "title": "线性回归与逻辑回归从零实现",
+  "summary": "线性回归与逻辑回归是监督学习基石模型，前者通过最小二乘和梯度下降解决连续值预测，后者引入Sigmoid函数实现分类。从零实现这两个模型是理解深度学习从线性变换到非线性激活的关键，也是掌握机器学习底层原理的重要实践。",
   "stage": {
-    "id": 3,
-    "name": "深度学习精通",
-    "color": "#10b981"
+    "id": 2,
+    "name": "机器学习核心",
+    "color": "#f59e0b"
   },
   "techPoints": [
-    "软标签",
-    "温度缩放",
-    "特征蒸馏"
+    "最小二乘",
+    "梯度下降",
+    "Sigmoid"
   ],
   "dependencies": [
     {
-      "stageName": "深度学习精通",
-      "stageId": 3,
-      "topic": "深度学习训练",
-      "reason": "理解「模型蒸馏：用小模型学大模型」需要掌握「深度学习训练」的相关知识"
+      "stageName": "编程与数学基础",
+      "stageId": 1,
+      "topic": "线性代数",
+      "reason": "理解「线性回归与逻辑回归从零实现」需要掌握「线性代数」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "线性回归与逻辑回归从零实现",
-    "teaser": "下一篇将探讨最小二乘和梯度下降等技术要点"
+    "title": "决策树与随机森林详解",
+    "teaser": "下一篇将探讨信息增益和Bagging等技术要点"
   },
   "progress": {
-    "completed": 90,
+    "completed": 91,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-06-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-07-article.md"
 }
