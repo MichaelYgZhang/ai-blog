@@ -549,6 +549,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-08",
+      "title": "决策树与随机森林详解",
+      "articleId": "S2-002",
+      "stage": 2,
+      "stageName": "机器学习核心",
+      "url": "archives/articles/2026-06-08-article.md"
+    },
+    {
       "date": "2026-06-07",
       "title": "线性回归与逻辑回归从零实现",
       "articleId": "S2-001",
