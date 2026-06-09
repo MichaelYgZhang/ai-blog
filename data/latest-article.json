@@ -1,34 +1,34 @@
 {
-  "date": "2026年6月8日",
-  "updateTime": "2026-06-08 08:00",
-  "articleId": "S2-002",
-  "title": "决策树与随机森林详解",
-  "summary": "决策树通过递归划分特征空间构建可解释的if-then规则集合，随机森林利用Bagging和随机子空间集成多棵决策树，克服单棵树高方差缺陷，显著提升泛化能力与鲁棒性，是机器学习从单一模型迈向集成学习的里程碑。",
+  "date": "2026年6月9日",
+  "updateTime": "2026-06-09 08:00",
+  "articleId": "S2-003",
+  "title": "SVM支持向量机原理与实战",
+  "summary": "SVM通过寻找最大间隔超平面实现最优分类，核心思想是将分类问题转化为凸二次规划，并利用核函数处理非线性数据。该方法融合线性代数、凸优化与统计学习理论，具有全局最优解和强泛化能力，尤其适合小样本高维问题。",
   "stage": {
     "id": 2,
     "name": "机器学习核心",
     "color": "#f59e0b"
   },
   "techPoints": [
-    "信息增益",
-    "Bagging",
-    "特征重要性"
+    "最大间隔",
+    "核函数",
+    "对偶问题"
   ],
   "dependencies": [
     {
       "stageName": "编程与数学基础",
       "stageId": 1,
-      "topic": "概率统计",
-      "reason": "理解「决策树与随机森林详解」需要掌握「概率统计」的相关知识"
+      "topic": "线性代数",
+      "reason": "理解「SVM支持向量机原理与实战」需要掌握「线性代数」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "SVM支持向量机原理与实战",
-    "teaser": "下一篇将探讨最大间隔和核函数等技术要点"
+    "title": "特征工程实战手册",
+    "teaser": "下一篇将探讨特征选择和特征变换等技术要点"
   },
   "progress": {
-    "completed": 92,
+    "completed": 93,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-08-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-09-article.md"
 }
