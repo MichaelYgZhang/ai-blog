@@ -1688,7 +1688,8 @@
         "topic": "Pandas"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-06-10"
   },
   {
     "id": "S2-005",

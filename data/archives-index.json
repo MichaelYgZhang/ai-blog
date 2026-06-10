@@ -549,6 +549,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-10",
+      "title": "特征工程实战手册",
+      "articleId": "S2-004",
+      "stage": 2,
+      "stageName": "机器学习核心",
+      "url": "archives/articles/2026-06-10-article.md"
+    },
+    {
       "date": "2026-06-09",
       "title": "SVM支持向量机原理与实战",
       "articleId": "S2-003",

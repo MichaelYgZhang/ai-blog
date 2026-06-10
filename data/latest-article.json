@@ -1,34 +1,34 @@
 {
-  "date": "2026年6月9日",
-  "updateTime": "2026-06-09 08:00",
-  "articleId": "S2-003",
-  "title": "SVM支持向量机原理与实战",
-  "summary": "SVM通过寻找最大间隔超平面实现最优分类，核心思想是将分类问题转化为凸二次规划，并利用核函数处理非线性数据。该方法融合线性代数、凸优化与统计学习理论，具有全局最优解和强泛化能力，尤其适合小样本高维问题。",
+  "date": "2026年6月10日",
+  "updateTime": "2026-06-10 08:00",
+  "articleId": "S2-004",
+  "title": "特征工程实战手册",
+  "summary": "特征工程是提升机器学习模型性能的关键，通过特征选择、特征变换和缺失值处理等方法优化数据质量，决定模型能力上限。本文提供实战指南，帮助工程师挖掘数据信息，实现显著性能提升。",
   "stage": {
     "id": 2,
     "name": "机器学习核心",
     "color": "#f59e0b"
   },
   "techPoints": [
-    "最大间隔",
-    "核函数",
-    "对偶问题"
+    "特征选择",
+    "特征变换",
+    "缺失值处理"
   ],
   "dependencies": [
     {
       "stageName": "编程与数学基础",
       "stageId": 1,
-      "topic": "线性代数",
-      "reason": "理解「SVM支持向量机原理与实战」需要掌握「线性代数」的相关知识"
+      "topic": "Pandas",
+      "reason": "理解「特征工程实战手册」需要掌握「Pandas」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "特征工程实战手册",
-    "teaser": "下一篇将探讨特征选择和特征变换等技术要点"
+    "title": "模型评估与交叉验证",
+    "teaser": "下一篇将探讨精确率/召回率和ROC-AUC等技术要点"
   },
   "progress": {
-    "completed": 93,
+    "completed": 94,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-09-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-10-article.md"
 }
