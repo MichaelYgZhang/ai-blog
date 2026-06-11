@@ -1,34 +1,34 @@
 {
-  "date": "2026年6月10日",
-  "updateTime": "2026-06-10 08:00",
-  "articleId": "S2-004",
-  "title": "特征工程实战手册",
-  "summary": "特征工程是提升机器学习模型性能的关键，通过特征选择、特征变换和缺失值处理等方法优化数据质量，决定模型能力上限。本文提供实战指南，帮助工程师挖掘数据信息，实现显著性能提升。",
+  "date": "2026年6月11日",
+  "updateTime": "2026-06-11 08:00",
+  "articleId": "S2-005",
+  "title": "模型评估与交叉验证",
+  "summary": "模型评估与交叉验证的核心是从单一指标转向多维度可靠性验证。精确率/召回率解决不平衡数据评估偏差，ROC-AUC提供全局排序能力，K-Fold确保评估统计稳健性，三者共同构建可信赖机器学习模型。",
   "stage": {
     "id": 2,
     "name": "机器学习核心",
     "color": "#f59e0b"
   },
   "techPoints": [
-    "特征选择",
-    "特征变换",
-    "缺失值处理"
+    "精确率/召回率",
+    "ROC-AUC",
+    "K-Fold"
   ],
   "dependencies": [
     {
-      "stageName": "编程与数学基础",
-      "stageId": 1,
-      "topic": "Pandas",
-      "reason": "理解「特征工程实战手册」需要掌握「Pandas」的相关知识"
+      "stageName": "机器学习核心",
+      "stageId": 2,
+      "topic": "分类模型",
+      "reason": "理解「模型评估与交叉验证」需要掌握「分类模型」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "模型评估与交叉验证",
-    "teaser": "下一篇将探讨精确率/召回率和ROC-AUC等技术要点"
+    "title": "sklearn机器学习Pipeline实战",
+    "teaser": "下一篇将探讨预处理管道和超参搜索等技术要点"
   },
   "progress": {
-    "completed": 94,
+    "completed": 95,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-10-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-11-article.md"
 }

@@ -549,6 +549,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-11",
+      "title": "模型评估与交叉验证",
+      "articleId": "S2-005",
+      "stage": 2,
+      "stageName": "机器学习核心",
+      "url": "archives/articles/2026-06-11-article.md"
+    },
+    {
       "date": "2026-06-10",
       "title": "特征工程实战手册",
       "articleId": "S2-004",
