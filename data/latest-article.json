@@ -1,34 +1,34 @@
 {
-  "date": "2026年6月11日",
-  "updateTime": "2026-06-11 08:00",
-  "articleId": "S2-005",
-  "title": "模型评估与交叉验证",
-  "summary": "模型评估与交叉验证的核心是从单一指标转向多维度可靠性验证。精确率/召回率解决不平衡数据评估偏差，ROC-AUC提供全局排序能力，K-Fold确保评估统计稳健性，三者共同构建可信赖机器学习模型。",
+  "date": "2026年6月12日",
+  "updateTime": "2026-06-12 08:00",
+  "articleId": "S2-006",
+  "title": "sklearn机器学习Pipeline实战",
+  "summary": "使用sklearn Pipeline将数据预处理、特征工程与模型训练封装为统一工作流，是提升代码可维护性、避免数据泄露、实现自动化超参搜索的关键技术。Pipeline通过链式调用确保数据变换仅在训练集拟合，是区分脚本式开发与工程化思维的分水岭。",
   "stage": {
     "id": 2,
     "name": "机器学习核心",
     "color": "#f59e0b"
   },
   "techPoints": [
-    "精确率/召回率",
-    "ROC-AUC",
-    "K-Fold"
+    "预处理管道",
+    "超参搜索",
+    "模型选择"
   ],
   "dependencies": [
     {
       "stageName": "机器学习核心",
       "stageId": 2,
-      "topic": "分类模型",
-      "reason": "理解「模型评估与交叉验证」需要掌握「分类模型」的相关知识"
+      "topic": "特征工程",
+      "reason": "理解「sklearn机器学习Pipeline实战」需要掌握「特征工程」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "sklearn机器学习Pipeline实战",
-    "teaser": "下一篇将探讨预处理管道和超参搜索等技术要点"
+    "title": "集成学习：Boosting与Stacking",
+    "teaser": "下一篇将探讨XGBoost和LightGBM等技术要点"
   },
   "progress": {
-    "completed": 95,
+    "completed": 96,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-11-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-12-article.md"
 }
