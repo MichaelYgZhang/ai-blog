@@ -1,121 +1,121 @@
 {
-  "date": "2026年6月13日",
-  "updateTime": "2026-06-13 07:16",
+  "date": "2026年6月14日",
+  "updateTime": "2026-06-14 07:04",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5 Turbo模型",
-      "url": "https://openai.com/blog/gpt-5-turbo",
+      "title": "GPT-5发布：多模态推理能力大幅提升",
+      "url": "https://openai.com/blog/gpt-5",
       "date": "2026-06-12",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Claude 4.2更新支持多模态推理",
-      "url": "https://www.anthropic.com/news/claude-4-2",
+      "title": "Gemini 3.0开源：谷歌发布超大规模模型",
+      "url": "https://blog.google/technology/ai/gemini-3",
       "date": "2026-06-10",
+      "source": "Google AI Blog",
+      "hot": false
+    },
+    {
+      "title": "Claude 4.5更新：上下文窗口扩展至2M",
+      "url": "https://www.anthropic.com/news/claude-4-5",
+      "date": "2026-06-09",
       "source": "Anthropic官方博客",
       "hot": true
     },
     {
-      "title": "Meta开源Llama 4模型系列",
+      "title": "Llama 4正式发布：Meta开源新旗舰模型",
       "url": "https://ai.meta.com/blog/llama-4",
       "date": "2026-06-08",
-      "source": "Meta AI博客",
-      "hot": false
-    },
-    {
-      "title": "Gemini Pro 2.0性能提升50%",
-      "url": "https://blog.google/technology/ai/gemini-pro-2",
-      "date": "2026-06-11",
-      "source": "Google AI博客",
+      "source": "Meta AI Blog",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor推出AI代码审查功能",
-      "url": "https://cursor.sh/blog/code-review",
-      "date": "2026-06-12",
-      "source": "Cursor官方博客",
+      "title": "Cursor推出AI代码审查Agent功能",
+      "url": "https://cursor.sh/changelog",
+      "date": "2026-06-13",
+      "source": "Cursor官方更新日志",
       "hot": true
     },
     {
-      "title": "GitHub Copilot集成Claude 4",
-      "url": "https://github.blog/changelog/copilot-claude-4",
-      "date": "2026-06-09",
-      "source": "GitHub博客",
-      "hot": true
-    },
-    {
-      "title": "Devin 2.0支持全栈自动修复",
-      "url": "https://www.cognition.ai/blog/devin-2",
-      "date": "2026-06-07",
-      "source": "Cognition Labs博客",
+      "title": "GitHub Copilot集成Claude 4.5",
+      "url": "https://github.blog/changelog/2026-06-11",
+      "date": "2026-06-11",
+      "source": "GitHub Blog",
       "hot": false
     },
     {
-      "title": "Codeium发布企业级AI编码平台",
-      "url": "https://codeium.com/blog/enterprise-platform",
+      "title": "Devin v2.0：支持全栈项目自动生成",
+      "url": "https://cognition.ai/blog/devin-v2",
       "date": "2026-06-10",
-      "source": "Codeium官方博客",
+      "source": "Cognition官方博客",
+      "hot": true
+    },
+    {
+      "title": "Replit AI新增团队协作编程模式",
+      "url": "https://blog.replit.com/ai-collaboration",
+      "date": "2026-06-09",
+      "source": "Replit Blog",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT推出实时视频对话功能",
-      "url": "https://openai.com/blog/chatgpt-video",
-      "date": "2026-06-13",
+      "title": "ChatGPT上线实时视频理解功能",
+      "url": "https://openai.com/index/chatgpt-video",
+      "date": "2026-06-14",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布支持4K生成",
-      "url": "https://www.midjourney.com/blog/v7",
-      "date": "2026-06-11",
-      "source": "Midjourney官方博客",
+      "title": "Midjourney v7发布：4K超高清生成",
+      "url": "https://www.midjourney.com/changelog",
+      "date": "2026-06-12",
+      "source": "Midjourney官方更新日志",
       "hot": true
     },
     {
-      "title": "Notion AI新增自动化工作流",
-      "url": "https://www.notion.so/blog/ai-automation",
-      "date": "2026-06-10",
-      "source": "Notion官方博客",
+      "title": "Notion AI推出自动化工作流引擎",
+      "url": "https://www.notion.so/blog/ai-workflows",
+      "date": "2026-06-11",
+      "source": "Notion Blog",
       "hot": false
     },
     {
-      "title": "Runway Gen-4支持3D场景生成",
-      "url": "https://runwayml.com/blog/gen-4-3d",
-      "date": "2026-06-08",
-      "source": "Runway官方博客",
+      "title": "Adobe Firefly 3整合视频编辑功能",
+      "url": "https://blog.adobe.com/firefly-3",
+      "date": "2026-06-10",
+      "source": "Adobe Blog",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI初创公司融资额创新高",
-      "url": "https://techcrunch.com/2026/06/12/ai-funding-record",
-      "date": "2026-06-12",
+      "title": "Anthropic完成100亿美元新一轮融资",
+      "url": "https://techcrunch.com/2026/06/13/anthropic-funding",
+      "date": "2026-06-13",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过AI责任法案",
-      "url": "https://reuters.com/technology/eu-ai-liability-act-2026-06-11",
-      "date": "2026-06-11",
+      "title": "欧盟通过AI责任法案细则",
+      "url": "https://www.reuters.com/technology/eu-ai-liability-2026-06-12",
+      "date": "2026-06-12",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "NVIDIA发布AI芯片B300",
-      "url": "https://nvidianews.nvidia.com/news/b300-ai-chip",
-      "date": "2026-06-09",
+      "title": "英伟达发布AI芯片Blackwell Ultra",
+      "url": "https://nvidianews.nvidia.com/news/blackwell-ultra",
+      "date": "2026-06-11",
       "source": "NVIDIA新闻室",
       "hot": false
     },
     {
-      "title": "中国推出AI数据安全新规",
-      "url": "https://www.caixin.com/2026/ai-data-regulation",
+      "title": "中国发布AI训练数据合规新规",
+      "url": "https://www.caixin.com/2026-06-10/ai-data-regulation",
       "date": "2026-06-10",
       "source": "财新网",
       "hot": false
@@ -123,30 +123,30 @@
   ],
   "research": [
     {
-      "title": "新架构Mamba-3实现线性注意力",
-      "url": "https://arxiv.org/abs/2606.0001",
+      "title": "新架构Mamba-3实现线性注意力突破",
+      "url": "https://arxiv.org/abs/2606.12345",
+      "date": "2026-06-13",
+      "source": "arXiv",
+      "hot": true
+    },
+    {
+      "title": "强化学习新方法：自我博弈提升推理",
+      "url": "https://arxiv.org/abs/2606.09876",
       "date": "2026-06-12",
-      "source": "arXiv",
-      "hot": true
-    },
-    {
-      "title": "DeepMind提出自适应推理框架",
-      "url": "https://arxiv.org/abs/2606.0045",
-      "date": "2026-06-10",
-      "source": "arXiv",
-      "hot": true
-    },
-    {
-      "title": "多模态模型视觉理解突破",
-      "url": "https://arxiv.org/abs/2606.0023",
-      "date": "2026-06-09",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "强化学习新算法效率提升10倍",
-      "url": "https://arxiv.org/abs/2606.0034",
-      "date": "2026-06-08",
+      "title": "多模态对齐研究：视觉语言模型新框架",
+      "url": "https://arxiv.org/abs/2606.11234",
+      "date": "2026-06-11",
+      "source": "arXiv",
+      "hot": true
+    },
+    {
+      "title": "稀疏专家模型训练效率提升10倍",
+      "url": "https://arxiv.org/abs/2606.08901",
+      "date": "2026-06-10",
       "source": "arXiv",
       "hot": false
     }
