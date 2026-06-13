@@ -549,6 +549,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-13",
+      "title": "集成学习：Boosting与Stacking",
+      "articleId": "S2-007",
+      "stage": 2,
+      "stageName": "机器学习核心",
+      "url": "archives/articles/2026-06-13-article.md"
+    },
+    {
       "date": "2026-06-12",
       "title": "sklearn机器学习Pipeline实战",
       "articleId": "S2-006",

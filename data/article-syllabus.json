@@ -1742,7 +1742,8 @@
         "topic": "决策树"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-06-13"
   },
   {
     "id": "S2-008",

@@ -1,34 +1,34 @@
 {
-  "date": "2026年6月12日",
-  "updateTime": "2026-06-12 08:00",
-  "articleId": "S2-006",
-  "title": "sklearn机器学习Pipeline实战",
-  "summary": "使用sklearn Pipeline将数据预处理、特征工程与模型训练封装为统一工作流，是提升代码可维护性、避免数据泄露、实现自动化超参搜索的关键技术。Pipeline通过链式调用确保数据变换仅在训练集拟合，是区分脚本式开发与工程化思维的分水岭。",
+  "date": "2026年6月13日",
+  "updateTime": "2026-06-13 08:00",
+  "articleId": "S2-007",
+  "title": "集成学习：Boosting与Stacking",
+  "summary": "集成学习通过组合多个弱学习器提升模型性能，Boosting串行迭代修正前序错误，Stacking用元学习器融合基模型预测。XGBoost和LightGBM是Boosting的代表工具，在竞赛和工业界被证明是提升精度的最有效手段之一。",
   "stage": {
     "id": 2,
     "name": "机器学习核心",
     "color": "#f59e0b"
   },
   "techPoints": [
-    "预处理管道",
-    "超参搜索",
-    "模型选择"
+    "XGBoost",
+    "LightGBM",
+    "模型融合"
   ],
   "dependencies": [
     {
       "stageName": "机器学习核心",
       "stageId": 2,
-      "topic": "特征工程",
-      "reason": "理解「sklearn机器学习Pipeline实战」需要掌握「特征工程」的相关知识"
+      "topic": "决策树",
+      "reason": "理解「集成学习：Boosting与Stacking」需要掌握「决策树」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "集成学习：Boosting与Stacking",
-    "teaser": "下一篇将探讨XGBoost和LightGBM等技术要点"
+    "title": "聚类分析：K-Means到DBSCAN",
+    "teaser": "下一篇将探讨距离度量和密度聚类等技术要点"
   },
   "progress": {
-    "completed": 96,
+    "completed": 97,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-12-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-13-article.md"
 }
