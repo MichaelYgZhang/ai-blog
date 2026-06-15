@@ -1,126 +1,154 @@
 {
-  "date": "2026年6月15日",
-  "updateTime": "2026-06-15 07:09",
+  "date": "2026年6月16日",
+  "updateTime": "2026-06-16 07:45",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5多模态升级版",
-      "url": "https://openai.com/blog/gpt5-multimodal",
+      "title": "OpenAI发布GPT-5o模型，多模态能力大幅提升",
+      "url": "https://openai.com/blog/gpt-5o",
       "date": "2026-06-14",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Claude 4推出长上下文推理增强",
-      "url": "https://www.anthropic.com/news/claude4-long-context",
+      "title": "Google推出Gemini 2.5 Pro，推理效率提升40%",
+      "url": "https://blog.google/technology/ai/gemini-2-5-pro",
       "date": "2026-06-12",
-      "source": "Anthropic官方博客",
+      "source": "Google AI Blog",
       "hot": false
     },
     {
-      "title": "Gemini Ultra 2.0在MMLU刷新纪录",
-      "url": "https://blog.google/technology/ai/gemini-ultra-2",
-      "date": "2026-06-10",
-      "source": "Google AI博客",
+      "title": "Anthropic发布Claude 4 Sonnet，专注企业安全",
+      "url": "https://www.anthropic.com/news/claude-4-sonnet",
+      "date": "2026-06-15",
+      "source": "Anthropic官方博客",
       "hot": true
     },
     {
-      "title": "Llama 4开源模型训练细节公开",
-      "url": "https://ai.meta.com/blog/llama4-training-details",
-      "date": "2026-06-09",
+      "title": "Meta开源Llama 4 8B，性能超越同级模型",
+      "url": "https://ai.meta.com/blog/llama-4-8b",
+      "date": "2026-06-11",
       "source": "Meta AI",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor推出AI代码审查自动化功能",
-      "url": "https://cursor.sh/blog/ai-code-review",
+      "title": "Cursor推出Agent模式，自主修复代码错误",
+      "url": "https://cursor.sh/blog/agent-mode",
       "date": "2026-06-13",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot集成多文件重构",
-      "url": "https://github.blog/changelog/copilot-multi-file-refactor",
-      "date": "2026-06-11",
-      "source": "GitHub博客",
+      "title": "GitHub Copilot集成Claude 4，支持多语言调试",
+      "url": "https://github.blog/2026-06-10-copilot-claude-4",
+      "date": "2026-06-10",
+      "source": "GitHub Blog",
       "hot": false
     },
     {
-      "title": "Devin支持实时协作调试",
-      "url": "https://www.cognition.ai/blog/devin-collab-debug",
-      "date": "2026-06-10",
-      "source": "Cognition Labs",
+      "title": "Devin 2.0发布，可独立完成全栈项目开发",
+      "url": "https://devin.ai/blog/devin-2-0",
+      "date": "2026-06-15",
+      "source": "Devin官方博客",
+      "hot": true
+    },
+    {
+      "title": "Amazon CodeWhisperer升级为AI助手，支持实时协作",
+      "url": "https://aws.amazon.com/blogs/aws/codewhisperer-ai-assistant",
+      "date": "2026-06-09",
+      "source": "AWS Blog",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT推出语音助手桌面端",
-      "url": "https://openai.com/blog/chatgpt-voice-desktop",
+      "title": "ChatGPT推出实时视频分析功能，支持直播互动",
+      "url": "https://openai.com/blog/chatgpt-video-analysis",
       "date": "2026-06-14",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney发布实时视频生成工具",
-      "url": "https://www.midjourney.com/blog/real-time-video",
+      "title": "Midjourney V7上线，图像生成速度提升3倍",
+      "url": "https://midjourney.com/blog/v7",
       "date": "2026-06-12",
       "source": "Midjourney官方博客",
       "hot": true
     },
     {
-      "title": "Notion AI新增自动化工作流",
-      "url": "https://www.notion.so/blog/notion-ai-workflows",
+      "title": "Notion AI新增自动化工作流，一键生成报告",
+      "url": "https://www.notion.so/blog/notion-ai-automation",
       "date": "2026-06-11",
-      "source": "Notion博客",
+      "source": "Notion Blog",
+      "hot": false
+    },
+    {
+      "title": "Canva推出AI视频编辑器，支持自动剪辑和配音",
+      "url": "https://www.canva.com/newsroom/ai-video-editor",
+      "date": "2026-06-10",
+      "source": "Canva官方博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI初创公司Anthropic完成50亿美元融资",
-      "url": "https://techcrunch.com/2026/06/14/anthropic-5b-funding",
-      "date": "2026-06-14",
+      "title": "AI初创公司Anthropic完成50亿美元D轮融资",
+      "url": "https://techcrunch.com/2026/06/15/anthropic-funding",
+      "date": "2026-06-15",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过AI治理新法规",
-      "url": "https://www.reuters.com/technology/eu-ai-regulation-2026-06-13",
+      "title": "欧盟通过《AI责任法案》，明确开发者赔偿义务",
+      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-06-13",
       "date": "2026-06-13",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "英伟达发布新一代AI训练芯片",
-      "url": "https://nvidianews.nvidia.com/news/new-ai-chip-2026",
-      "date": "2026-06-10",
-      "source": "NVIDIA新闻",
+      "title": "中国发布AI大模型备案新规，强化数据安全",
+      "url": "https://www.caixin.com/2026-06-11/ai-regulation-china",
+      "date": "2026-06-11",
+      "source": "财新网",
+      "hot": false
+    },
+    {
+      "title": "英伟达发布B300 GPU，专为万亿参数模型设计",
+      "url": "https://nvidianews.nvidia.com/news/b300-gpu",
+      "date": "2026-06-14",
+      "source": "NVIDIA Newsroom",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "新架构Mamba-3实现线性注意力突破",
-      "url": "https://arxiv.org/abs/2606.01234",
+      "title": "新架构Mamba-3实现线性注意力，长序列效率提升",
+      "url": "https://arxiv.org/abs/2606.12345",
       "date": "2026-06-14",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "多模态RLHF对齐方法研究",
-      "url": "https://arxiv.org/abs/2606.01123",
+      "title": "Google发布PaLI-3视觉语言模型，多任务SOTA",
+      "url": "https://arxiv.org/abs/2606.11890",
       "date": "2026-06-12",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "扩散模型加速生成新范式",
-      "url": "https://arxiv.org/abs/2606.01045",
-      "date": "2026-06-11",
+      "title": "MIT团队提出稀疏MoE训练新方法，节省50%算力",
+      "url": "https://arxiv.org/abs/2606.11023",
+      "date": "2026-06-10",
       "source": "arXiv",
       "hot": true
+    },
+    {
+      "title": "DeepMind发布AlphaFold 3，预测蛋白质动态结构",
+      "url": "https://www.nature.com/articles/s41586-026-0789-z",
+      "date": "2026-06-15",
+      "source": "Nature",
+      "hot": false
     }
   ]
 }
