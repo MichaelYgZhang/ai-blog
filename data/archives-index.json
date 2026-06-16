@@ -554,6 +554,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-16",
+      "title": "贝叶斯方法与概率图模型",
+      "articleId": "S2-010",
+      "stage": 2,
+      "stageName": "机器学习核心",
+      "url": "archives/articles/2026-06-16-article.md"
+    },
+    {
       "date": "2026-06-15",
       "title": "降维技术：PCA与t-SNE",
       "articleId": "S2-009",

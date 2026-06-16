@@ -1,34 +1,34 @@
 {
-  "date": "2026年6月15日",
-  "updateTime": "2026-06-15 08:00",
-  "articleId": "S2-009",
-  "title": "降维技术：PCA与t-SNE",
-  "summary": "PCA通过线性变换保留全局方差结构，适用于特征压缩与去噪；t-SNE通过非线性映射保留局部邻域关系，专注于高维数据可视化。两者分别服务于特征工程与探索性分析，是AI工程中连接数据处理与模型优化的关键桥梁。",
+  "date": "2026年6月16日",
+  "updateTime": "2026-06-16 08:00",
+  "articleId": "S2-010",
+  "title": "贝叶斯方法与概率图模型",
+  "summary": "贝叶斯方法与概率图模型为AI提供不确定性下的推理与学习框架，涵盖朴素贝叶斯、贝叶斯网络和MCMC。朴素贝叶斯基于条件独立假设高效分类，贝叶斯网络结构化建模依赖关系，MCMC实现复杂推断，共同推动从硬编码规则到概率化智能决策的跃迁。",
   "stage": {
     "id": 2,
     "name": "机器学习核心",
     "color": "#f59e0b"
   },
   "techPoints": [
-    "特征值分解",
-    "方差保留",
-    "可视化"
+    "朴素贝叶斯",
+    "贝叶斯网络",
+    "MCMC"
   ],
   "dependencies": [
     {
       "stageName": "编程与数学基础",
       "stageId": 1,
-      "topic": "线性代数",
-      "reason": "理解「降维技术：PCA与t-SNE」需要掌握「线性代数」的相关知识"
+      "topic": "概率统计",
+      "reason": "理解「贝叶斯方法与概率图模型」需要掌握「概率统计」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "贝叶斯方法与概率图模型",
-    "teaser": "下一篇将探讨朴素贝叶斯和贝叶斯网络等技术要点"
+    "title": "时间序列分析与预测",
+    "teaser": "下一篇将探讨ARIMA和Prophet等技术要点"
   },
   "progress": {
-    "completed": 99,
+    "completed": 100,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-15-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-16-article.md"
 }
