@@ -554,6 +554,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-18",
+      "title": "推荐系统基础：协同过滤",
+      "articleId": "S2-012",
+      "stage": 2,
+      "stageName": "机器学习核心",
+      "url": "archives/articles/2026-06-18-article.md"
+    },
+    {
       "date": "2026-06-17",
       "title": "时间序列分析与预测",
       "articleId": "S2-011",

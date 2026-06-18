@@ -1,34 +1,34 @@
 {
-  "date": "2026年6月17日",
-  "updateTime": "2026-06-17 08:00",
-  "articleId": "S2-011",
-  "title": "时间序列分析与预测",
-  "summary": "时间序列分析与预测的核心在于理解数据时序依赖性并选择合适模型与特征，而非盲目追求复杂深度学习。ARIMA模型通过自回归、差分和移动平均捕捉趋势与周期性，结合特征工程如滞后特征和滑动窗口统计量，能有效提升预测精度与可解释性。",
+  "date": "2026年6月18日",
+  "updateTime": "2026-06-18 08:00",
+  "articleId": "S2-012",
+  "title": "推荐系统基础：协同过滤",
+  "summary": "协同过滤通过用户相似度计算和矩阵分解挖掘群体行为模式预测偏好，是推荐系统核心算法。文章解析余弦相似度、皮尔逊相关系数等原理，并探讨冷启动与稀疏性挑战，为构建工业级推荐系统提供基础思维框架。",
   "stage": {
     "id": 2,
     "name": "机器学习核心",
     "color": "#f59e0b"
   },
   "techPoints": [
-    "ARIMA",
-    "Prophet",
-    "特征构造"
+    "用户相似度",
+    "矩阵分解",
+    "冷启动"
   ],
   "dependencies": [
     {
       "stageName": "编程与数学基础",
       "stageId": 1,
-      "topic": "概率统计",
-      "reason": "理解「时间序列分析与预测」需要掌握「概率统计」的相关知识"
+      "topic": "线性代数",
+      "reason": "理解「推荐系统基础：协同过滤」需要掌握「线性代数」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "推荐系统基础：协同过滤",
-    "teaser": "下一篇将探讨用户相似度和矩阵分解等技术要点"
+    "title": "异常检测方法与应用",
+    "teaser": "下一篇将探讨Isolation Forest和Autoencoder等技术要点"
   },
   "progress": {
-    "completed": 101,
+    "completed": 102,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-17-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-18-article.md"
 }
