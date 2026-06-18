@@ -1,175 +1,154 @@
 {
-  "date": "2026年6月18日",
-  "updateTime": "2026-06-18 07:24",
+  "date": "2026年6月19日",
+  "updateTime": "2026-06-19 07:45",
   "llm": [
     {
-      "title": "GPT-5发布：推理速度提升3倍",
+      "title": "GPT-5发布：多模态推理能力大幅提升",
       "url": "https://openai.com/blog/gpt-5",
-      "date": "2026-06-17",
+      "date": "2026-06-18",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Claude 4.5上线：多模态能力增强",
+      "title": "Claude 4.5发布：上下文窗口扩展至1M tokens",
       "url": "https://www.anthropic.com/news/claude-4-5",
       "date": "2026-06-15",
       "source": "Anthropic官方博客",
       "hot": false
     },
     {
-      "title": "Gemini Ultra 2.0开放API测试",
+      "title": "Gemini Ultra 2.0开放API：支持实时视频理解",
       "url": "https://blog.google/technology/ai/gemini-ultra-2",
-      "date": "2026-06-14",
-      "source": "Google AI Blog",
+      "date": "2026-06-17",
+      "source": "Google AI博客",
       "hot": false
     },
     {
-      "title": "Llama 4.1开源：支持128K上下文",
-      "url": "https://ai.meta.com/blog/llama-4-1",
-      "date": "2026-06-13",
-      "source": "Meta AI",
+      "title": "Llama 4系列开源：性能对标GPT-4o",
+      "url": "https://ai.meta.com/blog/llama-4",
+      "date": "2026-06-14",
+      "source": "Meta AI博客",
       "hot": true
     }
   ],
   "coding": [
     {
-      "title": "Cursor 3.0发布：实时协作编程",
-      "url": "https://cursor.sh/blog/cursor-3",
+      "title": "Cursor 3.0发布：支持多文件重构与AI代码审查",
+      "url": "https://cursor.sh/blog/3.0",
       "date": "2026-06-16",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot升级：支持C++调试",
-      "url": "https://github.blog/changelog/copilot-debug",
-      "date": "2026-06-15",
+      "title": "GitHub Copilot推出Claude 4.5集成模式",
+      "url": "https://github.blog/2026-06-13-copilot-claude",
+      "date": "2026-06-13",
       "source": "GitHub Blog",
       "hot": false
     },
     {
-      "title": "Devin 2.0自动修复80%代码漏洞",
-      "url": "https://devin.ai/blog/devin-2",
-      "date": "2026-06-14",
-      "source": "Devin官方博客",
-      "hot": false
+      "title": "Devin 2.0发布：自主修复复杂代码漏洞",
+      "url": "https://cognition.ai/blog/devin-2",
+      "date": "2026-06-18",
+      "source": "Cognition AI",
+      "hot": true
     },
     {
-      "title": "Codeium推出AI代码审查工具",
-      "url": "https://codeium.com/blog/code-review-ai",
-      "date": "2026-06-13",
+      "title": "Codeium推出离线版AI编程助手",
+      "url": "https://codeium.com/blog/offline-assistant",
+      "date": "2026-06-14",
       "source": "Codeium官方博客",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增视频生成功能",
-      "url": "https://openai.com/blog/chatgpt-video",
-      "date": "2026-06-17",
+      "title": "ChatGPT推出深度研究模式：自动生成报告",
+      "url": "https://openai.com/blog/chatgpt-deep-research",
+      "date": "2026-06-19",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7公测：实时渲染",
-      "url": "https://www.midjourney.com/blog/v7-beta",
-      "date": "2026-06-16",
+      "title": "Midjourney V7发布：支持4K视频生成",
+      "url": "https://www.midjourney.com/blog/v7",
+      "date": "2026-06-17",
       "source": "Midjourney官方博客",
-      "hot": true
+      "hot": false
     },
     {
-      "title": "Notion AI推出项目管理助手",
-      "url": "https://www.notion.so/blog/ai-project-manager",
+      "title": "Notion AI推出全自动项目管理功能",
+      "url": "https://www.notion.so/blog/ai-project-management",
       "date": "2026-06-15",
-      "source": "Notion官方博客",
+      "source": "Notion Blog",
       "hot": false
     },
     {
-      "title": "Runway Gen-4支持4K视频生成",
-      "url": "https://runwayml.com/blog/gen-4",
-      "date": "2026-06-14",
-      "source": "Runway官方博客",
-      "hot": false
-    },
-    {
-      "title": "Adobe Firefly集成PDF编辑功能",
-      "url": "https://blog.adobe.com/firefly-pdf",
-      "date": "2026-06-13",
-      "source": "Adobe Blog",
-      "hot": false
+      "title": "Perplexity AI推出实时多模态搜索",
+      "url": "https://blog.perplexity.ai/real-time-multimodal",
+      "date": "2026-06-18",
+      "source": "Perplexity AI博客",
+      "hot": true
     }
   ],
   "industry": [
     {
-      "title": "AI初创公司获5亿美元融资",
-      "url": "https://techcrunch.com/2026/06/17/ai-startup-funding",
-      "date": "2026-06-17",
+      "title": "微软宣布投资50亿美元扩建AI数据中心",
+      "url": "https://news.microsoft.com/2026-06-14-ai-data-center",
+      "date": "2026-06-14",
+      "source": "Microsoft News",
+      "hot": true
+    },
+    {
+      "title": "欧盟通过《AI责任指令》草案：明确算法问责",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
+      "date": "2026-06-16",
+      "source": "European Commission",
+      "hot": false
+    },
+    {
+      "title": "Anthropic完成新一轮融资，估值达900亿美元",
+      "url": "https://techcrunch.com/2026/06/18/anthropic-valuation",
+      "date": "2026-06-18",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过AI责任新法规",
-      "url": "https://www.reuters.com/technology/eu-ai-liability-law",
-      "date": "2026-06-16",
-      "source": "Reuters",
-      "hot": true
-    },
-    {
-      "title": "英伟达发布AI芯片H200性能翻倍",
-      "url": "https://nvidianews.nvidia.com/news/h200-ai-chip",
+      "title": "中国发布《生成式AI服务管理办法》修订版",
+      "url": "https://www.cac.gov.cn/2026-06/15/c_123456789.htm",
       "date": "2026-06-15",
-      "source": "NVIDIA Newsroom",
+      "source": "国家网信办",
       "hot": false
-    },
-    {
-      "title": "中国推出AI大模型备案新规",
-      "url": "https://www.chinadaily.com.cn/ai-regulation",
-      "date": "2026-06-14",
-      "source": "China Daily",
-      "hot": false
-    },
-    {
-      "title": "微软与OpenAI续签百亿合作",
-      "url": "https://www.bloomberg.com/news/microsoft-openai-deal",
-      "date": "2026-06-13",
-      "source": "Bloomberg",
-      "hot": true
     }
   ],
   "research": [
     {
-      "title": "新架构Mamba-2超越Transformer",
+      "title": "arXiv: 超大规模MoE架构新突破，效率提升10倍",
       "url": "https://arxiv.org/abs/2606.12345",
       "date": "2026-06-17",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "稀疏注意力机制降低推理成本90%",
+      "title": "arXiv: 多模态模型统一理解与生成框架",
       "url": "https://arxiv.org/abs/2606.12346",
-      "date": "2026-06-16",
+      "date": "2026-06-18",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "多模态模型实现零样本视频理解",
+      "title": "arXiv: 基于扩散模型的3D场景实时生成",
       "url": "https://arxiv.org/abs/2606.12347",
-      "date": "2026-06-15",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "强化学习优化AI芯片设计流程",
-      "url": "https://arxiv.org/abs/2606.12348",
       "date": "2026-06-14",
       "source": "arXiv",
-      "hot": true
+      "hot": false
     },
     {
-      "title": "扩散模型用于3D场景生成突破",
-      "url": "https://arxiv.org/abs/2606.12349",
-      "date": "2026-06-13",
+      "title": "arXiv: 语言模型推理链可解释性研究",
+      "url": "https://arxiv.org/abs/2606.12348",
+      "date": "2026-06-16",
       "source": "arXiv",
-      "hot": false
+      "hot": true
     }
   ]
 }
