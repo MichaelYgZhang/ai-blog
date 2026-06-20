@@ -1868,7 +1868,8 @@
         "topic": "模型评估"
       }
     ],
-    "status": "pending"
+    "status": "published",
+    "publishDate": "2026-06-20"
   },
   {
     "id": "S2-015",
