@@ -1,34 +1,34 @@
 {
-  "date": "2026年6月20日",
-  "updateTime": "2026-06-20 08:00",
-  "articleId": "S2-014",
-  "title": "Kaggle竞赛实战攻略",
-  "summary": "Kaggle竞赛核心竞争力在于系统化EDA发现数据规律、精巧特征构造提升模型上限及科学提交策略稳定获高分。EDA、特征构造和提交策略构成实战铁三角，决定数据洞察、模型学习与最终排名，是连接理论与工业实践的关键桥梁。",
+  "date": "2026年6月21日",
+  "updateTime": "2026-06-21 08:00",
+  "articleId": "S2-015",
+  "title": "数据不平衡问题处理",
+  "summary": "处理数据不平衡的核心在于通过过采样、SMOTE或代价敏感方法干预模型对多数类的偏向性，迫使模型学习少数类有效特征，避免准确率陷阱，实现从跑通模型到实战可用的关键跨越。",
   "stage": {
     "id": 2,
     "name": "机器学习核心",
     "color": "#f59e0b"
   },
   "techPoints": [
-    "EDA",
-    "特征构造",
-    "提交策略"
+    "过采样",
+    "SMOTE",
+    "代价敏感"
   ],
   "dependencies": [
     {
       "stageName": "机器学习核心",
       "stageId": 2,
       "topic": "模型评估",
-      "reason": "理解「Kaggle竞赛实战攻略」需要掌握「模型评估」的相关知识"
+      "reason": "理解「数据不平衡问题处理」需要掌握「模型评估」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "数据不平衡问题处理",
-    "teaser": "下一篇将探讨过采样和SMOTE等技术要点"
+    "title": "Python基础：数据结构与函数",
+    "teaser": "下一篇将探讨列表/字典和函数式编程等技术要点"
   },
   "progress": {
-    "completed": 104,
+    "completed": 105,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-20-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-21-article.md"
 }
