@@ -1,34 +1,27 @@
 {
-  "date": "2026年6月21日",
-  "updateTime": "2026-06-21 08:00",
-  "articleId": "S2-015",
-  "title": "数据不平衡问题处理",
-  "summary": "处理数据不平衡的核心在于通过过采样、SMOTE或代价敏感方法干预模型对多数类的偏向性，迫使模型学习少数类有效特征，避免准确率陷阱，实现从跑通模型到实战可用的关键跨越。",
+  "date": "2026年6月22日",
+  "updateTime": "2026-06-22 08:00",
+  "articleId": "S1-001",
+  "title": "Python基础：数据结构与函数",
+  "summary": "掌握Python列表/字典等核心数据结构与函数式编程范式，是构建高效AI程序的基础。面向对象思想直接对应神经网络模块化设计逻辑，帮助将数学公式转化为可运行代码，避免调试陷阱。",
   "stage": {
-    "id": 2,
-    "name": "机器学习核心",
-    "color": "#f59e0b"
+    "id": 1,
+    "name": "编程与数学基础",
+    "color": "#6366f1"
   },
   "techPoints": [
-    "过采样",
-    "SMOTE",
-    "代价敏感"
+    "列表/字典",
+    "函数式编程",
+    "面向对象"
   ],
-  "dependencies": [
-    {
-      "stageName": "机器学习核心",
-      "stageId": 2,
-      "topic": "模型评估",
-      "reason": "理解「数据不平衡问题处理」需要掌握「模型评估」的相关知识"
-    }
-  ],
+  "dependencies": [],
   "nextPreview": {
-    "title": "Python基础：数据结构与函数",
-    "teaser": "下一篇将探讨列表/字典和函数式编程等技术要点"
+    "title": "NumPy数组运算与广播机制",
+    "teaser": "下一篇将探讨ndarray和广播规则等技术要点"
   },
   "progress": {
-    "completed": 105,
+    "completed": 106,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-21-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-22-article.md"
 }

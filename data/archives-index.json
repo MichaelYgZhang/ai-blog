@@ -559,6 +559,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-22",
+      "title": "Python基础：数据结构与函数",
+      "articleId": "S1-001",
+      "stage": 1,
+      "stageName": "编程与数学基础",
+      "url": "archives/articles/2026-06-22-article.md"
+    },
+    {
       "date": "2026-06-21",
       "title": "数据不平衡问题处理",
       "articleId": "S2-015",
