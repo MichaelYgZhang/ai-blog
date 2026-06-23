@@ -1,27 +1,34 @@
 {
-  "date": "2026年6月22日",
-  "updateTime": "2026-06-22 08:00",
-  "articleId": "S1-001",
-  "title": "Python基础：数据结构与函数",
-  "summary": "掌握Python列表/字典等核心数据结构与函数式编程范式，是构建高效AI程序的基础。面向对象思想直接对应神经网络模块化设计逻辑，帮助将数学公式转化为可运行代码，避免调试陷阱。",
+  "date": "2026年6月23日",
+  "updateTime": "2026-06-23 08:00",
+  "articleId": "S1-002",
+  "title": "NumPy数组运算与广播机制",
+  "summary": "NumPy广播机制通过自动扩展不同形状数组实现高效向量化运算，是AI工程师从Python基础迈向深度学习框架的关键桥梁。它解决了计算效率与代码可读性的矛盾，使简洁的数组运算获得数十倍性能提升，并成为PyTorch、TensorFlow等框架的通用运算规则。",
   "stage": {
     "id": 1,
     "name": "编程与数学基础",
     "color": "#6366f1"
   },
   "techPoints": [
-    "列表/字典",
-    "函数式编程",
-    "面向对象"
+    "ndarray",
+    "广播规则",
+    "向量化"
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "stageName": "编程与数学基础",
+      "stageId": 1,
+      "topic": "Python基础",
+      "reason": "理解「NumPy数组运算与广播机制」需要掌握「Python基础」的相关知识"
+    }
+  ],
   "nextPreview": {
-    "title": "NumPy数组运算与广播机制",
-    "teaser": "下一篇将探讨ndarray和广播规则等技术要点"
+    "title": "Pandas数据分析入门",
+    "teaser": "下一篇将探讨DataFrame和数据清洗等技术要点"
   },
   "progress": {
-    "completed": 106,
+    "completed": 107,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-22-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-23-article.md"
 }
