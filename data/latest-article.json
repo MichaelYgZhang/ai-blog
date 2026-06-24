@@ -1,34 +1,34 @@
 {
-  "date": "2026年6月23日",
-  "updateTime": "2026-06-23 08:00",
-  "articleId": "S1-002",
-  "title": "NumPy数组运算与广播机制",
-  "summary": "NumPy广播机制通过自动扩展不同形状数组实现高效向量化运算，是AI工程师从Python基础迈向深度学习框架的关键桥梁。它解决了计算效率与代码可读性的矛盾，使简洁的数组运算获得数十倍性能提升，并成为PyTorch、TensorFlow等框架的通用运算规则。",
+  "date": "2026年6月24日",
+  "updateTime": "2026-06-24 08:00",
+  "articleId": "S1-003",
+  "title": "Pandas数据分析入门",
+  "summary": "Pandas是AI工程师进行数据预处理的核心工具，掌握DataFrame操作、数据清洗和分组聚合，能将原始数据转化为高质量数据集。数据清洗占AI项目60%-80%时间，Pandas是面试必考技能，其向量化操作使代码更简洁高效。",
   "stage": {
     "id": 1,
     "name": "编程与数学基础",
     "color": "#6366f1"
   },
   "techPoints": [
-    "ndarray",
-    "广播规则",
-    "向量化"
+    "DataFrame",
+    "数据清洗",
+    "分组聚合"
   ],
   "dependencies": [
     {
       "stageName": "编程与数学基础",
       "stageId": 1,
       "topic": "Python基础",
-      "reason": "理解「NumPy数组运算与广播机制」需要掌握「Python基础」的相关知识"
+      "reason": "理解「Pandas数据分析入门」需要掌握「Python基础」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "Pandas数据分析入门",
-    "teaser": "下一篇将探讨DataFrame和数据清洗等技术要点"
+    "title": "线性代数核心：向量与矩阵运算",
+    "teaser": "下一篇将探讨矩阵乘法和特征值等技术要点"
   },
   "progress": {
-    "completed": 107,
+    "completed": 108,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-23-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-24-article.md"
 }
