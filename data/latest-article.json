@@ -1,34 +1,27 @@
 {
-  "date": "2026年6月24日",
-  "updateTime": "2026-06-24 08:00",
-  "articleId": "S1-003",
-  "title": "Pandas数据分析入门",
-  "summary": "Pandas是AI工程师进行数据预处理的核心工具，掌握DataFrame操作、数据清洗和分组聚合，能将原始数据转化为高质量数据集。数据清洗占AI项目60%-80%时间，Pandas是面试必考技能，其向量化操作使代码更简洁高效。",
+  "date": "2026年6月25日",
+  "updateTime": "2026-06-25 08:00",
+  "articleId": "S1-004",
+  "title": "线性代数核心：向量与矩阵运算",
+  "summary": "矩阵乘法、特征值分解与奇异值分解(SVD)是AI工程师理解神经网络运作、实现数据降维与模型优化的三大数学支柱。本文阐释了矩阵乘法作为线性变换的本质、特征值在梯度问题中的作用及SVD在推荐系统中的应用，帮助读者掌握高维数据处理的核心能力。",
   "stage": {
     "id": 1,
     "name": "编程与数学基础",
     "color": "#6366f1"
   },
   "techPoints": [
-    "DataFrame",
-    "数据清洗",
-    "分组聚合"
+    "矩阵乘法",
+    "特征值",
+    "SVD"
   ],
-  "dependencies": [
-    {
-      "stageName": "编程与数学基础",
-      "stageId": 1,
-      "topic": "Python基础",
-      "reason": "理解「Pandas数据分析入门」需要掌握「Python基础」的相关知识"
-    }
-  ],
+  "dependencies": [],
   "nextPreview": {
-    "title": "线性代数核心：向量与矩阵运算",
-    "teaser": "下一篇将探讨矩阵乘法和特征值等技术要点"
+    "title": "概率论基础：分布与贝叶斯定理",
+    "teaser": "下一篇将探讨条件概率和正态分布等技术要点"
   },
   "progress": {
-    "completed": 108,
+    "completed": 109,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-24-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-25-article.md"
 }
