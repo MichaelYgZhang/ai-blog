@@ -559,6 +559,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-26",
+      "title": "概率论基础：分布与贝叶斯定理",
+      "articleId": "S1-005",
+      "stage": 1,
+      "stageName": "编程与数学基础",
+      "url": "archives/articles/2026-06-26-article.md"
+    },
+    {
       "date": "2026-06-25",
       "title": "线性代数核心：向量与矩阵运算",
       "articleId": "S1-004",
