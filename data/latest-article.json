@@ -1,27 +1,27 @@
 {
-  "date": "2026年6月26日",
-  "updateTime": "2026-06-26 08:00",
-  "articleId": "S1-005",
-  "title": "概率论基础：分布与贝叶斯定理",
-  "summary": "概率论是理解深度学习模型不确定性的数学基石。本文核心讲解条件概率、贝叶斯定理及最大似然估计，揭示交叉熵损失函数的概率本质，帮助AI工程师从概率视角理解模型训练、正则化与评估。",
+  "date": "2026年6月27日",
+  "updateTime": "2026-06-27 08:00",
+  "articleId": "S1-006",
+  "title": "微积分在机器学习中的应用",
+  "summary": "微积分中的偏导数、链式法则和梯度是深度学习反向传播算法的数学基石。偏导数衡量单一参数对损失函数的影响，链式法则实现误差的逐层反向传播，梯度则指引参数优化的方向。掌握这些概念是理解神经网络参数优化和调试模型的关键。",
   "stage": {
     "id": 1,
     "name": "编程与数学基础",
     "color": "#6366f1"
   },
   "techPoints": [
-    "条件概率",
-    "正态分布",
-    "最大似然"
+    "偏导数",
+    "链式法则",
+    "梯度"
   ],
   "dependencies": [],
   "nextPreview": {
-    "title": "微积分在机器学习中的应用",
-    "teaser": "下一篇将探讨偏导数和链式法则等技术要点"
+    "title": "Matplotlib与Seaborn数据可视化",
+    "teaser": "下一篇将探讨图表类型和样式定制等技术要点"
   },
   "progress": {
-    "completed": 110,
+    "completed": 111,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-26-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-27-article.md"
 }

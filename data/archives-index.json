@@ -559,6 +559,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-27",
+      "title": "微积分在机器学习中的应用",
+      "articleId": "S1-006",
+      "stage": 1,
+      "stageName": "编程与数学基础",
+      "url": "archives/articles/2026-06-27-article.md"
+    },
+    {
       "date": "2026-06-26",
       "title": "概率论基础：分布与贝叶斯定理",
       "articleId": "S1-005",
