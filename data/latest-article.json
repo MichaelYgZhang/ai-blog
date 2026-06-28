@@ -1,27 +1,34 @@
 {
-  "date": "2026年6月27日",
-  "updateTime": "2026-06-27 08:00",
-  "articleId": "S1-006",
-  "title": "微积分在机器学习中的应用",
-  "summary": "微积分中的偏导数、链式法则和梯度是深度学习反向传播算法的数学基石。偏导数衡量单一参数对损失函数的影响，链式法则实现误差的逐层反向传播，梯度则指引参数优化的方向。掌握这些概念是理解神经网络参数优化和调试模型的关键。",
+  "date": "2026年6月28日",
+  "updateTime": "2026-06-28 08:00",
+  "articleId": "S1-007",
+  "title": "Matplotlib与Seaborn数据可视化",
+  "summary": "Matplotlib是Python可视化基石，Seaborn提供简洁美观的统计图形接口。两者结合可将数据转化为驱动AI模型迭代的直观洞察，是调试模型、验证假设、沟通结果的核心工具。文章系统讲解图表类型选择、样式定制与统计图绘制，帮助掌握数据可视化实战技能。",
   "stage": {
     "id": 1,
     "name": "编程与数学基础",
     "color": "#6366f1"
   },
   "techPoints": [
-    "偏导数",
-    "链式法则",
-    "梯度"
+    "图表类型",
+    "样式定制",
+    "统计图"
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "stageName": "编程与数学基础",
+      "stageId": 1,
+      "topic": "Python基础",
+      "reason": "理解「Matplotlib与Seaborn数据可视化」需要掌握「Python基础」的相关知识"
+    }
+  ],
   "nextPreview": {
-    "title": "Matplotlib与Seaborn数据可视化",
-    "teaser": "下一篇将探讨图表类型和样式定制等技术要点"
+    "title": "Jupyter Notebook高效使用指南",
+    "teaser": "下一篇将探讨快捷键和Magic命令等技术要点"
   },
   "progress": {
-    "completed": 111,
+    "completed": 112,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-27-article.md"
+  "fullArticleUrl": "archives/articles/2026-06-28-article.md"
 }

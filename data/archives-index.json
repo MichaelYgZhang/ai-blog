@@ -564,6 +564,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-28",
+      "title": "Matplotlib与Seaborn数据可视化",
+      "articleId": "S1-007",
+      "stage": 1,
+      "stageName": "编程与数学基础",
+      "url": "archives/articles/2026-06-28-article.md"
+    },
+    {
       "date": "2026-06-27",
       "title": "微积分在机器学习中的应用",
       "articleId": "S1-006",
