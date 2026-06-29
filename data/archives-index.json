@@ -564,6 +564,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-29",
+      "title": "Jupyter Notebook高效使用指南",
+      "articleId": "S1-008",
+      "stage": 1,
+      "stageName": "编程与数学基础",
+      "url": "archives/articles/2026-06-29-article.md"
+    },
+    {
       "date": "2026-06-28",
       "title": "Matplotlib与Seaborn数据可视化",
       "articleId": "S1-007",
