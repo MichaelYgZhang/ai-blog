@@ -1,6 +1,11 @@
 {
   "daily": [
     {
+      "date": "2026-06-30",
+      "title": "AI快讯 2026年6月30日",
+      "url": "archives/daily/2026-06-30-ai-daily.md"
+    },
+    {
       "date": "2026-06-29",
       "title": "AI快讯 2026年6月29日",
       "url": "archives/daily/2026-06-29-ai-daily.md"
@@ -444,11 +449,6 @@
       "date": "2026-04-01",
       "title": "AI快讯 2026年4月1日",
       "url": "archives/daily/2026-04-01-ai-daily.md"
-    },
-    {
-      "date": "2026-03-31",
-      "title": "AI快讯 2026年3月31日",
-      "url": "archives/daily/2026-03-31-ai-daily.md"
     }
   ],
   "weekly": [
@@ -540,6 +540,11 @@
   ],
   "monthly": [
     {
+      "date": "2026-06",
+      "title": "AI月报 2026年6月",
+      "url": "archives/monthly/2026-06-monthly.md"
+    },
+    {
       "date": "2026-05",
       "title": "AI月报 2026年5月",
       "url": "archives/monthly/2026-05-monthly.md"
@@ -556,6 +561,11 @@
     }
   ],
   "quarterly": [
+    {
+      "date": "2026-Q2",
+      "title": "AI季度报告 2026-Q2",
+      "url": "archives/quarterly/2026-Q2-quarterly.md"
+    },
     {
       "date": "2026-Q1",
       "title": "AI季度报告 2026-Q1",
