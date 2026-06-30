@@ -574,6 +574,14 @@
   ],
   "articles": [
     {
+      "date": "2026-06-30",
+      "title": "Git版本控制与协作开发",
+      "articleId": "S1-009",
+      "stage": 1,
+      "stageName": "编程与数学基础",
+      "url": "archives/articles/2026-06-30-article.md"
+    },
+    {
       "date": "2026-06-29",
       "title": "Jupyter Notebook高效使用指南",
       "articleId": "S1-008",
