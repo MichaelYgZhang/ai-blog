@@ -1,27 +1,34 @@
 {
-  "date": "2026年6月30日",
-  "updateTime": "2026-06-30 08:00",
-  "articleId": "S1-009",
-  "title": "Git版本控制与协作开发",
-  "summary": "Git分支管理与合并策略是AI工程师团队协作的核心能力，能提升项目迭代效率与代码质量。通过分支实现并行开发与实验，利用合并策略安全整合改动，结合GitHub的Pull Request与Code Review功能，构建可追溯、可复现的AI系统工作流。",
+  "date": "2026年7月1日",
+  "updateTime": "2026-07-01 08:00",
+  "articleId": "S1-010",
+  "title": "Python虚拟环境与包管理",
+  "summary": "Python虚拟环境与包管理是AI工程实践的基石，通过venv、pip、conda等工具隔离项目依赖、精确控制包版本，避免“环境地狱”问题，确保AI项目的可复现性与稳定性。",
   "stage": {
     "id": 1,
     "name": "编程与数学基础",
     "color": "#6366f1"
   },
   "techPoints": [
-    "分支管理",
-    "合并策略",
-    "GitHub"
+    "venv",
+    "pip",
+    "conda"
   ],
-  "dependencies": [],
+  "dependencies": [
+    {
+      "stageName": "编程与数学基础",
+      "stageId": 1,
+      "topic": "Python基础",
+      "reason": "理解「Python虚拟环境与包管理」需要掌握「Python基础」的相关知识"
+    }
+  ],
   "nextPreview": {
-    "title": "Python虚拟环境与包管理",
-    "teaser": "下一篇将探讨venv和pip等技术要点"
+    "title": "正则表达式与文本处理",
+    "teaser": "下一篇将探讨模式匹配和分组捕获等技术要点"
   },
   "progress": {
-    "completed": 114,
+    "completed": 115,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-06-30-article.md"
+  "fullArticleUrl": "archives/articles/2026-07-01-article.md"
 }
