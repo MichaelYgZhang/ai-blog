@@ -1,34 +1,34 @@
 {
-  "date": "2026年7月1日",
-  "updateTime": "2026-07-01 08:00",
-  "articleId": "S1-010",
-  "title": "Python虚拟环境与包管理",
-  "summary": "Python虚拟环境与包管理是AI工程实践的基石，通过venv、pip、conda等工具隔离项目依赖、精确控制包版本，避免“环境地狱”问题，确保AI项目的可复现性与稳定性。",
+  "date": "2026年7月2日",
+  "updateTime": "2026-07-02 08:00",
+  "articleId": "S1-011",
+  "title": "正则表达式与文本处理",
+  "summary": "正则表达式是AI工程师进行文本预处理、特征提取与模式匹配的核心工具，掌握它能够将非结构化文本高效转化为结构化信息。本文介绍了模式匹配、分组捕获等核心概念，并通过re模块代码示例展示其实际应用，是构建高质量AI系统的关键基础能力。",
   "stage": {
     "id": 1,
     "name": "编程与数学基础",
     "color": "#6366f1"
   },
   "techPoints": [
-    "venv",
-    "pip",
-    "conda"
+    "模式匹配",
+    "分组捕获",
+    "re模块"
   ],
   "dependencies": [
     {
       "stageName": "编程与数学基础",
       "stageId": 1,
       "topic": "Python基础",
-      "reason": "理解「Python虚拟环境与包管理」需要掌握「Python基础」的相关知识"
+      "reason": "理解「正则表达式与文本处理」需要掌握「Python基础」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "正则表达式与文本处理",
-    "teaser": "下一篇将探讨模式匹配和分组捕获等技术要点"
+    "title": "Python异步编程与并发",
+    "teaser": "下一篇将探讨async/await和多线程等技术要点"
   },
   "progress": {
-    "completed": 115,
+    "completed": 116,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-07-01-article.md"
+  "fullArticleUrl": "archives/articles/2026-07-02-article.md"
 }
