@@ -1,34 +1,34 @@
 {
-  "date": "2026年7月2日",
-  "updateTime": "2026-07-02 08:00",
-  "articleId": "S1-011",
-  "title": "正则表达式与文本处理",
-  "summary": "正则表达式是AI工程师进行文本预处理、特征提取与模式匹配的核心工具，掌握它能够将非结构化文本高效转化为结构化信息。本文介绍了模式匹配、分组捕获等核心概念，并通过re模块代码示例展示其实际应用，是构建高质量AI系统的关键基础能力。",
+  "date": "2026年7月3日",
+  "updateTime": "2026-07-03 08:00",
+  "articleId": "S1-012",
+  "title": "Python异步编程与并发",
+  "summary": "Python异步编程与并发（async/await、多线程、多进程）是AI工程师处理I/O密集型数据加载和CPU密集型模型训练的互补策略，可将训练效率提升50%以上。多线程适合I/O任务，多进程利用多核CPU，异步编程提供轻量级协程调度，贯穿数据预处理、模型训练到推理部署全流程。",
   "stage": {
     "id": 1,
     "name": "编程与数学基础",
     "color": "#6366f1"
   },
   "techPoints": [
-    "模式匹配",
-    "分组捕获",
-    "re模块"
+    "async/await",
+    "多线程",
+    "多进程"
   ],
   "dependencies": [
     {
       "stageName": "编程与数学基础",
       "stageId": 1,
       "topic": "Python基础",
-      "reason": "理解「正则表达式与文本处理」需要掌握「Python基础」的相关知识"
+      "reason": "理解「Python异步编程与并发」需要掌握「Python基础」的相关知识"
     }
   ],
   "nextPreview": {
-    "title": "Python异步编程与并发",
-    "teaser": "下一篇将探讨async/await和多线程等技术要点"
+    "title": "算法基础：排序、搜索与复杂度",
+    "teaser": "下一篇将探讨时间复杂度和二分查找等技术要点"
   },
   "progress": {
-    "completed": 116,
+    "completed": 117,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-07-02-article.md"
+  "fullArticleUrl": "archives/articles/2026-07-03-article.md"
 }

@@ -574,6 +574,14 @@
   ],
   "articles": [
     {
+      "date": "2026-07-03",
+      "title": "Python异步编程与并发",
+      "articleId": "S1-012",
+      "stage": 1,
+      "stageName": "编程与数学基础",
+      "url": "archives/articles/2026-07-03-article.md"
+    },
+    {
       "date": "2026-07-02",
       "title": "正则表达式与文本处理",
       "articleId": "S1-011",
