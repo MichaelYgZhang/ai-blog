@@ -1,6 +1,11 @@
 {
   "daily": [
     {
+      "date": "2026-07-05",
+      "title": "AI快讯 2026年7月5日",
+      "url": "archives/daily/2026-07-05-ai-daily.md"
+    },
+    {
       "date": "2026-07-04",
       "title": "AI快讯 2026年7月4日",
       "url": "archives/daily/2026-07-04-ai-daily.md"
@@ -444,14 +449,14 @@
       "date": "2026-04-06",
       "title": "AI快讯 2026年4月6日",
       "url": "archives/daily/2026-04-06-ai-daily.md"
-    },
-    {
-      "date": "2026-04-05",
-      "title": "AI快讯 2026年4月5日",
-      "url": "archives/daily/2026-04-05-ai-daily.md"
     }
   ],
   "weekly": [
+    {
+      "date": "2026-W27",
+      "title": "AI周报 2026年第27周",
+      "url": "archives/weekly/2026-W27-weekly.md"
+    },
     {
       "date": "2026-W26",
       "title": "AI周报 2026年第26周",
