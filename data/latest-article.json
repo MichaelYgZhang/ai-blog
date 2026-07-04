@@ -1,34 +1,27 @@
 {
-  "date": "2026年7月3日",
-  "updateTime": "2026-07-03 08:00",
-  "articleId": "S1-012",
-  "title": "Python异步编程与并发",
-  "summary": "Python异步编程与并发（async/await、多线程、多进程）是AI工程师处理I/O密集型数据加载和CPU密集型模型训练的互补策略，可将训练效率提升50%以上。多线程适合I/O任务，多进程利用多核CPU，异步编程提供轻量级协程调度，贯穿数据预处理、模型训练到推理部署全流程。",
+  "date": "2026年7月4日",
+  "updateTime": "2026-07-04 08:00",
+  "articleId": "S1-013",
+  "title": "算法基础：排序、搜索与复杂度",
+  "summary": "算法基础是构建高效AI系统的数学基石，核心在于掌握时间复杂度分析、二分查找与动态规划。本文用大O符号量化算法效率，通过对比O(n²)与O(n log n)的实际性能差异，揭示排序搜索在数据处理中的关键作用，帮助工程师从设计阶段预判性能瓶颈。",
   "stage": {
     "id": 1,
     "name": "编程与数学基础",
     "color": "#6366f1"
   },
   "techPoints": [
-    "async/await",
-    "多线程",
-    "多进程"
+    "时间复杂度",
+    "二分查找",
+    "动态规划"
   ],
-  "dependencies": [
-    {
-      "stageName": "编程与数学基础",
-      "stageId": 1,
-      "topic": "Python基础",
-      "reason": "理解「Python异步编程与并发」需要掌握「Python基础」的相关知识"
-    }
-  ],
+  "dependencies": [],
   "nextPreview": {
-    "title": "算法基础：排序、搜索与复杂度",
-    "teaser": "下一篇将探讨时间复杂度和二分查找等技术要点"
+    "title": "SQL数据库基础与实战",
+    "teaser": "下一篇将探讨查询语法和JOIN等技术要点"
   },
   "progress": {
-    "completed": 117,
+    "completed": 118,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-07-03-article.md"
+  "fullArticleUrl": "archives/articles/2026-07-04-article.md"
 }
