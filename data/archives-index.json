@@ -579,6 +579,14 @@
   ],
   "articles": [
     {
+      "date": "2026-07-05",
+      "title": "SQL数据库基础与实战",
+      "articleId": "S1-014",
+      "stage": 1,
+      "stageName": "编程与数学基础",
+      "url": "archives/articles/2026-07-05-article.md"
+    },
+    {
       "date": "2026-07-04",
       "title": "算法基础：排序、搜索与复杂度",
       "articleId": "S1-013",
