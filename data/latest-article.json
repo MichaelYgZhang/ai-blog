@@ -1,27 +1,24 @@
 {
-  "date": "2026年7月5日",
-  "updateTime": "2026-07-05 08:00",
-  "articleId": "S1-014",
-  "title": "SQL数据库基础与实战",
-  "summary": "SQL是AI工程师必备的数据管理语言，通过声明式查询、JOIN关联多表及聚合函数，高效提取、清洗和聚合数据，为机器学习模型提供高质量训练数据，加速实验迭代。",
+  "date": "2026年7月6日",
+  "updateTime": "2026-07-06 08:00",
+  "articleId": "S1-015",
+  "title": "Linux命令行与Shell脚本",
+  "summary": "Linux命令行与Shell脚本是AI工程师实现数据处理自动化、模型训练批量化及环境管理标准化的关键技能。本文介绍文件操作、管道与脚本编写等核心内容，通过代码示例展示如何高效管理数据集、配置文件与实验流程，显著提升工作效率。",
   "stage": {
     "id": 1,
     "name": "编程与数学基础",
     "color": "#6366f1"
   },
   "techPoints": [
-    "查询语法",
-    "JOIN",
-    "聚合函数"
+    "文件操作",
+    "管道",
+    "脚本编写"
   ],
   "dependencies": [],
-  "nextPreview": {
-    "title": "Linux命令行与Shell脚本",
-    "teaser": "下一篇将探讨文件操作和管道等技术要点"
-  },
+  "nextPreview": null,
   "progress": {
-    "completed": 119,
+    "completed": 120,
     "total": 120
   },
-  "fullArticleUrl": "archives/articles/2026-07-05-article.md"
+  "fullArticleUrl": "archives/articles/2026-07-06-article.md"
 }
