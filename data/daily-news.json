@@ -1,145 +1,145 @@
 {
-  "date": "2026年7月8日",
-  "updateTime": "2026-07-08 07:01",
+  "date": "2026年7月9日",
+  "updateTime": "2026-07-09 07:07",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5预览版，推理能力大幅提升",
-      "url": "https://openai.com/blog/gpt-5-preview",
-      "date": "2026-07-03",
+      "title": "GPT-5发布：多模态推理能力大幅提升",
+      "url": "https://openai.com/blog/gpt-5",
+      "date": "2026-07-08",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Anthropic推出Claude 4 Ultra，支持百万token上下文",
-      "url": "https://www.anthropic.com/news/claude-4-ultra",
+      "title": "Claude 4.5上线：长上下文处理速度翻倍",
+      "url": "https://www.anthropic.com/news/claude-4-5",
       "date": "2026-07-05",
       "source": "Anthropic官方博客",
       "hot": false
     },
     {
-      "title": "Google Gemini 2.0正式上线，多模态能力增强",
-      "url": "https://blog.google/products/gemini/gemini-2-0",
+      "title": "Gemini Ultra 2.0开放API测试",
+      "url": "https://blog.google/technology/ai/gemini-ultra-2",
       "date": "2026-07-07",
-      "source": "Google官方博客",
-      "hot": true
+      "source": "Google AI Blog",
+      "hot": false
     },
     {
-      "title": "Meta开源Llama 4模型，参数规模达1.2万亿",
-      "url": "https://ai.meta.com/blog/llama-4-open-source",
-      "date": "2026-07-02",
-      "source": "Meta AI博客",
-      "hot": false
+      "title": "Llama 4开源模型性能超越GPT-4o",
+      "url": "https://ai.meta.com/blog/llama-4",
+      "date": "2026-07-06",
+      "source": "Meta AI",
+      "hot": true
     }
   ],
   "coding": [
     {
-      "title": "Cursor发布AI编程助手v3.0，支持实时协作",
-      "url": "https://cursor.sh/blog/v3-0-release",
+      "title": "Cursor推出AI代码审查功能",
+      "url": "https://cursor.sh/blog/code-review",
       "date": "2026-07-04",
-      "source": "Cursor官方博客",
+      "source": "Cursor Blog",
       "hot": true
     },
     {
-      "title": "GitHub Copilot集成Claude 4，代码生成准确率提升40%",
-      "url": "https://github.blog/changelog/copilot-claude-4",
-      "date": "2026-07-06",
-      "source": "GitHub官方博客",
+      "title": "GitHub Copilot支持多文件重构",
+      "url": "https://github.blog/changelog/2026-07-03-copilot-multi-file-refactoring",
+      "date": "2026-07-03",
+      "source": "GitHub Blog",
       "hot": false
     },
     {
-      "title": "Devin 2.0上线，自主编程能力覆盖全栈应用",
+      "title": "Devin 2.0自动化修复80%常见bug",
       "url": "https://cognition.ai/blog/devin-2-0",
-      "date": "2026-07-01",
-      "source": "Cognition官方博客",
+      "date": "2026-07-06",
+      "source": "Cognition Labs",
       "hot": true
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT推出实时语音翻译功能，支持50种语言",
-      "url": "https://openai.com/blog/chatgpt-voice-translate",
-      "date": "2026-07-05",
+      "title": "ChatGPT新增视频生成功能",
+      "url": "https://openai.com/blog/chatgpt-video",
+      "date": "2026-07-07",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney v7发布，图像生成分辨率达8K",
-      "url": "https://www.midjourney.com/blog/v7-release",
-      "date": "2026-07-03",
-      "source": "Midjourney官方博客",
+      "title": "Midjourney 7.0发布：实时协作编辑",
+      "url": "https://www.midjourney.com/blog/v7",
+      "date": "2026-07-05",
+      "source": "Midjourney Blog",
       "hot": false
     },
     {
-      "title": "Notion AI新增视频生成功能，一键制作演示视频",
-      "url": "https://www.notion.so/blog/notion-ai-video",
-      "date": "2026-07-07",
-      "source": "Notion官方博客",
+      "title": "Notion AI集成语音笔记转录",
+      "url": "https://www.notion.so/blog/voice-notes",
+      "date": "2026-07-08",
+      "source": "Notion Blog",
+      "hot": false
+    },
+    {
+      "title": "Canva推出AI视频剪辑助手",
+      "url": "https://www.canva.com/news/ai-video-editor",
+      "date": "2026-07-04",
+      "source": "Canva Newsroom",
       "hot": true
-    },
-    {
-      "title": "Runway Gen-4上线，AI视频编辑实现实时渲染",
-      "url": "https://runwayml.com/blog/gen-4",
-      "date": "2026-07-02",
-      "source": "Runway官方博客",
-      "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI芯片初创公司Groq获10亿美元融资，估值超200亿",
-      "url": "https://techcrunch.com/2026/07/04/groq-funding-1b",
-      "date": "2026-07-04",
+      "title": "AI芯片初创公司Groq获20亿美元融资",
+      "url": "https://techcrunch.com/2026/07/06/groq-funding",
+      "date": "2026-07-06",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过《AI安全法案》，要求大模型透明审计",
-      "url": "https://www.reuters.com/technology/eu-ai-safety-bill-2026-07-06",
-      "date": "2026-07-06",
+      "title": "欧盟通过AI责任法案草案",
+      "url": "https://www.reuters.com/technology/eu-ai-liability-bill-2026-07-05",
+      "date": "2026-07-05",
       "source": "Reuters",
-      "hot": true
-    },
-    {
-      "title": "中国发布AI算力基础设施新规划，投资超5000亿",
-      "url": "https://www.caixin.com/2026-07-07/ai-infrastructure-plan",
-      "date": "2026-07-07",
-      "source": "财新网",
       "hot": false
     },
     {
-      "title": "Stability AI获战略投资，专注开源图像模型",
-      "url": "https://www.bloomberg.com/news/articles/2026-07-02/stability-ai-investment",
-      "date": "2026-07-02",
+      "title": "百度文心一言企业版用户破百万",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-07/baidu-ernie-enterprise",
+      "date": "2026-07-07",
       "source": "Bloomberg",
+      "hot": true
+    },
+    {
+      "title": "AI训练数据中心能耗标准出台",
+      "url": "https://www.wsj.com/tech/ai-data-center-energy-standards-2026",
+      "date": "2026-07-08",
+      "source": "Wall Street Journal",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "DeepMind提出新型Transformer架构，效率提升10倍",
+      "title": "Mamba-3架构实现线性复杂度推理",
       "url": "https://arxiv.org/abs/2607.00123",
-      "date": "2026-07-01",
+      "date": "2026-07-02",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "研究团队发布多模态理解基准MMBench 2.0",
+      "title": "多模态模型视觉理解突破：细粒度图像描述",
       "url": "https://arxiv.org/abs/2607.00456",
-      "date": "2026-07-03",
+      "date": "2026-07-04",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "MIT提出强化学习新算法，机器人训练速度翻倍",
+      "title": "强化学习新方法：无模型机器人操控",
       "url": "https://arxiv.org/abs/2607.00789",
-      "date": "2026-07-05",
+      "date": "2026-07-06",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "斯坦福发布AI对齐论文，提出可解释性新方法",
+      "title": "扩散模型加速：一步生成高质量图像",
       "url": "https://arxiv.org/abs/2607.01012",
-      "date": "2026-07-06",
+      "date": "2026-07-07",
       "source": "arXiv",
       "hot": false
     }
