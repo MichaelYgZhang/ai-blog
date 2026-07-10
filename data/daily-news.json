@@ -1,30 +1,30 @@
 {
-  "date": "2026年7月10日",
-  "updateTime": "2026-07-10 07:11",
+  "date": "2026年7月11日",
+  "updateTime": "2026-07-11 06:59",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5o轻量版模型",
-      "url": "https://openai.com/blog/gpt-5o-light",
-      "date": "2026-07-08",
+      "title": "OpenAI发布GPT-5 Turbo模型",
+      "url": "https://openai.com/blog/gpt-5-turbo",
+      "date": "2026-07-10",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Claude 4.5推出多模态推理增强",
-      "url": "https://www.anthropic.com/news/claude-4.5",
-      "date": "2026-07-06",
+      "title": "Claude 4.5更新支持多模态推理",
+      "url": "https://www.anthropic.com/news/claude-4-5",
+      "date": "2026-07-09",
       "source": "Anthropic官方博客",
       "hot": false
     },
     {
-      "title": "Gemini Ultra 2.0正式开放API",
+      "title": "Gemini Ultra 2.0开放API测试",
       "url": "https://blog.google/technology/ai/gemini-ultra-2",
-      "date": "2026-07-09",
+      "date": "2026-07-08",
       "source": "Google AI博客",
       "hot": true
     },
     {
-      "title": "Llama 4.1开源权重发布",
+      "title": "Llama 4.1发布增强代码生成",
       "url": "https://ai.meta.com/blog/llama-4-1",
       "date": "2026-07-07",
       "source": "Meta AI博客",
@@ -33,29 +33,29 @@
   ],
   "coding": [
     {
-      "title": "Cursor 12.0新增智能重构功能",
-      "url": "https://cursor.sh/changelog",
-      "date": "2026-07-09",
+      "title": "Cursor 3.0集成自动调试功能",
+      "url": "https://cursor.sh/blog/cursor-3-0",
+      "date": "2026-07-11",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot支持实时协作编辑",
-      "url": "https://github.blog/changelog/copilot-collaboration",
-      "date": "2026-07-07",
-      "source": "GitHub官方博客",
-      "hot": false
-    },
-    {
-      "title": "Devin 2.0实现全栈自动部署",
-      "url": "https://devin.ai/blog/v2",
-      "date": "2026-07-05",
-      "source": "Devin官方博客",
+      "title": "GitHub Copilot支持实时协作编程",
+      "url": "https://github.blog/changelog/2026-07-10-copilot-collaboration",
+      "date": "2026-07-10",
+      "source": "GitHub Blog",
       "hot": true
     },
     {
-      "title": "Codeium推出AI代码审查助手",
-      "url": "https://codeium.com/blog/code-review-ai",
+      "title": "Devin 2.0修复复杂代码错误",
+      "url": "https://www.cognition.ai/blog/devin-2-0",
+      "date": "2026-07-09",
+      "source": "Cognition Labs",
+      "hot": false
+    },
+    {
+      "title": "Codeium推出离线版AI编码助手",
+      "url": "https://codeium.com/blog/offline-assistant",
       "date": "2026-07-08",
       "source": "Codeium官方博客",
       "hot": false
@@ -63,90 +63,111 @@
   ],
   "apps": [
     {
-      "title": "ChatGPT新增实时视频分析模式",
-      "url": "https://openai.com/blog/chatgpt-video-mode",
-      "date": "2026-07-10",
+      "title": "ChatGPT新增语音克隆功能",
+      "url": "https://openai.com/blog/chatgpt-voice-clone",
+      "date": "2026-07-11",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7支持4K生成",
-      "url": "https://midjourney.com/blog/v7",
-      "date": "2026-07-06",
+      "title": "Midjourney V7支持实时视频生成",
+      "url": "https://www.midjourney.com/blog/v7-video",
+      "date": "2026-07-10",
       "source": "Midjourney官方博客",
-      "hot": false
+      "hot": true
     },
     {
-      "title": "Notion AI集成语音笔记功能",
-      "url": "https://www.notion.so/blog/voice-notes-ai",
-      "date": "2026-07-08",
+      "title": "Notion AI集成文档自动排版",
+      "url": "https://www.notion.so/blog/notion-ai-layout",
+      "date": "2026-07-09",
       "source": "Notion官方博客",
       "hot": false
     },
     {
-      "title": "Perplexity AI推出深度研究模式",
-      "url": "https://blog.perplexity.ai/deep-research",
-      "date": "2026-07-09",
-      "source": "Perplexity AI博客",
-      "hot": true
+      "title": "Canva推出AI品牌设计助手",
+      "url": "https://www.canva.com/newsroom/ai-brand-assistant",
+      "date": "2026-07-08",
+      "source": "Canva新闻室",
+      "hot": false
+    },
+    {
+      "title": "Grammarly发布AI写作分析器",
+      "url": "https://www.grammarly.com/blog/ai-writer-analyzer",
+      "date": "2026-07-07",
+      "source": "Grammarly官方博客",
+      "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI初创公司Anthropic获50亿美元融资",
-      "url": "https://techcrunch.com/2026/07/09/anthropic-funding",
-      "date": "2026-07-09",
+      "title": "AI初创公司获5亿美元融资",
+      "url": "https://techcrunch.com/2026/07/11/ai-startup-funding",
+      "date": "2026-07-11",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过AI责任新规草案",
-      "url": "https://www.reuters.com/technology/eu-ai-liability-2026-07-07",
-      "date": "2026-07-07",
+      "title": "欧盟通过AI监管新法规",
+      "url": "https://www.reuters.com/technology/eu-ai-regulation-2026-07-10",
+      "date": "2026-07-10",
       "source": "Reuters",
-      "hot": false
-    },
-    {
-      "title": "英伟达发布AI芯片Blackwell Ultra",
-      "url": "https://nvidianews.nvidia.com/news/blackwell-ultra",
-      "date": "2026-07-08",
-      "source": "NVIDIA官方新闻",
       "hot": true
     },
     {
-      "title": "中国发布AI大模型备案新规",
-      "url": "https://www.chinadaily.com.cn/ai-regulation-july2026",
-      "date": "2026-07-06",
-      "source": "China Daily",
+      "title": "英伟达发布新一代AI芯片",
+      "url": "https://www.nvidia.com/en-us/news/nvidia-ai-chip-2026",
+      "date": "2026-07-09",
+      "source": "NVIDIA官方新闻",
       "hot": false
+    },
+    {
+      "title": "中国AI市场规模突破万亿",
+      "url": "https://www.caixin.com/2026-07-08/ai-market-size",
+      "date": "2026-07-08",
+      "source": "财新网",
+      "hot": false
+    },
+    {
+      "title": "微软与OpenAI续签合作协议",
+      "url": "https://www.bloomberg.com/news/articles/2026-07-07/microsoft-openai-partnership",
+      "date": "2026-07-07",
+      "source": "Bloomberg",
+      "hot": true
     }
   ],
   "research": [
     {
-      "title": "新论文提出高效注意力机制FlashAttention-3",
-      "url": "https://arxiv.org/abs/2607.00123",
-      "date": "2026-07-04",
+      "title": "新型Transformer架构提升效率50%",
+      "url": "https://arxiv.org/abs/2607.04567",
+      "date": "2026-07-11",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "Meta发布多模态基础模型ImageBind 2.0",
-      "url": "https://arxiv.org/abs/2607.00456",
-      "date": "2026-07-05",
+      "title": "多模态模型实现跨语言翻译突破",
+      "url": "https://arxiv.org/abs/2607.04568",
+      "date": "2026-07-10",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "研究揭示大模型推理缺陷及修复方法",
-      "url": "https://arxiv.org/abs/2607.00789",
-      "date": "2026-07-07",
+      "title": "强化学习优化AI推理速度",
+      "url": "https://arxiv.org/abs/2607.04569",
+      "date": "2026-07-09",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "新型稀疏MoE架构提升训练效率30%",
-      "url": "https://arxiv.org/abs/2607.01012",
+      "title": "自监督学习在医疗图像中的应用",
+      "url": "https://arxiv.org/abs/2607.04570",
       "date": "2026-07-08",
+      "source": "arXiv",
+      "hot": false
+    },
+    {
+      "title": "稀疏注意力机制降低计算成本",
+      "url": "https://arxiv.org/abs/2607.04571",
+      "date": "2026-07-07",
       "source": "arXiv",
       "hot": false
     }
