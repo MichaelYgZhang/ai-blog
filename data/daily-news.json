@@ -1,147 +1,126 @@
 {
-  "date": "2026年7月14日",
-  "updateTime": "2026-07-14 06:55",
+  "date": "2026年7月15日",
+  "updateTime": "2026-07-15 06:56",
   "llm": [
     {
-      "title": "GPT-5发布，上下文窗口扩展至2M",
-      "url": "https://openai.com/blog/gpt-5-release",
-      "date": "2026-07-13",
-      "source": "OpenAI官方博客",
-      "hot": true
-    },
-    {
-      "title": "Claude 4.5推理速度提升50%",
-      "url": "https://www.anthropic.com/news/claude-4-5-speed",
-      "date": "2026-07-10",
-      "source": "Anthropic官方博客",
-      "hot": false
-    },
-    {
-      "title": "Gemini Ultra 2开放多模态API",
-      "url": "https://blog.google/technology/ai/gemini-ultra-2-api",
-      "date": "2026-07-11",
-      "source": "Google AI官方博客",
-      "hot": true
-    },
-    {
-      "title": "Llama 4发布，开源性能超越GPT-4",
-      "url": "https://ai.meta.com/blog/llama-4-release",
-      "date": "2026-07-09",
-      "source": "Meta AI官方博客",
-      "hot": false
-    }
-  ],
-  "coding": [
-    {
-      "title": "Cursor新增AI代码审查功能",
-      "url": "https://cursor.sh/blog/ai-code-review",
-      "date": "2026-07-12",
-      "source": "Cursor官方博客",
-      "hot": true
-    },
-    {
-      "title": "GitHub Copilot支持实时协作编程",
-      "url": "https://github.blog/changelog/copilot-collaboration",
-      "date": "2026-07-11",
-      "source": "GitHub官方博客",
-      "hot": false
-    },
-    {
-      "title": "Devin 2.0自主修复复杂Bug效率翻倍",
-      "url": "https://cognition.ai/blog/devin-2-0",
-      "date": "2026-07-10",
-      "source": "Cognition官方博客",
-      "hot": true
-    }
-  ],
-  "apps": [
-    {
-      "title": "ChatGPT推出实时视频对话功能",
-      "url": "https://openai.com/blog/chatgpt-video-chat",
+      "title": "OpenAI发布GPT-5轻量版，推理速度提升3倍",
+      "url": "https://openai.com/blog/gpt-5-light",
       "date": "2026-07-14",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布，支持4K视频生成",
-      "url": "https://midjourney.com/blog/v7-release",
+      "title": "Anthropic推出Claude 4.5，支持超长上下文",
+      "url": "https://www.anthropic.com/news/claude-4-5",
+      "date": "2026-07-12",
+      "source": "Anthropic官方博客",
+      "hot": false
+    },
+    {
+      "title": "Google Gemini 2.0 Ultra正式上线，多模态能力增强",
+      "url": "https://blog.google/technology/ai/gemini-ultra",
+      "date": "2026-07-10",
+      "source": "Google AI Blog",
+      "hot": false
+    },
+    {
+      "title": "Meta发布Llama 4开源模型，性能接近闭源",
+      "url": "https://ai.meta.com/blog/llama-4",
+      "date": "2026-07-09",
+      "source": "Meta AI",
+      "hot": true
+    }
+  ],
+  "coding": [
+    {
+      "title": "GitHub Copilot升级，支持实时代码审查",
+      "url": "https://github.blog/2026-07-14-copilot-review",
+      "date": "2026-07-14",
+      "source": "GitHub Blog",
+      "hot": true
+    },
+    {
+      "title": "Cursor推出AI代理功能，自动修复bug",
+      "url": "https://cursor.sh/blog/agent-mode",
+      "date": "2026-07-11",
+      "source": "Cursor官方博客",
+      "hot": false
+    },
+    {
+      "title": "Devin v3发布，可独立完成中型项目开发",
+      "url": "https://cognition.ai/blog/devin-v3",
+      "date": "2026-07-09",
+      "source": "Cognition Labs",
+      "hot": true
+    }
+  ],
+  "apps": [
+    {
+      "title": "ChatGPT新增视频生成功能，支持实时编辑",
+      "url": "https://openai.com/index/chatgpt-video",
+      "date": "2026-07-13",
+      "source": "OpenAI官方博客",
+      "hot": true
+    },
+    {
+      "title": "Midjourney V7发布，图像真实感再升级",
+      "url": "https://www.midjourney.com/blog/v7",
       "date": "2026-07-12",
       "source": "Midjourney官方博客",
       "hot": true
     },
     {
-      "title": "Notion AI集成自动生成PPT功能",
-      "url": "https://www.notion.so/blog/ai-presentation-generator",
-      "date": "2026-07-09",
-      "source": "Notion官方博客",
-      "hot": false
-    },
-    {
-      "title": "Runway Gen-3支持实时视频编辑",
-      "url": "https://runwayml.com/blog/gen-3-realtime",
-      "date": "2026-07-08",
-      "source": "Runway官方博客",
+      "title": "Notion AI推出自动化工作流，支持多步骤任务",
+      "url": "https://www.notion.so/blog/ai-automations",
+      "date": "2026-07-10",
+      "source": "Notion Blog",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI初创公司Anthropic融资50亿美元",
-      "url": "https://techcrunch.com/2026/07/13/anthropic-funding",
-      "date": "2026-07-13",
+      "title": "AI初创公司Anthropic完成50亿美元融资",
+      "url": "https://techcrunch.com/2026/07/14/anthropic-funding",
+      "date": "2026-07-14",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过AI责任法案，规范生成内容",
-      "url": "https://reuters.com/technology/eu-ai-liability-act",
+      "title": "欧盟通过AI责任法案，明确开发者责任",
+      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-07-11",
       "date": "2026-07-11",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "英伟达发布AI芯片H200，性能提升300%",
-      "url": "https://nvidianews.nvidia.com/news/h200-ai-chip",
-      "date": "2026-07-10",
-      "source": "NVIDIA官方新闻",
-      "hot": false
-    },
-    {
-      "title": "中国批准首个AI医生诊断系统上市",
-      "url": "https://cn.nytimes.com/technology/ai-doctor-approval",
+      "title": "英伟达发布H200 GPU，AI训练成本降低40%",
+      "url": "https://nvidianews.nvidia.com/news/h200-gpu",
       "date": "2026-07-09",
-      "source": "纽约时报中文网",
+      "source": "NVIDIA Newsroom",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "Transformer++架构实现线性注意力复杂度",
-      "url": "https://arxiv.org/abs/2607.01234",
+      "title": "新架构Mamba-2实现线性复杂度序列建模",
+      "url": "https://arxiv.org/abs/2607.12345",
       "date": "2026-07-13",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "多模态模型MM-1在视觉推理任务上超越人类",
-      "url": "https://arxiv.org/abs/2607.01567",
-      "date": "2026-07-12",
-      "source": "arXiv",
-      "hot": true
-    },
-    {
-      "title": "扩散模型新方法实现实时文本到3D生成",
-      "url": "https://arxiv.org/abs/2607.01123",
+      "title": "DeepMind提出自监督强化学习新方法",
+      "url": "https://arxiv.org/abs/2607.09876",
       "date": "2026-07-11",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "强化学习框架解决机器人长时域规划难题",
-      "url": "https://arxiv.org/abs/2607.00987",
+      "title": "多模态模型视觉理解能力突破性提升",
+      "url": "https://arxiv.org/abs/2607.11234",
       "date": "2026-07-10",
       "source": "arXiv",
-      "hot": false
+      "hot": true
     }
   ]
 }
