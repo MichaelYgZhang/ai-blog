@@ -1,126 +1,154 @@
 {
-  "date": "2026年7月15日",
-  "updateTime": "2026-07-15 06:56",
+  "date": "2026年7月16日",
+  "updateTime": "2026-07-16 06:57",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5轻量版，推理速度提升3倍",
-      "url": "https://openai.com/blog/gpt-5-light",
+      "title": "GPT-5发布：多模态与推理能力大幅提升",
+      "url": "https://openai.com/blog/gpt-5",
       "date": "2026-07-14",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Anthropic推出Claude 4.5，支持超长上下文",
+      "title": "Claude 4.5推出超长上下文窗口与实时协作",
       "url": "https://www.anthropic.com/news/claude-4-5",
       "date": "2026-07-12",
       "source": "Anthropic官方博客",
-      "hot": false
+      "hot": true
     },
     {
-      "title": "Google Gemini 2.0 Ultra正式上线，多模态能力增强",
-      "url": "https://blog.google/technology/ai/gemini-ultra",
+      "title": "Gemini Ultra 2.0开放API，支持多模态推理",
+      "url": "https://blog.google/technology/ai/gemini-ultra-2",
       "date": "2026-07-10",
       "source": "Google AI Blog",
       "hot": false
     },
     {
-      "title": "Meta发布Llama 4开源模型，性能接近闭源",
-      "url": "https://ai.meta.com/blog/llama-4",
-      "date": "2026-07-09",
-      "source": "Meta AI",
-      "hot": true
+      "title": "Meta发布Llama 4.1：开源模型性能接近GPT-4",
+      "url": "https://ai.meta.com/blog/llama-4-1",
+      "date": "2026-07-11",
+      "source": "Meta AI Blog",
+      "hot": false
     }
   ],
   "coding": [
     {
-      "title": "GitHub Copilot升级，支持实时代码审查",
-      "url": "https://github.blog/2026-07-14-copilot-review",
-      "date": "2026-07-14",
+      "title": "Cursor推出AI代码审查与自动修复功能",
+      "url": "https://cursor.sh/blog/ai-code-review",
+      "date": "2026-07-15",
+      "source": "Cursor官方博客",
+      "hot": true
+    },
+    {
+      "title": "GitHub Copilot新增多文件重构与测试生成",
+      "url": "https://github.blog/2026-07-13-copilot-update",
+      "date": "2026-07-13",
       "source": "GitHub Blog",
       "hot": true
     },
     {
-      "title": "Cursor推出AI代理功能，自动修复bug",
-      "url": "https://cursor.sh/blog/agent-mode",
-      "date": "2026-07-11",
-      "source": "Cursor官方博客",
+      "title": "Devin 2.0发布：独立完成复杂项目部署",
+      "url": "https://cognition.ai/blog/devin-2",
+      "date": "2026-07-12",
+      "source": "Cognition AI官方博客",
       "hot": false
     },
     {
-      "title": "Devin v3发布，可独立完成中型项目开发",
-      "url": "https://cognition.ai/blog/devin-v3",
-      "date": "2026-07-09",
-      "source": "Cognition Labs",
-      "hot": true
+      "title": "Tabnine推出私有化部署版AI编程助手",
+      "url": "https://www.tabnine.com/blog/private-deployment",
+      "date": "2026-07-10",
+      "source": "Tabnine官方博客",
+      "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增视频生成功能，支持实时编辑",
-      "url": "https://openai.com/index/chatgpt-video",
-      "date": "2026-07-13",
+      "title": "ChatGPT上线语音实时翻译与会议助手",
+      "url": "https://openai.com/blog/chatgpt-voice-translation",
+      "date": "2026-07-15",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布，图像真实感再升级",
+      "title": "Midjourney V7发布：视频生成与3D建模",
       "url": "https://www.midjourney.com/blog/v7",
-      "date": "2026-07-12",
+      "date": "2026-07-14",
       "source": "Midjourney官方博客",
       "hot": true
     },
     {
-      "title": "Notion AI推出自动化工作流，支持多步骤任务",
-      "url": "https://www.notion.so/blog/ai-automations",
-      "date": "2026-07-10",
-      "source": "Notion Blog",
+      "title": "Notion AI新增自动化工作流与智能表格",
+      "url": "https://www.notion.so/blog/ai-workflows",
+      "date": "2026-07-11",
+      "source": "Notion官方博客",
+      "hot": false
+    },
+    {
+      "title": "Runway推出实时AI视频编辑工具Gen-4",
+      "url": "https://runwayml.com/blog/gen-4",
+      "date": "2026-07-09",
+      "source": "Runway官方博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI初创公司Anthropic完成50亿美元融资",
-      "url": "https://techcrunch.com/2026/07/14/anthropic-funding",
-      "date": "2026-07-14",
+      "title": "AI芯片初创公司Groq完成6亿美元D轮融资",
+      "url": "https://techcrunch.com/2026/07/15/groq-funding",
+      "date": "2026-07-15",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过AI责任法案，明确开发者责任",
-      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-07-11",
-      "date": "2026-07-11",
-      "source": "Reuters",
+      "title": "欧盟通过《人工智能责任法案》修正案",
+      "url": "https://www.euractiv.com/2026/07/14/ai-liability-act",
+      "date": "2026-07-14",
+      "source": "Euractiv",
       "hot": true
     },
     {
-      "title": "英伟达发布H200 GPU，AI训练成本降低40%",
-      "url": "https://nvidianews.nvidia.com/news/h200-gpu",
-      "date": "2026-07-09",
-      "source": "NVIDIA Newsroom",
+      "title": "微软与OpenAI续签协议，投资额达100亿美元",
+      "url": "https://www.reuters.com/2026/07/12/microsoft-openai-deal",
+      "date": "2026-07-12",
+      "source": "Reuters",
+      "hot": false
+    },
+    {
+      "title": "中国发布新一代AI发展规划：聚焦自主芯片",
+      "url": "https://www.chinadaily.com.cn/2026/07/11/ai-plan",
+      "date": "2026-07-11",
+      "source": "China Daily",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "新架构Mamba-2实现线性复杂度序列建模",
+      "title": "DeepMind提出新架构：稀疏MoE结合注意力",
       "url": "https://arxiv.org/abs/2607.12345",
-      "date": "2026-07-13",
+      "date": "2026-07-15",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "DeepMind提出自监督强化学习新方法",
-      "url": "https://arxiv.org/abs/2607.09876",
-      "date": "2026-07-11",
+      "title": "MIT团队发布高效视频生成模型VideoFormer",
+      "url": "https://arxiv.org/abs/2607.12346",
+      "date": "2026-07-14",
+      "source": "arXiv",
+      "hot": true
+    },
+    {
+      "title": "斯坦福研究：AI推理能力可通过自监督提升",
+      "url": "https://arxiv.org/abs/2607.12347",
+      "date": "2026-07-13",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "多模态模型视觉理解能力突破性提升",
-      "url": "https://arxiv.org/abs/2607.11234",
-      "date": "2026-07-10",
+      "title": "OpenAI开源多模态对齐数据集M3Align",
+      "url": "https://arxiv.org/abs/2607.12348",
+      "date": "2026-07-12",
       "source": "arXiv",
-      "hot": true
+      "hot": false
     }
   ]
 }
