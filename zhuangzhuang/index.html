@@ -665,6 +665,7 @@ const CATEGORIES = {
 let currentCat = 'animals';
 let currentIdx = 0;
 let isSpeaking = false;
+let clickCount = 0; // 点击计数器，每5次自动跳下一个词
 
 // Load from localStorage
 const STORAGE_KEY = 'babyEnglishLog';
@@ -766,6 +767,26 @@ function markLearned(word){
   renderProgress();
   renderLog();
   renderWordList();
+
+  // 每点击5次，自动随机跳到下一个单词
+  clickCount++;
+  if(clickCount >= 5){
+    clickCount = 0;
+    const words = CATEGORIES[currentCat].words;
+    let nextIdx;
+    do { nextIdx = Math.floor(Math.random() * words.length); }
+    while (words.length > 1 && nextIdx === currentIdx);
+    currentIdx = nextIdx;
+    setTimeout(()=>{
+      renderCard();
+      renderWordList();
+      // 自动朗读新单词提示动画
+      const ill = document.getElementById('wordIllustration');
+      ill.classList.remove('shake');
+      void ill.offsetWidth;
+      ill.classList.add('shake');
+    }, 800); // 稍微延迟，让当前发音先播完
+  }
 }
 
 function isLearned(wordEn){
