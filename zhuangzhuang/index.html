@@ -152,6 +152,13 @@ body{
   transition:transform .2s;
   user-select:none;
 }
+.word-illustration img{
+  width:clamp(6rem,22vw,9rem);
+  height:clamp(6rem,22vw,9rem);
+  object-fit:contain;
+  display:block;
+  margin:0 auto;
+}
 .word-illustration:hover{transform:scale(1.06);}
 .word-illustration.shake{animation:shake .5s ease;}
 @keyframes shake{
@@ -250,6 +257,7 @@ body{
 .wl-item.current{border-color:var(--yellow);background:var(--yellow-light);}
 .wl-item.done{border-color:var(--green);}
 .wl-emoji{font-size:1.8rem;display:block;line-height:1;}
+.wl-emoji img{width:1.8rem;height:1.8rem;object-fit:contain;display:block;}
 .wl-en{font-size:.68rem;font-weight:700;color:#555;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .wl-check{font-size:.75rem;color:var(--green);}
 
@@ -340,6 +348,7 @@ body{
   text-align:center;margin-bottom:22px;
 }
 .quiz-q-emoji{font-size:5rem;display:block;margin-bottom:10px;line-height:1;}
+.quiz-q-emoji img{width:5rem;height:5rem;object-fit:contain;display:block;margin:0 auto;}
 .quiz-q-text{font-size:1rem;color:#888;font-weight:600;}
 .quiz-options{
   display:grid;grid-template-columns:1fr 1fr;gap:10px;
@@ -793,6 +802,34 @@ const CATEGORIES = {
 };
 
 // ══════════════════════════════════════════
+//  OPENMOJI IMAGE HELPERS
+// ══════════════════════════════════════════
+const OPENMOJI_CDN = 'https://cdn.jsdelivr.net/npm/openmoji@15.1.0/color/svg/';
+
+function emojiCode(emoji){
+  // Convert emoji string to OpenMoji filename code
+  // e.g. '🐱' -> '1F431', '1️⃣' -> '0031-FE0F-20E3'
+  return [...emoji]
+    .map(c => c.codePointAt(0).toString(16).toUpperCase().padStart(4,'0'))
+    .join('-');
+}
+
+function emojiImg(emoji){
+  const code = emojiCode(emoji);
+  const url = OPENMOJI_CDN + code + '.svg';
+  return `<img src="${url}" data-emoji="${emoji}" alt="${emoji}" loading="lazy">`;
+}
+
+// Fallback: if OpenMoji SVG 404s, show original emoji text
+document.addEventListener('error', function(e){
+  if(e.target.tagName==='IMG' && e.target.dataset.emoji){
+    const sp = document.createElement('span');
+    sp.textContent = e.target.dataset.emoji;
+    e.target.replaceWith(sp);
+  }
+}, true);
+
+// ══════════════════════════════════════════
 //  STATE
 // ══════════════════════════════════════════
 let currentCat = 'animals';
@@ -944,7 +981,7 @@ function currentWord(){
 function renderCard(){
   const w = currentWord();
   const words = CATEGORIES[currentCat].words;
-  document.getElementById('wordIllustration').textContent = w.i;
+  document.getElementById('wordIllustration').innerHTML = emojiImg(w.i);
   document.getElementById('wordEnglish').textContent = w.e;
   document.getElementById('wordPhonetic').textContent = w.p;
   document.getElementById('wordChinese').textContent = w.z;
@@ -973,7 +1010,7 @@ function renderWordList(){
   words.forEach((w,i)=>{
     const div=document.createElement('div');
     div.className='wl-item'+(i===currentIdx?' current':'')+(isLearned(w.e)?' done':'');
-    div.innerHTML=`<span class="wl-emoji">${w.i}</span><div class="wl-en">${w.e}</div>${isLearned(w.e)?'<div class="wl-check">✅</div>':''}`;
+    div.innerHTML=`<span class="wl-emoji">${emojiImg(w.i)}</span><div class="wl-en">${w.e}</div>${isLearned(w.e)?'<div class="wl-check">✅</div>':''}`;
     div.addEventListener('click',()=>{
       currentIdx=i;
       renderCard();
@@ -1199,7 +1236,7 @@ function renderQuizQuestion(){
   if(quizIdx >= quizPool.length){ showQuizResult(); return; }
   quizAnswered = false;
   const w = quizPool[quizIdx];
-  document.getElementById('quizEmoji').textContent = w.i;
+  document.getElementById('quizEmoji').innerHTML = emojiImg(w.i);
   document.getElementById('quizQText').textContent = '这个英文单词是？（看图选答案）';
   document.getElementById('quizFeedback').textContent = '';
   document.getElementById('quizNext').classList.remove('show');
