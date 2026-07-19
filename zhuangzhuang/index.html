@@ -1237,7 +1237,7 @@ function markLearned(word){
       void ill.offsetWidth;
       ill.classList.add('shake');
       // 自动跳词后也播放
-      setTimeout(()=>speakBoth(currentWord()), 300);
+      setTimeout(()=>{ if(!isAnyModalOpen()) speakBoth(currentWord()); }, 300);
     }, 800);
   }
 }
@@ -1301,10 +1301,11 @@ function renderWordList(){
       div.appendChild(ck);
     }
     div.addEventListener('click',()=>{
+      if(isAnyModalOpen()) return;
       currentIdx=i;
       renderCard();
       renderWordList();
-      setTimeout(()=>speakBoth(CATEGORIES[currentCat].words[i]), 200);
+      setTimeout(()=>{ if(!isAnyModalOpen()) speakBoth(CATEGORIES[currentCat].words[i]); }, 200);
     });
     container.appendChild(div);
   });
@@ -1404,6 +1405,11 @@ function triggerConfetti(){
   }
 }
 
+function isAnyModalOpen(){
+  return ['quizOverlay','listenOverlay','matchOverlay']
+    .some(id=>document.getElementById(id).classList.contains('open'));
+}
+
 // ══════════════════════════════════════════
 //  SWITCH CATEGORY
 // ══════════════════════════════════════════
@@ -1416,25 +1422,29 @@ function switchCategory(cat){
   renderCard();
   renderWordList();
   // 切换分类后自动播放第一个单词
-  setTimeout(()=>speakBoth(currentWord()), 400);
+  setTimeout(()=>{ if(!isAnyModalOpen()) speakBoth(currentWord()); }, 400);
 }
 
 // ══════════════════════════════════════════
 //  EVENTS
 // ══════════════════════════════════════════
 document.getElementById('mainSpeakBtn').addEventListener('click',()=>{
+  if(isAnyModalOpen()) return;
   speakBoth(currentWord());
 });
 
 document.getElementById('btnEn').addEventListener('click',()=>{
+  if(isAnyModalOpen()) return;
   speakEn(currentWord());
 });
 
 document.getElementById('btnZh').addEventListener('click',()=>{
+  if(isAnyModalOpen()) return;
   speakZh(currentWord());
 });
 
 document.getElementById('wordIllustration').addEventListener('click',()=>{
+  if(isAnyModalOpen()) return;
   const el = document.getElementById('wordIllustration');
   el.classList.remove('shake');
   void el.offsetWidth;
@@ -1443,6 +1453,7 @@ document.getElementById('wordIllustration').addEventListener('click',()=>{
 });
 
 document.getElementById('prevBtn').addEventListener('click',()=>{
+  if(isAnyModalOpen()) return;
   const words = CATEGORIES[currentCat].words;
   currentIdx = (currentIdx-1+words.length)%words.length;
   speechSynthesis.cancel();
@@ -1450,10 +1461,11 @@ document.getElementById('prevBtn').addEventListener('click',()=>{
   setPlaying(false,'');
   renderCard();
   renderWordList();
-  setTimeout(()=>speakBoth(currentWord()), 200);
+  setTimeout(()=>{ if(!isAnyModalOpen()) speakBoth(currentWord()); }, 200);
 });
 
 document.getElementById('nextBtn').addEventListener('click',()=>{
+  if(isAnyModalOpen()) return;
   const words = CATEGORIES[currentCat].words;
   currentIdx = (currentIdx+1)%words.length;
   speechSynthesis.cancel();
@@ -1461,7 +1473,7 @@ document.getElementById('nextBtn').addEventListener('click',()=>{
   setPlaying(false,'');
   renderCard();
   renderWordList();
-  setTimeout(()=>speakBoth(currentWord()), 200);
+  setTimeout(()=>{ if(!isAnyModalOpen()) speakBoth(currentWord()); }, 200);
 });
 
 document.querySelectorAll('.cat-btn').forEach(btn=>{
@@ -1541,7 +1553,7 @@ document.getElementById('reviewBanner').addEventListener('click',()=>{
       document.querySelectorAll('.cat-btn').forEach(b=>b.classList.toggle('active',b.dataset.cat===cat));
       renderCard();
       renderWordList();
-      setTimeout(()=>speakBoth(currentWord()), 300);
+      setTimeout(()=>{ if(!isAnyModalOpen()) speakBoth(currentWord()); }, 300);
       // 标记已复习
       due.forEach(dw => markWordReviewed(dw.e));
       renderReviewBanner();
@@ -1567,6 +1579,9 @@ function buildMatchPairs(){
 function shuffle(arr){ return [...arr].sort(()=>Math.random()-.5); }
 
 function startMatch(){
+  speechSynthesis.cancel();
+  isSpeaking=false;
+  setPlaying(false,'');
   matchPairs = buildMatchPairs();
   matchSelected = null;
   matchMatched = 0;
@@ -1672,6 +1687,9 @@ let listenScore = 0;
 let listenAnswered = false;
 
 function startListenQuiz(){
+  speechSynthesis.cancel();
+  isSpeaking=false;
+  setPlaying(false,'');
   const all = getAllWords();
   listenPool = [...all].sort(()=>Math.random()-.5).slice(0, LISTEN_TOTAL);
   listenIdx = 0;
@@ -1845,6 +1863,9 @@ function buildOptions(correct){
 }
 
 function startQuiz(){
+  speechSynthesis.cancel();
+  isSpeaking=false;
+  setPlaying(false,'');
   quizPool = buildQuizPool();
   quizIdx = 0;
   quizScore = 0;
@@ -1972,8 +1993,11 @@ document.getElementById('quizOverlay').addEventListener('click',e=>{
   }
 });
 
-// keyboard nav
+// keyboard nav — modal 打开时屏蔽底层操作
 document.addEventListener('keydown',e=>{
+  const anyModal = ['quizOverlay','listenOverlay','matchOverlay']
+    .some(id=>document.getElementById(id).classList.contains('open'));
+  if(anyModal) return;
   if(e.key==='ArrowRight') document.getElementById('nextBtn').click();
   if(e.key==='ArrowLeft') document.getElementById('prevBtn').click();
   if(e.key===' '||e.key==='Enter') document.getElementById('mainSpeakBtn').click();
