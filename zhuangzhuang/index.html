@@ -1649,7 +1649,7 @@ function handleMatchClick(card){
     triggerConfetti();
     // 随机呼名 + 激励语
     const mp = randomPraise(true);
-    speakText('壮壮，'+mp.zh,'zh-CN',0.9,1.1);
+    speakText('你，'+mp.zh,'zh-CN',0.9,1.1);
     document.getElementById('matchProgress').textContent = `已配对 ${matchMatched} / ${matchPairs.length}`;
     if(matchMatched >= matchPairs.length){
       setTimeout(()=> document.getElementById('matchResult').classList.add('show'), 800);
@@ -1662,7 +1662,7 @@ function handleMatchClick(card){
     card.classList.add('wrong-flash');
     // 随机鼓励语
     const wp = randomPraise(false);
-    speakText('壮壮，'+wp.zh,'zh-CN',0.9,1.1);
+    speakText('你，'+wp.zh,'zh-CN',0.9,1.1);
     setTimeout(()=>{
       first.el.classList.remove('wrong-flash');
       card.classList.remove('wrong-flash');
@@ -1776,11 +1776,11 @@ function handleListenAnswer(isCorrect, clickedBtn, correctWord){
     listenScore++;
     fb.textContent = praise.icon + ' ' + praise.en + '！' + praise.zh;
     fb.style.color = 'var(--green)';
-    speakText('壮壮，'+praise.zh,'zh-CN',0.9,1.1);
+    speakText('你，'+praise.zh,'zh-CN',0.9,1.1);
   } else {
     fb.textContent = praise.icon + ' ' + praise.en + ' ' + praise.zh + '  正确答案：' + correctWord.e;
     fb.style.color = '#FF6B6B';
-    speakText('壮壮，'+praise.zh,'zh-CN',0.9,1.1);
+    speakText('你，'+praise.zh,'zh-CN',0.9,1.1);
   }
   const dot = document.getElementById('ldot'+listenIdx);
   if(dot) dot.className = 'quiz-dot ' + (isCorrect?'correct':'wrong');
@@ -1959,11 +1959,11 @@ function handleQuizAnswer(isCorrect, clickedBtn, opts, correctWord){
     quizScore++;
     document.getElementById('quizFeedback').textContent = praise.icon + ' ' + praise.en + '！' + praise.zh;
     document.getElementById('quizFeedback').style.color='var(--green)';
-    speakText('壮壮，'+praise.zh,'zh-CN',0.9,1.1);
+    speakText('你，'+praise.zh,'zh-CN',0.9,1.1);
   } else {
     document.getElementById('quizFeedback').textContent = praise.icon + ' ' + praise.en + ' ' + praise.zh + '  正确答案：' + correctWord.e;
     document.getElementById('quizFeedback').style.color='#FF6B6B';
-    speakText('壮壮，'+praise.zh,'zh-CN',0.9,1.1);
+    speakText('你，'+praise.zh,'zh-CN',0.9,1.1);
   }
   updateScoreDot(quizIdx, isCorrect);
   quizIdx++;
