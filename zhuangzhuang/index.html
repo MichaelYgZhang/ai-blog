@@ -1647,9 +1647,11 @@ function handleMatchClick(card){
     card.classList.add('matched');
     matchMatched++;
     triggerConfetti();
-    // speak the word
-    const w = matchPairs.find(x=>x.e===first.key);
-    if(w) speakBoth(w);
+    // 随机呼名 + 激励语
+    const mp = randomPraise(true);
+    speakText('壮壮','zh-CN',0.9,1.1)
+      .then(()=>speakText(mp.en,'en-US',0.9,1.2))
+      .then(()=>speakText(mp.zh,'zh-CN',0.9,1.0));
     document.getElementById('matchProgress').textContent = `已配对 ${matchMatched} / ${matchPairs.length}`;
     if(matchMatched >= matchPairs.length){
       setTimeout(()=> document.getElementById('matchResult').classList.add('show'), 800);
@@ -1660,6 +1662,11 @@ function handleMatchClick(card){
     card.classList.remove('selected');
     first.el.classList.add('wrong-flash');
     card.classList.add('wrong-flash');
+    // 随机鼓励语
+    const wp = randomPraise(false);
+    speakText('壮壮','zh-CN',0.9,1.1)
+      .then(()=>speakText(wp.en,'en-US',0.9,1.1))
+      .then(()=>speakText(wp.zh,'zh-CN',0.9,1.0));
     setTimeout(()=>{
       first.el.classList.remove('wrong-flash');
       card.classList.remove('wrong-flash');
