@@ -783,16 +783,39 @@ const CATEGORIES = {
 };
 
 // Helper: render word illustration (emoji / iconify img / txt placeholder)
+// Helper: emoji → Noto animated GIF URL
+// Noto Animated Emoji: https://googlefonts.github.io/noto-emoji-animation/
+const NOTO_BASE = 'https://fonts.gstatic.com/s/e/notoemoji/latest/';
+function notoUrl(emoji){
+  // Get primary codepoint (skip variation selectors & ZWJ)
+  const skip = new Set([0xfe0f, 0x200d]);
+  const cps = [...emoji]
+    .map(c => c.codePointAt(0))
+    .filter(cp => cp > 127 && !skip.has(cp));
+  if(!cps.length) return null;
+  return NOTO_BASE + cps[0].toString(16) + '/512.gif';
+}
+
 function renderIllustration(w, container, size='large'){
   if(w.img){
-    // iconify CDN image
+    // iconify CDN image (工程车等专用图标)
     const imgSize = size==='large' ? 'clamp(6rem,22vw,9rem)' : '1.8rem';
     container.innerHTML = `<img src="${w.img}" alt="${w.z}" style="width:${imgSize};height:${imgSize};object-fit:contain;display:block;${size==='large'?'margin:0 auto':''}" onerror="this.replaceWith(document.createTextNode('${w.i}'))">`;
   } else if(w.txt){
     // Chinese text placeholder
     const fs = size==='large' ? 'clamp(4rem,16vw,7rem)' : '1.4rem';
     container.innerHTML = `<span style="font-size:${fs};font-weight:900;color:#e67e22;line-height:1;display:block;${size==='large'?'text-align:center;margin:10px auto':''};font-family:sans-serif">${w.txt}</span>`;
+  } else if(size==='large'){
+    // 大卡片：尝试 Noto 动态 GIF，失败降级到 emoji 文字
+    const gifUrl = notoUrl(w.i);
+    if(gifUrl){
+      const imgSize = 'clamp(6rem,22vw,9rem)';
+      container.innerHTML = `<img src="${gifUrl}" alt="${w.i}" style="width:${imgSize};height:${imgSize};object-fit:contain;display:block;margin:0 auto" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'${w.i}'}))">`;
+    } else {
+      container.textContent = w.i;
+    }
   } else {
+    // 小图（词汇列表）：直接用 emoji 文字，不用动画（加载太多GIF慢）
     container.textContent = w.i;
   }
 }
