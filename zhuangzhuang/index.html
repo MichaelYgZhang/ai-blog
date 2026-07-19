@@ -432,6 +432,206 @@ body{
   .mini-btns{grid-template-columns:1fr;}
   .word-list{grid-template-columns:repeat(4,1fr);}
 }
+
+/* ===== REVIEW BANNER ===== */
+.review-banner{
+  margin:12px 16px 0;
+  background:linear-gradient(135deg,#fff8e1,#fff3cd);
+  border:2px solid var(--yellow);
+  border-radius:20px;padding:14px 18px;
+  display:none;cursor:pointer;
+  box-shadow:0 4px 16px rgba(255,193,7,.2);
+  transition:transform .2s;
+}
+.review-banner:hover{transform:translateY(-2px);}
+.review-banner.show{display:flex;align-items:center;gap:14px;}
+.review-banner-icon{font-size:2.2rem;flex-shrink:0;}
+.review-banner-text{flex:1;}
+.review-banner-title{font-size:1rem;font-weight:900;color:#f57f17;}
+.review-banner-sub{font-size:.82rem;color:#888;margin-top:2px;}
+.review-banner-count{
+  background:var(--yellow);color:#fff;
+  font-size:.9rem;font-weight:900;
+  padding:4px 12px;border-radius:50px;
+  flex-shrink:0;
+}
+
+/* ===== MATCH GAME BUTTON ===== */
+.match-btn{
+  width:100%;border:none;
+  background:linear-gradient(135deg,#4D96FF,#845EF7);
+  color:#fff;padding:14px;
+  border-radius:16px;
+  font-family:inherit;font-weight:900;font-size:1rem;
+  cursor:pointer;margin-top:10px;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  box-shadow:0 4px 16px rgba(77,150,255,.35);
+  transition:all .2s;
+}
+.match-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(77,150,255,.45);}
+
+/* ===== LISTEN QUIZ BUTTON ===== */
+.listen-btn{
+  width:100%;border:none;
+  background:linear-gradient(135deg,#6BCB77,#40C9A2);
+  color:#fff;padding:14px;
+  border-radius:16px;
+  font-family:inherit;font-weight:900;font-size:1rem;
+  cursor:pointer;margin-top:10px;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  box-shadow:0 4px 16px rgba(107,203,119,.35);
+  transition:all .2s;
+}
+.listen-btn:hover{transform:translateY(-2px);}
+
+/* ===== MATCH GAME MODAL ===== */
+.match-overlay{
+  display:none;position:fixed;inset:0;
+  background:rgba(0,0,0,.55);z-index:3000;
+  align-items:flex-start;justify-content:center;
+  padding:16px;overflow-y:auto;
+}
+.match-overlay.open{display:flex;}
+.match-box{
+  background:#fff;border-radius:32px;
+  padding:24px 20px;width:100%;max-width:480px;
+  margin:auto;
+  box-shadow:0 20px 60px rgba(0,0,0,.25);
+  animation:popIn .3s cubic-bezier(.34,1.56,.64,1);
+}
+.match-header{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-bottom:6px;
+}
+.match-title{font-size:1.1rem;font-weight:900;color:#444;}
+.match-close{border:none;background:none;font-size:1.4rem;cursor:pointer;color:#bbb;}
+.match-close:hover{color:#FF6B6B;}
+.match-desc{font-size:.85rem;color:#aaa;margin-bottom:16px;}
+.match-area{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+.match-col{display:flex;flex-direction:column;gap:10px;}
+.match-col-title{
+  font-size:.8rem;font-weight:900;color:#bbb;
+  text-align:center;letter-spacing:1px;margin-bottom:4px;
+}
+.match-card{
+  border:2.5px solid #EEE;
+  background:#FAFAFA;border-radius:16px;
+  padding:14px 8px;font-family:inherit;
+  font-size:1rem;font-weight:700;cursor:pointer;
+  transition:all .2s;color:#444;text-align:center;
+  min-height:60px;display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:4px;
+  user-select:none;
+}
+.match-card:hover{transform:scale(1.03);}
+.match-card.selected{border-color:#4D96FF;background:#E3F2FD;}
+.match-card.matched{border-color:var(--green);background:var(--green-light);color:var(--green);pointer-events:none;opacity:.7;}
+.match-card.wrong-flash{animation:wrongFlash .35s ease;}
+@keyframes wrongFlash{
+  0%,100%{border-color:#EEE;background:#FAFAFA;}
+  50%{border-color:#FF6B6B;background:#FFEBEE;}
+}
+.match-card .mc-emoji{font-size:1.8rem;line-height:1;}
+.match-progress{
+  margin-top:16px;text-align:center;
+  font-size:.9rem;color:#aaa;font-weight:700;
+}
+.match-result{
+  display:none;text-align:center;padding:20px 0 8px;
+}
+.match-result.show{display:block;}
+.match-result-emoji{font-size:3.5rem;display:block;margin-bottom:8px;}
+.match-result-text{font-size:1.2rem;font-weight:900;color:#444;}
+.match-restart{
+  margin-top:14px;border:none;
+  background:linear-gradient(135deg,var(--blue),var(--purple));
+  color:#fff;padding:13px 32px;
+  border-radius:50px;font-family:inherit;font-weight:900;font-size:1rem;
+  cursor:pointer;transition:transform .2s;
+}
+.match-restart:hover{transform:scale(1.05);}
+
+/* ===== LISTEN QUIZ MODAL ===== */
+.listen-overlay{
+  display:none;position:fixed;inset:0;
+  background:rgba(0,0,0,.55);z-index:3000;
+  align-items:center;justify-content:center;
+  padding:16px;
+}
+.listen-overlay.open{display:flex;}
+.listen-box{
+  background:#fff;border-radius:32px;
+  padding:28px 24px;width:100%;max-width:460px;
+  box-shadow:0 20px 60px rgba(0,0,0,.25);
+  animation:popIn .3s cubic-bezier(.34,1.56,.64,1);
+}
+.listen-header{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-bottom:18px;
+}
+.listen-title{font-size:1.1rem;font-weight:900;color:#444;}
+.listen-close{border:none;background:none;font-size:1.4rem;cursor:pointer;color:#bbb;}
+.listen-close:hover{color:#FF6B6B;}
+.listen-score-bar{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;}
+.listen-q-area{text-align:center;margin-bottom:22px;}
+.listen-play-btn{
+  border:none;
+  background:linear-gradient(135deg,var(--green),var(--blue));
+  color:#fff;border-radius:50%;
+  width:90px;height:90px;
+  font-size:2.4rem;cursor:pointer;
+  box-shadow:0 6px 24px rgba(77,150,255,.4);
+  transition:all .2s;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 10px;
+}
+.listen-play-btn:hover{transform:scale(1.1);}
+.listen-play-btn.playing{animation:pulse .8s ease infinite alternate;}
+.listen-q-hint{font-size:.9rem;color:#aaa;font-weight:600;}
+.listen-options{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;
+  margin-bottom:14px;
+}
+.listen-opt{
+  border:2.5px solid #EEE;
+  background:#FAFAFA;border-radius:16px;
+  padding:12px 6px;font-family:inherit;
+  font-size:1.6rem;cursor:pointer;
+  transition:all .2s;text-align:center;
+  min-height:80px;display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:4px;
+}
+.listen-opt:hover{border-color:var(--yellow);background:var(--yellow-light);}
+.listen-opt.correct{border-color:var(--green);background:var(--green-light);}
+.listen-opt.wrong{border-color:#FF6B6B;background:#FFEBEE;}
+.listen-opt:disabled{cursor:default;}
+.listen-opt .lo-label{font-size:.75rem;font-weight:700;color:#888;}
+.listen-feedback{text-align:center;font-size:1.2rem;font-weight:900;min-height:34px;margin-bottom:8px;}
+.listen-next{
+  width:100%;border:none;
+  background:linear-gradient(135deg,var(--green),var(--blue));
+  color:#fff;padding:14px;
+  border-radius:16px;font-family:inherit;font-weight:900;font-size:1rem;
+  cursor:pointer;transition:all .2s;display:none;
+}
+.listen-next.show{display:block;}
+.listen-result{text-align:center;display:none;}
+.listen-result.show{display:block;}
+.listen-result-emoji{font-size:4rem;display:block;}
+.listen-result-text{font-size:1.2rem;font-weight:900;color:#444;margin:10px 0 4px;}
+.listen-result-sub{font-size:.9rem;color:#aaa;}
+.listen-restart{
+  margin-top:16px;border:none;
+  background:linear-gradient(135deg,var(--green),var(--blue));
+  color:#fff;padding:14px 32px;
+  border-radius:50px;font-family:inherit;font-weight:900;font-size:1rem;
+  cursor:pointer;transition:transform .2s;
+}
+.listen-restart:hover{transform:scale(1.05);}
 </style>
 </head>
 <body>
@@ -453,6 +653,16 @@ body{
     <div class="bar-wrap"><div class="bar-fill" id="barFill"></div></div>
     <div class="star-row" id="starRow"></div>
   </div>
+</div>
+
+<!-- REVIEW BANNER -->
+<div class="review-banner" id="reviewBanner">
+  <div class="review-banner-icon">🧠</div>
+  <div class="review-banner-text">
+    <div class="review-banner-title">今天有单词要复习啦！</div>
+    <div class="review-banner-sub" id="reviewBannerSub">点击开始复习</div>
+  </div>
+  <div class="review-banner-count" id="reviewCount">0</div>
 </div>
 
 <!-- CATEGORY TABS -->
@@ -518,7 +728,13 @@ body{
   <div class="word-list" id="wordList"></div>
 
   <!-- QUIZ BUTTON -->
-  <button class="quiz-btn" id="quizBtn">🎯 测试一下，我掌握了多少？</button>
+  <button class="quiz-btn" id="quizBtn">🎯 看图选词</button>
+
+  <!-- LISTEN QUIZ BUTTON -->
+  <button class="listen-btn" id="listenBtn">🔊 听音选图</button>
+
+  <!-- MATCH GAME BUTTON -->
+  <button class="match-btn" id="matchBtn">🧩 配对消消乐</button>
 
   <!-- LOG TOGGLE -->
   <button class="log-toggle" id="logToggle">📖 每日学习日记 <span id="logCount">(0)</span></button>
@@ -527,6 +743,57 @@ body{
     <div id="logContent"><div class="log-empty">还没有学过单词哦，快开始吧！</div></div>
   </div>
 
+
+<!-- LISTEN QUIZ MODAL -->
+<div class="listen-overlay" id="listenOverlay">
+  <div class="listen-box">
+    <div class="listen-header">
+      <div class="listen-title">🔊 听音选图</div>
+      <button class="listen-close" id="listenClose">✕</button>
+    </div>
+    <div class="listen-score-bar" id="listenScoreBar"></div>
+    <div class="listen-q-area" id="listenQArea">
+      <button class="listen-play-btn" id="listenPlayBtn">🔊</button>
+      <div class="listen-q-hint">听声音，选出正确的图片！</div>
+    </div>
+    <div class="listen-options" id="listenOptions"></div>
+    <div class="listen-feedback" id="listenFeedback"></div>
+    <button class="listen-next" id="listenNext">下一题 ▶</button>
+    <div class="listen-result" id="listenResult">
+      <span class="listen-result-emoji" id="listenResultEmoji">🎉</span>
+      <div class="listen-result-text" id="listenResultText">太棒了！</div>
+      <div class="listen-result-sub" id="listenResultSub"></div>
+      <button class="listen-restart" id="listenRestart">再来一次 🔄</button>
+    </div>
+  </div>
+</div>
+
+<!-- MATCH GAME MODAL -->
+<div class="match-overlay" id="matchOverlay">
+  <div class="match-box">
+    <div class="match-header">
+      <div class="match-title">🧩 配对消消乐</div>
+      <button class="match-close" id="matchClose">✕</button>
+    </div>
+    <div class="match-desc">把图片和英文单词连起来！</div>
+    <div class="match-area">
+      <div class="match-col">
+        <div class="match-col-title">图 / 图标</div>
+        <div id="matchEmojis"></div>
+      </div>
+      <div class="match-col">
+        <div class="match-col-title">英文</div>
+        <div id="matchWords"></div>
+      </div>
+    </div>
+    <div class="match-progress" id="matchProgress"></div>
+    <div class="match-result" id="matchResult">
+      <span class="match-result-emoji">🎊</span>
+      <div class="match-result-text">全部配对成功！太厉害了！</div>
+      <button class="match-restart" id="matchRestart">再玩一次 🔄</button>
+    </div>
+  </div>
+</div>
 
 <!-- QUIZ MODAL -->
 <div class="quiz-overlay" id="quizOverlay">
@@ -946,6 +1213,8 @@ function markLearned(word){
     saveLog(log);
     triggerConfetti();
   }
+  // 遗忘曲线：记录学习时间
+  markWordLearned(word.e);
   updateBadge(word);
   renderProgress();
   renderLog();
@@ -1204,6 +1473,349 @@ document.getElementById('logToggle').addEventListener('click',()=>{
 });
 
 // ══════════════════════════════════════════
+//  REVIEW REMINDER (艾宾浩斯遗忘曲线)
+// ══════════════════════════════════════════
+// 复习间隔：1天、3天、7天、14天、30天
+const REVIEW_INTERVALS = [1, 3, 7, 14, 30];
+const REVIEW_LOG_KEY = 'babyReviewLog_v1'; // {wordEn: [learnedTs, lastReviewTs, reviewCount]}
+
+function loadReviewLog(){ try{return JSON.parse(localStorage.getItem(REVIEW_LOG_KEY)||'{}');}catch(e){return{};} }
+function saveReviewLog(d){ localStorage.setItem(REVIEW_LOG_KEY, JSON.stringify(d)); }
+
+function markWordLearned(wordEn){
+  const d = loadReviewLog();
+  if(!d[wordEn]){
+    d[wordEn] = {learnedAt: Date.now(), lastReview: Date.now(), count: 0};
+    saveReviewLog(d);
+  }
+}
+
+function markWordReviewed(wordEn){
+  const d = loadReviewLog();
+  if(d[wordEn]){
+    d[wordEn].lastReview = Date.now();
+    d[wordEn].count = (d[wordEn].count||0) + 1;
+    saveReviewLog(d);
+  }
+}
+
+function getDueReviewWords(){
+  const d = loadReviewLog();
+  const now = Date.now();
+  const DAY = 86400000;
+  const all = getAllWords();
+  return all.filter(w => {
+    const rec = d[w.e];
+    if(!rec) return false;
+    const count = rec.count || 0;
+    const interval = REVIEW_INTERVALS[Math.min(count, REVIEW_INTERVALS.length-1)];
+    const due = rec.lastReview + interval * DAY;
+    return now >= due;
+  });
+}
+
+function renderReviewBanner(){
+  const due = getDueReviewWords();
+  const banner = document.getElementById('reviewBanner');
+  if(due.length > 0){
+    banner.classList.add('show');
+    document.getElementById('reviewCount').textContent = due.length + ' 词';
+    document.getElementById('reviewBannerSub').textContent =
+      due.slice(0,3).map(w=>w.e).join('、') + (due.length>3 ? '…' : '') + ' 等着你复习';
+  } else {
+    banner.classList.remove('show');
+  }
+}
+
+document.getElementById('reviewBanner').addEventListener('click',()=>{
+  // 跳到第一个需复习的词
+  const due = getDueReviewWords();
+  if(!due.length) return;
+  const w = due[0];
+  // 找到该词所在分类
+  for(const [cat, data] of Object.entries(CATEGORIES)){
+    const idx = data.words.findIndex(x=>x.e===w.e);
+    if(idx>=0){
+      currentCat = cat;
+      currentIdx = idx;
+      document.querySelectorAll('.cat-btn').forEach(b=>b.classList.toggle('active',b.dataset.cat===cat));
+      renderCard();
+      renderWordList();
+      setTimeout(()=>speakBoth(currentWord()), 300);
+      // 标记已复习
+      due.forEach(dw => markWordReviewed(dw.e));
+      renderReviewBanner();
+      // 滚动到顶部
+      window.scrollTo({top:0, behavior:'smooth'});
+      return;
+    }
+  }
+});
+
+// ══════════════════════════════════════════
+//  MATCH GAME（配对消消乐）
+// ══════════════════════════════════════════
+let matchSelected = null; // {type:'emoji'|'word', idx, el}
+let matchPairs = [];
+let matchMatched = 0;
+
+function buildMatchPairs(){
+  const all = getAllWords();
+  return [...all].sort(()=>Math.random()-.5).slice(0,8);
+}
+
+function shuffle(arr){ return [...arr].sort(()=>Math.random()-.5); }
+
+function startMatch(){
+  matchPairs = buildMatchPairs();
+  matchSelected = null;
+  matchMatched = 0;
+  document.getElementById('matchResult').classList.remove('show');
+  document.getElementById('matchProgress').textContent = `已配对 0 / ${matchPairs.length}`;
+
+  const emojiCol = document.getElementById('matchEmojis');
+  const wordCol  = document.getElementById('matchWords');
+  emojiCol.innerHTML = '';
+  wordCol.innerHTML = '';
+
+  const shuffledEmoji = shuffle(matchPairs);
+  const shuffledWord  = shuffle(matchPairs);
+
+  shuffledEmoji.forEach((w,i)=>{
+    const card = document.createElement('div');
+    card.className = 'match-card';
+    card.dataset.key = w.e;
+    card.dataset.type = 'emoji';
+    // render illustration inline
+    const iconEl = document.createElement('span');
+    iconEl.className = 'mc-emoji';
+    renderIllustration(w, iconEl, 'small');
+    card.appendChild(iconEl);
+    card.addEventListener('click',()=>handleMatchClick(card));
+    emojiCol.appendChild(card);
+  });
+
+  shuffledWord.forEach((w,i)=>{
+    const card = document.createElement('div');
+    card.className = 'match-card';
+    card.dataset.key = w.e;
+    card.dataset.type = 'word';
+    card.textContent = w.e;
+    card.title = w.z;
+    card.addEventListener('click',()=>handleMatchClick(card));
+    wordCol.appendChild(card);
+  });
+
+  document.getElementById('matchOverlay').classList.add('open');
+}
+
+function handleMatchClick(card){
+  if(card.classList.contains('matched')) return;
+  if(matchSelected && matchSelected.el === card) return;
+
+  card.classList.add('selected');
+
+  if(!matchSelected){
+    matchSelected = {key: card.dataset.key, type: card.dataset.type, el: card};
+    return;
+  }
+
+  // second click
+  const first = matchSelected;
+  matchSelected = null;
+
+  if(first.key === card.dataset.key && first.type !== card.dataset.type){
+    // ✅ match!
+    first.el.classList.remove('selected');
+    card.classList.remove('selected');
+    first.el.classList.add('matched');
+    card.classList.add('matched');
+    matchMatched++;
+    triggerConfetti();
+    // speak the word
+    const w = matchPairs.find(x=>x.e===first.key);
+    if(w) speakBoth(w);
+    document.getElementById('matchProgress').textContent = `已配对 ${matchMatched} / ${matchPairs.length}`;
+    if(matchMatched >= matchPairs.length){
+      setTimeout(()=> document.getElementById('matchResult').classList.add('show'), 800);
+    }
+  } else {
+    // ❌ wrong
+    first.el.classList.remove('selected');
+    card.classList.remove('selected');
+    first.el.classList.add('wrong-flash');
+    card.classList.add('wrong-flash');
+    setTimeout(()=>{
+      first.el.classList.remove('wrong-flash');
+      card.classList.remove('wrong-flash');
+    }, 400);
+  }
+}
+
+document.getElementById('matchBtn').addEventListener('click', startMatch);
+document.getElementById('matchClose').addEventListener('click',()=>{
+  document.getElementById('matchOverlay').classList.remove('open');
+});
+document.getElementById('matchRestart').addEventListener('click', startMatch);
+document.getElementById('matchOverlay').addEventListener('click',e=>{
+  if(e.target===document.getElementById('matchOverlay'))
+    document.getElementById('matchOverlay').classList.remove('open');
+});
+
+// ══════════════════════════════════════════
+//  LISTEN QUIZ（听音选图）
+// ══════════════════════════════════════════
+const LISTEN_TOTAL = 10;
+let listenPool = [];
+let listenIdx = 0;
+let listenScore = 0;
+let listenAnswered = false;
+
+function startListenQuiz(){
+  const all = getAllWords();
+  listenPool = [...all].sort(()=>Math.random()-.5).slice(0, LISTEN_TOTAL);
+  listenIdx = 0;
+  listenScore = 0;
+  listenAnswered = false;
+  document.getElementById('listenResult').classList.remove('show');
+  document.getElementById('listenQArea').style.display='';
+  document.getElementById('listenOptions').style.display='';
+  document.getElementById('listenFeedback').style.display='';
+  document.getElementById('listenOverlay').classList.add('open');
+  renderListenScoreBar();
+  renderListenQuestion();
+}
+
+function renderListenScoreBar(){
+  const bar = document.getElementById('listenScoreBar');
+  bar.innerHTML = Array.from({length:LISTEN_TOTAL},(_,i)=>
+    `<div class="quiz-dot" id="ldot${i}"></div>`
+  ).join('');
+}
+
+function renderListenQuestion(){
+  if(listenIdx >= listenPool.length){ showListenResult(); return; }
+  listenAnswered = false;
+  const w = listenPool[listenIdx];
+
+  // reset play button
+  const playBtn = document.getElementById('listenPlayBtn');
+  playBtn.classList.remove('playing');
+  playBtn.innerHTML = '🔊';
+  playBtn.onclick = ()=>{
+    playBtn.classList.add('playing');
+    speakText(w.e,'en-US',0.75,1.1).then(()=>playBtn.classList.remove('playing'));
+  };
+
+  document.getElementById('listenFeedback').textContent = '';
+  document.getElementById('listenNext').classList.remove('show');
+
+  // 4 options: images/emojis (not text)
+  const all = getAllWords();
+  const others = all.filter(x=>x.e!==w.e).sort(()=>Math.random()-.5).slice(0,3);
+  const opts = shuffle([...others, w]);
+
+  const container = document.getElementById('listenOptions');
+  container.innerHTML = '';
+  opts.forEach(opt=>{
+    const btn = document.createElement('button');
+    btn.className = 'listen-opt';
+    // render illustration
+    const iconEl = document.createElement('div');
+    iconEl.style.cssText = 'font-size:2rem;line-height:1;';
+    renderIllustration(opt, iconEl, 'small');
+    btn.appendChild(iconEl);
+    const lbl = document.createElement('div');
+    lbl.className = 'lo-label';
+    lbl.textContent = opt.z;
+    btn.appendChild(lbl);
+    btn.addEventListener('click',()=>handleListenAnswer(opt.e===w.e, btn, w));
+    container.appendChild(btn);
+  });
+
+  // auto play once
+  setTimeout(()=>playBtn.click(), 400);
+}
+
+function handleListenAnswer(isCorrect, clickedBtn, correctWord){
+  if(listenAnswered) return;
+  listenAnswered = true;
+
+  document.querySelectorAll('.listen-opt').forEach(b=>{ b.disabled=true; });
+  clickedBtn.classList.add(isCorrect ? 'correct' : 'wrong');
+  // mark correct one too
+  document.querySelectorAll('.listen-opt').forEach(b=>{
+    const lbl = b.querySelector('.lo-label');
+    if(lbl && lbl.textContent === correctWord.z) b.classList.add('correct');
+  });
+
+  const fb = document.getElementById('listenFeedback');
+  if(isCorrect){
+    listenScore++;
+    fb.textContent = '🎉 答对了！';
+    fb.style.color = 'var(--green)';
+    speakText('Excellent','en-US',0.9,1.2);
+  } else {
+    fb.textContent = '❌ 正确答案是：' + correctWord.e + ' ' + correctWord.z;
+    fb.style.color = '#FF6B6B';
+    speakBoth(correctWord);
+  }
+  const dot = document.getElementById('ldot'+listenIdx);
+  if(dot) dot.className = 'quiz-dot ' + (isCorrect?'correct':'wrong');
+  listenIdx++;
+  const nxt = document.getElementById('listenNext');
+  nxt.classList.add('show');
+  nxt.textContent = listenIdx>=listenPool.length ? '查看结果 🎊' : '下一题 ▶';
+}
+
+function showListenResult(){
+  document.getElementById('listenQArea').style.display='none';
+  document.getElementById('listenOptions').style.display='none';
+  document.getElementById('listenFeedback').style.display='none';
+  document.getElementById('listenNext').classList.remove('show');
+  const res = document.getElementById('listenResult');
+  res.classList.add('show');
+  const pct = Math.round(listenScore/LISTEN_TOTAL*100);
+  let emoji='🌟', text='';
+  if(pct>=90){emoji='🏆';text='完美！耳朵超级好！';}
+  else if(pct>=70){emoji='🎉';text='很棒！多听多练！';}
+  else if(pct>=50){emoji='😊';text='不错哦，继续加油！';}
+  else{emoji='💪';text='多多听单词，你会越来越棒！';}
+  document.getElementById('listenResultEmoji').textContent = emoji;
+  document.getElementById('listenResultText').textContent = text;
+  document.getElementById('listenResultSub').textContent = `答对 ${listenScore} / ${LISTEN_TOTAL} 题（${pct}%）`;
+}
+
+function resetListenDisplay(){
+  document.getElementById('listenQArea').style.display='';
+  document.getElementById('listenOptions').style.display='';
+  document.getElementById('listenFeedback').style.display='';
+  document.getElementById('listenResult').classList.remove('show');
+}
+
+document.getElementById('listenBtn').addEventListener('click', startListenQuiz);
+document.getElementById('listenClose').addEventListener('click',()=>{
+  document.getElementById('listenOverlay').classList.remove('open');
+  speechSynthesis.cancel();
+  resetListenDisplay();
+});
+document.getElementById('listenNext').addEventListener('click',()=>{
+  resetListenDisplay();
+  renderListenQuestion();
+});
+document.getElementById('listenRestart').addEventListener('click',()=>{
+  resetListenDisplay();
+  startListenQuiz();
+});
+document.getElementById('listenOverlay').addEventListener('click',e=>{
+  if(e.target===document.getElementById('listenOverlay')){
+    document.getElementById('listenOverlay').classList.remove('open');
+    speechSynthesis.cancel();
+    resetListenDisplay();
+  }
+});
+
+// ══════════════════════════════════════════
 //  QUIZ MODULE
 // ══════════════════════════════════════════
 const QUIZ_TOTAL = 10;
@@ -1377,6 +1989,7 @@ renderCard();
 renderWordList();
 renderProgress();
 renderLog();
+renderReviewBanner();
 </script>
 </body>
 </html>
