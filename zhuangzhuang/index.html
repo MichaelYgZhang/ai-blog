@@ -821,14 +821,22 @@ function todayStr(){
 // ══════════════════════════════════════════
 function getEnVoice(){
   const vs = speechSynthesis.getVoices();
-  return vs.find(v=>v.lang.startsWith('en')&&/female/i.test(v.name))
+  // 优先选 en-US 女声，其次 en-US，再次任意英语声音
+  return vs.find(v=>v.lang==='en-US'&&/female/i.test(v.name))
       || vs.find(v=>v.lang==='en-US')
+      || vs.find(v=>v.lang.startsWith('en-US'))
       || vs.find(v=>v.lang.startsWith('en'))
       || null;
 }
 function getZhVoice(){
   const vs = speechSynthesis.getVoices();
-  return vs.find(v=>v.lang.startsWith('zh'))||null;
+  // 优先标准普通话: zh-CN，名字含 Mandarin/普通话/Ting-Ting/XiaoXiao/Li-Na
+  return vs.find(v=>v.lang==='zh-CN'&&/mandarin|pu通|tingting|xiaoxiao|li.na|yunxi|yunyang/i.test(v.name))
+      || vs.find(v=>v.lang==='zh-CN')
+      || vs.find(v=>v.lang==='zh_CN')
+      || vs.find(v=>v.lang.startsWith('zh-CN'))
+      || vs.find(v=>v.lang.startsWith('zh'))
+      || null;
 }
 
 function speakText(text, lang, rate=0.85, pitch=1.1){
@@ -839,8 +847,14 @@ function speakText(text, lang, rate=0.85, pitch=1.1){
     utter.lang = lang;
     utter.rate = rate;
     utter.pitch = pitch;
-    if(lang.startsWith('en')){const v=getEnVoice();if(v)utter.voice=v;}
-    else{const v=getZhVoice();if(v)utter.voice=v;}
+    // 指定声音：英文用 en-US，中文用 zh-CN 普通话
+    if(lang.startsWith('en')){
+      const v=getEnVoice(); if(v) utter.voice=v;
+      utter.lang='en-US';
+    } else {
+      const v=getZhVoice(); if(v) utter.voice=v;
+      utter.lang='zh-CN';
+    }
     utter.onend = resolve;
     utter.onerror = resolve;
     speechSynthesis.speak(utter);
@@ -930,6 +944,8 @@ function markLearned(word){
       ill.classList.remove('shake');
       void ill.offsetWidth;
       ill.classList.add('shake');
+      // 自动跳词后也播放
+      setTimeout(()=>speakBoth(currentWord()), 300);
     }, 800);
   }
 }
@@ -996,6 +1012,7 @@ function renderWordList(){
       currentIdx=i;
       renderCard();
       renderWordList();
+      setTimeout(()=>speakBoth(CATEGORIES[currentCat].words[i]), 200);
     });
     container.appendChild(div);
   });
@@ -1106,6 +1123,8 @@ function switchCategory(cat){
   });
   renderCard();
   renderWordList();
+  // 切换分类后自动播放第一个单词
+  setTimeout(()=>speakBoth(currentWord()), 400);
 }
 
 // ══════════════════════════════════════════
@@ -1134,21 +1153,23 @@ document.getElementById('wordIllustration').addEventListener('click',()=>{
 document.getElementById('prevBtn').addEventListener('click',()=>{
   const words = CATEGORIES[currentCat].words;
   currentIdx = (currentIdx-1+words.length)%words.length;
-  renderCard();
-  renderWordList();
   speechSynthesis.cancel();
   isSpeaking=false;
   setPlaying(false,'');
+  renderCard();
+  renderWordList();
+  setTimeout(()=>speakBoth(currentWord()), 200);
 });
 
 document.getElementById('nextBtn').addEventListener('click',()=>{
   const words = CATEGORIES[currentCat].words;
   currentIdx = (currentIdx+1)%words.length;
-  renderCard();
-  renderWordList();
   speechSynthesis.cancel();
   isSpeaking=false;
   setPlaying(false,'');
+  renderCard();
+  renderWordList();
+  setTimeout(()=>speakBoth(currentWord()), 200);
 });
 
 document.querySelectorAll('.cat-btn').forEach(btn=>{
