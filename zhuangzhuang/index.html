@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>宝宝英语乐园 🌈</title>
+<style>
+/* ===== RESET & BASE ===== */
+*{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --pink:#FF85A2;--pink-light:#FFE0EA;
+  --purple:#B39DDB;--purple-light:#EDE7F6;
+  --yellow:#FFD93D;--yellow-light:#FFFDE7;
+  --green:#6BCB77;--green-light:#E8F5E9;
+  --blue:#4D96FF;--blue-light:#E3F2FD;
+  --orange:#FFB347;--orange-light:#FFF3E0;
+  --bg:#FFF5F8;
+  --radius:28px;
+  --shadow:0 8px 32px rgba(0,0,0,.10);
+}
+body{
+  font-family:'Comic Sans MS',cursive,sans-serif;
+  background:var(--bg);
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* ===== HEADER ===== */
+.app-header{
+  background:linear-gradient(135deg,#FF85A2 0%,#B39DDB 50%,#4D96FF 100%);
+  padding:20px 16px 18px;
+  text-align:center;
+  position:relative;
+  border-radius:0 0 40px 40px;
+  box-shadow:0 4px 20px rgba(180,100,150,.25);
+}
+.app-header h1{
+  font-size:clamp(1.6rem,6vw,2.4rem);
+  color:#fff;
+  font-weight:900;
+  text-shadow:0 2px 8px rgba(0,0,0,.15);
+  letter-spacing:1px;
+}
+.app-header p{color:rgba(255,255,255,.88);font-size:.95rem;margin-top:4px;}
+.deco{position:absolute;font-size:2rem;top:14px;}
+.deco-l{left:14px;}
+.deco-r{right:14px;}
+
+/* ===== PROGRESS BANNER ===== */
+.progress-banner{
+  display:flex;align-items:center;gap:12px;
+  background:#fff;
+  margin:16px 16px 0;
+  padding:14px 18px;
+  border-radius:20px;
+  box-shadow:var(--shadow);
+}
+.progress-banner .badge{
+  background:linear-gradient(135deg,var(--yellow),var(--orange));
+  color:#fff;font-weight:900;
+  width:52px;height:52px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.5rem;flex-shrink:0;
+  box-shadow:0 3px 10px rgba(255,179,71,.4);
+}
+.progress-info{flex:1;}
+.progress-info .label{font-size:.85rem;color:#aaa;}
+.progress-info .learned-text{font-size:1rem;font-weight:700;color:#555;margin:2px 0 6px;}
+.bar-wrap{height:10px;background:#F0F0F0;border-radius:10px;overflow:hidden;}
+.bar-fill{
+  height:100%;
+  background:linear-gradient(90deg,var(--green),var(--yellow),var(--pink));
+  border-radius:10px;
+  transition:width .6s cubic-bezier(.34,1.56,.64,1);
+  width:0%;
+}
+.star-row{font-size:1.1rem;margin-top:6px;min-height:22px;}
+
+/* ===== CATEGORY TABS ===== */
+.cat-scroll{
+  overflow-x:auto;
+  padding:14px 16px 4px;
+  display:flex;gap:10px;
+  scrollbar-width:none;
+}
+.cat-scroll::-webkit-scrollbar{display:none;}
+.cat-btn{
+  border:none;background:#fff;
+  border-radius:50px;padding:9px 18px;
+  font-size:.9rem;font-family:inherit;font-weight:700;
+  cursor:pointer;white-space:nowrap;
+  box-shadow:0 3px 10px rgba(0,0,0,.10);
+  transition:all .2s;color:#777;
+  display:flex;align-items:center;gap:6px;
+  flex-shrink:0;
+}
+.cat-btn:hover{transform:translateY(-2px);}
+.cat-btn.active{color:#fff;transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.18);}
+.cat-btn[data-cat="animals"].active{background:linear-gradient(135deg,#FF6B6B,#FF8E53);}
+.cat-btn[data-cat="fruits"].active{background:linear-gradient(135deg,#6BCB77,#40C9A2);}
+.cat-btn[data-cat="colors"].active{background:linear-gradient(135deg,#4D96FF,#845EF7);}
+.cat-btn[data-cat="numbers"].active{background:linear-gradient(135deg,#FFD93D,#FF8E53);}
+.cat-btn[data-cat="body"].active{background:linear-gradient(135deg,#FF85A2,#B39DDB);}
+.cat-btn[data-cat="vehicles"].active{background:linear-gradient(135deg,#FF8E53,#FFD93D);}
+.cat-btn[data-cat="greetings"].active{background:linear-gradient(135deg,#B39DDB,#4D96FF);}
+.cat-btn[data-cat="family"].active{background:linear-gradient(135deg,#FF85A2,#FF6B6B);}
+
+/* ===== MAIN CARD AREA ===== */
+.main-area{
+  padding:16px 16px 100px;
+  max-width:520px;
+  margin:0 auto;
+}
+
+/* ===== WORD CARD (big single card) ===== */
+.word-display{
+  background:#fff;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  padding:28px 20px 24px;
+  text-align:center;
+  position:relative;
+  margin-bottom:18px;
+  transition:transform .2s;
+}
+.word-display.pop{animation:popCard .4s cubic-bezier(.34,1.56,.64,1);}
+@keyframes popCard{
+  0%{transform:scale(1);}40%{transform:scale(1.04);}100%{transform:scale(1);}
+}
+.nav-arrows{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-bottom:12px;
+}
+.nav-btn{
+  border:none;background:var(--yellow-light);
+  width:44px;height:44px;border-radius:50%;
+  font-size:1.4rem;cursor:pointer;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+  transition:all .2s;display:flex;align-items:center;justify-content:center;
+}
+.nav-btn:hover{background:var(--yellow);transform:scale(1.1);}
+.word-counter{
+  font-size:.85rem;color:#bbb;font-weight:600;
+}
+.word-illustration{
+  font-size:clamp(6rem,22vw,9rem);
+  line-height:1;
+  display:block;
+  margin:10px auto 18px;
+  filter:drop-shadow(0 6px 16px rgba(0,0,0,.12));
+  cursor:pointer;
+  transition:transform .2s;
+  user-select:none;
+}
+.word-illustration:hover{transform:scale(1.06);}
+.word-illustration.shake{animation:shake .5s ease;}
+@keyframes shake{
+  0%,100%{transform:rotate(0);}
+  20%{transform:rotate(-8deg) scale(1.08);}
+  50%{transform:rotate(8deg) scale(1.08);}
+  80%{transform:rotate(-4deg) scale(1.04);}
+}
+.word-english{
+  font-size:clamp(2rem,8vw,3rem);
+  font-weight:900;color:#333;
+  text-transform:capitalize;
+  letter-spacing:1px;
+}
+.word-phonetic{
+  font-size:.9rem;color:#bbb;
+  font-style:italic;margin:4px 0 6px;
+}
+.word-chinese{
+  font-size:1.3rem;color:#888;font-weight:700;
+}
+/* learned badge */
+.learned-badge{
+  position:absolute;top:14px;right:16px;
+  background:linear-gradient(135deg,var(--yellow),var(--orange));
+  color:#fff;font-size:.75rem;font-weight:900;
+  padding:4px 10px;border-radius:50px;
+  opacity:0;transform:scale(.7);
+  transition:all .3s;
+}
+.learned-badge.show{opacity:1;transform:scale(1);}
+
+/* ===== SPEAK BUTTON ===== */
+.speak-btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  width:100%;padding:18px;
+  border:none;border-radius:20px;
+  font-size:1.2rem;font-family:inherit;font-weight:900;
+  cursor:pointer;
+  background:linear-gradient(135deg,var(--pink),var(--purple));
+  color:#fff;
+  box-shadow:0 6px 20px rgba(179,157,219,.4);
+  transition:all .2s cubic-bezier(.34,1.56,.64,1);
+  margin-bottom:12px;
+  letter-spacing:.5px;
+}
+.speak-btn:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 10px 28px rgba(179,157,219,.5);}
+.speak-btn:active{transform:scale(.97);}
+.speak-btn.playing{
+  background:linear-gradient(135deg,var(--green),var(--blue));
+  animation:pulse .8s ease infinite alternate;
+}
+@keyframes pulse{
+  from{box-shadow:0 6px 20px rgba(77,150,255,.3);}
+  to{box-shadow:0 10px 32px rgba(77,150,255,.55);}
+}
+.speak-icon{font-size:1.6rem;}
+.speak-label{flex:1;}
+.speak-hint{font-size:.78rem;opacity:.85;font-weight:400;}
+
+/* ===== MINI BUTTONS ROW ===== */
+.mini-btns{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;
+  margin-bottom:12px;
+}
+.mini-btn{
+  border:none;padding:13px 10px;
+  border-radius:16px;font-family:inherit;font-weight:700;font-size:.9rem;
+  cursor:pointer;transition:all .2s;
+  display:flex;align-items:center;justify-content:center;gap:6px;
+}
+.mini-btn:hover{transform:translateY(-2px);}
+.btn-en{background:var(--blue-light);color:var(--blue);}
+.btn-en:hover{background:var(--blue);color:#fff;}
+.btn-zh{background:var(--pink-light);color:var(--pink);}
+.btn-zh:hover{background:var(--pink);color:#fff;}
+
+/* ===== WORD LIST (thumbnails) ===== */
+.word-list-title{
+  font-size:1rem;color:#bbb;font-weight:700;
+  margin:18px 0 10px;text-align:center;letter-spacing:1px;
+}
+.word-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(72px,1fr));
+  gap:10px;
+}
+.wl-item{
+  background:#fff;border-radius:16px;padding:10px 6px 8px;
+  text-align:center;cursor:pointer;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+  transition:all .2s;
+  border:2.5px solid transparent;
+}
+.wl-item:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(0,0,0,.13);}
+.wl-item.current{border-color:var(--yellow);background:var(--yellow-light);}
+.wl-item.done{border-color:var(--green);}
+.wl-emoji{font-size:1.8rem;display:block;line-height:1;}
+.wl-en{font-size:.68rem;font-weight:700;color:#555;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.wl-check{font-size:.75rem;color:var(--green);}
+
+/* ===== LOG PANEL ===== */
+.log-toggle{
+  width:100%;border:none;
+  background:var(--purple-light);color:var(--purple);
+  padding:13px;border-radius:16px;
+  font-family:inherit;font-weight:700;font-size:.92rem;
+  cursor:pointer;margin-top:18px;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  transition:all .2s;
+}
+.log-toggle:hover{background:var(--purple);color:#fff;}
+.log-panel{
+  display:none;background:#fff;border-radius:20px;
+  padding:16px;margin-top:10px;
+  box-shadow:var(--shadow);
+  max-height:320px;overflow-y:auto;
+}
+.log-panel.open{display:block;}
+.log-panel h3{font-size:.95rem;color:#888;margin-bottom:12px;}
+.log-item{
+  display:flex;align-items:center;gap:10px;
+  padding:8px 0;border-bottom:1px solid #F5F5F5;
+}
+.log-item:last-child{border:none;}
+.log-emoji{font-size:1.5rem;}
+.log-text{flex:1;}
+.log-en{font-size:.95rem;font-weight:700;color:#444;}
+.log-zh{font-size:.78rem;color:#aaa;}
+.log-time{font-size:.72rem;color:#ccc;}
+.log-empty{text-align:center;color:#ccc;padding:20px 0;font-size:.9rem;}
+
+/* ===== CONFETTI ===== */
+.confetti-piece{
+  position:fixed;pointer-events:none;z-index:9999;
+  width:10px;height:10px;border-radius:3px;
+  animation:confettiFall 1.8s ease-out forwards;
+}
+@keyframes confettiFall{
+  0%{transform:translateY(-20px) rotate(0deg) scale(1);opacity:1;}
+  100%{transform:translateY(120vh) rotate(720deg) scale(.5);opacity:0;}
+}
+.fly-star{
+  position:fixed;pointer-events:none;z-index:9999;
+  font-size:1.6rem;
+  animation:flyUp 1.2s ease-out forwards;
+}
+@keyframes flyUp{
+  0%{transform:translateY(0) scale(.5);opacity:1;}
+  100%{transform:translateY(-140px) scale(1.2);opacity:0;}
+}
+
+/* ===== PLAYING INDICATOR ===== */
+.playing-indicator{
+  display:none;
+  align-items:center;justify-content:center;gap:6px;
+  font-size:.85rem;color:var(--blue);font-weight:700;
+  margin-top:8px;
+}
+.playing-indicator.show{display:flex;}
+.wave{display:flex;align-items:flex-end;gap:3px;}
+.wave-bar{
+  width:4px;background:var(--blue);border-radius:4px;
+  animation:wave .8s ease-in-out infinite alternate;
+}
+.wave-bar:nth-child(2){animation-delay:.15s;}
+.wave-bar:nth-child(3){animation-delay:.3s;}
+.wave-bar:nth-child(4){animation-delay:.15s;}
+@keyframes wave{
+  from{height:4px;}to{height:18px;}
+}
+
+@media(max-width:400px){
+  .mini-btns{grid-template-columns:1fr;}
+  .word-list{grid-template-columns:repeat(4,1fr);}
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="app-header">
+  <span class="deco deco-l">🌟</span>
+  <h1>🌈 宝宝英语乐园</h1>
+  <p>Baby's English World · 点击按钮听发音！</p>
+  <span class="deco deco-r">🎀</span>
+</header>
+
+<!-- PROGRESS BANNER -->
+<div class="progress-banner">
+  <div class="badge" id="totalBadge">0</div>
+  <div class="progress-info">
+    <div class="label">今日学习进度</div>
+    <div class="learned-text" id="learnedText">还没有开始，加油哦！</div>
+    <div class="bar-wrap"><div class="bar-fill" id="barFill"></div></div>
+    <div class="star-row" id="starRow"></div>
+  </div>
+</div>
+
+<!-- CATEGORY TABS -->
+<div class="cat-scroll" id="catScroll">
+  <button class="cat-btn active" data-cat="animals">🐾 动物</button>
+  <button class="cat-btn" data-cat="fruits">🍎 水果</button>
+  <button class="cat-btn" data-cat="colors">🎨 颜色</button>
+  <button class="cat-btn" data-cat="numbers">🔢 数字</button>
+  <button class="cat-btn" data-cat="body">👀 身体</button>
+  <button class="cat-btn" data-cat="family">👨‍👩‍👧 家庭</button>
+  <button class="cat-btn" data-cat="vehicles">🚗 车辆</button>
+  <button class="cat-btn" data-cat="greetings">👋 问候</button>
+</div>
+
+<!-- MAIN AREA -->
+<div class="main-area">
+
+  <!-- BIG WORD CARD -->
+  <div class="word-display" id="wordDisplay">
+    <div class="learned-badge" id="learnedBadge">✅ 已学会</div>
+    <div class="nav-arrows">
+      <button class="nav-btn" id="prevBtn">◀</button>
+      <div class="word-counter" id="wordCounter">1 / 12</div>
+      <button class="nav-btn" id="nextBtn">▶</button>
+    </div>
+
+    <!-- illustration -->
+    <span class="word-illustration" id="wordIllustration" title="点我">🐱</span>
+
+    <div class="word-english" id="wordEnglish">Cat</div>
+    <div class="word-phonetic" id="wordPhonetic">[kæt]</div>
+    <div class="word-chinese" id="wordChinese">猫咪</div>
+
+    <!-- playing indicator -->
+    <div class="playing-indicator" id="playingIndicator">
+      <div class="wave">
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+      </div>
+      <span id="playingLabel">正在播放…</span>
+    </div>
+  </div>
+
+  <!-- MAIN SPEAK BUTTON -->
+  <button class="speak-btn" id="mainSpeakBtn">
+    <span class="speak-icon">🔊</span>
+    <span class="speak-label">
+      点我听发音！<br>
+      <span class="speak-hint">先英文 → 再中文</span>
+    </span>
+  </button>
+
+  <!-- MINI BUTTONS -->
+  <div class="mini-btns">
+    <button class="mini-btn btn-en" id="btnEn">🇬🇧 只听英文</button>
+    <button class="mini-btn btn-zh" id="btnZh">🇨🇳 只听中文</button>
+  </div>
+
+  <!-- WORD LIST -->
+  <div class="word-list-title">📚 本单元单词</div>
+  <div class="word-list" id="wordList"></div>
+
+  <!-- LOG TOGGLE -->
+  <button class="log-toggle" id="logToggle">📖 我的学习日记 <span id="logCount">(0)</span></button>
+  <div class="log-panel" id="logPanel">
+    <h3>🌟 已学会的单词</h3>
+    <div id="logContent"><div class="log-empty">还没有学过单词哦，快开始吧！</div></div>
+  </div>
+
+</div><!-- /main-area -->
+
+<script>
+// ══════════════════════════════════════════
+//  DATA
+// ══════════════════════════════════════════
+const CATEGORIES = {
+  animals:{
+    label:'动物朋友',
+    words:[
+      {e:'Cat',        z:'猫咪',   p:'[kæt]',          i:'🐱'},
+      {e:'Dog',        z:'狗狗',   p:'[dɔɡ]',          i:'🐶'},
+      {e:'Bear',       z:'熊熊',   p:'[bɛr]',          i:'🐻'},
+      {e:'Rabbit',     z:'兔子',   p:'[ˈræbɪt]',       i:'🐰'},
+      {e:'Frog',       z:'青蛙',   p:'[frɔɡ]',         i:'🐸'},
+      {e:'Lion',       z:'狮子',   p:'[ˈlaɪən]',       i:'🦁'},
+      {e:'Elephant',   z:'大象',   p:'[ˈɛlɪfənt]',     i:'🐘'},
+      {e:'Duck',       z:'鸭子',   p:'[dʌk]',          i:'🦆'},
+      {e:'Fish',       z:'鱼儿',   p:'[fɪʃ]',          i:'🐠'},
+      {e:'Penguin',    z:'企鹅',   p:'[ˈpɛŋɡwɪn]',     i:'🐧'},
+      {e:'Pig',        z:'小猪',   p:'[pɪɡ]',          i:'🐷'},
+      {e:'Cow',        z:'奶牛',   p:'[kaʊ]',          i:'🐮'},
+      {e:'Horse',      z:'马儿',   p:'[hɔːrs]',        i:'🐴'},
+      {e:'Sheep',      z:'绵羊',   p:'[ʃiːp]',         i:'🐑'},
+      {e:'Monkey',     z:'猴子',   p:'[ˈmʌŋki]',       i:'🐒'},
+      {e:'Tiger',      z:'老虎',   p:'[ˈtaɪɡər]',      i:'🐯'},
+      {e:'Panda',      z:'熊猫',   p:'[ˈpændə]',       i:'🐼'},
+      {e:'Giraffe',    z:'长颈鹿', p:'[dʒɪˈræf]',      i:'🦒'},
+      {e:'Crocodile',  z:'鳄鱼',   p:'[ˈkrɒkədaɪl]',   i:'🐊'},
+      {e:'Turtle',     z:'乌龟',   p:'[ˈtɜːrtl]',      i:'🐢'},
+      {e:'Bird',       z:'小鸟',   p:'[bɜːrd]',        i:'🐦'},
+      {e:'Butterfly',  z:'蝴蝶',   p:'[ˈbʌtərflaɪ]',   i:'🦋'},
+      {e:'Bee',        z:'小蜜蜂', p:'[biː]',           i:'🐝'},
+      {e:'Snail',      z:'蜗牛',   p:'[sneɪl]',        i:'🐌'},
+      {e:'Crab',       z:'螃蟹',   p:'[kræb]',         i:'🦀'},
+      {e:'Whale',      z:'鲸鱼',   p:'[weɪl]',         i:'🐳'},
+      {e:'Fox',        z:'狐狸',   p:'[fɒks]',         i:'🦊'},
+      {e:'Wolf',       z:'大灰狼', p:'[wʊlf]',         i:'🐺'},
+      {e:'Deer',       z:'小鹿',   p:'[dɪər]',         i:'🦌'},
+      {e:'Koala',      z:'考拉',   p:'[koʊˈɑːlə]',     i:'🐨'},
+    ]
+  },
+  fruits:{
+    label:'美味水果',
+    words:[
+      {e:'Apple',      z:'苹果',   p:'[ˈæpəl]',         i:'🍎'},
+      {e:'Banana',     z:'香蕉',   p:'[bəˈnɑːnə]',      i:'🍌'},
+      {e:'Orange',     z:'橘子',   p:'[ˈɔrɪndʒ]',       i:'🍊'},
+      {e:'Grape',      z:'葡萄',   p:'[ɡreɪp]',         i:'🍇'},
+      {e:'Strawberry', z:'草莓',   p:'[ˈstrɔːbɛri]',    i:'🍓'},
+      {e:'Watermelon', z:'西瓜',   p:'[ˈwɔːtərˌmɛlən]', i:'🍉'},
+      {e:'Peach',      z:'桃子',   p:'[piːtʃ]',         i:'🍑'},
+      {e:'Mango',      z:'芒果',   p:'[ˈmæŋɡoʊ]',       i:'🥭'},
+      {e:'Lemon',      z:'柠檬',   p:'[ˈlɛmən]',        i:'🍋'},
+      {e:'Kiwi',       z:'猕猴桃', p:'[ˈkiːwiː]',       i:'🥝'},
+      {e:'Cherry',     z:'樱桃',   p:'[ˈtʃɛri]',        i:'🍒'},
+      {e:'Pineapple',  z:'菠萝',   p:'[ˈpaɪnæpəl]',     i:'🍍'},
+      {e:'Pear',       z:'梨子',   p:'[pɛr]',           i:'🍐'},
+      {e:'Coconut',    z:'椰子',   p:'[ˈkoʊkənʌt]',     i:'🥥'},
+      {e:'Blueberry',  z:'蓝莓',   p:'[ˈbluːbɛri]',     i:'🫐'},
+      {e:'Melon',      z:'哈密瓜', p:'[ˈmɛlən]',        i:'🍈'},
+      {e:'Avocado',    z:'牛油果', p:'[ˌævəˈkɑːdoʊ]',   i:'🥑'},
+      {e:'Tomato',     z:'番茄',   p:'[təˈmeɪtoʊ]',     i:'🍅'},
+      {e:'Plum',       z:'李子',   p:'[plʌm]',          i:'🍑'},
+      {e:'Fig',        z:'无花果', p:'[fɪɡ]',           i:'🪴'},
+      {e:'Papaya',     z:'木瓜',   p:'[pəˈpaɪə]',       i:'🍈'},
+      {e:'Pomelo',     z:'柚子',   p:'[ˈpɒmɪloʊ]',      i:'🟡'},
+    ]
+  },
+  colors:{
+    label:'美丽颜色',
+    words:[
+      {e:'Red',        z:'红色',   p:'[rɛd]',       i:'🔴'},
+      {e:'Orange',     z:'橙色',   p:'[ˈɔrɪndʒ]',  i:'🟠'},
+      {e:'Yellow',     z:'黄色',   p:'[ˈjɛloʊ]',   i:'🟡'},
+      {e:'Green',      z:'绿色',   p:'[ɡriːn]',    i:'🟢'},
+      {e:'Blue',       z:'蓝色',   p:'[bluː]',     i:'🔵'},
+      {e:'Purple',     z:'紫色',   p:'[ˈpɜːrpəl]', i:'🟣'},
+      {e:'Pink',       z:'粉色',   p:'[pɪŋk]',     i:'🩷'},
+      {e:'Brown',      z:'棕色',   p:'[braʊn]',    i:'🟤'},
+      {e:'Black',      z:'黑色',   p:'[blæk]',     i:'⚫'},
+      {e:'White',      z:'白色',   p:'[waɪt]',     i:'⚪'},
+      {e:'Grey',       z:'灰色',   p:'[ɡreɪ]',     i:'🩶'},
+      {e:'Gold',       z:'金色',   p:'[ɡoʊld]',    i:'🥇'},
+      {e:'Silver',     z:'银色',   p:'[ˈsɪlvər]',  i:'🥈'},
+      {e:'Sky blue',   z:'天蓝色', p:'[skaɪ bluː]',i:'🩵'},
+      {e:'Light green',z:'浅绿色', p:'[laɪt ɡriːn]',i:'💚'},
+      {e:'Dark blue',  z:'深蓝色', p:'[dɑːrk bluː]',i:'🔷'},
+      {e:'Rainbow',    z:'彩虹色', p:'[ˈreɪnboʊ]', i:'🌈'},
+    ]
+  },
+  numbers:{
+    label:'数字游戏',
+    words:[
+      {e:'One',        z:'一',   p:'[wʌn]',       i:'1️⃣'},
+      {e:'Two',        z:'二',   p:'[tuː]',       i:'2️⃣'},
+      {e:'Three',      z:'三',   p:'[θriː]',      i:'3️⃣'},
+      {e:'Four',       z:'四',   p:'[fɔːr]',      i:'4️⃣'},
+      {e:'Five',       z:'五',   p:'[faɪv]',      i:'5️⃣'},
+      {e:'Six',        z:'六',   p:'[sɪks]',      i:'6️⃣'},
+      {e:'Seven',      z:'七',   p:'[ˈsɛvən]',    i:'7️⃣'},
+      {e:'Eight',      z:'八',   p:'[eɪt]',       i:'8️⃣'},
+      {e:'Nine',       z:'九',   p:'[naɪn]',      i:'9️⃣'},
+      {e:'Ten',        z:'十',   p:'[tɛn]',       i:'🔟'},
+      {e:'Eleven',     z:'十一', p:'[ɪˈlɛvən]',   i:'🔢'},
+      {e:'Twelve',     z:'十二', p:'[twɛlv]',     i:'🔢'},
+      {e:'Twenty',     z:'二十', p:'[ˈtwɛnti]',   i:'🔢'},
+      {e:'Hundred',    z:'一百', p:'[ˈhʌndrəd]',  i:'💯'},
+      {e:'First',      z:'第一', p:'[fɜːrst]',    i:'🥇'},
+      {e:'Second',     z:'第二', p:'[ˈsɛkənd]',   i:'🥈'},
+      {e:'Third',      z:'第三', p:'[θɜːrd]',     i:'🥉'},
+      {e:'Big',        z:'大',   p:'[bɪɡ]',       i:'🔼'},
+      {e:'Small',      z:'小',   p:'[smɔːl]',     i:'🔽'},
+      {e:'Many',       z:'很多', p:'[ˈmɛni]',     i:'🎯'},
+      {e:'Few',        z:'很少', p:'[fjuː]',      i:'🎈'},
+    ]
+  },
+  body:{
+    label:'我的身体',
+    words:[
+      {e:'Head',       z:'头',   p:'[hɛd]',       i:'🗣️'},
+      {e:'Eyes',       z:'眼睛', p:'[aɪz]',       i:'👀'},
+      {e:'Nose',       z:'鼻子', p:'[noʊz]',      i:'👃'},
+      {e:'Mouth',      z:'嘴巴', p:'[maʊθ]',      i:'👄'},
+      {e:'Ear',        z:'耳朵', p:'[ɪr]',        i:'👂'},
+      {e:'Hand',       z:'手',   p:'[hænd]',      i:'🖐️'},
+      {e:'Foot',       z:'脚',   p:'[fʊt]',       i:'🦶'},
+      {e:'Arm',        z:'手臂', p:'[ɑːrm]',      i:'💪'},
+      {e:'Leg',        z:'腿',   p:'[lɛɡ]',       i:'🦵'},
+      {e:'Teeth',      z:'牙齿', p:'[tiːθ]',      i:'🦷'},
+      {e:'Hair',       z:'头发', p:'[hɛr]',       i:'💇'},
+      {e:'Face',       z:'脸',   p:'[feɪs]',      i:'😊'},
+      {e:'Finger',     z:'手指', p:'[ˈfɪŋɡər]',   i:'👆'},
+      {e:'Thumb',      z:'大拇指',p:'[θʌm]',      i:'👍'},
+      {e:'Back',       z:'背',   p:'[bæk]',       i:'🔙'},
+      {e:'Belly',      z:'肚子', p:'[ˈbɛli]',     i:'🫃'},
+      {e:'Shoulder',   z:'肩膀', p:'[ˈʃoʊldər]',  i:'🤷'},
+      {e:'Knee',       z:'膝盖', p:'[niː]',       i:'🦵'},
+      {e:'Tongue',     z:'舌头', p:'[tʌŋ]',       i:'👅'},
+      {e:'Cheek',      z:'脸颊', p:'[tʃiːk]',     i:'😊'},
+      {e:'Heart',      z:'心脏', p:'[hɑːrt]',     i:'❤️'},
+    ]
+  },
+  family:{
+    label:'我的家人',
+    words:[
+      {e:'Mama',       z:'妈妈',   p:'[ˈmɑːmə]',   i:'👩'},
+      {e:'Dada',       z:'爸爸',   p:'[ˈdɑːdə]',   i:'👨'},
+      {e:'Baby',       z:'宝宝',   p:'[ˈbeɪbi]',   i:'👶'},
+      {e:'Grandma',    z:'奶奶',   p:'[ˈɡrænmɑː]', i:'👵'},
+      {e:'Grandpa',    z:'爷爷',   p:'[ˈɡrænpɑː]', i:'👴'},
+      {e:'Brother',    z:'哥哥',   p:'[ˈbrʌðər]',  i:'👦'},
+      {e:'Sister',     z:'姐姐',   p:'[ˈsɪstər]',  i:'👧'},
+      {e:'Family',     z:'家庭',   p:'[ˈfæmɪli]',  i:'👨‍👩‍👧'},
+      {e:'Uncle',      z:'叔叔',   p:'[ˈʌŋkəl]',   i:'🧔'},
+      {e:'Aunt',       z:'阿姨',   p:'[ænt]',      i:'👩'},
+      {e:'Cousin',     z:'表弟',   p:'[ˈkʌzən]',   i:'🧒'},
+      {e:'Son',        z:'儿子',   p:'[sʌn]',      i:'👦'},
+      {e:'Daughter',   z:'女儿',   p:'[ˈdɔːtər]',  i:'👧'},
+      {e:'Boy',        z:'男孩',   p:'[bɔɪ]',      i:'👦'},
+      {e:'Girl',       z:'女孩',   p:'[ɡɜːrl]',    i:'👧'},
+      {e:'Child',      z:'孩子',   p:'[tʃaɪld]',   i:'🧒'},
+      {e:'Friend',     z:'朋友',   p:'[frɛnd]',    i:'🤝'},
+      {e:'Teacher',    z:'老师',   p:'[ˈtiːtʃər]', i:'👩‍🏫'},
+      {e:'Doctor',     z:'医生',   p:'[ˈdɒktər]',  i:'👨‍⚕️'},
+      {e:'Home',       z:'家',     p:'[hoʊm]',     i:'🏠'},
+    ]
+  },
+  vehicles:{
+    label:'小汽车',
+    words:[
+      {e:'School bus',   z:'校车',   p:'[skuːl bʌs]',         i:'🚌'},
+      {e:'Car',          z:'小汽车', p:'[kɑːr]',               i:'🚗'},
+      {e:'Bus',          z:'公交车', p:'[bʌs]',                i:'🚌'},
+      {e:'Truck',        z:'卡车',   p:'[trʌk]',              i:'🚚'},
+      {e:'Fire truck',   z:'消防车', p:'[ˈfaɪər trʌk]',       i:'🚒'},
+      {e:'Ambulance',    z:'救护车', p:'[ˈæmbjʊləns]',        i:'🚑'},
+      {e:'Police car',   z:'警察车', p:'[pəˈliːs kɑːr]',      i:'🚓'},
+      {e:'Tractor',      z:'拖拉机', p:'[ˈtræktər]',          i:'🚜'},
+      {e:'Bulldozer',    z:'推土机', p:'[ˈbʊldoʊzər]',        i:'🚧'},
+      {e:'Train',        z:'火车',   p:'[treɪn]',             i:'🚂'},
+      {e:'Bicycle',      z:'自行车', p:'[ˈbaɪsɪkəl]',         i:'🚲'},
+      {e:'Motorcycle',   z:'摩托车', p:'[ˈmoʊtərˌsaɪkəl]',   i:'🏍️'},
+      {e:'Helicopter',   z:'直升机', p:'[ˈhɛlɪˌkɑːptər]',    i:'🚁'},
+      {e:'Airplane',     z:'飞机',   p:'[ˈɛrpleɪn]',          i:'✈️'},
+      {e:'Rocket',       z:'火箭',   p:'[ˈrɒkɪt]',            i:'🚀'},
+      {e:'Ship',         z:'轮船',   p:'[ʃɪp]',               i:'🚢'},
+      {e:'Submarine',    z:'潜水艇', p:'[ˈsʌbməriːn]',        i:'🌊'},
+      {e:'Taxi',         z:'出租车', p:'[ˈtæksi]',            i:'🚕'},
+      {e:'Van',          z:'面包车', p:'[væn]',               i:'🚐'},
+      {e:'Garbage truck',z:'垃圾车', p:'[ˈɡɑːrbɪdʒ trʌk]',  i:'🗑️'},
+      {e:'Crane',        z:'起重机', p:'[kreɪn]',             i:'🏗️'},
+      {e:'Excavator',    z:'挖掘机', p:'[ˈɛkskəveɪtər]',     i:'🦾'},
+      {e:'Roller',       z:'压路机', p:'[ˈroʊlər]',           i:'🛞'},
+      {e:'Cement mixer', z:'搅拌车', p:'[sɪˈmɛnt ˈmɪksər]',  i:'🔄'},
+      {e:'Forklift',     z:'叉车',   p:'[ˈfɔːrklɪft]',        i:'🏭'},
+      {e:'Scooter',      z:'滑板车', p:'[ˈskuːtər]',          i:'🛴'},
+      {e:'Cable car',    z:'缆车',   p:'[ˈkeɪbəl kɑːr]',      i:'🚡'},
+      {e:'Sailboat',     z:'帆船',   p:'[ˈseɪlboʊt]',         i:'⛵'},
+      {e:'Hot balloon',  z:'热气球', p:'[hɒt bəˈluːn]',       i:'🎈'},
+      {e:'Dump truck',   z:'翻斗车', p:'[dʌmp trʌk]',         i:'🚛'},
+      {e:'Mixer truck',  z:'混凝土车',p:'[ˈmɪksər trʌk]',     i:'🔄'},
+      {e:'Tower crane',  z:'塔吊',   p:'[ˈtaʊər kreɪn]',      i:'🏗️'},
+      {e:'Paver',        z:'摊铺机', p:'[ˈpeɪvər]',           i:'🛣️'},
+      {e:'Pile driver',  z:'打桩机', p:'[paɪl ˈdraɪvər]',     i:'🔩'},
+      {e:'Grader',       z:'平地机', p:'[ˈɡreɪdər]',          i:'🚧'},
+      {e:'Loader',       z:'装载机', p:'[ˈloʊdər]',           i:'🚜'},
+      {e:'Scraper',      z:'铲运机', p:'[ˈskreɪpər]',         i:'⛏️'},
+      {e:'Drilling rig', z:'钻孔机', p:'[ˈdrɪlɪŋ rɪɡ]',      i:'🔧'},
+      {e:'Aerial lift',  z:'高空车', p:'[ˈɛriəl lɪft]',       i:'🚒'},
+    ]
+  },
+  greetings:{
+    label:'打招呼',
+    words:[
+      {e:'Hello',          z:'你好',     p:'[həˈloʊ]',         i:'👋'},
+      {e:'Good morning',   z:'早上好',   p:'[ɡʊd ˈmɔːrnɪŋ]',  i:'🌅'},
+      {e:'Good afternoon', z:'下午好',   p:'[ɡʊd ˌæftərˈnuːn]',i:'☀️'},
+      {e:'Good evening',   z:'晚上好',   p:'[ɡʊd ˈiːvnɪŋ]',   i:'🌆'},
+      {e:'Good night',     z:'晚安',     p:'[ɡʊd naɪt]',      i:'🌙'},
+      {e:'Thank you',      z:'谢谢你',   p:'[θæŋk juː]',      i:'🙏'},
+      {e:'Please',         z:'请',       p:'[pliːz]',         i:'😊'},
+      {e:'I love you',     z:'我爱你',   p:'[aɪ lʌv juː]',    i:'🥰'},
+      {e:'Bye bye',        z:'再见',     p:'[baɪ baɪ]',       i:'✌️'},
+      {e:'Very good',      z:'非常好',   p:'[ˈvɛri ɡʊd]]',    i:'👍'},
+      {e:'Sorry',          z:'对不起',   p:'[ˈsɒri]',         i:'😔'},
+      {e:'No problem',     z:'没问题',   p:'[noʊ ˈprɒbləm]',  i:'😄'},
+      {e:'Come on',        z:'加油',     p:'[kʌm ɒn]',        i:'💪'},
+      {e:'Wow',            z:'哇',       p:'[waʊ]',           i:'😲'},
+      {e:'Happy',          z:'开心',     p:'[ˈhæpi]',         i:'😊'},
+      {e:'I am hungry',    z:'我饿了',   p:'[aɪ æm ˈhʌŋɡri]', i:'😋'},
+      {e:'I am tired',     z:'我累了',   p:'[aɪ æm ˈtaɪərd]', i:'😴'},
+      {e:'Help me',        z:'帮帮我',   p:'[hɛlp miː]',      i:'🆘'},
+      {e:'Let us go',      z:'走吧',     p:'[lɛt ʌs ɡoʊ]',   i:'🏃'},
+      {e:'Very cute',      z:'好可爱',   p:'[ˈvɛri kjuːt]',   i:'🥹'},
+    ]
+  }
+};
+
+// ══════════════════════════════════════════
+//  STATE
+// ══════════════════════════════════════════
+let currentCat = 'animals';
+let currentIdx = 0;
+let isSpeaking = false;
+
+// Load from localStorage
+const STORAGE_KEY = 'babyEnglishLog';
+function loadLog(){ try{ return JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]'); }catch(e){return[];} }
+function saveLog(log){ localStorage.setItem(STORAGE_KEY, JSON.stringify(log)); }
+let log = loadLog(); // [{en,zh,emoji,time}]
+
+// ══════════════════════════════════════════
+//  SPEECH
+// ══════════════════════════════════════════
+function getEnVoice(){
+  const vs = speechSynthesis.getVoices();
+  return vs.find(v=>v.lang.startsWith('en')&&/female/i.test(v.name))
+      || vs.find(v=>v.lang==='en-US')
+      || vs.find(v=>v.lang.startsWith('en'))
+      || null;
+}
+function getZhVoice(){
+  const vs = speechSynthesis.getVoices();
+  return vs.find(v=>v.lang.startsWith('zh'))||null;
+}
+
+function speakText(text, lang, rate=0.85, pitch=1.1){
+  return new Promise(resolve=>{
+    if(!window.speechSynthesis){resolve();return;}
+    speechSynthesis.cancel();
+    const utter = new SpeechSynthesisUtterance(text);
+    utter.lang = lang;
+    utter.rate = rate;
+    utter.pitch = pitch;
+    if(lang.startsWith('en')){const v=getEnVoice();if(v)utter.voice=v;}
+    else{const v=getZhVoice();if(v)utter.voice=v;}
+    utter.onend = resolve;
+    utter.onerror = resolve;
+    speechSynthesis.speak(utter);
+    // fallback timeout
+    const fallback = setTimeout(resolve, text.length*200+1500);
+    utter.onend = ()=>{clearTimeout(fallback);resolve();};
+  });
+}
+
+async function speakBoth(word){
+  if(isSpeaking) return;
+  isSpeaking=true;
+  setPlaying(true,'英语…');
+  await speakText(word.e,'en-US',0.82,1.1);
+  setPlaying(true,'中文…');
+  await new Promise(r=>setTimeout(r,300));
+  await speakText(word.z,'zh-CN',0.88,1.0);
+  setPlaying(false,'');
+  isSpeaking=false;
+  markLearned(word);
+}
+
+async function speakEn(word){
+  if(isSpeaking) return;
+  isSpeaking=true;
+  setPlaying(true,'英语…');
+  await speakText(word.e,'en-US',0.82,1.1);
+  setPlaying(false,'');
+  isSpeaking=false;
+  markLearned(word);
+}
+
+async function speakZh(word){
+  if(isSpeaking) return;
+  isSpeaking=true;
+  setPlaying(true,'中文…');
+  await speakText(word.z,'zh-CN',0.88,1.0);
+  setPlaying(false,'');
+  isSpeaking=false;
+}
+
+function setPlaying(on, label){
+  const ind = document.getElementById('playingIndicator');
+  const btn = document.getElementById('mainSpeakBtn');
+  const lbl = document.getElementById('playingLabel');
+  if(on){
+    ind.classList.add('show');
+    btn.classList.add('playing');
+    lbl.textContent = label;
+  } else {
+    ind.classList.remove('show');
+    btn.classList.remove('playing');
+  }
+}
+
+// ══════════════════════════════════════════
+//  LEARNED / LOG
+// ══════════════════════════════════════════
+function markLearned(word){
+  const already = log.some(l=>l.en===word.e);
+  if(!already){
+    log.unshift({en:word.e, zh:word.z, emoji:word.i, time:new Date().toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'})});
+    saveLog(log);
+    triggerConfetti();
+  }
+  updateBadge(word);
+  renderProgress();
+  renderLog();
+  renderWordList();
+}
+
+function isLearned(wordEn){
+  return log.some(l=>l.en===wordEn);
+}
+
+// ══════════════════════════════════════════
+//  RENDER CURRENT WORD
+// ══════════════════════════════════════════
+function currentWord(){
+  return CATEGORIES[currentCat].words[currentIdx];
+}
+
+function renderCard(){
+  const w = currentWord();
+  const words = CATEGORIES[currentCat].words;
+  document.getElementById('wordIllustration').textContent = w.i;
+  document.getElementById('wordEnglish').textContent = w.e;
+  document.getElementById('wordPhonetic').textContent = w.p;
+  document.getElementById('wordChinese').textContent = w.z;
+  document.getElementById('wordCounter').textContent = `${currentIdx+1} / ${words.length}`;
+  updateBadge(w);
+  // pop animation
+  const disp = document.getElementById('wordDisplay');
+  disp.classList.remove('pop');
+  void disp.offsetWidth;
+  disp.classList.add('pop');
+}
+
+function updateBadge(w){
+  const badge = document.getElementById('learnedBadge');
+  if(isLearned(w.e)){badge.classList.add('show');}
+  else{badge.classList.remove('show');}
+}
+
+// ══════════════════════════════════════════
+//  RENDER WORD LIST
+// ══════════════════════════════════════════
+function renderWordList(){
+  const words = CATEGORIES[currentCat].words;
+  const container = document.getElementById('wordList');
+  container.innerHTML='';
+  words.forEach((w,i)=>{
+    const div=document.createElement('div');
+    div.className='wl-item'+(i===currentIdx?' current':'')+(isLearned(w.e)?' done':'');
+    div.innerHTML=`<span class="wl-emoji">${w.i}</span><div class="wl-en">${w.e}</div>${isLearned(w.e)?'<div class="wl-check">✅</div>':''}`;
+    div.addEventListener('click',()=>{
+      currentIdx=i;
+      renderCard();
+      renderWordList();
+    });
+    container.appendChild(div);
+  });
+}
+
+// ══════════════════════════════════════════
+//  RENDER PROGRESS
+// ══════════════════════════════════════════
+function renderProgress(){
+  const total = Object.values(CATEGORIES).reduce((s,c)=>s+c.words.length,0);
+  const n = log.length;
+  document.getElementById('totalBadge').textContent = n;
+  document.getElementById('learnedText').textContent =
+    n===0 ? '还没有开始，加油哦！' : `已学会 ${n} / ${total} 个单词！`;
+  const pct = Math.min(100, Math.round(n/total*100));
+  document.getElementById('barFill').style.width = pct+'%';
+  const stars = '⭐'.repeat(Math.floor(n/3));
+  document.getElementById('starRow').textContent = stars;
+  document.getElementById('logCount').textContent = `(${n})`;
+}
+
+// ══════════════════════════════════════════
+//  RENDER LOG
+// ══════════════════════════════════════════
+function renderLog(){
+  const el = document.getElementById('logContent');
+  if(!log.length){
+    el.innerHTML='<div class="log-empty">还没有学过单词哦，快开始吧！🌱</div>';
+    return;
+  }
+  el.innerHTML = log.map(l=>`
+    <div class="log-item">
+      <span class="log-emoji">${l.emoji}</span>
+      <div class="log-text">
+        <div class="log-en">${l.en}</div>
+        <div class="log-zh">${l.zh}</div>
+      </div>
+      <div class="log-time">${l.time}</div>
+    </div>
+  `).join('');
+}
+
+// ══════════════════════════════════════════
+//  CONFETTI
+// ══════════════════════════════════════════
+function triggerConfetti(){
+  const colors=['#FF85A2','#FFD93D','#6BCB77','#4D96FF','#B39DDB','#FF6B6B'];
+  for(let i=0;i<22;i++){
+    setTimeout(()=>{
+      const el=document.createElement('div');
+      el.className='confetti-piece';
+      el.style.cssText=`
+        left:${Math.random()*100}vw;
+        top:-20px;
+        background:${colors[Math.floor(Math.random()*colors.length)]};
+        border-radius:${Math.random()>0.5?'50%':'3px'};
+        width:${8+Math.random()*8}px;
+        height:${8+Math.random()*8}px;
+        animation-duration:${1.2+Math.random()*.8}s;
+        animation-delay:${Math.random()*.3}s;
+      `;
+      document.body.appendChild(el);
+      setTimeout(()=>el.remove(),2500);
+    },i*60);
+  }
+  // flying stars from card
+  const rect = document.getElementById('wordDisplay').getBoundingClientRect();
+  for(let i=0;i<3;i++){
+    setTimeout(()=>{
+      const el=document.createElement('div');
+      el.className='fly-star';
+      el.textContent=['⭐','🌟','✨','💫'][Math.floor(Math.random()*4)];
+      el.style.left=(rect.left+rect.width/2-14+(Math.random()-0.5)*80)+'px';
+      el.style.top=(rect.bottom-30)+'px';
+      document.body.appendChild(el);
+      setTimeout(()=>el.remove(),1400);
+    },i*150);
+  }
+}
+
+// ══════════════════════════════════════════
+//  SWITCH CATEGORY
+// ══════════════════════════════════════════
+function switchCategory(cat){
+  currentCat = cat;
+  currentIdx = 0;
+  document.querySelectorAll('.cat-btn').forEach(b=>{
+    b.classList.toggle('active', b.dataset.cat===cat);
+  });
+  renderCard();
+  renderWordList();
+}
+
+// ══════════════════════════════════════════
+//  EVENTS
+// ══════════════════════════════════════════
+document.getElementById('mainSpeakBtn').addEventListener('click',()=>{
+  speakBoth(currentWord());
+});
+
+document.getElementById('btnEn').addEventListener('click',()=>{
+  speakEn(currentWord());
+});
+
+document.getElementById('btnZh').addEventListener('click',()=>{
+  speakZh(currentWord());
+});
+
+document.getElementById('wordIllustration').addEventListener('click',()=>{
+  const el = document.getElementById('wordIllustration');
+  el.classList.remove('shake');
+  void el.offsetWidth;
+  el.classList.add('shake');
+  speakBoth(currentWord());
+});
+
+document.getElementById('prevBtn').addEventListener('click',()=>{
+  const words = CATEGORIES[currentCat].words;
+  currentIdx = (currentIdx-1+words.length)%words.length;
+  renderCard();
+  renderWordList();
+  speechSynthesis.cancel();
+  isSpeaking=false;
+  setPlaying(false,'');
+});
+
+document.getElementById('nextBtn').addEventListener('click',()=>{
+  const words = CATEGORIES[currentCat].words;
+  currentIdx = (currentIdx+1)%words.length;
+  renderCard();
+  renderWordList();
+  speechSynthesis.cancel();
+  isSpeaking=false;
+  setPlaying(false,'');
+});
+
+document.querySelectorAll('.cat-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>switchCategory(btn.dataset.cat));
+});
+
+document.getElementById('logToggle').addEventListener('click',()=>{
+  document.getElementById('logPanel').classList.toggle('open');
+});
+
+// keyboard nav
+document.addEventListener('keydown',e=>{
+  if(e.key==='ArrowRight') document.getElementById('nextBtn').click();
+  if(e.key==='ArrowLeft') document.getElementById('prevBtn').click();
+  if(e.key===' '||e.key==='Enter') document.getElementById('mainSpeakBtn').click();
+});
+
+// ══════════════════════════════════════════
+//  INIT
+// ══════════════════════════════════════════
+speechSynthesis.onvoiceschanged = ()=>{}; // preload
+speechSynthesis.getVoices();
+
+renderCard();
+renderWordList();
+renderProgress();
+renderLog();
+</script>
+</body>
+</html>
