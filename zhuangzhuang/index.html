@@ -1572,8 +1572,9 @@ let matchPairs = [];
 let matchMatched = 0;
 
 function buildMatchPairs(){
-  const all = getAllWords();
-  return [...all].sort(()=>Math.random()-.5).slice(0,8);
+  const catWords = CATEGORIES[currentCat].words;
+  // 最多8个，不足则全取
+  return [...catWords].sort(()=>Math.random()-.5).slice(0, Math.min(8, catWords.length));
 }
 
 function shuffle(arr){ return [...arr].sort(()=>Math.random()-.5); }
@@ -1693,7 +1694,7 @@ function startListenQuiz(){
   speechSynthesis.cancel();
   isSpeaking=false;
   setPlaying(false,'');
-  const all = getAllWords();
+  const all = CATEGORIES[currentCat].words;
   listenPool = [...all].sort(()=>Math.random()-.5).slice(0, LISTEN_TOTAL);
   listenIdx = 0;
   listenScore = 0;
@@ -1732,7 +1733,7 @@ function renderListenQuestion(){
   document.getElementById('listenNext').classList.remove('show');
 
   // 4 options: images/emojis (not text)
-  const all = getAllWords();
+  const all = CATEGORIES[currentCat].words;
   const others = all.filter(x=>x.e!==w.e).sort(()=>Math.random()-.5).slice(0,3);
   const opts = shuffle([...others, w]);
 
@@ -1875,19 +1876,23 @@ function getAllWords(){
 }
 
 function buildQuizPool(){
-  // prefer learned words, pad with random if < QUIZ_TOTAL
-  const all = getAllWords();
-  const learned = all.filter(w=>isLearned(w.e));
+  // prefer learned words in current cat, pad with random from current cat
+  const catWords = CATEGORIES[currentCat].words;
+  const learned = catWords.filter(w=>isLearned(w.e));
   let pool = learned.length >= QUIZ_TOTAL
     ? [...learned].sort(()=>Math.random()-.5).slice(0,QUIZ_TOTAL)
-    : [...all].sort(()=>Math.random()-.5).slice(0,QUIZ_TOTAL);
+    : [...catWords].sort(()=>Math.random()-.5).slice(0,Math.min(QUIZ_TOTAL, catWords.length));
   return pool;
 }
 
 function buildOptions(correct){
-  const all = getAllWords();
-  const others = all.filter(w=>w.e!==correct.e).sort(()=>Math.random()-.5).slice(0,3);
-  return [...others, correct].sort(()=>Math.random()-.5);
+  const catWords = CATEGORIES[currentCat].words;
+  const others = catWords.filter(w=>w.e!==correct.e).sort(()=>Math.random()-.5).slice(0,3);
+  // 如果当前分类词不足4个，从全库补
+  const extra = others.length < 3
+    ? getAllWords().filter(w=>w.e!==correct.e && !others.find(o=>o.e===w.e)).sort(()=>Math.random()-.5).slice(0, 3-others.length)
+    : [];
+  return [...others, ...extra, correct].sort(()=>Math.random()-.5);
 }
 
 function startQuiz(){
