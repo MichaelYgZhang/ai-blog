@@ -268,10 +268,16 @@ body{
   display:none;background:#fff;border-radius:20px;
   padding:16px;margin-top:10px;
   box-shadow:var(--shadow);
-  max-height:320px;overflow-y:auto;
+  max-height:400px;overflow-y:auto;
 }
 .log-panel.open{display:block;}
 .log-panel h3{font-size:.95rem;color:#888;margin-bottom:12px;}
+.log-date-group{margin-bottom:14px;}
+.log-date-label{
+  font-size:.78rem;font-weight:900;color:var(--purple);
+  background:var(--purple-light);display:inline-block;
+  padding:2px 10px;border-radius:20px;margin-bottom:6px;
+}
 .log-item{
   display:flex;align-items:center;gap:10px;
   padding:8px 0;border-bottom:1px solid #F5F5F5;
@@ -283,6 +289,104 @@ body{
 .log-zh{font-size:.78rem;color:#aaa;}
 .log-time{font-size:.72rem;color:#ccc;}
 .log-empty{text-align:center;color:#ccc;padding:20px 0;font-size:.9rem;}
+
+/* ===== QUIZ MODAL ===== */
+.quiz-btn{
+  width:100%;border:none;
+  background:linear-gradient(135deg,var(--yellow),var(--orange));
+  color:#fff;padding:14px;
+  border-radius:16px;
+  font-family:inherit;font-weight:900;font-size:1rem;
+  cursor:pointer;margin-top:12px;
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  box-shadow:0 4px 16px rgba(255,179,71,.35);
+  transition:all .2s;
+}
+.quiz-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(255,179,71,.45);}
+.quiz-overlay{
+  display:none;position:fixed;inset:0;
+  background:rgba(0,0,0,.5);z-index:2000;
+  align-items:center;justify-content:center;
+  padding:16px;
+}
+.quiz-overlay.open{display:flex;}
+.quiz-box{
+  background:#fff;border-radius:32px;
+  padding:28px 24px;width:100%;max-width:460px;
+  box-shadow:0 20px 60px rgba(0,0,0,.25);
+  animation:popIn .3s cubic-bezier(.34,1.56,.64,1);
+}
+@keyframes popIn{from{transform:scale(.6);opacity:0;}to{transform:scale(1);opacity:1;}}
+.quiz-header{
+  display:flex;justify-content:space-between;align-items:center;
+  margin-bottom:18px;
+}
+.quiz-title{font-size:1.1rem;font-weight:900;color:#444;}
+.quiz-close{
+  border:none;background:none;font-size:1.4rem;cursor:pointer;
+  color:#bbb;transition:color .2s;
+}
+.quiz-close:hover{color:#FF6B6B;}
+.quiz-score-bar{
+  display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap;
+}
+.quiz-dot{
+  width:12px;height:12px;border-radius:50%;
+  background:#EEE;transition:background .3s;
+}
+.quiz-dot.correct{background:var(--green);}
+.quiz-dot.wrong{background:#FF6B6B;}
+.quiz-question{
+  text-align:center;margin-bottom:22px;
+}
+.quiz-q-emoji{font-size:5rem;display:block;margin-bottom:10px;line-height:1;}
+.quiz-q-text{font-size:1rem;color:#888;font-weight:600;}
+.quiz-options{
+  display:grid;grid-template-columns:1fr 1fr;gap:10px;
+  margin-bottom:14px;
+}
+.quiz-opt{
+  border:2.5px solid #EEE;
+  background:#FAFAFA;border-radius:16px;
+  padding:14px 8px;font-family:inherit;
+  font-size:1rem;font-weight:700;cursor:pointer;
+  transition:all .2s;color:#444;text-align:center;
+}
+.quiz-opt:hover{border-color:var(--yellow);background:var(--yellow-light);}
+.quiz-opt.correct{border-color:var(--green);background:var(--green-light);color:var(--green);}
+.quiz-opt.wrong{border-color:#FF6B6B;background:#FFEBEE;color:#FF6B6B;}
+.quiz-opt:disabled{cursor:default;}
+.quiz-feedback{
+  text-align:center;font-size:1.3rem;font-weight:900;
+  min-height:36px;margin-bottom:8px;
+}
+.quiz-next{
+  width:100%;border:none;
+  background:linear-gradient(135deg,var(--pink),var(--purple));
+  color:#fff;padding:14px;
+  border-radius:16px;font-family:inherit;font-weight:900;font-size:1rem;
+  cursor:pointer;transition:all .2s;
+  display:none;
+}
+.quiz-next.show{display:block;}
+.quiz-next:hover{transform:translateY(-2px);}
+.quiz-result{
+  text-align:center;
+  display:none;
+}
+.quiz-result.show{display:block;}
+.quiz-result-emoji{font-size:4rem;display:block;}
+.quiz-result-text{font-size:1.2rem;font-weight:900;color:#444;margin:10px 0 4px;}
+.quiz-result-sub{font-size:.9rem;color:#aaa;}
+.quiz-restart{
+  margin-top:16px;border:none;
+  background:linear-gradient(135deg,var(--yellow),var(--orange));
+  color:#fff;padding:14px 32px;
+  border-radius:50px;font-family:inherit;font-weight:900;font-size:1rem;
+  cursor:pointer;box-shadow:0 4px 16px rgba(255,179,71,.35);
+  transition:transform .2s;
+}
+.quiz-restart:hover{transform:scale(1.05);}
 
 /* ===== CONFETTI ===== */
 .confetti-piece{
@@ -413,12 +517,42 @@ body{
   <div class="word-list-title">📚 本单元单词</div>
   <div class="word-list" id="wordList"></div>
 
+  <!-- QUIZ BUTTON -->
+  <button class="quiz-btn" id="quizBtn">🎯 测试一下，我掌握了多少？</button>
+
   <!-- LOG TOGGLE -->
-  <button class="log-toggle" id="logToggle">📖 我的学习日记 <span id="logCount">(0)</span></button>
+  <button class="log-toggle" id="logToggle">📖 每日学习日记 <span id="logCount">(0)</span></button>
   <div class="log-panel" id="logPanel">
-    <h3>🌟 已学会的单词</h3>
+    <h3>🌟 学习记录（按日期）</h3>
     <div id="logContent"><div class="log-empty">还没有学过单词哦，快开始吧！</div></div>
   </div>
+
+
+<!-- QUIZ MODAL -->
+<div class="quiz-overlay" id="quizOverlay">
+  <div class="quiz-box">
+    <div class="quiz-header">
+      <div class="quiz-title">🎯 单词测试</div>
+      <button class="quiz-close" id="quizClose">✕</button>
+    </div>
+    <div class="quiz-score-bar" id="quizScoreBar"></div>
+    <!-- question -->
+    <div class="quiz-question" id="quizQuestion">
+      <span class="quiz-q-emoji" id="quizEmoji">🐱</span>
+      <div class="quiz-q-text" id="quizQText">这是什么？</div>
+    </div>
+    <div class="quiz-options" id="quizOptions"></div>
+    <div class="quiz-feedback" id="quizFeedback"></div>
+    <button class="quiz-next" id="quizNext">下一题 ▶</button>
+    <!-- result -->
+    <div class="quiz-result" id="quizResult">
+      <span class="quiz-result-emoji" id="quizResultEmoji">🎉</span>
+      <div class="quiz-result-text" id="quizResultText">太棒了！</div>
+      <div class="quiz-result-sub" id="quizResultSub"></div>
+      <button class="quiz-restart" id="quizRestart">再测一次 🔄</button>
+    </div>
+  </div>
+</div>
 
 </div><!-- /main-area -->
 
@@ -668,10 +802,16 @@ let isSpeaking = false;
 let clickCount = 0; // 点击计数器，每5次自动跳下一个词
 
 // Load from localStorage
-const STORAGE_KEY = 'babyEnglishLog';
+const STORAGE_KEY = 'babyEnglishLog_v2'; // v2: per-day structure
+// log structure: [{en, zh, emoji, time, date}]  (date: 'YYYY-MM-DD')
 function loadLog(){ try{ return JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]'); }catch(e){return[];} }
-function saveLog(log){ localStorage.setItem(STORAGE_KEY, JSON.stringify(log)); }
-let log = loadLog(); // [{en,zh,emoji,time}]
+function saveLog(lg){ localStorage.setItem(STORAGE_KEY, JSON.stringify(lg)); }
+let log = loadLog();
+
+function todayStr(){
+  const d=new Date();
+  return d.getFullYear()+'-'+(String(d.getMonth()+1).padStart(2,'0'))+'-'+(String(d.getDate()).padStart(2,'0'));
+}
 
 // ══════════════════════════════════════════
 //  SPEECH
@@ -759,7 +899,10 @@ function setPlaying(on, label){
 function markLearned(word){
   const already = log.some(l=>l.en===word.e);
   if(!already){
-    log.unshift({en:word.e, zh:word.z, emoji:word.i, time:new Date().toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'})});
+    log.unshift({en:word.e, zh:word.z, emoji:word.i,
+      time:new Date().toLocaleTimeString('zh-CN',{hour:'2-digit',minute:'2-digit'}),
+      date:todayStr()
+    });
     saveLog(log);
     triggerConfetti();
   }
@@ -780,12 +923,11 @@ function markLearned(word){
     setTimeout(()=>{
       renderCard();
       renderWordList();
-      // 自动朗读新单词提示动画
       const ill = document.getElementById('wordIllustration');
       ill.classList.remove('shake');
       void ill.offsetWidth;
       ill.classList.add('shake');
-    }, 800); // 稍微延迟，让当前发音先播完
+    }, 800);
   }
 }
 
@@ -859,7 +1001,7 @@ function renderProgress(){
 }
 
 // ══════════════════════════════════════════
-//  RENDER LOG
+//  RENDER LOG (grouped by date)
 // ══════════════════════════════════════════
 function renderLog(){
   const el = document.getElementById('logContent');
@@ -867,16 +1009,35 @@ function renderLog(){
     el.innerHTML='<div class="log-empty">还没有学过单词哦，快开始吧！🌱</div>';
     return;
   }
-  el.innerHTML = log.map(l=>`
-    <div class="log-item">
-      <span class="log-emoji">${l.emoji}</span>
-      <div class="log-text">
-        <div class="log-en">${l.en}</div>
-        <div class="log-zh">${l.zh}</div>
+  // group by date
+  const groups = {};
+  log.forEach(l=>{
+    const d = l.date || '历史记录';
+    if(!groups[d]) groups[d]=[];
+    groups[d].push(l);
+  });
+  const sortedDates = Object.keys(groups).sort((a,b)=>b.localeCompare(a));
+  el.innerHTML = sortedDates.map(date=>{
+    const today = todayStr();
+    const label = date===today ? '📅 今天' : date===getPrevDay(today) ? '📅 昨天' : `📅 ${date}`;
+    const items = groups[date].map(l=>`
+      <div class="log-item">
+        <span class="log-emoji">${l.emoji}</span>
+        <div class="log-text">
+          <div class="log-en">${l.en}</div>
+          <div class="log-zh">${l.zh}</div>
+        </div>
+        <div class="log-time">${l.time||''}</div>
       </div>
-      <div class="log-time">${l.time}</div>
-    </div>
-  `).join('');
+    `).join('');
+    return `<div class="log-date-group"><div class="log-date-label">${label}（${groups[date].length} 词）</div>${items}</div>`;
+  }).join('');
+}
+
+function getPrevDay(dateStr){
+  const d = new Date(dateStr);
+  d.setDate(d.getDate()-1);
+  return d.getFullYear()+'-'+(String(d.getMonth()+1).padStart(2,'0'))+'-'+(String(d.getDate()).padStart(2,'0'));
 }
 
 // ══════════════════════════════════════════
@@ -979,6 +1140,163 @@ document.querySelectorAll('.cat-btn').forEach(btn=>{
 
 document.getElementById('logToggle').addEventListener('click',()=>{
   document.getElementById('logPanel').classList.toggle('open');
+});
+
+// ══════════════════════════════════════════
+//  QUIZ MODULE
+// ══════════════════════════════════════════
+const QUIZ_TOTAL = 10;
+let quizPool = [];
+let quizIdx = 0;
+let quizScore = 0;
+let quizAnswered = false;
+
+function getAllWords(){
+  return Object.values(CATEGORIES).flatMap(c=>c.words);
+}
+
+function buildQuizPool(){
+  // prefer learned words, pad with random if < QUIZ_TOTAL
+  const all = getAllWords();
+  const learned = all.filter(w=>isLearned(w.e));
+  let pool = learned.length >= QUIZ_TOTAL
+    ? [...learned].sort(()=>Math.random()-.5).slice(0,QUIZ_TOTAL)
+    : [...all].sort(()=>Math.random()-.5).slice(0,QUIZ_TOTAL);
+  return pool;
+}
+
+function buildOptions(correct){
+  const all = getAllWords();
+  const others = all.filter(w=>w.e!==correct.e).sort(()=>Math.random()-.5).slice(0,3);
+  return [...others, correct].sort(()=>Math.random()-.5);
+}
+
+function startQuiz(){
+  quizPool = buildQuizPool();
+  quizIdx = 0;
+  quizScore = 0;
+  quizAnswered = false;
+  document.getElementById('quizOverlay').classList.add('open');
+  document.getElementById('quizResult').classList.remove('show');
+  renderQuizQuestion();
+  renderQuizScoreBar();
+}
+
+function renderQuizScoreBar(){
+  const bar = document.getElementById('quizScoreBar');
+  bar.innerHTML = Array.from({length:QUIZ_TOTAL},(_,i)=>{
+    let cls='quiz-dot';
+    if(i<quizIdx) cls+=' correct'; // simplified; updated in real-time
+    return `<div class="${cls}" id="qdot${i}"></div>`;
+  }).join('');
+}
+
+function updateScoreDot(idx, correct){
+  const dot = document.getElementById('qdot'+idx);
+  if(dot) dot.className = 'quiz-dot ' + (correct?'correct':'wrong');
+}
+
+function renderQuizQuestion(){
+  if(quizIdx >= quizPool.length){ showQuizResult(); return; }
+  quizAnswered = false;
+  const w = quizPool[quizIdx];
+  document.getElementById('quizEmoji').textContent = w.i;
+  document.getElementById('quizQText').textContent = '这个英文单词是？（看图选答案）';
+  document.getElementById('quizFeedback').textContent = '';
+  document.getElementById('quizNext').classList.remove('show');
+
+  // speak the word
+  speakText(w.e,'en-US',0.82,1.1);
+
+  const opts = buildOptions(w);
+  const container = document.getElementById('quizOptions');
+  container.innerHTML='';
+  opts.forEach(opt=>{
+    const btn = document.createElement('button');
+    btn.className='quiz-opt';
+    btn.textContent = opt.e + '\n' + opt.z;
+    btn.style.whiteSpace='pre-line';
+    btn.addEventListener('click',()=>handleQuizAnswer(opt.e===w.e, btn, opts, w));
+    container.appendChild(btn);
+  });
+}
+
+function handleQuizAnswer(isCorrect, clickedBtn, opts, correctWord){
+  if(quizAnswered) return;
+  quizAnswered = true;
+
+  // mark buttons
+  document.querySelectorAll('.quiz-opt').forEach(b=>{
+    b.disabled=true;
+    if(b.textContent.startsWith(correctWord.e)) b.classList.add('correct');
+  });
+  if(!isCorrect) clickedBtn.classList.add('wrong');
+
+  if(isCorrect){
+    quizScore++;
+    document.getElementById('quizFeedback').textContent='🎉 太棒了！答对啦！';
+    document.getElementById('quizFeedback').style.color='var(--green)';
+    speakText('Very good','en-US',0.9,1.2);
+  } else {
+    document.getElementById('quizFeedback').textContent='❌ 再想想！是 '+correctWord.e+'（'+correctWord.z+'）';
+    document.getElementById('quizFeedback').style.color='#FF6B6B';
+    speakText(correctWord.e,'en-US',0.82,1.1);
+  }
+  updateScoreDot(quizIdx, isCorrect);
+  quizIdx++;
+  document.getElementById('quizNext').classList.add('show');
+  if(quizIdx>=quizPool.length){
+    document.getElementById('quizNext').textContent='查看结果 🎊';
+  } else {
+    document.getElementById('quizNext').textContent='下一题 ▶';
+  }
+}
+
+function showQuizResult(){
+  document.getElementById('quizQuestion').style.display='none';
+  document.getElementById('quizOptions').style.display='none';
+  document.getElementById('quizFeedback').style.display='none';
+  document.getElementById('quizNext').classList.remove('show');
+  const res = document.getElementById('quizResult');
+  res.classList.add('show');
+  const pct = Math.round(quizScore/QUIZ_TOTAL*100);
+  let emoji='🌟', text='';
+  if(pct>=90){emoji='🏆';text='完美！壮壮太厉害了！';}
+  else if(pct>=70){emoji='🎉';text='很棒！继续加油！';}
+  else if(pct>=50){emoji='😊';text='不错哦，再练练！';}
+  else{emoji='💪';text='多多练习，你一定可以！';}
+  document.getElementById('quizResultEmoji').textContent=emoji;
+  document.getElementById('quizResultText').textContent=text;
+  document.getElementById('quizResultSub').textContent=`答对 ${quizScore} / ${QUIZ_TOTAL} 题（${pct}%）`;
+}
+
+function resetQuizDisplay(){
+  document.getElementById('quizQuestion').style.display='';
+  document.getElementById('quizOptions').style.display='';
+  document.getElementById('quizFeedback').style.display='';
+  document.getElementById('quizResult').classList.remove('show');
+}
+
+document.getElementById('quizBtn').addEventListener('click', startQuiz);
+document.getElementById('quizClose').addEventListener('click',()=>{
+  document.getElementById('quizOverlay').classList.remove('open');
+  speechSynthesis.cancel();
+  resetQuizDisplay();
+});
+document.getElementById('quizNext').addEventListener('click',()=>{
+  resetQuizDisplay();
+  renderQuizQuestion();
+});
+document.getElementById('quizRestart').addEventListener('click',()=>{
+  resetQuizDisplay();
+  startQuiz();
+});
+document.getElementById('quizOverlay').addEventListener('click',e=>{
+  if(e.target===document.getElementById('quizOverlay')){
+    document.getElementById('quizOverlay').classList.remove('open');
+    speechSynthesis.cancel();
+    resetQuizDisplay();
+  }
 });
 
 // keyboard nav
