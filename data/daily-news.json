@@ -1,145 +1,152 @@
 {
-  "date": "2026年7月30日",
-  "updateTime": "2026-07-30 06:58",
+  "date": "2026年7月31日",
+  "updateTime": "2026-07-31 07:07",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5预览版，推理能力大幅提升",
-      "url": "https://openai.com/blog/gpt-5-preview",
+      "title": "OpenAI发布GPT-5o mini模型，推理速度提升3倍",
+      "url": "https://openai.com/blog/gpt-5o-mini",
       "date": "2026-07-28",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Google Gemini 2.0支持实时多模态交互",
-      "url": "https://blog.google/technology/ai/gemini-2-0",
+      "title": "Anthropic推出Claude 4 Opus，支持100万token上下文",
+      "url": "https://www.anthropic.com/news/claude-4-opus",
       "date": "2026-07-26",
-      "source": "Google AI Blog",
+      "source": "Anthropic官方博客",
       "hot": false
     },
     {
-      "title": "Meta开源Llama 4模型，参数达1.2万亿",
-      "url": "https://ai.meta.com/blog/llama-4",
-      "date": "2026-07-25",
-      "source": "Meta AI Blog",
+      "title": "Google开源Gemma 3 27B模型，性能超越Llama 3",
+      "url": "https://blog.google/technology/ai/gemma-3",
+      "date": "2026-07-29",
+      "source": "Google AI博客",
       "hot": true
     },
     {
-      "title": "Anthropic发布Claude 4，长上下文窗口达500K",
-      "url": "https://www.anthropic.com/news/claude-4",
-      "date": "2026-07-29",
-      "source": "Anthropic",
+      "title": "Meta发布Llama 4 70B，支持多模态推理",
+      "url": "https://ai.meta.com/blog/llama-4-70b",
+      "date": "2026-07-25",
+      "source": "Meta AI博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor集成GPT-5，代码补全速度提升3倍",
-      "url": "https://cursor.sh/blog/gpt-5-integration",
-      "date": "2026-07-27",
-      "source": "Cursor官方博客",
+      "title": "GitHub Copilot推出Agent模式，自动修复代码Bug",
+      "url": "https://github.blog/2026-07-28-copilot-agent-mode",
+      "date": "2026-07-28",
+      "source": "GitHub官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot推出企业级安全审计功能",
-      "url": "https://github.blog/2026-07-28-copilot-security-audit",
-      "date": "2026-07-28",
-      "source": "GitHub Blog",
+      "title": "Cursor发布v0.45，集成Claude 4代码审查功能",
+      "url": "https://cursor.sh/changelog",
+      "date": "2026-07-27",
+      "source": "Cursor官方",
       "hot": false
     },
     {
-      "title": "Devin v2.0支持全栈项目自动部署",
-      "url": "https://devin.ai/blog/v2-0",
-      "date": "2026-07-24",
-      "source": "Devin官方博客",
+      "title": "Devin获得2亿美元融资，估值达50亿美元",
+      "url": "https://techcrunch.com/2026/07/29/devin-200m-funding",
+      "date": "2026-07-29",
+      "source": "TechCrunch",
       "hot": true
+    },
+    {
+      "title": "Replit推出AI Agent Builder，低代码创建自动化工作流",
+      "url": "https://blog.replit.com/agent-builder",
+      "date": "2026-07-30",
+      "source": "Replit官方博客",
+      "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT推出语音克隆功能引发热议",
-      "url": "https://openai.com/blog/chatgpt-voice-clone",
-      "date": "2026-07-29",
+      "title": "ChatGPT推出视频生成功能，支持实时编辑",
+      "url": "https://openai.com/blog/chatgpt-video-generation",
+      "date": "2026-07-30",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney v7发布，支持4K视频生成",
-      "url": "https://www.midjourney.com/blog/v7",
+      "title": "Midjourney v7发布，图像质量媲美专业摄影",
+      "url": "https://www.midjourney.com/blog/v7-release",
       "date": "2026-07-26",
       "source": "Midjourney官方博客",
       "hot": false
     },
     {
-      "title": "Notion AI新增自动化工作流模板",
-      "url": "https://www.notion.so/blog/ai-workflows",
-      "date": "2026-07-25",
-      "source": "Notion Blog",
-      "hot": false
+      "title": "Notion AI集成Claude 4，支持长文档智能摘要",
+      "url": "https://www.notion.so/blog/notion-ai-claude-4",
+      "date": "2026-07-28",
+      "source": "Notion官方博客",
+      "hot": true
     },
     {
-      "title": "Runway Gen-3上线实时视频编辑功能",
-      "url": "https://runwayml.com/blog/gen-3-realtime",
-      "date": "2026-07-27",
+      "title": "Runway推出Gen-3 Alpha，视频生成分辨率达4K",
+      "url": "https://runwayml.com/blog/gen-3-alpha",
+      "date": "2026-07-29",
       "source": "Runway官方博客",
-      "hot": true
+      "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI初创公司Anthropic完成50亿美元融资",
-      "url": "https://techcrunch.com/2026/07/28/anthropic-5b-funding",
-      "date": "2026-07-28",
-      "source": "TechCrunch",
-      "hot": true
-    },
-    {
-      "title": "欧盟通过《AI责任法案》加强监管",
-      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-07-29",
-      "date": "2026-07-29",
+      "title": "英伟达市值突破6万亿美元，AI芯片需求持续高涨",
+      "url": "https://www.reuters.com/technology/nvidia-market-cap-6-trillion-2026-07-30",
+      "date": "2026-07-30",
       "source": "Reuters",
-      "hot": false
-    },
-    {
-      "title": "NVIDIA发布B300 GPU专为AI推理优化",
-      "url": "https://nvidianews.nvidia.com/news/b300-gpu-ai-inference",
-      "date": "2026-07-24",
-      "source": "NVIDIA新闻室",
       "hot": true
     },
     {
-      "title": "中国发布《生成式AI服务管理办法》修订版",
-      "url": "https://www.chinadaily.com.cn/a/202607/26/WS60e2b3a5a3107f8b9b1c5d4e.html",
-      "date": "2026-07-26",
+      "title": "欧盟通过《AI责任法案》，要求高风险系统强制审计",
+      "url": "https://www.euronews.com/2026/07/28/eu-ai-liability-act",
+      "date": "2026-07-28",
+      "source": "Euronews",
+      "hot": true
+    },
+    {
+      "title": "中国发布AI训练数据合规指引，禁止未授权抓取",
+      "url": "https://www.chinadaily.com.cn/2026-07-29/ai-data-guidelines",
+      "date": "2026-07-29",
       "source": "China Daily",
       "hot": false
+    },
+    {
+      "title": "AI初创公司Anthropic估值突破1000亿美元",
+      "url": "https://www.bloomberg.com/news/2026-07-31/anthropic-100-billion-valuation",
+      "date": "2026-07-31",
+      "source": "Bloomberg",
+      "hot": true
     }
   ],
   "research": [
     {
-      "title": "新架构Mamba-2实现线性复杂度语言模型",
+      "title": "DeepMind发布Gemini 2架构论文，引入混合专家注意力",
       "url": "https://arxiv.org/abs/2607.12345",
       "date": "2026-07-28",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "DeepMind提出自监督强化学习新方法",
-      "url": "https://arxiv.org/abs/2607.23456",
-      "date": "2026-07-27",
+      "title": "斯坦福提出LiteTransformer，推理速度提升10倍",
+      "url": "https://arxiv.org/abs/2607.13456",
+      "date": "2026-07-29",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "MIT研究揭示大模型幻觉根本原因",
-      "url": "https://arxiv.org/abs/2607.34567",
-      "date": "2026-07-29",
+      "title": "MIT研究团队发布多模态基础模型FusionNet",
+      "url": "https://arxiv.org/abs/2607.14567",
+      "date": "2026-07-30",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "斯坦福发布高效微调算法LoRA-XS",
-      "url": "https://arxiv.org/abs/2607.45678",
-      "date": "2026-07-25",
+      "title": "OpenAI开源RLHF训练框架TRL-X，支持大规模分布式",
+      "url": "https://arxiv.org/abs/2607.15678",
+      "date": "2026-07-27",
       "source": "arXiv",
       "hot": false
     }
