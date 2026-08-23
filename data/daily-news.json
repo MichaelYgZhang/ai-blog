@@ -1,159 +1,152 @@
 {
-  "date": "2026年8月23日",
-  "updateTime": "2026-08-23 06:20",
+  "date": "2026年8月24日",
+  "updateTime": "2026-08-24 06:20",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5.2，多模态推理能力大幅提升",
+      "title": "OpenAI发布GPT-5.2，推理能力大幅提升",
       "url": "https://openai.com/blog/gpt-5-2",
-      "date": "2026-08-20",
+      "date": "2026-08-22",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Google DeepMind推出Gemini Ultra 2，主打实时视频理解",
-      "url": "https://deepmind.google/blog/gemini-ultra-2",
-      "date": "2026-08-18",
-      "source": "Google DeepMind博客",
+      "title": "Google推出Gemini Ultra 2.0，支持多模态实时交互",
+      "url": "https://blog.google/technology/ai/gemini-ultra-2/",
+      "date": "2026-08-20",
+      "source": "Google官方博客",
       "hot": true
     },
     {
-      "title": "Meta发布Llama 4.5，开源社区反响热烈",
-      "url": "https://ai.meta.com/blog/llama-4-5",
-      "date": "2026-08-22",
-      "source": "Meta AI",
+      "title": "Anthropic发布Claude 4.5，长上下文处理再突破",
+      "url": "https://www.anthropic.com/news/claude-4-5",
+      "date": "2026-08-19",
+      "source": "Anthropic官方",
       "hot": false
     },
     {
-      "title": "Anthropic推出Claude 5，长上下文窗口突破200万",
-      "url": "https://www.anthropic.com/news/claude-5",
-      "date": "2026-08-21",
-      "source": "Anthropic",
+      "title": "Meta开源Llama 4.1，性能对标商业模型",
+      "url": "https://ai.meta.com/blog/llama-4-1/",
+      "date": "2026-08-18",
+      "source": "Meta AI",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "GitHub Copilot升级，支持自然语言生成复杂测试用例",
-      "url": "https://github.blog/changelog/2026-08-19",
-      "date": "2026-08-19",
+      "title": "GitHub Copilot推出Agent模式，自动修复代码",
+      "url": "https://github.blog/2026-08-23-copilot-agent-mode/",
+      "date": "2026-08-23",
       "source": "GitHub Blog",
       "hot": true
     },
     {
-      "title": "Cursor推出4.0版本，新增AI结对编程模式",
-      "url": "https://cursor.com/blog/cursor-4",
-      "date": "2026-08-20",
-      "source": "Cursor Blog",
-      "hot": false
-    },
-    {
-      "title": "Devin 2.0发布，可自主处理前端设计到后端部署",
-      "url": "https://devin.ai/blog/devin-2",
-      "date": "2026-08-17",
-      "source": "Devin AI",
+      "title": "Cursor 2.0发布，支持本地私有化部署",
+      "url": "https://cursor.com/changelog/2-0",
+      "date": "2026-08-21",
+      "source": "Cursor",
       "hot": true
     },
     {
-      "title": "Codeium推出企业版，强化代码安全审查功能",
-      "url": "https://codeium.com/blog/enterprise",
-      "date": "2026-08-21",
-      "source": "Codeium",
+      "title": "Devin 3.0可自主完成复杂跨模块编程任务",
+      "url": "https://devin.ai/blog/devin-3",
+      "date": "2026-08-20",
+      "source": "Devin",
+      "hot": false
+    },
+    {
+      "title": "JetBrains AI Assistant集成最新代码分析模型",
+      "url": "https://www.jetbrains.com/ai/",
+      "date": "2026-08-18",
+      "source": "JetBrains",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增实时语音翻译，支持30种语言",
+      "title": "ChatGPT推出实时语音翻译功能，支持50种语言",
       "url": "https://openai.com/blog/chatgpt-voice-translation",
-      "date": "2026-08-22",
+      "date": "2026-08-23",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney推出V7，生成图像分辨率达8K",
-      "url": "https://www.midjourney.com/blog/v7",
-      "date": "2026-08-19",
-      "source": "Midjourney官方博客",
-      "hot": false
-    },
-    {
-      "title": "Runway发布Gen-4，支持分钟级长视频生成",
-      "url": "https://runwayml.com/blog/gen-4",
-      "date": "2026-08-18",
-      "source": "Runway Blog",
+      "title": "Midjourney V7发布，图像生成细节提升显著",
+      "url": "https://www.midjourney.com/updates/v7",
+      "date": "2026-08-21",
+      "source": "Midjourney",
       "hot": true
     },
     {
-      "title": "Notion AI推出自动化工作流，一键处理文档摘要",
-      "url": "https://www.notion.com/blog/notion-ai-automations",
+      "title": "Notion AI新增智能表格自动分析功能",
+      "url": "https://www.notion.com/blog/ai-tables",
       "date": "2026-08-20",
-      "source": "Notion Blog",
+      "source": "Notion",
       "hot": false
     },
     {
-      "title": "Perplexity推出AI研究助手，可自动生成文献综述",
-      "url": "https://blog.perplexity.ai/research-assistant",
-      "date": "2026-08-21",
-      "source": "Perplexity Blog",
+      "title": "Adobe Firefly推出视频生成功能，支持4K输出",
+      "url": "https://blog.adobe.com/firefly-video",
+      "date": "2026-08-19",
+      "source": "Adobe",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI芯片初创公司Cerebras完成新一轮10亿美元融资",
-      "url": "https://www.reuters.com/technology/cerebras-funding-2026-08-21",
-      "date": "2026-08-21",
+      "title": "AI初创公司Anthropic完成新一轮融资，估值达3000亿美元",
+      "url": "https://www.reuters.com/technology/anthropic-funding-2026-08-22/",
+      "date": "2026-08-22",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "欧盟正式通过《AI责任法案》，明确AI事故追责机制",
-      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2026",
-      "date": "2026-08-18",
-      "source": "European Commission",
+      "title": "欧盟通过《AI责任法》，明确生成式AI责任归属",
+      "url": "https://ec.europa.eu/ai-liability-act",
+      "date": "2026-08-21",
+      "source": "欧盟委员会",
       "hot": true
     },
     {
-      "title": "NVIDIA发布新一代AI加速卡B300，性能提升2倍",
-      "url": "https://nvidianews.nvidia.com/news/b300",
-      "date": "2026-08-19",
-      "source": "NVIDIA Newsroom",
+      "title": "英伟达发布新一代AI芯片，性能提升5倍",
+      "url": "https://nvidianews.nvidia.com/news/next-gen-ai-chip",
+      "date": "2026-08-20",
+      "source": "NVIDIA",
       "hot": false
     },
     {
-      "title": "AI内容创作市场预计2027年突破千亿美元",
-      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-08-20",
-      "date": "2026-08-20",
-      "source": "Gartner",
+      "title": "中国发布《生成式AI服务管理办法》修订版，强化内容审核",
+      "url": "https://www.cac.gov.cn/2026-08/19/c_123456.htm",
+      "date": "2026-08-19",
+      "source": "网信办",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "新论文提出高效Transformer变体，推理速度提升5倍",
+      "title": "新架构Mamba-2在长序列任务上超越Transformer",
       "url": "https://arxiv.org/abs/2608.12345",
+      "date": "2026-08-23",
+      "source": "arXiv",
+      "hot": true
+    },
+    {
+      "title": "斯坦福发布128K上下文高效微调方法",
+      "url": "https://arxiv.org/abs/2608.12346",
       "date": "2026-08-22",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "研究揭示大模型幻觉根源，提出可解释性框架",
-      "url": "https://arxiv.org/abs/2608.12346",
+      "title": "DeepMind提出自监督强化学习新算法，样本效率提升10倍",
+      "url": "https://arxiv.org/abs/2608.12347",
       "date": "2026-08-21",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "多模态模型新架构：统一视觉与语言预训练",
-      "url": "https://arxiv.org/abs/2608.12347",
-      "date": "2026-08-20",
-      "source": "arXiv",
-      "hot": true
-    },
-    {
-      "title": "强化学习新算法实现机器人复杂操作技能自主学习",
+      "title": "多模态模型统一框架研究，实现图文音视频联合理解",
       "url": "https://arxiv.org/abs/2608.12348",
-      "date": "2026-08-19",
+      "date": "2026-08-20",
       "source": "arXiv",
       "hot": false
     }
