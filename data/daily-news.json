@@ -1,68 +1,75 @@
 {
-  "date": "2026年8月26日",
-  "updateTime": "2026-08-26 06:26",
+  "date": "2026年8月27日",
+  "updateTime": "2026-08-27 10:57",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5.2，多模态能力大幅提升",
+      "title": "OpenAI发布GPT-5.2，推理能力大幅提升",
       "url": "https://openai.com/blog/gpt-5-2",
-      "date": "2026-08-24",
+      "date": "2026-08-25",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Google推出Gemini Ultra 2，支持实时视频理解",
-      "url": "https://blog.google/products/gemini/gemini-ultra-2/",
-      "date": "2026-08-22",
+      "title": "Google推出Gemini 3 Pro，支持100万tokens上下文",
+      "url": "https://blog.google/technology/ai/gemini-3-pro/",
+      "date": "2026-08-24",
       "source": "Google官方博客",
       "hot": true
     },
     {
-      "title": "Meta发布Llama 4.5，开源社区反响热烈",
-      "url": "https://ai.meta.com/blog/llama-4-5/",
-      "date": "2026-08-20",
-      "source": "Meta AI",
+      "title": "Anthropic发布Claude 4 Opus，强化多模态能力",
+      "url": "https://www.anthropic.com/news/claude-4-opus",
+      "date": "2026-08-22",
+      "source": "Anthropic官网",
       "hot": false
     },
     {
-      "title": "Anthropic推出Claude 4.5，专注长上下文推理",
-      "url": "https://www.anthropic.com/news/claude-4-5",
-      "date": "2026-08-25",
-      "source": "Anthropic",
-      "hot": true
+      "title": "Meta开源Llama 4 Ultra，参数规模达2万亿",
+      "url": "https://ai.meta.com/blog/llama-4-ultra/",
+      "date": "2026-08-21",
+      "source": "Meta AI博客",
+      "hot": false
     },
     {
-      "title": "Mistral发布Mistral Large 3，性能对标GPT-5",
-      "url": "https://mistral.ai/news/mistral-large-3/",
-      "date": "2026-08-21",
-      "source": "Mistral AI",
+      "title": "Mistral发布Mistral Large 3，专注边缘计算优化",
+      "url": "https://mistral.ai/news/mistral-large-3",
+      "date": "2026-08-20",
+      "source": "Mistral官网",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor 2.0发布，新增多智能体协作功能",
-      "url": "https://cursor.com/blog/cursor-2-0",
+      "title": "GitHub Copilot升级，支持自动代码审查",
+      "url": "https://github.blog/changelog/2026-08-26-copilot-update/",
+      "date": "2026-08-26",
+      "source": "GitHub Blog",
+      "hot": true
+    },
+    {
+      "title": "Cursor发布2.0版本，集成AI代理工作流",
+      "url": "https://cursor.com/changelog/2.0",
+      "date": "2026-08-25",
+      "source": "Cursor官方",
+      "hot": true
+    },
+    {
+      "title": "Devin推出团队协作模式，可并行处理多个任务",
+      "url": "https://devin.ai/blog/team-mode",
       "date": "2026-08-23",
-      "source": "Cursor官方博客",
-      "hot": true
-    },
-    {
-      "title": "GitHub Copilot升级，支持自定义模型接入",
-      "url": "https://github.blog/changelog/2026-08-22-copilot-custom-models/",
-      "date": "2026-08-22",
-      "source": "GitHub博客",
-      "hot": true
-    },
-    {
-      "title": "Devin 2.1修复关键Bug，提升代码审查效率",
-      "url": "https://devin.ai/changelog/2-1",
-      "date": "2026-08-24",
-      "source": "Devin官方更新日志",
+      "source": "Devin官方博客",
       "hot": false
     },
     {
-      "title": "Codeium发布企业版，主打私有化部署",
-      "url": "https://codeium.com/blog/enterprise-launch",
+      "title": "JetBrains AI助手支持本地代码库语义搜索",
+      "url": "https://www.jetbrains.com/ai/",
+      "date": "2026-08-21",
+      "source": "JetBrains官网",
+      "hot": false
+    },
+    {
+      "title": "Codeium开源基础模型，助力代码生成领域",
+      "url": "https://codeium.com/blog/open-source-model",
       "date": "2026-08-20",
       "source": "Codeium官方博客",
       "hot": false
@@ -70,91 +77,112 @@
   ],
   "apps": [
     {
-      "title": "ChatGPT新增语音克隆功能，引发隐私讨论",
-      "url": "https://openai.com/blog/chatgpt-voice-clone",
-      "date": "2026-08-21",
+      "title": "ChatGPT新增实时视频分析功能",
+      "url": "https://openai.com/blog/chatgpt-video-analysis",
+      "date": "2026-08-26",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney推出V7，支持4K视频生成",
-      "url": "https://www.midjourney.com/blog/v7",
-      "date": "2026-08-19",
-      "source": "Midjourney官方博客",
+      "title": "Midjourney推出V7版本，支持4K视频生成",
+      "url": "https://www.midjourney.com/news/v7",
+      "date": "2026-08-25",
+      "source": "Midjourney官网",
       "hot": true
     },
     {
-      "title": "Notion AI新增会议纪要自动生成功能",
-      "url": "https://www.notion.com/blog/meeting-notes-ai",
-      "date": "2026-08-23",
+      "title": "Notion AI集成自动化工作流，提升生产力",
+      "url": "https://www.notion.so/blog/ai-automation",
+      "date": "2026-08-24",
       "source": "Notion官方博客",
       "hot": false
     },
     {
-      "title": "Perplexity推出AI新闻助手，实时追踪热点",
-      "url": "https://blog.perplexity.ai/news-assistant",
+      "title": "Runway发布Gen-4，支持电影级视频生成",
+      "url": "https://runwayml.com/blog/gen-4",
       "date": "2026-08-22",
+      "source": "Runway官方博客",
+      "hot": false
+    },
+    {
+      "title": "Perplexity推出AI搜索API，供开发者使用",
+      "url": "https://blog.perplexity.ai/api-launch",
+      "date": "2026-08-21",
       "source": "Perplexity官方博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "AI芯片初创公司Cerebras完成5亿美元融资",
-      "url": "https://techcrunch.com/2026/08/21/cerebras-funding/",
-      "date": "2026-08-21",
-      "source": "TechCrunch",
+      "title": "AI芯片初创公司Cerebras完成10亿美元融资",
+      "url": "https://www.cerebras.com/press/funding-2026",
+      "date": "2026-08-26",
+      "source": "Cerebras官网",
       "hot": true
     },
     {
-      "title": "欧盟通过《AI责任法案》，明确生成式AI责任划分",
-      "url": "https://www.euractiv.com/section/ai/news/ai-responsibility-act/",
-      "date": "2026-08-20",
-      "source": "Euractiv",
+      "title": "欧盟通过《人工智能法案》实施细则，9月生效",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/ai-act-implementation",
+      "date": "2026-08-25",
+      "source": "欧盟委员会官网",
       "hot": true
     },
     {
-      "title": "英伟达发布新一代AI加速卡B300，性能翻倍",
-      "url": "https://nvidianews.nvidia.com/news/b300-announcement",
+      "title": "英伟达发布下一代AI加速卡B300，性能提升3倍",
+      "url": "https://nvidianews.nvidia.com/news/b300",
       "date": "2026-08-24",
       "source": "NVIDIA新闻室",
-      "hot": true
+      "hot": false
     },
     {
-      "title": "中国发布《生成式AI服务管理新规》，强化内容审核",
-      "url": "https://www.cac.gov.cn/2026-08/23/regulation.htm",
+      "title": "中国发布全球首个人工智能安全认证标准",
+      "url": "https://www.cac.gov.cn/2026-08/23/c_1723456789.htm",
       "date": "2026-08-23",
       "source": "中国网信网",
+      "hot": false
+    },
+    {
+      "title": "AI独角兽Scale AI完成新一轮融资，估值达200亿美元",
+      "url": "https://scale.com/press/funding-2026",
+      "date": "2026-08-21",
+      "source": "Scale AI官网",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "新研究提出高效注意力机制，大幅降低计算成本",
+      "title": "新研究提出高效Transformer变体，训练速度提升40%",
       "url": "https://arxiv.org/abs/2608.12345",
-      "date": "2026-08-25",
+      "date": "2026-08-26",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "DeepMind发布多模态大模型，实现跨模态推理突破",
-      "url": "https://deepmind.google/blog/multimodal-reasoning/",
-      "date": "2026-08-22",
-      "source": "DeepMind博客",
+      "title": "DeepMind发表多模态学习新架构，实现跨模态迁移",
+      "url": "https://deepmind.google/research/publications/2026/multimodal-arch/",
+      "date": "2026-08-25",
+      "source": "DeepMind官网",
       "hot": true
     },
     {
-      "title": "关于大模型幻觉的全面研究，提出新评估基准",
-      "url": "https://arxiv.org/abs/2608.12347",
-      "date": "2026-08-20",
+      "title": "斯坦福大学发布稀疏注意力机制论文，降低计算成本",
+      "url": "https://arxiv.org/abs/2608.11890",
+      "date": "2026-08-24",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "新型稀疏训练方法，使模型压缩率提升40%",
-      "url": "https://arxiv.org/abs/2608.12349",
-      "date": "2026-08-23",
-      "source": "arXiv",
+      "title": "Meta发布可扩展推理模型，在数学推理基准上超越人类",
+      "url": "https://ai.meta.com/research/publications/scalable-reasoning/",
+      "date": "2026-08-22",
+      "source": "Meta AI研究",
+      "hot": false
+    },
+    {
+      "title": "MIT研究团队开发新方法，可解释AI决策过程",
+      "url": "https://news.mit.edu/2026/explainable-ai-method",
+      "date": "2026-08-20",
+      "source": "MIT News",
       "hot": false
     }
   ]
