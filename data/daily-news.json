@@ -1,166 +1,159 @@
 {
-  "date": "2026年9月3日",
-  "updateTime": "2026-09-03 07:53",
+  "date": "2026年9月4日",
+  "updateTime": "2026-09-04 07:50",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5.2，多模态推理能力大幅提升",
+      "title": "OpenAI发布GPT-5.2，推理能力大幅提升",
       "url": "https://openai.com/blog/gpt-5-2",
-      "date": "2026-09-01",
+      "date": "2026-09-02",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Google DeepMind推出Gemini Ultra 2，主打长上下文",
+      "title": "Google DeepMind推出Gemini Ultra 2，多模态突破",
       "url": "https://deepmind.google/blog/gemini-ultra-2",
-      "date": "2026-09-02",
-      "source": "Google DeepMind",
+      "date": "2026-09-01",
+      "source": "Google DeepMind博客",
       "hot": true
     },
     {
-      "title": "Meta发布Llama 4系列，开源模型性能逼近闭源",
-      "url": "https://ai.meta.com/blog/llama-4",
+      "title": "Anthropic发布Claude 4.5，长上下文窗口扩展至2M",
+      "url": "https://www.anthropic.com/news/claude-4-5",
       "date": "2026-08-30",
-      "source": "Meta AI",
+      "source": "Anthropic官网",
       "hot": false
     },
     {
-      "title": "Anthropic推出Claude 4 Opus，编程与智能体能力升级",
-      "url": "https://www.anthropic.com/news/claude-4-opus",
+      "title": "Meta开源Llama 4.1，性能对标GPT-4o",
+      "url": "https://ai.meta.com/blog/llama-4-1",
       "date": "2026-08-29",
-      "source": "Anthropic",
-      "hot": false
-    },
-    {
-      "title": "Mistral AI发布Mistral Large 3，强化多语言能力",
-      "url": "https://mistral.ai/news/mistral-large-3",
-      "date": "2026-08-28",
-      "source": "Mistral AI",
+      "source": "Meta AI博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "GitHub Copilot引入Agent模式，支持自动修复CI故障",
-      "url": "https://github.blog/changelog/2026-09-02-copilot-agent-mode",
-      "date": "2026-09-02",
+      "title": "GitHub Copilot集成GPT-5.2，支持自动代码审查",
+      "url": "https://github.blog/news/copilot-gpt-5-2",
+      "date": "2026-09-03",
       "source": "GitHub Blog",
       "hot": true
     },
     {
-      "title": "Cursor发布0.70版本，新增云端沙盒与团队知识库",
-      "url": "https://cursor.com/changelog/0.70",
+      "title": "Cursor发布3.0版本，新增AI代理协作模式",
+      "url": "https://cursor.com/blog/cursor-3",
       "date": "2026-09-01",
-      "source": "Cursor Changelog",
+      "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "Devin 2.0支持并行任务处理，效率提升一倍",
-      "url": "https://cognition.ai/blog/devin-2",
-      "date": "2026-08-30",
-      "source": "Cognition Labs",
+      "title": "Devin 2.0支持多仓库自动修复，效率提升50%",
+      "url": "https://devin.ai/blog/devin-2",
+      "date": "2026-08-31",
+      "source": "Devin官方博客",
       "hot": false
     },
     {
-      "title": "Replit Agent正式商用，可自动部署全栈应用",
-      "url": "https://replit.com/blog/agent-ga",
-      "date": "2026-08-29",
-      "source": "Replit Blog",
+      "title": "Codeium推出企业级AI编程平台，支持私有化部署",
+      "url": "https://codeium.com/news/enterprise",
+      "date": "2026-08-30",
+      "source": "Codeium官网",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增记忆管理面板，用户可随时编辑删除",
-      "url": "https://openai.com/blog/chatgpt-memory-management",
+      "title": "ChatGPT推出实时语音翻译功能，支持30种语言",
+      "url": "https://openai.com/blog/chatgpt-voice-translation",
       "date": "2026-09-03",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布，支持实时协作画布",
-      "url": "https://www.midjourney.com/updates/v7",
-      "date": "2026-09-01",
-      "source": "Midjourney",
+      "title": "Midjourney V7发布，图像生成质量再创新高",
+      "url": "https://www.midjourney.com/blog/v7",
+      "date": "2026-09-02",
+      "source": "Midjourney官网",
       "hot": true
     },
     {
-      "title": "Notion AI推出问答助手，可跨文档智能检索",
-      "url": "https://www.notion.com/blog/notion-ai-qa",
+      "title": "Perplexity AI推出Pro Search 2.0，实时数据解析更强",
+      "url": "https://blog.perplexity.ai/pro-search-2",
       "date": "2026-08-31",
-      "source": "Notion Blog",
+      "source": "Perplexity博客",
       "hot": false
     },
     {
-      "title": "Perplexity推出金融数据终端，面向专业投资者",
-      "url": "https://blog.perplexity.ai/finance-terminal",
-      "date": "2026-08-30",
-      "source": "Perplexity Blog",
-      "hot": false
-    },
-    {
-      "title": "Runway发布Gen-4 Turbo，视频生成速度提升5倍",
-      "url": "https://runwayml.com/blog/gen-4-turbo",
+      "title": "Notion AI新增自动化工作流，提升团队效率",
+      "url": "https://www.notion.com/blog/ai-workflows",
       "date": "2026-08-29",
-      "source": "Runway",
+      "source": "Notion官方博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "英伟达市值突破5万亿美元，AI芯片需求持续旺盛",
-      "url": "https://www.reuters.com/technology/nvidia-market-cap",
+      "title": "AI初创公司Anthropic完成20亿美元融资，估值达800亿",
+      "url": "https://techcrunch.com/2026/09/03/anthropic-funding",
+      "date": "2026-09-03",
+      "source": "TechCrunch",
+      "hot": true
+    },
+    {
+      "title": "欧盟通过《AI责任法案》，规范生成式AI使用",
+      "url": "https://www.reuters.com/technology/eu-ai-liability-act",
       "date": "2026-09-02",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "欧盟正式通过《AI责任法案》，明确生成式AI追责机制",
-      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_4521",
+      "title": "英伟达发布新一代AI芯片B300，性能提升4倍",
+      "url": "https://www.nvidia.com/news/b300",
       "date": "2026-09-01",
-      "source": "European Commission",
-      "hot": true
-    },
-    {
-      "title": "OpenAI完成新一轮融资，估值达3500亿美元",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-30/openai-funding",
-      "date": "2026-08-30",
-      "source": "Bloomberg",
+      "source": "NVIDIA官网",
       "hot": false
     },
     {
-      "title": "中国发布《生成式AI服务管理暂行办法》修订版",
-      "url": "https://www.cac.gov.cn/2026-08/28/c_1750000000000000.htm",
-      "date": "2026-08-28",
-      "source": "中国网信办",
+      "title": "中国发布《AI生成内容标识管理办法》",
+      "url": "https://www.gov.cn/zhengce/2026-08-30/content_ai",
+      "date": "2026-08-30",
+      "source": "中国政府网",
+      "hot": false
+    },
+    {
+      "title": "微软与OpenAI深化合作，Azure获GPT-5.2独家云服务权",
+      "url": "https://www.cnbc.com/2026/08/29/microsoft-openai-deal",
+      "date": "2026-08-29",
+      "source": "CNBC",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "DeepMind提出超长序列新架构：Linear Transformer++",
-      "url": "https://arxiv.org/abs/2608.12345",
+      "title": "新型MoE架构论文发布，训练成本降低50%",
+      "url": "https://arxiv.org/abs/2609.00123",
+      "date": "2026-09-03",
+      "source": "arXiv",
+      "hot": true
+    },
+    {
+      "title": "Google研究团队提出自适应推理框架，动态调整计算量",
+      "url": "https://arxiv.org/abs/2609.00087",
+      "date": "2026-09-02",
+      "source": "arXiv",
+      "hot": true
+    },
+    {
+      "title": "Transformer-XL2：超长序列建模新突破",
+      "url": "https://arxiv.org/abs/2608.09876",
       "date": "2026-08-31",
-      "source": "arXiv",
-      "hot": true
-    },
-    {
-      "title": "斯坦福发布基于扩散模型的机器人运动规划新方法",
-      "url": "https://arxiv.org/abs/2608.11890",
-      "date": "2026-08-30",
-      "source": "arXiv",
-      "hot": true
-    },
-    {
-      "title": "MIT研究：大模型推理能力与训练数据量的对数关系",
-      "url": "https://arxiv.org/abs/2608.11567",
-      "date": "2026-08-29",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "清华提出高效微调框架，显存占用降低70%",
-      "url": "https://arxiv.org/abs/2608.11023",
-      "date": "2026-08-28",
+      "title": "Meta发布多模态模型融合新方法，提升跨模态理解",
+      "url": "https://arxiv.org/abs/2608.09812",
+      "date": "2026-08-30",
       "source": "arXiv",
       "hot": false
     }
