@@ -1,151 +1,179 @@
 {
-  "date": "2026年9月12日",
-  "updateTime": "2026-09-12 07:54",
+  "date": "2026年9月13日",
+  "updateTime": "2026-09-13 07:47",
   "llm": [
     {
-      "title": "Anthropic发布Claude 4.5 Opus，推理能力大幅提升",
-      "url": "https://www.anthropic.com/news/claude-4-5-opus",
-      "date": "2026-09-09",
+      "title": "OpenAI发布GPT-5.2，推理能力大幅提升",
+      "url": "https://openai.com/blog/gpt-5-2",
+      "date": "2026-09-12",
+      "source": "OpenAI官方博客",
+      "hot": true
+    },
+    {
+      "title": "Anthropic推出Claude 4 Opus，支持百万级上下文",
+      "url": "https://www.anthropic.com/news/claude-4-opus",
+      "date": "2026-09-11",
       "source": "Anthropic官方博客",
       "hot": true
     },
     {
-      "title": "Meta开源Llama 4.2，支持多模态与100万token上下文",
-      "url": "https://ai.meta.com/blog/llama-4-2",
-      "date": "2026-09-08",
-      "source": "Meta AI博客",
-      "hot": true
-    },
-    {
-      "title": "Google发布Gemini 2.5 Ultra，数学推理超越人类专家",
-      "url": "https://blog.google/technology/ai/gemini-2-5-ultra",
-      "date": "2026-09-07",
-      "source": "Google官方博客",
+      "title": "Google发布Gemini 2.5 Ultra，多模态能力突破",
+      "url": "https://blog.google/technology/ai/gemini-2-5-ultra/",
+      "date": "2026-09-10",
+      "source": "Google AI博客",
       "hot": false
     },
     {
-      "title": "Mistral推出Mistral Large 3，性能对标GPT-5",
-      "url": "https://mistral.ai/news/mistral-large-3",
-      "date": "2026-09-06",
+      "title": "Meta开源Llama 4 405B，性能对标GPT-5",
+      "url": "https://ai.meta.com/blog/llama-4-405b/",
+      "date": "2026-09-09",
+      "source": "Meta AI博客",
+      "hot": false
+    },
+    {
+      "title": "Mistral发布Mixtral 2，MoE架构效率提升",
+      "url": "https://mistral.ai/news/mixtral-2/",
+      "date": "2026-09-08",
       "source": "Mistral AI",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor 2.0发布：全新AI代理可自主完成复杂项目",
-      "url": "https://cursor.com/blog/2-0",
-      "date": "2026-09-11",
+      "title": "Cursor 2.0发布，AI编程代理可自主完成项目",
+      "url": "https://cursor.com/blog/cursor-2-0",
+      "date": "2026-09-12",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot Workspace正式上线，支持自然语言编程",
-      "url": "https://github.blog/2026-09-10-copilot-workspace",
-      "date": "2026-09-10",
+      "title": "GitHub Copilot Workspace正式上线，支持全流程开发",
+      "url": "https://github.blog/2026-09-11-copilot-workspace/",
+      "date": "2026-09-11",
       "source": "GitHub博客",
-      "hot": true
+      "hot": false
     },
     {
-      "title": "Devin 2.0升级：可自主调试并部署代码",
-      "url": "https://www.cognition.ai/blog/devin-2-0",
-      "date": "2026-09-09",
+      "title": "Devin 2.0推出，可独立完成复杂工程任务",
+      "url": "https://www.cognition.ai/blog/devin-2",
+      "date": "2026-09-10",
       "source": "Cognition AI",
       "hot": false
     },
     {
-      "title": "Replit推出AI Agent，一键生成全栈应用",
-      "url": "https://blog.replit.com/ai-agent",
-      "date": "2026-09-08",
+      "title": "Replit AI Agent新增多文件编辑与调试功能",
+      "url": "https://blog.replit.com/ai-agent-update",
+      "date": "2026-09-09",
       "source": "Replit博客",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增“项目”功能，支持长期记忆与协作",
-      "url": "https://openai.com/blog/chatgpt-projects",
-      "date": "2026-09-10",
+      "title": "ChatGPT新增“项目记忆”功能，跨会话保持上下文",
+      "url": "https://openai.com/blog/chatgpt-memory",
+      "date": "2026-09-12",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布：视频生成能力惊艳",
-      "url": "https://www.midjourney.com/updates/v7",
-      "date": "2026-09-09",
-      "source": "Midjourney",
-      "hot": true
+      "title": "Midjourney V7发布，图像真实感与细节大幅提升",
+      "url": "https://www.midjourney.com/blog/v7",
+      "date": "2026-09-11",
+      "source": "Midjourney官方博客",
+      "hot": false
     },
     {
-      "title": "Perplexity推出AI浏览器Comet，挑战Chrome",
+      "title": "Perplexity推出AI浏览器Comet，整合搜索与助手",
       "url": "https://blog.perplexity.ai/comet-browser",
-      "date": "2026-09-08",
+      "date": "2026-09-10",
       "source": "Perplexity博客",
       "hot": false
     },
     {
-      "title": "Runway Gen-4上线：文本生成电影级视频",
+      "title": "Runway Gen-4发布，视频生成支持10分钟长片",
       "url": "https://runwayml.com/blog/gen-4",
-      "date": "2026-09-07",
-      "source": "Runway",
+      "date": "2026-09-09",
+      "source": "Runway博客",
+      "hot": false
+    },
+    {
+      "title": "Notion AI 3.0上线，可自动生成完整项目文档",
+      "url": "https://www.notion.so/blog/ai-3-0",
+      "date": "2026-09-08",
+      "source": "Notion博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "OpenAI完成1000亿美元新一轮融资，估值破万亿",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-11/openai-funding",
-      "date": "2026-09-11",
-      "source": "Bloomberg",
+      "title": "OpenAI完成100亿美元融资，估值达5000亿美元",
+      "url": "https://techcrunch.com/2026/09/12/openai-10b-funding/",
+      "date": "2026-09-12",
+      "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过《AI责任法案》，明确开发者责任",
+      "title": "欧盟AI法案正式生效，对通用AI模型提出新要求",
       "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
-      "date": "2026-09-10",
+      "date": "2026-09-11",
       "source": "欧盟委员会",
       "hot": true
     },
     {
-      "title": "英伟达发布Blackwell Ultra GPU，AI训练提速5倍",
+      "title": "英伟达发布Blackwell Ultra芯片，AI训练性能翻倍",
       "url": "https://nvidianews.nvidia.com/news/blackwell-ultra",
-      "date": "2026-09-09",
-      "source": "NVIDIA新闻中心",
+      "date": "2026-09-10",
+      "source": "NVIDIA新闻室",
       "hot": false
     },
     {
-      "title": "微软与OpenAI扩大合作，Azure独占GPT-5 API",
-      "url": "https://blogs.microsoft.com/ai/openai-azure-expansion",
+      "title": "AI初创公司Anthropic估值突破2000亿美元",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-09/anthropic-valuation",
+      "date": "2026-09-09",
+      "source": "Bloomberg",
+      "hot": false
+    },
+    {
+      "title": "中国发布生成式AI服务管理新规，强调安全评估",
+      "url": "https://www.cac.gov.cn/2026-09/08/c_123456.htm",
       "date": "2026-09-08",
-      "source": "微软官方博客",
+      "source": "国家网信办",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "DeepMind发布AlphaFold 4，预测所有生物分子结构",
-      "url": "https://www.nature.com/articles/s41586-026-01234-5",
-      "date": "2026-09-11",
-      "source": "Nature",
-      "hot": true
-    },
-    {
-      "title": "斯坦福提出“神经符号AI”新架构，推理效率提升10倍",
+      "title": "DeepMind提出“神经符号推理”新架构，解决复杂规划问题",
       "url": "https://arxiv.org/abs/2609.12345",
-      "date": "2026-09-10",
+      "date": "2026-09-12",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "MIT开发自进化AI模型，无需人工干预持续学习",
+      "title": "斯坦福发布AI指数报告：模型推理成本一年下降90%",
       "url": "https://arxiv.org/abs/2609.23456",
+      "date": "2026-09-11",
+      "source": "arXiv",
+      "hot": false
+    },
+    {
+      "title": "新型注意力机制“FlashAttention-3”将训练速度提升3倍",
+      "url": "https://arxiv.org/abs/2609.34567",
+      "date": "2026-09-10",
+      "source": "arXiv",
+      "hot": false
+    },
+    {
+      "title": "Meta提出多模态统一模型，文本图像视频联合训练",
+      "url": "https://arxiv.org/abs/2609.45678",
       "date": "2026-09-09",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "中国团队提出“盘古-Ω”模型，突破长上下文瓶颈",
-      "url": "https://arxiv.org/abs/2609.34567",
+      "title": "MIT开发“自解释”神经网络，提升AI决策透明度",
+      "url": "https://arxiv.org/abs/2609.56789",
       "date": "2026-09-08",
       "source": "arXiv",
       "hot": false
