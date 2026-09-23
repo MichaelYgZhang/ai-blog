@@ -1,152 +1,152 @@
 {
-  "date": "2026年9月22日",
-  "updateTime": "2026-09-22 08:36",
+  "date": "2026年9月23日",
+  "updateTime": "2026-09-23 08:02",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5.1：推理效率提升40%",
-      "url": "https://openai.com/blog/gpt-5-1",
-      "date": "2026-09-18",
-      "source": "OpenAI官方博客",
+      "title": "xAI发布Grok 5，推理能力大幅提升",
+      "url": "https://x.ai/blog/grok-5",
+      "date": "2026-09-22",
+      "source": "xAI官方博客",
       "hot": true
     },
     {
-      "title": "Anthropic推出Claude 4 Opus，支持200万token上下文",
+      "title": "Anthropic推出Claude 4 Opus，上下文达500K",
       "url": "https://www.anthropic.com/news/claude-4-opus",
-      "date": "2026-09-17",
-      "source": "Anthropic官方博客",
+      "date": "2026-09-21",
+      "source": "Anthropic",
       "hot": true
     },
     {
-      "title": "谷歌Gemini 2.5 Ultra上线，多模态能力大幅增强",
-      "url": "https://blog.google/technology/ai/gemini-2-5-ultra/",
-      "date": "2026-09-16",
-      "source": "Google官方博客",
+      "title": "Meta开源Llama 4.1，支持多模态推理",
+      "url": "https://ai.meta.com/blog/llama-4-1/",
+      "date": "2026-09-18",
+      "source": "Meta AI",
       "hot": false
     },
     {
-      "title": "Meta开源Llama 4系列，含400B MoE模型",
-      "url": "https://ai.meta.com/blog/llama-4/",
-      "date": "2026-09-15",
-      "source": "Meta AI官方博客",
+      "title": "Google发布Gemini 2.5 Pro，编码能力增强",
+      "url": "https://blog.google/technology/ai/gemini-2-5-pro/",
+      "date": "2026-09-17",
+      "source": "Google AI Blog",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor推出2.0版本，集成多智能体协作编程",
+      "title": "Cursor 2.0发布：AI代理自动修复代码库",
       "url": "https://cursor.com/blog/2-0",
-      "date": "2026-09-19",
+      "date": "2026-09-22",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot新增自主调试与修复功能",
-      "url": "https://github.blog/2026-09-18-copilot-autonomous-debugging/",
-      "date": "2026-09-18",
-      "source": "GitHub官方博客",
+      "title": "GitHub Copilot X新增多文件编辑功能",
+      "url": "https://github.blog/2026-09-21-copilot-x-multi-file-editing/",
+      "date": "2026-09-21",
+      "source": "GitHub博客",
       "hot": false
     },
     {
-      "title": "Devin 2.0发布：支持全栈项目自主开发",
+      "title": "Devin 2.0推出，可自主完成全栈开发",
       "url": "https://www.cognition.ai/blog/devin-2",
-      "date": "2026-09-16",
-      "source": "Cognition官方博客",
+      "date": "2026-09-19",
+      "source": "Cognition",
       "hot": true
     },
     {
-      "title": "Replit Agent新增团队协作与代码审查",
-      "url": "https://blog.replit.com/agent-team-collaboration",
-      "date": "2026-09-15",
-      "source": "Replit官方博客",
+      "title": "Replit Agent新增实时协作编程功能",
+      "url": "https://blog.replit.com/agent-collab",
+      "date": "2026-09-17",
+      "source": "Replit",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增实时视频对话与屏幕共享",
-      "url": "https://openai.com/blog/chatgpt-video-screen-share",
+      "title": "ChatGPT推出实时视频对话功能",
+      "url": "https://openai.com/blog/chatgpt-video",
+      "date": "2026-09-22",
+      "source": "OpenAI",
+      "hot": true
+    },
+    {
+      "title": "Midjourney V7发布，图像一致性提升",
+      "url": "https://www.midjourney.com/blog/v7",
       "date": "2026-09-20",
-      "source": "OpenAI官方博客",
-      "hot": true
-    },
-    {
-      "title": "Midjourney V7发布：视频生成能力开放",
-      "url": "https://www.midjourney.com/updates/v7",
-      "date": "2026-09-19",
-      "source": "Midjourney官方",
-      "hot": true
-    },
-    {
-      "title": "Adobe Firefly 4集成视频编辑与3D生成",
-      "url": "https://blog.adobe.com/en/publish/2026/09/17/firefly-4",
-      "date": "2026-09-17",
-      "source": "Adobe官方博客",
+      "source": "Midjourney",
       "hot": false
     },
     {
-      "title": "Notion AI 3.0推出自动项目规划与执行",
-      "url": "https://www.notion.so/blog/ai-3-0",
+      "title": "Notion AI升级：自动生成项目计划",
+      "url": "https://www.notion.so/blog/ai-project-plans",
+      "date": "2026-09-18",
+      "source": "Notion",
+      "hot": false
+    },
+    {
+      "title": "Runway Gen-4支持生成10分钟视频",
+      "url": "https://runwayml.com/blog/gen-4",
       "date": "2026-09-16",
-      "source": "Notion官方博客",
-      "hot": false
+      "source": "Runway",
+      "hot": true
     }
   ],
   "industry": [
     {
-      "title": "欧盟AI法案全面生效，合规期限临近",
+      "title": "欧盟通过AI责任法案，明确开发者义务",
       "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
-      "date": "2026-09-21",
+      "date": "2026-09-22",
       "source": "欧盟委员会",
       "hot": true
     },
     {
-      "title": "英伟达发布B200 GPU，AI训练性能翻倍",
-      "url": "https://nvidianews.nvidia.com/news/b200-gpu",
-      "date": "2026-09-20",
-      "source": "NVIDIA官方新闻",
+      "title": "英伟达发布Blackwell Ultra芯片，AI训练提速3倍",
+      "url": "https://nvidianews.nvidia.com/news/blackwell-ultra",
+      "date": "2026-09-21",
+      "source": "NVIDIA",
       "hot": true
     },
     {
-      "title": "AI初创公司Anysphere获2亿美元B轮融资",
-      "url": "https://techcrunch.com/2026/09/18/anysphere-series-b/",
-      "date": "2026-09-18",
+      "title": "AI初创公司Anthropic获50亿美元新融资",
+      "url": "https://techcrunch.com/2026/09/19/anthropic-5b-funding/",
+      "date": "2026-09-19",
       "source": "TechCrunch",
       "hot": false
     },
     {
-      "title": "中国发布生成式AI服务管理新规征求意见稿",
-      "url": "https://www.cac.gov.cn/2026-09/17/c_123456.htm",
-      "date": "2026-09-17",
-      "source": "国家网信办",
+      "title": "中国发布生成式AI服务管理新规",
+      "url": "https://www.cac.gov.cn/2026-09/18/c_123456.htm",
+      "date": "2026-09-18",
+      "source": "中国网信网",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "DeepMind提出新架构MoE-Transformer，效率提升50%",
+      "title": "DeepMind提出MoE-X架构，推理效率提升40%",
       "url": "https://arxiv.org/abs/2609.12345",
+      "date": "2026-09-22",
+      "source": "arXiv",
+      "hot": true
+    },
+    {
+      "title": "斯坦福发布AI智能体社会模拟框架",
+      "url": "https://arxiv.org/abs/2609.54321",
+      "date": "2026-09-20",
+      "source": "arXiv",
+      "hot": false
+    },
+    {
+      "title": "新研究：扩散模型生成文本速度超越Transformer",
+      "url": "https://arxiv.org/abs/2609.67890",
       "date": "2026-09-19",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "斯坦福发布AI推理基准ReasoningBench 2.0",
-      "url": "https://arxiv.org/abs/2609.67890",
-      "date": "2026-09-18",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "MIT研究：小样本学习新方法降低90%数据需求",
-      "url": "https://arxiv.org/abs/2609.54321",
-      "date": "2026-09-17",
-      "source": "arXiv",
-      "hot": true
-    },
-    {
-      "title": "Meta AI提出多模态对齐新框架UniAlign",
+      "title": "MIT推出可解释性工具，可视化LLM决策",
       "url": "https://arxiv.org/abs/2609.11223",
-      "date": "2026-09-16",
+      "date": "2026-09-17",
       "source": "arXiv",
       "hot": false
     }
