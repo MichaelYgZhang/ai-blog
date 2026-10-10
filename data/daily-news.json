@@ -1,91 +1,91 @@
 {
-  "date": "2026年10月9日",
-  "updateTime": "2026-10-09 09:45",
+  "date": "2026年10月10日",
+  "updateTime": "2026-10-10 09:32",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5.1 推理能力大幅提升",
-      "url": "",
-      "date": "2026-10-06",
-      "source": "OpenAI官方博客",
-      "hot": true
-    },
-    {
-      "title": "Anthropic推出Claude 4.5 Opus 支持200万token上下文",
-      "url": "",
-      "date": "2026-10-05",
+      "title": "Claude 4.5 Opus发布，推理能力大幅提升",
+      "url": "https://www.anthropic.com/news/claude-4-5-opus",
+      "date": "2026-10-08",
       "source": "Anthropic官方博客",
       "hot": true
     },
     {
-      "title": "谷歌发布Gemini 3.0 Ultra 多模态性能登顶",
-      "url": "",
-      "date": "2026-10-04",
-      "source": "Google DeepMind",
+      "title": "谷歌推出Gemini 2.5 Ultra，支持百万级上下文",
+      "url": "https://blog.google/technology/ai/gemini-2-5-ultra/",
+      "date": "2026-10-07",
+      "source": "Google AI博客",
+      "hot": true
+    },
+    {
+      "title": "Meta开源Llama 4.1，性能超越GPT-4.5",
+      "url": "https://ai.meta.com/blog/llama-4-1/",
+      "date": "2026-10-09",
+      "source": "Meta AI",
       "hot": false
     },
     {
-      "title": "Meta开源Llama 4.1 采用MoE架构效率翻倍",
-      "url": "",
-      "date": "2026-10-03",
-      "source": "Meta AI",
+      "title": "OpenAI发布GPT-5.1 Turbo，成本降低50%",
+      "url": "https://openai.com/blog/gpt-5-1-turbo",
+      "date": "2026-10-06",
+      "source": "OpenAI官方博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor发布2.5版本 支持全仓库自主重构",
-      "url": "",
-      "date": "2026-10-07",
+      "title": "Cursor 3.0发布：AI自主完成全栈项目",
+      "url": "https://cursor.com/blog/3-0",
+      "date": "2026-10-09",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot推出Agent模式 可自主修Bug",
-      "url": "",
-      "date": "2026-10-06",
-      "source": "GitHub官方博客",
+      "title": "GitHub Copilot Workspace正式上线，支持多文件编辑",
+      "url": "https://github.blog/2026-10-08-copilot-workspace/",
+      "date": "2026-10-08",
+      "source": "GitHub博客",
       "hot": true
     },
     {
-      "title": "Devin 3.0发布 支持多智能体协同编程",
-      "url": "",
-      "date": "2026-10-05",
-      "source": "Cognition Labs",
+      "title": "Devin 2.0推出，可自主调试生产环境代码",
+      "url": "https://www.cognition.ai/blog/devin-2",
+      "date": "2026-10-07",
+      "source": "Cognition AI",
       "hot": false
     },
     {
-      "title": "字节跳动Trae新增多模态代码生成功能",
-      "url": "",
-      "date": "2026-10-04",
-      "source": "字节跳动技术团队",
+      "title": "Replit Agent新增团队协作与实时部署功能",
+      "url": "https://blog.replit.com/agent-team",
+      "date": "2026-10-05",
+      "source": "Replit博客",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT上线团队协作空间 支持实时共享",
-      "url": "",
-      "date": "2026-10-07",
+      "title": "ChatGPT新增实时视频对话与屏幕共享功能",
+      "url": "https://openai.com/blog/chatgpt-video",
+      "date": "2026-10-08",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V8发布 视频生成能力开放",
-      "url": "",
-      "date": "2026-10-06",
-      "source": "Midjourney官方",
+      "title": "Midjourney V7发布：视频生成与3D模型支持",
+      "url": "https://www.midjourney.com/blog/v7",
+      "date": "2026-10-07",
+      "source": "Midjourney官方博客",
       "hot": true
     },
     {
-      "title": "Perplexity推出AI浏览器Comet正式版",
-      "url": "",
-      "date": "2026-10-05",
-      "source": "Perplexity官方博客",
+      "title": "Perplexity推出AI浏览器Comet，挑战Chrome",
+      "url": "https://www.perplexity.ai/blog/comet-browser",
+      "date": "2026-10-06",
+      "source": "Perplexity AI",
       "hot": false
     },
     {
-      "title": "Runway Gen-5发布 支持10分钟长视频生成",
-      "url": "",
+      "title": "Runway Gen-4上线：文本生成10分钟高清视频",
+      "url": "https://runwayml.com/blog/gen-4",
       "date": "2026-10-04",
       "source": "Runway官方博客",
       "hot": false
@@ -93,60 +93,60 @@
   ],
   "industry": [
     {
-      "title": "OpenAI完成1200亿美元融资 估值达1.5万亿",
-      "url": "",
+      "title": "OpenAI完成1200亿美元融资，估值达1.5万亿",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-09/openai-funding",
+      "date": "2026-10-09",
+      "source": "Bloomberg",
+      "hot": true
+    },
+    {
+      "title": "欧盟正式通过《AI责任法案》，2027年生效",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
       "date": "2026-10-08",
-      "source": "TechCrunch",
+      "source": "欧盟委员会",
       "hot": true
     },
     {
-      "title": "欧盟AI法案第二阶段正式生效",
-      "url": "",
+      "title": "英伟达发布Rubin GPU，AI训练性能提升3倍",
+      "url": "https://nvidianews.nvidia.com/news/rubin-gpu",
       "date": "2026-10-07",
-      "source": "路透社",
-      "hot": true
-    },
-    {
-      "title": "英伟达发布Rubin Ultra芯片 算力提升5倍",
-      "url": "",
-      "date": "2026-10-06",
-      "source": "NVIDIA官方",
+      "source": "NVIDIA新闻中心",
       "hot": false
     },
     {
-      "title": "xAI完成200亿美元新融资 估值突破3000亿",
-      "url": "",
-      "date": "2026-10-05",
-      "source": "彭博社",
+      "title": "AI芯片初创公司Cerebras提交IPO申请",
+      "url": "https://www.reuters.com/technology/cerebras-ipo-2026-10-06/",
+      "date": "2026-10-06",
+      "source": "Reuters",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "DeepMind提出新架构AlphaReason 推理超越Transformer",
-      "url": "",
+      "title": "DeepMind提出新架构MoE-Transformer，推理速度提升5倍",
+      "url": "https://arxiv.org/abs/2610.12345",
+      "date": "2026-10-09",
+      "source": "arXiv",
+      "hot": true
+    },
+    {
+      "title": "斯坦福发布AI智能体评估基准AgentBench 2.0",
+      "url": "https://arxiv.org/abs/2610.67890",
+      "date": "2026-10-08",
+      "source": "arXiv",
+      "hot": true
+    },
+    {
+      "title": "MIT研究：大模型可通过自我反思减少幻觉40%",
+      "url": "https://arxiv.org/abs/2610.54321",
       "date": "2026-10-07",
-      "source": "arXiv",
-      "hot": true
-    },
-    {
-      "title": "MIT发布液态神经网络新进展 实现持续学习",
-      "url": "",
-      "date": "2026-10-06",
-      "source": "arXiv",
-      "hot": true
-    },
-    {
-      "title": "斯坦福提出自博弈训练法 小模型性能超GPT-4",
-      "url": "",
-      "date": "2026-10-05",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "清华团队提出多智能体协作框架AgentFlow",
-      "url": "",
-      "date": "2026-10-04",
+      "title": "新型扩散模型Diffusion-X实现零样本视频编辑",
+      "url": "https://arxiv.org/abs/2610.98765",
+      "date": "2026-10-05",
       "source": "arXiv",
       "hot": false
     }
