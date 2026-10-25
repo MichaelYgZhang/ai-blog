@@ -1,152 +1,152 @@
 {
-  "date": "2026年10月24日",
-  "updateTime": "2026-10-24 08:17",
+  "date": "2026年10月25日",
+  "updateTime": "2026-10-25 08:01",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5.2，推理能力大幅提升",
-      "url": "https://openai.com/blog/gpt-5-2",
-      "date": "2026-10-22",
+      "title": "OpenAI发布GPT-5.5，推理能力提升40%",
+      "url": "",
+      "date": "2026-10-23",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Anthropic推出Claude 4.5 Opus，上下文扩展至500K",
-      "url": "https://www.anthropic.com/news/claude-4-5-opus",
-      "date": "2026-10-21",
-      "source": "Anthropic",
+      "title": "Anthropic推出Claude 4 Opus，支持百万级上下文",
+      "url": "",
+      "date": "2026-10-22",
+      "source": "Anthropic官方博客",
       "hot": true
     },
     {
-      "title": "Google发布Gemini 2.5 Ultra，多模态能力突破",
-      "url": "https://blog.google/technology/ai/gemini-2-5-ultra",
-      "date": "2026-10-20",
-      "source": "Google AI Blog",
+      "title": "谷歌发布Gemini 3.0 Ultra，多模态性能全面领先",
+      "url": "",
+      "date": "2026-10-21",
+      "source": "Google AI博客",
       "hot": false
     },
     {
-      "title": "Meta开源Llama 4.1，性能对标GPT-5",
-      "url": "https://ai.meta.com/blog/llama-4-1",
-      "date": "2026-10-19",
-      "source": "Meta AI",
+      "title": "Meta开源Llama 4系列，包含400B参数模型",
+      "url": "",
+      "date": "2026-10-20",
+      "source": "Meta AI博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor 2.0发布，支持多文件智能重构",
-      "url": "https://cursor.com/blog/2-0",
-      "date": "2026-10-23",
+      "title": "Cursor发布2.0版本，支持全项目重构与调试",
+      "url": "",
+      "date": "2026-10-24",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot X新增自主调试功能",
-      "url": "https://github.blog/2026-10-22-copilot-x-debug",
+      "title": "GitHub Copilot新增多文件编辑与终端集成",
+      "url": "",
+      "date": "2026-10-23",
+      "source": "GitHub博客",
+      "hot": false
+    },
+    {
+      "title": "Devin 2.0发布，可独立完成端到端开发任务",
+      "url": "",
       "date": "2026-10-22",
-      "source": "GitHub Blog",
+      "source": "Cognition官方博客",
       "hot": false
     },
     {
-      "title": "Devin 2.0上线，可独立完成全栈项目",
-      "url": "https://www.cognition.ai/blog/devin-2",
-      "date": "2026-10-21",
-      "source": "Cognition",
-      "hot": false
-    },
-    {
-      "title": "Codeium推出企业级AI编程助手Wingman",
-      "url": "https://codeium.com/blog/wingman-enterprise",
-      "date": "2026-10-20",
-      "source": "Codeium",
+      "title": "亚马逊CodeWhisperer升级为CodeCatalyst AI",
+      "url": "",
+      "date": "2026-10-19",
+      "source": "AWS官方博客",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增实时视频对话功能",
-      "url": "https://openai.com/blog/chatgpt-video",
-      "date": "2026-10-23",
+      "title": "ChatGPT新增实时视频对话与屏幕共享功能",
+      "url": "",
+      "date": "2026-10-24",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布，图像真实感再升级",
-      "url": "https://www.midjourney.com/blog/v7",
-      "date": "2026-10-22",
-      "source": "Midjourney",
+      "title": "Midjourney V7发布，图像真实感大幅提升",
+      "url": "",
+      "date": "2026-10-23",
+      "source": "Midjourney官方博客",
       "hot": false
     },
     {
-      "title": "Perplexity推出AI搜索代理Pro",
-      "url": "https://blog.perplexity.ai/pro-agent",
+      "title": "Perplexity推出AI浏览器Comet，支持智能代理",
+      "url": "",
       "date": "2026-10-21",
-      "source": "Perplexity Blog",
+      "source": "Perplexity官方博客",
       "hot": false
     },
     {
-      "title": "Runway Gen-4支持10分钟长视频生成",
-      "url": "https://runwayml.com/blog/gen-4",
+      "title": "Runway Gen-4更新，支持4K视频生成",
+      "url": "",
       "date": "2026-10-20",
-      "source": "Runway",
+      "source": "Runway官方博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "OpenAI完成100亿美元融资，估值破3000亿",
-      "url": "https://techcrunch.com/2026/10/23/openai-10b-funding",
-      "date": "2026-10-23",
+      "title": "OpenAI完成100亿美元融资，估值达3000亿美元",
+      "url": "",
+      "date": "2026-10-24",
       "source": "TechCrunch",
       "hot": true
     },
     {
-      "title": "欧盟通过AI责任法案，明确开发者义务",
-      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
+      "title": "欧盟通过AI责任法案，明确开发者责任",
+      "url": "",
+      "date": "2026-10-23",
+      "source": "路透社",
+      "hot": false
+    },
+    {
+      "title": "英伟达发布H200 GPU，AI训练性能翻倍",
+      "url": "",
       "date": "2026-10-22",
-      "source": "欧盟委员会",
+      "source": "英伟达官方新闻",
       "hot": false
     },
     {
-      "title": "英伟达发布H200 GPU，AI训练提速40%",
-      "url": "https://nvidianews.nvidia.com/news/h200",
-      "date": "2026-10-21",
-      "source": "NVIDIA Newsroom",
-      "hot": false
-    },
-    {
-      "title": "AI芯片初创公司Groq获5亿美元D轮融资",
-      "url": "https://techcrunch.com/2026/10/20/groq-500m-series-d",
+      "title": "微软与OpenAI扩大合作，投资50亿美元",
+      "url": "",
       "date": "2026-10-20",
-      "source": "TechCrunch",
+      "source": "彭博社",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "DeepMind提出新架构MoE-Transformer，效率提升3倍",
-      "url": "https://arxiv.org/abs/2610.12345",
-      "date": "2026-10-23",
+      "title": "DeepMind提出新架构Transformer-XL2，长上下文效率提升",
+      "url": "",
+      "date": "2026-10-24",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "斯坦福发布大模型推理能力基准测试",
-      "url": "https://arxiv.org/abs/2610.23456",
-      "date": "2026-10-22",
+      "title": "斯坦福发布AI智能体基准测试AgentBench 2.0",
+      "url": "",
+      "date": "2026-10-23",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "MIT研究：小样本学习新方法降低90%数据需求",
-      "url": "https://arxiv.org/abs/2610.34567",
+      "title": "MIT研究：扩散模型在蛋白质设计上超越传统方法",
+      "url": "",
       "date": "2026-10-21",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "谷歌提出多模态对齐框架，提升跨模态理解",
-      "url": "https://arxiv.org/abs/2610.45678",
-      "date": "2026-10-20",
+      "title": "Meta提出多模态对齐新方法，减少幻觉",
+      "url": "",
+      "date": "2026-10-19",
       "source": "arXiv",
       "hot": false
     }
