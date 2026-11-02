@@ -1,130 +1,116 @@
 {
-  "date": "2026年11月1日",
-  "updateTime": "2026-11-01 08:43",
+  "date": "2026年11月2日",
+  "updateTime": "2026-11-02 09:17",
   "llm": [
     {
-      "title": "Anthropic发布Claude 4.5 Opus，推理能力大幅提升",
-      "url": "https://www.anthropic.com/news/claude-4-5-opus",
+      "title": "谷歌发布Gemini 3.0，推理能力大幅提升",
+      "url": "https://blog.google/technology/ai/gemini-3/",
       "date": "2026-10-28",
-      "source": "Anthropic官方博客",
+      "source": "Google AI博客",
       "hot": true
     },
     {
-      "title": "Meta开源Llama 4.1，支持多模态与超长上下文",
-      "url": "https://ai.meta.com/blog/llama-4-1/",
+      "title": "Meta推出Llama 4.0，支持多模态与长上下文",
+      "url": "https://ai.meta.com/blog/llama-4/",
       "date": "2026-10-27",
       "source": "Meta AI博客",
-      "hot": false
-    },
-    {
-      "title": "谷歌Gemini 2.5 Ultra上线，编程与数学能力领先",
-      "url": "https://blog.google/technology/ai/gemini-2-5-ultra/",
-      "date": "2026-10-26",
-      "source": "Google官方博客",
-      "hot": false
-    },
-    {
-      "title": "OpenAI推出GPT-5.5，支持实时视频理解",
-      "url": "https://openai.com/index/gpt-5-5/",
-      "date": "2026-10-30",
-      "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Mistral发布Mixtral 8x22B v2，推理效率提升30%",
-      "url": "https://mistral.ai/news/mixtral-8x22b-v2/",
-      "date": "2026-10-25",
-      "source": "Mistral AI官方博客",
+      "title": "Anthropic发布Claude 4 Opus，专注安全与复杂任务",
+      "url": "https://www.anthropic.com/news/claude-4",
+      "date": "2026-10-29",
+      "source": "Anthropic",
+      "hot": false
+    },
+    {
+      "title": "OpenAI推出GPT-5.1，增强多步骤推理与工具调用",
+      "url": "https://openai.com/index/gpt-5-1/",
+      "date": "2026-10-30",
+      "source": "OpenAI官方博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor 0.50发布：多文件编辑与终端集成",
-      "url": "https://cursor.com/blog/0-50",
-      "date": "2026-10-29",
-      "source": "Cursor官方博客",
+      "title": "Cursor发布2.5版本，支持多文件智能重构",
+      "url": "https://cursor.com/blog/2-5",
+      "date": "2026-10-27",
+      "source": "Cursor博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot新增代码审查与自动修复功能",
-      "url": "https://github.blog/2026-10-27-copilot-code-review/",
-      "date": "2026-10-27",
+      "title": "GitHub Copilot新增自主调试功能",
+      "url": "https://github.blog/2026-10-28-copilot-debugging/",
+      "date": "2026-10-28",
       "source": "GitHub博客",
       "hot": false
     },
     {
-      "title": "Devin 2.0发布，支持全栈开发与自主部署",
-      "url": "https://www.cognition.ai/blog/devin-2-0",
-      "date": "2026-10-26",
-      "source": "Cognition官方博客",
-      "hot": false
-    },
-    {
-      "title": "Codeium推出企业级私有化部署方案",
-      "url": "https://codeium.com/blog/enterprise-on-prem",
-      "date": "2026-10-28",
-      "source": "Codeium官方博客",
+      "title": "Devin 2.0上线，可独立完成全栈开发任务",
+      "url": "https://www.cognition.ai/blog/devin-2",
+      "date": "2026-10-31",
+      "source": "Cognition AI",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增团队协作与项目管理功能",
-      "url": "https://openai.com/index/chatgpt-teams/",
-      "date": "2026-10-30",
+      "title": "ChatGPT新增实时视频对话功能",
+      "url": "https://openai.com/index/chatgpt-video/",
+      "date": "2026-10-29",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布，图像真实感大幅提升",
+      "title": "Midjourney V7发布，图像细节与一致性提升",
       "url": "https://www.midjourney.com/blog/v7",
-      "date": "2026-10-29",
-      "source": "Midjourney官方博客",
-      "hot": false
-    },
-    {
-      "title": "Perplexity推出AI搜索浏览器Comet",
-      "url": "https://www.perplexity.ai/blog/comet",
-      "date": "2026-10-27",
-      "source": "Perplexity官方博客",
-      "hot": false
-    },
-    {
-      "title": "Runway Gen-4发布，视频生成质量再突破",
-      "url": "https://runwayml.com/blog/gen-4/",
       "date": "2026-10-26",
-      "source": "Runway官方博客",
+      "source": "Midjourney博客",
+      "hot": false
+    },
+    {
+      "title": "Perplexity推出企业版AI搜索平台",
+      "url": "https://blog.perplexity.ai/enterprise",
+      "date": "2026-10-28",
+      "source": "Perplexity博客",
+      "hot": false
+    },
+    {
+      "title": "Notion AI集成自动化工作流功能",
+      "url": "https://www.notion.so/blog/ai-workflows",
+      "date": "2026-10-30",
+      "source": "Notion博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "欧盟AI法案最终版本获通过，2027年生效",
-      "url": "https://www.reuters.com/technology/eu-ai-act-final-2026-10-28/",
-      "date": "2026-10-28",
+      "title": "欧盟通过AI责任法案，明确开发者义务",
+      "url": "https://www.reuters.com/technology/eu-ai-liability-act-2026-10-27/",
+      "date": "2026-10-27",
       "source": "Reuters",
       "hot": true
     },
     {
-      "title": "OpenAI完成200亿美元新融资，估值达3000亿",
-      "url": "https://techcrunch.com/2026/10/27/openai-20b-funding/",
-      "date": "2026-10-27",
+      "title": "AI芯片初创公司Tenstorrent获2亿美元融资",
+      "url": "https://techcrunch.com/2026/10/29/tenstorrent-funding/",
+      "date": "2026-10-29",
       "source": "TechCrunch",
       "hot": false
     },
     {
-      "title": "英伟达发布H200 GPU，AI训练性能翻倍",
-      "url": "https://nvidianews.nvidia.com/news/h200-gpu",
-      "date": "2026-10-26",
-      "source": "NVIDIA新闻中心",
+      "title": "美国发布AI安全行政令，要求前沿模型报备",
+      "url": "https://www.whitehouse.gov/briefing-room/2026/10/30/ai-safety/",
+      "date": "2026-10-30",
+      "source": "白宫官网",
       "hot": false
     },
     {
-      "title": "中国发布生成式AI服务管理新规",
-      "url": "https://www.caixin.com/2026-10-30/102345678.html",
-      "date": "2026-10-30",
-      "source": "财新网",
+      "title": "微软与OpenAI扩大合作，共建AI超算中心",
+      "url": "https://blogs.microsoft.com/blog/2026/10/31/openai-supercomputer/",
+      "date": "2026-10-31",
+      "source": "微软博客",
       "hot": false
     }
   ],
@@ -137,23 +123,23 @@
       "hot": true
     },
     {
-      "title": "斯坦福发布AI推理基准MATH-3，难度更高",
+      "title": "斯坦福发布AI推理基准ReasoningBench 2.0",
       "url": "https://arxiv.org/abs/2610.67890",
-      "date": "2026-10-27",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "MIT提出自监督学习新方法，减少标注依赖",
-      "url": "https://arxiv.org/abs/2610.54321",
       "date": "2026-10-26",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "Google Research发布多模态对齐新框架",
+      "title": "MIT研究：小样本学习新方法降低90%数据需求",
+      "url": "https://arxiv.org/abs/2610.54321",
+      "date": "2026-10-29",
+      "source": "arXiv",
+      "hot": false
+    },
+    {
+      "title": "Meta提出多模态对齐框架，提升视觉语言理解",
       "url": "https://arxiv.org/abs/2610.98765",
-      "date": "2026-10-25",
+      "date": "2026-10-31",
       "source": "arXiv",
       "hot": false
     }
