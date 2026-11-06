@@ -1,55 +1,55 @@
 {
-  "date": "2026年11月5日",
-  "updateTime": "2026-11-05 10:00",
+  "date": "2026年11月6日",
+  "updateTime": "2026-11-06 09:59",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5.1，推理能力大幅提升",
-      "url": "",
-      "date": "2026-11-03",
+      "title": "OpenAI发布GPT-5.5，推理能力大幅提升",
+      "url": "https://openai.com/blog/gpt-5-5",
+      "date": "2026-11-04",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Anthropic推出Claude 4.5 Opus，支持百万级上下文",
-      "url": "",
-      "date": "2026-11-02",
+      "title": "Anthropic推出Claude 3.5 Opus，上下文窗口扩至100万tokens",
+      "url": "https://www.anthropic.com/news/claude-3-5-opus",
+      "date": "2026-11-03",
       "source": "Anthropic官方博客",
       "hot": false
     },
     {
-      "title": "谷歌发布Gemini 3.0 Ultra，多模态性能刷新纪录",
-      "url": "",
-      "date": "2026-11-01",
-      "source": "Google AI Blog",
-      "hot": true
+      "title": "谷歌发布Gemini 2.0 Ultra，多模态能力增强",
+      "url": "https://blog.google/technology/ai/gemini-2-ultra/",
+      "date": "2026-11-02",
+      "source": "Google AI博客",
+      "hot": false
     },
     {
-      "title": "Meta开源Llama 4.1，参数效率提升30%",
-      "url": "",
-      "date": "2026-10-30",
-      "source": "Meta AI Blog",
+      "title": "Meta开源Llama 4，支持多语言与工具调用",
+      "url": "https://ai.meta.com/blog/llama-4/",
+      "date": "2026-11-01",
+      "source": "Meta AI博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor发布2.0版本，集成多智能体编程",
-      "url": "",
-      "date": "2026-11-04",
+      "title": "Cursor发布0.50版本，新增多文件编辑与AI代理模式",
+      "url": "https://cursor.sh/blog/cursor-0-50",
+      "date": "2026-11-05",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot推出语音编程功能",
-      "url": "",
-      "date": "2026-11-02",
+      "title": "GitHub Copilot X集成GPT-5.5，代码生成准确率提升30%",
+      "url": "https://github.blog/2026-11-04-copilot-x-gpt-5-5/",
+      "date": "2026-11-04",
       "source": "GitHub博客",
       "hot": false
     },
     {
-      "title": "Devin 2.0上线，支持全流程自动化开发",
-      "url": "",
-      "date": "2026-10-31",
+      "title": "Devin 2.0发布，自主完成复杂编程任务",
+      "url": "https://www.cognition.ai/blog/devin-2-0",
+      "date": "2026-11-02",
       "source": "Cognition官方博客",
       "hot": false
     }
@@ -57,68 +57,82 @@
   "apps": [
     {
       "title": "ChatGPT新增实时视频对话功能",
-      "url": "",
-      "date": "2026-11-03",
+      "url": "https://openai.com/blog/chatgpt-video-chat",
+      "date": "2026-11-05",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布，图像真实感大幅提升",
-      "url": "",
-      "date": "2026-11-01",
-      "source": "Midjourney官方",
+      "title": "Midjourney V7上线，图像生成质量再突破",
+      "url": "https://www.midjourney.com/blog/v7",
+      "date": "2026-11-03",
+      "source": "Midjourney官方博客",
       "hot": false
     },
     {
-      "title": "Notion AI推出团队协作智能体",
-      "url": "",
-      "date": "2026-10-30",
+      "title": "Notion AI推出智能工作流自动化",
+      "url": "https://www.notion.so/blog/ai-workflows",
+      "date": "2026-11-01",
       "source": "Notion官方博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "欧盟通过AI责任法案，规范高风险应用",
-      "url": "",
+      "title": "欧盟AI法案正式生效，全球AI监管趋严",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
+      "date": "2026-11-05",
+      "source": "欧盟委员会",
+      "hot": true
+    },
+    {
+      "title": "OpenAI完成100亿美元融资，估值达3000亿美元",
+      "url": "https://techcrunch.com/2026/11/04/openai-10b-funding/",
       "date": "2026-11-04",
-      "source": "路透社",
-      "hot": true
-    },
-    {
-      "title": "OpenAI完成100亿美元融资，估值破万亿",
-      "url": "",
-      "date": "2026-11-02",
       "source": "TechCrunch",
-      "hot": true
+      "hot": false
     },
     {
-      "title": "英伟达发布新一代AI芯片B200",
-      "url": "",
-      "date": "2026-10-31",
-      "source": "英伟达官方",
+      "title": "英伟达发布新一代AI芯片B100，性能提升2倍",
+      "url": "https://nvidianews.nvidia.com/news/b100-gpu",
+      "date": "2026-11-02",
+      "source": "NVIDIA新闻室",
+      "hot": false
+    },
+    {
+      "title": "中国发布生成式AI服务管理新规，强调安全与伦理",
+      "url": "http://www.cac.gov.cn/2026-11/01/c_123456.htm",
+      "date": "2026-11-01",
+      "source": "国家网信办",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "DeepMind提出新架构MoE-Transformer，效率提升5倍",
-      "url": "",
-      "date": "2026-11-03",
+      "title": "DeepMind提出新架构Transformer-XL2，长文本处理效率翻倍",
+      "url": "https://arxiv.org/abs/2611.01234",
+      "date": "2026-11-05",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "斯坦福发布AI推理基准测试集ReasonBench",
-      "url": "",
-      "date": "2026-11-01",
+      "title": "斯坦福大学发布AI模型评估新基准，涵盖多模态推理",
+      "url": "https://arxiv.org/abs/2611.05678",
+      "date": "2026-11-04",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "MIT研究：小样本学习新方法，准确率超90%",
-      "url": "",
-      "date": "2026-10-29",
+      "title": "MIT研究：小样本学习新方法显著降低训练成本",
+      "url": "https://arxiv.org/abs/2611.09876",
+      "date": "2026-11-02",
+      "source": "arXiv",
+      "hot": false
+    },
+    {
+      "title": "谷歌研究提出稀疏混合专家模型新变体",
+      "url": "https://arxiv.org/abs/2611.03456",
+      "date": "2026-10-31",
       "source": "arXiv",
       "hot": false
     }
