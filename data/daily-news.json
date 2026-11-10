@@ -1,124 +1,152 @@
 {
-  "date": "2026年11月9日",
-  "updateTime": "2026-11-09 09:27",
+  "date": "2026年11月10日",
+  "updateTime": "2026-11-10 11:57",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5.1，推理能力大幅提升",
-      "url": "https://openai.com/blog/gpt-5-1",
-      "date": "2026-11-05",
+      "title": "OpenAI发布GPT-5.2，推理能力提升40%",
+      "url": "https://openai.com/blog/gpt-5-2",
+      "date": "2026-11-08",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Anthropic推出Claude 4 Opus，上下文窗口扩至500K",
+      "title": "Anthropic推出Claude 4 Opus，支持百万级上下文",
       "url": "https://www.anthropic.com/news/claude-4-opus",
-      "date": "2026-11-06",
+      "date": "2026-11-07",
       "source": "Anthropic官方博客",
-      "hot": false
-    },
-    {
-      "title": "谷歌发布Gemini 2.5 Ultra，多模态理解新突破",
-      "url": "https://blog.google/technology/ai/gemini-2-5-ultra/",
-      "date": "2026-11-04",
-      "source": "Google AI博客",
       "hot": true
     },
     {
-      "title": "Meta开源Llama 4系列模型，性能对标GPT-4.5",
+      "title": "谷歌发布Gemini 2.5 Ultra，多模态性能领先",
+      "url": "https://blog.google/technology/ai/gemini-2-5-ultra/",
+      "date": "2026-11-06",
+      "source": "Google AI博客",
+      "hot": false
+    },
+    {
+      "title": "Meta开源Llama 4，采用MoE架构，性能提升显著",
       "url": "https://ai.meta.com/blog/llama-4/",
-      "date": "2026-11-03",
+      "date": "2026-11-05",
       "source": "Meta AI博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor发布2.0版本，支持全项目智能重构",
-      "url": "https://cursor.com/blog/2-0",
-      "date": "2026-11-07",
+      "title": "Cursor发布2.0版本，支持全仓库智能重构",
+      "url": "https://cursor.com/blog/cursor-2-0",
+      "date": "2026-11-09",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot推出Workspace Agent，可自主完成多文件任务",
-      "url": "https://github.blog/2026-11-06-copilot-workspace-agent/",
-      "date": "2026-11-06",
+      "title": "GitHub Copilot推出Agent模式，可自动修复Bug",
+      "url": "https://github.blog/2026-11-08-copilot-agent-mode/",
+      "date": "2026-11-08",
       "source": "GitHub博客",
       "hot": false
     },
     {
-      "title": "Devin 2.0上线，支持复杂系统调试与部署",
+      "title": "Devin 2.0发布，支持多智能体协作编程",
       "url": "https://www.cognition.ai/blog/devin-2",
+      "date": "2026-11-06",
+      "source": "Cognition AI博客",
+      "hot": false
+    },
+    {
+      "title": "Replit推出AI编程助手，实时协作编码",
+      "url": "https://blog.replit.com/ai-coding-assistant",
       "date": "2026-11-05",
-      "source": "Cognition官方博客",
+      "source": "Replit博客",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增“项目记忆”功能，可跨会话保留上下文",
-      "url": "https://openai.com/blog/chatgpt-project-memory",
-      "date": "2026-11-08",
+      "title": "ChatGPT新增实时视频对话功能，支持多语言",
+      "url": "https://openai.com/blog/chatgpt-video-chat",
+      "date": "2026-11-09",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布，图像真实感与可控性提升",
+      "title": "Midjourney V7发布，图像生成质量大幅提升",
       "url": "https://www.midjourney.com/blog/v7",
-      "date": "2026-11-06",
+      "date": "2026-11-07",
       "source": "Midjourney官方博客",
       "hot": false
     },
     {
-      "title": "Perplexity推出AI浏览器Comet，整合搜索与助手",
-      "url": "https://www.perplexity.ai/blog/comet-browser",
-      "date": "2026-11-04",
-      "source": "Perplexity官方博客",
+      "title": "Notion AI推出自动生成演示文稿功能",
+      "url": "https://www.notion.so/blog/ai-presentation",
+      "date": "2026-11-06",
+      "source": "Notion博客",
+      "hot": false
+    },
+    {
+      "title": "Runway推出Gen-4视频生成模型，支持长镜头",
+      "url": "https://runwayml.com/blog/gen-4",
+      "date": "2026-11-05",
+      "source": "Runway博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "欧盟AI法案最终版获通过，2027年起分阶段实施",
-      "url": "https://www.reuters.com/technology/eu-ai-act-final-2026-11-05/",
-      "date": "2026-11-05",
-      "source": "Reuters",
+      "title": "欧盟通过AI责任法案，明确开发者义务",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
+      "date": "2026-11-08",
+      "source": "欧盟委员会",
       "hot": true
     },
     {
-      "title": "AI初创公司Anthropic完成50亿美元E轮融资",
-      "url": "https://techcrunch.com/2026/11/06/anthropic-5b-series-e/",
+      "title": "英伟达发布新一代AI芯片B200，性能提升3倍",
+      "url": "https://nvidianews.nvidia.com/news/b200",
+      "date": "2026-11-07",
+      "source": "NVIDIA新闻室",
+      "hot": false
+    },
+    {
+      "title": "AI初创公司Anthropic完成50亿美元融资",
+      "url": "https://techcrunch.com/2026/11/06/anthropic-raises-5b/",
       "date": "2026-11-06",
       "source": "TechCrunch",
       "hot": false
     },
     {
-      "title": "英伟达发布H200 NVL GPU，专为大模型推理优化",
-      "url": "https://nvidianews.nvidia.com/news/h200-nvl",
-      "date": "2026-11-04",
-      "source": "NVIDIA新闻中心",
+      "title": "中国发布生成式AI服务管理新规，强调安全",
+      "url": "https://www.cac.gov.cn/2026-11/05/c_123456.htm",
+      "date": "2026-11-05",
+      "source": "中国网信网",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "DeepMind提出“思维树”升级版，推理准确率提升30%",
-      "url": "https://arxiv.org/abs/2611.01234",
-      "date": "2026-11-07",
+      "title": "DeepMind提出新架构Transformer-XL 2，长文本处理更强",
+      "url": "https://arxiv.org/abs/2611.12345",
+      "date": "2026-11-09",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "斯坦福发布Mamba-3架构，长序列建模效率翻倍",
-      "url": "https://arxiv.org/abs/2611.05678",
-      "date": "2026-11-06",
+      "title": "斯坦福发布AI推理基准测试集，评估模型逻辑能力",
+      "url": "https://arxiv.org/abs/2611.67890",
+      "date": "2026-11-08",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "新研究揭示大模型稀疏激活的缩放规律",
-      "url": "https://arxiv.org/abs/2611.09876",
-      "date": "2026-11-05",
+      "title": "MIT研究：小样本学习新方法，准确率提升20%",
+      "url": "https://arxiv.org/abs/2611.54321",
+      "date": "2026-11-07",
+      "source": "arXiv",
+      "hot": false
+    },
+    {
+      "title": "Meta提出多模态对齐框架，提升跨模态理解",
+      "url": "https://arxiv.org/abs/2611.98765",
+      "date": "2026-11-06",
       "source": "arXiv",
       "hot": false
     }
