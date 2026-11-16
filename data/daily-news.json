@@ -1,152 +1,124 @@
 {
-  "date": "2026年11月15日",
-  "updateTime": "2026-11-15 09:31",
+  "date": "2026年11月16日",
+  "updateTime": "2026-11-16 09:35",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5.1：推理能力提升30%",
+      "title": "OpenAI发布GPT-5.1，推理能力大幅提升",
       "url": "https://openai.com/blog/gpt-5-1",
       "date": "2026-11-14",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Anthropic推出Claude 4.5 Opus，上下文达500万token",
+      "title": "Anthropic推出Claude 4.5 Opus，支持百万token上下文",
       "url": "https://www.anthropic.com/news/claude-4-5-opus",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "source": "Anthropic官方博客",
-      "hot": true
-    },
-    {
-      "title": "谷歌发布Gemini 3.0 Ultra，多模态性能全面领先",
-      "url": "https://blog.google/technology/ai/gemini-3-ultra/",
-      "date": "2026-11-11",
-      "source": "Google AI Blog",
       "hot": false
     },
     {
-      "title": "Meta开源Llama 4.2，支持100种语言和128K上下文",
-      "url": "https://ai.meta.com/blog/llama-4-2/",
-      "date": "2026-11-10",
-      "source": "Meta AI Blog",
+      "title": "谷歌发布Gemini 2.5 Ultra，多模态性能领先",
+      "url": "https://blog.google/technology/ai/gemini-2-5-ultra/",
+      "date": "2026-11-12",
+      "source": "谷歌AI博客",
+      "hot": false
+    },
+    {
+      "title": "Meta开源Llama 4.1，上下文扩展至200万token",
+      "url": "https://ai.meta.com/blog/llama-4-1/",
+      "date": "2026-11-11",
+      "source": "Meta AI博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor发布2.0版本，支持全项目级代码生成与重构",
-      "url": "https://cursor.com/blog/2-0",
-      "date": "2026-11-13",
+      "title": "Cursor发布2.0版本，支持全项目自动重构",
+      "url": "https://cursor.com/blog/cursor-2-0",
+      "date": "2026-11-14",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot X新增自主调试功能，可自动修复bug",
-      "url": "https://github.blog/2026-11-12-copilot-x-debug/",
-      "date": "2026-11-12",
-      "source": "GitHub Blog",
+      "title": "GitHub Copilot X新增多文件编辑与测试生成",
+      "url": "https://github.blog/2026-11-13-copilot-x-update/",
+      "date": "2026-11-13",
+      "source": "GitHub博客",
       "hot": false
     },
     {
-      "title": "Devin 2.0发布：AI软件工程师可独立完成全栈项目",
-      "url": "https://www.cognition.ai/blog/devin-2",
-      "date": "2026-11-11",
-      "source": "Cognition AI Blog",
-      "hot": true
-    },
-    {
-      "title": "Amazon CodeWhisperer升级为CodeCatalyst AI，集成DevOps",
-      "url": "https://aws.amazon.com/blogs/aws/codecatalyst-ai/",
-      "date": "2026-11-09",
-      "source": "AWS Blog",
+      "title": "Devin 2.0上线，可自主完成端到端开发任务",
+      "url": "https://www.cognition.ai/blog/devin-2-0",
+      "date": "2026-11-12",
+      "source": "Cognition AI博客",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增实时视频对话功能，支持多模态交互",
-      "url": "https://openai.com/blog/chatgpt-video",
-      "date": "2026-11-14",
+      "title": "ChatGPT新增实时视频对话功能",
+      "url": "https://openai.com/blog/chatgpt-video-chat",
+      "date": "2026-11-15",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布：图像生成质量大幅提升，支持视频",
+      "title": "Midjourney V7发布，图像真实感大幅提升",
       "url": "https://www.midjourney.com/blog/v7",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "source": "Midjourney官方博客",
-      "hot": true
-    },
-    {
-      "title": "Notion AI推出工作流自动化，可连接多个应用",
-      "url": "https://www.notion.so/blog/ai-workflows",
-      "date": "2026-11-11",
-      "source": "Notion官方博客",
       "hot": false
     },
     {
-      "title": "Perplexity推出AI搜索浏览器，挑战谷歌地位",
-      "url": "https://blog.perplexity.ai/browser",
-      "date": "2026-11-10",
-      "source": "Perplexity Blog",
+      "title": "Perplexity推出AI购物助手，支持一键比价",
+      "url": "https://blog.perplexity.ai/2026/11/13/shopping-assistant",
+      "date": "2026-11-13",
+      "source": "Perplexity博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "OpenAI完成新一轮融资，估值突破2000亿美元",
-      "url": "https://techcrunch.com/2026/11/14/openai-funding-200b/",
+      "title": "欧盟AI法案正式生效，首批合规企业名单公布",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/ai-act-enters-into-force",
+      "date": "2026-11-15",
+      "source": "欧盟委员会",
+      "hot": true
+    },
+    {
+      "title": "英伟达发布第三季度财报，AI芯片营收同比增长80%",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
       "date": "2026-11-14",
-      "source": "TechCrunch",
-      "hot": true
-    },
-    {
-      "title": "欧盟通过AI法案修正案，对通用AI模型加强监管",
-      "url": "https://www.reuters.com/technology/eu-ai-act-amendment-2026-11-12/",
-      "date": "2026-11-12",
-      "source": "Reuters",
-      "hot": true
-    },
-    {
-      "title": "英伟达发布H200 GPU，AI训练性能提升40%",
-      "url": "https://nvidianews.nvidia.com/news/h200-gpu",
-      "date": "2026-11-11",
-      "source": "NVIDIA Newsroom",
+      "source": "英伟达投资者关系",
       "hot": false
     },
     {
-      "title": "中国发布生成式AI服务管理办法修订版，放宽外资限制",
-      "url": "https://www.caixin.com/2026-11-10/ai-regulation/",
-      "date": "2026-11-10",
-      "source": "财新网",
+      "title": "AI初创公司Anthropic完成50亿美元E轮融资",
+      "url": "https://techcrunch.com/2026/11/12/anthropic-raises-5b-series-e/",
+      "date": "2026-11-12",
+      "source": "TechCrunch",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "DeepMind提出新架构MoE-Transformer，训练效率提升5倍",
+      "title": "DeepMind提出新架构MoE-Transformer，训练效率提升3倍",
       "url": "https://arxiv.org/abs/2611.12345",
-      "date": "2026-11-13",
+      "date": "2026-11-14",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "斯坦福大学发布AI推理基准测试ReasonBench，评估模型逻辑能力",
+      "title": "斯坦福发布AI推理基准ReasonBench，覆盖20个领域",
       "url": "https://arxiv.org/abs/2611.67890",
-      "date": "2026-11-12",
+      "date": "2026-11-13",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "MIT研究：小样本学习新方法，数据需求减少90%",
+      "title": "MIT研究：小样本学习新方法，准确率提升15%",
       "url": "https://arxiv.org/abs/2611.54321",
       "date": "2026-11-11",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "谷歌提出多模态对齐框架，提升视觉-语言模型泛化能力",
-      "url": "https://arxiv.org/abs/2611.98765",
-      "date": "2026-11-09",
       "source": "arXiv",
       "hot": false
     }
