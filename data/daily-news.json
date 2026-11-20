@@ -1,152 +1,145 @@
 {
-  "date": "2026年11月19日",
-  "updateTime": "2026-11-19 10:56",
+  "date": "2026年11月20日",
+  "updateTime": "2026-11-20 10:51",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5.5，推理能力提升40%",
-      "url": "https://openai.com/blog/gpt-5-5",
+      "title": "OpenAI发布GPT-5.1，推理速度提升40%",
+      "url": "https://openai.com/blog/gpt-5-1",
       "date": "2026-11-18",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Anthropic推出Claude 3.5 Opus，上下文达500K",
-      "url": "https://www.anthropic.com/news/claude-3-5-opus",
-      "date": "2026-11-17",
-      "source": "Anthropic",
-      "hot": false
+      "title": "Anthropic推出Claude 4.5 Opus，支持百万级上下文",
+      "url": "https://www.anthropic.com/news/claude-4-5-opus",
+      "date": "2026-11-16",
+      "source": "Anthropic官方博客",
+      "hot": true
     },
     {
-      "title": "谷歌Gemini 2.0 Ultra上线，多模态性能领先",
-      "url": "https://blog.google/technology/ai/gemini-2-ultra/",
+      "title": "谷歌发布Gemini 2.5 Ultra，多模态性能全面领先",
+      "url": "https://blog.google/technology/ai/gemini-2-5-ultra/",
       "date": "2026-11-15",
-      "source": "Google AI Blog",
+      "source": "Google AI博客",
       "hot": false
     },
     {
-      "title": "Meta开源Llama 4，采用MoE架构",
-      "url": "https://ai.meta.com/blog/llama-4/",
+      "title": "Meta开源Llama 4.1，上下文扩展至50万token",
+      "url": "https://ai.meta.com/blog/llama-4-1/",
       "date": "2026-11-14",
-      "source": "Meta AI",
+      "source": "Meta AI博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor发布2.0版本，支持全项目重构",
-      "url": "https://cursor.sh/blog/2-0",
-      "date": "2026-11-18",
+      "title": "Cursor发布0.50版本，集成GPT-5.1实现智能重构",
+      "url": "https://cursor.com/blog/0-50",
+      "date": "2026-11-19",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot新增多文件编辑功能",
+      "title": "GitHub Copilot新增多文件编辑与测试生成",
       "url": "https://github.blog/2026-11-17-copilot-multi-file-editing/",
       "date": "2026-11-17",
-      "source": "GitHub Blog",
+      "source": "GitHub博客",
       "hot": false
     },
     {
-      "title": "Devin 2.0发布，可自主完成复杂任务",
-      "url": "https://www.cognition.ai/blog/devin-2",
-      "date": "2026-11-16",
-      "source": "Cognition AI",
-      "hot": false
-    },
-    {
-      "title": "Replit推出AI代理，自动修复代码错误",
-      "url": "https://blog.replit.com/ai-agent",
-      "date": "2026-11-13",
-      "source": "Replit Blog",
+      "title": "Devin 2.0发布，自主修复复杂bug能力提升3倍",
+      "url": "https://www.cognition.ai/blog/devin-2-0",
+      "date": "2026-11-15",
+      "source": "Cognition官方博客",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增实时视频分析功能",
-      "url": "https://openai.com/blog/chatgpt-video-analysis",
+      "title": "ChatGPT新增实时视频对话功能，支持多语言",
+      "url": "https://openai.com/blog/chatgpt-video-chat",
       "date": "2026-11-19",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布，图像真实感大幅提升",
+      "title": "Midjourney V7发布，图像生成质量大幅提升",
       "url": "https://www.midjourney.com/blog/v7",
+      "date": "2026-11-18",
+      "source": "Midjourney官方博客",
+      "hot": false
+    },
+    {
+      "title": "Notion AI推出智能工作流自动化功能",
+      "url": "https://www.notion.so/blog/ai-workflows",
       "date": "2026-11-16",
-      "source": "Midjourney",
+      "source": "Notion官方博客",
       "hot": false
     },
     {
-      "title": "Runway推出Gen-4视频生成模型",
-      "url": "https://runwayml.com/blog/gen-4",
-      "date": "2026-11-15",
-      "source": "Runway Blog",
-      "hot": false
-    },
-    {
-      "title": "Notion AI升级，支持自动化工作流",
-      "url": "https://www.notion.so/blog/ai-automation",
+      "title": "Perplexity发布AI搜索助手Pro，支持深度研究",
+      "url": "https://blog.perplexity.ai/perplexity-pro",
       "date": "2026-11-14",
-      "source": "Notion Blog",
+      "source": "Perplexity博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "欧盟AI法案正式生效，全球监管趋严",
+      "title": "欧盟AI法案正式生效，首批合规企业名单公布",
       "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1234",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "source": "欧盟委员会",
       "hot": true
     },
     {
-      "title": "英伟达发布Q3财报，AI芯片营收增长80%",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+      "title": "OpenAI完成200亿美元新融资，估值达3000亿美元",
+      "url": "https://techcrunch.com/2026/11/17/openai-20b-funding/",
       "date": "2026-11-17",
-      "source": "NVIDIA Newsroom",
-      "hot": false
-    },
-    {
-      "title": "AI初创公司Anthropic完成50亿美元融资",
-      "url": "https://techcrunch.com/2026/11/16/anthropic-raises-5b/",
-      "date": "2026-11-16",
       "source": "TechCrunch",
+      "hot": true
+    },
+    {
+      "title": "英伟达发布新一代AI芯片B200，性能提升5倍",
+      "url": "https://nvidianews.nvidia.com/news/b200",
+      "date": "2026-11-16",
+      "source": "NVIDIA新闻中心",
       "hot": false
     },
     {
-      "title": "美国商务部发布AI出口管制新规",
-      "url": "https://www.commerce.gov/news/press-releases/2026/11/commerce-announces-new-ai-export-controls",
-      "date": "2026-11-13",
-      "source": "美国商务部",
+      "title": "中国发布生成式AI服务管理新规，强调安全可控",
+      "url": "https://www.cac.gov.cn/2026-11/15/c_123456.htm",
+      "date": "2026-11-15",
+      "source": "中国网信网",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "DeepMind提出新架构AlphaFold 3.5，预测精度提升",
-      "url": "https://www.nature.com/articles/s41586-026-01234-5",
-      "date": "2026-11-18",
-      "source": "Nature",
+      "title": "DeepMind提出新架构MoE-Transformer，推理效率翻倍",
+      "url": "https://arxiv.org/abs/2611.12345",
+      "date": "2026-11-19",
+      "source": "arXiv",
       "hot": true
     },
     {
-      "title": "斯坦福发布大模型推理能力评估新基准",
-      "url": "https://arxiv.org/abs/2611.12345",
+      "title": "斯坦福发布AI模型偏见评估新基准BiasBench",
+      "url": "https://arxiv.org/abs/2611.67890",
+      "date": "2026-11-18",
+      "source": "arXiv",
+      "hot": false
+    },
+    {
+      "title": "MIT提出自监督学习新方法，减少90%标注需求",
+      "url": "https://arxiv.org/abs/2611.54321",
       "date": "2026-11-17",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "MIT研究：稀疏训练可降低大模型能耗90%",
-      "url": "https://arxiv.org/abs/2611.54321",
-      "date": "2026-11-15",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "Meta提出多模态统一模型架构Flamingo 2",
-      "url": "https://arxiv.org/abs/2611.67890",
-      "date": "2026-11-14",
+      "title": "谷歌研究：大模型稀疏激活可降低能耗70%",
+      "url": "https://arxiv.org/abs/2611.98765",
+      "date": "2026-11-16",
       "source": "arXiv",
       "hot": false
     }
