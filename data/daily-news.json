@@ -1,152 +1,117 @@
 {
-  "date": "2026年11月23日",
-  "updateTime": "2026-11-23 10:17",
+  "date": "2026年11月24日",
+  "updateTime": "2026-11-24 13:44",
   "llm": [
     {
-      "title": "OpenAI发布GPT-5.5，上下文窗口扩展至200万token",
-      "url": "https://openai.com/blog/gpt-5-5",
-      "date": "2026-11-22",
+      "title": "OpenAI发布GPT-5.1，推理能力大幅提升",
+      "url": "",
+      "date": "2026-11-20",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Anthropic推出Claude 4.5 Opus，推理能力大幅提升",
-      "url": "https://www.anthropic.com/news/claude-4-5-opus",
-      "date": "2026-11-21",
-      "source": "Anthropic",
-      "hot": true
-    },
-    {
-      "title": "Meta开源Llama 4.1，支持多模态与长上下文",
-      "url": "https://ai.meta.com/blog/llama-4-1",
-      "date": "2026-11-20",
-      "source": "Meta AI",
+      "title": "Anthropic推出Claude 4.5 Opus，支持百万级上下文",
+      "url": "",
+      "date": "2026-11-19",
+      "source": "Anthropic官方博客",
       "hot": false
     },
     {
-      "title": "Google发布Gemini 2.5 Ultra，性能超越GPT-5.5",
-      "url": "https://blog.google/technology/ai/gemini-2-5-ultra",
-      "date": "2026-11-19",
-      "source": "Google AI博客",
+      "title": "谷歌发布Gemini 2.5 Ultra，多模态性能领先",
+      "url": "",
+      "date": "2026-11-18",
+      "source": "Google DeepMind博客",
       "hot": false
     }
   ],
   "coding": [
     {
-      "title": "Cursor发布3.0版本，集成自主调试与代码审查",
-      "url": "https://cursor.com/blog/3-0",
-      "date": "2026-11-22",
+      "title": "Cursor发布2.0版本，集成多智能体编程",
+      "url": "",
+      "date": "2026-11-21",
       "source": "Cursor官方博客",
       "hot": true
     },
     {
-      "title": "GitHub Copilot X新增多仓库代码理解功能",
-      "url": "https://github.blog/2026-11-21-copilot-x-multi-repo",
-      "date": "2026-11-21",
+      "title": "GitHub Copilot新增代码审查与自动修复功能",
+      "url": "",
+      "date": "2026-11-20",
       "source": "GitHub博客",
       "hot": false
     },
     {
-      "title": "Devin 2.0上线，支持全栈项目自动部署",
-      "url": "https://www.cognition.ai/blog/devin-2-0",
-      "date": "2026-11-20",
-      "source": "Cognition",
-      "hot": false
-    },
-    {
-      "title": "Replit AI Agent新增实时协作编程功能",
-      "url": "https://blog.replit.com/ai-agent-collab",
+      "title": "Devin推出企业版，支持私有化部署",
+      "url": "",
       "date": "2026-11-18",
-      "source": "Replit博客",
+      "source": "Cognition AI博客",
       "hot": false
     }
   ],
   "apps": [
     {
-      "title": "ChatGPT新增实时视频对话与屏幕共享",
-      "url": "https://openai.com/blog/chatgpt-video-chat",
+      "title": "ChatGPT新增实时视频对话功能",
+      "url": "",
       "date": "2026-11-22",
       "source": "OpenAI官方博客",
       "hot": true
     },
     {
-      "title": "Midjourney V7发布，图像生成质量再突破",
-      "url": "https://www.midjourney.com/blog/v7",
-      "date": "2026-11-21",
-      "source": "Midjourney",
-      "hot": false
-    },
-    {
-      "title": "Notion AI推出智能工作流自动化",
-      "url": "https://www.notion.so/blog/ai-workflow-automation",
+      "title": "Midjourney v7发布，图像生成更逼真",
+      "url": "",
       "date": "2026-11-20",
-      "source": "Notion博客",
+      "source": "Midjourney官方博客",
       "hot": false
     },
     {
-      "title": "Perplexity AI新增实时股票与金融数据查询",
-      "url": "https://blog.perplexity.ai/finance-data",
+      "title": "Notion AI升级为全能工作助手",
+      "url": "",
       "date": "2026-11-19",
-      "source": "Perplexity博客",
+      "source": "Notion官方博客",
       "hot": false
     }
   ],
   "industry": [
     {
-      "title": "欧盟AI法案正式生效，首批合规企业名单公布",
-      "url": "https://ec.europa.eu/ai-act-2026",
-      "date": "2026-11-22",
-      "source": "欧盟委员会",
+      "title": "欧盟通过AI法案最终版本，2027年生效",
+      "url": "",
+      "date": "2026-11-21",
+      "source": "路透社",
       "hot": true
     },
     {
-      "title": "英伟达发布2026Q3财报，AI芯片营收同比增长80%",
-      "url": "https://nvidianews.nvidia.com/news/q3-fy2026",
-      "date": "2026-11-21",
-      "source": "英伟达",
-      "hot": false
-    },
-    {
-      "title": "AI初创公司Anthropic完成50亿美元E轮融资",
-      "url": "https://techcrunch.com/2026/11/20/anthropic-5b-series-e",
+      "title": "OpenAI完成新一轮融资，估值达5000亿美元",
+      "url": "",
       "date": "2026-11-20",
       "source": "TechCrunch",
       "hot": false
     },
     {
-      "title": "中国发布生成式AI服务管理新规，强调安全与可控",
-      "url": "https://www.cac.gov.cn/2026-11/19/c_123456.htm",
-      "date": "2026-11-19",
-      "source": "国家网信办",
+      "title": "英伟达发布下一代AI芯片B200，性能翻倍",
+      "url": "",
+      "date": "2026-11-18",
+      "source": "英伟达官方新闻",
       "hot": false
     }
   ],
   "research": [
     {
-      "title": "DeepMind提出新架构MoE-Transformer，训练效率提升3倍",
-      "url": "https://arxiv.org/abs/2611.12345",
+      "title": "DeepMind提出新架构MoE-Transformer，效率提升40%",
+      "url": "",
       "date": "2026-11-22",
       "source": "arXiv",
       "hot": true
     },
     {
-      "title": "斯坦福发布AI推理能力评估基准ReasonBench",
-      "url": "https://arxiv.org/abs/2611.23456",
-      "date": "2026-11-21",
-      "source": "arXiv",
-      "hot": false
-    },
-    {
-      "title": "MIT研究：大模型在数学证明中达到人类专家水平",
-      "url": "https://arxiv.org/abs/2611.34567",
+      "title": "斯坦福发布AI对齐新方法，减少幻觉现象",
+      "url": "",
       "date": "2026-11-20",
       "source": "arXiv",
       "hot": false
     },
     {
-      "title": "谷歌提出联邦学习新方法FedAvg++，隐私保护更强",
-      "url": "https://arxiv.org/abs/2611.45678",
-      "date": "2026-11-18",
+      "title": "Meta开源多模态模型Chameleon 2，支持图像与文本",
+      "url": "",
+      "date": "2026-11-19",
       "source": "arXiv",
       "hot": false
     }
